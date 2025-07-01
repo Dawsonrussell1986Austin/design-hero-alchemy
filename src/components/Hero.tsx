@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
@@ -19,16 +20,16 @@ const Hero = () => {
             
             {/* Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Our Firm</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Platform</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Investments</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">News</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Contact</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-mono font-medium">Our Firm</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-mono font-medium">Platform</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-mono font-medium">Investments</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-mono font-medium">News</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-mono font-medium">Contact</a>
             </div>
             
             {/* Investor Login Button */}
             <Button 
-              className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-medium rounded-sm transition-all duration-300"
+              className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-mono font-medium rounded-sm transition-all duration-300"
             >
               Investor Login
             </Button>
