@@ -146,7 +146,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-silver-mist text-silver-mist hover:bg-silver-mist hover:text-obsidian px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300"
+                  className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-silver-mist px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300"
                 >
                   Learn More
                 </Button>
