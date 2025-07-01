@@ -1,7 +1,12 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { ArrowRight, Shield, TrendingUp, Users, Menu } from "lucide-react";
+import { useState } from "react";
 
 const Hero = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol">
       {/* Navigation Bar */}
@@ -17,7 +22,7 @@ const Hero = () => {
               />
             </div>
             
-            {/* Navigation Links */}
+            {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Our Firm</a>
               <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Platform</a>
@@ -26,12 +31,71 @@ const Hero = () => {
               <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Contact</a>
             </div>
             
-            {/* Investor Login Button */}
+            {/* Desktop Investor Login Button */}
             <Button 
-              className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
+              className="hidden md:block bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
             >
               Investor Login
             </Button>
+
+            {/* Mobile Hamburger Menu */}
+            <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+              <SheetTrigger asChild>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="md:hidden text-white hover:bg-white/10"
+                >
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] bg-obsidian border-l border-slate-700">
+                <div className="flex flex-col space-y-6 mt-8">
+                  <a 
+                    href="#" 
+                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Our Firm
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Platform
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Investments
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    News
+                  </a>
+                  <a 
+                    href="#" 
+                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact
+                  </a>
+                  <Button 
+                    className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Investor Login
+                  </Button>
+                </div>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </nav>
