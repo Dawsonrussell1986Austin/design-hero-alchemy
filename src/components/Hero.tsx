@@ -4,7 +4,7 @@ import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol font-serif">
       {/* Navigation Bar */}
       <nav className="relative z-20 bg-white/5 backdrop-blur-sm border-b border-white/10">
         <div className="container mx-auto px-6">
@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="space-y-8 animate-fade-in">
               {/* Main headline */}
               <div className="space-y-6">
-                <h1 className="text-5xl lg:text-7xl font-light text-white leading-tight">
+                <h1 className="text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
                   Where Strength<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-deep-petrol to-garnet-edge font-normal">
                     Meets
@@ -59,7 +59,7 @@ const Hero = () => {
                   <span className="font-medium">Stewardship.</span>
                 </h1>
                 
-                <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
+                <p className="text-xl text-gray-300 max-w-2xl leading-relaxed font-sans">
                   Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
                 </p>
               </div>
@@ -85,15 +85,15 @@ const Hero = () => {
               
               {/* Trust indicators */}
               <div className="pt-8 border-t border-gray-700">
-                <p className="text-sm text-gray-400 mb-4">Trusted by institutional investors</p>
+                <p className="text-sm text-gray-400 mb-4 font-mono uppercase tracking-wide">Trusted by institutional investors</p>
                 <div className="flex items-center space-x-8 text-gray-500">
                   <div className="flex items-center space-x-2">
                     <Shield className="h-4 w-4" />
-                    <span className="text-sm">SEC Registered</span>
+                    <span className="text-sm font-mono">SEC Registered</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span className="text-sm">Institutional Grade</span>
+                    <span className="text-sm font-mono">Institutional Grade</span>
                   </div>
                 </div>
               </div>
@@ -106,8 +106,8 @@ const Hero = () => {
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-all duration-300 group">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-5xl font-light text-white mb-2 group-hover:text-deep-petrol transition-colors">150+</h3>
-                    <p className="text-gray-400 text-sm uppercase tracking-wide">Years of Experience</p>
+                    <h3 className="text-5xl font-serif font-light text-white mb-2 group-hover:text-deep-petrol transition-colors">150+</h3>
+                    <p className="text-gray-400 text-sm font-mono uppercase tracking-wide">Years of Experience</p>
                   </div>
                   <TrendingUp className="h-8 w-8 text-deep-petrol opacity-70" />
                 </div>
@@ -115,23 +115,24 @@ const Hero = () => {
               
               {/* Bridge loans card */}
               <div className="bg-gradient-to-br from-deep-petrol/20 to-garnet-edge/20 backdrop-blur-sm border border-deep-petrol/30 rounded-lg p-8 hover:from-deep-petrol/30 hover:to-garnet-edge/30 transition-all duration-300">
-                <h3 className="text-5xl font-light text-white mb-2">$5B</h3>
-                <p className="text-gray-300 text-sm uppercase tracking-wide mb-2">of Bridge Completed</p>
-                <p className="text-xs text-gray-400">in the Last 10 Years</p>
+                <h3 className="text-5xl font-serif font-light text-white mb-2">$5B</h3>
+                <p className="text-gray-300 text-sm font-mono uppercase tracking-wide mb-2">of Bridge Completed</p>
+                <p className="text-xs text-gray-400 font-mono">in the Last 10 Years</p>
               </div>
               
               {/* Closed transactions card */}
               <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-all duration-300">
-                <h3 className="text-5xl font-light text-white mb-2">$18B</h3>
-                <p className="text-gray-300 text-sm uppercase tracking-wide mb-2">Closed Transactions</p>
+                <h3 className="text-5xl font-serif font-light text-white mb-2">$18B</h3>
+                <p className="text-gray-300 text-sm font-mono uppercase tracking-wide mb-2">Closed Transactions</p>
               </div>
               
-              {/* Philosophy card */}
-              <div className="bg-gradient-to-r from-garnet-edge/10 to-deep-petrol/10 backdrop-blur-sm border border-garnet-edge/20 rounded-lg p-6">
-                <blockquote className="text-white/90 text-lg font-light italic leading-relaxed">
+              {/* Philosophy card - Enhanced */}
+              <div className="bg-gradient-to-r from-garnet-edge/20 to-deep-petrol/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-8 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-garnet-edge to-deep-petrol"></div>
+                <blockquote className="text-white text-2xl font-serif font-light italic leading-relaxed mb-4">
                   "We Don't Chase Headlines Or Offer Shortcuts."
                 </blockquote>
-                <p className="text-gray-400 text-sm mt-3">— Investment Philosophy</p>
+                <p className="text-gray-400 text-sm font-mono uppercase tracking-wide">— Investment Philosophy</p>
               </div>
               
             </div>
