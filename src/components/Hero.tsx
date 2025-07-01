@@ -5,6 +5,38 @@ import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol">
+      {/* Navigation Bar */}
+      <nav className="relative z-20 bg-white/5 backdrop-blur-sm border-b border-white/10">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+            <div className="flex items-center">
+              <img 
+                src="/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png" 
+                alt="OAK Real Estate Partners" 
+                className="h-10 w-auto"
+              />
+            </div>
+            
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Our Firm</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Platform</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Investments</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">News</a>
+              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-medium">Contact</a>
+            </div>
+            
+            {/* Investor Login Button */}
+            <Button 
+              className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-medium rounded-sm transition-all duration-300"
+            >
+              Investor Login
+            </Button>
+          </div>
+        </div>
+      </nav>
+
       {/* Background texture overlay */}
       <div className="absolute inset-0 opacity-40">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
@@ -17,15 +49,6 @@ const Hero = () => {
             
             {/* Left column - Main content */}
             <div className="space-y-8 animate-fade-in">
-              {/* Logo */}
-              <div className="inline-flex items-center space-x-3">
-                <img 
-                  src="/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png" 
-                  alt="OAK Real Estate Partners" 
-                  className="h-12 w-auto"
-                />
-              </div>
-              
               {/* Main headline */}
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-light text-white leading-tight">
