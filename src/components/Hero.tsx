@@ -1,9 +1,10 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol font-serif">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol">
       {/* Navigation Bar */}
       <nav className="relative z-20 border-b border-slate-700" style={{ backgroundColor: '#0b1b25' }}>
         <div className="container mx-auto px-6">
@@ -67,7 +68,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
                   size="lg" 
-                  className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-8 py-4 text-lg font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
+                  className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-8 py-4 text-lg font-mono font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -76,7 +77,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-gray-600 text-white hover:bg-white/10 px-8 py-4 text-lg font-medium rounded-sm transition-all duration-300"
+                  className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-mono font-medium rounded-sm transition-all duration-300"
                 >
                   Learn More
                 </Button>
