@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
@@ -6,15 +5,15 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol font-serif">
       {/* Navigation Bar */}
-      <nav className="relative z-20 bg-white/5 backdrop-blur-sm border-b border-white/10">
+      <nav className="relative z-20 bg-slate-800 border-b border-slate-700">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png" 
+                src="/lovable-uploads/4212ae30-dd8d-4c0d-a307-f5116851ce9d.png" 
                 alt="OAK Real Estate Partners" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             
