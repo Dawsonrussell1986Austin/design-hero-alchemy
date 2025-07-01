@@ -73,7 +73,8 @@ export default {
 				'graphite-fog': 'hsl(var(--graphite-fog))',
 				'silver-mist': 'hsl(var(--silver-mist))',
 				'deep-petrol': 'hsl(var(--deep-petrol))',
-				'garnet-edge': 'hsl(var(--garnet-edge))'
+				'garnet-edge': 'hsl(var(--garnet-edge))',
+				'nav-light': 'hsl(var(--nav-light))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

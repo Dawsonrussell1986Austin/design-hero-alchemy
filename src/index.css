@@ -43,6 +43,7 @@
     --silver-mist: 200 6% 85%;     /* d7d8d6 */
     --deep-petrol: 200 8% 32%;     /* 4a5359 */
     --garnet-edge: 86 12% 53%;     /* 8a9786 */
+    --nav-light: 42 23% 92%;       /* EEECE9 */
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -143,5 +144,9 @@
   
   .bg-garnet-edge {
     background-color: hsl(var(--garnet-edge));
+  }
+  
+  .bg-nav-light {
+    background-color: hsl(var(--nav-light));
   }
 }

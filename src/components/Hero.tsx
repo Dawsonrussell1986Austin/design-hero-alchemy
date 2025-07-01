@@ -10,13 +10,13 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       {/* Navigation Bar */}
-      <nav className="relative z-20 border-b border-deep-petrol bg-obsidian">
+      <nav className="relative z-20 border-b border-deep-petrol bg-nav-light">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/292125c9-67a2-4ead-b36f-a8ea1534aebc.png" 
+                src="/lovable-uploads/ef0a0cca-4b1a-4e4b-adb1-8e51b9fca3d8.png" 
                 alt="OAK Real Estate Partners" 
                 className="h-12 w-auto"
               />
@@ -24,16 +24,16 @@ const Hero = () => {
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Our Firm</a>
-              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Platform</a>
-              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Investments</a>
-              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">News</a>
-              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Contact</a>
+              <a href="#" className="text-obsidian hover:text-garnet-edge transition-colors font-serif font-medium">Our Firm</a>
+              <a href="#" className="text-obsidian hover:text-garnet-edge transition-colors font-serif font-medium">Platform</a>
+              <a href="#" className="text-obsidian hover:text-garnet-edge transition-colors font-serif font-medium">Investments</a>
+              <a href="#" className="text-obsidian hover:text-garnet-edge transition-colors font-serif font-medium">News</a>
+              <a href="#" className="text-obsidian hover:text-garnet-edge transition-colors font-serif font-medium">Contact</a>
             </div>
             
             {/* Desktop Investor Login Button */}
             <Button 
-              className="hidden md:block bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
+              className="hidden md:block bg-garnet-edge hover:bg-garnet-edge/90 text-nav-light px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
             >
               Investor Login
             </Button>
@@ -44,7 +44,7 @@ const Hero = () => {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="md:hidden text-silver-mist hover:bg-silver-mist/10"
+                  className="md:hidden text-obsidian hover:bg-obsidian/10"
                 >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Toggle menu</span>
@@ -88,7 +88,7 @@ const Hero = () => {
                     Contact
                   </a>
                   <Button 
-                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
+                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-nav-light px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
