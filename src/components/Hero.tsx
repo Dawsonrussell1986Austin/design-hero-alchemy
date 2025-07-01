@@ -61,7 +61,7 @@ const Hero = () => {
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
                   Where Strength<br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-deep-petrol to-garnet-edge font-normal">
+                  <span className="text-white font-normal drop-shadow-lg">
                     Meets
                   </span><br />
                   <span className="font-medium">Stewardship.</span>
