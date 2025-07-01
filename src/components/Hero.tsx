@@ -38,8 +38,17 @@ const Hero = () => {
         </div>
       </nav>
 
+      {/* Subtle architectural background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/40f41be8-accc-4a72-a71a-e72c8e228281.png"
+          alt=""
+          className="w-full h-full object-cover opacity-5"
+        />
+      </div>
+
       {/* Background texture overlay */}
-      <div className="absolute inset-0 opacity-40">
+      <div className="absolute inset-0 opacity-40 z-5">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
       </div>
       
