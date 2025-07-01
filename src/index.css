@@ -1,10 +1,9 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* OAK Real Estate Brand Colors - Premium Design System */
 
 @layer base {
   :root {
@@ -38,20 +37,20 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* OAK Brand Colors */
+    --obsidian: 220 10% 8%;
+    --graphite-fog: 210 8% 35%;
+    --silver-mist: 210 20% 95%;
+    --deep-petrol: 195 100% 20%;
+    --garnet-edge: 15 45% 35%;
+    
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -101,5 +100,44 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom brand utilities */
+@layer utilities {
+  .text-obsidian {
+    color: hsl(var(--obsidian));
+  }
+  
+  .bg-obsidian {
+    background-color: hsl(var(--obsidian));
+  }
+  
+  .text-graphite-fog {
+    color: hsl(var(--graphite-fog));
+  }
+  
+  .bg-graphite-fog {
+    background-color: hsl(var(--graphite-fog));
+  }
+  
+  .bg-silver-mist {
+    background-color: hsl(var(--silver-mist));
+  }
+  
+  .text-deep-petrol {
+    color: hsl(var(--deep-petrol));
+  }
+  
+  .bg-deep-petrol {
+    background-color: hsl(var(--deep-petrol));
+  }
+  
+  .text-garnet-edge {
+    color: hsl(var(--garnet-edge));
+  }
+  
+  .bg-garnet-edge {
+    background-color: hsl(var(--garnet-edge));
   }
 }
