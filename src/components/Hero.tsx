@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol font-serif">
       {/* Navigation Bar */}
-      <nav className="relative z-20 bg-slate-800 border-b border-slate-700">
+      <nav className="relative z-20 border-b border-slate-700" style={{ backgroundColor: '#0b1b25' }}>
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
