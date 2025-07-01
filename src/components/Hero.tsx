@@ -60,10 +60,7 @@ const Hero = () => {
               {/* Main headline */}
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
-                  Where Strength<br />
-                  <span className="text-white font-normal drop-shadow-lg">
-                    Meets
-                  </span><br />
+                  Where Strength <span className="text-white font-normal drop-shadow-lg">Meets</span><br />
                   <span className="font-medium">Stewardship.</span>
                 </h1>
                 
