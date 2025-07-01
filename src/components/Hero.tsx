@@ -52,17 +52,15 @@ const Hero = () => {
               {/* Main headline */}
               <div className="space-y-6">
                 <h1 className="text-5xl lg:text-7xl font-light text-white leading-tight">
-                  Private Credit,<br />
+                  Where Strength<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-deep-petrol to-garnet-edge font-normal">
-                    Engineered With
+                    Meets
                   </span><br />
-                  Institutional<br />
-                  <span className="font-medium">Precision</span>
+                  <span className="font-medium">Stewardship.</span>
                 </h1>
                 
                 <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-                  We design reliable income strategies backed by hard assets and guided by 
-                  principles built for serious allocators, from RIAs to institutions.
+                  Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
                 </p>
               </div>
               
