@@ -1,5 +1,3 @@
-
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, TrendingUp, Users } from "lucide-react";
 
@@ -78,7 +76,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
                   size="lg" 
-                  className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-8 py-4 text-lg font-mono font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
+                  className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -87,7 +85,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-white text-white hover:bg-white hover:text-gray-900 px-8 py-4 text-lg font-mono font-medium rounded-sm transition-all duration-300"
+                  className="border-2 border-white text-white hover:bg-white hover:text-obsidian px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300"
                 >
                   Learn More
                 </Button>
@@ -95,15 +93,15 @@ const Hero = () => {
               
               {/* Trust indicators */}
               <div className="pt-8 border-t border-gray-700">
-                <p className="text-sm text-gray-400 mb-4 font-mono uppercase tracking-wide">Trusted by institutional investors</p>
+                <p className="text-sm text-gray-400 mb-4 font-serif uppercase tracking-wide">Trusted by institutional investors</p>
                 <div className="flex items-center space-x-8 text-gray-500">
                   <div className="flex items-center space-x-2">
                     <Shield className="h-4 w-4" />
-                    <span className="text-sm font-mono">SEC Registered</span>
+                    <span className="text-sm font-serif">SEC Registered</span>
                   </div>
                   <div className="flex items-center space-x-2">
                     <Users className="h-4 w-4" />
-                    <span className="text-sm font-mono">Institutional Grade</span>
+                    <span className="text-sm font-serif">Institutional Grade</span>
                   </div>
                 </div>
               </div>
@@ -154,4 +152,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
