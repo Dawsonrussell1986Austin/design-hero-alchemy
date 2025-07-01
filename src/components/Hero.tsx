@@ -8,15 +8,15 @@ const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-gray-900 to-deep-petrol">
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       {/* Navigation Bar */}
-      <nav className="relative z-20 border-b border-slate-700" style={{ backgroundColor: '#0b1b25' }}>
+      <nav className="relative z-20 border-b border-deep-petrol bg-obsidian">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/4212ae30-dd8d-4c0d-a307-f5116851ce9d.png" 
+                src="/lovable-uploads/292125c9-67a2-4ead-b36f-a8ea1534aebc.png" 
                 alt="OAK Real Estate Partners" 
                 className="h-12 w-auto"
               />
@@ -24,16 +24,16 @@ const Hero = () => {
             
             {/* Desktop Navigation Links */}
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Our Firm</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Platform</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Investments</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">News</a>
-              <a href="#" className="text-white hover:text-deep-petrol transition-colors font-serif font-medium">Contact</a>
+              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Our Firm</a>
+              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Platform</a>
+              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Investments</a>
+              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">News</a>
+              <a href="#" className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium">Contact</a>
             </div>
             
             {/* Desktop Investor Login Button */}
             <Button 
-              className="hidden md:block bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
+              className="hidden md:block bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
             >
               Investor Login
             </Button>
@@ -44,51 +44,51 @@ const Hero = () => {
                 <Button
                   variant="ghost"
                   size="icon"
-                  className="md:hidden text-white hover:bg-white/10"
+                  className="md:hidden text-silver-mist hover:bg-silver-mist/10"
                 >
                   <Menu className="h-6 w-6" />
                   <span className="sr-only">Toggle menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] bg-obsidian border-l border-slate-700">
+              <SheetContent side="right" className="w-[300px] bg-obsidian border-l border-deep-petrol">
                 <div className="flex flex-col space-y-6 mt-8">
                   <a 
                     href="#" 
-                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium text-lg py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Our Firm
                   </a>
                   <a 
                     href="#" 
-                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium text-lg py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Platform
                   </a>
                   <a 
                     href="#" 
-                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium text-lg py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investments
                   </a>
                   <a 
                     href="#" 
-                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium text-lg py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     News
                   </a>
                   <a 
                     href="#" 
-                    className="text-white hover:text-deep-petrol transition-colors font-serif font-medium text-lg py-2"
+                    className="text-silver-mist hover:text-garnet-edge transition-colors font-serif font-medium text-lg py-2"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact
                   </a>
                   <Button 
-                    className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
+                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
@@ -123,12 +123,12 @@ const Hero = () => {
             <div className="space-y-8 animate-fade-in">
               {/* Main headline */}
               <div className="space-y-6">
-                <h1 className="text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
-                  Where Strength <span className="text-white font-normal drop-shadow-lg">Meets</span><br />
+                <h1 className="text-5xl lg:text-7xl font-serif font-light text-silver-mist leading-tight">
+                  Where Strength <span className="text-silver-mist font-normal drop-shadow-lg">Meets</span><br />
                   <span className="font-medium">Stewardship.</span>
                 </h1>
                 
-                <p className="text-xl text-gray-300 max-w-2xl leading-relaxed font-sans">
+                <p className="text-xl text-silver-mist/80 max-w-2xl leading-relaxed font-sans">
                   Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
                 </p>
               </div>
@@ -137,7 +137,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
                   size="lg" 
-                  className="bg-deep-petrol hover:bg-deep-petrol/90 text-white px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
+                  className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -146,16 +146,16 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-white text-gray-600 hover:bg-white hover:text-obsidian px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300"
+                  className="border-2 border-silver-mist text-silver-mist hover:bg-silver-mist hover:text-obsidian px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300"
                 >
                   Learn More
                 </Button>
               </div>
               
               {/* Trust indicators */}
-              <div className="pt-8 border-t border-gray-700">
-                <p className="text-sm text-gray-400 mb-4 font-serif uppercase tracking-wide">Trusted by institutional investors</p>
-                <div className="flex items-center space-x-8 text-gray-500">
+              <div className="pt-8 border-t border-deep-petrol">
+                <p className="text-sm text-silver-mist/60 mb-4 font-serif uppercase tracking-wide">Trusted by institutional investors</p>
+                <div className="flex items-center space-x-8 text-silver-mist/70">
                   <div className="flex items-center space-x-2">
                     <Shield className="h-4 w-4" />
                     <span className="text-sm font-serif">SEC Registered</span>
@@ -172,36 +172,36 @@ const Hero = () => {
             <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               
               {/* Experience card */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-all duration-300 group">
+              <div className="bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 hover:bg-silver-mist/10 transition-all duration-300 group">
                 <div className="flex items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-5xl font-serif font-light text-white mb-2 group-hover:text-deep-petrol transition-colors">150+</h3>
-                    <p className="text-gray-400 text-sm font-mono uppercase tracking-wide">Years of Experience</p>
+                    <h3 className="text-5xl font-serif font-light text-silver-mist mb-2 group-hover:text-garnet-edge transition-colors">150+</h3>
+                    <p className="text-silver-mist/60 text-sm font-mono uppercase tracking-wide">Years of Experience</p>
                   </div>
-                  <TrendingUp className="h-8 w-8 text-deep-petrol opacity-70" />
+                  <TrendingUp className="h-8 w-8 text-garnet-edge opacity-70" />
                 </div>
               </div>
               
               {/* Bridge loans card */}
               <div className="bg-gradient-to-br from-deep-petrol/20 to-garnet-edge/20 backdrop-blur-sm border border-deep-petrol/30 rounded-lg p-8 hover:from-deep-petrol/30 hover:to-garnet-edge/30 transition-all duration-300">
-                <h3 className="text-5xl font-serif font-light text-white mb-2">$5B</h3>
-                <p className="text-gray-300 text-sm font-mono uppercase tracking-wide mb-2">of Bridge Completed</p>
-                <p className="text-xs text-gray-400 font-mono">in the Last 10 Years</p>
+                <h3 className="text-5xl font-serif font-light text-silver-mist mb-2">$5B</h3>
+                <p className="text-silver-mist/80 text-sm font-mono uppercase tracking-wide mb-2">of Bridge Completed</p>
+                <p className="text-xs text-silver-mist/60 font-mono">in the Last 10 Years</p>
               </div>
               
               {/* Closed transactions card */}
-              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-all duration-300">
-                <h3 className="text-5xl font-serif font-light text-white mb-2">$18B</h3>
-                <p className="text-gray-300 text-sm font-mono uppercase tracking-wide mb-2">Closed Transactions</p>
+              <div className="bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 hover:bg-silver-mist/10 transition-all duration-300">
+                <h3 className="text-5xl font-serif font-light text-silver-mist mb-2">$18B</h3>
+                <p className="text-silver-mist/80 text-sm font-mono uppercase tracking-wide mb-2">Closed Transactions</p>
               </div>
               
               {/* Philosophy card - Enhanced */}
               <div className="bg-gradient-to-r from-garnet-edge/20 to-deep-petrol/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-8 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-garnet-edge to-deep-petrol"></div>
-                <blockquote className="text-white text-2xl font-serif font-light italic leading-relaxed mb-4">
+                <blockquote className="text-silver-mist text-2xl font-serif font-light italic leading-relaxed mb-4">
                   "We Don't Chase Headlines Or Offer Shortcuts."
                 </blockquote>
-                <p className="text-gray-400 text-sm font-mono uppercase tracking-wide">— Investment Philosophy</p>
+                <p className="text-silver-mist/60 text-sm font-mono uppercase tracking-wide">— Investment Philosophy</p>
               </div>
               
             </div>
