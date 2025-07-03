@@ -39,16 +39,6 @@ const WhyPrivateCredit = () => {
                     </div>
                   </div>
                 </div>
-                
-                {/* Video title and description */}
-                <div className="p-8 bg-silver-mist/95 backdrop-blur-sm">
-                  <h3 className="text-2xl font-serif font-medium text-obsidian mb-3">
-                    Understanding Private Credit Real Estate
-                  </h3>
-                  <p className="text-deep-petrol font-sans leading-relaxed">
-                    Discover how our strategic approach to private credit lending creates value while mitigating risk in today's evolving commercial real estate market.
-                  </p>
-                </div>
               </div>
             </div>
           </div>
