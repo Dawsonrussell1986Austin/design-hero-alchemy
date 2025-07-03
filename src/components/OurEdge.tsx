@@ -1,59 +1,55 @@
 const OurEdge = () => {
   return (
-    <div className="relative z-10 py-20" style={{
+    <div className="relative z-10 py-32 min-h-screen flex items-center" style={{
       backgroundImage: 'url(/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
     }}>
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-obsidian/70"></div>
+      <div className="absolute inset-0 bg-obsidian/75"></div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-7xl mx-auto space-y-16">
+        <div className="max-w-5xl mx-auto text-center">
           
-          {/* Content section */}
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-light text-silver-mist mb-8">
-              Our Edge
-            </h2>
+          {/* Title */}
+          <h2 className="text-6xl lg:text-7xl font-serif font-light text-silver-mist mb-16">
+            Our Edge
+          </h2>
+          
+          {/* Main content */}
+          <div className="space-y-12 text-silver-mist">
             
-            <div className="space-y-6 text-silver-mist/90 leading-relaxed">
-              <p className="text-lg font-sans">
-                Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust.
+            {/* Main description */}
+            <p className="text-2xl lg:text-3xl font-light leading-relaxed font-serif">
+              Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust.
+            </p>
+
+            {/* Highlighted quote */}
+            <div className="max-w-3xl mx-auto bg-accent-brown/20 border border-accent-brown/30 rounded-lg p-8">
+              <p className="text-xl lg:text-2xl font-serif italic text-silver-mist">
+                "We uphold excellence in every deal, every report, and every relationship."
               </p>
+            </div>
 
-              {/* Highlighted quote */}
-              <div className="bg-accent-brown/20 border-l-4 border-accent-brown p-6 rounded-r-lg text-left max-w-3xl mx-auto">
-                <p className="text-lg font-serif italic text-silver-mist">
-                  uphold in every deal, every report, and every relationship.
-                </p>
+            {/* Key points grid */}
+            <div className="grid md:grid-cols-3 gap-8 mt-16">
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
+                <div className="text-4xl font-serif font-light text-garnet-edge mb-4">$21B+</div>
+                <p className="text-lg text-silver-mist/90">in closed transactions over the past three decades</p>
               </div>
-
-              {/* Bullet points */}
-              <div className="space-y-4 text-left max-w-3xl mx-auto">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-base">
-                    <span className="text-garnet-edge font-medium">$21B+ in closed transactions</span> over the past three decades
-                  </p>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-base">
-                    Institutional underwriting <span className="text-garnet-edge font-medium">coupled with deep market expertise</span>
-                  </p>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                  <p className="text-base">
-                    Flexible capital <span className="text-garnet-edge font-medium">structures including debt and equity</span> for real estate sponsors
-                  </p>
-                </div>
+              
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
+                <div className="text-lg font-serif font-medium text-garnet-edge mb-4">Deep Expertise</div>
+                <p className="text-lg text-silver-mist/90">Institutional underwriting coupled with deep market expertise</p>
+              </div>
+              
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
+                <div className="text-lg font-serif font-medium text-garnet-edge mb-4">Flexible Solutions</div>
+                <p className="text-lg text-silver-mist/90">Flexible capital structures including debt and equity for real estate sponsors</p>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
