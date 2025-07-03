@@ -2,21 +2,13 @@ const WhyPrivateCredit = () => {
   return (
     <div className="relative z-10 bg-silver-mist py-20">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-8">
-              Why Private Credit Real Estate Lending
-            </h2>
-            <p className="text-xl text-deep-petrol leading-relaxed max-w-4xl mx-auto font-sans">
-              In a market based on evolving uncertainty, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
-            </p>
-          </div>
-
-          {/* Video Player */}
+        <div className="max-w-7xl mx-auto">
+          
+          {/* Large Video Player */}
           <div className="mb-20">
-            <div className="max-w-5xl mx-auto">
-              <div className="relative rounded-xl overflow-hidden bg-obsidian/10 backdrop-blur-sm border border-deep-petrol/30 shadow-2xl">
-                <div className="aspect-video bg-gradient-to-br from-obsidian/20 to-deep-petrol/20 relative">
+            <div className="w-full">
+              <div className="relative rounded-2xl overflow-hidden bg-obsidian/10 backdrop-blur-sm border border-deep-petrol/30 shadow-2xl">
+                <div className="aspect-[16/9] bg-gradient-to-br from-obsidian/20 to-deep-petrol/20 relative" style={{ minHeight: '60vh' }}>
                   <video 
                     className="w-full h-full object-cover"
                     controls
@@ -34,13 +26,22 @@ const WhyPrivateCredit = () => {
                   
                   {/* Play button overlay when paused */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="w-20 h-20 bg-garnet-edge/90 rounded-full flex items-center justify-center backdrop-blur-sm border border-silver-mist/20 shadow-lg">
-                      <div className="w-0 h-0 border-l-[12px] border-l-obsidian border-y-[8px] border-y-transparent ml-1"></div>
+                    <div className="w-24 h-24 bg-garnet-edge/90 rounded-full flex items-center justify-center backdrop-blur-sm border border-silver-mist/20 shadow-lg">
+                      <div className="w-0 h-0 border-l-[16px] border-l-obsidian border-y-[12px] border-y-transparent ml-1"></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-8">
+              Why Private Credit Real Estate Lending
+            </h2>
+            <p className="text-xl text-deep-petrol leading-relaxed max-w-4xl mx-auto font-sans">
+              In a market based on evolving uncertainty, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
