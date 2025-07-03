@@ -178,7 +178,7 @@ const Hero = () => {
                     <h3 className="text-5xl font-serif font-light text-silver-mist mb-2 group-hover:text-garnet-edge transition-colors">150+</h3>
                     <p className="text-silver-mist/60 text-sm font-mono uppercase tracking-wide">Years of Experience</p>
                   </div>
-                  <TrendingUp className="h-8 w-8 text-garnet-edge opacity-70" />
+                  <TrendingUp className="h-8 w-8 text-accent-brown opacity-70" />
                 </div>
               </div>
               
@@ -196,8 +196,8 @@ const Hero = () => {
               </div>
               
               {/* Philosophy card - Enhanced */}
-              <div className="bg-gradient-to-r from-garnet-edge/20 to-deep-petrol/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-8 relative overflow-hidden">
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-garnet-edge to-deep-petrol"></div>
+              <div className="bg-gradient-to-r from-accent-brown/15 to-deep-petrol/20 backdrop-blur-sm border border-accent-brown/20 rounded-lg p-8 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent-brown to-deep-petrol"></div>
                 <blockquote className="text-silver-mist text-2xl font-serif font-light italic leading-relaxed mb-4">
                   "We Don't Chase Headlines Or Offer Shortcuts."
                 </blockquote>

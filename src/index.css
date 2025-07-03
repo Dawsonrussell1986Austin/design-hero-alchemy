@@ -150,4 +150,12 @@
   .bg-nav-light {
     background-color: hsl(var(--nav-light));
   }
+  
+  .text-accent-brown {
+    color: hsl(var(--accent-brown));
+  }
+  
+  .bg-accent-brown {
+    background-color: hsl(var(--accent-brown));
+  }
 }

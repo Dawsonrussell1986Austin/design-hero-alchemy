@@ -74,7 +74,8 @@ export default {
 				'silver-mist': 'hsl(var(--silver-mist))',
 				'deep-petrol': 'hsl(var(--deep-petrol))',
 				'garnet-edge': 'hsl(var(--garnet-edge))',
-				'nav-light': 'hsl(var(--nav-light))'
+				'nav-light': 'hsl(var(--nav-light))',
+				'accent-brown': 'hsl(var(--accent-brown))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
