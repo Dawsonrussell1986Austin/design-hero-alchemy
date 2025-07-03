@@ -28,9 +28,7 @@ const OurEdge = () => {
                 
                 <div className="space-y-6 text-silver-mist/90 leading-relaxed">
                   <p className="text-lg font-sans">
-                    Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> institutional expectations 
-                    using <span className="text-garnet-edge font-medium">industry</span> best practices. We focus on what matters: <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust. It's a 
-                    commitment we embrace in all facets of our business.
+                    Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust.
                   </p>
 
                   {/* Highlighted quote */}
@@ -45,42 +43,21 @@ const OurEdge = () => {
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-base">
-                        Institutional underwriting <span className="text-garnet-edge font-medium">coupled with deep market expertise allows for agility when facing complex lending opportunities.</span> <span className="line-through text-silver-mist/50">meets experienced facility</span>
+                        <span className="text-garnet-edge font-medium">$21B+ in closed transactions</span> over the past three decades
                       </p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-base">
-                        Robust internal controls and governance frameworks <span className="text-garnet-edge font-medium">designed to meet</span> institutional compliance standards.
+                        Institutional underwriting <span className="text-garnet-edge font-medium">coupled with deep market expertise</span>
                       </p>
                     </div>
 
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-base">
-                        <span className="text-garnet-edge font-medium">$5B+ in bridge loans closed, serviced, and exited structured</span> over the last <span className="text-garnet-edge font-medium">three</span> decades
-                      </p>
-                    </div>
-
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-base">
-                        In total over $21B in closed transactions lending transactions closed, serviced and exited over the past three decades.
-                      </p>
-                    </div>
-
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-base">
-                        FHA/HUD capabilities for long-term stability with predefined exits
-                      </p>
-                    </div>
-
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
-                      <p className="text-base">
-                        Flexible capital <span className="text-garnet-edge font-medium">structures including debt and equity</span> <span className="text-garnet-edge font-medium">is</span> designed to provide solutions for real estate <span className="text-garnet-edge font-medium">sponsors. borrowers and</span> <span className="line-through text-silver-mist/50">institutional investors</span>
+                        Flexible capital <span className="text-garnet-edge font-medium">structures including debt and equity</span> for real estate sponsors
                       </p>
                     </div>
                   </div>
