@@ -38,12 +38,13 @@
     --radius: 0.5rem;
 
     /* OAK Brand Colors */
-    --obsidian: 220 9% 7%;        /* 111214 */
-    --graphite-fog: 207 38% 16%;   /* 1c2b39 */
-    --silver-mist: 200 6% 85%;     /* d7d8d6 */
-    --deep-petrol: 200 8% 32%;     /* 4a5359 */
-    --garnet-edge: 86 12% 53%;     /* 8a9786 */
-    --nav-light: 42 23% 92%;       /* EEECE9 */
+    --obsidian: 207 74% 12%;       /* 082233 */
+    --graphite-fog: 207 39% 23%;   /* 233f52 */
+    --silver-mist: 40 14% 89%;     /* e4e3e1 */
+    --deep-petrol: 196 9% 46%;     /* 6c7d80 */
+    --garnet-edge: 81 11% 70%;     /* aebea9 */
+    --nav-light: 40 14% 89%;       /* e4e3e1 */
+    --accent-brown: 19 49% 44%;    /* a85839 */
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
