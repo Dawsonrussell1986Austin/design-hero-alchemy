@@ -27,7 +27,7 @@ const WhyPrivateCredit = () => {
                   {/* Play button overlay when paused */}
                   <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                     <div className="w-32 h-32 bg-garnet-edge/90 rounded-full flex items-center justify-center backdrop-blur-sm border border-silver-mist/20 shadow-lg">
-                      <div className="w-0 h-0 border-l-[20px] border-l-obsidian border-y-[16px] border-y-transparent ml-1"></div>
+                      <div className="w-0 h-0 border-l-[20px] border-l-obsidian border-y-[16px] border-y-transparent"></div>
                     </div>
                   </div>
                 </div>
