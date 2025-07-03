@@ -1,24 +1,17 @@
 const OurEdge = () => {
   return (
-    <div className="relative z-10 bg-deep-petrol py-20">
-      <div className="container mx-auto px-6">
+    <div className="relative z-10 py-20" style={{
+      backgroundImage: 'url(/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-obsidian/70"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto space-y-16">
           
-          {/* Full width image */}
-          <div className="relative w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-brown" style={{
-              boxShadow: 'inset 0 0 0 4px hsl(var(--silver-mist)), inset 0 0 0 8px hsl(var(--accent-brown))',
-              aspectRatio: '16/9'
-            }}>
-              <img 
-                src="/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png"
-                alt="Modern conference room"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
-            </div>
-          </div>
-
           {/* Content section */}
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h2 className="text-4xl lg:text-5xl font-serif font-light text-silver-mist mb-8">
