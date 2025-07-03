@@ -2,6 +2,7 @@
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
 import WhyPrivateCredit from "./WhyPrivateCredit";
+import OurEdge from "./OurEdge";
 import Footer from "./Footer";
 
 const Hero = () => {
@@ -29,6 +30,9 @@ const Hero = () => {
 
       {/* Why Private Credit Section */}
       <WhyPrivateCredit />
+
+      {/* Our Edge Section */}
+      <OurEdge />
 
       {/* Footer */}
       <Footer />
