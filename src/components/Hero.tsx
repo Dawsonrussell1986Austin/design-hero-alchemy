@@ -33,7 +33,7 @@ const Hero = () => {
             
             {/* Desktop Investor Login Button */}
             <Button 
-              className="hidden md:block bg-garnet-edge hover:bg-garnet-edge/90 text-nav-light px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
+              className="hidden md:block bg-garnet-edge hover:bg-garnet-edge/90 text-obsidian px-6 py-2 font-serif font-medium rounded-sm transition-all duration-300"
             >
               Investor Login
             </Button>
@@ -88,7 +88,7 @@ const Hero = () => {
                     Contact
                   </a>
                   <Button 
-                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-nav-light px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
+                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-obsidian px-6 py-3 font-serif font-medium rounded-sm transition-all duration-300 mt-4"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
@@ -137,7 +137,7 @@ const Hero = () => {
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button 
                   size="lg" 
-                  className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
+                  className="bg-garnet-edge hover:bg-garnet-edge/90 text-obsidian px-8 py-4 text-lg font-serif font-medium rounded-sm transition-all duration-300 hover:scale-105 group"
                 >
                   Get Started
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
