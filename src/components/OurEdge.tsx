@@ -66,7 +66,7 @@ const OurEdge = () => {
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-base">
-                        In total <span className="bg-accent-brown/30 px-2 py-1 rounded">over $21B in closed transactions</span> lending transactions closed, serviced and exited over the past three decades.
+                        In total over $21B in closed transactions lending transactions closed, serviced and exited over the past three decades.
                       </p>
                     </div>
 
