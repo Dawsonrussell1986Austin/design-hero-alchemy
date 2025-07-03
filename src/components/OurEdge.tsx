@@ -26,8 +26,8 @@ const OurEdge = () => {
                 
                 <div className="space-y-6 text-silver-mist/90 leading-relaxed">
                   <p className="text-lg font-sans">
-                    Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> <span className="text-garnet-edge font-medium">engineered to satisfy</span> institutional expectations 
-                    using <span className="text-garnet-edge font-medium">through industry leading</span> best in-class practices. We focus on what matters: <span className="text-garnet-edge font-medium">protecting capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> steady income, and building long-term trust. It's a 
+                    Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> institutional expectations 
+                    using <span className="text-garnet-edge font-medium">industry</span> best practices. We focus on what matters: <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust. It's a 
                     commitment we embrace in all facets of our business.
                   </p>
 
