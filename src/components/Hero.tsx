@@ -16,7 +16,7 @@ const Hero = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/ef0a0cca-4b1a-4e4b-adb1-8e51b9fca3d8.png" 
+                src="/lovable-uploads/71932cd7-9481-49c5-8971-a718dfd8a289.png" 
                 alt="OAK Real Estate Partners" 
                 className="h-12 w-auto"
               />
