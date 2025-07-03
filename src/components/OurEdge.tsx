@@ -1,14 +1,14 @@
 const OurEdge = () => {
   return (
-    <div className="relative z-10 bg-obsidian py-20">
+    <div className="relative z-10 bg-deep-petrol py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             
             {/* Left column - Image */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ 
-                boxShadow: '0 0 60px 10px hsl(var(--accent-brown) / 0.3), 0 0 100px 20px hsl(var(--accent-brown) / 0.1)' 
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-brown" style={{
+                boxShadow: 'inset 0 0 0 4px hsl(var(--silver-mist)), inset 0 0 0 8px hsl(var(--accent-brown))'
               }}>
                 <img 
                   src="/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png"
