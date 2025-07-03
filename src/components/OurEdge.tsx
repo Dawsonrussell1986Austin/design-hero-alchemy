@@ -7,7 +7,9 @@ const OurEdge = () => {
             
             {/* Left column - Image */}
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl" style={{ 
+                boxShadow: '0 0 60px 10px hsl(var(--accent-brown) / 0.3), 0 0 100px 20px hsl(var(--accent-brown) / 0.1)' 
+              }}>
                 <img 
                   src="/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png"
                   alt="Modern conference room"
@@ -64,7 +66,7 @@ const OurEdge = () => {
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-3 flex-shrink-0"></div>
                       <p className="text-base">
-                        <span className="line-through text-silver-mist/50">$18B+ in closed transactions (throughout, I have personally been involved in well over 200+ in transactions)</span> In total <span className="bg-accent-brown/30 px-2 py-1 rounded">over $21B in closed transactions</span> lending transactions closed, serviced and exited over the past three decades.
+                        In total <span className="bg-accent-brown/30 px-2 py-1 rounded">over $21B in closed transactions</span> lending transactions closed, serviced and exited over the past three decades.
                       </p>
                     </div>
 
