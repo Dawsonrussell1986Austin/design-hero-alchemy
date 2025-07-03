@@ -12,6 +12,47 @@ const WhyPrivateCredit = () => {
             </p>
           </div>
 
+          {/* Video Player */}
+          <div className="mb-20">
+            <div className="max-w-5xl mx-auto">
+              <div className="relative rounded-xl overflow-hidden bg-obsidian/10 backdrop-blur-sm border border-deep-petrol/30 shadow-2xl">
+                <div className="aspect-video bg-gradient-to-br from-obsidian/20 to-deep-petrol/20 relative">
+                  <video 
+                    className="w-full h-full object-cover"
+                    controls
+                    poster="/lovable-uploads/40f41be8-accc-4a72-a71a-e72c8e228281.png"
+                    style={{
+                      filter: 'contrast(1.1) brightness(0.95)'
+                    }}
+                  >
+                    <source src="#" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  
+                  {/* Custom overlay for branding */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/40 via-transparent to-transparent pointer-events-none"></div>
+                  
+                  {/* Play button overlay when paused */}
+                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                    <div className="w-20 h-20 bg-garnet-edge/90 rounded-full flex items-center justify-center backdrop-blur-sm border border-silver-mist/20 shadow-lg">
+                      <div className="w-0 h-0 border-l-[12px] border-l-obsidian border-y-[8px] border-y-transparent ml-1"></div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Video title and description */}
+                <div className="p-8 bg-silver-mist/95 backdrop-blur-sm">
+                  <h3 className="text-2xl font-serif font-medium text-obsidian mb-3">
+                    Understanding Private Credit Real Estate
+                  </h3>
+                  <p className="text-deep-petrol font-sans leading-relaxed">
+                    Discover how our strategic approach to private credit lending creates value while mitigating risk in today's evolving commercial real estate market.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Market Opportunity */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
