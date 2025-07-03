@@ -25,12 +25,6 @@ const OurEdge = () => {
               Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust.
             </p>
 
-            {/* Highlighted quote */}
-            <div className="max-w-3xl mx-auto bg-accent-brown/20 border border-accent-brown/30 rounded-lg p-8">
-              <p className="text-xl lg:text-2xl font-serif italic text-silver-mist">
-                "We uphold excellence in every deal, every report, and every relationship."
-              </p>
-            </div>
 
             {/* Key points grid */}
             <div className="grid md:grid-cols-3 gap-8 mt-16">
