@@ -2,7 +2,7 @@ import { Shield } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-obsidian py-16">
+    <footer className="bg-obsidian py-16" style={{ backgroundImage: 'none' }}>
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-4 gap-12 mb-12">
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="space-y-6">
               <h4 className="text-lg font-serif font-medium text-silver-mist">Quick Links</h4>
               <nav className="space-y-3">
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Our Firm</a>
+                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Our Firm</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Platform</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Investments</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">News & Insights</a>
