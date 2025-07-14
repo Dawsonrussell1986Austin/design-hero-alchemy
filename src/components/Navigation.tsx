@@ -13,8 +13,8 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img 
-              src="/lovable-uploads/71932cd7-9481-49c5-8971-a718dfd8a289.png" 
-              alt="OAK Real Estate Partners" 
+              src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
+              alt="OAK" 
               className="h-14 w-auto transition-transform duration-300 hover:scale-105"
             />
           </div>
