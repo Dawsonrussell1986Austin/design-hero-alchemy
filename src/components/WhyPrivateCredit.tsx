@@ -89,7 +89,7 @@ const WhyPrivateCredit = () => {
             </div>
 
             {/* Our Strategy */}
-            <div className="bg-gradient-to-br from-accent-brown/10 to-garnet-edge/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg p-8 hover:from-accent-brown/15 hover:to-garnet-edge/15 transition-all duration-300">
+            <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
               <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Our Strategy</h3>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 Our strategy is designed to unlock value in underserved niches while prioritizing downside protection, income consistency, and performance.
