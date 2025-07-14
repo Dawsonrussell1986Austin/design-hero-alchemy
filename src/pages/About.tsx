@@ -4,155 +4,233 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-cream">{/* Changed to cream background */}
+    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section with Cityscape */}
-      <div className="relative py-24 lg:py-32 bg-cream">
-        <div className="absolute inset-0 flex items-end justify-end pr-8 lg:pr-16">
+      {/* Hero Section with Background Image */}
+      <div className="relative min-h-[85vh] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <img 
             src="/lovable-uploads/83330b8e-1b82-4836-98fb-4d33bd9ab0fe.png" 
             alt="City skyline" 
-            className="h-48 lg:h-64 w-auto opacity-20"
+            className="w-full h-full object-cover opacity-30"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-obsidian leading-tight tracking-tight mb-8">
-              Investors Expect More - <span className="text-accent-brown">OAK Provides</span>{" "}
-              <span className="text-garnet-edge">Disciplined Income & Growth</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-deep-petrol max-w-3xl mx-auto leading-relaxed font-light">
-              A Non-Bank Financial Institution, acutely focused on real estate credit rooted in discipline, 
-              built for stability and across multiple market cycles.
-            </p>
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
+                Investors Expect More
+              </h1>
+              <h1 className="text-6xl lg:text-8xl font-light leading-[0.9] tracking-tight">
+                <span className="text-accent-brown">OAK Provides</span> <span className="text-garnet-edge">Results</span>
+              </h1>
+            </div>
+            
+            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
+                A Non-Bank Financial Institution, acutely focused on real estate credit rooted in 
+                <span className="text-garnet-edge"> discipline</span>, built for stability and across multiple market cycles.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <Button 
+                size="lg" 
+                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 group rounded-sm"
+              >
+                Our Approach
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+              >
+                Leadership Team
+              </Button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Discipline and Stability Section with Business Professional Image */}
-      <div className="py-20 bg-gradient-to-r from-cream to-silver-mist/10 relative overflow-hidden">
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
+      {/* Large Video/Image Section */}
+      <div className="relative z-10 bg-silver-mist py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="mb-20">
+              <div className="w-full">
+                <div className="relative rounded-2xl overflow-hidden bg-obsidian/10 backdrop-blur-sm border border-deep-petrol/30 shadow-2xl">
+                  <div className="aspect-[16/9] bg-gradient-to-br from-obsidian/20 to-deep-petrol/20 relative" style={{ minHeight: '60vh' }}>
+                    <img 
+                      src="/lovable-uploads/55f40082-fc81-4584-ab22-ec6acc5246a8.png"
+                      alt="Professional pathway"
+                      className="w-full h-full object-cover"
+                      style={{
+                        filter: 'contrast(1.1) brightness(0.95)'
+                      }}
+                    />
+                    
+                    {/* Custom overlay for branding */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/40 via-transparent to-transparent"></div>
+                    
+                    {/* Overlay Content */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="text-center max-w-4xl mx-auto px-8">
+                        <h2 className="text-4xl lg:text-5xl font-light text-silver-mist mb-6">
+                          Discipline and Stability
+                        </h2>
+                        <p className="text-xl text-silver-mist/90 leading-relaxed">
+                          Discipline is a strong predictor of success, which in turn drives stability across multiple market cycles.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Glassmorphic Cards Grid */}
+            <div className="grid md:grid-cols-3 gap-8 mb-20">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-obsidian mb-6">Control and Stability</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Discipline is a strong predictor of success, which in turn drives stability across market volatility.
+                </p>
+              </div>
+              
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-obsidian mb-6">Reduced Risk-Taking</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Disciplined organizations are less likely to engage in impulsive strategies that threaten stability.
+                </p>
+              </div>
+              
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-obsidian mb-6">Predictability</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Consistent habits and behaviors lead to greater reliability among investors and borrowers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Full-Width Content Section */}
+      <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
+        {/* Background texture */}
+        <div className="absolute inset-0 opacity-20">
           <img 
-            src="/lovable-uploads/55f40082-fc81-4584-ab22-ec6acc5246a8.png" 
-            alt="Professional pathway" 
-            className="h-80 w-auto opacity-15"
+            src="/lovable-uploads/2e03170c-dfef-4894-8917-fb149fd7b232.png" 
+            alt="Family journey" 
+            className="w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-obsidian/80 via-transparent to-obsidian/80"></div>
         </div>
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-12 text-center">
-              Discipline and Stability
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-6xl mx-auto text-center mb-20">
+            <h2 className="text-5xl lg:text-7xl font-light text-silver-mist mb-12 leading-tight">
+              Our <span className="text-accent-brown">Story</span>
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="space-y-4 bg-cream/80 backdrop-blur-sm p-6 rounded-lg border border-accent-brown/20">
-                <h3 className="text-xl font-medium text-garnet-edge">Control and Stability</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  Discipline is a strong predictor of success, which in turn drives stability.
+            
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="space-y-8 text-left">
+                <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
+                  Oak is a premier real estate credit lender with our core business focus on senior secured loans 
+                  backed by income-producing commercial properties. Our lending philosophy is grounded in real assets, 
+                  an institutional discipline, and a commitment to long-term capital protection.
+                </p>
+                
+                <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
+                  In a private credit landscape where polish often outpaces performance, Oak delivers industry 
+                  leading expertise in a highly inefficient, fragmented and unserved sector of the market.
                 </p>
               </div>
-              <div className="space-y-4 bg-cream/80 backdrop-blur-sm p-6 rounded-lg border border-accent-brown/20">
-                <h3 className="text-xl font-medium text-garnet-edge">Reduced Risk-Taking</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  Disciplined organizations are less likely to engage in impulsive or risky strategies 
-                  that could threaten their stability and overall financial well-being.
-                </p>
-              </div>
-              <div className="space-y-4 bg-cream/80 backdrop-blur-sm p-6 rounded-lg border border-accent-brown/20">
-                <h3 className="text-xl font-medium text-garnet-edge">Predictability and Reliability</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  Discipline enables consistent habits and behaviors, leading to greater predictability 
-                  and reliability within a company, which fosters stability among employees, investors, and borrowers.
-                </p>
+              
+              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-12 hover:bg-background/30 transition-all duration-300">
+                <h3 className="text-3xl font-light text-garnet-edge mb-8">Experience That Matters</h3>
+                <div className="space-y-6">
+                  <div className="text-center">
+                    <div className="text-4xl font-light text-accent-brown mb-2">150+</div>
+                    <div className="text-silver-mist/80">Years Combined Experience</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-light text-accent-brown mb-2">$5B+</div>
+                    <div className="text-silver-mist/80">Bridge Loans Structured</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-4xl font-light text-accent-brown mb-2">$18B+</div>
+                    <div className="text-silver-mist/80">Total Transactions</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Main Content Section */}
-      <div className="py-20 bg-cream">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-8 text-deep-petrol">
-              <p className="text-lg leading-relaxed">
-                Oak is a premier real estate credit lender with our core business focus on senior secured loans 
-                backed by income-producing commercial properties. Our lending philosophy is grounded in real assets, 
-                an institutional discipline, and a commitment to long-term capital protection.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                In a private credit landscape where polish often outpaces performance, Oak delivers industry 
-                leading expertise in a highly inefficient, fragmented and unserved sector of the market. 
-                We don't chase headlines—we create income strategies that prioritize downside protection, 
-                predictability, and trust.
-              </p>
-              
-              <p className="text-lg leading-relaxed">
-                With more than 150 years of combined experience across lending, capital markets, and structured finance, 
-                our team has navigated multiple real estate cycles. Collectively, we've structured over $5 billion 
-                in bridge loans and executed more than $18 billion in total transactions.
+      {/* Why Real Estate Credit Section */}
+      <div className="relative z-10 bg-silver-mist py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+                Why Real Estate Credit <span className="text-accent-brown">Matters</span>
+              </h2>
+              <p className="text-2xl text-deep-petrol leading-relaxed max-w-5xl mx-auto font-light">
+                At Oak, we focus on real estate credit that's backed by the property itself — structured so 
+                our investors' capital is prioritized to be repaid first.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Real Estate Credit Lending Matters */}
-      <div className="py-20 bg-gradient-to-br from-silver-mist/20 to-cream relative">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-12 text-center">
-              Why Real Estate Credit Lending Matters
-            </h2>
-            <p className="text-lg text-deep-petrol leading-relaxed mb-12 text-center max-w-4xl mx-auto">
-              At Oak, we focus on real estate credit that's backed by the property itself — and structured so 
-              our investors' capital is prioritized to be repaid first. This approach offers clear advantages:
-            </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">Collateral Security</h3>
-                <p className="text-deep-petrol leading-relaxed">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Collateral Security</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
                   Every lending opportunity is backed by physical real estate, offering tangible assets 
                   in the event of default.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">Predictable Cash Flows</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  Senior position loans generate stable and predictable income.
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Predictable Cash Flows</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Senior position loans generate stable and predictable income streams.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">Inflation Protection</h3>
-                <p className="text-deep-petrol leading-relaxed">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Inflation Protection</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
                   Real estate values and rental income often rise with inflation, helping preserve asset values.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">Low Volatility</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  Real estate markets tend to be more stable and exhibit less volatility relative 
-                  to public equities or debt markets.
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Low Volatility</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Real estate markets exhibit less volatility relative to public equities or debt markets.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">High Recovery Potential</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  In adverse scenarios, hard real estate assets offer greater value recovery than intangible assets.
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">High Recovery Potential</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Hard real estate assets offer greater value recovery than intangible assets in adverse scenarios.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                <h3 className="text-xl font-medium text-accent-brown">Appreciation Opportunity</h3>
-                <p className="text-deep-petrol leading-relaxed">
-                  In addition to current income, real estate assets have historically appreciated in value over time.
+              <div className="bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-2xl p-10 hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-obsidian mb-6">Our Strategy</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  Designed to unlock value while prioritizing downside protection, income consistency, and performance.
                 </p>
               </div>
             </div>
@@ -160,38 +238,37 @@ const About = () => {
         </div>
       </div>
 
-      {/* Philosophy Section with Family Image */}
-      <div className="py-20 bg-cream relative overflow-hidden">
-        <div className="absolute right-0 bottom-0 transform translate-x-1/4">
-          <img 
-            src="/lovable-uploads/2e03170c-dfef-4894-8917-fb149fd7b232.png" 
-            alt="Family journey" 
-            className="h-64 w-auto opacity-10"
-          />
+      {/* Philosophy Section with Full-Screen Impact */}
+      <div className="relative min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol flex items-center justify-center overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
         </div>
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-12">Philosophy</h2>
-            <div className="space-y-8 text-deep-petrol">
-              <p className="text-lg leading-relaxed">
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-6xl lg:text-8xl font-light text-silver-mist mb-16 leading-tight">
+              Our <span className="text-garnet-edge">Philosophy</span>
+            </h2>
+            
+            <div className="bg-background/20 backdrop-blur-xl border border-silver-mist/20 rounded-3xl p-16 mb-16 hover:bg-background/30 transition-all duration-500">
+              <p className="text-2xl text-silver-mist/90 leading-relaxed font-light mb-8">
                 At Oak, integrity isn't a buzzword—it's a core value with a system to guide our growth. 
                 It drives how we lend to our borrowers, how we service our loans and how we report to our 
-                investors while serving as a principal of how we treat our partners.
+                investors while serving as a principle of how we treat our partners.
               </p>
-              <p className="text-xl font-medium text-garnet-edge leading-relaxed">
+              <p className="text-3xl font-light text-garnet-edge leading-relaxed">
                 We're strong because we're structured. Dependable because we're disciplined. 
                 Trusted for our consistent execution, especially when stakes are highest.
               </p>
             </div>
             
-            <div className="mt-12">
-              <Button 
-                size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-              >
-                Learn More About Our Approach
-              </Button>
-            </div>
+            <Button 
+              size="lg"
+              className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-16 py-6 text-xl font-medium tracking-wide transition-all duration-300 hover:scale-110 rounded-sm shadow-2xl"
+            >
+              Learn More About Our Approach
+            </Button>
           </div>
         </div>
       </div>
