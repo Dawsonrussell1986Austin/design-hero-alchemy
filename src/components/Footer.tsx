@@ -9,11 +9,6 @@ const Footer = () => {
             
             {/* Logo and Company Info */}
             <div className="lg:col-span-2 space-y-6">
-              <img 
-                src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
-                alt="OAK" 
-                className="h-16 w-auto filter brightness-0 invert"
-              />
               <p className="text-silver-mist/80 leading-relaxed font-sans max-w-md">
                 Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
               </p>
