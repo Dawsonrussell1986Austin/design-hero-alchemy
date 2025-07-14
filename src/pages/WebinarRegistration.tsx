@@ -41,7 +41,7 @@ const WebinarRegistration = () => {
                 <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
                   <Calendar className="h-8 w-8 text-accent-brown mx-auto mb-3" />
                   <h3 className="text-lg font-light text-silver-mist mb-1">Date</h3>
-                  <p className="text-silver-mist/80 text-sm">March 15, 2024</p>
+                  <p className="text-silver-mist/80 text-sm">August 15, 2025</p>
                 </div>
                 
                 <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
@@ -106,21 +106,29 @@ const WebinarRegistration = () => {
                 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                    <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award className="h-8 w-8 text-accent-brown" />
+                    <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-accent-brown/30">
+                      <img 
+                        src="/lovable-uploads/c40701c4-be9c-4192-b6ea-12fc78ad33be.png" 
+                        alt="Matthew Webster"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="text-lg font-light text-silver-mist mb-1">John Smith</h3>
-                    <p className="text-sm text-accent-brown mb-2">Managing Partner</p>
-                    <p className="text-xs text-silver-mist/70">25+ years experience, $5B+ transactions</p>
+                    <h3 className="text-lg font-light text-silver-mist mb-1">Matthew Webster</h3>
+                    <p className="text-sm text-accent-brown mb-2">Chief Credit Officer</p>
+                    <p className="text-xs text-silver-mist/70">Senior Vice President</p>
                   </div>
                   
                   <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                    <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Award className="h-8 w-8 text-accent-brown" />
+                    <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-accent-brown/30">
+                      <img 
+                        src="/lovable-uploads/3cc6ebb2-ef33-4f7e-9d1e-8c49c2328871.png" 
+                        alt="Raymond T. Davis"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
-                    <h3 className="text-lg font-light text-silver-mist mb-1">Sarah Johnson</h3>
-                    <p className="text-sm text-accent-brown mb-2">Head of Strategy</p>
-                    <p className="text-xs text-silver-mist/70">Former institutional investor expert</p>
+                    <h3 className="text-lg font-light text-silver-mist mb-1">Raymond T. Davis</h3>
+                    <p className="text-sm text-accent-brown mb-2">President & CSO</p>
+                    <p className="text-xs text-silver-mist/70">Chief Strategy Officer</p>
                   </div>
                 </div>
               </div>
