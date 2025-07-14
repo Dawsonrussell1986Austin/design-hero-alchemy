@@ -7,218 +7,271 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       {/* Navigation */}
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative py-24 lg:py-32 bg-cream">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-obsidian leading-tight tracking-tight mb-8">
-              Let's <span className="text-accent-brown">Connect</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-deep-petrol max-w-3xl mx-auto leading-relaxed font-light">
-              Ready to explore how Oak can support your real estate investment goals? We're here to help.
-            </p>
+      <div className="relative min-h-[85vh] overflow-hidden">
+        {/* Background texture overlay */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
+          <div className="max-w-6xl mx-auto text-center">
+            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
+                Let's <span className="text-accent-brown">Connect</span>
+              </h1>
+            </div>
+            
+            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
+                Ready to explore how Oak can support your real estate investment goals? 
+                <span className="text-garnet-edge"> We're here to help.</span>
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+              <Button 
+                size="lg" 
+                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 group rounded-sm"
+              >
+                Schedule a Call
+              </Button>
+              
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+              >
+                Download Overview
+              </Button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Contact Information and Form Section */}
-      <div className="py-20 bg-gradient-to-r from-cream to-silver-mist/10">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16">
-              
-              {/* Contact Information */}
-              <div className="space-y-8">
-                <div>
-                  <h2 className="text-3xl font-light text-obsidian mb-8">Get in Touch</h2>
-                  <p className="text-lg text-deep-petrol leading-relaxed mb-8">
-                    Whether you're seeking bridge financing, exploring HUD-insured loans, or looking for a strategic lending partner, our team is ready to discuss your needs.
-                  </p>
+      {/* Contact Information Cards Section */}
+      <div className="relative z-10 bg-silver-mist py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+                Get in <span className="text-accent-brown">Touch</span>
+              </h2>
+              <p className="text-2xl text-deep-petrol leading-relaxed max-w-5xl mx-auto font-light">
+                Whether you're seeking bridge financing, exploring HUD-insured loans, or looking for a strategic lending partner.
+              </p>
+            </div>
+
+            {/* Contact Info Cards */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <div className="w-16 h-16 bg-accent-brown/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <MapPin className="h-8 w-8 text-accent-brown" />
                 </div>
-
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                    <MapPin className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-medium text-obsidian mb-2">Office Location</h3>
-                      <p className="text-deep-petrol">
-                        123 Main Street<br />
-                        New York, NY 10001
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                    <Phone className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-medium text-obsidian mb-2">Phone</h3>
-                      <p className="text-deep-petrol">(555) 123-4567</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                    <Mail className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-medium text-obsidian mb-2">Email</h3>
-                      <p className="text-deep-petrol">info@oakrep.com</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4 p-6 bg-cream/80 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                    <Clock className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-medium text-obsidian mb-2">Business Hours</h3>
-                      <p className="text-deep-petrol">
-                        Monday - Friday: 9:00 AM - 6:00 PM EST<br />
-                        Saturday - Sunday: By appointment
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <h3 className="text-xl font-light text-obsidian mb-4">Office Location</h3>
+                <p className="text-deep-petrol leading-relaxed">
+                  123 Main Street<br />
+                  New York, NY 10001
+                </p>
               </div>
 
-              {/* Contact Form */}
-              <div className="bg-cream/60 backdrop-blur-sm p-8 rounded-lg border border-accent-brown/30">
-                <h3 className="text-2xl font-light text-obsidian mb-6">Send Us a Message</h3>
-                <form className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
-                    <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-deep-petrol mb-2">
-                        First Name *
-                      </label>
-                      <Input
-                        id="firstName"
-                        type="text"
-                        required
-                        className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-deep-petrol mb-2">
-                        Last Name *
-                      </label>
-                      <Input
-                        id="lastName"
-                        type="text"
-                        required
-                        className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
-                      />
-                    </div>
-                  </div>
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <div className="w-16 h-16 bg-accent-brown/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Phone className="h-8 w-8 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-light text-obsidian mb-4">Phone</h3>
+                <p className="text-deep-petrol leading-relaxed">(555) 123-4567</p>
+              </div>
 
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <div className="w-16 h-16 bg-accent-brown/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Mail className="h-8 w-8 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-light text-obsidian mb-4">Email</h3>
+                <p className="text-deep-petrol leading-relaxed">info@oakrep.com</p>
+              </div>
+
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-8 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <div className="w-16 h-16 bg-accent-brown/20 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Clock className="h-8 w-8 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-light text-obsidian mb-4">Business Hours</h3>
+                <p className="text-deep-petrol leading-relaxed">
+                  Mon-Fri: 9:00 AM - 6:00 PM EST<br />
+                  Weekends: By appointment
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact Form Section with Background */}
+      <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
+        {/* Background texture */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/20 to-transparent"></div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-5xl lg:text-6xl font-light text-silver-mist mb-8 leading-tight">
+                Send Us a <span className="text-accent-brown">Message</span>
+              </h2>
+              <p className="text-xl text-silver-mist/80 leading-relaxed max-w-3xl mx-auto font-light">
+                Tell us about your project and how we can help you achieve your real estate investment goals.
+              </p>
+            </div>
+
+            {/* Contact Form */}
+            <div className="bg-background/20 backdrop-blur-xl border border-silver-mist/20 rounded-3xl p-12 hover:bg-background/30 transition-all duration-500">
+              <form className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-deep-petrol mb-2">
-                      Email Address *
+                    <label htmlFor="firstName" className="block text-lg font-light text-silver-mist mb-3">
+                      First Name *
                     </label>
                     <Input
-                      id="email"
-                      type="email"
+                      id="firstName"
+                      type="text"
                       required
-                      className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
                     />
                   </div>
-
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-deep-petrol mb-2">
+                    <label htmlFor="lastName" className="block text-lg font-light text-silver-mist mb-3">
+                      Last Name *
+                    </label>
+                    <Input
+                      id="lastName"
+                      type="text"
+                      required
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-lg font-light text-silver-mist mb-3">
+                    Email Address *
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    required
+                    className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
+                  />
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <label htmlFor="phone" className="block text-lg font-light text-silver-mist mb-3">
                       Phone Number
                     </label>
                     <Input
                       id="phone"
                       type="tel"
-                      className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
                     />
                   </div>
-
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-deep-petrol mb-2">
+                    <label htmlFor="company" className="block text-lg font-light text-silver-mist mb-3">
                       Company/Organization
                     </label>
                     <Input
                       id="company"
                       type="text"
-                      className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
                     />
                   </div>
+                </div>
 
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-deep-petrol mb-2">
-                      Subject *
-                    </label>
-                    <Input
-                      id="subject"
-                      type="text"
-                      required
-                      className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20"
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="subject" className="block text-lg font-light text-silver-mist mb-3">
+                    Subject *
+                  </label>
+                  <Input
+                    id="subject"
+                    type="text"
+                    required
+                    className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg py-6 rounded-xl backdrop-blur-sm"
+                  />
+                </div>
 
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-deep-petrol mb-2">
-                      Message *
-                    </label>
-                    <Textarea
-                      id="message"
-                      rows={5}
-                      required
-                      className="w-full bg-cream border-accent-brown/30 focus:border-accent-brown focus:ring-accent-brown/20 resize-none"
-                      placeholder="Tell us about your project or how we can help..."
-                    />
-                  </div>
+                <div>
+                  <label htmlFor="message" className="block text-lg font-light text-silver-mist mb-3">
+                    Message *
+                  </label>
+                  <Textarea
+                    id="message"
+                    rows={6}
+                    required
+                    className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 text-lg rounded-xl resize-none backdrop-blur-sm"
+                    placeholder="Tell us about your project or how we can help..."
+                  />
+                </div>
 
+                <div className="text-center">
                   <Button 
                     type="submit"
                     size="lg"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream px-8 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                    className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-16 py-6 text-xl font-medium tracking-wide transition-all duration-300 hover:scale-110 rounded-xl shadow-2xl"
                   >
                     Send Message
                   </Button>
-                </form>
-              </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Additional Information Section */}
-      <div className="py-20 bg-cream">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-12">
-              Ready to Get Started?
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/10 to-garnet-edge/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                <h3 className="text-xl font-medium text-accent-brown">Bridge Financing</h3>
-                <p className="text-deep-petrol leading-relaxed">
+      {/* Services Overview Section */}
+      <div className="relative z-10 bg-silver-mist py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+                Ready to Get <span className="text-accent-brown">Started?</span>
+              </h2>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 mb-20">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Bridge Financing</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
                   Fast, flexible capital for value-add opportunities and time-sensitive acquisitions.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/10 to-garnet-edge/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                <h3 className="text-xl font-medium text-accent-brown">HUD/FHA Loans</h3>
-                <p className="text-deep-petrol leading-relaxed">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">HUD/FHA Loans</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
                   Long-term, government-backed financing for multifamily and healthcare properties.
                 </p>
               </div>
               
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/10 to-garnet-edge/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                <h3 className="text-xl font-medium text-accent-brown">Consultation</h3>
-                <p className="text-deep-petrol leading-relaxed">
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Consultation</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
                   Strategic guidance and market insights from our experienced lending team.
                 </p>
               </div>
             </div>
 
-            <div className="bg-gradient-to-r from-silver-mist/20 to-cream p-8 rounded-lg border border-accent-brown/20">
-              <p className="text-lg text-deep-petrol leading-relaxed mb-6">
-                <strong className="text-obsidian">Securities offered through Johnson Capital Real Estate Securities, LLC, Member FINRA/SIPC.</strong><br />
+            {/* Disclaimer */}
+            <div className="bg-gradient-to-r from-background/40 to-background/60 backdrop-blur-sm border border-deep-petrol/30 rounded-2xl p-12 text-center">
+              <p className="text-lg text-deep-petrol leading-relaxed mb-6 font-light">
+                <strong className="text-obsidian font-medium">Securities offered through Johnson Capital Real Estate Securities, LLC, Member FINRA/SIPC.</strong><br />
                 Investment advisory services offered through Johnson Capital Investment Management Company, an SEC-registered investment adviser.
               </p>
-              <p className="text-sm text-deep-petrol/80">
+              <p className="text-sm text-deep-petrol/80 font-light">
                 This communication is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or investment products.
               </p>
             </div>
