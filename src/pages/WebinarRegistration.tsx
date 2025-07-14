@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Calendar, Clock, Users, Award, CheckCircle } from "lucide-react";
+import { Calendar, Clock, Users, Award, CheckCircle, Play } from "lucide-react";
 
 const WebinarRegistration = () => {
   return (
@@ -10,298 +10,211 @@ const WebinarRegistration = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section */}
-      <div className="relative min-h-[85vh] overflow-hidden">
-        {/* Background texture overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
-                Master Real Estate
-              </h1>
-              <h1 className="text-6xl lg:text-8xl font-light leading-[0.9] tracking-tight">
-                <span className="text-accent-brown">Credit</span> <span className="text-garnet-edge">Investing</span>
-              </h1>
-            </div>
+      {/* Main Two-Column Section */}
+      <div className="relative min-h-screen py-20">
+        <div className="container mx-auto px-6 h-full">
+          <div className="grid lg:grid-cols-2 gap-16 h-full items-center">
             
-            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
-                Join industry experts for an exclusive webinar on 
-                <span className="text-garnet-edge"> private credit strategies</span> that deliver consistent returns.
-              </p>
-            </div>
-
-            {/* Webinar Details */}
-            <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-8 hover:bg-background/30 transition-all duration-300">
-                <Calendar className="h-12 w-12 text-accent-brown mx-auto mb-4" />
-                <h3 className="text-xl font-light text-silver-mist mb-2">Date</h3>
-                <p className="text-silver-mist/80">March 15, 2024</p>
-              </div>
-              
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-8 hover:bg-background/30 transition-all duration-300">
-                <Clock className="h-12 w-12 text-accent-brown mx-auto mb-4" />
-                <h3 className="text-xl font-light text-silver-mist mb-2">Time</h3>
-                <p className="text-silver-mist/80">2:00 PM EST</p>
-              </div>
-              
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-8 hover:bg-background/30 transition-all duration-300">
-                <Users className="h-12 w-12 text-accent-brown mx-auto mb-4" />
-                <h3 className="text-xl font-light text-silver-mist mb-2">Duration</h3>
-                <p className="text-silver-mist/80">60 Minutes</p>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <Button 
-                size="lg" 
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 group rounded-sm"
-              >
-                Register Now - Free
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                Download Agenda
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Registration Form Section */}
-      <div className="relative z-10 bg-silver-mist py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
-                Secure Your <span className="text-accent-brown">Spot</span>
-              </h2>
-              <p className="text-2xl text-deep-petrol leading-relaxed max-w-3xl mx-auto font-light">
-                Limited to 500 participants. Register today to guarantee your access to exclusive insights.
-              </p>
-            </div>
-
-            {/* Registration Form */}
-            <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-3xl p-12 hover:bg-background/80 transition-all duration-500">
-              <form className="space-y-8">
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <label htmlFor="firstName" className="block text-lg font-light text-obsidian mb-3">
-                      First Name *
-                    </label>
-                    <Input
-                      id="firstName"
-                      type="text"
-                      required
-                      className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-lg font-light text-obsidian mb-3">
-                      Last Name *
-                    </label>
-                    <Input
-                      id="lastName"
-                      type="text"
-                      required
-                      className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                    />
-                  </div>
+            {/* Left Column - Main Content */}
+            <div className="space-y-12">
+              {/* Hero Content */}
+              <div className="space-y-8">
+                <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
+                  <h1 className="text-5xl lg:text-7xl font-light text-silver-mist leading-[0.9] tracking-tight">
+                    Master Real Estate
+                  </h1>
+                  <h1 className="text-5xl lg:text-7xl font-light leading-[0.9] tracking-tight">
+                    <span className="text-accent-brown">Credit</span> <span className="text-garnet-edge">Investing</span>
+                  </h1>
                 </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-lg font-light text-obsidian mb-3">
-                    Email Address *
-                  </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    required
-                    className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <label htmlFor="company" className="block text-lg font-light text-obsidian mb-3">
-                      Company/Organization *
-                    </label>
-                    <Input
-                      id="company"
-                      type="text"
-                      required
-                      className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="title" className="block text-lg font-light text-obsidian mb-3">
-                      Job Title *
-                    </label>
-                    <Input
-                      id="title"
-                      type="text"
-                      required
-                      className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-lg font-light text-obsidian mb-3">
-                    Phone Number
-                  </label>
-                  <Input
-                    id="phone"
-                    type="tel"
-                    className="w-full bg-cream border-deep-petrol/30 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian text-lg py-6 rounded-xl"
-                  />
-                </div>
-
-                <div className="text-center">
-                  <Button 
-                    type="submit"
-                    size="lg"
-                    className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-16 py-6 text-xl font-medium tracking-wide transition-all duration-300 hover:scale-110 rounded-xl shadow-2xl"
-                  >
-                    Register for Free Webinar
-                  </Button>
-                  <p className="text-sm text-deep-petrol/70 mt-4">
-                    By registering, you agree to receive webinar updates and relevant content from Oak Real Estate Partners.
+                
+                <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                  <p className="text-xl text-silver-mist/80 leading-relaxed font-light">
+                    Join industry experts for an exclusive webinar on 
+                    <span className="text-garnet-edge"> private credit strategies</span> that deliver consistent returns.
                   </p>
                 </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+              </div>
 
-      {/* What You'll Learn Section */}
-      <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/20 to-transparent"></div>
-        </div>
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-5xl lg:text-7xl font-light text-silver-mist mb-12 leading-tight">
-                What You'll <span className="text-accent-brown">Learn</span>
-              </h2>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8 mb-20">
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-10 hover:bg-background/30 transition-all duration-300">
-                <CheckCircle className="h-12 w-12 text-accent-brown mb-6" />
-                <h3 className="text-2xl font-light text-silver-mist mb-6">Market Opportunities</h3>
-                <p className="text-silver-mist/80 leading-relaxed font-light text-lg">
-                  Discover current trends and emerging opportunities in the private credit real estate market.
-                </p>
-              </div>
-              
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-10 hover:bg-background/30 transition-all duration-300">
-                <CheckCircle className="h-12 w-12 text-accent-brown mb-6" />
-                <h3 className="text-2xl font-light text-silver-mist mb-6">Risk Management</h3>
-                <p className="text-silver-mist/80 leading-relaxed font-light text-lg">
-                  Learn proven strategies for mitigating risk while maximizing returns in real estate credit investments.
-                </p>
-              </div>
-              
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-10 hover:bg-background/30 transition-all duration-300">
-                <CheckCircle className="h-12 w-12 text-accent-brown mb-6" />
-                <h3 className="text-2xl font-light text-silver-mist mb-6">Portfolio Diversification</h3>
-                <p className="text-silver-mist/80 leading-relaxed font-light text-lg">
-                  Understand how real estate credit can enhance your investment portfolio's risk-adjusted returns.
-                </p>
-              </div>
-              
-              <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-2xl p-10 hover:bg-background/30 transition-all duration-300">
-                <CheckCircle className="h-12 w-12 text-accent-brown mb-6" />
-                <h3 className="text-2xl font-light text-silver-mist mb-6">Due Diligence Process</h3>
-                <p className="text-silver-mist/80 leading-relaxed font-light text-lg">
-                  Master the essential steps for evaluating real estate credit opportunities and sponsors.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Speaker Section */}
-      <div className="relative z-10 bg-silver-mist py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
-                Featured <span className="text-accent-brown">Speakers</span>
-              </h2>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
-                <div className="w-24 h-24 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="h-12 w-12 text-accent-brown" />
+              {/* Webinar Details */}
+              <div className="grid grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
+                  <Calendar className="h-8 w-8 text-accent-brown mx-auto mb-3" />
+                  <h3 className="text-lg font-light text-silver-mist mb-1">Date</h3>
+                  <p className="text-silver-mist/80 text-sm">March 15, 2024</p>
                 </div>
-                <h3 className="text-2xl font-light text-obsidian mb-4">John Smith</h3>
-                <p className="text-lg text-accent-brown mb-4">Managing Partner, Oak Real Estate Partners</p>
-                <p className="text-deep-petrol leading-relaxed">
-                  25+ years in commercial real estate finance with over $5B in transaction experience.
-                </p>
-              </div>
-              
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
-                <div className="w-24 h-24 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Award className="h-12 w-12 text-accent-brown" />
+                
+                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
+                  <Clock className="h-8 w-8 text-accent-brown mx-auto mb-3" />
+                  <h3 className="text-lg font-light text-silver-mist mb-1">Time</h3>
+                  <p className="text-silver-mist/80 text-sm">2:00 PM EST</p>
                 </div>
-                <h3 className="text-2xl font-light text-obsidian mb-4">Sarah Johnson</h3>
-                <p className="text-lg text-accent-brown mb-4">Head of Investment Strategy</p>
-                <p className="text-deep-petrol leading-relaxed">
-                  Former institutional investor with expertise in alternative investments and portfolio optimization.
-                </p>
+                
+                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
+                  <Users className="h-8 w-8 text-accent-brown mx-auto mb-3" />
+                  <h3 className="text-lg font-light text-silver-mist mb-1">Duration</h3>
+                  <p className="text-silver-mist/80 text-sm">60 Minutes</p>
+                </div>
+              </div>
+
+              {/* What You'll Learn */}
+              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist">
+                  What You'll <span className="text-accent-brown">Learn</span>
+                </h2>
+                
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-light text-silver-mist mb-2">Market Opportunities</h3>
+                      <p className="text-silver-mist/70 text-sm">Discover current trends and emerging opportunities in the private credit real estate market.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-light text-silver-mist mb-2">Risk Management</h3>
+                      <p className="text-silver-mist/70 text-sm">Learn proven strategies for mitigating risk while maximizing returns.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-light text-silver-mist mb-2">Portfolio Diversification</h3>
+                      <p className="text-silver-mist/70 text-sm">Understand how real estate credit enhances risk-adjusted returns.</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-lg font-light text-silver-mist mb-2">Due Diligence Process</h3>
+                      <p className="text-silver-mist/70 text-sm">Master essential steps for evaluating credit opportunities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Speakers */}
+              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist">
+                  Featured <span className="text-accent-brown">Speakers</span>
+                </h2>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
+                    <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-8 w-8 text-accent-brown" />
+                    </div>
+                    <h3 className="text-lg font-light text-silver-mist mb-1">John Smith</h3>
+                    <p className="text-sm text-accent-brown mb-2">Managing Partner</p>
+                    <p className="text-xs text-silver-mist/70">25+ years experience, $5B+ transactions</p>
+                  </div>
+                  
+                  <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
+                    <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Award className="h-8 w-8 text-accent-brown" />
+                    </div>
+                    <h3 className="text-lg font-light text-silver-mist mb-1">Sarah Johnson</h3>
+                    <p className="text-sm text-accent-brown mb-2">Head of Strategy</p>
+                    <p className="text-xs text-silver-mist/70">Former institutional investor expert</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Preview Button */}
+              <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                >
+                  <Play className="h-5 w-5 mr-2" />
+                  Preview Webinar Content
+                </Button>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Final CTA Section */}
-      <div className="relative min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol flex items-center justify-center overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
-        </div>
-        
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-6xl lg:text-8xl font-light text-silver-mist mb-16 leading-tight">
-              Don't Miss <span className="text-garnet-edge">Out</span>
-            </h2>
-            
-            <div className="bg-background/20 backdrop-blur-xl border border-silver-mist/20 rounded-3xl p-16 mb-16 hover:bg-background/30 transition-all duration-500">
-              <p className="text-2xl text-silver-mist/90 leading-relaxed font-light mb-8">
-                Join 500+ real estate professionals who are already registered for this exclusive webinar.
-              </p>
-              <p className="text-xl font-light text-garnet-edge leading-relaxed mb-8">
-                Limited spots remaining. Secure your place today.
-              </p>
-              <div className="text-4xl font-light text-accent-brown mb-4">March 15, 2024 • 2:00 PM EST</div>
+            {/* Right Column - Registration Form */}
+            <div className="lg:pl-8">
+              <div className="bg-background/30 backdrop-blur-xl border border-silver-mist/20 rounded-2xl p-8 sticky top-8">
+                <div className="text-center mb-6">
+                  <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-3">
+                    Register <span className="text-accent-brown">Free</span>
+                  </h3>
+                  <p className="text-silver-mist/70 text-sm">
+                    Limited to 500 participants
+                  </p>
+                </div>
+
+                <form className="space-y-4">
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder="First Name *"
+                      required
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder="Last Name *"
+                      required
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <Input
+                      type="email"
+                      placeholder="Email Address *"
+                      required
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder="Company *"
+                      required
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
+                    />
+                  </div>
+
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder="Job Title"
+                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
+                    />
+                  </div>
+
+                  <Button 
+                    type="submit"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg shadow-xl mt-6"
+                  >
+                    Register Now
+                  </Button>
+
+                  <p className="text-xs text-silver-mist/50 text-center mt-4">
+                    By registering, you agree to receive webinar updates from Oak Real Estate Partners.
+                  </p>
+                </form>
+
+                {/* Urgency Element */}
+                <div className="mt-6 p-4 bg-garnet-edge/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg text-center">
+                  <p className="text-sm text-silver-mist font-medium">
+                    ⏰ Only <span className="text-accent-brown">127 spots</span> remaining
+                  </p>
+                </div>
+              </div>
             </div>
-            
-            <Button 
-              size="lg"
-              className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-16 py-6 text-xl font-medium tracking-wide transition-all duration-300 hover:scale-110 rounded-sm shadow-2xl"
-            >
-              Register Now - It's Free
-            </Button>
           </div>
         </div>
       </div>
