@@ -12,23 +12,12 @@ const Hero = () => {
       {/* Navigation Bar */}
       <Navigation />
 
-      {/* Background Wistia video */}
+      {/* Background image */}
       <div className="absolute inset-0 z-10">
-        <div 
-          className="w-full h-full opacity-60"
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            minWidth: '100%',
-            minHeight: '100%',
-            width: 'auto',
-            height: 'auto',
-            transform: 'translate(-50%, -50%)'
-          }}
-          dangerouslySetInnerHTML={{
-            __html: `<wistia-player media-id="lzfbqn3qjc" aspect="1.0" autoplay muted loop></wistia-player>`
-          }}
+        <img 
+          src="/lovable-uploads/79f542dd-9050-464b-a493-e43f24efafa9.png"
+          alt="Architectural background"
+          className="w-full h-full object-cover opacity-80"
         />
       </div>
 
