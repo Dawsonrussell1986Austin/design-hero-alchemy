@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
-              <a href="#" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+              <a href="/about" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
                 Our Firm
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
               </a>
@@ -86,7 +86,7 @@ const Navigation = () => {
                 <div className="flex-1 px-8 py-8">
                   <div className="space-y-1">
                     <a 
-                      href="#" 
+                      href="/about" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
