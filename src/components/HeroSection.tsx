@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
           <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
             Private commercial real estate credit, structured for protection, built for 
-            performance, and guided by partnership in the creation of long-term value.
+            <span className="text-garnet-edge"> performance</span>, and guided by partnership in the creation of long-term value.
           </p>
         </div>
         
@@ -37,7 +37,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+            className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
           >
             Lending Strategy
           </Button>

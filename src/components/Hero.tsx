@@ -22,7 +22,7 @@ const Hero = () => {
 
       {/* Background texture overlay */}
       <div className="absolute inset-0 opacity-40 z-5">
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
       </div>
       
       {/* Main hero content */}
