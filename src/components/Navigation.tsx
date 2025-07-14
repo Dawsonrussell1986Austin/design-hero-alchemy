@@ -71,48 +71,77 @@ const Navigation = () => {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[350px] bg-background/98 backdrop-blur-xl border-l border-border/20">
-              <div className="flex flex-col space-y-8 mt-12 px-2">
-                <div className="space-y-6">
-                  <a 
-                    href="#" 
-                    className="block text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-lg py-3 px-4 rounded-sm hover:bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Our Firm
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-lg py-3 px-4 rounded-sm hover:bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Platform
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-lg py-3 px-4 rounded-sm hover:bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Investments
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-lg py-3 px-4 rounded-sm hover:bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    News
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-lg py-3 px-4 rounded-sm hover:bg-muted/50"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Contact
-                  </a>
+            <SheetContent side="right" className="w-[380px] bg-obsidian border-l border-garnet-edge/20 p-0">
+              <div className="flex flex-col h-full">
+                {/* Header with Logo */}
+                <div className="px-8 py-6 border-b border-garnet-edge/10">
+                  <img 
+                    src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
+                    alt="OAK" 
+                    className="h-10 w-auto filter brightness-0 invert"
+                  />
                 </div>
-                <div className="pt-6 border-t border-border/20">
+                
+                {/* Navigation Links */}
+                <div className="flex-1 px-8 py-8">
+                  <div className="space-y-1">
+                    <a 
+                      href="#" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Our Firm
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="#" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Platform
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="#" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Investments
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="#" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        News
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="#" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Contact
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                
+                {/* Bottom CTA */}
+                <div className="px-8 py-6 border-t border-garnet-edge/10">
                   <Button 
-                    className="w-full bg-obsidian hover:bg-obsidian/90 text-silver-mist px-8 py-4 font-sans font-semibold text-base tracking-wide rounded-none transition-all duration-300 hover:shadow-lg border-2 border-obsidian hover:border-accent-brown"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-sans font-semibold text-lg tracking-wide rounded-none transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
