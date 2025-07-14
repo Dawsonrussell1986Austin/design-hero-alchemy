@@ -2,7 +2,7 @@ import { Shield } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-obsidian py-16" style={{ backgroundImage: 'none' }}>
+    <footer className="bg-obsidian py-16">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-4 gap-12 mb-12">
