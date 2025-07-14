@@ -12,13 +12,24 @@ const Hero = () => {
       {/* Navigation Bar */}
       <Navigation />
 
-      {/* Architectural background image */}
+      {/* Background video */}
       <div className="absolute inset-0 z-10">
-        <img 
-          src="/lovable-uploads/20c8717f-c139-4b9a-8d06-9b489e183620.png"
-          alt="Architectural background"
-          className="w-full h-full object-contain opacity-80"
-        />
+        <video 
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+          poster="/lovable-uploads/20c8717f-c139-4b9a-8d06-9b489e183620.png"
+        >
+          <source src="/path-to-your-video.mp4" type="video/mp4" />
+          {/* Fallback to image if video fails to load */}
+          <img 
+            src="/lovable-uploads/20c8717f-c139-4b9a-8d06-9b489e183620.png"
+            alt="Architectural background"
+            className="w-full h-full object-cover opacity-80"
+          />
+        </video>
       </div>
 
       {/* Background texture overlay */}
