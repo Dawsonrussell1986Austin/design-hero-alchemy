@@ -232,53 +232,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Services Overview Section */}
-      <div className="relative z-10 bg-silver-mist py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
-                Ready to Get <span className="text-accent-brown">Started?</span>
-              </h2>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-8 mb-20">
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
-                <h3 className="text-2xl font-light text-accent-brown mb-6">Bridge Financing</h3>
-                <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Fast, flexible capital for value-add opportunities and time-sensitive acquisitions.
-                </p>
-              </div>
-              
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
-                <h3 className="text-2xl font-light text-accent-brown mb-6">HUD/FHA Loans</h3>
-                <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Long-term, government-backed financing for multifamily and healthcare properties.
-                </p>
-              </div>
-              
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl text-center">
-                <h3 className="text-2xl font-light text-accent-brown mb-6">Consultation</h3>
-                <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Strategic guidance and market insights from our experienced lending team.
-                </p>
-              </div>
-            </div>
-
-            {/* Disclaimer */}
-            <div className="bg-gradient-to-r from-background/40 to-background/60 backdrop-blur-sm border border-deep-petrol/30 rounded-2xl p-12 text-center">
-              <p className="text-lg text-deep-petrol leading-relaxed mb-6 font-light">
-                <strong className="text-obsidian font-medium">Securities offered through Johnson Capital Real Estate Securities, LLC, Member FINRA/SIPC.</strong><br />
-                Investment advisory services offered through Johnson Capital Investment Management Company, an SEC-registered investment adviser.
-              </p>
-              <p className="text-sm text-deep-petrol/80 font-light">
-                This communication is for informational purposes only and does not constitute an offer to sell or a solicitation of an offer to buy any securities or investment products.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Footer */}
       <Footer />
     </div>
