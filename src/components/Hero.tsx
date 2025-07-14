@@ -16,7 +16,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/20c8717f-c139-4b9a-8d06-9b489e183620.png"
           alt="Architectural background"
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-contain opacity-80"
         />
       </div>
 
