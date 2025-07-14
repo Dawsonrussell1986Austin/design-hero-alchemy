@@ -9,6 +9,13 @@ const Footer = () => {
             
             {/* Logo and Company Info */}
             <div className="lg:col-span-2 space-y-6">
+              <div className="mb-6">
+                <img 
+                  src="/lovable-uploads/5f1c8481-e8d3-4d2a-88d6-54df790bcf6c.png" 
+                  alt="OAK Real Estate Partners" 
+                  className="h-16 w-auto opacity-90"
+                />
+              </div>
               <p className="text-silver-mist/80 leading-relaxed font-sans max-w-md">
                 Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
               </p>
