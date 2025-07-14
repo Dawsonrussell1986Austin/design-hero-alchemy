@@ -37,7 +37,7 @@ const HeroSection = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="border-2 border-silver-mist/30 text-silver-mist hover:bg-silver-mist hover:text-obsidian px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+            className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
           >
             Lending Strategy
           </Button>
