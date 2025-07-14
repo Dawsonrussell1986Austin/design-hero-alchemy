@@ -46,7 +46,7 @@ const Navigation = () => {
               News
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
             </a>
-            <a href="#" className="group relative text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+            <a href="/contact" className="group relative text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
               Contact
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
             </a>
@@ -126,7 +126,7 @@ const Navigation = () => {
                       </span>
                     </a>
                     <a 
-                      href="#" 
+                      href="/contact" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
