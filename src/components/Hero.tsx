@@ -11,12 +11,12 @@ const Hero = () => {
       {/* Navigation Bar */}
       <Navigation />
 
-      {/* Subtle architectural background image */}
+      {/* Architectural background image */}
       <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/7078b5ad-cf31-456a-9b1a-9f74f2117a75.png"
           alt=""
-          className="w-full h-full object-contain opacity-20"
+          className="w-full h-full object-cover opacity-60"
         />
       </div>
 
