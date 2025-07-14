@@ -13,7 +13,7 @@ const Hero = () => {
       <Navigation />
 
       {/* Background image */}
-      <div className="absolute inset-0 z-10">
+      <div className="absolute inset-0 z-0">
         <img 
           src="/lovable-uploads/79f542dd-9050-464b-a493-e43f24efafa9.png"
           alt="Architectural background"
@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
 
       {/* Background texture overlay */}
-      <div className="absolute inset-0 opacity-40 z-15">
+      <div className="absolute inset-0 opacity-40 z-5">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
       </div>
       

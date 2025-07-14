@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-10 min-h-[85vh] px-6 py-20">
+    <div className="relative z-20 min-h-[85vh] px-6 py-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
