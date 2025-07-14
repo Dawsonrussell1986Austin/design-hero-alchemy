@@ -45,23 +45,6 @@ const HeroSection = () => {
                 Learn More
               </Button>
             </div>
-            
-            {/* Trusted Section */}
-            <div className="pt-8 border-t border-silver-mist/20">
-              <p className="text-sm text-silver-mist/60 mb-4 tracking-wide uppercase">
-                TRUSTED BY INSTITUTIONAL INVESTORS
-              </p>
-              <div className="flex gap-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full border border-silver-mist/40"></div>
-                  <span className="text-sm text-silver-mist/70">SEC Registered</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-silver-mist/40 rounded-sm"></div>
-                  <span className="text-sm text-silver-mist/70">Institutional Grade</span>
-                </div>
-              </div>
-            </div>
           </div>
           
           {/* Right Column - Statistics Cards */}
@@ -90,16 +73,6 @@ const HeroSection = () => {
               <div className="text-4xl font-light text-silver-mist mb-2">$210B</div>
               <div className="text-sm text-silver-mist/60 uppercase tracking-wide">
                 CLOSED TRANSACTIONS
-              </div>
-            </div>
-            
-            {/* Philosophy Quote */}
-            <div className="bg-gradient-to-r from-garnet-edge/10 to-accent-brown/10 backdrop-blur-sm border border-garnet-edge/20 rounded-lg p-8">
-              <div className="text-lg italic text-silver-mist mb-3">
-                "We Don't Chase Headlines Or Offer Shortcuts."
-              </div>
-              <div className="text-xs text-silver-mist/60 uppercase tracking-wide">
-                — INVESTMENT PHILOSOPHY
               </div>
             </div>
           </div>
