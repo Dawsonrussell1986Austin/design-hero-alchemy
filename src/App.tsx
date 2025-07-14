@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Lending from "./pages/Lending";
 import Contact from "./pages/Contact";
 import WebinarRegistration from "./pages/WebinarRegistration";
+import News from "./pages/News";
 import Leadership from "./pages/Leadership";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/lending" element={<Lending />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/webinar" element={<WebinarRegistration />} />
+          <Route path="/news" element={<News />} />
           <Route path="/leadership" element={<Leadership />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

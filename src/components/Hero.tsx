@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
 import WhyPrivateCredit from "./WhyPrivateCredit";
 import OurEdge from "./OurEdge";
+import RecentNews from "./RecentNews";
 import Footer from "./Footer";
 
 const Hero = () => {
@@ -33,6 +34,9 @@ const Hero = () => {
 
       {/* Our Edge Section */}
       <OurEdge />
+
+      {/* Recent News Section */}
+      <RecentNews />
 
       {/* Footer */}
       <Footer />
