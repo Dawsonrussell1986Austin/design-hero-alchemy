@@ -98,40 +98,6 @@ const WebinarRegistration = () => {
                 </div>
               </div>
 
-              {/* Speakers */}
-              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist">
-                  Featured <span className="text-accent-brown">Speakers</span>
-                </h2>
-                
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-accent-brown/30">
-                      <img 
-                        src="/lovable-uploads/c40701c4-be9c-4192-b6ea-12fc78ad33be.png" 
-                        alt="Matthew Webster"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <h3 className="text-lg font-light text-silver-mist mb-1">Matthew Webster</h3>
-                    <p className="text-sm text-accent-brown mb-2">Chief Credit Officer</p>
-                    <p className="text-xs text-silver-mist/70">Senior Vice President</p>
-                  </div>
-                  
-                  <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                    <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-accent-brown/30">
-                      <img 
-                        src="/lovable-uploads/3cc6ebb2-ef33-4f7e-9d1e-8c49c2328871.png" 
-                        alt="Raymond T. Davis"
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <h3 className="text-lg font-light text-silver-mist mb-1">Raymond T. Davis</h3>
-                    <p className="text-sm text-accent-brown mb-2">President & CSO</p>
-                    <p className="text-xs text-silver-mist/70">Chief Strategy Officer</p>
-                  </div>
-                </div>
-              </div>
 
               {/* Preview Button */}
               <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -148,14 +114,11 @@ const WebinarRegistration = () => {
 
             {/* Right Column - Registration Form */}
             <div className="lg:pl-8">
-              <div className="bg-background/30 backdrop-blur-xl border border-silver-mist/20 rounded-2xl p-8">
+              <div className="bg-obsidian/90 border border-silver-mist/30 rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-3">
                     Register <span className="text-accent-brown">Free</span>
                   </h3>
-                  <p className="text-silver-mist/70 text-sm">
-                    Limited to 500 participants
-                  </p>
                 </div>
 
                 <form className="space-y-4">
@@ -215,12 +178,6 @@ const WebinarRegistration = () => {
                   </p>
                 </form>
 
-                {/* Urgency Element */}
-                <div className="mt-6 p-4 bg-garnet-edge/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg text-center">
-                  <p className="text-sm text-silver-mist font-medium">
-                    ⏰ Only <span className="text-accent-brown">127 spots</span> remaining
-                  </p>
-                </div>
               </div>
             </div>
           </div>
