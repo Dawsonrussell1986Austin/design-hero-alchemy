@@ -29,8 +29,8 @@ const Navigation = () => {
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
             </div>
             <div className="group relative">
-              <a href="#" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
-                Platform
+              <a href="/lending" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+                Lending
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
               </a>
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
@@ -96,12 +96,12 @@ const Navigation = () => {
                       </span>
                     </a>
                     <a 
-                      href="#" 
+                      href="/lending" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
-                        Platform
+                        Lending
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
