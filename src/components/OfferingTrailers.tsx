@@ -24,13 +24,13 @@ const OfferingTrailers = () => {
   ];
 
   return (
-    <section className="relative py-24 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <section className="relative py-24 bg-pearl-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-pearl-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-obsidian mb-6">
             Watch Our Offering Trailers
           </h2>
-          <p className="text-xl text-pearl-white/80 max-w-3xl mx-auto">
+          <p className="text-xl text-obsidian/70 max-w-3xl mx-auto">
             Discover our investment opportunities through these detailed presentations
           </p>
         </div>
@@ -39,7 +39,7 @@ const OfferingTrailers = () => {
           {offerings.map((offering, index) => (
             <div
               key={index}
-              className="bg-pearl-white/10 backdrop-blur-sm rounded-lg overflow-hidden border border-pearl-white/20 hover:border-garnet-edge/50 transition-all duration-300 group"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group border border-silver-mist/20"
             >
               {/* Video Thumbnail */}
               <div className="relative aspect-video overflow-hidden">
@@ -48,10 +48,10 @@ const OfferingTrailers = () => {
                   alt={offering.title}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-obsidian/30 flex items-center justify-center">
+                <div className="absolute inset-0 bg-obsidian/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <Button
                     size="icon"
-                    className="w-16 h-16 rounded-full bg-garnet-edge/80 hover:bg-garnet-edge text-pearl-white border-2 border-pearl-white/30"
+                    className="w-16 h-16 rounded-full bg-garnet-edge hover:bg-garnet-edge/90 text-white shadow-lg"
                   >
                     <Play className="w-6 h-6 ml-1" />
                   </Button>
@@ -60,20 +60,20 @@ const OfferingTrailers = () => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold text-pearl-white mb-3">
+                <h3 className="text-xl font-semibold text-obsidian mb-3 leading-tight">
                   {offering.title}
                 </h3>
-                <div className="space-y-2 mb-4">
-                  <p className="text-cyan-mist font-medium">
+                <div className="space-y-2 mb-6">
+                  <p className="text-garnet-edge font-medium text-sm">
                     {offering.regulation}
                   </p>
-                  <p className="text-pearl-white/70 text-sm">
+                  <p className="text-obsidian/60 text-sm">
                     {offering.investorType}
                   </p>
                 </div>
                 <Button 
                   variant="outline" 
-                  className="w-full border-garnet-edge/50 text-garnet-edge hover:bg-garnet-edge hover:text-pearl-white"
+                  className="w-full border-garnet-edge text-garnet-edge hover:bg-garnet-edge hover:text-white transition-colors duration-200"
                 >
                   Learn More
                 </Button>
