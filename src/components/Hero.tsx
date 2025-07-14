@@ -14,7 +14,7 @@ const Hero = () => {
       {/* Architectural background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/lovable-uploads/7078b5ad-cf31-456a-9b1a-9f74f2117a75.png"
+          src="/lovable-uploads/a1896c4a-6668-4b7a-8d37-c2d9ae2cb3e2.png"
           alt=""
           className="w-full h-full object-cover opacity-60"
         />
