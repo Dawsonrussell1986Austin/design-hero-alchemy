@@ -27,22 +27,14 @@ const HeroSection = () => {
               Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
             </p>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* CTA Button */}
+            <div className="flex">
               <Button 
                 size="lg" 
                 className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"
               >
-                Get Started
+                Investment Offerings
                 <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-silver-mist bg-silver-mist/10 text-obsidian hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                Learn More
               </Button>
             </div>
           </div>
