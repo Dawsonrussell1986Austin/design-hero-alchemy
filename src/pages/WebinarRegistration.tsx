@@ -13,7 +13,7 @@ const WebinarRegistration = () => {
       {/* Main Two-Column Section */}
       <div className="relative min-h-screen py-20">
         <div className="container mx-auto px-6 h-full">
-          <div className="grid lg:grid-cols-2 gap-16 h-full items-center">
+          <div className="grid lg:grid-cols-2 gap-16 h-full items-start">
             
             {/* Left Column - Main Content */}
             <div className="space-y-12">
@@ -140,7 +140,7 @@ const WebinarRegistration = () => {
 
             {/* Right Column - Registration Form */}
             <div className="lg:pl-8">
-              <div className="bg-background/30 backdrop-blur-xl border border-silver-mist/20 rounded-2xl p-8 sticky top-8">
+              <div className="bg-background/30 backdrop-blur-xl border border-silver-mist/20 rounded-2xl p-8">
                 <div className="text-center mb-6">
                   <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-3">
                     Register <span className="text-accent-brown">Free</span>
