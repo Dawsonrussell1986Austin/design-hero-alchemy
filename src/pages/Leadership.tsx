@@ -18,12 +18,6 @@ const Leadership = () => {
       bio: "Raymond leads strategic initiatives and corporate development, bringing decades of experience in real estate finance and investment management."
     },
     {
-      name: "Kevin P. Kennedy",
-      title: "Chief Sales and Distribution Officer", 
-      image: "/lovable-uploads/02930748-1ba7-4832-a0c8-0375667a7f22.png",
-      bio: "Kevin oversees all client relationships and business development efforts, ensuring Oak maintains its position as a trusted partner in the marketplace."
-    },
-    {
       name: "Paul Cleary",
       title: "Chief Operating Officer",
       image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png", 
