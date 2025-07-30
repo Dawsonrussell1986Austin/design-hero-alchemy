@@ -78,7 +78,7 @@ const Transactions = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {featuredTransactions.map((transaction) => (
-              <Card key={transaction.id} className="bg-obsidian/60 backdrop-blur-sm border border-silver-mist/20 overflow-hidden hover:border-garnet-edge/50 transition-all duration-300 group">
+              <Card key={transaction.id} className="bg-obsidian/60 backdrop-blur-sm border border-silver-mist/20 overflow-hidden hover:border-garnet-edge/50 transition-all duration-300 group text-silver-mist">
                 <div className="aspect-video overflow-hidden">
                   <img 
                     src={transaction.image}
@@ -86,7 +86,7 @@ const Transactions = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardContent className="p-8">
+                <CardContent className="p-8 bg-transparent">
                   <h3 className="text-2xl font-bold text-silver-mist mb-6">
                     {transaction.name}
                   </h3>
