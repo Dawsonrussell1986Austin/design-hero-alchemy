@@ -1,13 +1,28 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="relative z-20 bg-background/95 backdrop-blur-xl border-b border-border/40 shadow-sm">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-obsidian/60 backdrop-blur-xl border-b border-white/10 shadow-lg' 
+        : 'bg-transparent'
+    }`}>
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -24,24 +39,34 @@ const Navigation = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
-              <button className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+              <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+              }`}>
                 Our Firm
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
               </button>
-              <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
               
               {/* Dropdown Menu */}
-              <div className="absolute left-0 top-full w-48 bg-background border border-border/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
+                scrolled ? 'bg-obsidian/90 backdrop-blur-xl border-white/10' : 'bg-background border-border/20'
+              }`}>
                 <div className="py-2">
                   <a 
                     href="/about" 
-                    className="block px-4 py-2 text-sm text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown transition-colors duration-200"
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown'
+                    }`}
                   >
                     About Us
                   </a>
                   <a 
                     href="/leadership" 
-                    className="block px-4 py-2 text-sm text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown transition-colors duration-200"
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown'
+                    }`}
                   >
                     Leadership
                   </a>
@@ -49,32 +74,62 @@ const Navigation = () => {
               </div>
             </div>
             <div className="group relative">
-              <a href="/lending" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+              <a href="/lending" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+              }`}>
                 Lending
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
               </a>
-              <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
             </div>
             <div className="group relative">
-              <a href="#" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+              <a href="/investments" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+              }`}>
                 Investments
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
               </a>
-              <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
             </div>
-            <a href="/news" className="group relative text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+            <div className="group relative">
+              <a href="/transactions" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+              }`}>
+                Transactions
+              </a>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
+            </div>
+            <a href="/news" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+            }`}>
               News
-              <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
             </a>
-            <a href="/contact" className="group relative text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+            <a href="/contact" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-obsidian hover:text-accent-brown'
+            }`}>
               Contact
-              <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-accent-brown'
+              }`}></div>
             </a>
           </div>
           
           {/* Desktop Investor Login Button */}
           <Button 
-            className="hidden lg:flex items-center bg-obsidian hover:bg-obsidian/90 text-silver-mist px-8 py-3 font-sans font-semibold text-sm tracking-wide rounded-none transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 border-2 border-obsidian hover:border-accent-brown"
+            className={`hidden lg:flex items-center px-8 py-3 font-sans font-semibold text-sm tracking-wide rounded-none transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 border-2 ${
+              scrolled 
+                ? 'bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist border-garnet-edge hover:border-copper-gleam' 
+                : 'bg-obsidian hover:bg-obsidian/90 text-silver-mist border-obsidian hover:border-accent-brown'
+            }`}
           >
             Investor Login
           </Button>
@@ -85,7 +140,9 @@ const Navigation = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                className="lg:hidden text-obsidian hover:bg-obsidian/10 rounded-none p-2"
+                className={`lg:hidden rounded-none p-2 ${
+                  scrolled ? 'text-silver-mist hover:bg-white/10' : 'text-obsidian hover:bg-obsidian/10'
+                }`}
               >
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
@@ -126,12 +183,22 @@ const Navigation = () => {
                       </span>
                     </a>
                     <a 
-                      href="#" 
+                      href="/investments" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
                         Investments
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="/transactions" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Transactions
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
