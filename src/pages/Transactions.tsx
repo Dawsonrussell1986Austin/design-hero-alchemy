@@ -6,39 +6,75 @@ const Transactions = () => {
   const featuredTransactions = [
     {
       id: 1,
-      name: "Metropolitan Plaza",
-      location: "ATLANTA, GA",
-      loanSize: "$45.0 MM",
-      loanType: "BRIDGE",
-      propertyType: "OFFICE",
+      name: "Ridge Avenue Apartments",
+      location: "NORTHEAST REGION",
+      loanSize: "$9,225,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
       image: "/lovable-uploads/95be19e9-56b5-4d13-963d-51e2ac72fa2b.png"
     },
     {
       id: 2,
-      name: "Riverside Commons",
-      location: "AUSTIN, TX",
-      loanSize: "$32.5 MM",
-      loanType: "CONSTRUCTION",
-      propertyType: "MULTIFAMILY",
+      name: "Panda Biotech",
+      location: "SOUTHWEST REGION", 
+      loanSize: "$9,750,000",
+      loanType: "CORE-PLUS BRIDGE LOAN",
+      propertyType: "INDUSTRIAL",
       image: "/lovable-uploads/98686462-3dfb-42d0-a276-b4a3258b443d.png"
     },
     {
       id: 3,
-      name: "Gateway Industrial",
-      location: "PHOENIX, AZ",
-      loanSize: "$28.0 MM",
-      loanType: "BRIDGE",
-      propertyType: "INDUSTRIAL",
+      name: "Gateway Shopping Center",
+      location: "MIDWEST REGION",
+      loanSize: "$14,500,000", 
+      loanType: "CORE-PLUS BRIDGE",
+      propertyType: "RETAIL",
       image: "/lovable-uploads/a1896c4a-6668-4b7a-8d37-c2d9ae2cb3e2.png"
     },
     {
       id: 4,
-      name: "Harbor View Retail",
-      location: "MIAMI, FL",
-      loanSize: "$52.0 MM",
-      loanType: "ACQUISITION",
-      propertyType: "RETAIL",
+      name: "8th Street Apartments",
+      location: "NORTHWEST REGION",
+      loanSize: "$8,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN", 
+      propertyType: "MULTIFAMILY",
       image: "/lovable-uploads/c171f798-a069-4350-b147-7cc49432b34a.png"
+    },
+    {
+      id: 5,
+      name: "Canterbury Apartments", 
+      location: "MIDWEST REGION",
+      loanSize: "$8,600,000",
+      loanType: "CORE-PLUS BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/ef0a0cca-4b1a-4e4b-adb1-8e51b9fca3d8.png"
+    },
+    {
+      id: 6,
+      name: "2 Scripps MOB",
+      location: "WEST REGION", 
+      loanSize: "$9,000,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MEDICAL OFFICE",
+      image: "/lovable-uploads/f1c48a4f-00b5-4eaa-ad91-f6f857c4342f.png"
+    },
+    {
+      id: 7,
+      name: "The Enclave at Woodbridge",
+      location: "SOUTHWEST REGION",
+      loanSize: "$20,500,000", 
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png"
+    },
+    {
+      id: 8,
+      name: "4401 Fortune Place",
+      location: "SOUTHEAST REGION",
+      loanSize: "$10,180,000",
+      loanType: "CORE-PLUS BRIDGE LOAN", 
+      propertyType: "INDUSTRIAL",
+      image: "/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
     }
   ];
 
@@ -69,7 +105,7 @@ const Transactions = () => {
       <section className="py-20 px-6">
         <div className="container mx-auto">
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {featuredTransactions.map((transaction) => (
               <Card key={transaction.id} className="bg-white/5 backdrop-blur-xl border border-white/10 overflow-hidden hover:border-garnet-edge/50 hover:bg-white/10 transition-all duration-300 group text-silver-mist shadow-2xl shadow-obsidian/20">
                 <div className="aspect-video overflow-hidden">
