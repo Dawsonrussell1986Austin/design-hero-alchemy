@@ -57,6 +57,13 @@ const Footer = () => {
             </div>
           </div>
 
+          {/* Compliance Disclosure */}
+          <div className="border-t border-deep-petrol/30 pt-8 mb-6">
+            <p className="text-center text-silver-mist/70 text-sm font-sans leading-relaxed max-w-4xl mx-auto">
+              Oak is a private real estate credit platform. Communications are for informational purposes only and do not constitute an offer to sell or a solicitation of an offer to buy securities.
+            </p>
+          </div>
+
           {/* Bottom Border and Copyright */}
           <div className="border-t border-deep-petrol/30 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
