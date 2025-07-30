@@ -24,10 +24,10 @@ const GaryBechtel = () => {
       {/* Hero Section */}
       <div className="py-20">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-5 gap-12 items-start">
-              <div className="lg:col-span-2">
-                <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-8 items-start">
+              <div className="lg:col-span-1">
+                <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
                     src="/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png"
                     alt="Gary Bechtel"
@@ -35,29 +35,36 @@ const GaryBechtel = () => {
                   />
                 </div>
               </div>
-              <div className="lg:col-span-3 space-y-6">
+              <div className="lg:col-span-2 space-y-6">
                 <div>
-                  <div className="flex items-center space-x-4 mb-4">
-                    <h1 className="text-3xl lg:text-4xl font-light text-accent-brown">Gary Bechtel</h1>
-                    <div className="flex space-x-2">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                      >
-                        <Mail className="h-4 w-4" />
-                      </Button>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                      >
-                        <Linkedin className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </div>
-                  <p className="text-silver-mist font-medium mb-6 uppercase tracking-wide text-lg">
+                  <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Gary Bechtel</h1>
+                  <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
                     Chief Executive Officer, Managing Principal
+                  </p>
+                  <div className="flex space-x-3">
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
+                    >
+                      <Mail className="h-4 w-4" />
+                    </Button>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
+                    >
+                      <Linkedin className="h-4 w-4" />
+                    </Button>
+                  </div>
+                </div>
+                
+                {/* Short intro on the same section */}
+                <div className="space-y-4 text-silver-mist/80 leading-relaxed">
+                  <p className="text-lg">
+                    Gary Bechtel heads the investment management leadership team at Oak Real Estate Partners (OREP). 
+                    As Managing Partner and CEO, he has direct oversight of all loan portfolios and operations for the 
+                    Grand Rapids, Michigan-based firm.
                   </p>
                 </div>
               </div>
@@ -67,15 +74,9 @@ const GaryBechtel = () => {
       </div>
 
       {/* Full Bio Content */}
-      <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+      <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto space-y-8 text-silver-mist/90">
-            <p className="text-lg leading-relaxed">
-              Gary Bechtel heads the investment management leadership team at Oak Real Estate Partners (OREP). 
-              As Managing Partner and CEO, he has direct oversight of all loan portfolios and operations for the 
-              Grand Rapids, Michigan-based firm.
-            </p>
-            
+          <div className="max-w-4xl mx-auto space-y-6 text-silver-mist/90">
             <p className="text-lg leading-relaxed">
               In addition to his duties with OREP, Gary is Chief Executive Officer of Red Oak Capital Holdings, 
               a family of commercial real estate finance and investment companies that primarily caters to investors 
@@ -111,7 +112,7 @@ const GaryBechtel = () => {
       </div>
 
       {/* CTA Section */}
-      <div className="py-20">
+      <div className="py-16">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
