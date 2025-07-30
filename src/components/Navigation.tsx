@@ -20,8 +20,8 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-obsidian/60 backdrop-blur-xl border-b border-white/10 shadow-lg' 
-        : 'bg-transparent'
+        ? 'bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-lg' 
+        : 'bg-white/90 backdrop-blur-sm border-b border-gray-100'
     }`}>
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -29,7 +29,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="block">
               <img 
-                src="/lovable-uploads/789e6c0e-d07f-4ed8-99b1-35476e65086e.png" 
+                src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
                 alt="OAK" 
                 className="h-28 w-auto transition-transform duration-300 hover:scale-105"
               />
@@ -40,7 +40,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
               <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Our Firm
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -51,13 +51,13 @@ const Navigation = () => {
               
               {/* Dropdown Menu */}
               <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-obsidian/90 backdrop-blur-xl border-white/10' : 'bg-obsidian/90 backdrop-blur-xl border-white/10'
+                scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
               }`}>
                 <div className="py-2">
                   <a 
                     href="/about" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     About Us
@@ -65,7 +65,7 @@ const Navigation = () => {
                   <a 
                     href="/leadership" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-silver-mist hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Leadership
@@ -75,7 +75,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/lending" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Lending
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -86,7 +86,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/investments" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Investments
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -97,7 +97,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/transactions" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Transactions
               </a>
@@ -106,7 +106,7 @@ const Navigation = () => {
               }`}></div>
             </div>
             <a href="/news" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-              scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+              scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
             }`}>
               News
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
@@ -114,7 +114,7 @@ const Navigation = () => {
               }`}></div>
             </a>
             <a href="/contact" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-              scrolled ? 'text-silver-mist hover:text-garnet-edge' : 'text-silver-mist hover:text-garnet-edge'
+              scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
             }`}>
               Contact
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
@@ -141,7 +141,7 @@ const Navigation = () => {
                 variant="ghost"
                 size="icon"
                 className={`lg:hidden rounded-none p-2 ${
-                  scrolled ? 'text-silver-mist hover:bg-white/10' : 'text-silver-mist hover:bg-white/10'
+                  scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-gray-800 hover:bg-gray-100'
                 }`}
               >
                 <Menu className="h-6 w-6" />
