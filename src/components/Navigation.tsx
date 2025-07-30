@@ -24,11 +24,23 @@ const Navigation = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
-              <a href="/about" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
+              <button className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
                 Our Firm
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
-              </a>
+              </button>
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
+              
+              {/* Dropdown Menu */}
+              <div className="absolute left-0 top-full mt-2 w-48 bg-background border border-border/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <div className="py-2">
+                  <a 
+                    href="/about" 
+                    className="block px-4 py-2 text-sm text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown transition-colors duration-200"
+                  >
+                    About Us
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="group relative">
               <a href="/lending" className="flex items-center text-obsidian hover:text-accent-brown transition-all duration-300 font-sans font-medium text-sm tracking-wide">
