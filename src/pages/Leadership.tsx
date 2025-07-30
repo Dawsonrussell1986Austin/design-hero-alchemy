@@ -20,7 +20,7 @@ const Leadership = () => {
     {
       name: "Paul Cleary",
       title: "Chief Operating Officer",
-      image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png", 
+      image: "/lovable-uploads/4c4da614-0fa8-433e-a2a3-077a4b57da10.png", 
       bio: "Paul manages day-to-day operations and ensures operational excellence across all business units and geographic markets."
     },
     {
@@ -132,7 +132,7 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary") ? (
                       <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
