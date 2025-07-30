@@ -96,29 +96,29 @@ const CoreBridge = () => {
               Bridge Loan Programs at a Glance
             </h3>
             <div className="overflow-x-auto">
-              <table className="w-full bg-background/20 backdrop-blur-sm border border-accent-brown/20 rounded-lg">
+              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
                 <thead>
-                  <tr className="border-b border-accent-brown/20">
-                    <th className="text-left p-4 text-accent-brown font-medium">Program</th>
-                    <th className="text-left p-4 text-accent-brown font-medium">Description</th>
+                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
+                    <th className="text-left p-4 text-silver-mist font-semibold">Program</th>
+                    <th className="text-left p-4 text-silver-mist font-semibold">Description</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Core Bridge</td>
-                    <td className="p-4 text-silver-mist/80">Floating-rate loans for cash-flowing assets in transition.</td>
+                    <td className="p-4 text-silver-mist">Floating-rate loans for cash-flowing assets in transition.</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Core-Plus Bridge</td>
-                    <td className="p-4 text-silver-mist/80">Fixed-rate loans for non-cash-flowing properties with strong fundamentals.</td>
+                    <td className="p-4 text-silver-mist">Fixed-rate loans for non-cash-flowing properties with strong fundamentals.</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Opportunistic Bridge</td>
-                    <td className="p-4 text-silver-mist/80">Higher-leverage loans for value-add or repositioning strategies.</td>
+                    <td className="p-4 text-silver-mist">Higher-leverage loans for value-add or repositioning strategies.</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Participating Bridge</td>
-                    <td className="p-4 text-silver-mist/80">Flexible capital with an equity component, aligning Oak with your upside.</td>
+                    <td className="p-4 text-silver-mist">Flexible capital with an equity component, aligning Oak with your upside.</td>
                   </tr>
                 </tbody>
               </table>
@@ -138,48 +138,48 @@ const CoreBridge = () => {
               Long-Term, Government-Backed Financing for Impact-Driven Real Estate
             </p>
             <div className="overflow-x-auto">
-              <table className="w-full bg-background/20 backdrop-blur-sm border border-accent-brown/20 rounded-lg">
+              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
                 <thead>
-                  <tr className="border-b border-accent-brown/20">
-                    <th className="text-left p-4 text-accent-brown font-medium">Category</th>
-                    <th className="text-left p-4 text-accent-brown font-medium">Program</th>
-                    <th className="text-left p-4 text-accent-brown font-medium">Use Case</th>
+                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
+                    <th className="text-left p-4 text-silver-mist font-semibold">Category</th>
+                    <th className="text-left p-4 text-silver-mist font-semibold">Program</th>
+                    <th className="text-left p-4 text-silver-mist font-semibold">Use Case</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td rowSpan={4} className="p-4 text-silver-mist font-medium align-top">Multifamily & Affordable Housing</td>
-                    <td className="p-4 text-silver-mist/80">HUD 221(d)(4) & 220</td>
-                    <td className="p-4 text-silver-mist/80">Construction or Substantial Rehab of Multifamily Properties</td>
+                    <td className="p-4 text-silver-mist">HUD 221(d)(4) & 220</td>
+                    <td className="p-4 text-silver-mist">Construction or Substantial Rehab of Multifamily Properties</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
-                    <td className="p-4 text-silver-mist/80">HUD 223(f)</td>
-                    <td className="p-4 text-silver-mist/80">Acquisition or Refinance of Stabilized Multifamily</td>
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 223(f)</td>
+                    <td className="p-4 text-silver-mist">Acquisition or Refinance of Stabilized Multifamily</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
-                    <td className="p-4 text-silver-mist/80">HUD 223(a)(7)</td>
-                    <td className="p-4 text-silver-mist/80">Streamlined Refinance of Existing HUD Loans</td>
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 223(a)(7)</td>
+                    <td className="p-4 text-silver-mist">Streamlined Refinance of Existing HUD Loans</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
-                    <td className="p-4 text-silver-mist/80">HUD 241(a)</td>
-                    <td className="p-4 text-silver-mist/80">Supplemental Loans for Capital Improvements</td>
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 241(a)</td>
+                    <td className="p-4 text-silver-mist">Supplemental Loans for Capital Improvements</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td rowSpan={4} className="p-4 text-silver-mist font-medium align-top">Senior Housing & Healthcare</td>
-                    <td className="p-4 text-silver-mist/80">HUD 232/221(d)(4)</td>
-                    <td className="p-4 text-silver-mist/80">Construction or Rehab of Senior Housing or Healthcare</td>
+                    <td className="p-4 text-silver-mist">HUD 232/221(d)(4)</td>
+                    <td className="p-4 text-silver-mist">Construction or Rehab of Senior Housing or Healthcare</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
-                    <td className="p-4 text-silver-mist/80">HUD 232/223(f)</td>
-                    <td className="p-4 text-silver-mist/80">Acquisition or Refinance of Stabilized Properties</td>
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 232/223(f)</td>
+                    <td className="p-4 text-silver-mist">Acquisition or Refinance of Stabilized Properties</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
-                    <td className="p-4 text-silver-mist/80">HUD 232/223(a)(7)</td>
-                    <td className="p-4 text-silver-mist/80">Streamlined Refinance of Existing HUD Loans</td>
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 232/223(a)(7)</td>
+                    <td className="p-4 text-silver-mist">Streamlined Refinance of Existing HUD Loans</td>
                   </tr>
-                  <tr>
-                    <td className="p-4 text-silver-mist/80">HUD 241(a)</td>
-                    <td className="p-4 text-silver-mist/80">Supplemental Mortgage Insurance</td>
+                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
+                    <td className="p-4 text-silver-mist">HUD 241(a)</td>
+                    <td className="p-4 text-silver-mist">Supplemental Mortgage Insurance</td>
                   </tr>
                 </tbody>
               </table>
@@ -196,85 +196,85 @@ const CoreBridge = () => {
               Core Bridge Financing Parameters
             </h3>
             <div className="overflow-x-auto">
-              <table className="w-full bg-background/20 backdrop-blur-sm border border-accent-brown/20 rounded-lg">
+              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
                 <thead>
-                  <tr className="border-b border-accent-brown/20">
-                    <th className="text-left p-4 text-accent-brown font-medium">Criteria</th>
-                    <th className="text-left p-4 text-accent-brown font-medium">Details</th>
+                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
+                    <th className="text-left p-4 text-silver-mist font-semibold">Criteria</th>
+                    <th className="text-left p-4 text-silver-mist font-semibold">Details</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Property Types</td>
-                    <td className="p-4 text-silver-mist/80">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</td>
+                    <td className="p-4 text-silver-mist">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Loan Amount</td>
-                    <td className="p-4 text-silver-mist/80">$2 Million – $20 Million</td>
+                    <td className="p-4 text-silver-mist">$2 Million – $20 Million</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Purpose</td>
-                    <td className="p-4 text-silver-mist/80">Acquisition, Refinance, Stabilization, Redevelopment</td>
+                    <td className="p-4 text-silver-mist">Acquisition, Refinance, Stabilization, Redevelopment</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Geography</td>
-                    <td className="p-4 text-silver-mist/80">Primary and secondary U.S. markets</td>
+                    <td className="p-4 text-silver-mist">Primary and secondary U.S. markets</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Max LTV / LTC</td>
-                    <td className="p-4 text-silver-mist/80">Up to 75% LTV (stabilized); Up to 75% LTC (based on underwriting)</td>
+                    <td className="p-4 text-silver-mist">Up to 75% LTV (stabilized); Up to 75% LTC (based on underwriting)</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Interest Rate</td>
-                    <td className="p-4 text-silver-mist/80">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</td>
+                    <td className="p-4 text-silver-mist">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Loan Term</td>
-                    <td className="p-4 text-silver-mist/80">1 to 5 Years (Fully Extended)</td>
+                    <td className="p-4 text-silver-mist">1 to 5 Years (Fully Extended)</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Rate Floor / Cap</td>
-                    <td className="p-4 text-silver-mist/80">Set at closing; No rate cap required</td>
+                    <td className="p-4 text-silver-mist">Set at closing; No rate cap required</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Extensions</td>
-                    <td className="p-4 text-silver-mist/80">Up to 3 extensions of 12 months, subject to market fees</td>
+                    <td className="p-4 text-silver-mist">Up to 3 extensions of 12 months, subject to market fees</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Fees</td>
-                    <td className="p-4 text-silver-mist/80">Competitive market-based origination and exit fees</td>
+                    <td className="p-4 text-silver-mist">Competitive market-based origination and exit fees</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Lien Position</td>
-                    <td className="p-4 text-silver-mist/80">Senior (no secondary financing permitted)</td>
+                    <td className="p-4 text-silver-mist">Senior (no secondary financing permitted)</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Funding Structure</td>
-                    <td className="p-4 text-silver-mist/80">Full funding with customary holdbacks</td>
+                    <td className="p-4 text-silver-mist">Full funding with customary holdbacks</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Recourse</td>
-                    <td className="p-4 text-silver-mist/80">Generally non-recourse, with carve outs for "bad boy" acts</td>
+                    <td className="p-4 text-silver-mist">Generally non-recourse, with carve outs for "bad boy" acts</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Closing Timeline</td>
-                    <td className="p-4 text-silver-mist/80">30–45 days from LOI acceptance and deposit receipt</td>
+                    <td className="p-4 text-silver-mist">30–45 days from LOI acceptance and deposit receipt</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Debt Service Reserve</td>
-                    <td className="p-4 text-silver-mist/80">Minimum 1.00x DSCR on in-place cash flow</td>
+                    <td className="p-4 text-silver-mist">Minimum 1.00x DSCR on in-place cash flow</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Prepayment</td>
-                    <td className="p-4 text-silver-mist/80">Minimum interest, typically half the initial loan term</td>
+                    <td className="p-4 text-silver-mist">Minimum interest, typically half the initial loan term</td>
                   </tr>
-                  <tr className="border-b border-accent-brown/10">
+                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Future Advances</td>
-                    <td className="p-4 text-silver-mist/80">Available for TI/LC and other approved costs</td>
+                    <td className="p-4 text-silver-mist">Available for TI/LC and other approved costs</td>
                   </tr>
-                  <tr>
+                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
                     <td className="p-4 text-silver-mist font-medium">Deposits</td>
-                    <td className="p-4 text-silver-mist/80">Sufficient to cover third-party reports, legal, and underwriting diligence</td>
+                    <td className="p-4 text-silver-mist">Sufficient to cover third-party reports, legal, and underwriting diligence</td>
                   </tr>
                 </tbody>
               </table>
