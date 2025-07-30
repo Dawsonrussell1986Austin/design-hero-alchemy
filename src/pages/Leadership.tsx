@@ -38,7 +38,7 @@ const Leadership = () => {
     {
       name: "Matthew Webster",
       title: "Chief Credit Officer, Senior Vice President", 
-      image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png",
+      image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
       bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
     }
   ];
@@ -132,7 +132,7 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster") ? (
                       <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
