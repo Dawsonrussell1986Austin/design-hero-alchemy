@@ -26,7 +26,7 @@ const Leadership = () => {
     {
       name: "Robert R. Kaplan, Jr.",
       title: "Chief Legal Officer and Executive Vice President for Corporate Development",
-      image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png",
+      image: "/lovable-uploads/95be19e9-56b5-4d13-963d-51e2ac72fa2b.png",
       bio: "Robert leads all legal affairs and corporate development initiatives, providing strategic counsel on complex transactions and regulatory matters."
     },
     {
@@ -132,7 +132,7 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr.") ? (
                       <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
