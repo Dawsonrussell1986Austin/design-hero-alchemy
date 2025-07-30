@@ -40,6 +40,12 @@ const Leadership = () => {
       title: "Chief Credit Officer, Senior Vice President", 
       image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
       bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
+    },
+    {
+      name: "Brook Scardina",
+      title: "Managing Partner, Capital Markets & Investments",
+      image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png",
+      bio: "Brook Scardina is Managing Partner, Capital Markets & Investments, for Oak Real Estate Partners (OREP), where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector."
     }
   ];
 
@@ -143,7 +149,7 @@ const Leadership = () => {
                   }}
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
