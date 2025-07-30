@@ -322,30 +322,30 @@ const Transactions = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <CardContent className="p-8 bg-transparent backdrop-blur-sm">
-                  <h3 className="text-2xl font-bold text-silver-mist mb-6">
+                <CardContent className="p-6 bg-transparent backdrop-blur-sm">
+                  <h3 className="text-lg font-semibold text-silver-mist mb-4 leading-tight">
                     {transaction.name}
                   </h3>
                   
-                  <div className="space-y-3">
-                    <div className="flex justify-between items-center">
-                      <span className="text-pale-sage text-sm font-medium">LOCATION:</span>
-                      <span className="text-silver-mist font-semibold">{transaction.location}</span>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-start">
+                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Location:</span>
+                      <span className="text-silver-mist/90 text-sm text-right">{transaction.location}</span>
                     </div>
                     
-                    <div className="flex justify-between items-center">
-                      <span className="text-pale-sage text-sm font-medium">LOAN SIZE:</span>
-                      <span className="text-garnet-edge font-bold text-lg">{transaction.loanSize}</span>
+                    <div className="flex justify-between items-start">
+                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Loan Size:</span>
+                      <span className="text-garnet-edge text-sm font-medium">{transaction.loanSize}</span>
                     </div>
                     
-                    <div className="flex justify-between items-center">
-                      <span className="text-pale-sage text-sm font-medium">LOAN TYPE:</span>
-                      <span className="text-silver-mist font-semibold">{transaction.loanType}</span>
+                    <div className="flex justify-between items-start">
+                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Loan Type:</span>
+                      <span className="text-silver-mist/90 text-sm text-right leading-tight">{transaction.loanType}</span>
                     </div>
                     
-                    <div className="flex justify-between items-center">
-                      <span className="text-pale-sage text-sm font-medium">PROPERTY TYPE:</span>
-                      <span className="text-silver-mist font-semibold">{transaction.propertyType}</span>
+                    <div className="flex justify-between items-start">
+                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Property Type:</span>
+                      <span className="text-silver-mist/90 text-sm">{transaction.propertyType}</span>
                     </div>
                   </div>
                 </CardContent>
