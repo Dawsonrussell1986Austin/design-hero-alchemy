@@ -32,7 +32,7 @@ const Leadership = () => {
     {
       name: "Thomas A. McGovern", 
       title: "Chief Financial Officer",
-      image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png",
+      image: "/lovable-uploads/8751a90a-69d4-476a-9989-f106bb73f3e5.png",
       bio: "Thomas oversees all financial operations, reporting, and strategic financial planning to support Oak's continued growth and stability."
     },
     {
@@ -132,8 +132,12 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr.") ? (
-                      <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern") ? (
+                      <img 
+                        src={leader.image} 
+                        alt={leader.name} 
+                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" ? "filter grayscale" : ""}`}
+                      />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
                         <span className="text-silver-mist/60 text-sm">Photo</span>
