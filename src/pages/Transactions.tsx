@@ -11,7 +11,8 @@ const Transactions = () => {
       loanSize: "$9,225,000",
       loanType: "OPPORTUNISTIC BRIDGE LOAN",
       propertyType: "MULTIFAMILY",
-      image: "/lovable-uploads/91b49f1e-c22c-4f5d-9789-e817c02902ed.png"
+      image: "/lovable-uploads/91b49f1e-c22c-4f5d-9789-e817c02902ed.png",
+      realImage: "/lovable-uploads/079afc87-d1f9-4851-90ba-9fd03ed1be57.png"
     },
     {
       id: 2,
@@ -20,7 +21,8 @@ const Transactions = () => {
       loanSize: "$8,650,000",
       loanType: "OPPORTUNISTIC BRIDGE LOAN",
       propertyType: "MULTIFAMILY",
-      image: "/lovable-uploads/a0c96762-6adf-454f-a26a-d05258556d17.png"
+      image: "/lovable-uploads/a0c96762-6adf-454f-a26a-d05258556d17.png",
+      realImage: "/lovable-uploads/85bdc86c-0733-4fb4-b486-f69af8094c09.png"
     },
     {
       id: 3,
@@ -29,7 +31,8 @@ const Transactions = () => {
       loanSize: "$9,750,000",
       loanType: "CORE-PLUS BRIDGE LOAN",
       propertyType: "INDUSTRIAL",
-      image: "/lovable-uploads/95843501-e896-453c-aad5-f41960a68828.png"
+      image: "/lovable-uploads/95843501-e896-453c-aad5-f41960a68828.png",
+      realImage: "/lovable-uploads/7aa332ef-b52e-406c-b093-a8507adfd8b8.png"
     },
     {
       id: 4,
@@ -38,7 +41,8 @@ const Transactions = () => {
       loanSize: "$1,700,000",
       loanType: "OPPORTUNISTIC BRIDGE LOAN",
       propertyType: "MULTIFAMILY",
-      image: "/lovable-uploads/ba58a644-5b83-4a4f-a16d-2e36b0520c76.png"
+      image: "/lovable-uploads/ba58a644-5b83-4a4f-a16d-2e36b0520c76.png",
+      realImage: "/lovable-uploads/f935fc6e-e24c-416e-a3c9-66938b01ba2c.png"
     },
     {
       id: 5,
@@ -319,9 +323,16 @@ const Transactions = () => {
                   <img 
                     src={transaction.image}
                     alt={transaction.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 group-hover:opacity-0"
                   />
-                  <div className="absolute top-3 left-3 bg-garnet-edge/90 backdrop-blur-sm text-silver-mist px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide">
+                  {transaction.realImage && (
+                    <img 
+                      src={transaction.realImage}
+                      alt={`${transaction.name} - Real Photo`}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
+                    />
+                  )}
+                  <div className="absolute top-3 left-3 bg-garnet-edge/90 backdrop-blur-sm text-silver-mist px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide z-10">
                     {transaction.propertyType}
                   </div>
                 </div>
