@@ -315,12 +315,15 @@ const Transactions = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {featuredTransactions.map((transaction) => (
               <Card key={transaction.id} className="bg-white/5 backdrop-blur-xl border border-white/10 overflow-hidden hover:border-garnet-edge/50 hover:bg-white/10 transition-all duration-300 group text-silver-mist shadow-2xl shadow-obsidian/20">
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden relative">
                   <img 
                     src={transaction.image}
                     alt={transaction.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
+                  <div className="absolute top-3 left-3 bg-garnet-edge/90 backdrop-blur-sm text-silver-mist px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide">
+                    {transaction.propertyType}
+                  </div>
                 </div>
                 <CardContent className="p-6 bg-transparent backdrop-blur-sm">
                   <h3 className="text-lg font-semibold text-silver-mist mb-4 leading-tight">
@@ -338,10 +341,6 @@ const Transactions = () => {
                     
                     <div className="text-silver-mist/70 text-sm leading-tight">
                       {transaction.loanType}
-                    </div>
-                    
-                    <div className="text-pale-sage text-sm uppercase tracking-wide">
-                      {transaction.propertyType}
                     </div>
                   </div>
                 </CardContent>
