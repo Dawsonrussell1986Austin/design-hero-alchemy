@@ -14,7 +14,7 @@ const Leadership = () => {
     {
       name: "Raymond T. Davis", 
       title: "President & Chief Strategy Officer",
-      image: "/lovable-uploads/02930748-1ba7-4832-a0c8-0375667a7f22.png",
+      image: "/lovable-uploads/837db76c-f393-41f0-aeeb-03c5f011e440.png",
       bio: "Raymond leads strategic initiatives and corporate development, bringing decades of experience in real estate finance and investment management."
     },
     {
@@ -138,7 +138,7 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && leader.name === "Gary Bechtel" ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis") ? (
                       <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
