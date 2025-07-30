@@ -134,25 +134,39 @@ const Navigation = () => {
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
-            </div>
-            <div className="group relative">
-              <a href="/transactions" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+              
+              {/* Investments Dropdown Menu */}
+              <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
+                scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
               }`}>
-                Transactions
-              </a>
-              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
-                scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
-              }`}></div>
+                <div className="py-2">
+                  <a 
+                    href="/investments" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Investment Overview
+                  </a>
+                  <a 
+                    href="/offerings" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Offerings
+                  </a>
+                  <a 
+                    href="/transactions" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Transactions
+                  </a>
+                </div>
+              </div>
             </div>
-            <a href="/offerings" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-              scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
-            }`}>
-              Offerings
-              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
-                scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
-              }`}></div>
-            </a>
             <a href="/news" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
               scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
             }`}>
