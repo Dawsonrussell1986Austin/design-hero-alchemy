@@ -83,6 +83,46 @@ const Navigation = () => {
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
+              
+              {/* Lending Dropdown Menu */}
+              <div className={`absolute left-0 top-full w-56 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
+                scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
+              }`}>
+                <div className="py-2">
+                  <a 
+                    href="/lending/core-bridge" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Core Bridge
+                  </a>
+                  <a 
+                    href="/lending/core-plus-bridge" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Core-Plus Bridge
+                  </a>
+                  <a 
+                    href="/lending/opportunistic-bridge" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Opportunistic Bridge
+                  </a>
+                  <a 
+                    href="/lending/participating-bridge" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Participating Bridge
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="group relative">
               <a href="/investments" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
@@ -105,6 +145,14 @@ const Navigation = () => {
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
             </div>
+            <a href="/offerings" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+            }`}>
+              Offerings
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
+              }`}></div>
+            </a>
             <a href="/news" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
               scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
             }`}>
