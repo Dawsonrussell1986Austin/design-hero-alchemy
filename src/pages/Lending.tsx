@@ -122,34 +122,34 @@ const Lending = () => {
                 Multifamily & Affordable Housing Programs
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Construction/Substantial Rehabilitation of Multifamily Properties</h5>
-                  <p className="text-silver-mist/70">HUD 221(d)(4) & 220</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Multifamily Properties</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 221(d)(4) & 220</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Acquisition or Refinance of Multifamily Properties</h5>
-                  <p className="text-silver-mist/70">HUD 223(f)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Multifamily Properties</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 223(f)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Properties</h5>
-                  <p className="text-silver-mist/70">HUD 223(a)(7)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Properties</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 223(a)(7)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Supplemental Loans for Capital Improvement</h5>
-                  <p className="text-silver-mist/70">HUD 241(a)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Loans for Capital Improvement</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
@@ -162,34 +162,34 @@ const Lending = () => {
                 Senior Housing & Healthcare Programs
               </h4>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Construction/Substantial Rehabilitation of Senior Housing & Healthcare</h5>
-                  <p className="text-silver-mist/70">HUD 232/221(d)(4)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Senior Housing & Healthcare</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 232/221(d)(4)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Acquisition or Refinance of Senior Housing & Healthcare</h5>
-                  <p className="text-silver-mist/70">HUD 232/223(f)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Senior Housing & Healthcare</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 232/223(f)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Senior Assets</h5>
-                  <p className="text-silver-mist/70">HUD 232/223(a)(7)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Senior Assets</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 232/223(a)(7)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
                 
-                <div className="space-y-3 p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20 hover:bg-background/30 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Supplemental Mortgage Insurance for Capital Improvements</h5>
-                  <p className="text-silver-mist/70">HUD 241(a)</p>
-                  <p className="text-garnet-edge text-sm italic">
+                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Mortgage Insurance for Capital Improvements</h5>
+                  <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
+                  <p className="text-accent-brown text-sm font-medium">
                     Click to learn more →
                   </p>
                 </div>
