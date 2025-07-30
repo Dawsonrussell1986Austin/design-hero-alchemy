@@ -136,7 +136,7 @@ const Leadership = () => {
                 <div 
                   key={leader.name}
                   className={`bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300 ${
-                    leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster" ? "cursor-pointer" : ""
+                    leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." ? "cursor-pointer" : ""
                   }`}
                   onClick={() => {
                     if (leader.name === "Gary Bechtel") {
@@ -147,6 +147,8 @@ const Leadership = () => {
                       window.location.href = "/leadership/raymond-davis";
                     } else if (leader.name === "Matthew Webster") {
                       window.location.href = "/leadership/matthew-webster";
+                    } else if (leader.name === "Robert R. Kaplan, Jr.") {
+                      window.location.href = "/leadership/robert-kaplan";
                     }
                   }}
                 >
@@ -173,7 +175,7 @@ const Leadership = () => {
                     <p className="text-silver-mist/80 text-sm leading-relaxed">
                       {leader.bio}
                     </p>
-                    {(leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster") && (
+                    {(leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr.") && (
                       <p className="text-garnet-edge text-xs italic">
                         Click to read full bio →
                       </p>
