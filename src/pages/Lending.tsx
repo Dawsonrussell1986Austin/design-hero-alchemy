@@ -47,7 +47,10 @@ const Lending = () => {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4 p-8 bg-silver-mist/5 backdrop-blur-sm rounded-lg border border-accent-brown/30 hover:bg-silver-mist/10 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+              <div 
+                className="space-y-4 p-8 bg-silver-mist/5 backdrop-blur-sm rounded-lg border border-accent-brown/30 hover:bg-silver-mist/10 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group"
+                onClick={() => window.location.href = "/lending/core-bridge"}
+              >
                 <h3 className="text-xl font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Core Bridge</h3>
                 <p className="text-silver-mist/80 leading-relaxed">
                   Loans for stabilizing properties, currently at or above breakdown cash flow. (≥1.00x DSCR)
