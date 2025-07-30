@@ -8,7 +8,7 @@ const Leadership = () => {
     {
       name: "Gary Bechtel",
       title: "Chief Executive Officer, Managing Principal",
-      image: "/lovable-uploads/02930748-1ba7-4832-a0c8-0375667a7f22.png",
+      image: "/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png",
       bio: "Gary Bechtel is Chief Executive Officer & Managing Principal of Red Oak Capital Holdings, responsible for managing the national commercial real estate finance firm's lending operations and business development efforts. He operates out of the firm's Grand Rapids, Michigan office."
     },
     {
@@ -138,9 +138,13 @@ const Leadership = () => {
                   className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
-                      <span className="text-silver-mist/60 text-sm">Photo</span>
-                    </div>
+                    {leader.image && leader.name === "Gary Bechtel" ? (
+                      <img src={leader.image} alt={leader.name} className="w-full h-full object-cover rounded-sm" />
+                    ) : (
+                      <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
+                        <span className="text-silver-mist/60 text-sm">Photo</span>
+                      </div>
+                    )}
                   </div>
                   <div className="p-6 space-y-4">
                     <div>
@@ -185,7 +189,7 @@ const Leadership = () => {
                 <div className="lg:col-span-2">
                   <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4">
                     <img 
-                      src="/lovable-uploads/0a6d8dec-192e-4e3f-b18f-aeba27ee6655.png"
+                      src="/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png"
                       alt="Gary Bechtel"
                       className="w-full h-full object-cover rounded-sm"
                     />
