@@ -28,7 +28,7 @@ const About = () => {
                 Investors Expect More
               </h1>
               <h1 className="text-6xl lg:text-8xl font-light leading-[0.9] tracking-tight">
-                <span className="text-accent-brown">OAK Provides</span> <span className="text-garnet-edge">Results</span>
+                <span className="text-accent-brown">OAK Provides</span> <span className="text-garnet-edge">Disciplined Income & Growth</span>
               </h1>
             </div>
             
@@ -150,7 +150,14 @@ const About = () => {
                 
                 <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
                   In a private credit landscape where polish often outpaces performance, Oak delivers industry 
-                  leading expertise in a highly inefficient, fragmented and unserved sector of the market.
+                  leading expertise in a highly inefficient, fragmented and unserved sector of the market. 
+                  We don't chase headlines—we create income strategies that prioritize downside protection, predictability, and trust.
+                </p>
+                
+                <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
+                  With more than 150 years of combined experience across lending, capital markets, and structured finance, 
+                  our team has navigated multiple real estate cycles. Collectively, we've structured over $5 billion in 
+                  bridge loans and executed more than $18 billion in total transactions.
                 </p>
               </div>
               
