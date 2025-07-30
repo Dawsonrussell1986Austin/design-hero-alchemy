@@ -129,7 +129,14 @@ const Leadership = () => {
               {leadershipTeam.map((leader, index) => (
                 <div 
                   key={leader.name}
-                  className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300"
+                  className={`bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300 ${
+                    leader.name === "Gary Bechtel" ? "cursor-pointer" : ""
+                  }`}
+                  onClick={() => {
+                    if (leader.name === "Gary Bechtel") {
+                      window.location.href = "/leadership/gary-bechtel";
+                    }
+                  }}
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
                     {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern") ? (
@@ -154,6 +161,11 @@ const Leadership = () => {
                     <p className="text-silver-mist/80 text-sm leading-relaxed">
                       {leader.bio}
                     </p>
+                    {leader.name === "Gary Bechtel" && (
+                      <p className="text-garnet-edge text-xs italic">
+                        Click to read full bio →
+                      </p>
+                    )}
                     <div className="flex space-x-3 pt-2">
                       <Button
                         variant="ghost"
