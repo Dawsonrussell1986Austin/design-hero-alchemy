@@ -189,11 +189,11 @@ const About = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
-                Why Real Estate Credit <span className="text-accent-brown">Matters</span>
+                Why Real Estate Credit Lending <span className="text-accent-brown">Matters</span>
               </h2>
               <p className="text-2xl text-deep-petrol leading-relaxed max-w-5xl mx-auto font-light">
-                At Oak, we focus on real estate credit that's backed by the property itself — structured so 
-                our investors' capital is prioritized to be repaid first.
+                At Oak, we focus on real estate credit that's backed by the property itself — and structured so 
+                our investors' capital is prioritized to be repaid first. This approach offers clear advantages:
               </p>
             </div>
             
@@ -209,7 +209,7 @@ const About = () => {
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 <h3 className="text-2xl font-light text-accent-brown mb-6">Predictable Cash Flows</h3>
                 <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Senior position loans generate stable and predictable income streams.
+                  Senior position loans generate stable and predictable income.
                 </p>
               </div>
               
@@ -223,14 +223,21 @@ const About = () => {
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 <h3 className="text-2xl font-light text-accent-brown mb-6">Low Volatility</h3>
                 <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Real estate markets exhibit less volatility relative to public equities or debt markets.
+                  Real estate markets tend to be more stable and exhibit less volatility relative to public equities or debt markets.
                 </p>
               </div>
               
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
                 <h3 className="text-2xl font-light text-accent-brown mb-6">High Recovery Potential</h3>
                 <p className="text-deep-petrol leading-relaxed font-light text-lg">
-                  Hard real estate assets offer greater value recovery than intangible assets in adverse scenarios.
+                  In adverse scenarios, hard real estate assets offer greater value recovery than intangible assets.
+                </p>
+              </div>
+              
+              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl p-10 hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                <h3 className="text-2xl font-light text-accent-brown mb-6">Appreciation Opportunity</h3>
+                <p className="text-deep-petrol leading-relaxed font-light text-lg">
+                  In addition to current income, real estate assets have historically appreciated in value over time.
                 </p>
               </div>
               
@@ -262,7 +269,7 @@ const About = () => {
               <p className="text-2xl text-silver-mist/90 leading-relaxed font-light mb-8">
                 At Oak, integrity isn't a buzzword—it's a core value with a system to guide our growth. 
                 It drives how we lend to our borrowers, how we service our loans and how we report to our 
-                investors while serving as a principle of how we treat our partners.
+                investors while servicing as a principal of how we treat our partners.
               </p>
               <p className="text-3xl font-light text-garnet-edge leading-relaxed">
                 We're strong because we're structured. Dependable because we're disciplined. 
