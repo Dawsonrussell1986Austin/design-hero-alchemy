@@ -135,9 +135,7 @@ const Leadership = () => {
               {leadershipTeam.map((leader, index) => (
                 <div 
                   key={leader.name}
-                  className={`bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300 ${
-                    leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" ? "cursor-pointer" : ""
-                  }`}
+                  className="bg-silver-mist/5 rounded-sm border border-garnet-edge/20 overflow-hidden group hover:shadow-xl transition-all duration-300 cursor-pointer"
                   onClick={() => {
                     if (leader.name === "Gary Bechtel") {
                       window.location.href = "/leadership/gary-bechtel";
@@ -151,6 +149,8 @@ const Leadership = () => {
                       window.location.href = "/leadership/robert-kaplan";
                     } else if (leader.name === "Thomas A. McGovern") {
                       window.location.href = "/leadership/thomas-mcgovern";
+                    } else if (leader.name === "Brook Scardina") {
+                      window.location.href = "/leadership/brook-scardina";
                     }
                   }}
                 >
@@ -177,11 +177,9 @@ const Leadership = () => {
                     <p className="text-silver-mist/80 text-sm leading-relaxed">
                       {leader.bio}
                     </p>
-                    {(leader.name === "Gary Bechtel" || leader.name === "Paul Cleary" || leader.name === "Raymond T. Davis" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern") && (
-                      <p className="text-garnet-edge text-xs italic">
-                        Click to read full bio →
-                      </p>
-                    )}
+                    <p className="text-garnet-edge text-xs italic">
+                      Click to read full bio →
+                    </p>
                     <div className="flex space-x-3 pt-2">
                       <Button
                         variant="ghost"
