@@ -18,6 +18,7 @@ import RobertKaplan from "./pages/RobertKaplan";
 import ThomasMcGovern from "./pages/ThomasMcGovern";
 import BrookScardina from "./pages/BrookScardina";
 import CoreBridge from "./pages/CoreBridge";
+import CorePlusBridge from "./pages/CorePlusBridge";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/leadership/thomas-mcgovern" element={<ThomasMcGovern />} />
           <Route path="/leadership/brook-scardina" element={<BrookScardina />} />
           <Route path="/lending/core-bridge" element={<CoreBridge />} />
+          <Route path="/lending/core-plus-bridge" element={<CorePlusBridge />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
