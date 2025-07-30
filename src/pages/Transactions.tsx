@@ -38,7 +38,7 @@ const Transactions = () => {
       loanSize: "$1,700,000",
       loanType: "OPPORTUNISTIC BRIDGE LOAN",
       propertyType: "MULTIFAMILY",
-      image: "/lovable-uploads/c171f798-a069-4350-b147-7cc49432b34a.png"
+      image: "/lovable-uploads/ba58a644-5b83-4a4f-a16d-2e36b0520c76.png"
     },
     {
       id: 5,
