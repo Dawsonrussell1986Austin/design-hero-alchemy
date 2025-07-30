@@ -31,7 +31,7 @@ const Navigation = () => {
               <div className="absolute w-full h-0.5 bg-accent-brown scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0"></div>
               
               {/* Dropdown Menu */}
-              <div className="absolute left-0 top-full mt-2 w-48 bg-background border border-border/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div className="absolute left-0 top-full w-48 bg-background border border-border/20 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
                 <div className="py-2">
                   <a 
                     href="/about" 
