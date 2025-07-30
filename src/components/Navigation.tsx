@@ -39,6 +39,12 @@ const Navigation = () => {
                   >
                     About Us
                   </a>
+                  <a 
+                    href="/leadership" 
+                    className="block px-4 py-2 text-sm text-obsidian hover:bg-accent-brown/10 hover:text-accent-brown transition-colors duration-200"
+                  >
+                    Leadership
+                  </a>
                 </div>
               </div>
             </div>

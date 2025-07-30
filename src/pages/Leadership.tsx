@@ -76,7 +76,7 @@ const Leadership = () => {
             <p className="text-lg leading-relaxed">
               Oak's leadership team brings unmatched experience and depth across our real estate lending operations, 
               investment management, and the company's long-term strategic initiatives. We are seasoned operators, 
-              not theorists—practitioners who have executed more than $18 billion over decades in transactions across 
+              not theorists—practitioners who have executed more than $218 billion over decades in transactions across 
               cycles, geographies, and asset classes.
             </p>
             
