@@ -29,7 +29,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <a href="/" className="block">
               <img 
-                src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
+                src="/lovable-uploads/789e6c0e-d07f-4ed8-99b1-35476e65086e.png" 
                 alt="OAK" 
                 className="h-14 w-auto transition-transform duration-300 hover:scale-105"
               />
