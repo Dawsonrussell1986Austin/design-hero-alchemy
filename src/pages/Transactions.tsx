@@ -301,7 +301,7 @@ const Transactions = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-silver-mist/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Oak sponsors institutionally-backed debt investment vehicles which have closed in excess of 
+            Oak sponsors institutionally-backed debt investment vehicles that have closed in excess of 
             <span className="text-garnet-edge font-semibold"> $2.5 billion </span>
             of debt transactions.*
           </p>
