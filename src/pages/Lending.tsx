@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Lending = () => {
   return (
@@ -73,15 +74,17 @@ const Lending = () => {
                 </p>
               </div>
               
-              <div className="space-y-4 p-8 bg-silver-mist/5 backdrop-blur-sm rounded-lg border border-accent-brown/30 hover:bg-silver-mist/10 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                <h3 className="text-xl font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Opportunistic Bridge</h3>
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Higher-leverage loans for value-add strategies and capital improvements.
-                </p>
-                <p className="text-garnet-edge text-sm italic">
-                  Click to learn more →
-                </p>
-              </div>
+              <Link to="/lending/opportunistic-bridge" className="block">
+                <div className="space-y-4 p-8 bg-silver-mist/5 backdrop-blur-sm rounded-lg border border-accent-brown/30 hover:bg-silver-mist/10 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                  <h3 className="text-xl font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Opportunistic Bridge</h3>
+                  <p className="text-silver-mist/80 leading-relaxed">
+                    Higher-leverage loans for value-add strategies and capital improvements.
+                  </p>
+                  <p className="text-garnet-edge text-sm italic">
+                    Click to learn more →
+                  </p>
+                </div>
+              </Link>
               
               <div className="space-y-4 p-8 bg-silver-mist/5 backdrop-blur-sm rounded-lg border border-accent-brown/30 hover:bg-silver-mist/10 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
                 <h3 className="text-xl font-medium text-accent-brown group-hover:text-garnet-edge transition-colors duration-300">Participating Bridge</h3>
