@@ -15,28 +15,28 @@ const Transactions = () => {
     },
     {
       id: 2,
+      name: "Garden Courts Apartments",
+      location: "SOUTHEAST REGION",
+      loanSize: "$8,650,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/98686462-3dfb-42d0-a276-b4a3258b443d.png"
+    },
+    {
+      id: 3,
       name: "Panda Biotech",
       location: "SOUTHWEST REGION", 
       loanSize: "$9,750,000",
       loanType: "CORE-PLUS BRIDGE LOAN",
       propertyType: "INDUSTRIAL",
-      image: "/lovable-uploads/98686462-3dfb-42d0-a276-b4a3258b443d.png"
-    },
-    {
-      id: 3,
-      name: "Gateway Shopping Center",
-      location: "MIDWEST REGION",
-      loanSize: "$14,500,000", 
-      loanType: "CORE-PLUS BRIDGE",
-      propertyType: "RETAIL",
       image: "/lovable-uploads/a1896c4a-6668-4b7a-8d37-c2d9ae2cb3e2.png"
     },
     {
       id: 4,
-      name: "8th Street Apartments",
-      location: "NORTHWEST REGION",
-      loanSize: "$8,500,000",
-      loanType: "OPPORTUNISTIC BRIDGE LOAN", 
+      name: "Marblehead Apartments",
+      location: "MIDWEST REGION",
+      loanSize: "$1,700,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
       propertyType: "MULTIFAMILY",
       image: "/lovable-uploads/c171f798-a069-4350-b147-7cc49432b34a.png"
     },
@@ -60,21 +60,228 @@ const Transactions = () => {
     },
     {
       id: 7,
-      name: "The Enclave at Woodbridge",
-      location: "SOUTHWEST REGION",
-      loanSize: "$20,500,000", 
-      loanType: "HUD MULTIFAMILY - 221D4",
+      name: "8th Street Apartments",
+      location: "NORTHWEST REGION",
+      loanSize: "$8,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN", 
       propertyType: "MULTIFAMILY",
       image: "/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png"
     },
     {
       id: 8,
+      name: "Gateway Shopping Center",
+      location: "MIDWEST REGION",
+      loanSize: "$14,500,000", 
+      loanType: "CORE-PLUS BRIDGE",
+      propertyType: "RETAIL",
+      image: "/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
+    },
+    {
+      id: 9,
+      name: "Minnesota Commons Apartments",
+      location: "NORTHEAST REGION",
+      loanSize: "$15,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png"
+    },
+    {
+      id: 10,
+      name: "The Breakers Apartments",
+      location: "SOUTHEAST REGION",
+      loanSize: "$5,660,000",
+      loanType: "CORE-PLUS BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/ce177ed1-07c9-4b54-86fa-0de9fb0ba3be.png"
+    },
+    {
+      id: 11,
+      name: "Eagle Crest Village",
+      location: "NORTHWEST REGION",
+      loanSize: "$4,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/c40701c4-be9c-4192-b6ea-12fc78ad33be.png"
+    },
+    {
+      id: 12,
+      name: "Ocean Shores Apartments",
+      location: "SOUTHEAST REGION",
+      loanSize: "$7,700,000",
+      loanType: "CORE-PLUS BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/a8349d0b-e18c-4e40-b05e-b43b801403c1.png"
+    },
+    {
+      id: 13,
+      name: "Laura Street Trio",
+      location: "SOUTHEAST REGION",
+      loanSize: "$6,300,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MIXED USE",
+      image: "/lovable-uploads/89d8c150-21e7-428d-a059-cf90057a1204.png"
+    },
+    {
+      id: 14,
+      name: "Bon Air Apartments",
+      location: "MIDWEST REGION",
+      loanSize: "$4,000,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/8751a90a-69d4-476a-9989-f106bb73f3e5.png"
+    },
+    {
+      id: 15,
+      name: "Hawaii Avenue Apartments",
+      location: "NORTHEAST REGION",
+      loanSize: "$5,800,000",
+      loanType: "PARTICIPATING BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/837db76c-f393-41f0-aeeb-03c5f011e440.png"
+    },
+    {
+      id: 16,
+      name: "CHP Office Building",
+      location: "WEST REGION",
+      loanSize: "$8,000,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "OFFICE",
+      image: "/lovable-uploads/83330b8e-1b82-4836-98fb-4d33bd9ab0fe.png"
+    },
+    {
+      id: 17,
+      name: "Templecliff Apartments",
+      location: "WEST REGION",
+      loanSize: "$2,300,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/79c2a7cf-32d1-4826-b96c-62d23008685e.png"
+    },
+    {
+      id: 18,
+      name: "Irondequoit Plaza",
+      location: "NORTHEAST REGION",
+      loanSize: "$8,600,000",
+      loanType: "CORE BRIDGE LOAN",
+      propertyType: "RETAIL",
+      image: "/lovable-uploads/7078b5ad-cf31-456a-9b1a-9f74f2117a75.png"
+    },
+    {
+      id: 19,
+      name: "3850 W. Cortland Street",
+      location: "MIDWEST REGION",
+      loanSize: "$5,800,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "INDUSTRIAL",
+      image: "/lovable-uploads/71932cd7-9481-49c5-8971-a718dfd8a289.png"
+    },
+    {
+      id: 20,
+      name: "Extra Space Storage Property",
+      location: "NORTHEAST REGION",
+      loanSize: "$5,500,000",
+      loanType: "PARTICIPATING BRIDGE LOAN",
+      propertyType: "SELF-STORAGE",
+      image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png"
+    },
+    {
+      id: 21,
+      name: "Minnesota Avenue Apartments",
+      location: "NORTHEAST REGION",
+      loanSize: "$2,650,000",
+      loanType: "PARTICIPATING BRIDGE LOAN",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/634f9046-a886-4d1d-81c0-abd82f0a7daf.png"
+    },
+    {
+      id: 22,
+      name: "Arista Riverstone",
+      location: "SOUTHWEST REGION",
+      loanSize: "$28,500,000",
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/61420552-7df9-48c1-b18a-47010f1decaf.png"
+    },
+    {
+      id: 23,
+      name: "The Reserve by the Lake",
+      location: "SOUTHWEST REGION",
+      loanSize: "$22,250,000",
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/5f1c8481-e8d3-4d2a-88d6-54df790bcf6c.png"
+    },
+    {
+      id: 24,
+      name: "The Ravinia San Antonio",
+      location: "SOUTHWEST REGION",
+      loanSize: "$16,100,000",
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/55f40082-fc81-4584-ab22-ec6acc5246a8.png"
+    },
+    {
+      id: 25,
+      name: "The Enclave at Woodbridge",
+      location: "SOUTHWEST REGION",
+      loanSize: "$20,500,000", 
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png"
+    },
+    {
+      id: 26,
+      name: "The Waterford at Summer Park",
+      location: "SOUTHWEST REGION",
+      loanSize: "$16,450,000",
+      loanType: "HUD MULTIFAMILY - 221D4",
+      propertyType: "MULTIFAMILY",
+      image: "/lovable-uploads/52f672d2-7426-4ab5-a99f-5955bbbba3de.png"
+    },
+    {
+      id: 27,
       name: "4401 Fortune Place",
       location: "SOUTHEAST REGION",
       loanSize: "$10,180,000",
       loanType: "CORE-PLUS BRIDGE LOAN", 
       propertyType: "INDUSTRIAL",
-      image: "/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
+      image: "/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png"
+    },
+    {
+      id: 28,
+      name: "35-41 Mechanic Street",
+      location: "NORTHEAST REGION",
+      loanSize: "$2,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "INDUSTRIAL",
+      image: "/lovable-uploads/4c4da614-0fa8-433e-a2a3-077a4b57da10.png"
+    },
+    {
+      id: 29,
+      name: "Prairie Stone Commons",
+      location: "MIDWEST REGION",
+      loanSize: "$8,300,000",
+      loanType: "CORE BRIDGE LOAN",
+      propertyType: "OFFICE",
+      image: "/lovable-uploads/4212ae30-dd8d-4c0d-a307-f5116851ce9d.png"
+    },
+    {
+      id: 30,
+      name: "Clarendon Hotel & Spa",
+      location: "SOUTHWEST REGION",
+      loanSize: "$16,500,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "HOSPITALITY",
+      image: "/lovable-uploads/40f41be8-accc-4a72-a71a-e72c8e228281.png"
+    },
+    {
+      id: 31,
+      name: "4850 W. Bloomingdale Avenue",
+      location: "MIDWEST REGION",
+      loanSize: "$3,250,000",
+      loanType: "OPPORTUNISTIC BRIDGE LOAN",
+      propertyType: "INDUSTRIAL",
+      image: "/lovable-uploads/403d76e1-5d7b-4f4c-b865-ee5d118a616d.png"
     }
   ];
 
