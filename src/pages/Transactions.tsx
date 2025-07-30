@@ -68,11 +68,6 @@ const Transactions = () => {
       {/* Featured Transactions Section */}
       <section className="py-20 px-6">
         <div className="container mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-pale-sage text-lg font-medium mb-4 tracking-wide uppercase">
-              Featured Debt Transactions
-            </h2>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {featuredTransactions.map((transaction) => (
