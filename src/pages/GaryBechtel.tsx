@@ -2,8 +2,11 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const GaryBechtel = () => {
+  const navigate = useNavigate();
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       {/* Navigation */}
@@ -14,7 +17,7 @@ const GaryBechtel = () => {
         <Button 
           variant="ghost"
           className="text-silver-mist hover:text-accent-brown transition-all duration-300"
-          onClick={() => window.history.back()}
+          onClick={() => navigate("/leadership")}
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
           Back to Leadership
