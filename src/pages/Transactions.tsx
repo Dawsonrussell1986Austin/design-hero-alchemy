@@ -49,10 +49,8 @@ const Transactions = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
         <div className="container mx-auto text-center">
-          <div className="inline-block bg-gradient-to-r from-garnet-edge to-copper-gleam bg-clip-text text-transparent mb-6">
-            <div className="bg-obsidian/90 backdrop-blur-sm border border-silver-mist/20 rounded-lg px-6 py-3 inline-block">
-              <span className="text-silver-mist font-semibold tracking-wide">TRANSACTIONS</span>
-            </div>
+          <div className="bg-obsidian/90 backdrop-blur-sm border border-silver-mist/20 rounded-lg px-6 py-3 inline-block mb-6">
+            <span className="text-silver-mist font-semibold tracking-wide">TRANSACTIONS</span>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold text-silver-mist mb-8 leading-tight">
