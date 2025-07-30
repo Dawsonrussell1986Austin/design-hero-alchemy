@@ -23,6 +23,7 @@ import CoreBridge from "./pages/CoreBridge";
 import CorePlusBridge from "./pages/CorePlusBridge";
 import OpportunisticBridge from "./pages/OpportunisticBridge";
 import ParticipatingBridge from "./pages/ParticipatingBridge";
+import Transactions from "./pages/Transactions";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -54,6 +55,7 @@ const App = () => (
           <Route path="/lending/core-plus-bridge" element={<CorePlusBridge />} />
           <Route path="/lending/opportunistic-bridge" element={<OpportunisticBridge />} />
           <Route path="/lending/participating-bridge" element={<ParticipatingBridge />} />
+          <Route path="/transactions" element={<Transactions />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
