@@ -327,25 +327,21 @@ const Transactions = () => {
                     {transaction.name}
                   </h3>
                   
-                  <div className="space-y-2">
-                    <div className="flex justify-between items-start">
-                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Location:</span>
-                      <span className="text-silver-mist/90 text-sm text-right">{transaction.location}</span>
+                  <div className="space-y-3">
+                    <div className="text-silver-mist/80 text-sm">
+                      {transaction.location}
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Loan Size:</span>
-                      <span className="text-garnet-edge text-sm font-medium">{transaction.loanSize}</span>
+                    <div className="text-garnet-edge text-lg font-semibold">
+                      {transaction.loanSize}
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Loan Type:</span>
-                      <span className="text-silver-mist/90 text-sm text-right leading-tight">{transaction.loanType}</span>
+                    <div className="text-silver-mist/70 text-sm leading-tight">
+                      {transaction.loanType}
                     </div>
                     
-                    <div className="flex justify-between items-start">
-                      <span className="text-pale-sage/80 text-xs uppercase tracking-wide">Property Type:</span>
-                      <span className="text-silver-mist/90 text-sm">{transaction.propertyType}</span>
+                    <div className="text-pale-sage text-sm uppercase tracking-wide">
+                      {transaction.propertyType}
                     </div>
                   </div>
                 </CardContent>
