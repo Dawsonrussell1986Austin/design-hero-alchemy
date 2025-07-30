@@ -10,7 +10,7 @@ const OpportunisticBridge = () => {
       <Navigation />
       
       {/* Back Button */}
-      <div className="container mx-auto px-6 pt-24">
+      <div className="container mx-auto px-6 pt-32">
         <Link to="/lending">
           <Button variant="outline" className="mb-8 bg-white/10 hover:bg-white/20 border-silver-mist/30 text-silver-mist">
             <ArrowLeft className="mr-2 h-4 w-4" />
