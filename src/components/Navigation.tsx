@@ -31,7 +31,7 @@ const Navigation = () => {
               <img 
                 src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
                 alt="OAK" 
-                className="h-28 w-auto transition-transform duration-300 hover:scale-105"
+                className="h-14 w-auto transition-transform duration-300 hover:scale-105"
               />
             </a>
           </div>
