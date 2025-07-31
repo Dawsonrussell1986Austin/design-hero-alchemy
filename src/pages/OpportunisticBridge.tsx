@@ -32,15 +32,29 @@ const OpportunisticBridge = () => {
           </Link>
         </div>
 
-        {/* Content Section */}
+        {/* Content Section with Image */}
         <section className="container mx-auto px-6 pb-16">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-xl text-obsidian/90 mb-4 font-medium">
-              Higher-Leverage Capital for Value-Add and Conversion Strategies
-            </p>
-            <p className="text-lg text-obsidian/80 leading-relaxed">
-              Oak's Opportunistic Bridge program is designed for commercial real estate sponsors pursuing substantial value creation—such as repositioning, conversion, or redevelopment. This higher-leverage loan offering includes an embedded equity component, allowing borrowers to access more capital up front in exchange for a slightly higher rate structure. It's a smart solution for projects with a clear path to upside but capital gaps to close.
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Text Content */}
+              <div>
+                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                  Higher-Leverage Capital for Value-Add and Conversion Strategies
+                </h1>
+                <p className="text-lg text-obsidian/80 leading-relaxed">
+                  Oak's Opportunistic Bridge program is designed for commercial real estate sponsors pursuing substantial value creation—such as repositioning, conversion, or redevelopment. This higher-leverage loan offering includes an embedded equity component, allowing borrowers to access more capital up front in exchange for a slightly higher rate structure. It's a smart solution for projects with a clear path to upside but capital gaps to close.
+                </p>
+              </div>
+              
+              {/* Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
+                  alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
