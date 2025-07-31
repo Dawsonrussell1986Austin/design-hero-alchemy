@@ -8,32 +8,22 @@ import { Link } from "react-router-dom";
 const OpportunisticBridge = () => {
   return (
     <div className="min-h-screen">
-      {/* Header with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-        <Navigation />
-        <div className="pt-24 pb-8">
-          <div className="container mx-auto px-6">
-            <h1 className="text-3xl lg:text-4xl font-medium text-silver-mist tracking-wide uppercase">
-              Opportunistic Bridge Program
-            </h1>
-          </div>
-        </div>
-      </div>
+      <Navigation />
       
       {/* Cream background for content */}
-      <div className="bg-silver-mist">
-        {/* Back Button */}
-        <div className="container mx-auto px-6 pt-8">
-          <Link to="/lending">
-            <Button variant="ghost" className="mb-8 text-obsidian hover:bg-obsidian/10 p-0">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Lending Programs
-            </Button>
-          </Link>
-        </div>
-
+      <div className="bg-silver-mist pt-24">
         {/* Content Section with Image */}
         <section className="container mx-auto px-6 pb-16">
+          {/* Back Button */}
+          <div className="mb-8">
+            <Link to="/lending">
+              <Button variant="ghost" className="text-obsidian hover:bg-obsidian/10 p-0">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Lending Programs
+              </Button>
+            </Link>
+          </div>
+          
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
               {/* Text Content */}
