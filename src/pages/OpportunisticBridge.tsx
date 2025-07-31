@@ -81,31 +81,10 @@ const OpportunisticBridge = () => {
                   Sponsors needing more leverage than traditional bridge options typically allow
                 </p>
               </div>
-              <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg">
-                <h3 className="text-lg font-semibold text-obsidian mb-3">
-                  Strategic Partnership
-                </h3>
-                <p className="text-obsidian/80">
-                  Sponsors seeking a financing partner who can provide not just capital, but structured alignment with their project's success
-                </p>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Why Choose Oak Section */}
-        <section className="container mx-auto px-6 pb-16">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-obsidian mb-8">
-              Why Choose Oak?
-            </h2>
-            <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-8 rounded-lg shadow-lg">
-              <p className="text-lg text-obsidian/90 leading-relaxed">
-                Oak offers access to enhanced leverage through higher loan-to-cost (LTC) structures that reduce the equity burden for borrowers. With deep experience in transitional and value-add strategies, we understand the nuances of complex business plans—and we underwrite accordingly, combining creative structuring with institutional discipline.
-              </p>
-            </div>
-          </div>
-        </section>
 
         {/* Opportunistic Bridge Financing Parameters */}
         <section className="container mx-auto px-6 pb-16">
