@@ -14,17 +14,17 @@ const OpportunisticBridge = () => {
       <div className="bg-silver-mist pt-24">
         {/* Content Section with Image */}
         <section className="container mx-auto px-6 pb-16">
-          {/* Back Button */}
-          <div className="mb-8">
-            <Link to="/lending">
-              <Button variant="ghost" className="text-obsidian hover:bg-obsidian/10 p-0">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Lending Programs
-              </Button>
-            </Link>
-          </div>
-          
           <div className="max-w-6xl mx-auto">
+            {/* Back Button */}
+            <div className="mb-6">
+              <Link to="/lending">
+                <Button variant="ghost" className="text-obsidian hover:bg-obsidian/10 p-0">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back to Lending Programs
+                </Button>
+              </Link>
+            </div>
+            
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Text Content */}
               <div>
