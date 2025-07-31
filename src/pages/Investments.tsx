@@ -5,11 +5,15 @@ import { Button } from "@/components/ui/button";
 
 const Investments = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      <Navigation />
+    <div className="min-h-screen">
+      {/* Header with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+        <SimplePageHeader title="Investments" />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="Investments" />
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
 
       {/* Platform Section */}
       <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
@@ -246,6 +250,8 @@ const Investments = () => {
           </div>
         </div>
       </section>
+
+      </div>
 
       <Footer />
     </div>

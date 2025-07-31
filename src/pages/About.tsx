@@ -5,12 +5,14 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      {/* Navigation */}
-      <Navigation />
+    <div className="min-h-screen">
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+        <SimplePageHeader title="About" />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="About" />
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
 
       {/* Large Video/Image Section */}
       <div className="relative z-10 bg-silver-mist py-20">
@@ -238,6 +240,8 @@ const About = () => {
             </Button>
           </div>
         </div>
+      </div>
+
       </div>
 
       {/* Footer */}

@@ -6,12 +6,15 @@ import { Link } from "react-router-dom";
 
 const Lending = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      {/* Navigation */}
-      <Navigation />
+    <div className="min-h-screen">
+      {/* Header with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+        <SimplePageHeader title="Lending" />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="Lending" />
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
 
       {/* Overview Section */}
       <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
@@ -258,6 +261,8 @@ const Lending = () => {
             </div>
           </div>
         </div>
+      </div>
+
       </div>
 
       {/* Footer */}

@@ -63,12 +63,15 @@ const News = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      {/* Navigation */}
-      <Navigation />
+    <div className="min-h-screen">
+      {/* Header with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+        <SimplePageHeader title="News" />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="News" />
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
 
       {/* News Articles Section */}
       <div className="relative z-10 bg-silver-mist py-32">
@@ -149,6 +152,8 @@ const News = () => {
             </div>
           </div>
         </div>
+      </div>
+
       </div>
 
       {/* Footer */}

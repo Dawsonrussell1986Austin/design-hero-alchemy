@@ -291,11 +291,15 @@ const Transactions = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      <Navigation />
+    <div className="min-h-screen">
+      {/* Header with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+        <SimplePageHeader title="Transactions" />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="Transactions" />
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
 
       {/* Featured Transactions Section */}
       <section className="py-20 px-6">
@@ -351,6 +355,8 @@ const Transactions = () => {
           </div>
         </div>
       </section>
+
+      </div>
 
       <Footer />
     </div>
