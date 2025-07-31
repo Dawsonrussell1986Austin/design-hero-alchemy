@@ -20,8 +20,16 @@ const OpportunisticBridge = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 pb-16">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative container mx-auto px-6 pb-16">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0 rounded-lg overflow-hidden">
+          <img 
+            src="/lovable-uploads/7e1be4b5-592b-463b-a0be-01e6f1580c94.png"
+            alt="Person contemplating strategy"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-silver-mist mb-6">
             Opportunistic Bridge Program
           </h1>

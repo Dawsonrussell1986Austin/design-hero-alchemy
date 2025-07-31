@@ -295,7 +295,15 @@ const Transactions = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
-        <div className="container mx-auto text-center">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/f8649760-9d1b-4ded-adf1-eb736a541f41.png"
+            alt="Modern cityscape buildings"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="container mx-auto text-center relative z-10">
           <div className="bg-obsidian/90 backdrop-blur-sm border border-silver-mist/20 rounded-lg px-6 py-3 inline-block mb-6">
             <span className="text-silver-mist font-semibold tracking-wide">TRANSACTIONS</span>
           </div>

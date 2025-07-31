@@ -14,8 +14,16 @@ const CoreBridge = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
+            alt="Urban cityscape with geometric architecture"
+            className="w-full h-full object-cover opacity-15"
+          />
+        </div>
         {/* Back Button */}
-        <div className="container mx-auto mb-8">
+        <div className="container mx-auto mb-8 relative z-10">
           <Button 
             variant="ghost"
             className="text-silver-mist hover:text-accent-brown transition-all duration-300"
@@ -25,7 +33,7 @@ const CoreBridge = () => {
             Back to Lending Programs
           </Button>
         </div>
-        <div className="container mx-auto px-6 lg:px-8">
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-light text-accent-brown mb-6">
               Core Bridge Program

@@ -25,7 +25,15 @@ const RecentNews = () => {
 
   return (
     <div className="relative z-10 bg-silver-mist py-20">
-      <div className="container mx-auto px-6">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="/lovable-uploads/a6be0a55-829f-4afe-8da0-e634705ff215.png"
+          alt="Commercial storefront scene"
+          className="w-full h-full object-cover opacity-20"
+        />
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-8">

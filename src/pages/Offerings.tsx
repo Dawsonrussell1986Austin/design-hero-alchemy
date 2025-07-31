@@ -10,7 +10,15 @@ const Offerings = () => {
       
       {/* Hero Section */}
       <section className="relative py-24 lg:py-32">
-        <div className="container mx-auto px-6 lg:px-8">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/49251183-16e5-42a7-81e3-f7bd9d324fdb.png"
+            alt="Modern conference room"
+            className="w-full h-full object-cover opacity-15"
+          />
+        </div>
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
               Investment <span className="text-accent-brown">Offerings</span>

@@ -12,7 +12,15 @@ const WebinarRegistration = () => {
       
       {/* Main Two-Column Section */}
       <div className="relative min-h-screen py-20">
-        <div className="container mx-auto px-6 h-full">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/770999c1-3aa6-42b7-8889-bd354b357d1e.png"
+            alt="Modern cityscape with geometric buildings"
+            className="w-full h-full object-cover opacity-15"
+          />
+        </div>
+        <div className="container mx-auto px-6 h-full relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 h-full items-start">
             
             {/* Left Column - Main Content */}

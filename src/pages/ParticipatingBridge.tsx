@@ -20,8 +20,16 @@ const ParticipatingBridge = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="container mx-auto px-6 pb-16">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative container mx-auto px-6 pb-16">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0 rounded-lg overflow-hidden">
+          <img 
+            src="/lovable-uploads/e97b4477-fafb-49f0-b011-b4eb2dcd6a0a.png"
+            alt="Person climbing stairs towards success"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-silver-mist mb-6">
             Participating Bridge Program
           </h1>
