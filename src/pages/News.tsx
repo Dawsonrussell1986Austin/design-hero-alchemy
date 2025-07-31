@@ -67,14 +67,14 @@ const News = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative min-h-[85vh] overflow-hidden">
+      <section className="relative pt-32 pb-20 px-6">
         {/* Background texture overlay */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
+        <div className="relative z-10 container mx-auto text-center">
           <div className="max-w-6xl mx-auto text-center">
             <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
@@ -93,7 +93,7 @@ const News = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* News Articles Section */}
       <div className="relative z-10 bg-silver-mist py-32">

@@ -55,7 +55,7 @@ const Leadership = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <div className="relative py-24 lg:py-32">
+      <section className="relative pt-32 pb-20 px-6">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
@@ -67,7 +67,7 @@ const Leadership = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Content Section */}
       <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">

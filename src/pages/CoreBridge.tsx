@@ -12,20 +12,19 @@ const CoreBridge = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Back Button */}
-      <div className="container mx-auto px-6 lg:px-8 pt-8">
-        <Button 
-          variant="ghost"
-          className="text-silver-mist hover:text-accent-brown transition-all duration-300"
-          onClick={() => navigate("/lending")}
-        >
-          <ArrowLeft className="h-4 w-4 mr-2" />
-          Back to Lending Programs
-        </Button>
-      </div>
-
       {/* Hero Section */}
-      <div className="py-20">
+      <section className="relative pt-32 pb-20 px-6">
+        {/* Back Button */}
+        <div className="container mx-auto mb-8">
+          <Button 
+            variant="ghost"
+            className="text-silver-mist hover:text-accent-brown transition-all duration-300"
+            onClick={() => navigate("/lending")}
+          >
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Back to Lending Programs
+          </Button>
+        </div>
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-5xl font-light text-accent-brown mb-6">
@@ -39,7 +38,7 @@ const CoreBridge = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Who Should Consider Section */}
       <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">

@@ -9,7 +9,7 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section with Background Image */}
-      <div className="relative min-h-[85vh] overflow-hidden">
+      <div className="relative pt-32 pb-20 px-6">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -21,7 +21,7 @@ const About = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
+        <div className="relative z-10 container mx-auto text-center">
           <div className="max-w-6xl mx-auto text-center">
             <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
