@@ -93,45 +93,6 @@ const OpportunisticBridge = () => {
           </div>
         </section>
 
-        {/* Bridge Loan Programs at a Glance */}
-        <section className="container mx-auto px-6 pb-16">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-bold text-obsidian mb-8 text-center">
-              Bridge Loan Programs at a Glance
-            </h2>
-            <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 rounded-lg overflow-hidden shadow-lg">
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-obsidian/20 bg-obsidian/5">
-                      <th className="text-left p-4 font-semibold text-obsidian">Program</th>
-                      <th className="text-left p-4 font-semibold text-obsidian">Description</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="p-4 font-medium text-obsidian">Core Bridge</td>
-                      <td className="p-4 text-obsidian/80">Floating-rate loans for cash-flowing assets in transition</td>
-                    </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="p-4 font-medium text-obsidian">Core-Plus Bridge</td>
-                      <td className="p-4 text-obsidian/80">Flexible capital for non-stabilized properties with upside potential</td>
-                    </tr>
-                    <tr className="border-b border-obsidian/10 bg-accent-brown/20">
-                      <td className="p-4 font-semibold text-obsidian">Opportunistic Bridge</td>
-                      <td className="p-4 text-obsidian/90 font-medium">High-LTC loans with embedded equity component for value-add strategies</td>
-                    </tr>
-                    <tr>
-                      <td className="p-4 font-medium text-obsidian">Participating Bridge</td>
-                      <td className="p-4 text-obsidian/80">Flexible loans with equity participation aligned to sponsor performance</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Opportunistic Bridge Financing Parameters */}
         <section className="container mx-auto px-6 pb-16">
           <div className="max-w-6xl mx-auto">
