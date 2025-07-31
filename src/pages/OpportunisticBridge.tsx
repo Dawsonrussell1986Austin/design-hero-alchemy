@@ -11,7 +11,13 @@ const OpportunisticBridge = () => {
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="Opportunistic Bridge Program" />
+        <div className="pt-24 pb-8">
+          <div className="container mx-auto px-6">
+            <h1 className="text-3xl lg:text-4xl font-medium text-silver-mist tracking-wide uppercase">
+              Opportunistic Bridge Program
+            </h1>
+          </div>
+        </div>
       </div>
       
       {/* Cream background for content */}
@@ -19,7 +25,7 @@ const OpportunisticBridge = () => {
         {/* Back Button */}
         <div className="container mx-auto px-6 pt-8">
           <Link to="/lending">
-            <Button variant="outline" className="mb-8 bg-obsidian/10 hover:bg-obsidian/20 border-obsidian/30 text-obsidian">
+            <Button variant="ghost" className="mb-8 text-obsidian hover:bg-obsidian/10 p-0">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Lending Programs
             </Button>
