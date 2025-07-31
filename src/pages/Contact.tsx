@@ -13,8 +13,18 @@ const Contact = () => {
       
       {/* Hero Section */}
       <div className="relative min-h-[85vh] overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/6d767065-bbba-4cce-8f8e-d760a9e44a24.png" 
+            alt="Professional workspace for discussions" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
+        </div>
+        
         {/* Background texture overlay */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-20 z-5">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
         </div>
 
@@ -111,12 +121,22 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Contact Form Section with Background */}
-      <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
-        {/* Background texture */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/20 to-transparent"></div>
-        </div>
+        {/* Contact Form Section with Background */}
+        <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="/lovable-uploads/ba06d097-e388-4be2-9884-ee8b0c10dcad.png" 
+              alt="Construction and growth" 
+              className="w-full h-full object-cover opacity-15"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/60 to-transparent"></div>
+          </div>
+          
+          {/* Background texture */}
+          <div className="absolute inset-0 opacity-10 z-5">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/20 to-transparent"></div>
+          </div>
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto">

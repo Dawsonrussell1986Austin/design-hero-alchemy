@@ -13,8 +13,8 @@ const About = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/lovable-uploads/83330b8e-1b82-4836-98fb-4d33bd9ab0fe.png" 
-            alt="City skyline" 
+            src="/lovable-uploads/8b2b5b35-380c-4bb6-acba-594f36ae63b5.png" 
+            alt="Planning for the future" 
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
@@ -127,8 +127,8 @@ const About = () => {
         {/* Background texture */}
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="/lovable-uploads/2e03170c-dfef-4894-8917-fb149fd7b232.png" 
-            alt="Family journey" 
+            src="/lovable-uploads/8ff9c9c5-df2f-48e2-84a6-ee778c63e221.png" 
+            alt="Family journey together" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-obsidian/80 via-transparent to-obsidian/80"></div>

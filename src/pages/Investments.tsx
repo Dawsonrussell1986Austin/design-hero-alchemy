@@ -9,7 +9,17 @@ const Investments = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
-        <div className="container mx-auto px-6 lg:px-8">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/b3e5ca8b-4eb2-400e-a216-976aad3bb6d9.png" 
+            alt="Planning and reflection for investments" 
+            className="w-full h-full object-cover opacity-25"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
+        </div>
+        
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
               Private Credit with <span className="text-accent-brown">Institutional Precision</span>

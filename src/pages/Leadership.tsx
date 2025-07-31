@@ -56,7 +56,17 @@ const Leadership = () => {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 px-6">
-        <div className="container mx-auto px-6 lg:px-8">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/lovable-uploads/3584c703-b411-4fa8-a821-77cd46d4468d.png" 
+            alt="Leadership meeting" 
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
+        </div>
+        
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
               <span className="text-accent-brown">Proven Experience.</span>{" "}
