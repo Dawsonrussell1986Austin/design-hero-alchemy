@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 
 const Investments = () => {
@@ -7,35 +8,8 @@ const Investments = () => {
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/b3e5ca8b-4eb2-400e-a216-976aad3bb6d9.png" 
-            alt="Planning and reflection for investments" 
-            className="w-full h-full object-cover opacity-25"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
-        </div>
-        
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
-              Private Credit with <span className="text-accent-brown">Institutional Precision</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-3xl mx-auto leading-relaxed font-light mb-8">
-              Structured for Capital Preservation - Predictable Income - and Investment Transparency
-            </p>
-            <p className="text-lg text-silver-mist/70 leading-relaxed max-w-4xl mx-auto">
-              Oak's investment strategy is purpose-built for sophisticated investors seeking consistent income, capital preservation, and low-correlation performance. We specialize in private real estate credit—first-lien loans backed by tangible assets and structured for downside protection.
-            </p>
-            <p className="text-lg text-silver-mist/70 leading-relaxed max-w-4xl mx-auto mt-6">
-              Our approach blends institutional discipline with market agility, targeting segments often overlooked by traditional lenders. Every investment is grounded in rigorous underwriting, strategic asset selection, and a commitment to transparency.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="Investments" />
 
       {/* Platform Section */}
       <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">

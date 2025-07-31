@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
@@ -8,56 +9,8 @@ const About = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section with Background Image */}
-      <div className="relative pt-32 pb-20 px-6">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/8b2b5b35-380c-4bb6-acba-594f36ae63b5.png" 
-            alt="Planning for the future" 
-            className="w-full h-full object-cover opacity-30"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 container mx-auto text-center">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
-                Investors Expect More
-              </h1>
-              <h1 className="text-6xl lg:text-8xl font-light leading-[0.9] tracking-tight">
-                <span className="text-accent-brown">OAK Provides</span> <span className="text-garnet-edge">Disciplined Income & Growth</span>
-              </h1>
-            </div>
-            
-            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
-                A Non-Bank Financial Institution, acutely focused on real estate credit rooted in 
-                <span className="text-garnet-edge"> discipline</span>, built for stability and across multiple market cycles.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <Button 
-                size="lg" 
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 group rounded-sm"
-              >
-                Our Approach
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                Leadership Team
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="About" />
 
       {/* Large Video/Image Section */}
       <div className="relative z-10 bg-silver-mist py-20">

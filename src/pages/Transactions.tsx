@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 
 const Transactions = () => {
@@ -293,32 +294,8 @@ const Transactions = () => {
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/f8649760-9d1b-4ded-adf1-eb736a541f41.png"
-            alt="Modern cityscape buildings"
-            className="w-full h-full object-cover opacity-20"
-          />
-        </div>
-        <div className="container mx-auto text-center relative z-10">
-          <div className="bg-obsidian/90 backdrop-blur-sm border border-silver-mist/20 rounded-lg px-6 py-3 inline-block mb-6">
-            <span className="text-silver-mist font-semibold tracking-wide">TRANSACTIONS</span>
-          </div>
-          
-          <h1 className="text-5xl md:text-7xl font-bold text-silver-mist mb-8 leading-tight">
-            Proven Track Record
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-silver-mist/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-            Oak sponsors institutionally-backed debt investment vehicles that have closed in excess of 
-            <span className="text-garnet-edge font-semibold"> $2.5 billion </span>
-            of debt transactions.*
-          </p>
-        </div>
-      </section>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="Transactions" />
 
       {/* Featured Transactions Section */}
       <section className="py-20 px-6">

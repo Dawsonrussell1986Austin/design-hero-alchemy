@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle } from "lucide-react";
 
@@ -8,27 +9,8 @@ const Offerings = () => {
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-24 lg:py-32">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/49251183-16e5-42a7-81e3-f7bd9d324fdb.png"
-            alt="Modern conference room"
-            className="w-full h-full object-cover opacity-15"
-          />
-        </div>
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
-              Investment <span className="text-accent-brown">Offerings</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-3xl mx-auto leading-relaxed font-light">
-              General Solicitations and Investment Opportunities
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="Offerings" />
 
       {/* Open Offerings Section */}
       <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">

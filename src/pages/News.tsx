@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 
@@ -66,34 +67,8 @@ const News = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
-        {/* Background texture overlay */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 container mx-auto text-center">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
-                Latest <span className="text-accent-brown">News</span>
-              </h1>
-              <h1 className="text-6xl lg:text-8xl font-light leading-[0.9] tracking-tight">
-                <span className="text-garnet-edge">& Updates</span>
-              </h1>
-            </div>
-            
-            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
-                Stay informed with the latest developments in 
-                <span className="text-garnet-edge"> commercial real estate finance</span> and Oak's recent transactions.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="News" />
 
       {/* News Articles Section */}
       <div className="relative z-10 bg-silver-mist py-32">

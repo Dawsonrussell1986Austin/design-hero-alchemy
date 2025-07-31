@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -9,29 +10,8 @@ const Lending = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/d74a20fd-2006-4e11-ad03-64a5f76e567f.png" 
-            alt="Construction and development" 
-            className="w-full h-full object-cover opacity-25"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
-        </div>
-        
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-silver-mist leading-tight tracking-tight mb-8">
-              Commercial Real Estate Lending, <span className="text-accent-brown">Built for Confidence</span>
-            </h1>
-            <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-3xl mx-auto leading-relaxed font-light">
-              Tailored debt solutions for real estate sponsors nationwide—from bridge loans to long-term HUD-insured financing.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="Lending" />
 
       {/* Overview Section */}
       <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">

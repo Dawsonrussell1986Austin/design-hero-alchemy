@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,58 +12,8 @@ const Contact = () => {
       {/* Navigation */}
       <Navigation />
       
-      {/* Hero Section */}
-      <div className="relative min-h-[85vh] overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/6d767065-bbba-4cce-8f8e-d760a9e44a24.png" 
-            alt="Professional workspace for discussions" 
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/80 via-obsidian/40 to-transparent"></div>
-        </div>
-        
-        {/* Background texture overlay */}
-        <div className="absolute inset-0 opacity-20 z-5">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/10 to-transparent"></div>
-        </div>
-
-        {/* Hero Content */}
-        <div className="relative z-10 flex items-center justify-center min-h-[85vh] px-6">
-          <div className="max-w-6xl mx-auto text-center">
-            <div className="space-y-4 mb-12 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <h1 className="text-6xl lg:text-8xl font-light text-silver-mist leading-[0.9] tracking-tight">
-                Let's <span className="text-accent-brown">Connect</span>
-              </h1>
-            </div>
-            
-            <div className="mb-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              <p className="text-xl lg:text-2xl text-silver-mist/80 max-w-4xl mx-auto leading-relaxed font-light">
-                Ready to explore how Oak can support your real estate investment goals? 
-                <span className="text-garnet-edge"> We're here to help.</span>
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <Button 
-                size="lg" 
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 group rounded-sm"
-              >
-                Schedule a Call
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                Download Overview
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      {/* Simple Page Header */}
+      <SimplePageHeader title="Contact" />
 
       {/* Contact Information Cards Section */}
       <div className="relative z-10 bg-silver-mist py-32">
