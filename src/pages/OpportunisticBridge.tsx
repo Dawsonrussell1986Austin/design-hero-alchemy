@@ -25,15 +25,43 @@ const OpportunisticBridge = () => {
           </div>
           
           <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Text Content */}
               <div>
                 <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
                   Higher-Leverage Capital for Value-Add and Conversion Strategies
                 </h1>
-                <p className="text-lg text-obsidian/80 leading-relaxed">
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
                   Oak's Opportunistic Bridge program is designed for commercial real estate sponsors pursuing substantial value creation—such as repositioning, conversion, or redevelopment. This higher-leverage loan offering includes an embedded equity component, allowing borrowers to access more capital up front in exchange for a slightly higher rate structure. It's a smart solution for projects with a clear path to upside but capital gaps to close.
                 </p>
+                
+                {/* Who Should Consider - Integrated */}
+                <h2 className="text-2xl font-bold text-obsidian mb-6">
+                  Who Should Consider This Program?
+                </h2>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Transformation Projects</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors executing significant transformations—renovations, expansions, or conversions</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Higher Leverage Needs</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors needing more leverage than traditional bridge options typically allow</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Strategic Partnership</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors seeking a financing partner with structured alignment to project success</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               {/* Image */}
@@ -43,39 +71,6 @@ const OpportunisticBridge = () => {
                   alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
-              </div>
-            </div>
-
-            {/* Who Should Consider */}
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-obsidian mb-8 text-center">
-                Who Should Consider Oak's Opportunistic Bridge Program?
-              </h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-3">
-                    Transformation Projects
-                  </h3>
-                  <p className="text-obsidian/80">
-                    Sponsors executing a significant transformation—such as a renovation, expansion, or conversion
-                  </p>
-                </div>
-                <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-3">
-                    Higher Leverage Needs
-                  </h3>
-                  <p className="text-obsidian/80">
-                    Sponsors needing more leverage than traditional bridge options typically allow
-                  </p>
-                </div>
-                <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-3">
-                    Strategic Partnership
-                  </h3>
-                  <p className="text-obsidian/80">
-                    Sponsors seeking a financing partner who can provide not just capital, but structured alignment with their project's success
-                  </p>
-                </div>
               </div>
             </div>
           </div>
