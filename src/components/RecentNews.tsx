@@ -28,10 +28,10 @@ const RecentNews = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
               Recent News & Updates
             </h2>
-            <p className="text-xl text-deep-petrol leading-relaxed max-w-4xl mx-auto font-sans">
+            <p className="text-lg text-deep-petrol leading-relaxed max-w-4xl mx-auto font-body">
               Stay informed with our latest transactions and market developments
             </p>
           </div>
@@ -51,10 +51,10 @@ const RecentNews = () => {
                     <Calendar className="h-4 w-4 text-accent-brown" />
                     <span className="text-sm text-deep-petrol/70">{article.date}</span>
                   </div>
-                  <h3 className="text-lg font-serif font-medium text-obsidian mb-3 line-clamp-2 leading-tight">
+                  <h3 className="text-lg font-display font-medium text-obsidian mb-3 line-clamp-2 leading-tight">
                     {article.title}
                   </h3>
-                  <p className="text-deep-petrol leading-relaxed font-sans text-sm mb-4 line-clamp-3">
+                  <p className="text-deep-petrol leading-relaxed font-body text-sm mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
                   <Button 
@@ -73,7 +73,7 @@ const RecentNews = () => {
           <div className="text-center">
             <Button 
               size="lg"
-              className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 font-serif font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+              className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
             >
               <a href="/news" className="flex items-center">
                 View All News

@@ -36,25 +36,25 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
           />
         )}
-        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
+        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
           {transaction.propertyType}
         </div>
       </div>
       <CardContent className="p-6 flex-1 bg-white">
-        <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight border-b border-obsidian/20 pb-3">
+        <h3 className="text-lg font-display font-medium text-obsidian mb-4 leading-tight border-b border-obsidian/20 pb-3">
           {transaction.name}
         </h3>
         
         <div className="space-y-3">
-          <div className="text-obsidian/70 text-sm font-medium border-b border-obsidian/20 pb-2">
+          <div className="text-obsidian/70 text-sm font-body border-b border-obsidian/20 pb-2">
             {transaction.location}
           </div>
           
-          <div className="text-accent-brown text-xl font-bold border-b border-obsidian/20 pb-2">
+          <div className="text-accent-brown text-xl font-display font-medium border-b border-obsidian/20 pb-2">
             {transaction.loanSize}
           </div>
           
-          <div className="text-obsidian/60 text-sm leading-tight pt-2">
+          <div className="text-obsidian/60 text-sm font-body leading-tight pt-2">
             {transaction.loanType}
           </div>
         </div>
@@ -133,7 +133,7 @@ const RecentTransactionsHomepage = () => {
             <Link to="/transactions">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 font-serif font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
               >
                 SEE MORE
                 <ArrowRight className="h-4 w-4 ml-2" />
