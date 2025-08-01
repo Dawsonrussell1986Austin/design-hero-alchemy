@@ -74,7 +74,7 @@ const News = () => {
       <div className="bg-silver-mist">
 
       {/* News Articles Section */}
-      <div className="relative z-10 bg-silver-mist py-32">
+      <div className="py-32">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">

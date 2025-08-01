@@ -162,14 +162,16 @@ const Navigation = () => {
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
             </div>
-            <a href="/news" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-              scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
-            }`}>
-              News
+            <div className="group relative">
+              <a href="/news" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+              }`}>
+                News
+              </a>
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
-            </a>
+            </div>
             <a href="/contact" className={`group relative transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
               scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
             }`}>
