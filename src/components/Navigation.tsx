@@ -20,8 +20,8 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-white/95 backdrop-blur-xl border-b border-gray-200 shadow-lg' 
-        : 'bg-white/90 backdrop-blur-sm border-b border-gray-100'
+        ? 'bg-silver-mist/95 backdrop-blur-xl border-b border-gray-200 shadow-lg' 
+        : 'bg-silver-mist/90 backdrop-blur-sm border-b border-gray-100'
     }`}>
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -51,7 +51,7 @@ const Navigation = () => {
               
               {/* Dropdown Menu */}
               <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
+                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
               }`}>
                 <div className="py-2">
                   <a 
@@ -86,7 +86,7 @@ const Navigation = () => {
               
               {/* Lending Dropdown Menu */}
               <div className={`absolute left-0 top-full w-56 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
+                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
               }`}>
                 <div className="py-2">
                   <a 
