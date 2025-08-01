@@ -230,13 +230,13 @@ const Leadership = () => {
 
 
       {/* CTA Section */}
-      <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+      <div className="py-20 bg-silver-mist">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-8">
               Ready to Work with Our Team?
             </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
+            <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
               Connect with Oak's leadership team to discuss how our experience and disciplined approach 
               can benefit your investment strategy.
             </p>
@@ -250,7 +250,7 @@ const Leadership = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
               >
                 View Our Approach
               </Button>
