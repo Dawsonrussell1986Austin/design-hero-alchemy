@@ -27,32 +27,45 @@ const Lending = () => {
         ]}
       />
 
-      {/* Hero Section with Image */}
-      <section className="relative py-20">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png" 
-            alt="Bridge over mountains at sunset" 
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/50 to-obsidian/30"></div>
-        </div>
-        
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-6xl font-light text-silver-mist mb-6 leading-tight">
-              Lending <span className="text-accent-brown">Overview</span>
-            </h1>
-            <p className="text-lg lg:text-xl text-silver-mist/90 leading-relaxed mb-6">
-              Oak offers structured capital solutions for commercial real estate borrowers nationwide. Our national lending platform combines efficiency and innovation with institutional-grade standards and a comprehensive underwriting discipline.
-            </p>
-            <p className="text-lg lg:text-xl text-silver-mist/90 leading-relaxed">
-              We provide both short-term private bridge loans and long-term, government-backed FHA/HUD-insured mortgages—individually or in a seamless Bridge-to-FHA structure.
-            </p>
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
+        {/* Content Section with Image */}
+        <section className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    Lending Overview
+                  </span>
+                </div>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                  Structured Capital Solutions for Commercial Real Estate
+                </h1>
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-6">
+                  Oak offers structured capital solutions for commercial real estate borrowers nationwide. Our national lending platform combines efficiency and innovation with institutional-grade standards and a comprehensive underwriting discipline.
+                </p>
+                <p className="text-lg text-obsidian/80 leading-relaxed">
+                  We provide both short-term private bridge loans and long-term, government-backed FHA/HUD-insured mortgages—individually or in a seamless Bridge-to-FHA structure.
+                </p>
+              </div>
+              
+              {/* Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png"
+                  alt="Bridge over mountains at sunset"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       
       {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
