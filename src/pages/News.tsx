@@ -85,7 +85,7 @@ const News = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                 Recent <span className="text-accent-brown">Announcements</span>
               </h2>
             </div>
@@ -105,10 +105,10 @@ const News = () => {
                       <Calendar className="h-4 w-4 text-accent-brown" />
                       <span className="text-sm text-deep-petrol/70">{article.date}</span>
                     </div>
-                    <h3 className="text-xl font-light text-obsidian mb-4 line-clamp-2 leading-tight">
+                    <h3 className="text-xl font-display font-medium text-obsidian mb-4 line-clamp-2 leading-tight">
                       {article.title}
                     </h3>
-                    <p className="text-deep-petrol/80 leading-relaxed text-sm mb-6 line-clamp-3">
+                    <p className="text-deep-petrol/80 leading-relaxed text-sm font-body font-normal mb-6 line-clamp-3">
                       {article.excerpt}
                     </p>
                     <Button 
@@ -135,12 +135,12 @@ const News = () => {
 
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-5xl lg:text-6xl font-light text-silver-mist mb-8 leading-tight">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-8 leading-tight">
               Stay <span className="text-accent-brown">Informed</span>
             </h2>
             
             <div className="bg-background/20 backdrop-blur-xl border border-silver-mist/20 rounded-3xl p-12 mb-16 hover:bg-background/30 transition-all duration-500">
-              <p className="text-xl text-silver-mist/90 leading-relaxed font-light mb-8">
+              <p className="text-lg lg:text-xl font-body font-normal text-silver-mist/90 leading-relaxed mb-8">
                 Subscribe to receive the latest updates on Oak's transactions, market insights, and industry developments.
               </p>
               
