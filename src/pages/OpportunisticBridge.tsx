@@ -160,9 +160,9 @@ const OpportunisticBridge = () => {
             <div className="max-w-6xl mx-auto">
               
               {/* Thank you message */}
-              <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-12 text-center">
-                <h3 className="text-xl font-semibold text-green-800 mb-2">Thank you, {name}!</h3>
-                <p className="text-green-700">Here are the detailed Opportunistic Bridge program specifications:</p>
+              <div className="bg-garnet-edge/10 border border-garnet-edge/30 rounded-lg p-6 mb-12 text-center">
+                <h3 className="text-xl font-semibold text-garnet-edge mb-2">Thank you, {name}!</h3>
+                <p className="text-garnet-edge/80">Here are the detailed Opportunistic Bridge program specifications:</p>
               </div>
               
               {/* Loan Basics */}
