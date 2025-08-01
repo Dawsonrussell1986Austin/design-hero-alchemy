@@ -101,69 +101,73 @@ const Offerings = () => {
       {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
-        {/* Open Offerings Section */}
-        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+        {/* Current Opportunities Section */}
+        <section className="py-20">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
+                <h2 className="text-4xl lg:text-5xl font-bold text-silver-mist mb-6">
                   Current Opportunities
                 </h2>
-                <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
+                <p className="text-xl text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
                   Investment opportunities currently available to qualified investors seeking exposure to commercial real estate credit strategies.
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
+              <div className="grid lg:grid-cols-2 gap-8 mb-16">
+                {/* First Offering */}
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-400" />
+                      <span className="text-sm font-medium text-green-400 uppercase tracking-wider">Open</span>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Building className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-2xl font-medium text-silver-mist">
+                  
+                  <div className="mb-6">
+                    <Building className="h-8 w-8 text-accent-brown mb-4" />
+                    <h3 className="text-2xl font-semibold text-silver-mist mb-3">
                       Oak Institutional Credit Solutions, LLC
                     </h3>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-accent-brown font-medium">
+                    <p className="text-accent-brown font-medium text-sm uppercase tracking-wider mb-4">
                       Regulation D 506(c)
                     </p>
                     <p className="text-silver-mist/80 leading-relaxed">
                       Diversified commercial real estate credit fund targeting senior position loans across multiple markets and property types.
                     </p>
                   </div>
+                  
                   <Button 
-                    size="lg"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300 hover:scale-105"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
                   >
                     Learn More
                   </Button>
                 </div>
 
-                <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <CheckCircle className="h-6 w-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
+                {/* Second Offering */}
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="h-5 w-5 text-green-400" />
+                      <span className="text-sm font-medium text-green-400 uppercase tracking-wider">Open</span>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-2xl font-medium text-silver-mist">
+                  
+                  <div className="mb-6">
+                    <Shield className="h-8 w-8 text-accent-brown mb-4" />
+                    <h3 className="text-2xl font-semibold text-silver-mist mb-3">
                       Oak Parallel Bridge Credit Fund
                     </h3>
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-accent-brown font-medium">
+                    <p className="text-accent-brown font-medium text-sm uppercase tracking-wider mb-4">
                       Regulation D 506(c)
                     </p>
                     <p className="text-silver-mist/80 leading-relaxed">
                       Specialized bridge lending strategy focused on transitional commercial real estate opportunities with strong value-add potential.
                     </p>
                   </div>
+                  
                   <Button 
-                    size="lg"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300 hover:scale-105"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
                   >
                     Learn More
                   </Button>
@@ -173,14 +177,14 @@ const Offerings = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
                 >
                   Contact Investment Team
                 </Button>
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian px-12 py-4 text-lg font-medium bg-transparent"
                 >
                   Request Information
                 </Button>
