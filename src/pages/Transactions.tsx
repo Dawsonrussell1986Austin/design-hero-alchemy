@@ -307,7 +307,7 @@ const Transactions = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             {featuredTransactions.map((transaction) => (
-              <Card key={transaction.id} className="bg-white/5 backdrop-blur-xl border border-white/10 overflow-hidden hover:border-garnet-edge/50 hover:bg-white/10 transition-all duration-300 group text-silver-mist shadow-2xl shadow-obsidian/20">
+              <Card key={transaction.id} className="bg-white border border-deep-petrol/20 overflow-hidden hover:border-accent-brown/50 hover:shadow-lg transition-all duration-300 group shadow-md">
                 <div className="aspect-video overflow-hidden relative">
                   <img 
                     src={transaction.image}
@@ -321,25 +321,25 @@ const Transactions = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
                     />
                   )}
-                  <div className="absolute top-3 left-3 bg-garnet-edge/90 backdrop-blur-sm text-silver-mist px-3 py-1 rounded-full text-xs font-medium uppercase tracking-wide z-10">
+                  <div className="absolute top-3 left-3 bg-accent-brown text-silver-mist px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wide z-10 shadow-md">
                     {transaction.propertyType}
                   </div>
                 </div>
-                <CardContent className="p-6 bg-transparent backdrop-blur-sm">
-                  <h3 className="text-lg font-semibold text-silver-mist mb-4 leading-tight">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight">
                     {transaction.name}
                   </h3>
                   
                   <div className="space-y-3">
-                    <div className="text-silver-mist/80 text-sm">
+                    <div className="text-deep-petrol text-sm font-medium">
                       {transaction.location}
                     </div>
                     
-                    <div className="text-garnet-edge text-lg font-semibold">
+                    <div className="text-accent-brown text-xl font-bold">
                       {transaction.loanSize}
                     </div>
                     
-                    <div className="text-silver-mist/70 text-sm leading-tight">
+                    <div className="text-deep-petrol/80 text-sm leading-tight">
                       {transaction.loanType}
                     </div>
                   </div>
@@ -349,7 +349,7 @@ const Transactions = () => {
           </div>
 
           <div className="text-center mt-12">
-            <p className="text-pale-sage text-sm">
+            <p className="text-deep-petrol/70 text-sm">
               * Past performance does not guarantee future results. All investments involve risk of loss.
             </p>
           </div>
