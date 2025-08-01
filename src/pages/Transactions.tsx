@@ -321,7 +321,7 @@ const Transactions = () => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
                     />
                   )}
-                  <div className="absolute top-3 left-3 bg-accent-brown text-silver-mist px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wide z-10 shadow-md">
+                  <div className="absolute top-3 left-3 bg-garnet-edge text-white px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wide z-10 shadow-md">
                     {transaction.propertyType}
                   </div>
                 </div>
