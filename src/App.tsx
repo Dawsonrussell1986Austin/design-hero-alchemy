@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
+import BridgeLoans from "./pages/BridgeLoans";
 import Investments from "./pages/Investments";
 import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
         <Route path="/lending" element={<Lending />} />
+        <Route path="/lending/bridge" element={<BridgeLoans />} />
         <Route path="/investments" element={<Investments />} />
         <Route path="/offerings" element={<Offerings />} />
         <Route path="/contact" element={<Contact />} />
@@ -47,10 +49,10 @@ function App() {
         <Route path="/leadership/robert-kaplan" element={<RobertKaplan />} />
         <Route path="/leadership/thomas-mcgovern" element={<ThomasMcGovern />} />
         <Route path="/leadership/brook-scardina" element={<BrookScardina />} />
-        <Route path="/lending/core-bridge" element={<CoreBridge />} />
-        <Route path="/lending/core-plus-bridge" element={<CorePlusBridge />} />
-        <Route path="/lending/opportunistic-bridge" element={<OpportunisticBridge />} />
-        <Route path="/lending/participating-bridge" element={<ParticipatingBridge />} />
+        <Route path="/lending/bridge/core-bridge" element={<CoreBridge />} />
+        <Route path="/lending/bridge/core-plus-bridge" element={<CorePlusBridge />} />
+        <Route path="/lending/bridge/opportunistic-bridge" element={<OpportunisticBridge />} />
+        <Route path="/lending/bridge/participating-bridge" element={<ParticipatingBridge />} />
         <Route path="/transactions" element={<Transactions />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
