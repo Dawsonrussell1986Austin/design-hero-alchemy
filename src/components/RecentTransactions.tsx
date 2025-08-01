@@ -52,14 +52,12 @@ const RecentTransactions = () => {
               className="flex transition-transform duration-500 ease-in-out"
               style={{ 
                 transform: `translateX(-${currentPage * 100}%)`,
-                width: `${totalPages * 100}%`
               }}
             >
               {Array.from({ length: totalPages }, (_, pageIndex) => (
                 <div 
                   key={pageIndex}
                   className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0"
-                  style={{ width: `${100 / totalPages}%` }}
                 >
                   {featuredTransactions
                     .slice(pageIndex * transactionsPerPage, (pageIndex + 1) * transactionsPerPage)
