@@ -35,13 +35,13 @@ const Investments = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   A Platform Built for Performance
                 </h1>
-                <p className="text-xl text-accent-brown font-medium mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Direct lending. Disciplined structure. Durable results.
                 </p>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary and secondary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
                 </p>
                 
@@ -191,7 +191,7 @@ const Investments = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-6">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
                   Income strategies rooted in structure—not speculation.
                 </h2>
                 <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
