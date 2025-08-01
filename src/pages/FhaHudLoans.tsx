@@ -97,7 +97,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/73604eb5-db6d-45d5-9a5b-698de4128481.png"
                         alt="Multifamily construction"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -129,7 +129,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/7a4a2d56-54b9-4cc3-80b4-d2f264beba2a.png"
                         alt="Multifamily acquisition"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -161,7 +161,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/c909e33f-1bab-44c4-bd3d-1664d824f83d.png"
                         alt="Streamlined refinance"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -193,7 +193,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/61c8211a-9c78-483a-9447-aae1ca4b62c4.png"
                         alt="Capital improvements"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -239,7 +239,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/e989fe48-0eb9-46d3-b3ac-64afaaa324f7.png"
                         alt="Senior housing construction"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -271,7 +271,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/183a077d-c61e-4f2a-9016-a37cac8a9300.png"
                         alt="Senior housing acquisition"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -303,7 +303,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/29803049-cf50-438c-ae03-dc7733a5d8ec.png"
                         alt="Senior housing refinance"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
@@ -335,7 +335,7 @@ const FhaHudLoans = () => {
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                       <img 
-                        src="/lovable-uploads/1c7439ec-70fc-4e42-bfac-e6c8e255eeaa.png"
+                        src="/lovable-uploads/a5ecf2c1-bc9d-4901-9cb0-4d932aebffdd.png"
                         alt="Senior housing improvements"
                         className="w-full h-full object-cover rounded-lg shadow-md"
                       />
