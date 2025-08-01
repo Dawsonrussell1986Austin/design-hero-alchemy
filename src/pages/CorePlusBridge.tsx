@@ -55,15 +55,15 @@ const CorePlusBridge = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Transitional Capital for Non-Stabilized, Institutional-Quality Assets
                 </h1>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Oak's Core-Plus Bridge lending program is designed for high-potential commercial properties that are not yet cash-flowing (DSCR &lt; 1.00x) and need flexible, short-term financing to reach stabilization. This program supports sponsors executing redevelopment, repositioning, or lease-up strategies where a clear path to performance exists—but current cash flow does not.
                 </p>
                 
                 {/* Who Should Consider - Integrated */}
-                <h2 className="text-2xl font-bold text-obsidian mb-6">
+                <h2 className="text-xl font-display font-medium text-obsidian mb-6">
                   Who Should Consider This Program?
                 </h2>
                 <div className="space-y-4">
@@ -109,10 +109,10 @@ const CorePlusBridge = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
                 <div className="mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4">
+                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
                     Access Core-Plus Bridge Details
                   </h2>
-                  <p className="text-lg text-obsidian/80 leading-relaxed">
+                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed">
                     Get detailed loan basics, terms, fees, and special considerations for our Core-Plus Bridge program. 
                     Enter your information below to access the complete program details.
                   </p>
