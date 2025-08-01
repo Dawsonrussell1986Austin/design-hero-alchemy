@@ -90,6 +90,16 @@ const Leadership = () => {
                     We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined 
                     mindset and a shared commitment to protect investor capital.
                   </p>
+                  
+                  <div className="pt-4">
+                    <Button 
+                      size="lg"
+                      className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                      onClick={() => window.location.href = "/contact"}
+                    >
+                      Contact Us
+                    </Button>
+                  </div>
                 </div>
                 
                 {/* Right Column - Image with Glassmorphic Values Overlay */}
