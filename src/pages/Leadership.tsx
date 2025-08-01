@@ -115,25 +115,25 @@ const Leadership = () => {
                   
                   {/* Glassmorphic Values Card Overlay */}
                   <div className="absolute inset-x-0 top-8 flex justify-center">
-                    <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-8 max-w-lg">
-                      <div className="space-y-6">
-                        <div className="text-center">
-                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Control and Stability</h4>
-                          <p className="text-silver-mist/90 text-base leading-relaxed">
-                            Disciplined oversight and consistent execution.
-                          </p>
-                        </div>
-                        <div className="text-center">
-                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Risk-Taking</h4>
-                          <p className="text-silver-mist/90 text-base leading-relaxed">
-                            Calculated decisions based on thorough analysis.
-                          </p>
-                        </div>
-                        <div className="text-center">
-                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Predictability and Reliability</h4>
-                          <p className="text-silver-mist/90 text-base leading-relaxed">
-                            Consistent results through proven processes.
-                          </p>
+                     <div className="bg-silver-mist/20 backdrop-blur-md rounded-lg border border-silver-mist/30 p-8 max-w-lg shadow-lg">
+                       <div className="space-y-6">
+                         <div className="text-center">
+                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Control and Stability</h4>
+                           <p className="text-white text-base leading-relaxed">
+                             Disciplined oversight and consistent execution.
+                           </p>
+                         </div>
+                         <div className="text-center">
+                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Risk-Taking</h4>
+                           <p className="text-white text-base leading-relaxed">
+                             Calculated decisions based on thorough analysis.
+                           </p>
+                         </div>
+                         <div className="text-center">
+                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Predictability and Reliability</h4>
+                           <p className="text-white text-base leading-relaxed">
+                             Consistent results through proven processes.
+                           </p>
                         </div>
                       </div>
                     </div>
