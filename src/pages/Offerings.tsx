@@ -35,13 +35,13 @@ const Offerings = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Strategic Investment Solutions
                 </h1>
-                <p className="text-xl text-accent-brown font-medium mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Institutional-quality opportunities. Transparent structures. Professional management.
                 </p>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Oak offers a curated selection of investment vehicles designed for sophisticated investors seeking consistent returns through disciplined real estate credit strategies. Each offering undergoes rigorous due diligence and structural analysis.
                 </p>
                 
@@ -106,7 +106,7 @@ const Offerings = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-bold text-silver-mist mb-6">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-6">
                   Current Opportunities
                 </h2>
                 <p className="text-xl text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
@@ -200,7 +200,7 @@ const Offerings = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-6">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
                   Proven Track Record
                 </h2>
                 <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
