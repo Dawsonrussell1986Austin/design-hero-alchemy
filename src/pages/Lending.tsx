@@ -134,176 +134,177 @@ const Lending = () => {
         </div>
       </div>
 
-      {/* FHA/HUD Loan Programs */}
-      <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+      {/* FHA/HUD Loan Programs - Condensed Section */}
+      <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-                FHA/HUD Loan Programs
-              </h2>
-              <h3 className="text-2xl font-light text-garnet-edge mb-6">
-                Long-Term, Government-Backed Financing for Essential Real Estate Assets
-              </h3>
-              <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
-                Oak's subsidiary, Johnson Capital Multifamily, provides FHA/HUD-insured loan programs. These financing solutions provide long-term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
-              </p>
-              <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto mt-4">
-                With a deep understanding of HUD programs and a commitment to execution certainty, Oak offers tailored solutions that align with mission-driven real estate strategies.
-              </p>
-            </div>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-start">
+              {/* Left Side - Content */}
+              <div>
+                <h2 className="text-3xl lg:text-4xl font-bold text-silver-mist mb-4">
+                  FHA/HUD Loan Programs
+                </h2>
+                <h3 className="text-xl text-accent-brown font-medium mb-6">
+                  FHA/HUD-Insured Loan Programs
+                </h3>
+                <p className="text-lg text-silver-mist/80 leading-relaxed mb-8">
+                  Long-Term, Government-Backed Financing for Essential Real Estate Assets
+                </p>
+                <p className="text-silver-mist/70 leading-relaxed mb-8">
+                  Oak's subsidiary, Johnson Capital Multifamily, provides FHA/HUD-insured loan programs. These financing solutions provide long-term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
+                </p>
+                <p className="text-silver-mist/70 leading-relaxed mb-10">
+                  With a deep understanding of HUD programs and a commitment to execution certainty, Oak offers tailored solutions that align with mission-driven real estate strategies.
+                </p>
 
-            {/* Tabbed Program Details */}
-            <Tabs defaultValue="multifamily" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 bg-silver-mist/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg mb-8">
-                <TabsTrigger 
-                  value="multifamily" 
-                  className="text-silver-mist data-[state=active]:bg-accent-brown data-[state=active]:text-silver-mist font-medium"
-                >
-                  Multifamily & Affordable Housing
-                </TabsTrigger>
-                <TabsTrigger 
-                  value="senior" 
-                  className="text-silver-mist data-[state=active]:bg-accent-brown data-[state=active]:text-silver-mist font-medium"
-                >
-                  Senior Housing & Healthcare
-                </TabsTrigger>
-              </TabsList>
-              
-              <TabsContent value="multifamily" className="mt-8">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Multifamily Properties</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 221(d)(4) & 220</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
+                <div className="space-y-8">
+                  {/* Multifamily & Affordable Housing Programs */}
+                  <div>
+                    <h4 className="text-xl font-semibold text-silver-mist mb-4">
+                      Multifamily & Affordable Housing Programs
+                    </h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Multifamily Properties:</span>
+                          <span className="text-silver-mist/70"> HUD 221(d)(4) & 220</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Acquisition or Refinance of Multifamily Properties:</span>
+                          <span className="text-silver-mist/70"> HUD 223(f)</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Properties:</span>
+                          <span className="text-silver-mist/70"> HUD 223(a)(7)</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Supplemental Loans for Capital Improvement:</span>
+                          <span className="text-silver-mist/70"> HUD 241(a)</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Multifamily Properties</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 223(f)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Properties</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 223(a)(7)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Loans for Capital Improvement</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                </div>
-              </TabsContent>
 
-              <TabsContent value="senior" className="mt-8">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Senior Housing & Healthcare</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 232/221(d)(4)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
+                  {/* Senior Housing & Healthcare Programs */}
+                  <div>
+                    <h4 className="text-xl font-semibold text-silver-mist mb-4">
+                      Senior Housing & Healthcare Programs
+                    </h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Senior Housing & Healthcare:</span>
+                          <span className="text-silver-mist/70"> HUD 232/221(d)(4)</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Acquisition or Refinance of Senior Housing & Healthcare:</span>
+                          <span className="text-silver-mist/70"> HUD 232/223(f)</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Senior Assets:</span>
+                          <span className="text-silver-mist/70"> HUD 232/223(a)(7)</span>
+                        </div>
+                      </li>
+                      <li className="flex items-start space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                        <div>
+                          <span className="text-silver-mist font-medium">Supplemental Mortgage Insurance for Capital Improvements:</span>
+                          <span className="text-silver-mist/70"> HUD 241(a)</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Senior Housing & Healthcare</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 232/223(f)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Senior Assets</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 232/223(a)(7)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Mortgage Insurance for Capital Improvements</h5>
-                    <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
-                    <p className="text-accent-brown text-sm font-medium">
-                      Click to learn more →
-                    </p>
-                  </div>
-                </div>
-              </TabsContent>
-            </Tabs>
 
-            {/* Available Properties */}
-            <div className="text-center mb-12">
-              <p className="text-lg text-silver-mist/80 leading-relaxed">
-                Available through Oak's FHA/HUD platform, these loans provide long-term, government-backed financing for:
-              </p>
-              <div className="grid md:grid-cols-3 gap-8 mt-8">
-                <div className="p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300">
-                  <h5 className="text-lg font-medium text-silver-mist">Multifamily housing</h5>
+                  <div className="pt-6 border-t border-silver-mist/20">
+                    <p className="text-silver-mist/80 mb-4">
+                      Available through Oak's FHA/HUD platform, these loans provide long-term, government-backed financing for:
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-silver-mist">Multifamily housing</span>
+                      </li>
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-silver-mist">Affordable housing</span>
+                      </li>
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-silver-mist">Senior living and healthcare</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300">
-                  <h5 className="text-lg font-medium text-silver-mist">Affordable housing</h5>
-                </div>
-                <div className="p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300">
-                  <h5 className="text-lg font-medium text-silver-mist">Senior living and healthcare</h5>
-                </div>
+              </div>
+
+              {/* Right Side - Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  alt="FHA/HUD financing programs"
+                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[500px]"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Bridge-to-FHA Transition */}
-      <div className="py-20">
+      {/* Bridge-to-FHA Transition - Condensed */}
+      <div className="py-16">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold text-silver-mist mb-6">
               Bridge-to-FHA Transition
             </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
+            <p className="text-lg text-silver-mist/80 leading-relaxed mb-8">
               Our integrated platform ensures smooth execution from initial bridge loan to FHA takeout, offering:
             </p>
             
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <h3 className="text-xl font-medium text-silver-mist">Faster access to capital</h3>
+            <div className="grid md:grid-cols-2 gap-6 mb-12">
+              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
+                <h3 className="text-lg font-medium text-silver-mist">Faster access to capital</h3>
               </div>
-              
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <h3 className="text-xl font-medium text-silver-mist">Minimized downtime</h3>
+              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
+                <h3 className="text-lg font-medium text-silver-mist">Minimized downtime</h3>
               </div>
-              
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <h3 className="text-xl font-medium text-silver-mist">Full lifecycle financing execution with a predefined exit</h3>
+              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
+                <h3 className="text-lg font-medium text-silver-mist">Full lifecycle financing execution</h3>
               </div>
-              
-              <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:from-accent-brown/30 hover:to-garnet-edge/30 transition-all duration-300 hover:scale-105 hover:shadow-xl">
-                <h3 className="text-xl font-medium text-silver-mist">Alignment of borrower and lender interests</h3>
+              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
+                <h3 className="text-lg font-medium text-silver-mist">Aligned borrower and lender interests</h3>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
               >
                 Learn More About Our Lending Programs
               </Button>
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian px-12 py-4 text-lg font-medium bg-transparent"
               >
                 Contact Our Lending Team
               </Button>
