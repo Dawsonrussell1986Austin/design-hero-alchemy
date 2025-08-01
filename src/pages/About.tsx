@@ -14,7 +14,7 @@ const About = () => {
       {/* Breadcrumb */}
       <Breadcrumb items={[
         { label: "Our Firm", href: "/" },
-        { label: "About" }
+        { label: "About us" }
       ]} />
       
       {/* Main Content - Cream Background */}
