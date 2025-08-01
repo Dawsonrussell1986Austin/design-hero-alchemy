@@ -1,195 +1,225 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Calendar, Clock, Users, Award, CheckCircle, Play } from "lucide-react";
+import { Calendar, Clock, Users, CheckCircle, Play, Award } from "lucide-react";
 
 const WebinarRegistration = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen">
       {/* Navigation */}
-      <Navigation />
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
       
-      {/* Main Two-Column Section */}
-      <div className="relative min-h-screen py-20">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/770999c1-3aa6-42b7-8889-bd354b357d1e.png"
-            alt="Modern cityscape with geometric buildings"
-            className="w-full h-full object-cover opacity-15"
-          />
-        </div>
-        <div className="container mx-auto px-6 h-full relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 h-full items-start">
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Webinar Registration" }
+        ]}
+      />
+      
+      {/* Cream background for hero content */}
+      <div className="bg-silver-mist">
+        {/* Hero Section */}
+        <section className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
             
-            {/* Left Column - Main Content */}
-            <div className="space-y-12">
-              {/* Hero Content */}
-              <div className="space-y-8">
-                <div className="space-y-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                  <h1 className="text-5xl lg:text-7xl font-light text-silver-mist leading-[0.9] tracking-tight">
-                    Master Real Estate
-                  </h1>
-                  <h1 className="text-5xl lg:text-7xl font-light leading-[0.9] tracking-tight">
-                    <span className="text-accent-brown">Credit</span> <span className="text-garnet-edge">Investing</span>
-                  </h1>
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    <Award className="w-4 h-4 mr-2" />
+                    Exclusive Webinar
+                  </span>
                 </div>
                 
-                <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                  <p className="text-xl text-silver-mist/80 leading-relaxed font-light">
-                    Join industry experts for an exclusive webinar on 
-                    <span className="text-garnet-edge"> private credit strategies</span> that deliver consistent returns.
-                  </p>
-                </div>
-              </div>
-
-              {/* Webinar Details */}
-              <div className="grid grid-cols-3 gap-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                  <Calendar className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                  <h3 className="text-lg font-light text-silver-mist mb-1">Date</h3>
-                  <p className="text-silver-mist/80 text-sm">August 15, 2025</p>
-                </div>
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                  Master Real Estate Credit Investing
+                </h1>
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                  Join industry experts for an exclusive webinar on private credit strategies that deliver consistent returns.
+                </p>
+                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                  Discover current market opportunities, proven risk management strategies, and essential due diligence processes that institutional investors use to maximize returns in commercial real estate credit.
+                </p>
                 
-                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                  <Clock className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                  <h3 className="text-lg font-light text-silver-mist mb-1">Time</h3>
-                  <p className="text-silver-mist/80 text-sm">2:00 PM EST</p>
-                </div>
-                
-                <div className="bg-background/20 backdrop-blur-md border border-silver-mist/20 rounded-xl p-6 text-center">
-                  <Users className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                  <h3 className="text-lg font-light text-silver-mist mb-1">Duration</h3>
-                  <p className="text-silver-mist/80 text-sm">60 Minutes</p>
-                </div>
-              </div>
-
-              {/* What You'll Learn */}
-              <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist">
-                  What You'll <span className="text-accent-brown">Learn</span>
-                </h2>
-                
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-light text-silver-mist mb-2">Market Opportunities</h3>
-                      <p className="text-silver-mist/70 text-sm">Discover current trends and emerging opportunities in the private credit real estate market.</p>
-                    </div>
+                {/* Webinar Details Cards */}
+                <div className="grid grid-cols-3 gap-4 mb-8">
+                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-4 text-center shadow-sm">
+                    <Calendar className="h-6 w-6 text-garnet-edge mx-auto mb-2" />
+                    <h3 className="text-sm font-semibold text-obsidian mb-1">Date</h3>
+                    <p className="text-xs text-obsidian/70">August 15, 2025</p>
                   </div>
                   
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-light text-silver-mist mb-2">Risk Management</h3>
-                      <p className="text-silver-mist/70 text-sm">Learn proven strategies for mitigating risk while maximizing returns.</p>
-                    </div>
+                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-4 text-center shadow-sm">
+                    <Clock className="h-6 w-6 text-garnet-edge mx-auto mb-2" />
+                    <h3 className="text-sm font-semibold text-obsidian mb-1">Time</h3>
+                    <p className="text-xs text-obsidian/70">2:00 PM EST</p>
                   </div>
                   
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-light text-silver-mist mb-2">Portfolio Diversification</h3>
-                      <p className="text-silver-mist/70 text-sm">Understand how real estate credit enhances risk-adjusted returns.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg font-light text-silver-mist mb-2">Due Diligence Process</h3>
-                      <p className="text-silver-mist/70 text-sm">Master essential steps for evaluating credit opportunities.</p>
-                    </div>
+                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-4 text-center shadow-sm">
+                    <Users className="h-6 w-6 text-garnet-edge mx-auto mb-2" />
+                    <h3 className="text-sm font-semibold text-obsidian mb-1">Duration</h3>
+                    <p className="text-xs text-obsidian/70">60 Minutes</p>
                   </div>
                 </div>
-              </div>
 
-
-              {/* Preview Button */}
-              <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                {/* Preview Button */}
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
                 >
                   <Play className="h-5 w-5 mr-2" />
                   Preview Webinar Content
                 </Button>
               </div>
-            </div>
+              
+              {/* Registration Form */}
+              <div className="relative">
+                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 shadow-xl">
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-display font-medium text-obsidian mb-2">
+                      Register Free
+                    </h3>
+                    <p className="text-sm text-obsidian/70">
+                      Secure your spot in this exclusive presentation
+                    </p>
+                  </div>
 
-            {/* Right Column - Registration Form */}
-            <div className="lg:pl-8">
-              <div className="bg-obsidian/90 border border-silver-mist/30 rounded-2xl p-8">
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-3">
-                    Register <span className="text-accent-brown">Free</span>
-                  </h3>
+                  <form className="space-y-4">
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder="First Name *"
+                        required
+                        className="w-full bg-white border-obsidian/20 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian placeholder:text-obsidian/50 py-3"
+                      />
+                    </div>
+
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder="Last Name *"
+                        required
+                        className="w-full bg-white border-obsidian/20 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian placeholder:text-obsidian/50 py-3"
+                      />
+                    </div>
+
+                    <div>
+                      <Input
+                        type="email"
+                        placeholder="Email Address *"
+                        required
+                        className="w-full bg-white border-obsidian/20 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian placeholder:text-obsidian/50 py-3"
+                      />
+                    </div>
+
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder="Company *"
+                        required
+                        className="w-full bg-white border-obsidian/20 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian placeholder:text-obsidian/50 py-3"
+                      />
+                    </div>
+
+                    <div>
+                      <Input
+                        type="text"
+                        placeholder="Job Title"
+                        className="w-full bg-white border-obsidian/20 focus:border-accent-brown focus:ring-accent-brown/20 text-obsidian placeholder:text-obsidian/50 py-3"
+                      />
+                    </div>
+
+                    <Button 
+                      type="submit"
+                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-4 text-lg font-medium mt-6"
+                    >
+                      Register Now
+                    </Button>
+
+                    <p className="text-xs text-obsidian/50 text-center mt-4">
+                      By registering, you agree to receive webinar updates from Oak Real Estate Partners.
+                    </p>
+                  </form>
                 </div>
-
-                <form className="space-y-4">
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="First Name *"
-                      required
-                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Last Name *"
-                      required
-                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email Address *"
-                      required
-                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Company *"
-                      required
-                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
-                    />
-                  </div>
-
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Job Title"
-                      className="w-full bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 rounded-lg backdrop-blur-sm"
-                    />
-                  </div>
-
-                  <Button 
-                    type="submit"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg shadow-xl mt-6"
-                  >
-                    Register Now
-                  </Button>
-
-                  <p className="text-xs text-silver-mist/50 text-center mt-4">
-                    By registering, you agree to receive webinar updates from Oak Real Estate Partners.
-                  </p>
-                </form>
-
               </div>
             </div>
           </div>
-        </div>
+        </section>
+      </div>
+      
+      {/* What You'll Learn Section - Dark Background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-6">
+                  What You'll Learn
+                </h2>
+                <p className="text-xl text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
+                  Gain exclusive insights from industry professionals with decades of experience in commercial real estate credit.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-silver-mist mb-3">Market Opportunities</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">
+                        Discover current trends and emerging opportunities in the private credit real estate market with real-world case studies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-silver-mist mb-3">Risk Management</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">
+                        Learn proven strategies for mitigating risk while maximizing returns through disciplined underwriting processes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-silver-mist mb-3">Portfolio Diversification</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">
+                        Understand how real estate credit enhances risk-adjusted returns and fits into institutional portfolio allocation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 hover:bg-white/15 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <CheckCircle className="h-6 w-6 text-accent-brown mt-1 flex-shrink-0" />
+                    <div>
+                      <h3 className="text-xl font-semibold text-silver-mist mb-3">Due Diligence Process</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">
+                        Master essential steps for evaluating credit opportunities including market analysis and borrower assessment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
