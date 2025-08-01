@@ -133,7 +133,7 @@ const About = () => {
                 
                 {/* Right Column - Visual Element */}
                 <div className="relative">
-                  <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
+                  <div className="bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
                     <div className="space-y-8">
                       <div className="text-center">
                         <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
