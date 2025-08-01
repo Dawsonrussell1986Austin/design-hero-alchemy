@@ -1,36 +1,52 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const Lending = () => {
   return (
     <div className="min-h-screen">
-      {/* Header with dark background */}
+      {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="Lending" />
       </div>
       
-      {/* Cream background for content */}
-      <div className="bg-silver-mist">
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Lending" },
+          { label: "Overview" }
+        ]}
+        quickLinks={[
+          { label: "Core Bridge", href: "/lending/core-bridge" },
+          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
+          { label: "Opportunistic Bridge", href: "/lending/opportunistic-bridge" },
+          { label: "Participating Bridge", href: "/lending/participating-bridge" }
+        ]}
+      />
 
-      {/* Overview Section */}
-      <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-6 text-silver-mist/90 text-lg leading-relaxed">
-              <p>
+      {/* Main Content Section - Cream Background */}
+      <div className="bg-silver-mist">
+        <div className="py-20">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto space-y-8 text-obsidian">
+              <h1 className="text-5xl lg:text-6xl font-light text-obsidian leading-tight">
+                Lending <span className="text-accent-brown">Overview</span>
+              </h1>
+              <p className="text-lg lg:text-xl leading-relaxed">
                 Oak offers structured capital solutions for commercial real estate borrowers nationwide. Our national lending platform combines efficiency and innovation with institutional-grade standards and a comprehensive underwriting discipline.
               </p>
-              <p>
+              <p className="text-lg lg:text-xl leading-relaxed">
                 We provide both short-term private bridge loans and long-term, government-backed FHA/HUD-insured mortgages—individually or in a seamless Bridge-to-FHA structure.
               </p>
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Lending content background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
       {/* Bridge Loan Programs */}
       <div className="py-20">
