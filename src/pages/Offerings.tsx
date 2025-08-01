@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, XCircle, DollarSign, Building, Shield, Award } from "lucide-react";
+import { TrendingUp, PieChart, Building2, Landmark, CandlestickChart, BarChart3 } from "lucide-react";
 
 const Offerings = () => {
   return (
@@ -124,98 +124,86 @@ const Offerings = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Award className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <TrendingUp className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Intermediate Income Fund, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II Bond
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <DollarSign className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <PieChart className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund VI, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II General Solicitation Offering
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Building className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Building2 className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund V, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II Bond
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Shield className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <Landmark className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund IV, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II Bond
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Award className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <CandlestickChart className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund III, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II Bond
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
-                  <div className="flex items-center gap-3 mb-4">
-                    <XCircle className="h-5 w-5 text-obsidian/60" />
-                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
-                  </div>
-                  <div className="flex items-center space-x-3 mb-3">
-                    <DollarSign className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-medium text-obsidian">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                      <BarChart3 className="h-6 w-6 text-white" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund II, LLC
                     </h3>
                   </div>
-                  <p className="text-obsidian/70 text-sm">
+                  <p className="text-accent-brown font-medium text-sm uppercase tracking-wider">
                     Reg A+, Tier II Bond
                   </p>
                 </div>
