@@ -255,7 +255,7 @@ const Leadership = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
+                className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-obsidian px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
               >
                 View Our Approach
               </Button>
