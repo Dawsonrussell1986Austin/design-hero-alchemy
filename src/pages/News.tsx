@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -69,6 +70,13 @@ const News = () => {
         <Navigation />
         <SimplePageHeader title="News" />
       </div>
+      
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "News" }
+        ]}
+      />
       
       {/* Cream background for content */}
       <div className="bg-silver-mist">
