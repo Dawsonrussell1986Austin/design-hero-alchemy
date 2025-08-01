@@ -67,15 +67,6 @@ const Hud232221d4Terms = () => {
                   </div>
                 </div>
 
-                {/* Why Choose Red Oak */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
-                    Why Choose Red Oak?
-                  </h3>
-                  <p className="text-sm text-obsidian/80 leading-relaxed">
-                    Red Oak's comprehensive experience in HUD new construction financing ensures expert guidance through every phase of your healthcare facility development.
-                  </p>
-                </div>
               </div>
               
               {/* Download Button & Navigation */}
@@ -92,31 +83,6 @@ const Hud232221d4Terms = () => {
                   </Button>
                 </div>
 
-                {/* Quick Links */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4">Bridge Loans</h3>
-                  <div className="space-y-2">
-                    <a href="/lending/bridge/core-bridge" className="block text-obsidian/70 hover:text-garnet-edge transition-colors">Core Bridge</a>
-                    <a href="/lending/bridge/core-plus-bridge" className="block text-obsidian/70 hover:text-garnet-edge transition-colors">Core-Plus Bridge</a>
-                    <a href="/lending/bridge/opportunistic-bridge" className="block text-obsidian/70 hover:text-garnet-edge transition-colors">Opportunistic Bridge</a>
-                    <a href="/lending/bridge/participating-bridge" className="block text-obsidian/70 hover:text-garnet-edge transition-colors">Participating Bridge</a>
-                  </div>
-                  
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 mt-6">FHA/HUD Loans</h3>
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium text-obsidian/80">Multifamily & Affordable Housing</p>
-                    <a href="/lending/fha-hud/hud-221" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">HUD 221(d)4 & 220</a>
-                    <a href="/lending/fha-hud/hud-223f" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">HUD 223 (f)</a>
-                    <a href="/lending/fha-hud/hud-223a7" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">HUD 223 (a)7</a>
-                    <a href="/lending/fha-hud/hud-241a" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">HUD 241(a)</a>
-                    
-                    <p className="text-sm font-medium text-obsidian/80 mt-4">Senior Housing & Healthcare</p>
-                    <a href="/lending/fha-hud/hud-232-221" className="block text-garnet-edge font-medium text-sm">232/221(d)4</a>
-                    <a href="/lending/fha-hud/hud-232-223f" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">232/223 (f)</a>
-                    <a href="/lending/fha-hud/hud-232-223a7" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">232/223(a)(7)</a>
-                    <a href="/lending/fha-hud/hud-241a-senior" className="block text-obsidian/70 hover:text-garnet-edge transition-colors text-sm">241(a)</a>
-                  </div>
-                </div>
               </div>
             </div>
 
