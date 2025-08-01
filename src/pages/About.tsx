@@ -124,12 +124,10 @@ const About = () => {
                       investors while servicing as a principal of how we treat our partners.
                     </p>
                     
-                    <div className="bg-white/80 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8">
-                      <p className="text-2xl font-light text-accent-brown leading-relaxed text-center">
-                        We're strong because we're structured. Dependable because we're disciplined. 
-                        Trusted for our consistent execution, especially when stakes are highest.
-                      </p>
-                    </div>
+                    <p className="text-xl text-deep-petrol leading-relaxed font-light">
+                      We're strong because we're structured. Dependable because we're disciplined. 
+                      Trusted for our consistent execution, especially when stakes are highest.
+                    </p>
                   </div>
                 </div>
                 
