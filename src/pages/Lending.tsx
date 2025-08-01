@@ -81,21 +81,18 @@ const Lending = () => {
               </div>
               
               <div className="grid md:grid-cols-2 gap-8">
-                <div 
-                  className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group shadow-md"
-                  onClick={() => window.location.href = "/lending/core-bridge"}
-                >
+                <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group shadow-md">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Core Bridge</h3>
-                    <p className="text-lg text-obsidian/70 mb-1">
-                      Stabilizing properties at or above breakdown cash flow
-                    </p>
-                    <p className="text-obsidian/60 leading-relaxed">
+                    <p className="text-obsidian/60 leading-relaxed mb-4">
                       Loans for stabilizing properties, currently at or above breakdown cash flow. (≥1.00x DSCR)
                     </p>
-                    <p className="text-accent-brown text-sm font-medium mt-3">
-                      Click to learn more →
-                    </p>
+                    <Button 
+                      onClick={() => window.location.href = "/lending/core-bridge"}
+                      className="bg-accent-brown hover:bg-accent-brown/90 text-white"
+                    >
+                      Learn more
+                    </Button>
                   </div>
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -106,21 +103,18 @@ const Lending = () => {
                   </div>
                 </div>
                 
-                <div 
-                  className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group shadow-md"
-                  onClick={() => window.location.href = "/lending/core-plus-bridge"}
-                >
+                <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group shadow-md">
                   <div className="flex-1">
                     <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Core-Plus Bridge</h3>
-                    <p className="text-lg text-obsidian/70 mb-1">
-                      Stabilizing properties below breakdown cash flow
-                    </p>
-                    <p className="text-obsidian/60 leading-relaxed">
+                    <p className="text-obsidian/60 leading-relaxed mb-4">
                       Loans for stabilizing properties, currently below breakdown cash flow.
                     </p>
-                    <p className="text-accent-brown text-sm font-medium mt-3">
-                      Click to learn more →
-                    </p>
+                    <Button 
+                      onClick={() => window.location.href = "/lending/core-plus-bridge"}
+                      className="bg-accent-brown hover:bg-accent-brown/90 text-white"
+                    >
+                      Learn more
+                    </Button>
                   </div>
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -131,53 +125,47 @@ const Lending = () => {
                   </div>
                 </div>
                 
-                <Link to="/lending/opportunistic-bridge" className="block">
-                  <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group shadow-md">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Opportunistic Bridge</h3>
-                      <p className="text-lg text-obsidian/70 mb-1">
-                        Higher-leverage for value-add strategies
-                      </p>
-                      <p className="text-obsidian/60 leading-relaxed">
-                        Higher-leverage loans for value-add strategies and capital improvements.
-                      </p>
-                      <p className="text-accent-brown text-sm font-medium mt-3">
-                        Click to learn more →
-                      </p>
-                    </div>
-                    <div className="w-24 h-24 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
-                        alt="Bridge to opportunity"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
-                    </div>
+                <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group shadow-md">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Opportunistic Bridge</h3>
+                    <p className="text-obsidian/60 leading-relaxed mb-4">
+                      Higher-leverage loans for value-add strategies and capital improvements.
+                    </p>
+                    <Link to="/lending/opportunistic-bridge">
+                      <Button className="bg-accent-brown hover:bg-accent-brown/90 text-white">
+                        Learn more
+                      </Button>
+                    </Link>
                   </div>
-                </Link>
+                  <div className="w-24 h-24 flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
+                      alt="Bridge to opportunity"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
                 
-                <Link to="/lending/participating-bridge" className="block">
-                  <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group shadow-md">
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Participating Bridge</h3>
-                      <p className="text-lg text-obsidian/70 mb-1">
-                        High leverage with shared appreciation
-                      </p>
-                      <p className="text-obsidian/60 leading-relaxed">
-                        High leverage, highly structured loans for sponsors seeking adaptive re-use capital and shared appreciation.
-                      </p>
-                      <p className="text-accent-brown text-sm font-medium mt-3">
-                        Click to learn more →
-                      </p>
-                    </div>
-                    <div className="w-24 h-24 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/e97b4477-fafb-49f0-b011-b4eb2dcd6a0a.png"
-                        alt="Climbing to success"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
-                    </div>
+                <div className="flex items-center space-x-6 p-8 bg-white/80 backdrop-blur-sm rounded-lg border border-obsidian/10 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group shadow-md">
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-semibold text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">Participating Bridge</h3>
+                    <p className="text-obsidian/60 leading-relaxed mb-4">
+                      High leverage, highly structured loans for sponsors seeking adaptive re-use capital and shared appreciation.
+                    </p>
+                    <Link to="/lending/participating-bridge">
+                      <Button className="bg-accent-brown hover:bg-accent-brown/90 text-white">
+                        Learn more
+                      </Button>
+                    </Link>
                   </div>
-                </Link>
+                  <div className="w-24 h-24 flex-shrink-0">
+                    <img 
+                      src="/lovable-uploads/e97b4477-fafb-49f0-b011-b4eb2dcd6a0a.png"
+                      alt="Climbing to success"
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
