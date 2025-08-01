@@ -56,7 +56,7 @@ const Lending = () => {
             </div>
 
             {/* Two Main Loan Categories */}
-            <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               
               {/* Bridge Loans Card */}
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">

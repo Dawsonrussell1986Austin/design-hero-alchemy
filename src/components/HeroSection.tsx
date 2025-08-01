@@ -19,24 +19,24 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Main Headline */}
             <div className="space-y-2">
-              <h1 className="text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
                 Where Strength
               </h1>
-              <h1 className="text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <span className="text-silver-mist">Meets</span>
               </h1>
-              <h1 className="text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <span className="text-silver-mist">Stewardship.</span>
               </h1>
             </div>
             
             {/* Subtitle */}
-            <p className="text-lg lg:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <p className="text-base sm:text-lg lg:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal animate-fade-in" style={{ animationDelay: "0.6s" }}>
               Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
               <Link to="/lending">
                 <Button 
                   size="lg" 

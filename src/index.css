@@ -105,7 +105,7 @@
   }
 }
 
-/* Custom brand utilities */
+/* Custom brand utilities and mobile optimizations */
 @layer utilities {
   .text-obsidian {
     color: hsl(var(--obsidian));
@@ -157,5 +157,34 @@
   
   .bg-accent-brown {
     background-color: hsl(var(--accent-brown));
+  }
+  
+  /* Mobile-specific optimizations */
+  @media (max-width: 640px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    /* Better touch targets for mobile */
+    button, a {
+      min-height: 44px;
+    }
+    
+    /* Improved text contrast for small screens */
+    .text-obsidian\/80 {
+      color: hsl(var(--obsidian) / 0.9);
+    }
+  }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Improve button touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
   }
 }

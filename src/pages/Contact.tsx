@@ -43,7 +43,7 @@ const Contact = () => {
                 <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
                 
                 <form className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm text-obsidian mb-2">First Name *</label>
                       <Input
@@ -77,7 +77,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="phone" className="block text-sm text-obsidian mb-2">Phone</label>
                       <Input
@@ -132,7 +132,7 @@ const Contact = () => {
 
                 {/* Glassmorphic Contact Info Cards */}
                 <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="grid grid-cols-2 gap-4 max-w-sm w-full">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-sm w-full">
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Office</h3>

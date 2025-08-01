@@ -74,7 +74,7 @@ const About = () => {
                     {/* Experience Stats Overlay Card */}
                     <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-6 shadow-xl max-w-sm">
                       <h3 className="text-lg font-display font-medium text-obsidian mb-4">Experience That Matters</h3>
-                      <div className="grid grid-cols-1 gap-4 text-center">
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                         <div>
                           <div className="text-xl font-display font-medium text-accent-brown mb-1">150+</div>
                           <div className="text-deep-petrol/80 font-body text-xs">Years Combined Experience</div>
@@ -181,7 +181,7 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
@@ -236,7 +236,7 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-4">
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">

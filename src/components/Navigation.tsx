@@ -193,7 +193,7 @@ const Navigation = () => {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[380px] bg-obsidian border-l border-garnet-edge/20 p-0">
+            <SheetContent side="right" className="w-[300px] sm:w-[380px] bg-obsidian border-l border-garnet-edge/20 p-0">
               <div className="flex flex-col h-full">
                 {/* Header with Logo */}
                 <div className="px-8 py-6 border-b border-garnet-edge/10">

@@ -5,10 +5,10 @@ const Footer = () => {
     <footer className="bg-obsidian py-16">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             
             {/* Logo and Company Info */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="sm:col-span-2 lg:col-span-2 space-y-6">
               <div className="mb-6">
                 <img 
                   src="/lovable-uploads/5f1c8481-e8d3-4d2a-88d6-54df790bcf6c.png" 

@@ -115,7 +115,7 @@ const RecentTransactionsHomepage = () => {
               {Array.from({ length: totalPages }, (_, pageIndex) => (
                 <div 
                   key={pageIndex}
-                  className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0 items-stretch pb-4"
+                  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0 items-stretch pb-4"
                 >
                   {featuredTransactions
                     .slice(pageIndex * transactionsPerPage, (pageIndex + 1) * transactionsPerPage)

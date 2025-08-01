@@ -100,7 +100,7 @@ const CoreBridgeTerms = () => {
                 Financing Parameters
               </h2>
               
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto -mx-4 sm:mx-0">
                 <table className="w-full">
                   <tbody className="divide-y divide-obsidian/10">
                     <tr>

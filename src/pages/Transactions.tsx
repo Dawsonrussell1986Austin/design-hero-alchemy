@@ -220,7 +220,7 @@ const Transactions = () => {
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto">
               <div className="mb-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                   {/* Location Filter */}
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-silver-mist/60 flex items-center gap-2">
@@ -320,7 +320,7 @@ const Transactions = () => {
         {/* Transactions Grid Section */}
         <section className="pb-12 px-6">
           <div className="container mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
               {filteredTransactions.map((transaction) => (
                 <TransactionCard key={transaction.id} transaction={transaction} />
               ))}
