@@ -326,16 +326,16 @@ const Transactions = () => {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight">
+                  <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight border-b border-garnet-edge/20 pb-3">
                     {transaction.name}
                   </h3>
                   
                   <div className="space-y-3">
-                    <div className="text-deep-petrol text-sm font-medium">
+                    <div className="text-deep-petrol text-sm font-medium border-b border-garnet-edge/20 pb-2">
                       {transaction.location}
                     </div>
                     
-                    <div className="text-accent-brown text-xl font-bold">
+                    <div className="text-accent-brown text-xl font-bold border-b border-garnet-edge/20 pb-2">
                       {transaction.loanSize}
                     </div>
                     
