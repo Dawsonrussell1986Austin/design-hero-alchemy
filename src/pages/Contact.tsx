@@ -28,10 +28,10 @@ const Contact = () => {
             
             {/* Main Title */}
             <div className="text-center mb-12">
-              <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-4 leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 leading-tight">
                 Get in <span className="text-accent-brown">Touch</span>
               </h1>
-              <p className="text-lg text-obsidian/80 max-w-2xl mx-auto">
+              <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 max-w-2xl mx-auto">
                 Whether you're seeking bridge financing or exploring investment opportunities.
               </p>
             </div>
@@ -40,7 +40,7 @@ const Contact = () => {
               
               {/* Left Side - Contact Form */}
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-8 shadow-lg">
-                <h2 className="text-2xl font-semibold text-obsidian mb-6">Send Us a Message</h2>
+                <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
                 
                 <form className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
