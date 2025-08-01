@@ -28,8 +28,7 @@ const OpportunisticBridge = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Lending" },
-          { label: "Opportunistic Bridge" }
+          { label: "Lending", href: "/lending" }
         ]}
         quickLinks={[
           { label: "Overview", href: "/lending" },

@@ -28,8 +28,7 @@ const CoreBridge = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Lending" },
-          { label: "Core Bridge" }
+          { label: "Lending", href: "/lending" }
         ]}
         quickLinks={[
           { label: "Overview", href: "/lending" },

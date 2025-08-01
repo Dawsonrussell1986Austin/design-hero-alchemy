@@ -28,8 +28,7 @@ const ParticipatingBridge = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Lending" },
-          { label: "Participating Bridge" }
+          { label: "Lending", href: "/lending" }
         ]}
         quickLinks={[
           { label: "Overview", href: "/lending" },
