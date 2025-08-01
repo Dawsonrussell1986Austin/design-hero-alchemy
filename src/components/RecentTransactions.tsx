@@ -24,13 +24,13 @@ const RecentTransactions = () => {
   };
 
   return (
-    <div className="bg-white py-20">
+    <div className="bg-silver-mist py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           
           {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-4">
               Recent Transactions
             </h2>
           </div>
