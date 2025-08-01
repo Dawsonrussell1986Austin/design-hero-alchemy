@@ -145,25 +145,20 @@ const Leadership = () => {
         </div>
       </div>
 
-      {/* Team Introduction */}
-      <div className="py-16 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-              Meet the Team
-            </h2>
-            <p className="text-lg text-silver-mist/90 leading-relaxed">
-              Profiles include decades of industry experience, roles across the capital stack, and a consistent 
-              track record of delivering value across market environments.
-            </p>
-          </div>
-        </div>
-      </div>
 
       {/* Team Cards */}
       <div className="py-20 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+                Meet the Team
+              </h2>
+              <p className="text-lg text-silver-mist/90 leading-relaxed max-w-4xl mx-auto">
+                Profiles include decades of industry experience, roles across the capital stack, and a consistent 
+                track record of delivering value across market environments.
+              </p>
+            </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((leader, index) => (
