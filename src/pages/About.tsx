@@ -96,7 +96,7 @@ const About = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 relative overflow-hidden bg-deep-petrol">
+        <section className="py-20 relative overflow-hidden bg-obsidian">
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
