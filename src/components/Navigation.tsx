@@ -74,12 +74,12 @@ const Navigation = () => {
               </div>
             </div>
             <div className="group relative">
-              <a href="/lending" className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Lending
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
-              </a>
+              </button>
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
@@ -89,6 +89,14 @@ const Navigation = () => {
                 scrolled ? 'bg-white border-gray-200' : 'bg-white border-gray-200'
               }`}>
                 <div className="py-2">
+                  <a 
+                    href="/lending" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Overview
+                  </a>
                   <a 
                     href="/lending/core-bridge" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
