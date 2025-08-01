@@ -127,13 +127,30 @@ const Leadership = () => {
       <div className="py-20 bg-obsidian/30 backdrop-blur-sm">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8 text-center">
-              Meet the Team
-            </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-16 text-center max-w-4xl mx-auto">
-              Profiles include decades of industry experience, roles across the capital stack, and a consistent 
-              track record of delivering value across market environments.
-            </p>
+            <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+              {/* Left Column - Content */}
+              <div>
+                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+                  Meet the Team
+                </h2>
+                <p className="text-lg text-silver-mist/80 leading-relaxed">
+                  Profiles include decades of industry experience, roles across the capital stack, and a consistent 
+                  track record of delivering value across market environments.
+                </p>
+              </div>
+              
+              {/* Right Column - Image */}
+              <div className="relative">
+                <div className="rounded-lg overflow-hidden shadow-xl">
+                  <img 
+                    src="/lovable-uploads/7b292b7c-cd6f-4729-866e-b650516c9c44.png"
+                    alt="Modern conference room"
+                    className="w-full h-[400px] object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
+                </div>
+              </div>
+            </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((leader, index) => (
