@@ -30,7 +30,7 @@ const About = () => {
                 <div className="space-y-8">
                   <div>
                     <h1 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
-                      Our <span className="text-accent-brown">Story</span>
+                      Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
                     </h1>
                     <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
                       Oak is a premier real estate credit lender with our core business focus on senior secured loans 
