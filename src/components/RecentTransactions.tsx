@@ -10,11 +10,6 @@ const RecentTransactions = () => {
   const transactionsPerPage = 4;
   const totalPages = Math.ceil(featuredTransactions.length / transactionsPerPage);
 
-  const getCurrentTransactions = () => {
-    const startIndex = currentPage * transactionsPerPage;
-    return featuredTransactions.slice(startIndex, startIndex + transactionsPerPage);
-  };
-
   const nextPage = () => {
     setCurrentPage((prev) => (prev + 1) % totalPages);
   };
@@ -51,11 +46,30 @@ const RecentTransactions = () => {
             </button>
           </div>
 
-          {/* Transactions Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {getCurrentTransactions().map((transaction) => (
-              <TransactionCard key={transaction.id} transaction={transaction} />
-            ))}
+          {/* Transactions Grid - Smooth Scrolling Container */}
+          <div className="overflow-hidden mb-12">
+            <div 
+              className="flex transition-transform duration-500 ease-in-out"
+              style={{ 
+                transform: `translateX(-${currentPage * 100}%)`,
+                width: `${totalPages * 100}%`
+              }}
+            >
+              {Array.from({ length: totalPages }, (_, pageIndex) => (
+                <div 
+                  key={pageIndex}
+                  className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0"
+                  style={{ width: `${100 / totalPages}%` }}
+                >
+                  {featuredTransactions
+                    .slice(pageIndex * transactionsPerPage, (pageIndex + 1) * transactionsPerPage)
+                    .map((transaction) => (
+                      <TransactionCard key={transaction.id} transaction={transaction} />
+                    ))
+                  }
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* See More Button */}
