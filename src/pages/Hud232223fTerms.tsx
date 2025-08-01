@@ -26,54 +26,67 @@ const Hud232223fTerms = () => {
         <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="max-w-4xl mx-auto">
-              {/* Program Badge */}
-              <div className="mb-4">
-                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                  FHA/HUD Loans
-                </span>
-              </div>
-              
-              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                232/223 (f)
-              </h1>
-              <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                Refinance or Acquisition of Nursing Homes, Intermediate Care Facilities, Board & Care, and Assisted Living Facilities
-              </p>
-              <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                Refinance or acquisition of an existing Nursing Home, Intermediate Care Facility, Board & Care Home or Assisted Living Facility having no less than 20 units/beds.
-              </p>
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    FHA/HUD Loans
+                  </span>
+                </div>
+                
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                  232/223 (f)
+                </h1>
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                  Refinance or Acquisition of Nursing Homes, Intermediate Care Facilities, Board & Care, and Assisted Living Facilities
+                </p>
+                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                  Refinance or acquisition of an existing Nursing Home, Intermediate Care Facility, Board & Care Home or Assisted Living Facility having no less than 20 units/beds.
+                </p>
 
-              {/* Why Consider This Program */}
-              <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
-                <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
-                  Why Consider This Program?
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-sm text-obsidian/80 leading-relaxed">You're acquiring or refinancing healthcare facilities with 20+ units/beds</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-sm text-obsidian/80 leading-relaxed">Your facility has been rehabilitated within the last 3 years</p>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-sm text-obsidian/80 leading-relaxed">You need long-term, non-recourse financing for healthcare properties</p>
+                {/* Why Consider This Program */}
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
+                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Why Consider This Program?
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You're acquiring or refinancing healthcare facilities with 20+ units/beds</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Your facility has been rehabilitated within the last 3 years</p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You need long-term, non-recourse financing for healthcare properties</p>
+                    </div>
                   </div>
                 </div>
               </div>
-
-              {/* Download Button */}
-              <div className="text-center mb-12">
-                <div className="bg-obsidian inline-block p-8 rounded-lg">
-                  <h2 className="text-2xl font-display font-medium text-silver-mist mb-4">
-                    232/223 (f)
-                  </h2>
-                  <p className="text-silver-mist/80 mb-6">Loan Type: FHA/HUD Loans</p>
+              
+              {/* Right Side - Image and Download */}
+              <div className="space-y-6">
+                <div className="rounded-lg overflow-hidden shadow-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
+                    alt="Healthcare facility acquisition financing"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+                
+                {/* Download Form */}
+                <div className="space-y-4">
+                  <input 
+                    type="email"
+                    placeholder="Enter your email address"
+                    className="w-full px-4 py-3 border border-obsidian/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-garnet-edge focus:border-transparent"
+                  />
                   <Button 
-                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-white px-8 py-3 font-medium"
+                    className="w-full bg-garnet-edge hover:bg-garnet-edge/90 text-white px-8 py-3 font-medium"
                   >
                     Download Flyer
                   </Button>
