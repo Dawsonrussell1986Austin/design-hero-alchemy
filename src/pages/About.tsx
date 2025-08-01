@@ -32,19 +32,19 @@ const About = () => {
                     <h1 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
                       Our <span className="text-accent-brown">Story</span>
                     </h1>
-                    <p className="text-xl text-deep-petrol leading-relaxed font-light mb-6">
+                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
                       Oak is a premier real estate credit lender with our core business focus on senior secured loans 
                       backed by income-producing commercial properties. Our lending philosophy is grounded in real assets, 
                       an institutional discipline, and a commitment to long-term capital protection.
                     </p>
                     
-                    <p className="text-xl text-deep-petrol leading-relaxed font-light mb-6">
+                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
                       In a private credit landscape where polish often outpaces performance, Oak delivers industry 
                       leading expertise in a highly inefficient, fragmented and unserved sector of the market. 
                       We don't chase headlines—we create income strategies that prioritize downside protection, predictability, and trust.
                     </p>
                     
-                    <p className="text-xl text-deep-petrol leading-relaxed font-light">
+                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light">
                       With more than 150 years of combined experience across lending, capital markets, and structured finance, 
                       our team has navigated multiple real estate cycles. Collectively, we've structured over $5 billion in 
                       bridge loans and executed more than $18 billion in total transactions.
