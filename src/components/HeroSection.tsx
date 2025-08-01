@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-silver-mist text-silver-mist hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
+                  className="border-2 border-silver-mist bg-silver-mist/10 text-white hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
                 >
                   Investments
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
