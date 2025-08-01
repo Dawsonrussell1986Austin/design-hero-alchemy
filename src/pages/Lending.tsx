@@ -276,46 +276,48 @@ const Lending = () => {
         </div>
       </div>
 
-      {/* Bridge-to-FHA Transition - Condensed */}
-      <div className="py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold text-silver-mist mb-6">
-              Bridge-to-FHA Transition
-            </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-8">
-              Our integrated platform ensures smooth execution from initial bridge loan to FHA takeout, offering:
-            </p>
-            
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
-                <h3 className="text-lg font-medium text-silver-mist">Faster access to capital</h3>
+      {/* Bridge-to-FHA Transition - Cream Background */}
+      <div className="bg-silver-mist">
+        <div className="py-16">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-6">
+                Bridge-to-FHA Transition
+              </h2>
+              <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                Our integrated platform ensures smooth execution from initial bridge loan to FHA takeout, offering:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-12">
+                <div className="p-6 bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg shadow-md">
+                  <h3 className="text-lg font-medium text-obsidian">Faster access to capital</h3>
+                </div>
+                <div className="p-6 bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg shadow-md">
+                  <h3 className="text-lg font-medium text-obsidian">Minimized downtime</h3>
+                </div>
+                <div className="p-6 bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg shadow-md">
+                  <h3 className="text-lg font-medium text-obsidian">Full lifecycle financing execution</h3>
+                </div>
+                <div className="p-6 bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg shadow-md">
+                  <h3 className="text-lg font-medium text-obsidian">Aligned borrower and lender interests</h3>
+                </div>
               </div>
-              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
-                <h3 className="text-lg font-medium text-silver-mist">Minimized downtime</h3>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button 
+                  size="lg"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
+                >
+                  Learn More About Our Lending Programs
+                </Button>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-obsidian/40 text-obsidian hover:bg-obsidian hover:text-silver-mist px-12 py-4 text-lg font-medium bg-transparent"
+                >
+                  Contact Our Lending Team
+                </Button>
               </div>
-              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
-                <h3 className="text-lg font-medium text-silver-mist">Full lifecycle financing execution</h3>
-              </div>
-              <div className="p-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg">
-                <h3 className="text-lg font-medium text-silver-mist">Aligned borrower and lender interests</h3>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
-              >
-                Learn More About Our Lending Programs
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian px-12 py-4 text-lg font-medium bg-transparent"
-              >
-                Contact Our Lending Team
-              </Button>
             </div>
           </div>
         </div>
