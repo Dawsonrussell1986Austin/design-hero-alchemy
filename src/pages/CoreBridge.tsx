@@ -2,9 +2,22 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer } from "lucide-react";
+import { useState } from "react";
 
 const CoreBridge = () => {
+  const [showDetails, setShowDetails] = useState(false);
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email && name) {
+      setShowDetails(true);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -27,306 +40,272 @@ const CoreBridge = () => {
         ]}
       />
 
-      {/* Rest of page with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      
-      {/* Hero Section */}
-      <section className="relative pt-20 pb-20 px-6">
-        {/* Background image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
-            alt="Urban cityscape with geometric architecture"
-            className="w-full h-full object-cover opacity-15"
-          />
-        </div>
-        <div className="container mx-auto px-6 lg:px-8 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl lg:text-5xl font-light text-accent-brown mb-6">
-              Core Bridge Program
-            </h1>
-            <h2 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8 leading-relaxed">
-              Flexible Bridge Financing for Institutional-Quality Assets in Transition
-            </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed max-w-3xl mx-auto">
-              Oak's Core Bridge lending program is designed for income-producing commercial real estate assets that are in transition and require short-term capital to reach stabilization. Ideal for borrowers with assets that are already cash-flowing (1.00x DSCR or greater), this program offers a streamlined path to stabilizing, refinancing, or recapitalizing a property without sacrificing speed or structure.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Who Should Consider Section */}
-      <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8 text-center">
-              Who Should Consider Oak's Core Bridge Program?
-            </h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Sponsors acquiring or repositioning a commercial property and need transitional capital
-                </p>
-              </div>
-              <div className="p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Sponsors seeking to enhance or stabilize performance before securing long-term financing
-                </p>
-              </div>
-              <div className="p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Sponsors needing flexible terms and certainty of execution from an experienced lending partner
-                </p>
-              </div>
-              <div className="p-6 bg-background/20 backdrop-blur-sm rounded-lg border border-accent-brown/20">
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Sponsors needing rapid execution to close an urgent transaction
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Choose Oak Section */}
-      <div className="py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8">
-              Why Choose Oak?
-            </h3>
-            <p className="text-lg text-silver-mist/80 leading-relaxed">
-              Oak delivers competitive Loan-to-Cost (LTC) ratios and interest rates incorporated with institutional underwriting standards, increasing the opportunity for successful take-out-financing. With a focus on efficiency and transparency, we offer tailored bridge solutions with a level of care and responsiveness that sets us apart from other small- and mid-balance lenders.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Bridge Loan Programs Table */}
-      <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
+        {/* Content Section with Image */}
+        <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8 text-center">
-              Bridge Loan Programs at a Glance
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
-                <thead>
-                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
-                    <th className="text-left p-4 text-silver-mist font-semibold">Program</th>
-                    <th className="text-left p-4 text-silver-mist font-semibold">Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Core Bridge</td>
-                    <td className="p-4 text-silver-mist">Floating-rate loans for cash-flowing assets in transition.</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Core-Plus Bridge</td>
-                    <td className="p-4 text-silver-mist">Fixed-rate loans for non-cash-flowing properties with strong fundamentals.</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Opportunistic Bridge</td>
-                    <td className="p-4 text-silver-mist">Higher-leverage loans for value-add or repositioning strategies.</td>
-                  </tr>
-                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Participating Bridge</td>
-                    <td className="p-4 text-silver-mist">Flexible capital with an equity component, aligning Oak with your upside.</td>
-                  </tr>
-                </tbody>
-              </table>
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    Core Bridge Program
+                  </span>
+                </div>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                  Flexible Bridge Financing for Institutional-Quality Assets in Transition
+                </h1>
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                  Oak's Core Bridge lending program is designed for income-producing commercial real estate assets that are in transition and require short-term capital to reach stabilization. Ideal for borrowers with assets that are already cash-flowing (1.00x DSCR or greater), this program offers a streamlined path to stabilizing, refinancing, or recapitalizing a property without sacrificing speed or structure.
+                </p>
+                
+                {/* Who Should Consider - Integrated */}
+                <h2 className="text-2xl font-bold text-obsidian mb-6">
+                  Who Should Consider This Program?
+                </h2>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Acquisition & Repositioning</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors acquiring or repositioning a commercial property and need transitional capital</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Stabilization Strategy</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors seeking to enhance or stabilize performance before securing long-term financing</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <h3 className="font-semibold text-obsidian mb-1">Rapid Execution</h3>
+                      <p className="text-obsidian/80 text-sm">Sponsors needing rapid execution to close an urgent transaction with certainty of execution</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
+                  alt="Urban cityscape with geometric architecture"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      {/* FHA/HUD Loan Programs Table */}
-      <div className="py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8 text-center">
-              FHA/HUD Loan Programs
-            </h3>
-            <p className="text-center text-garnet-edge mb-8 text-lg">
-              Long-Term, Government-Backed Financing for Impact-Driven Real Estate
-            </p>
-            <div className="overflow-x-auto">
-              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
-                <thead>
-                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
-                    <th className="text-left p-4 text-silver-mist font-semibold">Category</th>
-                    <th className="text-left p-4 text-silver-mist font-semibold">Program</th>
-                    <th className="text-left p-4 text-silver-mist font-semibold">Use Case</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td rowSpan={4} className="p-4 text-silver-mist font-medium align-top">Multifamily & Affordable Housing</td>
-                    <td className="p-4 text-silver-mist">HUD 221(d)(4) & 220</td>
-                    <td className="p-4 text-silver-mist">Construction or Substantial Rehab of Multifamily Properties</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 223(f)</td>
-                    <td className="p-4 text-silver-mist">Acquisition or Refinance of Stabilized Multifamily</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 223(a)(7)</td>
-                    <td className="p-4 text-silver-mist">Streamlined Refinance of Existing HUD Loans</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 241(a)</td>
-                    <td className="p-4 text-silver-mist">Supplemental Loans for Capital Improvements</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td rowSpan={4} className="p-4 text-silver-mist font-medium align-top">Senior Housing & Healthcare</td>
-                    <td className="p-4 text-silver-mist">HUD 232/221(d)(4)</td>
-                    <td className="p-4 text-silver-mist">Construction or Rehab of Senior Housing or Healthcare</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 232/223(f)</td>
-                    <td className="p-4 text-silver-mist">Acquisition or Refinance of Stabilized Properties</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 232/223(a)(7)</td>
-                    <td className="p-4 text-silver-mist">Streamlined Refinance of Existing HUD Loans</td>
-                  </tr>
-                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist">HUD 241(a)</td>
-                    <td className="p-4 text-silver-mist">Supplemental Mortgage Insurance</td>
-                  </tr>
-                </tbody>
-              </table>
+        {/* Email Opt-in Form or Detailed Content */}
+        {!showDetails ? (
+          <section className="container mx-auto px-6 pb-20">
+            <div className="max-w-4xl mx-auto">
+              <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
+                <div className="mb-8">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4">
+                    Access Core Bridge Details
+                  </h2>
+                  <p className="text-lg text-obsidian/80 leading-relaxed">
+                    Get detailed loan basics, terms, fees, and special considerations for our Core Bridge program. 
+                    Enter your information below to access the complete program details.
+                  </p>
+                </div>
+                
+                <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6">
+                  <div>
+                    <Input
+                      type="text"
+                      placeholder="Full Name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      required
+                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      type="email"
+                      placeholder="Email Address"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
+                    />
+                  </div>
+                  <Button 
+                    type="submit"
+                    size="lg"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"
+                  >
+                    Access Program Details
+                  </Button>
+                </form>
+                
+                <p className="text-sm text-obsidian/60 mt-6">
+                  We respect your privacy. Your information will only be used to provide you with program details and relevant updates.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </section>
+        ) : (
+          <section className="container mx-auto px-6 pb-16">
+            <div className="max-w-6xl mx-auto">
+              
+              {/* Thank you message */}
+              <div className="bg-garnet-edge/15 border border-garnet-edge/40 rounded-lg p-6 mb-12 text-center">
+                <h3 className="text-xl font-semibold text-garnet-edge mb-2">Thank you, {name}!</h3>
+                <p className="text-obsidian">Here are the detailed Core Bridge program specifications:</p>
+              </div>
+              
+              {/* Loan Basics */}
+              <div className="mb-12">
+                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                  Loan Basics
+                </h3>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
+                    <div className="flex items-center mb-3">
+                      <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Loan Amount</h4>
+                    </div>
+                    <p className="text-obsidian/80">$2 Million – $20 Million</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
+                    <div className="flex items-center mb-3">
+                      <Calendar className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Loan Term</h4>
+                    </div>
+                    <p className="text-obsidian/80">1 to 5 Years (Fully Extended)</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
+                    <div className="flex items-center mb-3">
+                      <Percent className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Interest Rate</h4>
+                    </div>
+                    <p className="text-obsidian/80">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.3s'}}>
+                    <div className="flex items-center mb-3">
+                      <TrendingUp className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Max LTV / LTC</h4>
+                    </div>
+                    <p className="text-obsidian/80">Up to 75% LTV (stabilized)<br/>Up to 75% LTC (based on underwriting)</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
+                    <div className="flex items-center mb-3">
+                      <Layers className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Lien Position</h4>
+                    </div>
+                    <p className="text-obsidian/80">Senior (no secondary financing permitted)</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.5s'}}>
+                    <div className="flex items-center mb-3">
+                      <Shield className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Recourse</h4>
+                    </div>
+                    <p className="text-obsidian/80">Generally non-recourse, with carve outs for "bad boy" acts</p>
+                  </div>
+                </div>
+              </div>
 
-      {/* Core Bridge Financing Parameters */}
-      <div className="py-16 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8 text-center">
-              Core Bridge Financing Parameters
-            </h3>
-            <div className="overflow-x-auto">
-              <table className="w-full bg-silver-mist/10 backdrop-blur-sm border border-accent-brown/30 rounded-lg shadow-lg">
-                <thead>
-                  <tr className="border-b border-accent-brown/30 bg-accent-brown/20">
-                    <th className="text-left p-4 text-silver-mist font-semibold">Criteria</th>
-                    <th className="text-left p-4 text-silver-mist font-semibold">Details</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Property Types</td>
-                    <td className="p-4 text-silver-mist">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Loan Amount</td>
-                    <td className="p-4 text-silver-mist">$2 Million – $20 Million</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Purpose</td>
-                    <td className="p-4 text-silver-mist">Acquisition, Refinance, Stabilization, Redevelopment</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Geography</td>
-                    <td className="p-4 text-silver-mist">Primary and secondary U.S. markets</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Max LTV / LTC</td>
-                    <td className="p-4 text-silver-mist">Up to 75% LTV (stabilized); Up to 75% LTC (based on underwriting)</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Interest Rate</td>
-                    <td className="p-4 text-silver-mist">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Loan Term</td>
-                    <td className="p-4 text-silver-mist">1 to 5 Years (Fully Extended)</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Rate Floor / Cap</td>
-                    <td className="p-4 text-silver-mist">Set at closing; No rate cap required</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Extensions</td>
-                    <td className="p-4 text-silver-mist">Up to 3 extensions of 12 months, subject to market fees</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Fees</td>
-                    <td className="p-4 text-silver-mist">Competitive market-based origination and exit fees</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Lien Position</td>
-                    <td className="p-4 text-silver-mist">Senior (no secondary financing permitted)</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Funding Structure</td>
-                    <td className="p-4 text-silver-mist">Full funding with customary holdbacks</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Recourse</td>
-                    <td className="p-4 text-silver-mist">Generally non-recourse, with carve outs for "bad boy" acts</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Closing Timeline</td>
-                    <td className="p-4 text-silver-mist">30–45 days from LOI acceptance and deposit receipt</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Debt Service Reserve</td>
-                    <td className="p-4 text-silver-mist">Minimum 1.00x DSCR on in-place cash flow</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Prepayment</td>
-                    <td className="p-4 text-silver-mist">Minimum interest, typically half the initial loan term</td>
-                  </tr>
-                  <tr className="border-b border-accent-brown/20 hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Future Advances</td>
-                    <td className="p-4 text-silver-mist">Available for TI/LC and other approved costs</td>
-                  </tr>
-                  <tr className="hover:bg-silver-mist/5 transition-colors duration-200">
-                    <td className="p-4 text-silver-mist font-medium">Deposits</td>
-                    <td className="p-4 text-silver-mist">Sufficient to cover third-party reports, legal, and underwriting diligence</td>
-                  </tr>
-                </tbody>
-              </table>
+              {/* Property & Geography */}
+              <div className="mb-12">
+                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                  Property & Geography
+                </h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.6s'}}>
+                    <div className="flex items-center mb-3">
+                      <Building className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Property Types</h4>
+                    </div>
+                    <p className="text-obsidian/80">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.7s'}}>
+                    <div className="flex items-center mb-3">
+                      <MapPin className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Geography</h4>
+                    </div>
+                    <p className="text-obsidian/80">Primary and secondary U.S. markets</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.8s'}}>
+                    <div className="flex items-center mb-3">
+                      <Target className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Purpose</h4>
+                    </div>
+                    <p className="text-obsidian/80">Acquisition, Refinance, Stabilization, Redevelopment</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.9s'}}>
+                    <div className="flex items-center mb-3">
+                      <Coins className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Funding Structure</h4>
+                    </div>
+                    <p className="text-obsidian/80">Full funding with customary holdbacks</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Terms & Fees */}
+              <div className="mb-12">
+                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                  Terms & Fees
+                </h3>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.0s'}}>
+                    <div className="flex items-center mb-3">
+                      <Percent className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Rate Floor / Cap</h4>
+                    </div>
+                    <p className="text-obsidian/80">Set at closing; No rate cap required</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.1s'}}>
+                    <div className="flex items-center mb-3">
+                      <Clock className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Extensions</h4>
+                    </div>
+                    <p className="text-obsidian/80">Up to 3 extensions of 12 months, subject to market fees</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.2s'}}>
+                    <div className="flex items-center mb-3">
+                      <FileText className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Fees</h4>
+                    </div>
+                    <p className="text-obsidian/80">Competitive market-based origination and exit fees</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.3s'}}>
+                    <div className="flex items-center mb-3">
+                      <CreditCard className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Prepayment</h4>
+                    </div>
+                    <p className="text-obsidian/80">Minimum interest, typically half the initial loan term</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.4s'}}>
+                    <div className="flex items-center mb-3">
+                      <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Closing Timeline</h4>
+                    </div>
+                    <p className="text-obsidian/80">30–45 days from LOI acceptance and deposit receipt</p>
+                  </div>
+                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.5s'}}>
+                    <div className="flex items-center mb-3">
+                      <Timer className="h-5 w-5 text-garnet-edge mr-2" />
+                      <h4 className="font-semibold text-obsidian">Debt Service Reserve</h4>
+                    </div>
+                    <p className="text-obsidian/80">Minimum 1.00x DSCR on in-place cash flow</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-2xl lg:text-3xl font-light text-silver-mist mb-8">
-              Ready to Explore Core Bridge Financing?
-            </h3>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
-              Connect with our lending team to discuss how Oak's Core Bridge program can support your commercial real estate goals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-              >
-                Contact Our Lending Team
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-                onClick={() => window.location.href = "/lending"}
-              >
-                View All Programs
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
-
+          </section>
+        )}
       </div>
 
       {/* Footer */}
