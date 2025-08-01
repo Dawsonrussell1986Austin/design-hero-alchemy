@@ -15,7 +15,6 @@ const Investments = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Home", href: "/" },
           { label: "Investments" }
         ]}
       />
