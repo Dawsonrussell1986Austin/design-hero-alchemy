@@ -110,7 +110,6 @@ const OpportunisticBridge = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
                 <div className="mb-8">
-                  <Mail className="h-16 w-16 text-garnet-edge mx-auto mb-6" />
                   <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4">
                     Access Opportunistic Bridge Details
                   </h2>
