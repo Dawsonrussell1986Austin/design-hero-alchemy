@@ -64,8 +64,7 @@ const Leadership = () => {
           { label: "Leadership" }
         ]}
         quickLinks={[
-          { label: "About us", href: "/about" },
-          { label: "Leadership", href: "/leadership" }
+          { label: "About us", href: "/about" }
         ]}
       />
 
