@@ -72,7 +72,7 @@ const CoreBridgeTerms = () => {
               <div className="space-y-6">
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
+                    src="/lovable-uploads/7d10dc16-e9d4-4c5d-aeb6-da6ba71e1508.png" 
                     alt="Commercial real estate financing"
                     className="w-full h-64 object-cover"
                   />

@@ -104,7 +104,7 @@ const Hud221Terms = () => {
               {/* Right Column - Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/73604eb5-db6d-45d5-9a5b-698de4128481.png"
+                  src="/lovable-uploads/29684f6d-81ad-425c-94b7-b5bcd0d5e7da.png"
                   alt="Multifamily housing development"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />

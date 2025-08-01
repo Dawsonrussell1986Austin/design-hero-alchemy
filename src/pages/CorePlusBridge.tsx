@@ -94,7 +94,7 @@ const CorePlusBridge = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/874bf40b-1604-47fe-a6ec-dda4da8ddf2c.png"
+                  src="/lovable-uploads/410a7362-e9e7-4df5-bd03-e05084053e0b.png"
                   alt="Construction project development"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
