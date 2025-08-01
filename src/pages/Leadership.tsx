@@ -106,7 +106,6 @@ const Leadership = () => {
                   {/* Glassmorphic Values Card Overlay */}
                   <div className="absolute inset-x-4 bottom-6">
                     <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-6">
-                      <h3 className="text-lg font-light text-silver-mist mb-4 text-center">Leadership Values</h3>
                       <div className="space-y-4">
                         <div className="text-center">
                           <h4 className="text-sm font-medium text-garnet-edge mb-1">Control and Stability</h4>
