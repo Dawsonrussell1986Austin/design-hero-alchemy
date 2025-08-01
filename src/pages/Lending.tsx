@@ -17,8 +17,7 @@ const Lending = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Lending" },
-          { label: "Overview" }
+          { label: "Lending" }
         ]}
         quickLinks={[
           { label: "Overview", href: "/lending" },
