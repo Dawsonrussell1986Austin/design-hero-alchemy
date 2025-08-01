@@ -46,33 +46,25 @@ const Investments = () => {
                 </p>
               </div>
               
-              {/* Image */}
+              {/* Image with Overlay Cards */}
               <div className="relative">
                 <img 
                   src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png"
                   alt="Investment platform illustration"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
-              </div>
-            </div>
-
-            {/* Investment Opportunities Glassmorphic Cards */}
-            <div className="mt-16">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl lg:text-3xl font-bold text-obsidian mb-4">
-                  Investment Opportunities For
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
-                  <h3 className="text-lg font-semibold text-obsidian">RIA & Family Offices</h3>
-                </div>
-                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
-                  <h3 className="text-lg font-semibold text-obsidian">Foundations and Endowments</h3>
-                </div>
-                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
-                  <h3 className="text-lg font-semibold text-obsidian">Institutional Investors & Middle-Market Allocators</h3>
+                
+                {/* Glassmorphic Overlay Cards */}
+                <div className="absolute inset-0 flex flex-col justify-center space-y-4 p-6">
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">RIA & Family Offices</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Foundations and Endowments</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Institutional Investors & Middle-Market Allocators</h3>
+                  </div>
                 </div>
               </div>
             </div>
