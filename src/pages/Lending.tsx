@@ -45,7 +45,7 @@ const Lending = () => {
         </div>
       </div>
       
-      {/* Lending content background */}
+      {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
       {/* Bridge Loan Programs */}
