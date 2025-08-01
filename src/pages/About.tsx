@@ -38,15 +38,13 @@ const About = () => {
                       Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
                     </h1>
                     <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
-                      Oak is a premier real estate credit lender with our core business focus on senior secured loans 
-                      backed by income-producing commercial properties. Our lending philosophy is grounded in real assets, 
-                      an institutional discipline, and a commitment to long-term capital protection.
+                      Oak is a <span className="font-semibold text-obsidian">premier real estate credit lender</span> with our core business focus on <span className="font-semibold text-obsidian">senior secured loans</span> 
+                      backed by income-producing commercial properties. Our lending philosophy is grounded in <span className="font-semibold text-obsidian">real assets, an institutional discipline, and a commitment to long-term capital protection</span>.
                     </p>
                     
                     <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
-                      In a private credit landscape where polish often outpaces performance, Oak delivers industry 
-                      leading expertise in a highly inefficient, fragmented and unserved sector of the market. 
-                      We don't chase headlines—we create income strategies that prioritize downside protection, predictability, and trust.
+                      In a private credit landscape where polish often outpaces performance, Oak delivers <span className="font-semibold text-obsidian">industry leading expertise</span> in a highly inefficient, fragmented and unserved sector of the market. 
+                      We don't chase headlines—we create income strategies that prioritize <span className="font-semibold text-obsidian">downside protection, predictability, and trust</span>.
                     </p>
                     
                   </div>
