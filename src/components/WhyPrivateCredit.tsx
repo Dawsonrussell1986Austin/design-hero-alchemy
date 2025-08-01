@@ -1,3 +1,5 @@
+import { TrendingUp, Shield, BarChart3, DollarSign, Target, MapPin } from "lucide-react";
+
 const WhyPrivateCredit = () => {
   return (
     <div className="relative z-10 bg-silver-mist py-20">
@@ -47,7 +49,12 @@ const WhyPrivateCredit = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Market Opportunity */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Market Opportunity</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <TrendingUp className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Market Opportunity</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 Restrictive banking regulations, legislative requirements, increased capital reserve ratios have created a unique opportunity for experienced private credit lenders to generate highly attractive returns with lower levels of risk.
               </p>
@@ -55,7 +62,12 @@ const WhyPrivateCredit = () => {
 
             {/* Risk Mitigation */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Risk Mitigation</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <Shield className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Risk Mitigation</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm mb-4">
                 Deal structure & comprehensive institutional credit underwriting mitigates risk and protects against the impairment of capital.
               </p>
@@ -66,7 +78,12 @@ const WhyPrivateCredit = () => {
 
             {/* Diversification */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Diversification</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <BarChart3 className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Diversification</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 Exposure to the asset class and strategy can enhance the diversification and risk-efficiency while reducing the volatility within a portfolio through the delivery of an uncorrelated return stream.
               </p>
@@ -74,7 +91,12 @@ const WhyPrivateCredit = () => {
 
             {/* Income Oriented */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Income Oriented</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <DollarSign className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Income Oriented</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 The strategy is designed to generate stable, consistent cash flows for investors seeking reliable income with up-side capture.
               </p>
@@ -82,7 +104,12 @@ const WhyPrivateCredit = () => {
 
             {/* Performance */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Performance</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <Target className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Performance</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 History and performance points to a higher yield premium through exposure to private credit CRE, which can contribute to the optimization of a portfolio.
               </p>
@@ -90,7 +117,12 @@ const WhyPrivateCredit = () => {
 
             {/* Our Strategy */}
             <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
-              <h3 className="text-xl font-serif font-medium text-obsidian mb-4">Our Strategy</h3>
+              <div className="flex items-center mb-4">
+                <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
+                  <MapPin className="h-5 w-5 text-accent-brown" />
+                </div>
+                <h3 className="text-xl font-serif font-medium text-obsidian">Our Strategy</h3>
+              </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
                 Our strategy is designed to unlock value in underserved niches while prioritizing downside protection, income consistency, and performance.
               </p>
