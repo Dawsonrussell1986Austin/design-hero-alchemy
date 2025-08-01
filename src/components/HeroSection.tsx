@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -27,15 +28,27 @@ const HeroSection = () => {
               Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
             </p>
             
-            {/* CTA Button */}
-            <div className="flex">
-              <Button 
-                size="lg" 
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"
-              >
-                Investment Offerings
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+            {/* CTA Buttons */}
+            <div className="flex gap-4">
+              <Link to="/lending">
+                <Button 
+                  size="lg" 
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"
+                >
+                  Borrowers
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+              <Link to="/investments">
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  className="border-silver-mist/30 text-silver-mist hover:bg-silver-mist/10 px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"
+                >
+                  Investments
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
           
