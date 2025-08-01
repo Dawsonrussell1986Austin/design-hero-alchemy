@@ -238,36 +238,38 @@ const Lending = () => {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
-
-                  <div className="mt-8 pt-6 border-t border-silver-mist/20">
-                    <p className="text-silver-mist/80 mb-4">
-                      Available through Oak's FHA/HUD platform, these loans provide long-term, government-backed financing for:
-                    </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
-                        <span className="text-silver-mist">Multifamily housing</span>
-                      </li>
-                      <li className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
-                        <span className="text-silver-mist">Affordable housing</span>
-                      </li>
-                      <li className="flex items-center space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
-                        <span className="text-silver-mist">Senior living and healthcare</span>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
               </div>
 
-              {/* Right Side - Image */}
+              {/* Right Side - Image with Glassmorphic Overlay */}
               <div className="relative">
                 <img 
                   src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
                   alt="FHA/HUD financing programs"
                   className="w-full h-full object-cover rounded-lg shadow-xl min-h-[500px]"
                 />
+                
+                {/* Glassmorphic Card Overlay */}
+                <div className="absolute bottom-8 left-8 right-8">
+                  <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-xl p-6 shadow-2xl">
+                    <p className="text-white font-medium mb-4">
+                      Available through Oak's FHA/HUD platform, these loans provide long-term, government-backed financing for:
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-white">Multifamily housing</span>
+                      </li>
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-white">Affordable housing</span>
+                      </li>
+                      <li className="flex items-center space-x-3">
+                        <div className="w-2 h-2 bg-accent-brown rounded-full flex-shrink-0"></div>
+                        <span className="text-white">Senior living and healthcare</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -318,6 +320,9 @@ const Lending = () => {
           </div>
         </div>
       </div>
+
+      </div>
+
       {/* Footer */}
       <Footer />
     </div>
