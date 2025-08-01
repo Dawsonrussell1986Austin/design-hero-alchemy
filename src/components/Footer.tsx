@@ -16,24 +16,24 @@ const Footer = () => {
                   className="h-16 w-auto opacity-90"
                 />
               </div>
-              <p className="text-silver-mist/80 leading-relaxed font-sans max-w-md">
+              <p className="text-silver-mist/80 leading-relaxed font-body max-w-md">
                 Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
               </p>
               <div className="flex items-center space-x-2 text-silver-mist/70">
                 <Shield className="h-4 w-4" />
-                <span className="text-sm font-serif">SEC Registered Investment Adviser</span>
+                <span className="text-sm font-display">SEC Registered Investment Adviser</span>
               </div>
             </div>
 
             {/* Quick Links */}
             <div className="space-y-6">
-              <h4 className="text-lg font-serif font-medium text-silver-mist">Quick Links</h4>
+              <h4 className="text-lg font-display font-medium text-silver-mist">Quick Links</h4>
               <nav className="space-y-3">
-                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Our Firm</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Platform</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Investments</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">News & Insights</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-serif">Contact</a>
+                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Our Firm</a>
+                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Platform</a>
+                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Investments</a>
+                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">News & Insights</a>
+                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Contact</a>
               </nav>
             </div>
 

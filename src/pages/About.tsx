@@ -35,15 +35,15 @@ const About = () => {
                 {/* Left Column - Text Content */}
                 <div className="space-y-8">
                   <div>
-                    <h1 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+                    <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                       Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
                     </h1>
-                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
+                    <p className="text-base font-body text-deep-petrol max-w-lg leading-relaxed mb-6">
                       Oak is a <span className="font-semibold">premier real estate credit lender</span> with our core business focus on <span className="font-semibold">senior secured loans</span> 
                       backed by income-producing commercial properties. Our lending philosophy is grounded in <span className="font-semibold">real assets, an institutional discipline, and a commitment to long-term capital protection</span>.
                     </p>
                     
-                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light mb-6">
+                    <p className="text-base font-body text-deep-petrol max-w-lg leading-relaxed mb-6">
                       In a private credit landscape where polish often outpaces performance, Oak delivers <span className="font-semibold">industry leading expertise</span> in a highly inefficient, fragmented and unserved sector of the market. 
                       We don't chase headlines—we create income strategies that prioritize <span className="font-semibold">downside protection, predictability, and trust</span>.
                     </p>
@@ -52,7 +52,7 @@ const About = () => {
                       <a href="/leadership">
                         <Button 
                           size="lg"
-                          className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                          className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                         >
                           Our Leadership Team
                         </Button>
@@ -73,11 +73,11 @@ const About = () => {
                     
                     {/* Experience Stats Overlay Card */}
                     <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-6 shadow-xl max-w-sm">
-                      <h3 className="text-xl font-light text-obsidian mb-4">Experience That Matters</h3>
+                      <h3 className="text-lg font-display font-medium text-obsidian mb-4">Experience That Matters</h3>
                       <div className="grid grid-cols-1 gap-4 text-center">
                         <div>
-                          <div className="text-2xl font-light text-accent-brown mb-1">150+</div>
-                          <div className="text-deep-petrol/80 text-xs">Years Combined Experience</div>
+                          <div className="text-xl font-display font-medium text-accent-brown mb-1">150+</div>
+                          <div className="text-deep-petrol/80 font-body text-xs">Years Combined Experience</div>
                         </div>
                         <div>
                           <div className="text-2xl font-light text-accent-brown mb-1">$5B+</div>
@@ -114,18 +114,18 @@ const About = () => {
                 
                 {/* Left Column - Content */}
                 <div className="space-y-8">
-                  <h2 className="text-4xl lg:text-5xl font-light text-silver-mist leading-tight">
+                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist leading-tight">
                     Our <span className="text-accent-brown">Philosophy</span>
                   </h2>
                   
                   <div className="space-y-6">
-                    <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
+                    <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
                       At Oak, integrity isn't a buzzword—it's a <span className="font-semibold">core value with a system</span> to guide our growth. 
                       It drives how we lend to our borrowers, how we service our loans and how we report to our 
                       investors while servicing as a principal of how we treat our partners.
                     </p>
                     
-                    <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
+                    <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
                       We're strong because we're structured. Dependable because we're disciplined. 
                       Trusted for our consistent execution, especially when stakes are highest.
                     </p>
@@ -140,24 +140,24 @@ const About = () => {
                         <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-accent-brown rounded-full"></div>
                         </div>
-                        <h3 className="text-xl font-light text-obsidian mb-3">Structured</h3>
-                        <p className="text-deep-petrol text-sm">Systems and processes that ensure consistency</p>
+                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Structured</h3>
+                        <p className="text-deep-petrol font-body text-sm">Systems and processes that ensure consistency</p>
                       </div>
                       
                       <div className="text-center">
                         <div className="w-16 h-16 bg-deep-petrol/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-deep-petrol rounded-full"></div>
                         </div>
-                        <h3 className="text-xl font-light text-obsidian mb-3">Disciplined</h3>
-                        <p className="text-deep-petrol text-sm">Unwavering commitment to our principles</p>
+                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Disciplined</h3>
+                        <p className="text-deep-petrol font-body text-sm">Unwavering commitment to our principles</p>
                       </div>
                       
                       <div className="text-center">
                         <div className="w-16 h-16 bg-garnet-edge/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-garnet-edge rounded-full"></div>
                         </div>
-                        <h3 className="text-xl font-light text-obsidian mb-3">Trusted</h3>
-                        <p className="text-deep-petrol text-sm">Reliable execution when it matters most</p>
+                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Trusted</h3>
+                        <p className="text-deep-petrol font-body text-sm">Reliable execution when it matters most</p>
                       </div>
                     </div>
                   </div>
@@ -173,10 +173,10 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-light text-obsidian mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                   Discipline and <span className="text-accent-brown">Stability</span>
                 </h2>
-                <p className="text-xl text-deep-petrol leading-relaxed max-w-4xl mx-auto">
+                <p className="text-lg font-body text-deep-petrol leading-relaxed max-w-4xl mx-auto">
                   Discipline is a strong predictor of success, which in turn drives stability across multiple market cycles.
                 </p>
               </div>
@@ -187,9 +187,9 @@ const About = () => {
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <Shield className="h-6 w-6 text-accent-brown" />
                     </div>
-                    <h3 className="text-2xl font-light text-obsidian">Control and Stability</h3>
+                    <h3 className="text-lg font-display font-medium text-obsidian">Control and Stability</h3>
                   </div>
-                  <p className="text-deep-petrol leading-relaxed font-light">
+                  <p className="text-deep-petrol leading-relaxed font-body">
                     Discipline is a strong predictor of success, which in turn drives stability across market volatility.
                   </p>
                 </div>
@@ -199,9 +199,9 @@ const About = () => {
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <TrendingDown className="h-6 w-6 text-accent-brown" />
                     </div>
-                    <h3 className="text-2xl font-light text-obsidian">Reduced Risk-Taking</h3>
+                    <h3 className="text-lg font-display font-medium text-obsidian">Reduced Risk-Taking</h3>
                   </div>
-                  <p className="text-deep-petrol leading-relaxed font-light">
+                  <p className="text-deep-petrol leading-relaxed font-body">
                     Disciplined organizations are less likely to engage in impulsive strategies that threaten stability.
                   </p>
                 </div>
@@ -211,9 +211,9 @@ const About = () => {
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <BarChart className="h-6 w-6 text-accent-brown" />
                     </div>
-                    <h3 className="text-2xl font-light text-obsidian">Predictability</h3>
+                    <h3 className="text-lg font-display font-medium text-obsidian">Predictability</h3>
                   </div>
-                  <p className="text-deep-petrol leading-relaxed font-light">
+                  <p className="text-deep-petrol leading-relaxed font-body">
                     Consistent habits and behaviors lead to greater reliability among investors and borrowers.
                   </p>
                 </div>
@@ -227,10 +227,10 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl lg:text-5xl font-light text-obsidian mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                   Why Real Estate Credit Lending <span className="text-accent-brown">Matters</span>
                 </h2>
-                <p className="text-xl text-deep-petrol leading-relaxed max-w-5xl mx-auto font-light">
+                <p className="text-lg font-body text-deep-petrol leading-relaxed max-w-5xl mx-auto">
                   At Oak, we focus on real estate credit that's backed by the property itself — and structured so 
                   our investors' capital is prioritized to be repaid first. This approach offers clear advantages:
                 </p>
@@ -242,9 +242,9 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <Building2 className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-obsidian">Collateral Security</h3>
+                    <h3 className="text-lg font-display font-medium text-obsidian">Collateral Security</h3>
                   </div>
-                  <p className="text-deep-petrol leading-relaxed font-light">
+                  <p className="text-deep-petrol leading-relaxed font-body">
                     Every lending opportunity is backed by physical real estate, offering tangible assets 
                     in the event of default.
                   </p>
@@ -314,7 +314,7 @@ const About = () => {
               <div className="text-center mt-12">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                 >
                   Learn More About Our Approach
                 </Button>

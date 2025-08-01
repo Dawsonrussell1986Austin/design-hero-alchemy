@@ -39,7 +39,7 @@ const Navigation = () => {
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
-              <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              <button className={`flex items-center transition-all duration-300 font-body font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Our Firm
@@ -133,7 +133,7 @@ const Navigation = () => {
               </div>
             </div>
             <div className="group relative">
-              <a href="/investments" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              <a href="/investments" className={`transition-all duration-300 font-body font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Investments
@@ -186,7 +186,7 @@ const Navigation = () => {
           
           {/* Desktop Investor Login Button */}
           <Button 
-            className={`hidden lg:flex items-center px-6 py-2 font-sans font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
+            className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
               scrolled 
                 ? 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown' 
                 : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
@@ -225,7 +225,7 @@ const Navigation = () => {
                   <div className="space-y-1">
                     <a 
                       href="/about" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -235,7 +235,7 @@ const Navigation = () => {
                     </a>
                     <a 
                       href="/lending" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -245,7 +245,7 @@ const Navigation = () => {
                     </a>
                     <a 
                       href="/investments" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -255,7 +255,7 @@ const Navigation = () => {
                     </a>
                     <a 
                       href="/transactions" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -265,7 +265,7 @@ const Navigation = () => {
                     </a>
                     <a 
                       href="/news" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -275,7 +275,7 @@ const Navigation = () => {
                     </a>
                     <a 
                       href="/contact" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-sans font-medium text-xl py-4 px-0 group"
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
@@ -289,7 +289,7 @@ const Navigation = () => {
                 {/* Bottom CTA */}
                 <div className="px-8 py-6 border-t border-garnet-edge/10">
                   <Button 
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-sans font-semibold text-lg tracking-wide rounded-none transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-none transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
