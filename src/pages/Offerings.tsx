@@ -69,13 +69,21 @@ const Offerings = () => {
                     </div>
                   </div>
                   
-                  {/* Investor Login Button */}
-                  <div className="mt-6">
+                  {/* Action Buttons */}
+                  <div className="mt-6 flex flex-col sm:flex-row gap-4">
                     <Button 
                       size="lg"
                       className="bg-accent-brown hover:bg-accent-brown/90 text-white px-8 py-3 font-medium"
                     >
                       Investor Login
+                    </Button>
+                    <Button 
+                      size="lg"
+                      variant="outline"
+                      className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
+                      onClick={() => window.location.href = '/webinar'}
+                    >
+                      Investor Presentation
                     </Button>
                   </div>
                 </div>
