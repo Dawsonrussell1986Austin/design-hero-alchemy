@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -12,8 +12,14 @@ const Contact = () => {
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="Contact" />
       </div>
+      
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Contact" }
+        ]}
+      />
         
       {/* Contact Section with Image Background and Glassmorphic Form */}
       <section className="py-16 px-6 min-h-screen flex items-center">
