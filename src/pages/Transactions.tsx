@@ -202,9 +202,10 @@ const Transactions = () => {
         </section>
       </div>
       
-      {/* Filters Section */}
+      {/* Combined Filters and Transactions Section */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-        <section className="py-8 bg-silver-mist/5 backdrop-blur-sm">
+        {/* Filters Section */}
+        <section className="py-8 bg-silver-mist/5 backdrop-blur-sm border-b border-silver-mist/20">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg p-6">
@@ -311,8 +312,14 @@ const Transactions = () => {
         </section>
 
         {/* Transactions Grid Section */}
-        <section className="py-20 px-6">
+        <section className="py-12 px-6">
           <div className="container mx-auto">
+            <div className="max-w-6xl mx-auto mb-8">
+              <h2 className="text-3xl font-bold text-silver-mist text-center">
+                Oak Real Estate Partner Transactions
+              </h2>
+            </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
               {filteredTransactions.map((transaction) => (
                 <TransactionCard key={transaction.id} transaction={transaction} />
