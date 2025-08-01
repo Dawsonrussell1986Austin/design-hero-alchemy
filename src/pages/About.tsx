@@ -15,10 +15,11 @@ const About = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Our Firm" },
+          { label: "Our Firm", href: "/" },
           { label: "About us" }
         ]}
         quickLinks={[
+          { label: "About us", href: "/about" },
           { label: "Leadership", href: "/leadership" }
         ]}
       />

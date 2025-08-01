@@ -60,11 +60,12 @@ const Leadership = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Our Firm" },
+          { label: "Our Firm", href: "/" },
           { label: "Leadership" }
         ]}
         quickLinks={[
-          { label: "About us", href: "/about" }
+          { label: "About us", href: "/about" },
+          { label: "Leadership", href: "/leadership" }
         ]}
       />
 

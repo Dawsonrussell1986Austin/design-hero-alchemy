@@ -15,14 +15,12 @@ const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
   // Get current path to determine active page
   const currentPath = window.location.pathname;
   
-  // Only show non-current items in breadcrumb path
-  const breadcrumbItems = items.filter((_, index) => index < items.length - 1);
-  
   return (
     <div className="bg-gradient-to-r from-obsidian via-graphite-fog to-deep-petrol py-6 border-b border-silver-mist/10 mt-20">
       <div className="container mx-auto px-6">
         <nav className="flex items-center space-x-2 text-silver-mist">
-          {breadcrumbItems.map((item, index) => (
+          {/* Main breadcrumb path */}
+          {items.map((item, index) => (
             <div key={index} className="flex items-center">
               {index > 0 && (
                 <ChevronRight className="h-4 w-4 mx-2 text-silver-mist/60" />
@@ -30,12 +28,12 @@ const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
               {item.href ? (
                 <a 
                   href={item.href}
-                  className="text-silver-mist/80 hover:text-silver-mist transition-colors duration-200 font-medium"
+                  className="text-silver-mist/80 hover:text-silver-mist transition-colors duration-200 font-body font-medium"
                 >
                   {item.label}
                 </a>
               ) : (
-                <span className="text-silver-mist font-medium">
+                <span className="text-silver-mist font-body font-medium">
                   {item.label}
                 </span>
               )}
@@ -54,13 +52,13 @@ const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
                   <div key={index} className="flex items-center">
                     {index > 0 && <span className="mx-2 text-silver-mist/60">•</span>}
                     {isCurrentPage ? (
-                      <span className="text-silver-mist bg-garnet-edge/30 px-2 py-1 rounded font-medium">
+                      <span className="text-silver-mist bg-garnet-edge/30 px-2 py-1 rounded font-body font-medium">
                         {link.label}
                       </span>
                     ) : (
                       <a
                         href={link.href}
-                        className="text-silver-mist/80 hover:text-silver-mist hover:bg-white/10 px-2 py-1 rounded transition-all duration-200 font-medium"
+                        className="text-silver-mist/80 hover:text-silver-mist hover:bg-white/10 px-2 py-1 rounded transition-all duration-200 font-body font-medium"
                       >
                         {link.label}
                       </a>
