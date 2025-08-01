@@ -20,9 +20,10 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'serif': ['Merriweather', 'serif'],
-				'mono': ['JetBrains Mono', 'monospace'],
-				'sans': ['Inter', 'system-ui', 'sans-serif'],
+				'display': ['Montserrat', 'sans-serif'],
+				'serif': ['Montserrat', 'sans-serif'], 
+				'sans': ['Lato', 'sans-serif'],
+				'body': ['Lato', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
