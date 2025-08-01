@@ -12,6 +12,7 @@ import Hud241aTerms from "./pages/Hud241aTerms";
 import Hud232223a7Terms from "./pages/Hud232223a7Terms";
 import Hud232223fTerms from "./pages/Hud232223fTerms"; 
 import Hud232221d4Terms from "./pages/Hud232221d4Terms";
+import Hud221Terms from "./pages/Hud221Terms";
 import Investments from "./pages/Investments";
 import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
@@ -61,6 +62,7 @@ function App() {
         <Route path="/lending/fha-hud/hud-232-223a7" element={<Hud232223a7Terms />} />
         <Route path="/lending/fha-hud/hud-232-223f" element={<Hud232223fTerms />} />
         <Route path="/lending/fha-hud/hud-232-221" element={<Hud232221d4Terms />} />
+        <Route path="/lending/fha-hud/hud-221" element={<Hud221Terms />} />
         <Route path="/lending/bridge/core-plus-bridge" element={<CorePlusBridge />} />
         <Route path="/lending/bridge/opportunistic-bridge" element={<OpportunisticBridge />} />
         <Route path="/lending/bridge/participating-bridge" element={<ParticipatingBridge />} />

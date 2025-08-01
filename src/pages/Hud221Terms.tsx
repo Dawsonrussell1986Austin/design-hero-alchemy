@@ -1,0 +1,207 @@
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
+
+const Hud221Terms = () => {
+  const [email, setEmail] = useState("");
+
+  const handleDownload = () => {
+    if (email) {
+      // Handle download logic here
+      console.log("Download for email:", email);
+    }
+  };
+
+  return (
+    <div className="min-h-screen">
+      {/* Navigation */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
+      
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Lending", href: "/lending" },
+          { label: "FHA/HUD Loans", href: "/lending/fha-hud" },
+          { label: "221(d)4 & 220" }
+        ]}
+      />
+
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
+        {/* Hero Section */}
+        <section className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    FHA/HUD Loans
+                  </span>
+                </div>
+                
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                  HUD 221(d)4 & 220
+                </h1>
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                  New Construction or Substantial Rehabilitation of Multifamily Properties
+                </p>
+                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                  New construction or substantial rehabilitation financing for multifamily properties. Ideal for new developments and major renovations with long-term, government-backed capital.
+                </p>
+
+                {/* Why Consider This Program */}
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
+                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Why Consider This Program?
+                  </h3>
+                  <ul className="space-y-2 text-obsidian/80">
+                    <li className="flex items-start space-x-2">
+                      <span className="text-garnet-edge mt-1">•</span>
+                      <span>Up to 90% loan-to-cost for new construction</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-garnet-edge mt-1">•</span>
+                      <span>40-year amortization with long-term fixed rates</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-garnet-edge mt-1">•</span>
+                      <span>Non-recourse financing with government backing</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="text-garnet-edge mt-1">•</span>
+                      <span>Competitive interest rates below market</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Download Form */}
+                <div className="space-y-4">
+                  <Input
+                    type="email"
+                    placeholder="Enter your email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="w-full"
+                  />
+                  <Button 
+                    onClick={handleDownload}
+                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-white px-6 py-2 font-medium"
+                    disabled={!email}
+                  >
+                    Download Program Details
+                  </Button>
+                </div>
+              </div>
+
+              {/* Right Column - Image */}
+              <div className="relative">
+                <img 
+                  src="/lovable-uploads/73604eb5-db6d-45d5-9a5b-698de4128481.png"
+                  alt="Multifamily housing development"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                />
+              </div>
+            </div>
+
+            {/* Financing Parameters Section */}
+            <div className="mb-12">
+              <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-8">
+                Financing Parameters
+              </h2>
+              
+              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 shadow-lg">
+                <table className="w-full">
+                  <tbody className="space-y-4">
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Maximum Loan Amount</td>
+                      <td className="py-4 text-obsidian/80">No statutory limit</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Loan-to-Cost</td>
+                      <td className="py-4 text-obsidian/80">Up to 90% for new construction, 85% for substantial rehabilitation</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Term</td>
+                      <td className="py-4 text-obsidian/80">Up to 40 years</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Amortization</td>
+                      <td className="py-4 text-obsidian/80">40 years</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Interest Rate</td>
+                      <td className="py-4 text-obsidian/80">Fixed rate based on current market conditions</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Prepayment</td>
+                      <td className="py-4 text-obsidian/80">Various prepayment options available</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Property Types</td>
+                      <td className="py-4 text-obsidian/80">Multifamily rental housing (5+ units)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Minimum DSCR</td>
+                      <td className="py-4 text-obsidian/80">1.15x - 1.20x (varies by market and property type)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 font-semibold text-obsidian">Recourse</td>
+                      <td className="py-4 text-obsidian/80">Non-recourse (with standard carve-outs)</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 font-semibold text-obsidian">Processing Time</td>
+                      <td className="py-4 text-obsidian/80">6-12 months from application to closing</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            </div>
+
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-white/40">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
+                Ready to Explore HUD 221(d)4 Financing?
+              </h2>
+              <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
+                Our HUD specialists can help you navigate the application process and determine if this program is right for your multifamily development.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button 
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
+                  onClick={() => window.location.href = "/contact"}
+                >
+                  Contact Our Team
+                </Button>
+                <Button 
+                  variant="outline"
+                  className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-white px-12 py-4 text-lg font-medium"
+                  onClick={() => window.location.href = "/lending/fha-hud"}
+                >
+                  View All HUD Programs
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Footer */}
+      <Footer />
+    </div>
+  );
+};
+
+export default Hud221Terms;
