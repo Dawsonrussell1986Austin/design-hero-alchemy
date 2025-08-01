@@ -139,13 +139,13 @@ const Transactions = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Proven Transaction History
                 </h1>
-                <p className="text-xl text-accent-brown font-medium mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Disciplined execution. Diverse markets. Consistent performance.
                 </p>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Our transaction history demonstrates Oak's commitment to disciplined underwriting and strategic asset selection across diverse commercial real estate markets. Each transaction reflects our focus on capital preservation and risk-adjusted returns.
                 </p>
                 
@@ -208,7 +208,7 @@ const Transactions = () => {
         <section className="pt-12 pb-8 px-6">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto text-center">
-              <h1 className="text-4xl lg:text-5xl font-bold text-silver-mist leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist leading-tight">
                 Oak Real Estate Partner Transactions
               </h1>
             </div>
