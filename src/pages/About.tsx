@@ -96,15 +96,15 @@ const About = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 relative overflow-hidden">
+        <section className="py-20 relative overflow-hidden bg-deep-petrol">
           {/* Background Image */}
-          <div className="absolute inset-0 opacity-30">
+          <div className="absolute inset-0 opacity-20">
             <img 
               src="/lovable-uploads/674a9da9-1494-4665-8600-bd2709ef907b.png"
               alt="Abstract architectural design"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-silver-mist/90 via-silver-mist/70 to-silver-mist/90"></div>
+            <div className="absolute inset-0 bg-deep-petrol/50"></div>
           </div>
           
           <div className="container mx-auto px-6 relative z-10">
@@ -113,18 +113,18 @@ const About = () => {
                 
                 {/* Left Column - Content */}
                 <div className="space-y-8">
-                  <h2 className="text-4xl lg:text-5xl font-light text-obsidian leading-tight">
+                  <h2 className="text-4xl lg:text-5xl font-light text-silver-mist leading-tight">
                     Our <span className="text-accent-brown">Philosophy</span>
                   </h2>
                   
                   <div className="space-y-6">
-                    <p className="text-xl text-deep-petrol leading-relaxed font-light">
+                    <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
                       At Oak, integrity isn't a buzzword—it's a <span className="font-semibold">core value with a system</span> to guide our growth. 
                       It drives how we lend to our borrowers, how we service our loans and how we report to our 
                       investors while servicing as a principal of how we treat our partners.
                     </p>
                     
-                    <p className="text-xl text-deep-petrol leading-relaxed font-light">
+                    <p className="text-xl text-silver-mist/90 leading-relaxed font-light">
                       We're strong because we're structured. Dependable because we're disciplined. 
                       Trusted for our consistent execution, especially when stakes are highest.
                     </p>
