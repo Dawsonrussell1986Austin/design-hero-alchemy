@@ -68,7 +68,6 @@ const News = () => {
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="News" />
       </div>
       
       {/* Breadcrumb */}
