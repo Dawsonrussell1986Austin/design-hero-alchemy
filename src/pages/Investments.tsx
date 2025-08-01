@@ -82,15 +82,29 @@ const Investments = () => {
               
               {/* True Bento Box Grid */}
               <div className="grid grid-cols-4 grid-rows-3 gap-4 h-[600px]">
-                {/* Asset-backed Collateral - Large */}
-                <div className="col-span-2 row-span-2 p-8 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
-                  <div className="flex items-start space-x-4 mb-4">
-                    <Shield className="h-8 w-8 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <div>
-                      <h3 className="text-2xl font-bold text-silver-mist mb-3">Asset-backed Collateral</h3>
-                      <p className="text-silver-mist/80 leading-relaxed text-lg">
-                        Asset-backed collateral secured with a mortgage or first deed trust, providing tangible security for your investment.
-                      </p>
+                {/* Asset-backed Collateral - Large with Image */}
+                <div className="col-span-2 row-span-2 relative overflow-hidden bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  {/* Background Image with Fade */}
+                  <div className="absolute inset-0">
+                    <img 
+                      src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png"
+                      alt="Collateral backing"
+                      className="w-full h-full object-cover opacity-20"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-obsidian/30 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-obsidian/40 via-transparent to-obsidian/20"></div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="relative z-10 p-8 h-full flex flex-col justify-center">
+                    <div className="flex items-start space-x-4">
+                      <Shield className="h-8 w-8 text-garnet-edge group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
+                      <div>
+                        <h3 className="text-2xl font-bold text-silver-mist mb-3">Asset-backed Collateral</h3>
+                        <p className="text-silver-mist/90 leading-relaxed text-lg">
+                          Asset-backed collateral secured with a mortgage or first deed trust, providing tangible security for your investment.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -106,7 +120,7 @@ const Investments = () => {
                   </div>
                 </div>
 
-                {/* Downside Protection - Medium */}
+                {/* Downside Protection - Small */}
                 <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   <div className="text-center">
                     <TrendingUp className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
@@ -115,7 +129,7 @@ const Investments = () => {
                   </div>
                 </div>
 
-                {/* Institutional Discipline - Medium */}
+                {/* Institutional Discipline - Small */}
                 <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   <div className="text-center">
                     <Award className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
@@ -124,8 +138,8 @@ const Investments = () => {
                   </div>
                 </div>
 
-                {/* Market Cycle Resilience - Large */}
-                <div className="col-span-2 row-span-1 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                {/* Market Cycle Resilience - Below the two small cards */}
+                <div className="col-start-3 col-span-2 row-start-3 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-4">
                     <BarChart3 className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <div>
