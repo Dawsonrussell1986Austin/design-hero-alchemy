@@ -30,36 +30,87 @@ const Contact = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-start">
               
-              {/* Left Side - Contact Info */}
-              <div className="space-y-6">
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg p-6 text-center shadow-md">
-                    <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                    <h3 className="text-sm font-medium text-obsidian mb-2">Office</h3>
-                    <p className="text-sm text-obsidian/70">123 Main Street<br />New York, NY 10001</p>
+              {/* Left Side - Contact Form */}
+              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-8 shadow-lg">
+                <h2 className="text-2xl font-semibold text-obsidian mb-6">Send Us a Message</h2>
+                
+                <form className="space-y-4">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="firstName" className="block text-sm text-obsidian mb-2">First Name *</label>
+                      <Input
+                        id="firstName"
+                        type="text"
+                        required
+                        className="bg-white border-obsidian/20 text-obsidian"
+                        placeholder="John"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="lastName" className="block text-sm text-obsidian mb-2">Last Name *</label>
+                      <Input
+                        id="lastName"
+                        type="text"
+                        required
+                        className="bg-white border-obsidian/20 text-obsidian"
+                        placeholder="Doe"
+                      />
+                    </div>
                   </div>
-                  
-                  <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg p-6 text-center shadow-md">
-                    <Phone className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                    <h3 className="text-sm font-medium text-obsidian mb-2">Phone</h3>
-                    <p className="text-sm text-obsidian/70">(555) 123-4567</p>
+
+                  <div>
+                    <label htmlFor="email" className="block text-sm text-obsidian mb-2">Email *</label>
+                    <Input
+                      id="email"
+                      type="email"
+                      required
+                      className="bg-white border-obsidian/20 text-obsidian"
+                      placeholder="john@example.com"
+                    />
                   </div>
-                  
-                  <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg p-6 text-center shadow-md">
-                    <Mail className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                    <h3 className="text-sm font-medium text-obsidian mb-2">Email</h3>
-                    <p className="text-sm text-obsidian/70">info@oakrep.com</p>
+
+                  <div className="grid grid-cols-2 gap-4">
+                    <div>
+                      <label htmlFor="phone" className="block text-sm text-obsidian mb-2">Phone</label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        className="bg-white border-obsidian/20 text-obsidian"
+                        placeholder="(555) 123-4567"
+                      />
+                    </div>
+                    <div>
+                      <label htmlFor="company" className="block text-sm text-obsidian mb-2">Company</label>
+                      <Input
+                        id="company"
+                        type="text"
+                        className="bg-white border-obsidian/20 text-obsidian"
+                        placeholder="Company Name"
+                      />
+                    </div>
                   </div>
-                  
-                  <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-lg p-6 text-center shadow-md">
-                    <Clock className="h-8 w-8 text-accent-brown mx-auto mb-3" />
-                    <h3 className="text-sm font-medium text-obsidian mb-2">Hours</h3>
-                    <p className="text-sm text-obsidian/70">Mon-Fri: 9AM-6PM EST</p>
+
+                  <div>
+                    <label htmlFor="message" className="block text-sm text-obsidian mb-2">Message *</label>
+                    <Textarea
+                      id="message"
+                      rows={5}
+                      required
+                      className="bg-white border-obsidian/20 text-obsidian resize-none"
+                      placeholder="Tell us about your project..."
+                    />
                   </div>
-                </div>
+
+                  <Button 
+                    type="submit"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                  >
+                    Send Message
+                  </Button>
+                </form>
               </div>
 
-              {/* Right Side - Image with Glassmorphic Form Overlay */}
+              {/* Right Side - Image with Glassmorphic Contact Info */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
                 {/* Background Image */}
                 <img 
@@ -69,76 +120,34 @@ const Contact = () => {
                 />
                 
                 {/* Dark Overlay for Better Text Contrast */}
-                <div className="absolute inset-0 bg-gradient-to-l from-obsidian/60 via-transparent to-obsidian/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-obsidian/40 via-transparent to-obsidian/60"></div>
 
-                {/* Glassmorphic Form Overlay */}
+                {/* Glassmorphic Contact Info Cards */}
                 <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-2xl p-6 w-full max-w-sm shadow-2xl">
-                    <h2 className="text-xl font-semibold text-white mb-4 text-center">Send Us a Message</h2>
+                  <div className="grid grid-cols-2 gap-4 max-w-sm w-full">
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
+                      <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-2" />
+                      <h3 className="text-sm font-medium text-white mb-1">Office</h3>
+                      <p className="text-xs text-white/90">123 Main Street<br />New York, NY 10001</p>
+                    </div>
                     
-                    <form className="space-y-3">
-                      <div className="grid grid-cols-2 gap-3">
-                        <div>
-                          <label htmlFor="firstName" className="block text-xs text-white/90 mb-1">First Name *</label>
-                          <Input
-                            id="firstName"
-                            type="text"
-                            required
-                            className="bg-white/20 border-white/30 text-white placeholder:text-white/60 backdrop-blur-sm text-sm"
-                            placeholder="John"
-                          />
-                        </div>
-                        <div>
-                          <label htmlFor="lastName" className="block text-xs text-white/90 mb-1">Last Name *</label>
-                          <Input
-                            id="lastName"
-                            type="text"
-                            required
-                            className="bg-white/20 border-white/30 text-white placeholder:text-white/60 backdrop-blur-sm text-sm"
-                            placeholder="Doe"
-                          />
-                        </div>
-                      </div>
-
-                      <div>
-                        <label htmlFor="email" className="block text-xs text-white/90 mb-1">Email *</label>
-                        <Input
-                          id="email"
-                          type="email"
-                          required
-                          className="bg-white/20 border-white/30 text-white placeholder:text-white/60 backdrop-blur-sm text-sm"
-                          placeholder="john@example.com"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="phone" className="block text-xs text-white/90 mb-1">Phone</label>
-                        <Input
-                          id="phone"
-                          type="tel"
-                          className="bg-white/20 border-white/30 text-white placeholder:text-white/60 backdrop-blur-sm text-sm"
-                          placeholder="(555) 123-4567"
-                        />
-                      </div>
-
-                      <div>
-                        <label htmlFor="message" className="block text-xs text-white/90 mb-1">Message *</label>
-                        <Textarea
-                          id="message"
-                          rows={3}
-                          required
-                          className="bg-white/20 border-white/30 text-white placeholder:text-white/60 backdrop-blur-sm resize-none text-sm"
-                          placeholder="Tell us about your project..."
-                        />
-                      </div>
-
-                      <Button 
-                        type="submit"
-                        className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-2 font-medium shadow-lg"
-                      >
-                        Send Message
-                      </Button>
-                    </form>
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
+                      <Phone className="h-8 w-8 text-accent-brown mx-auto mb-2" />
+                      <h3 className="text-sm font-medium text-white mb-1">Phone</h3>
+                      <p className="text-xs text-white/90">(555) 123-4567</p>
+                    </div>
+                    
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
+                      <Mail className="h-8 w-8 text-accent-brown mx-auto mb-2" />
+                      <h3 className="text-sm font-medium text-white mb-1">Email</h3>
+                      <p className="text-xs text-white/90">info@oakrep.com</p>
+                    </div>
+                    
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
+                      <Clock className="h-8 w-8 text-accent-brown mx-auto mb-2" />
+                      <h3 className="text-sm font-medium text-white mb-1">Hours</h3>
+                      <p className="text-xs text-white/90">Mon-Fri: 9AM-6PM EST</p>
+                    </div>
                   </div>
                 </div>
               </div>
