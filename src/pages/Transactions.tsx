@@ -1,40 +1,343 @@
+import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import TransactionCard from "@/components/TransactionCard";
 import { featuredTransactions } from "@/data/transactions";
+import { Button } from "@/components/ui/button";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Building, MapPin, DollarSign, Filter } from "lucide-react";
 
 const Transactions = () => {
+  const [filteredTransactions, setFilteredTransactions] = useState(featuredTransactions);
+  const [filters, setFilters] = useState({
+    location: "all",
+    propertyType: "all",
+    loanType: "all",
+    loanSize: "all"
+  });
+
+  // Extract unique values for filters
+  const uniqueLocations = [...new Set(featuredTransactions.map(t => t.location))];
+  const uniquePropertyTypes = [...new Set(featuredTransactions.map(t => t.propertyType))];
+  const uniqueLoanTypes = [...new Set(featuredTransactions.map(t => t.loanType))];
+
+  // Filter transactions based on selected filters
+  const applyFilters = () => {
+    let filtered = featuredTransactions;
+
+    if (filters.location !== "all") {
+      filtered = filtered.filter(t => t.location === filters.location);
+    }
+
+    if (filters.propertyType !== "all") {
+      filtered = filtered.filter(t => t.propertyType === filters.propertyType);
+    }
+
+    if (filters.loanType !== "all") {
+      filtered = filtered.filter(t => t.loanType === filters.loanType);
+    }
+
+    if (filters.loanSize !== "all") {
+      filtered = filtered.filter(t => {
+        const amount = parseFloat(t.loanSize.replace(/[$,]/g, ""));
+        switch (filters.loanSize) {
+          case "under-5m":
+            return amount < 5000000;
+          case "5m-10m":
+            return amount >= 5000000 && amount < 10000000;
+          case "10m-20m":
+            return amount >= 10000000 && amount < 20000000;
+          case "over-20m":
+            return amount >= 20000000;
+          default:
+            return true;
+        }
+      });
+    }
+
+    setFilteredTransactions(filtered);
+  };
+
+  const handleFilterChange = (filterType: string, value: string) => {
+    const newFilters = { ...filters, [filterType]: value };
+    setFilters(newFilters);
+    
+    // Apply filters immediately
+    let filtered = featuredTransactions;
+
+    if (newFilters.location !== "all") {
+      filtered = filtered.filter(t => t.location === newFilters.location);
+    }
+
+    if (newFilters.propertyType !== "all") {
+      filtered = filtered.filter(t => t.propertyType === newFilters.propertyType);
+    }
+
+    if (newFilters.loanType !== "all") {
+      filtered = filtered.filter(t => t.loanType === newFilters.loanType);
+    }
+
+    if (newFilters.loanSize !== "all") {
+      filtered = filtered.filter(t => {
+        const amount = parseFloat(t.loanSize.replace(/[$,]/g, ""));
+        switch (newFilters.loanSize) {
+          case "under-5m":
+            return amount < 5000000;
+          case "5m-10m":
+            return amount >= 5000000 && amount < 10000000;
+          case "10m-20m":
+            return amount >= 10000000 && amount < 20000000;
+          case "over-20m":
+            return amount >= 20000000;
+          default:
+            return true;
+        }
+      });
+    }
+
+    setFilteredTransactions(filtered);
+  };
+
+  const clearFilters = () => {
+    setFilters({
+      location: "all",
+      propertyType: "all", 
+      loanType: "all",
+      loanSize: "all"
+    });
+    setFilteredTransactions(featuredTransactions);
+  };
 
   return (
     <div className="min-h-screen">
-      {/* Header with dark background */}
+      {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="Transactions" />
       </div>
       
-      {/* Cream background for content */}
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Transactions" }
+        ]}
+      />
+      
+      {/* Cream background for hero content */}
       <div className="bg-silver-mist">
-
-      {/* Featured Transactions Section */}
-      <section className="py-20 px-6">
-        <div className="container mx-auto">
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            {featuredTransactions.map((transaction) => (
-              <TransactionCard key={transaction.id} transaction={transaction} />
-            ))}
+        {/* Hero Section */}
+        <section className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
+            
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    Transaction Portfolio
+                  </span>
+                </div>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                  Proven Transaction History
+                </h1>
+                <p className="text-xl text-accent-brown font-medium mb-6">
+                  Disciplined execution. Diverse markets. Consistent performance.
+                </p>
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                  Our transaction history demonstrates Oak's commitment to disciplined underwriting and strategic asset selection across diverse commercial real estate markets. Each transaction reflects our focus on capital preservation and risk-adjusted returns.
+                </p>
+                
+                {/* Transaction Stats - Under text */}
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Portfolio Overview
+                  </h3>
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-garnet-edge">{filteredTransactions.length}</p>
+                      <p className="text-sm text-obsidian/70">Transactions</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-garnet-edge">8</p>
+                      <p className="text-sm text-obsidian/70">Property Types</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-garnet-edge">7</p>
+                      <p className="text-sm text-obsidian/70">Regions</p>
+                    </div>
+                    <div className="text-center">
+                      <p className="text-2xl font-bold text-garnet-edge">$300M+</p>
+                      <p className="text-sm text-obsidian/70">Total Volume</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Image with Overlay Cards */}
+              <div className="relative h-full">
+                <img 
+                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  alt="Transaction portfolio illustration"
+                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
+                />
+                
+                {/* Glassmorphic Overlay Cards */}
+                <div className="absolute inset-0 flex flex-col justify-center space-y-4 p-6">
+                  <h2 className="text-xl font-bold text-white text-center drop-shadow-lg mb-2">Market Coverage</h2>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Primary Markets</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Secondary Markets</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Tertiary Markets</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
+      </div>
+      
+      {/* Filters Section */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <section className="py-8 bg-silver-mist/5 backdrop-blur-sm">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <Filter className="h-5 w-5 text-garnet-edge" />
+                  <h3 className="text-lg font-medium text-silver-mist">Filter Transactions</h3>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                  {/* Location Filter */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-silver-mist/80 flex items-center gap-2">
+                      <MapPin className="h-4 w-4" />
+                      Location
+                    </label>
+                    <Select value={filters.location} onValueChange={(value) => handleFilterChange("location", value)}>
+                      <SelectTrigger className="bg-silver-mist/10 border-silver-mist/30 text-silver-mist">
+                        <SelectValue placeholder="All Locations" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Locations</SelectItem>
+                        {uniqueLocations.map(location => (
+                          <SelectItem key={location} value={location}>{location}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
 
-          <div className="text-center mt-12">
-            <p className="text-deep-petrol/70 text-sm">
-              * Past performance does not guarantee future results. All investments involve risk of loss.
-            </p>
+                  {/* Property Type Filter */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-silver-mist/80 flex items-center gap-2">
+                      <Building className="h-4 w-4" />
+                      Property Type
+                    </label>
+                    <Select value={filters.propertyType} onValueChange={(value) => handleFilterChange("propertyType", value)}>
+                      <SelectTrigger className="bg-silver-mist/10 border-silver-mist/30 text-silver-mist">
+                        <SelectValue placeholder="All Types" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Types</SelectItem>
+                        {uniquePropertyTypes.map(type => (
+                          <SelectItem key={type} value={type}>{type}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Loan Size Filter */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-silver-mist/80 flex items-center gap-2">
+                      <DollarSign className="h-4 w-4" />
+                      Loan Size
+                    </label>
+                    <Select value={filters.loanSize} onValueChange={(value) => handleFilterChange("loanSize", value)}>
+                      <SelectTrigger className="bg-silver-mist/10 border-silver-mist/30 text-silver-mist">
+                        <SelectValue placeholder="All Sizes" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Sizes</SelectItem>
+                        <SelectItem value="under-5m">Under $5M</SelectItem>
+                        <SelectItem value="5m-10m">$5M - $10M</SelectItem>
+                        <SelectItem value="10m-20m">$10M - $20M</SelectItem>
+                        <SelectItem value="over-20m">Over $20M</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
+                  {/* Loan Type Filter */}
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium text-silver-mist/80 flex items-center gap-2">
+                      <Building className="h-4 w-4" />
+                      Loan Type
+                    </label>
+                    <Select value={filters.loanType} onValueChange={(value) => handleFilterChange("loanType", value)}>
+                      <SelectTrigger className="bg-silver-mist/10 border-silver-mist/30 text-silver-mist">
+                        <SelectValue placeholder="All Types" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="all">All Types</SelectItem>
+                        {uniqueLoanTypes.map(type => (
+                          <SelectItem key={type} value={type}>{type}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                </div>
+
+                <div className="flex justify-between items-center">
+                  <p className="text-sm text-silver-mist/70">
+                    Showing {filteredTransactions.length} of {featuredTransactions.length} transactions
+                  </p>
+                  <Button 
+                    variant="outline" 
+                    size="sm"
+                    onClick={clearFilters}
+                    className="border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian bg-transparent"
+                  >
+                    Clear Filters
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
+        {/* Transactions Grid Section */}
+        <section className="py-20 px-6">
+          <div className="container mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              {filteredTransactions.map((transaction) => (
+                <TransactionCard key={transaction.id} transaction={transaction} />
+              ))}
+            </div>
+
+            {filteredTransactions.length === 0 && (
+              <div className="text-center py-12">
+                <p className="text-silver-mist/70 text-lg">No transactions match your current filters.</p>
+                <Button 
+                  onClick={clearFilters}
+                  className="mt-4 bg-accent-brown hover:bg-accent-brown/90 text-silver-mist"
+                >
+                  Clear All Filters
+                </Button>
+              </div>
+            )}
+
+            <div className="text-center mt-12">
+              <p className="text-silver-mist/70 text-sm">
+                * Past performance does not guarantee future results. All investments involve risk of loss.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
 
       <Footer />
