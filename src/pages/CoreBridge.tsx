@@ -1,6 +1,4 @@
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import Breadcrumb from "@/components/Breadcrumb";
+import { LendingLayout } from "@/components/LendingLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer } from "lucide-react";
@@ -19,26 +17,7 @@ const CoreBridge = () => {
   };
 
   return (
-    <div className="min-h-screen">
-      {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-        <Navigation />
-      </div>
-      
-      {/* Breadcrumb */}
-      <Breadcrumb 
-        items={[
-          { label: "Lending", href: "/lending" }
-        ]}
-        quickLinks={[
-          { label: "Overview", href: "/lending" },
-          { label: "Core Bridge", href: "/lending/core-bridge" },
-          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
-          { label: "Opportunistic Bridge", href: "/lending/opportunistic-bridge" },
-          { label: "Participating Bridge", href: "/lending/participating-bridge" }
-        ]}
-      />
-
+    <LendingLayout>
       {/* Cream background for content */}
       <div className="bg-silver-mist">
         {/* Content Section with Image */}
@@ -306,10 +285,7 @@ const CoreBridge = () => {
           </section>
         )}
       </div>
-
-      {/* Footer */}
-      <Footer />
-    </div>
+    </LendingLayout>
   );
 };
 
