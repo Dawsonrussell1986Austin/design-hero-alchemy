@@ -82,9 +82,9 @@ const Investments = () => {
             <div className="max-w-6xl mx-auto">
               
               {/* True Bento Box Grid */}
-              <div className="grid grid-cols-4 grid-rows-3 gap-4 h-[600px]">
+              <div className="grid grid-cols-4 grid-rows-4 gap-4 h-[600px]">
                 {/* Asset-backed Collateral - Large with Image */}
-                <div className="col-span-2 row-span-2 relative overflow-hidden bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                <div className="col-span-2 row-span-4 relative overflow-hidden bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   {/* Background Image with Fade */}
                   <div className="absolute inset-0">
                     <img 
@@ -110,7 +110,7 @@ const Investments = () => {
                   </div>
                 </div>
 
-                {/* Predictable Income - Medium */}
+                {/* Predictable Income - Top Right */}
                 <div className="col-span-2 row-span-1 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-4">
                     <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
@@ -121,26 +121,26 @@ const Investments = () => {
                   </div>
                 </div>
 
-                {/* Downside Protection - Small */}
-                <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
-                  <div className="text-center">
-                    <TrendingUp className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-silver-mist mb-2">Downside Protection</h3>
-                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and low LTV ratios.</p>
+                {/* Downside Protection - Middle Right */}
+                <div className="col-span-1 row-span-2 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="h-full flex flex-col justify-center text-center">
+                    <TrendingUp className="h-6 w-6 text-garnet-edge mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-silver-mist mb-3">Downside Protection</h3>
+                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and low LTV ratios for enhanced protection.</p>
                   </div>
                 </div>
 
-                {/* Institutional Discipline - Small */}
-                <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
-                  <div className="text-center">
-                    <Award className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-silver-mist mb-2">Institutional Discipline</h3>
-                    <p className="text-silver-mist/80 text-sm leading-relaxed">Rigorous underwriting standards.</p>
+                {/* Institutional Discipline - Middle Right */}
+                <div className="col-span-1 row-span-2 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="h-full flex flex-col justify-center text-center">
+                    <Award className="h-6 w-6 text-garnet-edge mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-silver-mist mb-3">Institutional Discipline</h3>
+                    <p className="text-silver-mist/80 text-sm leading-relaxed">Rigorous underwriting and strategic asset selection processes.</p>
                   </div>
                 </div>
 
-                {/* Market Cycle Resilience - Below the two small cards */}
-                <div className="col-start-3 col-span-2 row-start-3 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                {/* Market Cycle Resilience - Bottom Right */}
+                <div className="col-span-2 row-span-1 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-4">
                     <BarChart3 className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <div>
