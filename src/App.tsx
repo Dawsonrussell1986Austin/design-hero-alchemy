@@ -27,38 +27,40 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <Toaster />
-    <Sonner />
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/lending" element={<Lending />} />
-        <Route path="/investments" element={<Investments />} />
-        <Route path="/offerings" element={<Offerings />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/webinar" element={<WebinarRegistration />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/leadership" element={<Leadership />} />
-        <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
-        <Route path="/leadership/paul-cleary" element={<PaulCleary />} />
-        <Route path="/leadership/raymond-davis" element={<RaymondDavis />} />
-        <Route path="/leadership/matthew-webster" element={<MatthewWebster />} />
-        <Route path="/leadership/robert-kaplan" element={<RobertKaplan />} />
-        <Route path="/leadership/thomas-mcgovern" element={<ThomasMcGovern />} />
-        <Route path="/leadership/brook-scardina" element={<BrookScardina />} />
-        <Route path="/lending/core-bridge" element={<CoreBridge />} />
-        <Route path="/lending/core-plus-bridge" element={<CorePlusBridge />} />
-        <Route path="/lending/opportunistic-bridge" element={<OpportunisticBridge />} />
-        <Route path="/lending/participating-bridge" element={<ParticipatingBridge />} />
-        <Route path="/transactions" element={<Transactions />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/lending" element={<Lending />} />
+          <Route path="/investments" element={<Investments />} />
+          <Route path="/offerings" element={<Offerings />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/webinar" element={<WebinarRegistration />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/leadership" element={<Leadership />} />
+          <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
+          <Route path="/leadership/paul-cleary" element={<PaulCleary />} />
+          <Route path="/leadership/raymond-davis" element={<RaymondDavis />} />
+          <Route path="/leadership/matthew-webster" element={<MatthewWebster />} />
+          <Route path="/leadership/robert-kaplan" element={<RobertKaplan />} />
+          <Route path="/leadership/thomas-mcgovern" element={<ThomasMcGovern />} />
+          <Route path="/leadership/brook-scardina" element={<BrookScardina />} />
+          <Route path="/lending/core-bridge" element={<CoreBridge />} />
+          <Route path="/lending/core-plus-bridge" element={<CorePlusBridge />} />
+          <Route path="/lending/opportunistic-bridge" element={<OpportunisticBridge />} />
+          <Route path="/lending/participating-bridge" element={<ParticipatingBridge />} />
+          <Route path="/transactions" element={<Transactions />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
