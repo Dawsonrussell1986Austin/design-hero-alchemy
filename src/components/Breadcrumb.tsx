@@ -9,7 +9,7 @@ interface BreadcrumbProps {
 
 const Breadcrumb = ({ items }: BreadcrumbProps) => {
   return (
-    <div className="bg-gradient-to-r from-obsidian via-graphite-fog to-deep-petrol py-6 border-b border-silver-mist/10">
+    <div className="bg-gradient-to-r from-obsidian via-graphite-fog to-deep-petrol py-6 border-b border-silver-mist/10 mt-20">
       <div className="container mx-auto px-6">
         <nav className="flex items-center space-x-2 text-silver-mist">
           {items.map((item, index) => (
