@@ -47,6 +47,16 @@ const About = () => {
                       We don't chase headlines—we create income strategies that prioritize <span className="font-semibold">downside protection, predictability, and trust</span>.
                     </p>
                     
+                    <div className="mt-8">
+                      <a href="/leadership">
+                        <Button 
+                          size="lg"
+                          className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                        >
+                          Our Leadership Team
+                        </Button>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 
