@@ -36,20 +36,20 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
         </div>
       </div>
       <CardContent className="p-6 bg-white/10 backdrop-blur-sm border-t border-white/20 flex-1">
-        <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight border-b border-garnet-edge/20 pb-3">
+        <h3 className="text-lg font-semibold text-white mb-4 leading-tight border-b border-white/20 pb-3">
           {transaction.name}
         </h3>
         
         <div className="space-y-3">
-          <div className="text-deep-petrol text-sm font-medium border-b border-garnet-edge/20 pb-2">
+          <div className="text-silver-mist text-sm font-medium border-b border-white/20 pb-2">
             {transaction.location}
           </div>
           
-          <div className="text-accent-brown text-xl font-bold border-b border-garnet-edge/20 pb-2">
+          <div className="text-garnet-edge text-xl font-bold border-b border-white/20 pb-2">
             {transaction.loanSize}
           </div>
           
-          <div className="text-deep-petrol/80 text-sm leading-tight pt-2">
+          <div className="text-silver-mist/80 text-sm leading-tight pt-2">
             {transaction.loanType}
           </div>
         </div>

@@ -205,7 +205,7 @@ const Transactions = () => {
       {/* Combined Filters and Transactions Section */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         {/* Title Section */}
-        <section className="pt-12 pb-6 px-6">
+        <section className="pt-12 pb-8 px-6">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto text-center">
               <h1 className="text-4xl lg:text-5xl font-bold text-silver-mist leading-tight">
