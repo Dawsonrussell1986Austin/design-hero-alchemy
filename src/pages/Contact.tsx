@@ -128,13 +128,13 @@ const Contact = () => {
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Office</h3>
-                      <p className="text-xs text-white/90">123 Main Street<br />New York, NY 10001</p>
+                      <p className="text-xs text-white/90">5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209</p>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <Phone className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Phone</h3>
-                      <p className="text-xs text-white/90">(555) 123-4567</p>
+                      <p className="text-xs text-white/90">980.288.6627</p>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
