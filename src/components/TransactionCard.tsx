@@ -17,7 +17,7 @@ interface TransactionCardProps {
 
 const TransactionCard = ({ transaction }: TransactionCardProps) => {
   return (
-    <Card className="bg-white/20 backdrop-blur-md border border-white/30 overflow-hidden hover:border-accent-brown/50 hover:shadow-xl hover:bg-white/30 transition-all duration-300 group shadow-lg">
+    <Card className="bg-white/20 backdrop-blur-md border border-white/30 overflow-hidden hover:border-accent-brown/50 hover:shadow-xl hover:bg-white/30 transition-all duration-300 group shadow-lg h-full">
       <div className="aspect-video overflow-hidden relative">
         <img 
           src={transaction.image}
@@ -35,7 +35,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
           {transaction.propertyType}
         </div>
       </div>
-      <CardContent className="p-6 bg-white/10 backdrop-blur-sm border-t border-white/20">
+      <CardContent className="p-6 bg-white/10 backdrop-blur-sm border-t border-white/20 flex-1">
         <h3 className="text-lg font-semibold text-obsidian mb-4 leading-tight border-b border-garnet-edge/20 pb-3">
           {transaction.name}
         </h3>
@@ -49,7 +49,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
             {transaction.loanSize}
           </div>
           
-          <div className="text-deep-petrol/80 text-sm leading-tight">
+          <div className="text-deep-petrol/80 text-sm leading-tight pt-2">
             {transaction.loanType}
           </div>
         </div>
