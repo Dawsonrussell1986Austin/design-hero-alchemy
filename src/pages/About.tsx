@@ -242,7 +242,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <Building2 className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">Collateral Security</h3>
+                    <h3 className="text-xl font-light text-obsidian">Collateral Security</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Every lending opportunity is backed by physical real estate, offering tangible assets 
@@ -255,7 +255,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <DollarSign className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">Predictable Cash Flows</h3>
+                    <h3 className="text-xl font-light text-obsidian">Predictable Cash Flows</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Senior position loans generate stable and predictable income.
@@ -267,7 +267,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <ShieldCheck className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">Inflation Protection</h3>
+                    <h3 className="text-xl font-light text-obsidian">Inflation Protection</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Real estate values and rental income often rise with inflation, helping preserve asset values.
@@ -279,7 +279,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <Activity className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">Low Volatility</h3>
+                    <h3 className="text-xl font-light text-obsidian">Low Volatility</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Real estate markets tend to be more stable and exhibit less volatility relative to public equities or debt markets.
@@ -291,7 +291,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <RotateCcw className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">High Recovery Potential</h3>
+                    <h3 className="text-xl font-light text-obsidian">High Recovery Potential</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     In adverse scenarios, hard real estate assets offer greater value recovery than intangible assets.
@@ -303,7 +303,7 @@ const About = () => {
                     <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <TrendingUp className="h-5 w-5 text-accent-brown" />
                     </div>
-                    <h3 className="text-xl font-light text-accent-brown">Appreciation Opportunity</h3>
+                    <h3 className="text-xl font-light text-obsidian">Appreciation Opportunity</h3>
                   </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     In addition to current income, real estate assets have historically appreciated in value over time.
