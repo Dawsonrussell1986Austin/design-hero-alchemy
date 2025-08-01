@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 
 const Lending = () => {
@@ -158,82 +159,87 @@ const Lending = () => {
                   With a deep understanding of HUD programs and a commitment to execution certainty, Oak offers tailored solutions that align with mission-driven real estate strategies.
                 </p>
 
-                <div className="space-y-8">
+                <Accordion type="single" collapsible className="w-full space-y-4">
                   {/* Multifamily & Affordable Housing Programs */}
-                  <div>
-                    <h4 className="text-xl font-semibold text-silver-mist mb-4">
+                  <AccordionItem value="multifamily" className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg px-6">
+                    <AccordionTrigger className="text-xl font-semibold text-silver-mist hover:text-accent-brown py-4">
                       Multifamily & Affordable Housing Programs
-                    </h4>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Multifamily Properties:</span>
-                          <span className="text-silver-mist/70"> HUD 221(d)(4) & 220</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Acquisition or Refinance of Multifamily Properties:</span>
-                          <span className="text-silver-mist/70"> HUD 223(f)</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Properties:</span>
-                          <span className="text-silver-mist/70"> HUD 223(a)(7)</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Supplemental Loans for Capital Improvement:</span>
-                          <span className="text-silver-mist/70"> HUD 241(a)</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Multifamily Properties:</span>
+                            <span className="text-silver-mist/70"> HUD 221(d)(4) & 220</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Acquisition or Refinance of Multifamily Properties:</span>
+                            <span className="text-silver-mist/70"> HUD 223(f)</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Properties:</span>
+                            <span className="text-silver-mist/70"> HUD 223(a)(7)</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Supplemental Loans for Capital Improvement:</span>
+                            <span className="text-silver-mist/70"> HUD 241(a)</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
 
                   {/* Senior Housing & Healthcare Programs */}
-                  <div>
-                    <h4 className="text-xl font-semibold text-silver-mist mb-4">
+                  <AccordionItem value="senior" className="bg-white/5 backdrop-blur-sm border border-white/20 rounded-lg px-6">
+                    <AccordionTrigger className="text-xl font-semibold text-silver-mist hover:text-accent-brown py-4">
                       Senior Housing & Healthcare Programs
-                    </h4>
-                    <ul className="space-y-3">
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Senior Housing & Healthcare:</span>
-                          <span className="text-silver-mist/70"> HUD 232/221(d)(4)</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Acquisition or Refinance of Senior Housing & Healthcare:</span>
-                          <span className="text-silver-mist/70"> HUD 232/223(f)</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Senior Assets:</span>
-                          <span className="text-silver-mist/70"> HUD 232/223(a)(7)</span>
-                        </div>
-                      </li>
-                      <li className="flex items-start space-x-3">
-                        <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
-                        <div>
-                          <span className="text-silver-mist font-medium">Supplemental Mortgage Insurance for Capital Improvements:</span>
-                          <span className="text-silver-mist/70"> HUD 241(a)</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Construction/Substantial Rehabilitation of Senior Housing & Healthcare:</span>
+                            <span className="text-silver-mist/70"> HUD 232/221(d)(4)</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Acquisition or Refinance of Senior Housing & Healthcare:</span>
+                            <span className="text-silver-mist/70"> HUD 232/223(f)</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Streamlined Refinance of Existing HUD-Financed Senior Assets:</span>
+                            <span className="text-silver-mist/70"> HUD 232/223(a)(7)</span>
+                          </div>
+                        </li>
+                        <li className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-accent-brown rounded-full mt-2 flex-shrink-0"></div>
+                          <div>
+                            <span className="text-silver-mist font-medium">Supplemental Mortgage Insurance for Capital Improvements:</span>
+                            <span className="text-silver-mist/70"> HUD 241(a)</span>
+                          </div>
+                        </li>
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
 
-                  <div className="pt-6 border-t border-silver-mist/20">
+                  <div className="mt-8 pt-6 border-t border-silver-mist/20">
                     <p className="text-silver-mist/80 mb-4">
                       Available through Oak's FHA/HUD platform, these loans provide long-term, government-backed financing for:
                     </p>
@@ -312,9 +318,6 @@ const Lending = () => {
           </div>
         </div>
       </div>
-
-      </div>
-
       {/* Footer */}
       <Footer />
     </div>
