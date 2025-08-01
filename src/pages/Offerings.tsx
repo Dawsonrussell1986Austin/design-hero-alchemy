@@ -1,225 +1,341 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, XCircle } from "lucide-react";
+import { CheckCircle, XCircle, DollarSign, Building, Shield, Award } from "lucide-react";
 
 const Offerings = () => {
   return (
     <div className="min-h-screen">
-      {/* Header with dark background */}
+      {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
-        <SimplePageHeader title="Offerings" />
       </div>
       
-      {/* Cream background for content */}
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Offerings" }
+        ]}
+      />
+      
+      {/* Cream background for hero content */}
       <div className="bg-silver-mist">
-
-      {/* Open Offerings Section */}
-      <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
+        {/* Hero Section */}
+        <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
-                Open Offerings
-              </h2>
-              <p className="text-lg text-silver-mist/80 leading-relaxed">
-                Currently available investment opportunities for qualified investors
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
-              <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle className="h-6 w-6 text-green-400" />
-                  <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
-                </div>
-                <h3 className="text-2xl font-medium text-silver-mist">
-                  Oak Institutional Credit Solutions, LLC
-                </h3>
-                <div className="space-y-2">
-                  <p className="text-accent-brown font-medium">
-                    Regulation D 506(c)
-                  </p>
-                </div>
-                <Button 
-                  size="lg"
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300"
-                >
-                  Learn More
-                </Button>
-              </div>
-
-              <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                <div className="flex items-center gap-3 mb-4">
-                  <CheckCircle className="h-6 w-6 text-green-400" />
-                  <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
-                </div>
-                <h3 className="text-2xl font-medium text-silver-mist">
-                  Oak Parallel Bridge Credit Fund
-                </h3>
-                <div className="space-y-2">
-                  <p className="text-accent-brown font-medium">
-                    Regulation D 506(c)
-                  </p>
-                </div>
-                <Button 
-                  size="lg"
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300"
-                >
-                  Learn More
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Closed Offerings Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
-                Closed to New Investors
-              </h2>
-              <p className="text-lg text-silver-mist/80 leading-relaxed">
-                Previous offerings no longer accepting new investments
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Intermediate Income Fund, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II Bond
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Fund VI, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II General Solicitation Offering
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Fund V, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II Bond
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Fund IV, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II Bond
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Fund III, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II Bond
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-
-              <div className="space-y-4 p-6 bg-silver-mist/5 backdrop-blur-sm border border-silver-mist/20 rounded-lg opacity-75">
-                <div className="flex items-center gap-3 mb-4">
-                  <XCircle className="h-5 w-5 text-silver-mist/60" />
-                  <span className="text-sm font-medium text-silver-mist/60 uppercase tracking-wide">Closed</span>
-                </div>
-                <h3 className="text-lg font-medium text-silver-mist">
-                  Oak Capital Fund II, LLC
-                </h3>
-                <p className="text-silver-mist/70 text-sm">
-                  Reg A+, Tier II Bond
-                </p>
-                <p className="text-silver-mist/60 text-sm italic">
-                  Closed to New Investors
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-              Interested in Our Offerings?
-            </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
-              Contact our investment team to learn more about current opportunities and qualification requirements.
-            </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-              >
-                Contact Investment Team
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                Request Information
-              </Button>
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
+              {/* Text Content */}
+              <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    Investment Offerings
+                  </span>
+                </div>
+                
+                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                  Strategic Investment Solutions
+                </h1>
+                <p className="text-xl text-accent-brown font-medium mb-6">
+                  Institutional-quality opportunities. Transparent structures. Professional management.
+                </p>
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                  Oak offers a curated selection of investment vehicles designed for sophisticated investors seeking consistent returns through disciplined real estate credit strategies. Each offering undergoes rigorous due diligence and structural analysis.
+                </p>
+                
+                {/* Investment Focus - Under text */}
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Our Investment Philosophy
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Rigorous underwriting and due diligence</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Capital preservation focused structures</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Transparent reporting and investor communication</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Diversified portfolio construction</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Image with Overlay Cards */}
+              <div className="relative h-full">
+                <img 
+                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  alt="Investment offerings illustration"
+                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
+                />
+                
+                {/* Glassmorphic Overlay Cards */}
+                <div className="absolute inset-0 flex flex-col justify-center space-y-4 p-6">
+                  <h2 className="text-xl font-bold text-white text-center drop-shadow-lg mb-2">Investment Structures</h2>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Regulation D 506(c)</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Regulation A+ Tier II</h3>
+                  </div>
+                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
+                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Private Placements</h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      
+      {/* Rest of content with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
+        {/* Open Offerings Section */}
+        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
+                  Current Opportunities
+                </h2>
+                <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
+                  Investment opportunities currently available to qualified investors seeking exposure to commercial real estate credit strategies.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <CheckCircle className="h-6 w-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Building className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-2xl font-medium text-silver-mist">
+                      Oak Institutional Credit Solutions, LLC
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-accent-brown font-medium">
+                      Regulation D 506(c)
+                    </p>
+                    <p className="text-silver-mist/80 leading-relaxed">
+                      Diversified commercial real estate credit fund targeting senior position loans across multiple markets and property types.
+                    </p>
+                  </div>
+                  <Button 
+                    size="lg"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300 hover:scale-105"
+                  >
+                    Learn More
+                  </Button>
+                </div>
+
+                <div className="space-y-6 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <CheckCircle className="h-6 w-6 text-green-400 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-sm font-medium text-green-400 uppercase tracking-wide">Open</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-2xl font-medium text-silver-mist">
+                      Oak Parallel Bridge Credit Fund
+                    </h3>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-accent-brown font-medium">
+                      Regulation D 506(c)
+                    </p>
+                    <p className="text-silver-mist/80 leading-relaxed">
+                      Specialized bridge lending strategy focused on transitional commercial real estate opportunities with strong value-add potential.
+                    </p>
+                  </div>
+                  <Button 
+                    size="lg"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-medium tracking-wide transition-all duration-300 hover:scale-105"
+                  >
+                    Learn More
+                  </Button>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button 
+                  size="lg"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                >
+                  Contact Investment Team
+                </Button>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                >
+                  Request Information
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Track Record Section - Cream Background */}
+      <div className="bg-silver-mist">
+        <section className="py-20">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-6">
+                  Proven Track Record
+                </h2>
+                <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
+                  Our closed offerings demonstrate Oak's commitment to delivering consistent results through disciplined investment strategies:
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Award className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Intermediate Income Fund, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II Bond
+                  </p>
+                </div>
+
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <DollarSign className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Fund VI, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II General Solicitation Offering
+                  </p>
+                </div>
+
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Building className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Fund V, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II Bond
+                  </p>
+                </div>
+
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Shield className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Fund IV, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II Bond
+                  </p>
+                </div>
+
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Award className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Fund III, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II Bond
+                  </p>
+                </div>
+
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center gap-3 mb-4">
+                    <XCircle className="h-5 w-5 text-obsidian/60" />
+                    <span className="text-sm font-medium text-obsidian/60 uppercase tracking-wide">Closed</span>
+                  </div>
+                  <div className="flex items-center space-x-3 mb-3">
+                    <DollarSign className="h-5 w-5 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-medium text-obsidian">
+                      Oak Capital Fund II, LLC
+                    </h3>
+                  </div>
+                  <p className="text-obsidian/70 text-sm">
+                    Reg A+, Tier II Bond
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Contact Section - Dark Background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+                Ready to Explore Opportunities?
+              </h2>
+              <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
+                Connect with our investment professionals to learn more about current offerings and qualification requirements for institutional-quality real estate credit investments.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button 
+                  size="lg"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                >
+                  Schedule Consultation
+                </Button>
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                >
+                  Download Materials
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <Footer />
