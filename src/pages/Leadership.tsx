@@ -104,24 +104,24 @@ const Leadership = () => {
                   </div>
                   
                   {/* Glassmorphic Values Card Overlay */}
-                  <div className="absolute inset-x-4 bottom-6">
-                    <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-6">
-                      <div className="space-y-4">
+                  <div className="absolute inset-x-0 bottom-6 flex justify-center">
+                    <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-8 max-w-lg">
+                      <div className="space-y-6">
                         <div className="text-center">
-                          <h4 className="text-sm font-medium text-garnet-edge mb-1">Control and Stability</h4>
-                          <p className="text-silver-mist/90 text-xs leading-relaxed">
+                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Control and Stability</h4>
+                          <p className="text-silver-mist/90 text-base leading-relaxed">
                             Disciplined oversight and consistent execution.
                           </p>
                         </div>
                         <div className="text-center">
-                          <h4 className="text-sm font-medium text-garnet-edge mb-1">Disciplined Risk-Taking</h4>
-                          <p className="text-silver-mist/90 text-xs leading-relaxed">
+                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Risk-Taking</h4>
+                          <p className="text-silver-mist/90 text-base leading-relaxed">
                             Calculated decisions based on thorough analysis.
                           </p>
                         </div>
                         <div className="text-center">
-                          <h4 className="text-sm font-medium text-garnet-edge mb-1">Predictability and Reliability</h4>
-                          <p className="text-silver-mist/90 text-xs leading-relaxed">
+                          <h4 className="text-lg font-medium text-garnet-edge mb-2">Predictability and Reliability</h4>
+                          <p className="text-silver-mist/90 text-base leading-relaxed">
                             Consistent results through proven processes.
                           </p>
                         </div>
@@ -136,10 +136,13 @@ const Leadership = () => {
       </div>
 
       {/* Team Introduction */}
-      <div className="py-16">
+      <div className="py-16 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg text-silver-mist/80 leading-relaxed">
+            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+              Meet the Team
+            </h2>
+            <p className="text-lg text-silver-mist/90 leading-relaxed">
               Profiles include decades of industry experience, roles across the capital stack, and a consistent 
               track record of delivering value across market environments.
             </p>
