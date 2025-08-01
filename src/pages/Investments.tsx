@@ -25,9 +25,9 @@ const Investments = () => {
         <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="grid lg:grid-cols-3 gap-12 items-start mb-12">
               {/* Text Content */}
-              <div>
+              <div className="lg:col-span-2">
                 {/* Program Badge */}
                 <div className="mb-4">
                   <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
@@ -44,6 +44,37 @@ const Investments = () => {
                 <p className="text-lg text-obsidian/80 leading-relaxed">
                   Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary and secondary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
                 </p>
+              </div>
+              
+              {/* Oak's Investment Focus - Vertical Bar */}
+              <div className="lg:col-span-1">
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Oak's Investment Focus
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">First-lien, senior-position loans</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Short-duration debt strategies</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
+                    </div>
+                  </div>
+                </div>
               </div>
               
               {/* Image with Overlay Cards */}
@@ -237,38 +268,6 @@ const Investments = () => {
       {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
-        {/* Investment Focus Section */}
-        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-12">
-                Oak's Investment Focus
-              </h2>
-              
-              <div className="space-y-6">
-                <div className="p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown mb-3">First-lien, senior-position loans</h3>
-                </div>
-                
-                <div className="p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown mb-3">Short-duration debt strategies</h3>
-                </div>
-                
-                <div className="p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown mb-3">Small-balance and middle-market commercial real estate</h3>
-                </div>
-                
-                <div className="p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown mb-3">Highly structured, risk-conscious transactions</h3>
-                </div>
-                
-                <div className="p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown mb-3">Bridge loans, HUD-insured debt, and hybrid structures</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Aligned Offerings Section */}
         <section className="py-20">
