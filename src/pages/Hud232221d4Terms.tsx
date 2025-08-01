@@ -212,16 +212,7 @@ const Hud232221d4Terms = () => {
                     </tr>
                   </tbody>
                 </table>
-              </div>
-
-              {/* Download Button */}
-              <div className="text-center mt-8">
-                <Button 
-                  className="bg-garnet-edge hover:bg-garnet-edge/90 text-white px-8 py-3 font-medium"
-                >
-                  Download Flyer
-                </Button>
-              </div>
+            </div>
             </div>
 
           </div>
