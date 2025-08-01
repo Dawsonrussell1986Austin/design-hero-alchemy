@@ -134,8 +134,8 @@ const Offerings = () => {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <TrendingUp className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Intermediate Income Fund, LLC
@@ -148,8 +148,8 @@ const Offerings = () => {
 
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <PieChart className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund VI, LLC
@@ -162,8 +162,8 @@ const Offerings = () => {
 
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Building2 className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund V, LLC
@@ -176,8 +176,8 @@ const Offerings = () => {
 
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <Landmark className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund IV, LLC
@@ -190,8 +190,8 @@ const Offerings = () => {
 
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <CandlestickChart className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund III, LLC
@@ -204,8 +204,8 @@ const Offerings = () => {
 
                 <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                      <BarChart3 className="h-6 w-6 text-white" />
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
                       Oak Capital Fund II, LLC
