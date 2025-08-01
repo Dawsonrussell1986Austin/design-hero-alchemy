@@ -77,7 +77,7 @@ const Leadership = () => {
               <div className="grid lg:grid-cols-2 gap-16 items-start">
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
-                  <h1 className="text-5xl lg:text-6xl font-light text-obsidian leading-tight">
+                  <h1 className="text-5xl lg:text-6xl font-display font-medium text-obsidian leading-tight">
                     Operational Expertise Backed by <span className="text-accent-brown">$218B in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl leading-relaxed">
@@ -152,7 +152,7 @@ const Leadership = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-light text-silver-mist mb-8">
+              <h2 className="text-4xl lg:text-5xl font-display font-light text-silver-mist mb-8">
                 Meet the Team
               </h2>
               <p className="text-lg text-silver-mist/90 leading-relaxed max-w-4xl mx-auto">
@@ -239,7 +239,7 @@ const Leadership = () => {
       <div className="py-20 bg-silver-mist">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-obsidian mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-light text-obsidian mb-8">
               Ready to Work with Our Team?
             </h2>
             <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
