@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Lending from "./pages/Lending";
 import BridgeLoans from "./pages/BridgeLoans";
 import FhaHudLoans from "./pages/FhaHudLoans";
+import CoreBridgeTerms from "./pages/CoreBridgeTerms";
 import Investments from "./pages/Investments";
 import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
@@ -51,7 +52,7 @@ function App() {
         <Route path="/leadership/robert-kaplan" element={<RobertKaplan />} />
         <Route path="/leadership/thomas-mcgovern" element={<ThomasMcGovern />} />
         <Route path="/leadership/brook-scardina" element={<BrookScardina />} />
-        <Route path="/lending/bridge/core-bridge" element={<CoreBridge />} />
+        <Route path="/lending/bridge/core-bridge" element={<CoreBridgeTerms />} />
         <Route path="/lending/bridge/core-plus-bridge" element={<CorePlusBridge />} />
         <Route path="/lending/bridge/opportunistic-bridge" element={<OpportunisticBridge />} />
         <Route path="/lending/bridge/participating-bridge" element={<ParticipatingBridge />} />
