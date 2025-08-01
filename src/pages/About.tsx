@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingDown, BarChart } from "lucide-react";
+import { Shield, TrendingDown, BarChart, Building2, DollarSign, ShieldCheck, Activity, RotateCcw, TrendingUp } from "lucide-react";
 
 const About = () => {
   return (
@@ -237,44 +237,74 @@ const About = () => {
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">Collateral Security</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <Building2 className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">Collateral Security</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Every lending opportunity is backed by physical real estate, offering tangible assets 
                     in the event of default.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">Predictable Cash Flows</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <DollarSign className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">Predictable Cash Flows</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Senior position loans generate stable and predictable income.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">Inflation Protection</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <ShieldCheck className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">Inflation Protection</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Real estate values and rental income often rise with inflation, helping preserve asset values.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">Low Volatility</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <Activity className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">Low Volatility</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Real estate markets tend to be more stable and exhibit less volatility relative to public equities or debt markets.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">High Recovery Potential</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <RotateCcw className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">High Recovery Potential</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     In adverse scenarios, hard real estate assets offer greater value recovery than intangible assets.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-xl font-light text-accent-brown mb-4">Appreciation Opportunity</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-4">
+                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <TrendingUp className="h-5 w-5 text-accent-brown" />
+                    </div>
+                    <h3 className="text-xl font-light text-accent-brown">Appreciation Opportunity</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     In addition to current income, real estate assets have historically appreciated in value over time.
                   </p>
