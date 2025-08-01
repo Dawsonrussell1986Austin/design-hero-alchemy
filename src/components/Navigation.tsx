@@ -174,10 +174,10 @@ const Navigation = () => {
           
           {/* Desktop Investor Login Button */}
           <Button 
-            className={`hidden lg:flex items-center px-8 py-3 font-sans font-semibold text-sm tracking-wide rounded-none transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 border-2 ${
+            className={`hidden lg:flex items-center px-6 py-2 font-sans font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
               scrolled 
-                ? 'bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist border-garnet-edge hover:border-copper-gleam' 
-                : 'bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist border-garnet-edge hover:border-copper-gleam'
+                ? 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown' 
+                : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
             }`}
           >
             Investor Login
