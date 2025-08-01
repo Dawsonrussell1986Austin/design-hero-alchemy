@@ -92,65 +92,65 @@ const Leadership = () => {
         </div>
       </div>
 
-      {/* Leadership Values */}
+      {/* Leadership Team Section with Photo and Values Overlay */}
       <div className="py-20">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-12 text-center">
-              Leadership Values
+              Leadership Team
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="space-y-4 text-center">
-                <h3 className="text-xl font-medium text-garnet-edge">Control and Stability</h3>
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Maintaining disciplined oversight and consistent execution across all operations.
-                </p>
+            
+            {/* Hero Image with Glassmorphic Values Overlay */}
+            <div className="relative mb-16">
+              <div className="rounded-lg overflow-hidden shadow-xl">
+                <img 
+                  src="/lovable-uploads/7b292b7c-cd6f-4729-866e-b650516c9c44.png"
+                  alt="Modern conference room"
+                  className="w-full h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-obsidian/40 via-transparent to-transparent"></div>
               </div>
-              <div className="space-y-4 text-center">
-                <h3 className="text-xl font-medium text-garnet-edge">Disciplined Risk-Taking</h3>
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Making calculated decisions based on thorough analysis and market expertise.
-                </p>
-              </div>
-              <div className="space-y-4 text-center">
-                <h3 className="text-xl font-medium text-garnet-edge">Predictability and Reliability</h3>
-                <p className="text-silver-mist/80 leading-relaxed">
-                  Delivering consistent results through proven processes and accountability.
-                </p>
+              
+              {/* Glassmorphic Values Card Overlay */}
+              <div className="absolute inset-x-0 bottom-8 mx-6 lg:mx-12">
+                <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-8">
+                  <h3 className="text-2xl font-light text-silver-mist mb-6 text-center">Leadership Values</h3>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="space-y-3 text-center">
+                      <h4 className="text-lg font-medium text-garnet-edge">Control and Stability</h4>
+                      <p className="text-silver-mist/90 text-sm leading-relaxed">
+                        Maintaining disciplined oversight and consistent execution across all operations.
+                      </p>
+                    </div>
+                    <div className="space-y-3 text-center">
+                      <h4 className="text-lg font-medium text-garnet-edge">Disciplined Risk-Taking</h4>
+                      <p className="text-silver-mist/90 text-sm leading-relaxed">
+                        Making calculated decisions based on thorough analysis and market expertise.
+                      </p>
+                    </div>
+                    <div className="space-y-3 text-center">
+                      <h4 className="text-lg font-medium text-garnet-edge">Predictability and Reliability</h4>
+                      <p className="text-silver-mist/90 text-sm leading-relaxed">
+                        Delivering consistent results through proven processes and accountability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            
+            <p className="text-lg text-silver-mist/80 leading-relaxed text-center max-w-4xl mx-auto">
+              Profiles include decades of industry experience, roles across the capital stack, and a consistent 
+              track record of delivering value across market environments.
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Meet the Team */}
+      {/* Team Cards */}
       <div className="py-20 bg-obsidian/30 backdrop-blur-sm">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
-              {/* Left Column - Content */}
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-                  Meet the Team
-                </h2>
-                <p className="text-lg text-silver-mist/80 leading-relaxed">
-                  Profiles include decades of industry experience, roles across the capital stack, and a consistent 
-                  track record of delivering value across market environments.
-                </p>
-              </div>
-              
-              {/* Right Column - Image */}
-              <div className="relative">
-                <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src="/lovable-uploads/7b292b7c-cd6f-4729-866e-b650516c9c44.png"
-                    alt="Modern conference room"
-                    className="w-full h-[400px] object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
-                </div>
-              </div>
-            </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {leadershipTeam.map((leader, index) => (
