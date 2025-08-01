@@ -208,9 +208,9 @@ const Transactions = () => {
         <section className="pt-12 pb-6 px-6">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto text-center">
-              <h2 className="text-3xl font-bold text-silver-mist">
+              <h1 className="text-4xl lg:text-5xl font-bold text-silver-mist leading-tight">
                 Oak Real Estate Partner Transactions
-              </h2>
+              </h1>
             </div>
           </div>
         </section>
