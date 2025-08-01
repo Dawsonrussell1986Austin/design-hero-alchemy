@@ -25,9 +25,9 @@ const Investments = () => {
         <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="grid lg:grid-cols-3 gap-12 items-start mb-12">
+            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
               {/* Text Content */}
-              <div className="lg:col-span-2">
+              <div>
                 {/* Program Badge */}
                 <div className="mb-4">
                   <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
@@ -41,13 +41,11 @@ const Investments = () => {
                 <p className="text-xl text-accent-brown font-medium mb-6">
                   Direct lending. Disciplined structure. Durable results.
                 </p>
-                <p className="text-lg text-obsidian/80 leading-relaxed">
+                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
                   Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary and secondary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
                 </p>
-              </div>
-              
-              {/* Oak's Investment Focus - Vertical Bar */}
-              <div className="lg:col-span-1">
+                
+                {/* Oak's Investment Focus - Under text */}
                 <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
                   <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Oak's Investment Focus
@@ -98,6 +96,7 @@ const Investments = () => {
                   </div>
                 </div>
               </div>
+              
             </div>
           </div>
         </section>
