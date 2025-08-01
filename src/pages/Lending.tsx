@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 
 const Lending = () => {
@@ -152,85 +153,95 @@ const Lending = () => {
               </p>
             </div>
 
-            {/* Multifamily & Affordable Housing Programs */}
-            <div className="mb-16">
-              <h4 className="text-2xl font-medium text-silver-mist mb-8 text-center">
-                Multifamily & Affordable Housing Programs
-              </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Multifamily Properties</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 221(d)(4) & 220</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
+            {/* Tabbed Program Details */}
+            <Tabs defaultValue="multifamily" className="w-full">
+              <TabsList className="grid w-full grid-cols-2 bg-silver-mist/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg mb-8">
+                <TabsTrigger 
+                  value="multifamily" 
+                  className="text-silver-mist data-[state=active]:bg-accent-brown data-[state=active]:text-silver-mist font-medium"
+                >
+                  Multifamily & Affordable Housing
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="senior" 
+                  className="text-silver-mist data-[state=active]:bg-accent-brown data-[state=active]:text-silver-mist font-medium"
+                >
+                  Senior Housing & Healthcare
+                </TabsTrigger>
+              </TabsList>
+              
+              <TabsContent value="multifamily" className="mt-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Multifamily Properties</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 221(d)(4) & 220</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Multifamily Properties</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 223(f)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Properties</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 223(a)(7)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Loans for Capital Improvement</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
                 </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Multifamily Properties</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 223(f)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Properties</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 223(a)(7)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Loans for Capital Improvement</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-              </div>
-            </div>
+              </TabsContent>
 
-            {/* Senior Housing & Healthcare Programs */}
-            <div className="mb-16">
-              <h4 className="text-2xl font-medium text-silver-mist mb-8 text-center">
-                Senior Housing & Healthcare Programs
-              </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Senior Housing & Healthcare</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 232/221(d)(4)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
+              <TabsContent value="senior" className="mt-8">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Construction/Substantial Rehabilitation of Senior Housing & Healthcare</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 232/221(d)(4)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Senior Housing & Healthcare</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 232/223(f)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Senior Assets</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 232/223(a)(7)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
+                    <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Mortgage Insurance for Capital Improvements</h5>
+                    <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
+                    <p className="text-accent-brown text-sm font-medium">
+                      Click to learn more →
+                    </p>
+                  </div>
                 </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Acquisition or Refinance of Senior Housing & Healthcare</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 232/223(f)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Streamlined Refinance of Existing HUD-Financed Senior Assets</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 232/223(a)(7)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-                
-                <div className="space-y-3 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/40 hover:bg-silver-mist/15 transition-all duration-300 hover:scale-105 hover:shadow-xl cursor-pointer group">
-                  <h5 className="text-lg font-semibold text-silver-mist group-hover:text-accent-brown transition-colors duration-300">Supplemental Mortgage Insurance for Capital Improvements</h5>
-                  <p className="text-silver-mist/80 font-medium">HUD 241(a)</p>
-                  <p className="text-accent-brown text-sm font-medium">
-                    Click to learn more →
-                  </p>
-                </div>
-              </div>
-            </div>
+              </TabsContent>
+            </Tabs>
 
             {/* Available Properties */}
             <div className="text-center mb-12">
