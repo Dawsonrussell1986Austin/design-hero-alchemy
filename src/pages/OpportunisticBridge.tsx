@@ -37,6 +37,13 @@ const OpportunisticBridge = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Text Content */}
               <div>
+                {/* Program Badge */}
+                <div className="mb-4">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-800 border border-green-200">
+                    Opportunistic Bridge program
+                  </span>
+                </div>
+                
                 <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
                   Higher-Leverage Capital for Value-Add and Conversion Strategies
                 </h1>
