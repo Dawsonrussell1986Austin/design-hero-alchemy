@@ -76,7 +76,7 @@ const Leadership = () => {
               <div className="grid lg:grid-cols-2 gap-16 items-start">
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
-                  <h1 className="text-5xl lg:text-6xl font-display font-medium text-obsidian leading-tight">
+                  <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
                     Operational Expertise Backed by <span className="text-accent-brown">$218B in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal leading-relaxed">

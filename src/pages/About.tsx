@@ -35,7 +35,7 @@ const About = () => {
                 {/* Left Column - Text Content */}
                 <div className="space-y-8">
                   <div>
-                    <h1 className="text-5xl lg:text-6xl font-display font-medium text-obsidian mb-8 leading-tight">
+                    <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                       Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
                     </h1>
                     <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol max-w-lg leading-relaxed mb-6">
