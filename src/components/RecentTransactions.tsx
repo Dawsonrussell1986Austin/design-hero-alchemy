@@ -47,7 +47,7 @@ const RecentTransactions = () => {
           </div>
 
           {/* Transactions Grid - Smooth Scrolling Container */}
-          <div className="overflow-hidden mb-12">
+          <div className="overflow-hidden mb-12 pb-8">
             <div 
               className="flex transition-transform duration-500 ease-in-out"
               style={{ 
@@ -57,7 +57,7 @@ const RecentTransactions = () => {
               {Array.from({ length: totalPages }, (_, pageIndex) => (
                 <div 
                   key={pageIndex}
-                  className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0 items-stretch"
+                  className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 w-full flex-shrink-0 items-stretch pb-4"
                 >
                   {featuredTransactions
                     .slice(pageIndex * transactionsPerPage, (pageIndex + 1) * transactionsPerPage)
