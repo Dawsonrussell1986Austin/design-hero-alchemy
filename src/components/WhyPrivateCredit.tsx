@@ -1,14 +1,6 @@
 const WhyPrivateCredit = () => {
   return (
     <div className="relative z-10 bg-silver-mist py-20">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <img 
-          src="/lovable-uploads/77fe75fc-efb2-481d-9697-6b2d2b09997f.png"
-          alt="Geometric cityscape with clouds"
-          className="w-full h-full object-cover opacity-30"
-        />
-      </div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           
