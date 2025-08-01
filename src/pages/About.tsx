@@ -44,11 +44,6 @@ const About = () => {
                       We don't chase headlines—we create income strategies that prioritize downside protection, predictability, and trust.
                     </p>
                     
-                    <p className="text-lg lg:text-xl text-deep-petrol max-w-lg leading-relaxed font-light">
-                      With more than 150 years of combined experience across lending, capital markets, and structured finance, 
-                      our team has navigated multiple real estate cycles. Collectively, we've structured over $5 billion in 
-                      bridge loans and executed more than $18 billion in total transactions.
-                    </p>
                   </div>
                   
                   {/* Experience Stats */}
