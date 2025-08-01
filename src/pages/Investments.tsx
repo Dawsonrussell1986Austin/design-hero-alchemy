@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Shield, TrendingUp, DollarSign, Award, BarChart3 } from "lucide-react";
 
 const Investments = () => {
   return (
@@ -82,48 +83,64 @@ const Investments = () => {
       {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
-        {/* What You Get Section */}
+        {/* Bento Box Section */}
         <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-12 text-center">
-                What You Get with Oak
-              </h2>
               
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="space-y-4 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown">Asset-backed Collateral</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Asset-backed collateral secured with a mortgage or first deed trust.
-                  </p>
+              {/* True Bento Box Grid */}
+              <div className="grid grid-cols-4 grid-rows-3 gap-4 h-[600px]">
+                {/* Asset-backed Collateral - Large */}
+                <div className="col-span-2 row-span-2 p-8 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="flex items-start space-x-4 mb-4">
+                    <Shield className="h-8 w-8 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <div>
+                      <h3 className="text-2xl font-bold text-silver-mist mb-3">Asset-backed Collateral</h3>
+                      <p className="text-silver-mist/80 leading-relaxed text-lg">
+                        Asset-backed collateral secured with a mortgage or first deed trust, providing tangible security for your investment.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                
-                <div className="space-y-4 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown">Institutional Disciplined Investment Decisions</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Rigorous underwriting and strategic asset selection processes.
-                  </p>
+
+                {/* Predictable Income - Medium */}
+                <div className="col-span-2 row-span-1 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="flex items-center space-x-4">
+                    <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <div>
+                      <h3 className="text-xl font-bold text-silver-mist mb-2">Predictable Income Streams</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">Contract-based income streams designed for consistency.</p>
+                    </div>
+                  </div>
                 </div>
-                
-                <div className="space-y-4 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown">Predictable Income Streams</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Contract-based income streams designed for consistency.
-                  </p>
+
+                {/* Downside Protection - Medium */}
+                <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="text-center">
+                    <TrendingUp className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-silver-mist mb-2">Downside Protection</h3>
+                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and low LTV ratios.</p>
+                  </div>
                 </div>
-                
-                <div className="space-y-4 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30">
-                  <h3 className="text-xl font-medium text-accent-brown">Downside Investment Protections</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Senior position and low loan-to-value ratios for enhanced protection.
-                  </p>
+
+                {/* Institutional Discipline - Medium */}
+                <div className="col-span-1 row-span-1 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="text-center">
+                    <Award className="h-6 w-6 text-garnet-edge mx-auto mb-2 group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-silver-mist mb-2">Institutional Discipline</h3>
+                    <p className="text-silver-mist/80 text-sm leading-relaxed">Rigorous underwriting standards.</p>
+                  </div>
                 </div>
-                
-                <div className="space-y-4 p-6 bg-silver-mist/10 backdrop-blur-sm rounded-lg border border-accent-brown/30 md:col-span-2 lg:col-span-2">
-                  <h3 className="text-xl font-medium text-accent-brown">Market Cycle Resilience</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Investments engineered to weather market cycles through disciplined structuring and risk management.
-                  </p>
+
+                {/* Market Cycle Resilience - Large */}
+                <div className="col-span-2 row-span-1 p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group">
+                  <div className="flex items-center space-x-4">
+                    <BarChart3 className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <div>
+                      <h3 className="text-xl font-bold text-silver-mist mb-2">Market Cycle Resilience</h3>
+                      <p className="text-silver-mist/80 leading-relaxed">Investments engineered to weather market cycles through disciplined structuring.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
