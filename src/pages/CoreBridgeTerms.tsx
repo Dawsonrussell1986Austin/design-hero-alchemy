@@ -26,52 +26,48 @@ const CoreBridgeTerms = () => {
         <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
-              {/* Text Content */}
-              <div>
-                {/* Program Badge */}
-                <div className="mb-4">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                    Bridge Loans
-                  </span>
-                </div>
-                
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  Core Bridge
-                </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  Floating-rate bridge lending program for institutional-quality commercial real estate assets
-                </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                  Designed for assets that are in transition, are currently cash flowing (1.00x or greater) and require additional funds/time to reach stabilization.
-                </p>
-
-                {/* Why Consider This Program */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
-                    Why Consider This Program?
-                  </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You're seeking short-term funding to rehabilitate, reposition or stabilize an asset</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need financing to complete a property acquisition or redevelopment project</p>
-                    </div>
-                    <div className="flex items-start space-x-3">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need flexible, non-permanent capital to implement the renovation and stabilization of a core commercial real estate asset</p>
-                    </div>
-                  </div>
-                </div>
-
+            <div className="max-w-4xl mx-auto">
+              {/* Program Badge */}
+              <div className="mb-4">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                  Bridge Loans
+                </span>
               </div>
               
-              {/* Download Button & Navigation */}
-              <div className="space-y-6">
-                <div className="bg-obsidian text-center p-8 rounded-lg">
+              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                Core Bridge
+              </h1>
+              <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                Floating-rate bridge lending program for institutional-quality commercial real estate assets
+              </p>
+              <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                Designed for assets that are in transition, are currently cash flowing (1.00x or greater) and require additional funds/time to reach stabilization.
+              </p>
+
+              {/* Why Consider This Program */}
+              <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
+                <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                  Why Consider This Program?
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-obsidian/80 leading-relaxed">You're seeking short-term funding to rehabilitate, reposition or stabilize an asset</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-obsidian/80 leading-relaxed">You need financing to complete a property acquisition or redevelopment project</p>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-sm text-obsidian/80 leading-relaxed">You need flexible, non-permanent capital to implement the renovation and stabilization of a core commercial real estate asset</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Download Button */}
+              <div className="text-center mb-12">
+                <div className="bg-obsidian inline-block p-8 rounded-lg">
                   <h2 className="text-2xl font-display font-medium text-silver-mist mb-4">
                     Core Bridge
                   </h2>
@@ -82,7 +78,6 @@ const CoreBridgeTerms = () => {
                     Download Flyer
                   </Button>
                 </div>
-
               </div>
             </div>
 
