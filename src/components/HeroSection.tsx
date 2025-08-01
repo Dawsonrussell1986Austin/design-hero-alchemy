@@ -19,19 +19,19 @@ const HeroSection = () => {
           <div className="space-y-8">
             {/* Main Headline */}
             <div className="space-y-2">
-              <h1 className="text-5xl lg:text-7xl font-light text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
+              <h1 className="text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
                 Where Strength
               </h1>
-              <h1 className="text-5xl lg:text-7xl font-light leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
+              <h1 className="text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
                 <span className="text-silver-mist">Meets</span>
               </h1>
-              <h1 className="text-5xl lg:text-7xl font-light leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
+              <h1 className="text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
                 <span className="text-silver-mist">Stewardship.</span>
               </h1>
             </div>
             
             {/* Subtitle */}
-            <p className="text-lg lg:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-light animate-fade-in" style={{ animationDelay: "0.6s" }}>
+            <p className="text-lg lg:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal animate-fade-in" style={{ animationDelay: "0.6s" }}>
               Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
             </p>
             
@@ -40,7 +40,7 @@ const HeroSection = () => {
               <Link to="/lending">
                 <Button 
                   size="lg" 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-accent-brown/20"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-accent-brown/20"
                 >
                   Borrowers
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-silver-mist bg-silver-mist/10 text-white hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
+                  className="border-2 border-silver-mist bg-silver-mist/10 text-white hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
                 >
                   Investments
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -63,27 +63,27 @@ const HeroSection = () => {
           <div className="space-y-6">
             {/* 150+ Years */}
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1s" }}>
-              <div className="text-5xl font-light text-silver-mist mb-2">150+</div>
-              <div className="text-sm text-silver-mist/60 uppercase tracking-wide">
+              <div className="text-4xl font-display font-medium text-silver-mist mb-3">150+</div>
+              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 YEARS OF EXPERIENCE
               </div>
             </div>
             
             {/* $5B Bridge */}
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.2s" }}>
-              <div className="text-4xl font-light text-silver-mist mb-2">$5B</div>
-              <div className="text-sm text-silver-mist/60 uppercase tracking-wide mb-1">
+              <div className="text-4xl font-display font-medium text-silver-mist mb-3">$5B</div>
+              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-2">
                 OF BRIDGE COMPLETED
               </div>
-              <div className="text-xs text-[#b1beab]/80">
+              <div className="text-xs font-body text-[#b1beab]/80">
                 in the Last 10 Years
               </div>
             </div>
             
             {/* $18B Transactions */}
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.4s" }}>
-              <div className="text-4xl font-light text-silver-mist mb-2">$210B</div>
-              <div className="text-sm text-silver-mist/60 uppercase tracking-wide">
+              <div className="text-4xl font-display font-medium text-silver-mist mb-3">$210B</div>
+              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 CLOSED TRANSACTIONS
               </div>
             </div>

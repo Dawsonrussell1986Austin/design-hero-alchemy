@@ -45,13 +45,13 @@ const Lending = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Structured Capital Solutions for Commercial Real Estate
                 </h1>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-base font-body text-obsidian/80 leading-relaxed mb-6">
                   Oak offers structured capital solutions for commercial real estate borrowers nationwide. Our national lending platform combines efficiency and innovation with institutional-grade standards and a comprehensive underwriting discipline.
                 </p>
-                <p className="text-lg text-obsidian/80 leading-relaxed">
+                <p className="text-base font-body text-obsidian/80 leading-relaxed">
                   We provide both short-term private bridge loans and long-term, government-backed FHA/HUD-insured mortgages—individually or in a seamless Bridge-to-FHA structure.
                 </p>
               </div>
