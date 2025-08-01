@@ -75,12 +75,12 @@ const Investments = () => {
                 </div>
               </div>
               
-              {/* Image with Overlay Cards */}
-              <div className="relative">
+              {/* Image with Overlay Cards - Expanded Height */}
+              <div className="relative h-full">
                 <img 
                   src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png"
                   alt="Investment platform illustration"
-                  className="w-full h-auto rounded-lg shadow-xl"
+                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
                 />
                 
                 {/* Glassmorphic Overlay Cards */}
