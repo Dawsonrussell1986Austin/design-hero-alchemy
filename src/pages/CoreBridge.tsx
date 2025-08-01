@@ -56,15 +56,15 @@ const CoreBridge = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Flexible Bridge Financing for Institutional-Quality Assets in Transition
                 </h1>
-                <p className="text-lg text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Oak's Core Bridge lending program is designed for income-producing commercial real estate assets that are in transition and require short-term capital to reach stabilization. Ideal for borrowers with assets that are already cash-flowing (1.00x DSCR or greater), this program offers a streamlined path to stabilizing, refinancing, or recapitalizing a property without sacrificing speed or structure.
                 </p>
                 
                 {/* Who Should Consider - Integrated */}
-                <h2 className="text-2xl font-bold text-obsidian mb-6">
+                <h2 className="text-xl font-display font-medium text-obsidian mb-6">
                   Who Should Consider This Program?
                 </h2>
                 <div className="space-y-4">
@@ -110,10 +110,10 @@ const CoreBridge = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
                 <div className="mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4">
+                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
                     Access Core Bridge Details
                   </h2>
-                  <p className="text-lg text-obsidian/80 leading-relaxed">
+                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed">
                     Get detailed loan basics, terms, fees, and special considerations for our Core Bridge program. 
                     Enter your information below to access the complete program details.
                   </p>
