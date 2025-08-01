@@ -242,14 +242,14 @@ const Offerings = () => {
                   size="lg"
                   className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                 >
-                  Schedule Consultation
+                  Investor Login
                 </Button>
                 <Button 
                   variant="outline"
                   size="lg"
                   className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
                 >
-                  Download Materials
+                  Schedule a Call
                 </Button>
               </div>
             </div>
