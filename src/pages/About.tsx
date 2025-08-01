@@ -35,15 +35,15 @@ const About = () => {
                 {/* Left Column - Text Content */}
                 <div className="space-y-8">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+                    <h1 className="text-5xl lg:text-6xl font-display font-medium text-obsidian mb-8 leading-tight">
                       Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
                     </h1>
-                    <p className="text-base font-body text-deep-petrol max-w-lg leading-relaxed mb-6">
+                    <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol max-w-lg leading-relaxed mb-6">
                       Oak is a <span className="font-semibold">premier real estate credit lender</span> with our core business focus on <span className="font-semibold">senior secured loans</span> 
                       backed by income-producing commercial properties. Our lending philosophy is grounded in <span className="font-semibold">real assets, an institutional discipline, and a commitment to long-term capital protection</span>.
                     </p>
                     
-                    <p className="text-base font-body text-deep-petrol max-w-lg leading-relaxed mb-6">
+                    <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol max-w-lg leading-relaxed mb-6">
                       In a private credit landscape where polish often outpaces performance, Oak delivers <span className="font-semibold">industry leading expertise</span> in a highly inefficient, fragmented and unserved sector of the market. 
                       We don't chase headlines—we create income strategies that prioritize <span className="font-semibold">downside protection, predictability, and trust</span>.
                     </p>
