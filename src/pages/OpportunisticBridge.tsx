@@ -51,8 +51,8 @@ const OpportunisticBridge = () => {
               <div>
                 {/* Program Badge */}
                 <div className="mb-4">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-garnet-edge/10 text-garnet-edge border border-garnet-edge/20">
-                    Opportunistic Bridge program
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                    Opportunistic Bridge Program
                   </span>
                 </div>
                 
