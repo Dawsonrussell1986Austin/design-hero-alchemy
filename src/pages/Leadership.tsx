@@ -151,7 +151,7 @@ const Leadership = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
+              <h2 className="text-4xl lg:text-5xl font-light text-silver-mist mb-8">
                 Meet the Team
               </h2>
               <p className="text-lg text-silver-mist/90 leading-relaxed max-w-4xl mx-auto">
