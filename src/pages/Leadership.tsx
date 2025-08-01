@@ -77,7 +77,7 @@ const Leadership = () => {
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
                   <h1 className="text-5xl lg:text-6xl font-light text-obsidian leading-tight">
-                    Leadership <span className="text-accent-brown">Team</span>
+                    Operational Expertise Backed by <span className="text-accent-brown">$218B in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl leading-relaxed">
                     Oak's leadership team brings unmatched experience and depth across our real estate lending operations, 
