@@ -151,7 +151,7 @@ const Leadership = () => {
       </div>
 
       {/* Team Cards */}
-      <div className="py-20 bg-obsidian/30 backdrop-blur-sm">
+      <div className="py-20 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             
