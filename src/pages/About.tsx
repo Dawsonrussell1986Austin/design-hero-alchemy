@@ -86,23 +86,74 @@ const About = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 bg-white/40">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto text-center">
-              <h2 className="text-4xl lg:text-5xl font-light text-obsidian mb-12 leading-tight">
-                Our <span className="text-accent-brown">Philosophy</span>
-              </h2>
-              
-              <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-12 mb-12">
-                <p className="text-xl text-deep-petrol leading-relaxed font-light mb-6">
-                  At Oak, integrity isn't a buzzword—it's a core value with a system to guide our growth. 
-                  It drives how we lend to our borrowers, how we service our loans and how we report to our 
-                  investors while servicing as a principal of how we treat our partners.
-                </p>
-                <p className="text-2xl font-light text-accent-brown leading-relaxed">
-                  We're strong because we're structured. Dependable because we're disciplined. 
-                  Trusted for our consistent execution, especially when stakes are highest.
-                </p>
+        <section className="py-20 relative overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 opacity-30">
+            <img 
+              src="/lovable-uploads/674a9da9-1494-4665-8600-bd2709ef907b.png"
+              alt="Abstract architectural design"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-silver-mist/90 via-silver-mist/70 to-silver-mist/90"></div>
+          </div>
+          
+          <div className="container mx-auto px-6 relative z-10">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                
+                {/* Left Column - Content */}
+                <div className="space-y-8">
+                  <h2 className="text-4xl lg:text-5xl font-light text-obsidian leading-tight">
+                    Our <span className="text-accent-brown">Philosophy</span>
+                  </h2>
+                  
+                  <div className="space-y-6">
+                    <p className="text-xl text-deep-petrol leading-relaxed font-light">
+                      At Oak, integrity isn't a buzzword—it's a <span className="font-semibold">core value with a system</span> to guide our growth. 
+                      It drives how we lend to our borrowers, how we service our loans and how we report to our 
+                      investors while servicing as a principal of how we treat our partners.
+                    </p>
+                    
+                    <div className="bg-white/80 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8">
+                      <p className="text-2xl font-light text-accent-brown leading-relaxed text-center">
+                        We're strong because we're structured. Dependable because we're disciplined. 
+                        Trusted for our consistent execution, especially when stakes are highest.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right Column - Visual Element */}
+                <div className="relative">
+                  <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
+                    <div className="space-y-8">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <div className="w-8 h-8 bg-accent-brown rounded-full"></div>
+                        </div>
+                        <h3 className="text-xl font-light text-obsidian mb-3">Structured</h3>
+                        <p className="text-deep-petrol text-sm">Systems and processes that ensure consistency</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-deep-petrol/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <div className="w-8 h-8 bg-deep-petrol rounded-full"></div>
+                        </div>
+                        <h3 className="text-xl font-light text-obsidian mb-3">Disciplined</h3>
+                        <p className="text-deep-petrol text-sm">Unwavering commitment to our principles</p>
+                      </div>
+                      
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-garnet-edge/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <div className="w-8 h-8 bg-garnet-edge rounded-full"></div>
+                        </div>
+                        <h3 className="text-xl font-light text-obsidian mb-3">Trusted</h3>
+                        <p className="text-deep-petrol text-sm">Reliable execution when it matters most</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
