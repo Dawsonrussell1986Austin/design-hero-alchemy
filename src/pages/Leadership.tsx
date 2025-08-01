@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
 
@@ -51,28 +51,43 @@ const Leadership = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen">
       {/* Navigation */}
-      <Navigation />
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
       
-      {/* Simple Page Header */}
-      <SimplePageHeader title="Team" />
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Our Firm" },
+          { label: "Leadership" }
+        ]}
+        quickLinks={[
+          { label: "About us", href: "/about" }
+        ]}
+      />
 
-      {/* Main Content Section */}
-      <div className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto space-y-8 text-silver-mist/90">
-            <p className="text-lg leading-relaxed">
-              Oak's leadership team brings unmatched experience and depth across our real estate lending operations, 
-              investment management, and the company's long-term strategic initiatives. We are seasoned operators, 
-              not theorists—practitioners who have executed more than $218 billion over decades in transactions across 
-              cycles, geographies, and asset classes.
-            </p>
-            
-            <p className="text-lg leading-relaxed">
-              We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined 
-              mindset and a shared commitment to protect investor capital.
-            </p>
+      {/* Main Content Section - Cream Background */}
+      <div className="bg-silver-mist">
+        <div className="py-20">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-4xl mx-auto space-y-8 text-obsidian">
+              <h1 className="text-5xl lg:text-6xl font-light text-obsidian mb-8 leading-tight">
+                Leadership <span className="text-accent-brown">Team</span>
+              </h1>
+              <p className="text-lg lg:text-xl leading-relaxed">
+                Oak's leadership team brings unmatched experience and depth across our real estate lending operations, 
+                investment management, and the company's long-term strategic initiatives. We are seasoned operators, 
+                not theorists—practitioners who have executed more than $218 billion over decades in transactions across 
+                cycles, geographies, and asset classes.
+              </p>
+              
+              <p className="text-lg lg:text-xl leading-relaxed">
+                We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined 
+                mindset and a shared commitment to protect investor capital.
+              </p>
+            </div>
           </div>
         </div>
       </div>
