@@ -56,7 +56,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Market Opportunity</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                Restrictive banking regulations, legislative requirements, increased capital reserve ratios have created a unique opportunity for experienced private credit lenders to generate highly attractive returns with lower levels of risk.
+                <strong>Restrictive banking regulations</strong>, legislative requirements, increased capital reserve ratios have created a unique opportunity for experienced private credit lenders to generate <strong>highly attractive returns</strong> with <strong>lower levels of risk</strong>.
               </p>
             </div>
 
@@ -69,10 +69,10 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Risk Mitigation</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm mb-4">
-                Deal structure & comprehensive institutional credit underwriting mitigates risk and protects against the impairment of capital.
+                <strong>Deal structure</strong> & comprehensive institutional credit underwriting mitigates risk and protects against the <strong>impairment of capital</strong>.
               </p>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                The lending opportunities are secured by hard commercial real estate assets that carry a significant amount of intrinsic value with down-side protection during times of market distress.
+                The lending opportunities are secured by <strong>hard commercial real estate assets</strong> that carry a significant amount of intrinsic value with <strong>down-side protection</strong> during times of market distress.
               </p>
             </div>
 
@@ -85,7 +85,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Diversification</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                Exposure to the asset class and strategy can enhance the diversification and risk-efficiency while reducing the volatility within a portfolio through the delivery of an uncorrelated return stream.
+                Exposure to the asset class and strategy can enhance the <strong>diversification and risk-efficiency</strong> while reducing the volatility within a portfolio through the delivery of an <strong>uncorrelated return stream</strong>.
               </p>
             </div>
 
@@ -98,7 +98,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Income Oriented</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                The strategy is designed to generate stable, consistent cash flows for investors seeking reliable income with up-side capture.
+                The strategy is designed to generate <strong>stable, consistent cash flows</strong> for investors seeking <strong>reliable income</strong> with up-side capture.
               </p>
             </div>
 
@@ -111,7 +111,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Performance</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                History and performance points to a higher yield premium through exposure to private credit CRE, which can contribute to the optimization of a portfolio.
+                History and performance points to a <strong>higher yield premium</strong> through exposure to private credit CRE, which can contribute to the <strong>optimization of a portfolio</strong>.
               </p>
             </div>
 
@@ -124,7 +124,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-xl font-serif font-medium text-obsidian">Our Strategy</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-sans text-sm">
-                Our strategy is designed to unlock value in underserved niches while prioritizing downside protection, income consistency, and performance.
+                Our strategy is designed to unlock value in <strong>underserved niches</strong> while prioritizing <strong>downside protection</strong>, income consistency, and performance.
               </p>
             </div>
           </div>
