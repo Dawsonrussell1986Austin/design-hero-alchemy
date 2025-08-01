@@ -12,10 +12,15 @@ const About = () => {
       </div>
       
       {/* Breadcrumb */}
-      <Breadcrumb items={[
-        { label: "Our Firm", href: "/" },
-        { label: "About us" }
-      ]} />
+      <Breadcrumb 
+        items={[
+          { label: "Our Firm" },
+          { label: "About us" }
+        ]}
+        quickLinks={[
+          { label: "Leadership", href: "/leadership" }
+        ]}
+      />
       
       {/* Main Content - Cream Background */}
       <div className="bg-silver-mist">
