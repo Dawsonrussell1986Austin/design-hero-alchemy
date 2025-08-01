@@ -54,37 +54,33 @@ const Investments = () => {
                 />
               </div>
             </div>
+
+            {/* Investment Opportunities Glassmorphic Cards */}
+            <div className="mt-16">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl lg:text-3xl font-bold text-obsidian mb-4">
+                  Investment Opportunities For
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-obsidian">RIA & Family Offices</h3>
+                </div>
+                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-obsidian">Foundations and Endowments</h3>
+                </div>
+                <div className="text-center p-6 bg-white/30 backdrop-blur-lg border border-white/20 rounded-lg shadow-xl hover:bg-white/40 transition-all duration-300">
+                  <h3 className="text-lg font-semibold text-obsidian">Institutional Investors & Middle-Market Allocators</h3>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
       
       {/* Rest of content with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-
-        {/* Target Investors Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-                  Investment Opportunities For
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="text-center p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist mb-3">RIA & Family Offices</h3>
-                </div>
-                <div className="text-center p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist mb-3">Foundations and Endowments</h3>
-                </div>
-                <div className="text-center p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist mb-3">Institutional Investors & Middle-Market Allocators</h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* What You Get Section */}
         <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
