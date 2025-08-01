@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingUp, DollarSign, Award, BarChart3, Lock, Activity, Target } from "lucide-react";
+import { Shield, TrendingUp, DollarSign, Award, BarChart3, Lock, Activity, Target, Building, CreditCard, Settings } from "lucide-react";
 
 const Investments = () => {
   return (
@@ -282,22 +282,31 @@ const Investments = () => {
               </div>
 
               <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist">Diversified Credit Funds</h3>
+                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Building className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-xl font-medium text-silver-mist">Diversified Credit Funds</h3>
+                  </div>
                   <p className="text-silver-mist/80 leading-relaxed">
                     Targeting CRE debt across multiple markets and property types
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist">Income-Generating Structured Credit</h3>
+                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <CreditCard className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-xl font-medium text-silver-mist">Income-Generating Structured Credit</h3>
+                  </div>
                   <p className="text-silver-mist/80 leading-relaxed">
                     Investments designed for consistent cash flow generation
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-xl font-medium text-silver-mist">Custom Investment Vehicles</h3>
+                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Settings className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-xl font-medium text-silver-mist">Custom Investment Vehicles</h3>
+                  </div>
                   <p className="text-silver-mist/80 leading-relaxed">
                     Tailored to specific allocator goals and requirements
                   </p>
@@ -314,7 +323,7 @@ const Investments = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
                 >
                   Request Investment Materials
                 </Button>
