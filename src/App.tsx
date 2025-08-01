@@ -6,6 +6,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
 import BridgeLoans from "./pages/BridgeLoans";
+import FhaHudLoans from "./pages/FhaHudLoans";
 import Investments from "./pages/Investments";
 import Offerings from "./pages/Offerings";
 import Contact from "./pages/Contact";
@@ -36,6 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/lending" element={<Lending />} />
         <Route path="/lending/bridge" element={<BridgeLoans />} />
+        <Route path="/lending/fha-hud" element={<FhaHudLoans />} />
         <Route path="/investments" element={<Investments />} />
         <Route path="/offerings" element={<Offerings />} />
         <Route path="/contact" element={<Contact />} />
