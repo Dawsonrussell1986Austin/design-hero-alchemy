@@ -67,7 +67,7 @@ const Lending = () => {
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
                   <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-accent-brown transition-colors duration-300">
-                    Bridge Loans
+                    Bridge Loan Programs
                   </h2>
                   <p className="text-lg font-body font-medium text-accent-brown mb-4">
                     Short-term private financing for acquisition, renovation, and stabilization
@@ -100,7 +100,7 @@ const Lending = () => {
                   onClick={() => window.location.href = "/lending/bridge"}
                   className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
                 >
-                  Explore Bridge Loans
+                  Explore Bridge Loan Programs
                 </Button>
               </div>
 

@@ -98,36 +98,20 @@ const Navigation = () => {
                     Overview
                   </a>
                   <a 
-                    href="/lending/core-bridge" 
+                    href="/lending/bridge" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
                       scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
-                    Core Bridge
+                    Bridge Loan Programs
                   </a>
                   <a 
-                    href="/lending/core-plus-bridge" 
+                    href="/lending/fha-hud" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
                       scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
-                    Core-Plus Bridge
-                  </a>
-                  <a 
-                    href="/lending/opportunistic-bridge" 
-                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
-                    }`}
-                  >
-                    Opportunistic Bridge
-                  </a>
-                  <a 
-                    href="/lending/participating-bridge" 
-                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
-                    }`}
-                  >
-                    Participating Bridge
+                    FHA/HUD Loan Programs
                   </a>
                 </div>
               </div>
