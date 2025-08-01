@@ -1,19 +1,36 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 const CoreBridge = () => {
-  const navigate = useNavigate();
-  
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen">
       {/* Navigation */}
-      <Navigation />
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
+      
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Lending" },
+          { label: "Core Bridge" }
+        ]}
+        quickLinks={[
+          { label: "Overview", href: "/lending" },
+          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
+          { label: "Opportunistic Bridge", href: "/lending/opportunistic-bridge" },
+          { label: "Participating Bridge", href: "/lending/participating-bridge" }
+        ]}
+      />
+
+      {/* Rest of page with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 px-6">
+      <section className="relative pt-20 pb-20 px-6">
         {/* Background image */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -21,17 +38,6 @@ const CoreBridge = () => {
             alt="Urban cityscape with geometric architecture"
             className="w-full h-full object-cover opacity-15"
           />
-        </div>
-        {/* Back Button */}
-        <div className="container mx-auto mb-8 relative z-10">
-          <Button 
-            variant="ghost"
-            className="text-silver-mist hover:text-accent-brown transition-all duration-300"
-            onClick={() => navigate("/lending")}
-          >
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Back to Lending Programs
-          </Button>
         </div>
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -311,13 +317,15 @@ const CoreBridge = () => {
                 variant="outline"
                 size="lg"
                 className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-                onClick={() => navigate("/lending")}
+                onClick={() => window.location.href = "/lending"}
               >
                 View All Programs
               </Button>
             </div>
           </div>
         </div>
+      </div>
+
       </div>
 
       {/* Footer */}

@@ -1,6 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SimplePageHeader from "@/components/SimplePageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -8,22 +8,30 @@ import { Link } from "react-router-dom";
 const OpportunisticBridge = () => {
   return (
     <div className="min-h-screen">
-      <Navigation />
+      {/* Navigation */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
       
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Lending" },
+          { label: "Opportunistic Bridge" }
+        ]}
+        quickLinks={[
+          { label: "Overview", href: "/lending" },
+          { label: "Core Bridge", href: "/lending/core-bridge" },
+          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
+          { label: "Participating Bridge", href: "/lending/participating-bridge" }
+        ]}
+      />
+
       {/* Cream background for content */}
-      <div className="bg-silver-mist pt-24">
+      <div className="bg-silver-mist">
         {/* Content Section with Image */}
-        <section className="container mx-auto px-6 pb-16">
+        <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
-            {/* Back Button */}
-            <div className="mb-6">
-              <Link to="/lending">
-                <Button variant="ghost" className="text-obsidian hover:bg-obsidian/10 p-0">
-                  <ArrowLeft className="mr-2 h-4 w-4" />
-                  Back to Lending Programs
-                </Button>
-              </Link>
-            </div>
             
             <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
               {/* Text Content */}

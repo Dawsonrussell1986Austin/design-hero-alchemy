@@ -1,23 +1,33 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const ParticipatingBridge = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
-      <Navigation />
-      
-      {/* Back Button */}
-      <div className="container mx-auto px-6 pt-32">
-        <Link to="/lending">
-          <Button variant="outline" className="mb-8 bg-white/10 hover:bg-white/20 border-silver-mist/30 text-silver-mist">
-            <ArrowLeft className="mr-2 h-4 w-4" />
-            Back to Lending Programs
-          </Button>
-        </Link>
+    <div className="min-h-screen">
+      {/* Navigation */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
       </div>
+      
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Lending" },
+          { label: "Participating Bridge" }
+        ]}
+        quickLinks={[
+          { label: "Overview", href: "/lending" },
+          { label: "Core Bridge", href: "/lending/core-bridge" },
+          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
+          { label: "Opportunistic Bridge", href: "/lending/opportunistic-bridge" }
+        ]}
+      />
+
+      {/* Rest of page with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
       {/* Hero Section */}
       <section className="relative container mx-auto px-6 pb-16">
@@ -225,6 +235,9 @@ const ParticipatingBridge = () => {
         </div>
       </section>
 
+      </div>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
