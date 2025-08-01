@@ -2,6 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import { Shield, TrendingDown, BarChart } from "lucide-react";
 
 const About = () => {
   return (
@@ -181,22 +182,37 @@ const About = () => {
               </div>
               
               <div className="grid md:grid-cols-3 gap-8">
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-2xl font-light text-obsidian mb-6">Control and Stability</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
+                      <Shield className="h-6 w-6 text-accent-brown" />
+                    </div>
+                    <h3 className="text-2xl font-light text-obsidian">Control and Stability</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Discipline is a strong predictor of success, which in turn drives stability across market volatility.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-2xl font-light text-obsidian mb-6">Reduced Risk-Taking</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-deep-petrol/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-deep-petrol/20 transition-colors duration-300">
+                      <TrendingDown className="h-6 w-6 text-deep-petrol" />
+                    </div>
+                    <h3 className="text-2xl font-light text-obsidian">Reduced Risk-Taking</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Disciplined organizations are less likely to engage in impulsive strategies that threaten stability.
                   </p>
                 </div>
                 
-                <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 transition-all duration-300">
-                  <h3 className="text-2xl font-light text-obsidian mb-6">Predictability</h3>
+                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <div className="flex items-center mb-6">
+                    <div className="w-12 h-12 bg-garnet-edge/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                      <BarChart className="h-6 w-6 text-garnet-edge" />
+                    </div>
+                    <h3 className="text-2xl font-light text-obsidian">Predictability</h3>
+                  </div>
                   <p className="text-deep-petrol leading-relaxed font-light">
                     Consistent habits and behaviors lead to greater reliability among investors and borrowers.
                   </p>
