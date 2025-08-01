@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingUp, DollarSign, Award, BarChart3 } from "lucide-react";
+import { Shield, TrendingUp, DollarSign, Award, BarChart3, Lock, Activity, Target } from "lucide-react";
 
 const Investments = () => {
   return (
@@ -152,62 +152,79 @@ const Investments = () => {
             </div>
           </div>
         </section>
-
-        {/* Why Real Estate Credit Section */}
+      </div>
+      
+      {/* Income Strategies Section - Cream Background */}
+      <div className="bg-silver-mist">
         <section className="py-20">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
-                  Why Real Estate Credit
-                </h2>
-                <p className="text-xl text-accent-brown font-medium">
+                <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-6">
                   Income strategies rooted in structure—not speculation.
-                </p>
-                <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto mt-6">
+                </h2>
+                <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
                   Private real estate credit offers unique benefits over corporate credit and equity strategies:
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Collateral Security</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Lock className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Collateral Security</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Loans backed by income-producing real estate
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Cash Flow Predictability</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Cash Flow Predictability</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Structured payments and interest income
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Low Volatility</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Activity className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Low Volatility</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Less correlated to public market swings
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Risk Efficiency</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Risk Efficiency</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Strong collateralization and underwriting discipline
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Inflation Resilience</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <TrendingUp className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Inflation Resilience</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Real estate's natural hedge against inflation
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg">
-                  <h3 className="text-lg font-medium text-silver-mist">Asset Appreciation Potential</h3>
-                  <p className="text-silver-mist/80 leading-relaxed">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Target className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
+                    <h3 className="text-lg font-bold text-obsidian">Asset Appreciation Potential</h3>
+                  </div>
+                  <p className="text-obsidian/80 leading-relaxed">
                     Exposure to value growth alongside income
                   </p>
                 </div>
@@ -215,6 +232,10 @@ const Investments = () => {
             </div>
           </div>
         </section>
+      </div>
+
+      {/* Rest of content with dark background */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
 
         {/* Investment Focus Section */}
         <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
