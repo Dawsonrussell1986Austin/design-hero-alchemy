@@ -1,6 +1,7 @@
 
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
+import RecentTransactions from "./RecentTransactions";
 import WhyPrivateCredit from "./WhyPrivateCredit";
 import OurEdge from "./OurEdge";
 import RecentNews from "./RecentNews";
@@ -14,6 +15,9 @@ const Hero = () => {
       
       {/* Main hero content */}
       <HeroSection />
+
+      {/* Recent Transactions Section */}
+      <RecentTransactions />
 
       {/* Why Private Credit Section */}
       <WhyPrivateCredit />
