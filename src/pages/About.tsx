@@ -45,28 +45,9 @@ const About = () => {
                     </p>
                     
                   </div>
-                  
-                  {/* Experience Stats */}
-                  <div className="bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8">
-                    <h3 className="text-2xl font-light text-obsidian mb-6">Experience That Matters</h3>
-                    <div className="grid grid-cols-3 gap-6 text-center">
-                      <div>
-                        <div className="text-3xl font-light text-accent-brown mb-2">150+</div>
-                        <div className="text-deep-petrol/80 text-sm">Years Combined Experience</div>
-                      </div>
-                      <div>
-                        <div className="text-3xl font-light text-accent-brown mb-2">$5B+</div>
-                        <div className="text-deep-petrol/80 text-sm">Bridge Loans Structured</div>
-                      </div>
-                      <div>
-                        <div className="text-3xl font-light text-accent-brown mb-2">$210B+</div>
-                        <div className="text-deep-petrol/80 text-sm">Total Transactions</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 
-                {/* Right Column - Image */}
+                {/* Right Column - Image with Overlay Card */}
                 <div className="relative">
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <img 
@@ -75,6 +56,25 @@ const About = () => {
                       className="w-full h-[600px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
+                    
+                    {/* Experience Stats Overlay Card */}
+                    <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-6 shadow-xl max-w-sm">
+                      <h3 className="text-xl font-light text-obsidian mb-4">Experience That Matters</h3>
+                      <div className="grid grid-cols-1 gap-4 text-center">
+                        <div>
+                          <div className="text-2xl font-light text-accent-brown mb-1">150+</div>
+                          <div className="text-deep-petrol/80 text-xs">Years Combined Experience</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-light text-accent-brown mb-1">$5B+</div>
+                          <div className="text-deep-petrol/80 text-xs">Bridge Loans Structured</div>
+                        </div>
+                        <div>
+                          <div className="text-2xl font-light text-accent-brown mb-1">$210B+</div>
+                          <div className="text-deep-petrol/80 text-xs">Total Transactions</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
