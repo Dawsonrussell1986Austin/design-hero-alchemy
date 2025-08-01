@@ -108,13 +108,13 @@ const Leadership = () => {
                     <img 
                       src="/lovable-uploads/7b292b7c-cd6f-4729-866e-b650516c9c44.png"
                       alt="Modern conference room"
-                      className="w-full h-[500px] object-cover"
+                      className="w-full h-[600px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/40 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-obsidian/30 via-transparent to-transparent"></div>
                   </div>
                   
                   {/* Glassmorphic Values Card Overlay */}
-                  <div className="absolute inset-x-0 bottom-6 flex justify-center">
+                  <div className="absolute inset-x-0 top-8 flex justify-center">
                     <div className="bg-silver-mist/10 backdrop-blur-md rounded-lg border border-silver-mist/20 p-8 max-w-lg">
                       <div className="space-y-6">
                         <div className="text-center">
