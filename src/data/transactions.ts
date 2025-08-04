@@ -82,7 +82,7 @@ export const featuredTransactions = [
     loanSize: "$15,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/d2c5b2a3-700b-49d7-a9b6-4f8b05fd192b.png"
+    image: "/lovable-uploads/4a2e428e-4c2b-437e-8c5f-d383097ea612.png"
   },
   {
     id: 10,
@@ -91,7 +91,7 @@ export const featuredTransactions = [
     loanSize: "$5,660,000",
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/ce177ed1-07c9-4b54-86fa-0de9fb0ba3be.png"
+    image: "/lovable-uploads/ce9a571b-2be3-4fde-a786-b63e422818d9.png"
   },
   {
     id: 11,
@@ -100,7 +100,7 @@ export const featuredTransactions = [
     loanSize: "$4,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/c40701c4-be9c-4192-b6ea-12fc78ad33be.png"
+    image: "/lovable-uploads/9af64de1-972e-44cb-9c1d-171e1765aaa3.png"
   },
   {
     id: 12,
@@ -109,7 +109,7 @@ export const featuredTransactions = [
     loanSize: "$7,700,000",
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/a8349d0b-e18c-4e40-b05e-b43b801403c1.png"
+    image: "/lovable-uploads/ef021ba3-1a7d-48ee-b5f6-894e42df985e.png"
   },
   {
     id: 13,
