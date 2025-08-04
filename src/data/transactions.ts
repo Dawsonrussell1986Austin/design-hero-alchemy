@@ -181,7 +181,7 @@ export const featuredTransactions = [
     loanSize: "$5,500,000",
     loanType: "PARTICIPATING BRIDGE LOAN",
     propertyType: "SELF-STORAGE",
-    image: "/lovable-uploads/702c4778-1bc8-4b26-9ac4-3f885d228dc2.png"
+    image: "/lovable-uploads/ba58a644-5b83-4a4f-a16d-2e36b0520c76.png"
   },
   {
     id: 21,
