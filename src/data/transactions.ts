@@ -73,7 +73,7 @@ export const featuredTransactions = [
     loanSize: "$14,500,000", 
     loanType: "CORE-PLUS BRIDGE",
     propertyType: "RETAIL",
-    image: "/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
+    image: "/lovable-uploads/acdb3066-206e-4995-b3fd-fff667025daa.png"
   },
   {
     id: 9,
