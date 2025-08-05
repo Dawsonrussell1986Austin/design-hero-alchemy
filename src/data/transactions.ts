@@ -226,7 +226,7 @@ export const featuredTransactions = [
     loanSize: "$20,500,000", 
     loanType: "HUD MULTIFAMILY - 221D4",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png"
+    image: "/lovable-uploads/8aa2afe7-d56f-471d-a342-b8a84e97c017.png"
   },
   {
     id: 26,
@@ -235,7 +235,7 @@ export const featuredTransactions = [
     loanSize: "$16,450,000",
     loanType: "HUD MULTIFAMILY - 221D4",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/52f672d2-7426-4ab5-a99f-5955bbbba3de.png"
+    image: "/lovable-uploads/934714c7-d3c0-41f5-bfa5-7fdd72d953b4.png"
   },
   {
     id: 27,
@@ -244,7 +244,7 @@ export const featuredTransactions = [
     loanSize: "$10,180,000",
     loanType: "CORE-PLUS BRIDGE LOAN", 
     propertyType: "INDUSTRIAL",
-    image: "/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png"
+    image: "/lovable-uploads/c1858a67-6eed-4a39-a0d4-833dac89d49a.png"
   },
   {
     id: 28,
@@ -253,7 +253,7 @@ export const featuredTransactions = [
     loanSize: "$2,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "INDUSTRIAL",
-    image: "/lovable-uploads/4c4da614-0fa8-433e-a2a3-077a4b57da10.png"
+    image: "/lovable-uploads/14a2d33c-8b7d-4249-8d03-6635dee2fdd1.png"
   },
   {
     id: 29,
