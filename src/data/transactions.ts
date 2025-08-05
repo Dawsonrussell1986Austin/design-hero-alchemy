@@ -226,7 +226,8 @@ export const featuredTransactions = [
     loanSize: "$16,100,000",
     loanType: "HUD MULTIFAMILY - 221D4",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/57e03ee0-0284-4d2f-ac67-7304fabb57cb.png"
+    image: "/lovable-uploads/8725d200-c5b8-4b88-9f9b-d5634fcf7899.png",
+    realImage: "/lovable-uploads/57e03ee0-0284-4d2f-ac67-7304fabb57cb.png"
   },
   {
     id: 25,
