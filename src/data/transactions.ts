@@ -55,7 +55,8 @@ export const featuredTransactions = [
     loanSize: "$9,000,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MEDICAL OFFICE",
-    image: "/lovable-uploads/e572f37a-2dc0-4e27-b2a0-317ad4aa798e.png"
+    image: "/lovable-uploads/e92f9b50-786e-4c3a-961f-10d747d54d9c.png",
+    realImage: "/lovable-uploads/e572f37a-2dc0-4e27-b2a0-317ad4aa798e.png"
   },
   {
     id: 7,
