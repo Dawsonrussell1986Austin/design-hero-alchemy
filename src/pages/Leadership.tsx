@@ -249,6 +249,7 @@ const Leadership = () => {
               <Button 
                 size="lg"
                 className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                onClick={() => window.location.href = '/contact'}
               >
                 Contact Leadership
               </Button>
@@ -256,6 +257,7 @@ const Leadership = () => {
                 variant="outline"
                 size="lg"
                 className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-obsidian px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
+                onClick={() => window.location.href = '/about'}
               >
                 View Our Approach
               </Button>
