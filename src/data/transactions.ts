@@ -284,6 +284,7 @@ export const featuredTransactions = [
     loanSize: "$3,250,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "INDUSTRIAL",
-    image: "/lovable-uploads/2c622a51-da62-471d-b604-402d3e9cf99c.png"
+    image: "/lovable-uploads/80261ce3-2a2a-455e-871e-29da644a01aa.png",
+    realImage: "/lovable-uploads/2c622a51-da62-471d-b604-402d3e9cf99c.png"
   }
 ];
