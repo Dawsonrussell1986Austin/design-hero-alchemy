@@ -142,7 +142,8 @@ export const featuredTransactions = [
     loanSize: "$5,800,000",
     loanType: "PARTICIPATING BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/lovable-uploads/16d3b0a0-a2d6-49c5-90d4-69477df478d7.png"
+    image: "/lovable-uploads/16c28ed5-7903-4583-8d94-9d6b5c0cd7df.png",
+    realImage: "/lovable-uploads/16d3b0a0-a2d6-49c5-90d4-69477df478d7.png"
   },
   {
     id: 16,
