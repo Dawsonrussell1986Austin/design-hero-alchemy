@@ -325,6 +325,7 @@ const Investments = () => {
                   variant="outline"
                   size="lg"
                   className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                  onClick={() => window.location.href = '/contact'}
                 >
                   Request Investment Materials
                 </Button>
