@@ -281,7 +281,8 @@ export const featuredTransactions = [
     loanSize: "$16,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "HOSPITALITY",
-    image: "/lovable-uploads/07394be3-42e7-4e19-85d9-3d293b551064.png"
+    image: "/lovable-uploads/07394be3-42e7-4e19-85d9-3d293b551064.png",
+    realImage: "/lovable-uploads/cec80a7b-40e9-4369-9dd9-8f3d085d87e2.png"
   },
   {
     id: 31,
