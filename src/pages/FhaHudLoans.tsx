@@ -376,12 +376,14 @@ const FhaHudLoans = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   className="bg-accent-brown hover:bg-accent-brown/90 text-white px-8 py-3 font-medium"
+                  onClick={() => window.location.href = '/contact'}
                 >
                   Contact FHA/HUD Team
                 </Button>
                 <Button 
                   variant="outline"
                   className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
+                  onClick={() => window.location.href = '/contact'}
                 >
                   Request Program Information
                 </Button>
