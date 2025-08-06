@@ -47,7 +47,7 @@ export const featuredTransactions = [
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
     image: "/lovable-uploads/1394cf57-827d-4709-be6a-804462648e14.png",
-    realImage: "/lovable-uploads/6ddf0a5f-b4ab-4f63-934d-c032345b3c86.png"
+    realImage: "/lovable-uploads/9b08ec82-3166-48bd-804b-c53b910e6bc9.png"
   },
   {
     id: 6,
