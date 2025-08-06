@@ -325,6 +325,7 @@ const CorePlusBridge = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </section>
         )}
