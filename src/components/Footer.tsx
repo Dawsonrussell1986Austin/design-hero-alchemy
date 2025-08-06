@@ -31,7 +31,7 @@ const Footer = () => {
               <nav className="space-y-3">
                 <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Our Firm</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Platform</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Investments</a>
+                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Why Oak</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">News & Insights</a>
                 <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Contact</a>
               </nav>

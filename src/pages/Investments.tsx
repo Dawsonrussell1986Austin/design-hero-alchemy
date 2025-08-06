@@ -15,7 +15,7 @@ const Investments = () => {
       {/* Breadcrumb */}
       <Breadcrumb 
         items={[
-          { label: "Investments" }
+          { label: "Why Oak" }
         ]}
       />
       
