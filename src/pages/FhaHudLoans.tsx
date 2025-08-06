@@ -181,7 +181,7 @@ const FhaHudLoans = () => {
                   </p>
                   
                   <Button 
-                    onClick={() => window.location.href = "/lending/fha-hud/hud-223a7"}
+                    onClick={() => window.location.href = "/lending/fha-hud/hud-232-223a7"}
                     className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
                   >
                     View Terms & Details
