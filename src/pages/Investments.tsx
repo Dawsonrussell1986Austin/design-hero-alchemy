@@ -31,7 +31,7 @@ const Investments = () => {
                 {/* Program Badge */}
                 <div className="mb-4">
                   <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                    Investment Platform
+                    Why Oak
                   </span>
                 </div>
                 
