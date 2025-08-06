@@ -3,21 +3,8 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowLeft, DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer, Mail } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const OpportunisticBridge = () => {
-  const [showDetails, setShowDetails] = useState(false);
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email && name) {
-      setShowDetails(true);
-    }
-  };
   return (
     <div className="min-h-screen">
       {/* Navigation */}
@@ -51,286 +38,168 @@ const OpportunisticBridge = () => {
                 {/* Program Badge */}
                 <div className="mb-4">
                   <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                    Opportunistic Bridge Program
+                    PROGRAM | OPPORTUNISTIC BRIDGE
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  Higher-Leverage Capital for Value-Add and Conversion Strategies
+                <h1 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-6 leading-tight">
+                  Higher-leverage, floating-rate bridge lending program for commercial real estate assets that have a substantial value-creation component. The loan includes a small equity component in the form of a higher LTC in exchange for a higher interest rate and exit fees.
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
-                  Oak's Opportunistic Bridge program is designed for commercial real estate sponsors pursuing substantial value creation—such as repositioning, conversion, or redevelopment. This higher-leverage loan offering includes an embedded equity component, allowing borrowers to access more capital up front in exchange for a slightly higher rate structure. It's a smart solution for projects with a clear path to upside but capital gaps to close.
-                </p>
                 
-                {/* Who Should Consider - Integrated */}
-                <h2 className="text-xl font-display font-medium text-obsidian mb-6">
-                  Who Should Consider This Program?
-                </h2>
-                <div className="space-y-4">
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Transformation Projects</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors executing significant transformations—renovations, expansions, or conversions</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Higher Leverage Needs</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors needing more leverage than traditional bridge options typically allow</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-3">
-                    <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Strategic Partnership</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors seeking a financing partner with structured alignment to project success</p>
-                    </div>
-                  </div>
+                {/* Why Consider This Program */}
+                <div className="mb-8">
+                  <h2 className="text-xl font-display font-medium text-obsidian mb-4">
+                    WHY CONSIDER THIS PROGRAM?
+                  </h2>
+                  <ul className="space-y-3 text-obsidian/80">
+                    <li className="flex items-start space-x-2">
+                      <span className="w-1.5 h-1.5 bg-obsidian rounded-full mt-2 flex-shrink-0"></span>
+                      <span>You're seeking short-term funding to rehabilitate, reposition or stabilize an asset</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="w-1.5 h-1.5 bg-obsidian rounded-full mt-2 flex-shrink-0"></span>
+                      <span>You need financing with an equity component provided by the lender</span>
+                    </li>
+                    <li className="flex items-start space-x-2">
+                      <span className="w-1.5 h-1.5 bg-obsidian rounded-full mt-2 flex-shrink-0"></span>
+                      <span>You need flexible, non-permanent capital to implement a conversion, expansion or renovation of a core commercial real estate asset</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Why Choose Red Oak */}
+                <div className="mb-8">
+                  <h2 className="text-xl font-display font-medium text-obsidian mb-4">
+                    WHY CHOOSE RED OAK?
+                  </h2>
+                  <p className="text-obsidian/80">
+                    Red Oak can, depending on the upside potential, provide a higher LTC (providing equity the borrower does not have to raise) than many other small-balance bridge lenders in the market.
+                  </p>
                 </div>
               </div>
               
               {/* Image */}
               <div className="relative">
-                <img 
-                  src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
-                  alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
-                  className="w-full h-auto rounded-lg shadow-xl"
-                />
+                <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-8 rounded-lg shadow-xl">
+                  <img 
+                    src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
+                    alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
+                    className="w-full h-auto rounded-lg mb-6"
+                  />
+                  <div className="space-y-4">
+                    <Input
+                      type="email"
+                      placeholder="Enter your email address"
+                      className="w-full px-4 py-3 border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
+                    />
+                    <Button className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist py-3 font-medium">
+                      Download Flyer
+                    </Button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Email Opt-in Form or Detailed Content */}
-        {!showDetails ? (
-          <section className="container mx-auto px-6 pb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
-                <div className="mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
-                    Access Opportunistic Bridge Details
-                  </h2>
-                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed">
-                    Get detailed loan basics, terms, fees, and special considerations for our Opportunistic Bridge program. 
-                    Enter your information below to access the complete program details.
-                  </p>
-                </div>
-                
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6">
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Full Name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email Address"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
-                    />
-                  </div>
-                  <Button 
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"
-                  >
-                    Access Program Details
-                  </Button>
-                </form>
-                
-                <p className="text-sm text-obsidian/60 mt-6">
-                  We respect your privacy. Your information will only be used to provide you with program details and relevant updates.
-                </p>
+        {/* Financing Parameters Table */}
+        <section className="container mx-auto px-6 pb-20">
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 rounded-lg shadow-xl p-8">
+              <h2 className="text-2xl font-display font-medium text-garnet-edge mb-8 uppercase tracking-wide">
+                FINANCING PARAMETERS
+              </h2>
+              
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <tbody className="space-y-1">
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Property Types</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Multifamily, Industrial, Retail, Mixed Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Amount</td>
+                      <td className="py-4 text-obsidian/80 pl-4">$1 Million to $10 Million</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Purpose</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Acquisition, Refinance, Conversion, Rehabilitation, Situational, Stabilization</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Property Location</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Primary, Secondary & select Tertiary markets with a minimum population of 50,000 to 100,000 people</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Maximum LTV/LTC</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to 75% LTV (based on stabilized value)<br/>Up to 90% LTC (based on transaction underwriting)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Interest Rate</td>
+                      <td className="py-4 text-obsidian/80 pl-4">1-Month Term SOFR plus 600BPs – 700BPs (interest only)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Term</td>
+                      <td className="py-4 text-obsidian/80 pl-4">1 to 3 Years (fully extended)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Floor / Rate Cap</td>
+                      <td className="py-4 text-obsidian/80 pl-4">The rate/floor will be set at the closing of the loan. No Rate Cap will be required</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Extensions</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to four (4) extensions of 6 months each, at market extension fees</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Origination Fees & Exit Fees</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Market competitive fees based on the loan size, leverage, complexity and timing of the transaction</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Lien Position</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Senior Position (secondary financing prohibited)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Funding Structure</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Full funding with holdback</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Recourse</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Non-recourse, other than standard "bad boy acts" or recourse structure for higher-risk transactions</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Timing to Close</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Typically 30 to 45 days from acceptance of LOI and receipt of deposits</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Debt Service Reserve</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Below 1.00X DSCR acceptable if supported by a debt service reserve (cash-flowing assets preferred)</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Prepayment Penalty</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Minimum interest, generally half of initial loan term</td>
+                    </tr>
+                    <tr className="border-b border-obsidian/10">
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">TI/LC and Future Advances</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Future funding facility toward tenant improvements, leasing commissions, rehabilitation and conversion costs</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Deposits</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Expense deposit adequate to cover costs for third-party reports, legal fees and other customary due diligence or underwriting costs</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="text-center mt-8">
+                <Button className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-8 py-3 font-medium">
+                  DOWNLOAD FLYER
+                </Button>
               </div>
             </div>
-          </section>
-        ) : (
-          <section className="container mx-auto px-6 pb-16">
-            <div className="max-w-6xl mx-auto">
-              
-              {/* Thank you message */}
-              <div className="bg-garnet-edge/15 border border-garnet-edge/40 rounded-lg p-6 mb-12 text-center">
-                <h3 className="text-xl font-semibold text-garnet-edge mb-2">Thank you, {name}!</h3>
-                <p className="text-obsidian">Here are the detailed Opportunistic Bridge program specifications:</p>
-              </div>
-              
-              {/* Loan Basics */}
-              <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
-                  Loan Basics
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
-                    <div className="flex items-center mb-3">
-                      <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Loan Amount</h4>
-                    </div>
-                    <p className="text-obsidian/80">$1 Million – $10 Million</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
-                    <div className="flex items-center mb-3">
-                      <Calendar className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Loan Term</h4>
-                    </div>
-                    <p className="text-obsidian/80">1 to 3 Years (Fully Extended)</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
-                    <div className="flex items-center mb-3">
-                      <Percent className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Interest Rate</h4>
-                    </div>
-                    <p className="text-obsidian/80">1-Month Term SOFR + 600 – 700 bps (Interest-Only)</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.3s'}}>
-                    <div className="flex items-center mb-3">
-                      <TrendingUp className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Max LTV / LTC</h4>
-                    </div>
-                    <p className="text-obsidian/80">Up to 75% LTV (stabilized)<br/>Up to 90% LTC (underwritten)</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
-                    <div className="flex items-center mb-3">
-                      <Layers className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Lien Position</h4>
-                    </div>
-                    <p className="text-obsidian/80">Senior (no secondary financing permitted)</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.5s'}}>
-                    <div className="flex items-center mb-3">
-                      <Shield className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Recourse</h4>
-                    </div>
-                    <p className="text-obsidian/80">Typically non-recourse, with standard carve-outs</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Property & Geography */}
-              <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
-                  Property & Geography
-                </h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.6s'}}>
-                    <div className="flex items-center mb-3">
-                      <Building className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Property Types</h4>
-                    </div>
-                    <p className="text-obsidian/80">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.7s'}}>
-                    <div className="flex items-center mb-3">
-                      <MapPin className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Geography</h4>
-                    </div>
-                    <p className="text-obsidian/80">Primary, secondary, and select tertiary U.S. markets (min. pop. 50K–100K)</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.8s'}}>
-                    <div className="flex items-center mb-3">
-                      <Target className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Purpose</h4>
-                    </div>
-                    <p className="text-obsidian/80">Acquisition, Refinance, Conversion, Rehabilitation, Stabilization</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.9s'}}>
-                    <div className="flex items-center mb-3">
-                      <Coins className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Funding Structure</h4>
-                    </div>
-                    <p className="text-obsidian/80">Full funding with customary holdbacks</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Terms & Fees */}
-              <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
-                  Terms & Fees
-                </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.0s'}}>
-                    <div className="flex items-center mb-3">
-                      <Percent className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Rate Floor / Cap</h4>
-                    </div>
-                    <p className="text-obsidian/80">Rate/floor set at closing; No rate cap required</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.1s'}}>
-                    <div className="flex items-center mb-3">
-                      <Clock className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Extensions</h4>
-                    </div>
-                    <p className="text-obsidian/80">Up to 4 extensions of 6 months each, at standard market fees</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.2s'}}>
-                    <div className="flex items-center mb-3">
-                      <FileText className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Fees</h4>
-                    </div>
-                    <p className="text-obsidian/80">Competitive origination and exit fees based on loan complexity</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.3s'}}>
-                    <div className="flex items-center mb-3">
-                      <CreditCard className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Prepayment</h4>
-                    </div>
-                    <p className="text-obsidian/80">Minimum interest, typically half the initial loan term</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.4s'}}>
-                    <div className="flex items-center mb-3">
-                      <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Deposits</h4>
-                    </div>
-                    <p className="text-obsidian/80">Sufficient to cover third-party reports, legal, and due diligence</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.5s'}}>
-                    <div className="flex items-center mb-3">
-                      <Timer className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Closing Timeline</h4>
-                    </div>
-                    <p className="text-obsidian/80">30–45 days from LOI acceptance and deposit receipt</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Special Considerations */}
-              <div>
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
-                  Special Considerations
-                </h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.6s'}}>
-                    <div className="flex items-center mb-3">
-                      <Shield className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Debt Service Reserve</h4>
-                    </div>
-                    <p className="text-obsidian/80">Below 1.00x DSCR acceptable with reserve; preference for some in-place cash flow</p>
-                  </div>
-                  <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.7s'}}>
-                    <div className="flex items-center mb-3">
-                      <TrendingUp className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Future Advances</h4>
-                    </div>
-                    <p className="text-obsidian/80">Available for TI/LC, conversion, and approved rehabilitation costs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
+          </div>
+        </section>
       </div>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
