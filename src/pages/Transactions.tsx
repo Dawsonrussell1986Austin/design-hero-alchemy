@@ -203,12 +203,12 @@ const Transactions = () => {
       </div>
       
       {/* Combined Filters and Transactions Section */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-silver-mist">
         {/* Title Section */}
         <section className="pt-12 pb-8 px-6">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto text-center">
-              <h1 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
                 Oak Real Estate Partner Transactions
               </h1>
             </div>
@@ -223,12 +223,12 @@ const Transactions = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                   {/* Location Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-silver-mist/60 flex items-center gap-2">
+                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
                       <MapPin className="h-4 w-4" />
                       Location
                     </label>
                     <Select value={filters.location} onValueChange={(value) => handleFilterChange("location", value)}>
-                      <SelectTrigger className="bg-obsidian/40 border-silver-mist/20 text-silver-mist backdrop-blur-sm">
+                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Locations" />
                       </SelectTrigger>
                       <SelectContent>
@@ -242,12 +242,12 @@ const Transactions = () => {
 
                   {/* Property Type Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-silver-mist/60 flex items-center gap-2">
+                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
                       <Building className="h-4 w-4" />
                       Property Type
                     </label>
                     <Select value={filters.propertyType} onValueChange={(value) => handleFilterChange("propertyType", value)}>
-                      <SelectTrigger className="bg-obsidian/40 border-silver-mist/20 text-silver-mist backdrop-blur-sm">
+                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>
@@ -261,12 +261,12 @@ const Transactions = () => {
 
                   {/* Loan Size Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-silver-mist/60 flex items-center gap-2">
+                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
                       <DollarSign className="h-4 w-4" />
                       Loan Size
                     </label>
                     <Select value={filters.loanSize} onValueChange={(value) => handleFilterChange("loanSize", value)}>
-                      <SelectTrigger className="bg-obsidian/40 border-silver-mist/20 text-silver-mist backdrop-blur-sm">
+                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Sizes" />
                       </SelectTrigger>
                       <SelectContent>
@@ -281,12 +281,12 @@ const Transactions = () => {
 
                   {/* Loan Type Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-silver-mist/60 flex items-center gap-2">
+                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
                       <Building className="h-4 w-4" />
                       Loan Type
                     </label>
                     <Select value={filters.loanType} onValueChange={(value) => handleFilterChange("loanType", value)}>
-                      <SelectTrigger className="bg-obsidian/40 border-silver-mist/20 text-silver-mist backdrop-blur-sm">
+                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>
@@ -300,14 +300,14 @@ const Transactions = () => {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <p className="text-sm text-silver-mist/50">
+                  <p className="text-sm text-obsidian/60">
                     Showing {filteredTransactions.length} of {featuredTransactions.length} transactions
                   </p>
                   <Button 
                     variant="ghost" 
                     size="sm"
                     onClick={clearFilters}
-                    className="text-silver-mist/60 hover:text-silver-mist hover:bg-silver-mist/10"
+                    className="text-obsidian/70 hover:text-obsidian hover:bg-obsidian/10"
                   >
                     Clear Filters
                   </Button>
@@ -328,10 +328,10 @@ const Transactions = () => {
 
             {filteredTransactions.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-silver-mist/70 text-lg">No transactions match your current filters.</p>
+                <p className="text-obsidian/70 text-lg">No transactions match your current filters.</p>
                 <Button 
                   onClick={clearFilters}
-                  className="mt-4 bg-accent-brown hover:bg-accent-brown/90 text-silver-mist"
+                  className="mt-4 bg-accent-brown hover:bg-accent-brown/90 text-white"
                 >
                   Clear All Filters
                 </Button>
@@ -339,7 +339,7 @@ const Transactions = () => {
             )}
 
             <div className="text-center mt-12">
-              <p className="text-silver-mist/70 text-sm">
+              <p className="text-obsidian/70 text-sm">
                 * Past performance does not guarantee future results. All investments involve risk of loss.
               </p>
             </div>
