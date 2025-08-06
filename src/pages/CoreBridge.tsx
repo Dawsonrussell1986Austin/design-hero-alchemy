@@ -32,10 +32,10 @@ const CoreBridge = () => {
         ]}
         quickLinks={[
           { label: "Overview", href: "/lending" },
-          { label: "Core Bridge", href: "/lending/core-bridge" },
-          { label: "Core-Plus Bridge", href: "/lending/core-plus-bridge" },
-          { label: "Opportunistic Bridge", href: "/lending/opportunistic-bridge" },
-          { label: "Participating Bridge", href: "/lending/participating-bridge" }
+          { label: "Core Bridge", href: "/lending/bridge/core-bridge" },
+          { label: "Core-Plus Bridge", href: "/lending/bridge/core-plus-bridge" },
+          { label: "Opportunistic Bridge", href: "/lending/bridge/opportunistic-bridge" },
+          { label: "Participating Bridge", href: "/lending/bridge/participating-bridge" }
         ]}
       />
 
