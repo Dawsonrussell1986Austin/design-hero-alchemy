@@ -24,13 +24,20 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
           {transaction.propertyType}
         </div>
         
-        {/* Sketch-style Illustration */}
-        <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 p-8 flex items-center justify-center">
+        {/* Sketch-style Illustration - Full Width */}
+        <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden relative">
           <img 
             src={transaction.image}
             alt={transaction.name}
-            className="w-full h-full object-contain opacity-70 group-hover:opacity-90 transition-opacity duration-300"
+            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 group-hover:opacity-0"
           />
+          {transaction.realImage && (
+            <img 
+              src={transaction.realImage}
+              alt={`${transaction.name} - Real Photo`}
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
+            />
+          )}
         </div>
       </div>
       
