@@ -17,41 +17,42 @@ interface TransactionCardProps {
 
 const TransactionCard = ({ transaction }: TransactionCardProps) => {
   return (
-    <Card className="bg-white/20 backdrop-blur-md border border-white/30 overflow-hidden hover:border-accent-brown/50 hover:shadow-xl hover:bg-white/30 transition-all duration-300 group shadow-lg h-full">
-      <div className="aspect-video overflow-hidden relative">
-        <img 
-          src={transaction.image}
-          alt={transaction.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 group-hover:opacity-0"
-        />
-        {transaction.realImage && (
-          <img 
-            src={transaction.realImage}
-            alt={`${transaction.name} - Real Photo`}
-            className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
-          />
-        )}
-        <div className="absolute top-3 left-3 bg-garnet-edge/90 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
+    <Card className="bg-white border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
+      {/* Property Type Badge */}
+      <div className="relative">
+        <div className="absolute top-4 left-4 bg-accent-brown text-white px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
           {transaction.propertyType}
         </div>
+        
+        {/* Sketch-style Illustration */}
+        <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 p-8 flex items-center justify-center">
+          <img 
+            src={transaction.image}
+            alt={transaction.name}
+            className="w-full h-full object-contain opacity-70 group-hover:opacity-90 transition-opacity duration-300"
+          />
+        </div>
       </div>
-      <CardContent className="p-6 bg-white/10 backdrop-blur-sm border-t border-white/20 flex-1">
-        <h3 className="text-lg font-semibold text-white mb-4 leading-tight border-b border-white/20 pb-3">
+      
+      <CardContent className="p-6 bg-white">
+        {/* Property Name */}
+        <h3 className="text-xl font-display font-medium text-obsidian mb-2 leading-tight">
           {transaction.name}
         </h3>
         
-        <div className="space-y-3">
-          <div className="text-silver-mist text-sm font-medium border-b border-white/20 pb-2">
-            {transaction.location}
-          </div>
-          
-          <div className="text-garnet-edge text-xl font-bold border-b border-white/20 pb-2">
-            {transaction.loanSize}
-          </div>
-          
-          <div className="text-silver-mist/80 text-sm leading-tight pt-2">
-            {transaction.loanType}
-          </div>
+        {/* Region */}
+        <div className="text-obsidian/60 text-sm font-body uppercase tracking-wide mb-4">
+          {transaction.location}
+        </div>
+        
+        {/* Loan Amount */}
+        <div className="text-accent-brown text-2xl font-display font-medium mb-4">
+          {transaction.loanSize}
+        </div>
+        
+        {/* Loan Type */}
+        <div className="text-obsidian/60 text-sm font-body uppercase tracking-wide">
+          {transaction.loanType}
         </div>
       </CardContent>
     </Card>
