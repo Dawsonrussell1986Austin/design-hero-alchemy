@@ -77,12 +77,12 @@ const Leadership = () => {
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
                   <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
-                    Operational Expertise Backed by <span className="text-accent-brown">$218B in Transactions</span>
+                    Operational Expertise Backed by <span className="text-accent-brown">$210B in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
                     Oak's leadership team brings unmatched experience and depth across our real estate lending operations,
                     investment management, and the company's long-term strategic initiatives. We are seasoned operators, 
-                    not theorists—practitioners who have executed more than $218 billion over decades in transactions across 
+                    not theorists—practitioners who have executed more than $210 billion over decades in transactions across 
                     cycles, geographies, and asset classes.
                   </p>
                   
