@@ -39,7 +39,7 @@ const WhyPrivateCredit = () => {
 
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
-              Why Private Credit Real Estate Lending
+              Why Private Credit Real Estate Lending?
             </h2>
             <p className="text-lg text-deep-petrol leading-relaxed max-w-4xl mx-auto font-body">
               In a market based on evolving uncertainty, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
