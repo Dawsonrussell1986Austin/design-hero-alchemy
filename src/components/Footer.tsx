@@ -19,10 +19,6 @@ const Footer = () => {
               <p className="text-silver-mist/80 leading-relaxed font-body max-w-md">
                 Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
               </p>
-              <div className="flex items-center space-x-2 text-silver-mist/70">
-                <Shield className="h-4 w-4" />
-                <span className="text-sm font-display">SEC Registered Investment Adviser</span>
-              </div>
             </div>
 
             {/* Quick Links */}
