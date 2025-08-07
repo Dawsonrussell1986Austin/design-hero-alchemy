@@ -65,8 +65,8 @@ const RaymondDavis = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Raymond T. Davis is President & Chief Strategy Officer of Red Oak Capital Holdings and its affiliate, 
-                    Oak Real Estate Partners (OREP). Operating out of Detroit, Michigan, he is charged with developing, 
+                    Raymond T. Davis is Chief Strategy Officer of Oak Real Estate Partners (OREP) and its affiliate, 
+                    Red Oak Capital Holdings. He is charged with gaining, 
                     communicating, and sustaining the companies' medium- and long-term strategic initiatives.
                   </p>
                 </div>
