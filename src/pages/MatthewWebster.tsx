@@ -83,7 +83,7 @@ const MatthewWebster = () => {
             <p className="text-lg leading-relaxed">
               In addition to his role at OREP, Matt oversees credit and risk management at Red Oak Capital Holdings, 
               where he directs the firm's lending and asset management operations. His dual responsibilities across 
-              Red Oak and OREP enable him to align structured lending strategies with institutional investment initiatives, 
+              OREP and Red Oak enable him to align structured lending strategies with institutional investment initiatives,
               ensuring an integrated approach to portfolio risk and capital allocation. Matt will also sit on both 
               companies' Credit and Investment Committees.
             </p>
@@ -99,7 +99,7 @@ const MatthewWebster = () => {
             <p className="text-lg leading-relaxed">
               Before joining OREP, Matt was Global Head of Real Estate Finance at HSBC, managing more than $100 billion 
               in commercial real estate exposure. His expertise spans key roles at Morgan Stanley, Goldman Sachs, Hypo 
-              Real Estate, and FitchRatings, where he led major capital markets initiatives and advised regulatory bodies 
+              Real Estate, and Fitch Ratings, where he led major capital markets initiatives and advised regulatory bodies 
               on financial stability and capital requirements.
             </p>
             
