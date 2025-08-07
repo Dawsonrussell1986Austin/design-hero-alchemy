@@ -111,7 +111,7 @@ const BridgeLoans = () => {
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$1M - $75M+</span>
+                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">LTV:</span>
@@ -158,7 +158,7 @@ const BridgeLoans = () => {
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$1M - $50M+</span>
+                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">LTV:</span>
@@ -205,7 +205,7 @@ const BridgeLoans = () => {
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$2M - $75M+</span>
+                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">LTV:</span>
@@ -252,7 +252,7 @@ const BridgeLoans = () => {
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$5M - $100M+</span>
+                    <span className="text-sm font-medium text-obsidian">$2M - $30M+</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">LTV:</span>
@@ -260,7 +260,7 @@ const BridgeLoans = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">36-60 months</span>
+                    <span className="text-sm font-medium text-obsidian">24-48 months</span>
                   </div>
                 </div>
                 
