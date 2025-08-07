@@ -42,7 +42,7 @@ const WhyPrivateCredit = () => {
               Why Private Credit Real Estate Lending?
             </h2>
             <p className="text-lg text-deep-petrol leading-relaxed max-w-4xl mx-auto font-body">
-              In a market based on evolving uncertainty, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
+              In a broad market of investment types where many types have evolving uncertainties, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
             </p>
           </div>
 
@@ -56,7 +56,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-lg font-display font-medium text-obsidian">Market Opportunity</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                <strong>Restrictive banking regulations</strong>, legislative requirements, increased capital reserve ratios have created a unique opportunity for experienced private credit lenders to generate <strong>highly attractive returns</strong> with <strong>lower levels of risk</strong>.
+                Restrictive banking regulations requiring increased capital reserves for banks have constrained their ability to provide debt capital, creating a unique opportunity for experienced private credit providers to generate highly attractive returns with lower levels of risk.
               </p>
             </div>
 
@@ -68,11 +68,8 @@ const WhyPrivateCredit = () => {
                 </div>
                 <h3 className="text-lg font-display font-medium text-obsidian">Risk Mitigation</h3>
               </div>
-              <p className="text-deep-petrol leading-relaxed font-body text-sm mb-4">
-                <strong>Deal structure</strong> & comprehensive institutional credit underwriting mitigates risk and protects against the <strong>impairment of capital</strong>.
-              </p>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                The lending opportunities are secured by <strong>hard commercial real estate assets</strong> that carry a significant amount of intrinsic value with <strong>down-side protection</strong> during times of market distress.
+                Deal structure and comprehensive institutional credit underwriting standards mitigate risk and protect against capital impairment. Private credit's lending opportunities are secured by hard commercial real estate assets that carry a significant amount of intrinsic value with downside protection during times of market distress.
               </p>
             </div>
 
@@ -85,7 +82,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-lg font-display font-medium text-obsidian">Diversification</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                Exposure to the asset class and strategy can enhance the <strong>diversification and risk-efficiency</strong> while reducing the volatility within a portfolio through the delivery of an <strong>uncorrelated return stream</strong>.
+                Exposure to the commercial real estate asset class with a private credit strategy enhances diversification and risk-efficiency while reducing an investment portfolio's volatility all while delivering a return stream uncorrelated with other investment types.
               </p>
             </div>
 
@@ -98,7 +95,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-lg font-display font-medium text-obsidian">Income Oriented</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                The strategy is designed to generate <strong>stable, consistent cash flows</strong> for investors seeking <strong>reliable income</strong> with up-side capture.
+                Private credit strategies are designed to generate stable, consistent cash flows for investors seeking reliable income with upside capture opportunity.
               </p>
             </div>
 
@@ -111,7 +108,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-lg font-display font-medium text-obsidian">Performance</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                History and performance points to a <strong>higher yield premium</strong> through exposure to private credit CRE, which can contribute to the <strong>optimization of a portfolio</strong>.
+                Private credit's historical performance has demonstrated higher yield premiums which can contribute to the optimization of an investment portfolio.
               </p>
             </div>
 
@@ -124,7 +121,7 @@ const WhyPrivateCredit = () => {
                 <h3 className="text-lg font-display font-medium text-obsidian">Our Strategy</h3>
               </div>
               <p className="text-deep-petrol leading-relaxed font-body text-sm">
-                Our strategy is designed to unlock value in <strong>underserved niches</strong> while prioritizing <strong>downside protection</strong>, income consistency, and performance.
+                Our strategy is designed to capture latent value in overlooked market niches while prioritizing downside protection, income consistency, and return performance.
               </p>
             </div>
           </div>
