@@ -25,11 +25,13 @@ const Footer = () => {
             <div className="space-y-6">
               <h4 className="text-lg font-display font-medium text-silver-mist">Quick Links</h4>
               <nav className="space-y-3">
-                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Our Firm</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Platform</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Why Oak</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">News & Insights</a>
-                <a href="#" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Contact</a>
+                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">About</a>
+                <a href="/leadership" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Leadership</a>
+                <a href="/lending" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Lending</a>
+                <a href="/investments" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Investments</a>
+                <a href="/transactions" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Transactions</a>
+                <a href="/news" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">News</a>
+                <a href="/contact" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Contact</a>
               </nav>
             </div>
 
@@ -64,9 +66,9 @@ const Footer = () => {
           <div className="border-t border-deep-petrol/30 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex space-x-6 text-sm text-silver-mist/60 font-serif">
-                <a href="#" className="hover:text-accent-brown transition-colors">Privacy Policy</a>
-                <a href="#" className="hover:text-accent-brown transition-colors">Terms of Service</a>
-                <a href="#" className="hover:text-accent-brown transition-colors">Disclosures</a>
+                <a href="/privacy" className="hover:text-accent-brown transition-colors">Privacy Policy</a>
+                <a href="/terms" className="hover:text-accent-brown transition-colors">Terms of Service</a>
+                <a href="/disclosures" className="hover:text-accent-brown transition-colors">Disclosures</a>
               </div>
               <p className="text-sm text-silver-mist/60 font-serif">
                 © 2024 OAK Real Estate Partners. All rights reserved.

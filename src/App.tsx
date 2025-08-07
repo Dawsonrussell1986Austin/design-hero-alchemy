@@ -34,6 +34,9 @@ import Transactions from "./pages/Transactions";
 import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
 import BlogAtlantaAcquisition from "./pages/BlogAtlantaAcquisition";
 import BlogAtlantaFinancing from "./pages/BlogAtlantaFinancing";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Disclosures from "./pages/Disclosures";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -73,6 +76,9 @@ function App() {
         <Route path="/news/philadelphia-midrise" element={<BlogPhiladelphiaMidrise />} />
         <Route path="/news/atlanta-acquisition-loan" element={<BlogAtlantaAcquisition />} />
         <Route path="/news/atlanta-financing" element={<BlogAtlantaFinancing />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/disclosures" element={<Disclosures />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
