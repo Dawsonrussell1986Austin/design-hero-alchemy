@@ -65,10 +65,9 @@ const ThomasMcGovern = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Thomas A. McGovern is Chief Financial Officer of Red Oak Capital Holdings, where he applies his 
-                    strategic and tactical capabilities to help drive the firm's continued enterprise growth. Based in 
-                    Charlotte, North Carolina, the multifunctional executive leads the national commercial real estate 
-                    finance company's financial accounting and reporting, investor communications, and ERP systems requisition efforts.
+                    Thomas A. McGovern serves as Chief Financial Officer of Oak Real Estate Partners (OREP) where he applies his 
+                    strategic and tactical expertise to help drive the firm's continued enterprise growth. As a multifunctional executive, 
+                    he leads the national commercial real estate finance company's financial accounting and reporting, investor communications, and ERP system efforts.
                   </p>
                 </div>
               </div>
@@ -85,16 +84,15 @@ const ThomasMcGovern = () => {
               Thomas' capital markets track record spans more than two decades of working with companies and sponsors 
               to effect private placements, high yield and investment-grade debt issuance, IPOs, and follow-on equity 
               offerings. He has served as an Investment Banker and Equity Research Analyst for financial services firms 
-              including Morgan Stanley, Cypress Associates, RBC Capital Markets and, most recently, Nomura. As Executive 
+              including Morgan Stanley, Cypress Associates, RBC Capital Markets and, most recently, Nomura where, as Executive 
               Director, he executed $14 billion in high-yield financing and led the firm's insurance services coverage 
               and private equity sponsor relationship efforts.
             </p>
             
             <p className="text-lg leading-relaxed">
-              Thomas earned a master's degree in business administration from Charlottesville, VA's Darden Graduate 
-              School of Business at the University of Virginia and is a summa cum laude graduate of Hamilton College 
-              with a degree in economics. A Certified Public Accountant, he also holds a Chartered Financial Analyst 
-              designation and a Series 79 securities license from the Financial Industry Regulatory Authority (FINRA).
+              Thomas earned a master's degree in business administration (MBA) from the Darden Graduate School of Business at the University of Virginia and is a summa cum laude graduate of Hamilton College 
+              with a degree in economics. A Certified Public Accountant (CPA), he also holds a Chartered Financial Analyst 
+              (CFA) designation and a Series 79 securities license from the Financial Industry Regulatory Authority (FINRA).
             </p>
           </div>
         </div>
