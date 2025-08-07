@@ -42,7 +42,7 @@ const GaryBechtel = () => {
                 <div>
                   <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Gary Bechtel</h1>
                   <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
-                    Chief Executive Officer, Managing Principal
+                    Chief Executive Officer
                   </p>
                   <div className="flex space-x-3">
                     <Button
@@ -66,8 +66,8 @@ const GaryBechtel = () => {
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
                     Gary Bechtel heads the investment management leadership team at Oak Real Estate Partners (OREP). 
-                    As Managing Partner and CEO, he has direct oversight of all loan portfolios and operations for the 
-                    Grand Rapids, Michigan-based firm.
+                    As CEO, he has direct oversight of all loan portfolios and operations for the 
+                    company. Based in Grand Rapids, Michigan.
                   </p>
                 </div>
               </div>

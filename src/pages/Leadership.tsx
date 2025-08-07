@@ -8,9 +8,9 @@ const Leadership = () => {
   const leadershipTeam = [
     {
       name: "Gary Bechtel",
-      title: "Chief Executive Officer, Managing Principal",
+      title: "Chief Executive Officer",
       image: "/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png",
-      bio: "Gary Bechtel is Chief Executive Officer & Managing Principal of Red Oak Capital Holdings, responsible for managing the national commercial real estate finance firm's lending operations and business development efforts. He operates out of the firm's Grand Rapids, Michigan office."
+      bio: "Gary Bechtel is Chief Executive Officer of Red Oak Capital Holdings, responsible for managing the national commercial real estate finance firm's lending operations and business development efforts. Based in Grand Rapids, Michigan."
     },
     {
       name: "Raymond T. Davis", 
@@ -44,9 +44,9 @@ const Leadership = () => {
     },
     {
       name: "Brook Scardina",
-      title: "Managing Partner, Capital Markets & Investments",
+      title: "Capital Markets & Investments",
       image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png",
-      bio: "Brook Scardina is Managing Partner, Capital Markets & Investments, for Oak Real Estate Partners (OREP), where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector."
+      bio: "Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners (OREP), where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector. Based in Irvine, California."
     }
   ];
 

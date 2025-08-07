@@ -65,7 +65,7 @@ const PaulCleary = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Paul Cleary is Managing Partner and President of Oak Real Estate Partners (OREP), a national fund manager 
+                    Paul Cleary is President of Oak Real Estate Partners (OREP), a national fund manager 
                     focused on the institutional investment sector. Based in Charlotte, NC, he is responsible for overall company 
                     operations, including managing finances, business partnerships and funding opportunities.
                   </p>

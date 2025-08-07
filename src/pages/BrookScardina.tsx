@@ -42,7 +42,7 @@ const BrookScardina = () => {
                 <div>
                   <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Brook Scardina</h1>
                   <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
-                    Managing Partner, Capital Markets & Investments
+                    Capital Markets & Investments
                   </p>
                   <div className="flex space-x-3">
                     <Button
@@ -65,10 +65,10 @@ const BrookScardina = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Brook Scardina is Managing Partner, Capital Markets & Investments, for Oak Real Estate Partners (OREP), 
+                    Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners (OREP), 
                     where he leads the external capital markets strategy for the national fund manager focused on the 
                     institutional investment sector. He is responsible for advising on, solving and delivering alternative 
-                    investment solutions that support the institutional return objectives of investors.
+                    investment solutions that support the institutional return objectives of investors. Based in Irvine, California.
                   </p>
                 </div>
               </div>
