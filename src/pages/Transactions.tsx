@@ -169,7 +169,7 @@ const Transactions = () => {
                       <p className="text-sm text-obsidian/70">Property Types</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">7</p>
+                      <p className="text-2xl font-bold text-garnet-edge">6</p>
                       <p className="text-sm text-obsidian/70">Regions</p>
                     </div>
                     <div className="text-center">
