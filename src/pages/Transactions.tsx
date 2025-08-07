@@ -23,7 +23,18 @@ const Transactions = () => {
   }, []);
 
   // Extract unique values for filters
-  const uniqueLocations = [...new Set(featuredTransactions.map(t => t.location))];
+  const uniqueLocations = [...new Set(featuredTransactions.map(t => t.location))].sort((a, b) => {
+    // Sort regions East to West
+    const regionOrder = [
+      'NORTHEAST REGION',
+      'SOUTHEAST REGION', 
+      'MIDWEST REGION',
+      'NORTHWEST REGION',
+      'SOUTHWEST REGION',
+      'WEST REGION'
+    ];
+    return regionOrder.indexOf(a) - regionOrder.indexOf(b);
+  });
   const uniquePropertyTypes = [...new Set(featuredTransactions.map(t => t.propertyType))];
   const uniqueLoanTypes = [...new Set(featuredTransactions.map(t => t.loanType))];
 
