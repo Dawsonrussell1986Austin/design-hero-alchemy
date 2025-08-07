@@ -68,7 +68,7 @@ const BrookScardina = () => {
                     Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners (OREP), 
                     where he leads the external capital markets strategy for the national fund manager focused on the 
                     institutional investment sector. He is responsible for advising on, solving and delivering alternative 
-                    investment solutions that support the institutional return objectives of investors. Based in Irvine, California.
+                    investment solutions that support the return objectives of institutional investors. Based in Irvine, California.
                   </p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const BrookScardina = () => {
             
             <p className="text-lg leading-relaxed">
               Brook, who holds a Series 65 certification from the Financial Industry Regulatory Authority (FINRA), earned 
-              master's degree in business administration from Auburn University and a bachelor's degree in finance from 
+              master's degree in business administration (MBA) from Auburn University and a bachelor's degree in finance from 
               Georgia Southern University. He has served as a client advisory board member of the Bank of New York Mellon 
               and is the current Chairman of the Board for the Roswell United Methodist Foundation in Atlanta, where he is based.
             </p>
