@@ -161,7 +161,7 @@ const Transactions = () => {
                   </h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">{filteredTransactions.length}</p>
+                      <p className="text-2xl font-bold text-garnet-edge">{featuredTransactions.length}</p>
                       <p className="text-sm text-obsidian/70">Transactions</p>
                     </div>
                     <div className="text-center">
@@ -173,8 +173,8 @@ const Transactions = () => {
                       <p className="text-sm text-obsidian/70">Regions</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">$300M+</p>
-                      <p className="text-sm text-obsidian/70">Total Volume</p>
+                      <p className="text-2xl font-bold text-garnet-edge">$5B+</p>
+                      <p className="text-sm text-obsidian/70">Bridge Loans Completed</p>
                     </div>
                   </div>
                 </div>
