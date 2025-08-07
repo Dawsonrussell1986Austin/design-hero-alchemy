@@ -41,7 +41,7 @@ const Lending = () => {
                   Comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed">
-                  Oak offers both short-term private bridge loans and long-term, government-backed FHA/HUD-insured mortgages—individually or in a seamless Bridge-to-FHA structure. Our national lending platform combines efficiency and innovation with institutional-grade standards.
+                  Oak offers both short-term private bridge loans and long term, government-backed FHA/HUD insured mortgages—individually or in a seamless Bridge-to-FHA structure. Our national lending platform combines efficiency and innovation with institutional-grade standards.
                 </p>
               </div>
               
@@ -119,7 +119,7 @@ const Lending = () => {
                     Long-term, government-backed financing for essential real estate assets
                   </p>
                   <p className="text-obsidian/80 leading-relaxed mb-6">
-                    Through our subsidiary Johnson Capital Multifamily, we provide FHA/HUD-insured loan programs offering long-term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
+                    Through our subsidiary Johnson Capital Multifamily, we provide FHA/HUD insured loan programs offering long term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
                   </p>
                   
                   <div className="space-y-3 mb-6">
