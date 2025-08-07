@@ -49,7 +49,18 @@ const Transactions = () => {
     ];
     return propertyOrder.indexOf(a) - propertyOrder.indexOf(b);
   });
-  const uniqueLoanTypes = [...new Set(featuredTransactions.map(t => t.loanType))];
+  const uniqueLoanTypes = [...new Set(featuredTransactions.map(t => t.loanType))].sort((a, b) => {
+    // Sort by preferred order: Participating, Opportunistic, Core-Plus, Core, HUD
+    const loanOrder = [
+      'PARTICIPATING BRIDGE LOAN',
+      'OPPORTUNISTIC BRIDGE LOAN',
+      'CORE-PLUS BRIDGE LOAN',
+      'CORE-PLUS BRIDGE',        // Handle inconsistency in data
+      'CORE BRIDGE LOAN',
+      'HUD MULTIFAMILY - 221D4'
+    ];
+    return loanOrder.indexOf(a) - loanOrder.indexOf(b);
+  });
 
   // Filter transactions based on selected filters
   const applyFilters = () => {
