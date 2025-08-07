@@ -145,7 +145,7 @@ const Transactions = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  Proven Transaction History
+                  Transaction History
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Disciplined execution. Diverse markets. Consistent performance.
