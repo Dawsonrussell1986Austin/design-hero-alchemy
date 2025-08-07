@@ -65,9 +65,9 @@ const PaulCleary = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Paul Cleary is President of Oak Real Estate Partners (OREP), a national fund manager 
-                    focused on the institutional investment sector. Based in Charlotte, NC, he is responsible for overall company 
-                    operations, including managing finances, business partnerships and funding opportunities.
+                    Paul Cleary serves as Chief Operating Officer of Oak Real Estate Partners (OREP), a national fund manager 
+                    focused on the institutional investment sector. He is responsible for overseeing the efficient functioning 
+                    of the company and its adherence to industry best practices and standards.
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const PaulCleary = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-6 text-silver-mist/90">
             <p className="text-lg leading-relaxed">
-              In addition to his role at OREP, Paul serves as President and Chief Operating Officer of Red Oak Capital Holdings, 
+              In addition to his role at OREP, Paul serves as Chief Operating Officer of Red Oak Capital Holdings, 
               a national commercial real estate finance company.
             </p>
             
@@ -95,7 +95,7 @@ const PaulCleary = () => {
             
             <p className="text-lg leading-relaxed">
               Paul is an alumnus of the University of California, Santa Barbara, where he earned a bachelor's degree in political 
-              science. He also holds a master's degree in business administration from the University of California, Irvine, as 
+              science. He also holds a master's degree in business administration (MBA) from the University of California, Irvine, as 
               well as a Juris Doctor degree (JD) from the University of San Diego School of Law.
             </p>
           </div>
