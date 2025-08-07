@@ -22,7 +22,7 @@ const OurEdge = () => {
             
             {/* Main description */}
             <p className="text-xl lg:text-2xl leading-relaxed font-body">
-              Every investment is <span className="text-garnet-edge font-medium">structured and underwritten</span> using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term trust.
+              Every investment is structured and underwritten using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term <span className="text-garnet-edge font-medium">trust</span>.
             </p>
 
 
