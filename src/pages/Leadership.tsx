@@ -80,14 +80,14 @@ const Leadership = () => {
                     Operational Expertise Backed by <span className="text-accent-brown">$210B in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
-                    Oak's leadership team brings unmatched experience and depth across our real estate lending operations,
-                    investment management, and the company's long-term strategic initiatives. We are seasoned operators, 
-                    not theorists—practitioners who have executed more than $210 billion over decades in transactions across 
+                    Oak's leadership team brings unmatched experience and depth to our real estate lending operations, 
+                    investment management, and long-term strategic initiatives. We are seasoned operators, not theorists — 
+                    practitioners who have executed on more than $210 billion in transaction volume over decades, across 
                     cycles, geographies, and asset classes.
                   </p>
                   
                   <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
-                    We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined
+                    We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined 
                     mindset and a shared commitment to protect investor capital.
                   </p>
                   
