@@ -62,7 +62,7 @@ const Transactions = () => {
     return loanOrder.indexOf(a) - loanOrder.indexOf(b);
   }).map(loanType => {
     // Normalize display names
-    if (loanType === 'HUD MULTIFAMILY - 221D4') return 'HUD';
+    if (loanType === 'HUD MULTIFAMILY - 221D4') return 'FHA/HUD';
     if (loanType === 'CORE-PLUS BRIDGE') return 'CORE-PLUS BRIDGE LOAN';
     return loanType;
   }).filter((value, index, self) => self.indexOf(value) === index); // Remove duplicates
@@ -82,7 +82,7 @@ const Transactions = () => {
     if (filters.loanType !== "all") {
       // Handle filter mapping back to original data
       let originalLoanType = filters.loanType;
-      if (filters.loanType === "HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
+      if (filters.loanType === "FHA/HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
       if (filters.loanType === "CORE-PLUS BRIDGE LOAN") {
         filtered = filtered.filter(t => t.loanType === "CORE-PLUS BRIDGE LOAN" || t.loanType === "CORE-PLUS BRIDGE");
       } else {
@@ -129,7 +129,7 @@ const Transactions = () => {
     if (newFilters.loanType !== "all") {
       // Handle filter mapping back to original data
       let originalLoanType = newFilters.loanType;
-      if (newFilters.loanType === "HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
+      if (newFilters.loanType === "FHA/HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
       if (newFilters.loanType === "CORE-PLUS BRIDGE LOAN") {
         filtered = filtered.filter(t => t.loanType === "CORE-PLUS BRIDGE LOAN" || t.loanType === "CORE-PLUS BRIDGE");
       } else {
