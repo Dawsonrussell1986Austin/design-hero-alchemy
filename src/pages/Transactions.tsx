@@ -35,7 +35,20 @@ const Transactions = () => {
     ];
     return regionOrder.indexOf(a) - regionOrder.indexOf(b);
   });
-  const uniquePropertyTypes = [...new Set(featuredTransactions.map(t => t.propertyType))];
+  const uniquePropertyTypes = [...new Set(featuredTransactions.map(t => t.propertyType))].sort((a, b) => {
+    // Sort by transaction volume/importance
+    const propertyOrder = [
+      'MULTIFAMILY',      // Most common
+      'INDUSTRIAL',       
+      'OFFICE',
+      'RETAIL',
+      'MEDICAL OFFICE',
+      'SELF-STORAGE',
+      'MIXED USE',
+      'HOSPITALITY'
+    ];
+    return propertyOrder.indexOf(a) - propertyOrder.indexOf(b);
+  });
   const uniqueLoanTypes = [...new Set(featuredTransactions.map(t => t.loanType))];
 
   // Filter transactions based on selected filters
