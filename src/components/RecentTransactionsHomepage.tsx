@@ -77,7 +77,7 @@ const RecentTransactionsHomepage = () => {
   };
 
   return (
-    <div className="bg-silver-mist py-20">
+    <div className="bg-deep-petrol py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           
