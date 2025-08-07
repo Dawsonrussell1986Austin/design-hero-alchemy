@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
@@ -16,6 +16,11 @@ const Transactions = () => {
     loanType: "all",
     loanSize: "all"
   });
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Extract unique values for filters
   const uniqueLocations = [...new Set(featuredTransactions.map(t => t.location))];
