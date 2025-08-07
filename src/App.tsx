@@ -31,6 +31,9 @@ import CorePlusBridge from "./pages/CorePlusBridge";
 import OpportunisticBridge from "./pages/OpportunisticBridge";
 import ParticipatingBridge from "./pages/ParticipatingBridge";
 import Transactions from "./pages/Transactions";
+import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
+import BlogAtlantaAcquisition from "./pages/BlogAtlantaAcquisition";
+import BlogAtlantaFinancing from "./pages/BlogAtlantaFinancing";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -67,6 +70,9 @@ function App() {
         <Route path="/lending/bridge/opportunistic-bridge" element={<OpportunisticBridge />} />
         <Route path="/lending/bridge/participating-bridge" element={<ParticipatingBridge />} />
         <Route path="/transactions" element={<Transactions />} />
+        <Route path="/news/philadelphia-midrise" element={<BlogPhiladelphiaMidrise />} />
+        <Route path="/news/atlanta-acquisition-loan" element={<BlogAtlantaAcquisition />} />
+        <Route path="/news/atlanta-financing" element={<BlogAtlantaFinancing />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>

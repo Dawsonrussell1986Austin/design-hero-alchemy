@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const RecentNews = () => {
   const recentArticles = [
@@ -7,19 +8,22 @@ const RecentNews = () => {
       title: "OAK CAPITAL HOLDINGS PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
       excerpt: "Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
-      image: "/lovable-uploads/403d76e1-5d7b-4f4c-b865-ee5d118a616d.png"
+      image: "/lovable-uploads/403d76e1-5d7b-4f4c-b865-ee5d118a616d.png",
+      slug: "philadelphia-midrise"
     },
     {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
       excerpt: "EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "May 2, 2025",
-      image: "/lovable-uploads/3842fd81-69ed-40e9-abc5-b0c4ac8bd5c8.png"
+      image: "/lovable-uploads/3842fd81-69ed-40e9-abc5-b0c4ac8bd5c8.png",
+      slug: "atlanta-acquisition-loan"
     },
     {
       title: "OAK CAPITAL HOLDINGS PROVIDES $8.65M FINANCING FOR THE ATLANTA",
       excerpt: "Oak Capital Holdings, LLC, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
-      image: "/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png"
+      image: "/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png",
+      slug: "atlanta-financing"
     }
   ];
 
@@ -57,29 +61,31 @@ const RecentNews = () => {
                   <p className="text-deep-petrol leading-relaxed font-body text-sm mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
-                  <Button 
-                    variant="outline"
-                    size="sm"
-                    className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-xs px-4 py-2 rounded transition-all duration-300"
-                  >
-                    Read More
-                    <ArrowRight className="h-3 w-3 ml-1" />
-                  </Button>
+                  <Link to={`/news/${article.slug}`}>
+                    <Button 
+                      variant="outline"
+                      size="sm"
+                      className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-xs px-4 py-2 rounded transition-all duration-300"
+                    >
+                      Read More
+                      <ArrowRight className="h-3 w-3 ml-1" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="text-center">
-            <Button 
-              size="lg"
-              className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-            >
-              <a href="/news" className="flex items-center">
+            <Link to="/news">
+              <Button 
+                size="lg"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+              >
                 View All News
                 <ArrowRight className="h-4 w-4 ml-2" />
-              </a>
-            </Button>
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
