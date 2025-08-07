@@ -67,7 +67,7 @@ const GaryBechtel = () => {
                   <p className="text-lg">
                     Gary Bechtel heads the investment management leadership team at Oak Real Estate Partners (OREP). 
                     As CEO, he has direct oversight of all loan portfolios and operations for the 
-                    company. Based in Grand Rapids, Michigan.
+                    company. Based in Charlotte, North Carolina.
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ const GaryBechtel = () => {
           <div className="max-w-4xl mx-auto space-y-6 text-silver-mist/90">
             <p className="text-lg leading-relaxed">
               In addition to his duties with OREP, Gary is Chief Executive Officer of Red Oak Capital Holdings, 
-              a family of commercial real estate finance and investment companies that primarily caters to investors 
+              a family of commercial real estate finance and investment companies that primarily cater to investors 
               within the Broker-Dealer and RIA channels. As such, he is responsible for managing the lending operations 
               and business development efforts for the firm, which provides commercial real estate lending, servicing, 
               workout, and turnaround products and services.
