@@ -120,19 +120,19 @@ const Leadership = () => {
                          <div className="text-center">
                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Control and Stability</h4>
                            <p className="text-white text-base leading-relaxed">
-                             Disciplined oversight and consistent execution.
+                             Disciplined oversight and consistent execution
                            </p>
                          </div>
                          <div className="text-center">
                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Risk-Taking</h4>
                            <p className="text-white text-base leading-relaxed">
-                             Calculated decisions based on thorough analysis.
+                             Calculated decisions based on thorough analysis
                            </p>
                          </div>
                          <div className="text-center">
                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Predictability and Reliability</h4>
                            <p className="text-white text-base leading-relaxed">
-                             Consistent results through proven processes.
+                             Consistent results through proven processes
                            </p>
                         </div>
                       </div>
