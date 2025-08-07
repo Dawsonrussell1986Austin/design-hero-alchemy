@@ -60,6 +60,9 @@ const Transactions = () => {
       'HUD MULTIFAMILY - 221D4'
     ];
     return loanOrder.indexOf(a) - loanOrder.indexOf(b);
+  }).map(loanType => {
+    // Simplify HUD display name
+    return loanType === 'HUD MULTIFAMILY - 221D4' ? 'HUD' : loanType;
   });
 
   // Filter transactions based on selected filters
@@ -75,7 +78,9 @@ const Transactions = () => {
     }
 
     if (filters.loanType !== "all") {
-      filtered = filtered.filter(t => t.loanType === filters.loanType);
+      // Handle HUD filter mapping back to original data
+      const originalLoanType = filters.loanType === "HUD" ? "HUD MULTIFAMILY - 221D4" : filters.loanType;
+      filtered = filtered.filter(t => t.loanType === originalLoanType);
     }
 
     if (filters.loanSize !== "all") {
@@ -115,7 +120,9 @@ const Transactions = () => {
     }
 
     if (newFilters.loanType !== "all") {
-      filtered = filtered.filter(t => t.loanType === newFilters.loanType);
+      // Handle HUD filter mapping back to original data
+      const originalLoanType = newFilters.loanType === "HUD" ? "HUD MULTIFAMILY - 221D4" : newFilters.loanType;
+      filtered = filtered.filter(t => t.loanType === originalLoanType);
     }
 
     if (newFilters.loanSize !== "all") {
