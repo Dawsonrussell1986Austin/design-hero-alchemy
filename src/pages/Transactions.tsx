@@ -61,9 +61,11 @@ const Transactions = () => {
     ];
     return loanOrder.indexOf(a) - loanOrder.indexOf(b);
   }).map(loanType => {
-    // Simplify HUD display name
-    return loanType === 'HUD MULTIFAMILY - 221D4' ? 'HUD' : loanType;
-  });
+    // Normalize display names
+    if (loanType === 'HUD MULTIFAMILY - 221D4') return 'HUD';
+    if (loanType === 'CORE-PLUS BRIDGE') return 'CORE-PLUS BRIDGE LOAN';
+    return loanType;
+  }).filter((value, index, self) => self.indexOf(value) === index); // Remove duplicates
 
   // Filter transactions based on selected filters
   const applyFilters = () => {
@@ -78,9 +80,14 @@ const Transactions = () => {
     }
 
     if (filters.loanType !== "all") {
-      // Handle HUD filter mapping back to original data
-      const originalLoanType = filters.loanType === "HUD" ? "HUD MULTIFAMILY - 221D4" : filters.loanType;
-      filtered = filtered.filter(t => t.loanType === originalLoanType);
+      // Handle filter mapping back to original data
+      let originalLoanType = filters.loanType;
+      if (filters.loanType === "HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
+      if (filters.loanType === "CORE-PLUS BRIDGE LOAN") {
+        filtered = filtered.filter(t => t.loanType === "CORE-PLUS BRIDGE LOAN" || t.loanType === "CORE-PLUS BRIDGE");
+      } else {
+        filtered = filtered.filter(t => t.loanType === originalLoanType);
+      }
     }
 
     if (filters.loanSize !== "all") {
@@ -120,9 +127,14 @@ const Transactions = () => {
     }
 
     if (newFilters.loanType !== "all") {
-      // Handle HUD filter mapping back to original data
-      const originalLoanType = newFilters.loanType === "HUD" ? "HUD MULTIFAMILY - 221D4" : newFilters.loanType;
-      filtered = filtered.filter(t => t.loanType === originalLoanType);
+      // Handle filter mapping back to original data
+      let originalLoanType = newFilters.loanType;
+      if (newFilters.loanType === "HUD") originalLoanType = "HUD MULTIFAMILY - 221D4";
+      if (newFilters.loanType === "CORE-PLUS BRIDGE LOAN") {
+        filtered = filtered.filter(t => t.loanType === "CORE-PLUS BRIDGE LOAN" || t.loanType === "CORE-PLUS BRIDGE");
+      } else {
+        filtered = filtered.filter(t => t.loanType === originalLoanType);
+      }
     }
 
     if (newFilters.loanSize !== "all") {
