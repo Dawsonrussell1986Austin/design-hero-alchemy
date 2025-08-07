@@ -65,8 +65,8 @@ const RobertKaplan = () => {
                 {/* Short intro on the same section */}
                 <div className="space-y-4 text-silver-mist/80 leading-relaxed">
                   <p className="text-lg">
-                    Robert R. Kaplan, Jr. serves as Chief Legal Officer and Executive Vice President, Corporate Development, 
-                    for Red Oak Capital Holdings and its affiliate, Oak Real Estate Partners (OREP). A well-regarded expert 
+                    Robert R. Kaplan, Jr. serves as Chief Legal Officer and Executive Vice President for Corporate Development, 
+                    for Oak Real Estate Partners (OREP) and its affiliate, Red Oak Capital Holdings. A well-regarded expert 
                     in the federal JOBS Act, the veteran securities lawyer is also a pioneer and advocate in the revision 
                     and revitalization of SEC Regulation A.
                   </p>
@@ -82,12 +82,12 @@ const RobertKaplan = () => {
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto space-y-6 text-silver-mist/90">
             <p className="text-lg leading-relaxed">
-              As Chief Legal Officer, Rob develops and leads the corporate legal strategy for Red Oak and OREP; works 
+              As Chief Legal Officer, Rob develops and leads the corporate legal strategy for OREP and Red Oak Capital Holdings; works 
               with other executive management team members to formulate and maintain internal audits, corporate compliance 
               programs and general management policies; and oversees delivery of legal services and resources to accomplish 
               corporate goals, strategies and priorities. In his role as EVP for Corporate Development, Rob works with the 
               companies' CEO and Chief Strategy Officer to devise and execute capital markets strategy and long-term growth 
-              and development plans. He is based in the firm's Charlotte, NC office.
+              and development plans.
             </p>
             
             <p className="text-lg leading-relaxed">
@@ -98,7 +98,7 @@ const RobertKaplan = () => {
             </p>
             
             <p className="text-lg leading-relaxed">
-              Rob, who holds a Juris Doctor degree from the College of William & Mary's Marshall-Wythe School of Law, has 
+              Rob, who holds a Juris Doctor (JD) degree from the College of William & Mary's Marshall-Wythe School of Law, has 
               been recognized as a Best Lawyer in America within his fields each year since 2013. He was also named as the 
               2022 "Lawyer of the Year" by Best Lawyers® for leveraged buyouts and private equity law.
             </p>
