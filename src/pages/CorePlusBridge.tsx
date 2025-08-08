@@ -143,7 +143,7 @@ const CorePlusBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Term</td>
-                      <td className="py-4 text-obsidian/80 pl-4">1 to 5 Years (fully extended)</td>
+                      <td className="py-4 text-obsidian/80 pl-4">24 – 36 months (fully extended)</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Floor / Rate Cap</td>
@@ -151,7 +151,7 @@ const CorePlusBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Extensions</td>
-                      <td className="py-4 text-obsidian/80 pl-4">Up to three (3) extension of 12 months each, at market extension fees</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to two (2) extensions of 6 months each, at market extension fees</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Origination Fees & Exit Fees</td>
