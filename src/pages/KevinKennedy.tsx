@@ -35,7 +35,7 @@ const KevinKennedy = () => {
                   <img 
                     src="/lovable-uploads/1c85a245-d705-4428-8095-5354f22b90df.png"
                     alt="Kevin P. Kennedy"
-                    className="w-full h-full object-cover rounded-sm"
+                    className="w-full h-full object-cover rounded-sm grayscale"
                   />
                 </div>
               </div>
