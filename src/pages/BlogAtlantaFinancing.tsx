@@ -23,7 +23,7 @@ const BlogAtlantaFinancing = () => {
       <Breadcrumb 
         items={[
           { label: "News", href: "/news" },
-          { label: "Oak Capital Holdings Provides $8.65M Financing for Atlanta Property" }
+          { label: "The Oak Companies Provides $8.65M Financing for Atlanta Property" }
         ]}
       />
 
@@ -49,7 +49,7 @@ const BlogAtlantaFinancing = () => {
                 <span className="text-sm text-deep-petrol/70">April 30, 2025</span>
               </div>
               <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                Oak Capital Holdings Provides $8.65M Financing for Atlanta Property
+                The Oak Companies Provides $8.65M Financing for Atlanta Property
               </h1>
             </div>
 
@@ -66,11 +66,11 @@ const BlogAtlantaFinancing = () => {
             <div className="prose prose-lg max-w-none">
               <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
-                  Oak Capital Holdings, LLC, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.
+                  The Oak Companies has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.
                 </p>
                 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  This comprehensive financing solution will support the borrower's acquisition of the multifamily property and fund a strategic renovation program designed to enhance the asset's value and appeal to residents. The transaction represents Oak Capital Holdings' continued commitment to providing flexible capital solutions for value-add multifamily investments.
+                  This comprehensive financing solution will support the borrower's acquisition of the multifamily property and fund a strategic renovation program designed to enhance the asset's value and appeal to residents. The transaction represents The Oak Companies' continued commitment to providing flexible capital solutions for value-add multifamily investments.
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
@@ -78,15 +78,15 @@ const BlogAtlantaFinancing = () => {
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  "This financing demonstrates our ability to structure creative solutions for multifamily acquisitions and renovations," said a senior executive at Oak Capital Holdings. "We're excited to support this value-creation opportunity in one of the country's most dynamic rental markets."
+                  "This financing demonstrates our ability to structure creative solutions for multifamily acquisitions and renovations," said a senior executive at The Oak Companies. "We're excited to support this value-creation opportunity in one of the country's most dynamic rental markets."
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  The bridge loan was structured with competitive terms and flexible repayment options to accommodate the acquisition timeline and renovation schedule. Oak Capital Holdings' expertise in multifamily financing enabled a smooth closing process and provided the borrower with the certainty needed to complete the transaction.
+                  The bridge loan was structured with competitive terms and flexible repayment options to accommodate the acquisition timeline and renovation schedule. The Oak Companies' expertise in multifamily financing enabled a smooth closing process and provided the borrower with the certainty needed to complete the transaction.
                 </p>
 
                 <p className="text-obsidian leading-relaxed">
-                  Oak Capital Holdings remains an active bridge lender in the multifamily sector, providing debt capital for acquisitions, refinancings, and value-add opportunities across major metropolitan markets throughout the United States.
+                  The Oak Companies remains an active bridge lender in the multifamily sector, providing debt capital for acquisitions, refinancings, and value-add opportunities across major metropolitan markets throughout the United States.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const BlogAtlantaFinancing = () => {
                 <Link to="/news/philadelphia-midrise" className="group">
                   <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
-                      Oak Capital Holdings Provides Bridge Loan for Philadelphia Midrise
+                      The Oak Companies Provides Bridge Loan for Philadelphia Midrise
                     </h4>
                     <p className="text-sm text-deep-petrol/70 mt-2">May 6, 2025</p>
                   </div>

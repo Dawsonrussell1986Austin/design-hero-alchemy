@@ -8,20 +8,20 @@ import { Calendar, ArrowRight } from "lucide-react";
 const News = () => {
   const newsArticles = [
     {
-      title: "OAK CAPITAL HOLDINGS PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
-      excerpt: "Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
+      title: "THE OAK COMPANIES PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
+      excerpt: "The Oak Companies has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
       image: "/lovable-uploads/403d76e1-5d7b-4f4c-b865-ee5d118a616d.png"
     },
     {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
-      excerpt: "EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments, an 86-unit multifamily community in the area.",
+      excerpt: "EAST POINT, GA. — The Oak Companies has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments, an 86-unit multifamily community in the area.",
       date: "May 2, 2025",
       image: "/lovable-uploads/3842fd81-69ed-40e9-abc5-b0c4ac8bd5c8.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS PROVIDES $8.65M FINANCING FOR THE ATLANTA",
-      excerpt: "Oak Capital Holdings, LLC, a leading provider of private capital solutions for commercial real estate, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
+      title: "THE OAK COMPANIES PROVIDES $8.65M FINANCING FOR THE ATLANTA",
+      excerpt: "The Oak Companies, a leading provider of private capital solutions for commercial real estate, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
       image: "/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png"
     },
@@ -32,31 +32,31 @@ const News = () => {
       image: "/lovable-uploads/3d74e083-1827-4c47-8309-022dc5ec46cf.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS PROVIDES $10.30 MILLION IN FINANCING",
-      excerpt: "Oak Capital Holdings, LLC provided a combined $10.30 million in financing for a pair of multifamily properties located in metropolitan Indianapolis. The separate bridge loans funded the acquisition and planned renovations.",
+      title: "THE OAK COMPANIES PROVIDES $10.30 MILLION IN FINANCING",
+      excerpt: "The Oak Companies provided a combined $10.30 million in financing for a pair of multifamily properties located in metropolitan Indianapolis. The separate bridge loans funded the acquisition and planned renovations.",
       date: "April 16, 2025",
       image: "/lovable-uploads/634f9046-a886-4d1d-81c0-abd82f0a7daf.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS ANNOUNCES EXTENSION TO NOVEMBER 30, 2024",
+      title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO NOVEMBER 30, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (October 31, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "October 31, 2024",
       image: "/lovable-uploads/89d8c150-21e7-428d-a059-cf90057a1204.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS ANNOUNCES EXTENSION TO OCTOBER 31, 2024",
+      title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO OCTOBER 31, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (September 24, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "September 24, 2024",
       image: "/lovable-uploads/61420552-7df9-48c1-b18a-47010f1decaf.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS ANNOUNCES EXTENSION TO SEPTEMBER 30, 2024",
+      title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO SEPTEMBER 30, 2024",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "August 30, 2024",
       image: "/lovable-uploads/91e1e90b-6a36-4bc1-96fc-955d2667a134.png"
     },
     {
-      title: "OAK CAPITAL HOLDINGS ANNOUNCES EXTENSION OF EXPIRATION TIME",
+      title: "THE OAK COMPANIES ANNOUNCES EXTENSION OF EXPIRATION TIME",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "July 31, 2024",
       image: "/lovable-uploads/3d74e083-1827-4c47-8309-022dc5ec46cf.png"

@@ -66,7 +66,7 @@ const BlogAtlantaAcquisition = () => {
             <div className="prose prose-lg max-w-none">
               <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
-                  EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.
+                  EAST POINT, GA. — The Oak Companies has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.
                 </p>
                 
                 <p className="text-obsidian leading-relaxed mb-6">
@@ -78,15 +78,15 @@ const BlogAtlantaAcquisition = () => {
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  "We're pleased to support this acquisition and renovation project in the Atlanta market," commented a representative from Oak Capital Holdings. "The Atlanta multifamily sector continues to demonstrate strong fundamentals, and this property is well-positioned to capitalize on continued rental demand in the area."
+                  "We're pleased to support this acquisition and renovation project in the Atlanta market," commented a representative from The Oak Companies. "The Atlanta multifamily sector continues to demonstrate strong fundamentals, and this property is well-positioned to capitalize on continued rental demand in the area."
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  The bridge loan features flexible terms designed to accommodate the acquisition timeline and renovation schedule. Oak Capital Holdings worked closely with the borrower to structure financing that provides the necessary capital and flexibility for successful project execution.
+                  The bridge loan features flexible terms designed to accommodate the acquisition timeline and renovation schedule. The Oak Companies worked closely with the borrower to structure financing that provides the necessary capital and flexibility for successful project execution.
                 </p>
 
                 <p className="text-obsidian leading-relaxed">
-                  This transaction continues Oak Capital Holdings' active participation in providing bridge financing for multifamily acquisitions and value-add opportunities throughout the Southeast region.
+                  This transaction continues The Oak Companies' active participation in providing bridge financing for multifamily acquisitions and value-add opportunities throughout the Southeast region.
                 </p>
               </div>
             </div>
@@ -98,7 +98,7 @@ const BlogAtlantaAcquisition = () => {
                 <Link to="/news/philadelphia-midrise" className="group">
                   <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
-                      Oak Capital Holdings Provides Bridge Loan for Philadelphia Midrise
+                      The Oak Companies Provides Bridge Loan for Philadelphia Midrise
                     </h4>
                     <p className="text-sm text-deep-petrol/70 mt-2">May 6, 2025</p>
                   </div>
@@ -106,7 +106,7 @@ const BlogAtlantaAcquisition = () => {
                 <Link to="/news/atlanta-financing" className="group">
                   <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
-                      Oak Capital Holdings Provides $8.65M Financing for Atlanta Property
+                      The Oak Companies Provides $8.65M Financing for Atlanta Property
                     </h4>
                     <p className="text-sm text-deep-petrol/70 mt-2">April 30, 2025</p>
                   </div>

@@ -23,7 +23,7 @@ const BlogPhiladelphiaMidrise = () => {
       <Breadcrumb 
         items={[
           { label: "News", href: "/news" },
-          { label: "Oak Capital Holdings Provides Bridge Loan for Philadelphia Midrise" }
+          { label: "The Oak Companies Provides Bridge Loan for Philadelphia Midrise" }
         ]}
       />
 
@@ -49,7 +49,7 @@ const BlogPhiladelphiaMidrise = () => {
                 <span className="text-sm text-deep-petrol/70">May 6, 2025</span>
               </div>
               <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                Oak Capital Holdings Provides Bridge Loan for Philadelphia Midrise
+                The Oak Companies Provides Bridge Loan for Philadelphia Midrise
               </h1>
             </div>
 
@@ -66,7 +66,7 @@ const BlogPhiladelphiaMidrise = () => {
             <div className="prose prose-lg max-w-none">
               <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
-                  Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.
+                  The Oak Companies has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.
                 </p>
                 
                 <p className="text-obsidian leading-relaxed mb-6">
@@ -74,15 +74,15 @@ const BlogPhiladelphiaMidrise = () => {
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  "This transaction exemplifies our commitment to providing flexible bridge financing for quality multifamily assets," said a spokesperson for Oak Capital Holdings. "The Philadelphia market continues to show strong fundamentals for rental housing, and this property is well-positioned to benefit from those trends."
+                  "This transaction exemplifies our commitment to providing flexible bridge financing for quality multifamily assets," said a spokesperson for The Oak Companies. "The Philadelphia market continues to show strong fundamentals for rental housing, and this property is well-positioned to benefit from those trends."
                 </p>
 
                 <p className="text-obsidian leading-relaxed mb-6">
-                  The bridge loan features competitive terms and will allow the borrower to complete the acquisition while implementing a value-add strategy to maximize the property's potential. Oak Capital Holdings structured the financing to provide the flexibility needed for successful execution of the business plan.
+                  The bridge loan features competitive terms and will allow the borrower to complete the acquisition while implementing a value-add strategy to maximize the property's potential. The Oak Companies structured the financing to provide the flexibility needed for successful execution of the business plan.
                 </p>
 
                 <p className="text-obsidian leading-relaxed">
-                  Oak Capital Holdings continues to be an active lender in the multifamily bridge loan market, providing debt capital for acquisitions, refinancings, and value-add opportunities across the United States.
+                  The Oak Companies continues to be an active lender in the multifamily bridge loan market, providing debt capital for acquisitions, refinancings, and value-add opportunities across the United States.
                 </p>
               </div>
             </div>
@@ -102,7 +102,7 @@ const BlogPhiladelphiaMidrise = () => {
                 <Link to="/news/atlanta-financing" className="group">
                   <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
-                      Oak Capital Holdings Provides $8.65M Financing for Atlanta Property
+                      The Oak Companies Provides $8.65M Financing for Atlanta Property
                     </h4>
                     <p className="text-sm text-deep-petrol/70 mt-2">April 30, 2025</p>
                   </div>
