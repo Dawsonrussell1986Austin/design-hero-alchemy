@@ -310,12 +310,14 @@ const About = () => {
               </div>
               
               <div className="text-center mt-12">
-                <Button 
-                  size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-                >
-                  Learn More About Our Approach
-                </Button>
+                <a href="/investments">
+                  <Button 
+                    size="lg"
+                    className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                  >
+                    Learn More About Our Approach
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
