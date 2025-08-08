@@ -102,7 +102,7 @@ const CorePlusBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Amount</td>
-                      <td className="py-4 text-obsidian/80 pl-4">$2 Million to $20 Million</td>
+                      <td className="py-4 text-obsidian/80 pl-4">$2 Million to $50 Million+</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Purpose</td>

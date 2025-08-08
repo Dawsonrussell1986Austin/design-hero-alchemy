@@ -100,7 +100,7 @@ const OpportunisticBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Amount</td>
-                      <td className="py-4 text-obsidian/80 pl-4">$1 Million to $10 Million</td>
+                      <td className="py-4 text-obsidian/80 pl-4">$2 Million to $50 Million+</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Purpose</td>
@@ -112,7 +112,7 @@ const OpportunisticBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Maximum LTV/LTC</td>
-                      <td className="py-4 text-obsidian/80 pl-4">Up to 75% LTV (based on stabilized value)<br/>Up to 90% LTC (based on transaction underwriting)</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to 85% LTV (based on stabilized value)<br/>Up to 90% LTC (based on transaction underwriting)</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Interest Rate</td>
