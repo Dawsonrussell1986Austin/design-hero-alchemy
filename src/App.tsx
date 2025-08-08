@@ -6,39 +6,40 @@ import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
-import BridgeLoans from "./pages/BridgeLoans";
-import FhaHudLoans from "./pages/FhaHudLoans";
-import CoreBridgeTerms from "./pages/CoreBridgeTerms";
-import Hud241aTerms from "./pages/Hud241aTerms";
-import Hud232223a7Terms from "./pages/Hud232223a7Terms";
-import Hud232223fTerms from "./pages/Hud232223fTerms"; 
-import Hud232221d4Terms from "./pages/Hud232221d4Terms";
-import Hud221Terms from "./pages/Hud221Terms";
 import Investments from "./pages/Investments";
+import Transactions from "./pages/Transactions";
 import Offerings from "./pages/Offerings";
-import Contact from "./pages/Contact";
-import WebinarRegistration from "./pages/WebinarRegistration";
-import News from "./pages/News";
-import Leadership from "./pages/Leadership";
-import GaryBechtel from "./pages/GaryBechtel";
-import PaulCleary from "./pages/PaulCleary";
-import RaymondDavis from "./pages/RaymondDavis";
-import MatthewWebster from "./pages/MatthewWebster";
-import RobertKaplan from "./pages/RobertKaplan";
-import ThomasMcGovern from "./pages/ThomasMcGovern";
-import BrookScardina from "./pages/BrookScardina";
+import BridgeLoans from "./pages/BridgeLoans";
 import CoreBridge from "./pages/CoreBridge";
 import CorePlusBridge from "./pages/CorePlusBridge";
 import OpportunisticBridge from "./pages/OpportunisticBridge";
 import ParticipatingBridge from "./pages/ParticipatingBridge";
-import Transactions from "./pages/Transactions";
-import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
+import FhaHudLoans from "./pages/FhaHudLoans";
+import Leadership from "./pages/Leadership";
+import Contact from "./pages/Contact";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Disclosures from "./pages/Disclosures";
+import Disclaimer from "./pages/Disclaimer";
+import News from "./pages/News";
+import WebinarRegistration from "./pages/WebinarRegistration";
+import NotFound from "./pages/NotFound";
+import RobertKaplan from "./pages/RobertKaplan";
+import BrookScardina from "./pages/BrookScardina";
+import ThomasMcGovern from "./pages/ThomasMcGovern";
+import MatthewWebster from "./pages/MatthewWebster";
+import GaryBechtel from "./pages/GaryBechtel";
+import PaulCleary from "./pages/PaulCleary";
+import RaymondDavis from "./pages/RaymondDavis";
+import CoreBridgeTerms from "./pages/CoreBridgeTerms";
+import Hud221Terms from "./pages/Hud221Terms";
+import Hud232221d4Terms from "./pages/Hud232221d4Terms";
+import Hud232223a7Terms from "./pages/Hud232223a7Terms";
+import Hud232223fTerms from "./pages/Hud232223fTerms";
+import Hud241aTerms from "./pages/Hud241aTerms";
 import BlogAtlantaAcquisition from "./pages/BlogAtlantaAcquisition";
 import BlogAtlantaFinancing from "./pages/BlogAtlantaFinancing";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import Disclosures from "./pages/Disclosures";
-import NotFound from "./pages/NotFound";
+import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/disclosures" element={<Disclosures />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
