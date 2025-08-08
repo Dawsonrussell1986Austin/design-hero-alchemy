@@ -43,7 +43,7 @@ const About = () => {
                     </p>
                     
                     <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol leading-relaxed mb-6">
-                      In a private credit landscape where polish often outpaces performance, Oak delivers industry leading expertise in a highly inefficient, fragmented and unserved sector of the market. We don't chase headlines — we create income strategies that prioritize downside protection, predictability, and trust.
+                      In a private credit landscape where polish often outpaces performance, Oak delivers industry leading expertise in a highly inefficient, fragmented and underserved sector of the market. We don't chase headlines — we create income strategies that prioritize downside protection, predictability, and trust.
                     </p>
                     
                     <div className="mt-8">
