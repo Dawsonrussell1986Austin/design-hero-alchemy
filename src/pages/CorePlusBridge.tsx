@@ -80,15 +80,6 @@ const CorePlusBridge = () => {
                   </ul>
                 </div>
 
-                {/* Why Choose Red Oak */}
-                <div className="mb-8">
-                  <h2 className="text-xl font-display font-medium text-obsidian mb-4">
-                    WHY CHOOSE RED OAK?
-                  </h2>
-                  <p className="text-obsidian/80">
-                    Red Oak can, depending on the upside potential, provide a higher LTC than many other small-balance bridge lenders in the market.
-                  </p>
-                </div>
               </div>
               
               {/* Image */}
