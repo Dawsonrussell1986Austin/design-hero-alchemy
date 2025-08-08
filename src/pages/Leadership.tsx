@@ -25,10 +25,10 @@ const Leadership = () => {
       bio: "Paul manages day-to-day operations and ensures operational excellence across all business units and geographic markets."
     },
     {
-      name: "Kevin P. Kennedy",
-      title: "Chief Sales and Distribution Officer",
-      image: "/src/assets/kevin-kennedy-bw.png",
-      bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
+      name: "Matthew Webster",
+      title: "Chief Credit Officer, Senior Vice President", 
+      image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
+      bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
     },
     {
       name: "Robert R. Kaplan, Jr.",
@@ -43,10 +43,10 @@ const Leadership = () => {
       bio: "Thomas oversees all financial operations, reporting, and strategic financial planning to support Oak's continued growth and stability."
     },
     {
-      name: "Matthew Webster",
-      title: "Chief Credit Officer, Senior Vice President", 
-      image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
-      bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
+      name: "Kevin P. Kennedy",
+      title: "Chief Sales and Distribution Officer",
+      image: "/src/assets/kevin-kennedy-bw.png",
+      bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
     },
     {
       name: "Brook Scardina",
@@ -176,12 +176,12 @@ const Leadership = () => {
                       window.location.href = "/leadership/gary-bechtel";
                     } else if (leader.name === "Paul Cleary") {
                       window.location.href = "/leadership/paul-cleary";
+                    } else if (leader.name === "Matthew Webster") {
+                      window.location.href = "/leadership/matthew-webster";
                     } else if (leader.name === "Kevin P. Kennedy") {
                       window.location.href = "/leadership/kevin-kennedy";
                     } else if (leader.name === "Raymond T. Davis") {
                       window.location.href = "/leadership/raymond-davis";
-                    } else if (leader.name === "Matthew Webster") {
-                      window.location.href = "/leadership/matthew-webster";
                     } else if (leader.name === "Robert R. Kaplan, Jr.") {
                       window.location.href = "/leadership/robert-kaplan";
                     } else if (leader.name === "Thomas A. McGovern") {
@@ -192,7 +192,7 @@ const Leadership = () => {
                   }}
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Kevin P. Kennedy" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Kevin P. Kennedy" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
