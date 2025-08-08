@@ -2,21 +2,10 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer, Users } from "lucide-react";
-import { useState } from "react";
+
 
 const ParticipatingBridge = () => {
-  const [showDetails, setShowDetails] = useState(false);
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email && name) {
-      setShowDetails(true);
-    }
-  };
 
   return (
     <div className="min-h-screen">
@@ -90,16 +79,6 @@ const ParticipatingBridge = () => {
                     alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
                     className="w-full h-auto rounded-lg mb-6"
                   />
-                  <div className="space-y-4">
-                    <Input
-                      type="email"
-                      placeholder="Enter your email address"
-                      className="w-full px-4 py-3 border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
-                    />
-                    <Button className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist py-3 font-medium">
-                      Download Flyer
-                    </Button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -197,11 +176,6 @@ const ParticipatingBridge = () => {
                 </table>
               </div>
               
-              <div className="text-center mt-8">
-                <Button className="bg-garnet-edge hover:bg-garnet-edge/90 text-silver-mist px-8 py-3 font-medium">
-                  DOWNLOAD FLYER
-                </Button>
-              </div>
             </div>
           </div>
         </section>

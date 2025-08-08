@@ -2,18 +2,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { useState } from "react";
-
 const Hud221Terms = () => {
-  const [email, setEmail] = useState("");
-
-  const handleDownload = () => {
-    if (email) {
-      // Handle download logic here
-      console.log("Download for email:", email);
-    }
-  };
 
   return (
     <div className="min-h-screen">
@@ -82,23 +71,6 @@ const Hud221Terms = () => {
                   </ul>
                 </div>
 
-                {/* Download Form */}
-                <div className="space-y-4">
-                  <Input
-                    type="email"
-                    placeholder="Enter your email address"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full"
-                  />
-                  <Button 
-                    onClick={handleDownload}
-                    className="bg-garnet-edge hover:bg-garnet-edge/90 text-white px-6 py-2 font-medium"
-                    disabled={!email}
-                  >
-                    Download Program Details
-                  </Button>
-                </div>
               </div>
 
               {/* Right Column - Image */}

@@ -77,20 +77,6 @@ const Hud232223fTerms = () => {
                     className="w-full h-64 object-cover"
                   />
                 </div>
-                
-                {/* Download Form */}
-                <div className="space-y-4">
-                  <input 
-                    type="email"
-                    placeholder="Enter your email address"
-                    className="w-full px-4 py-3 border border-obsidian/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-garnet-edge focus:border-transparent"
-                  />
-                  <Button 
-                    className="w-full bg-garnet-edge hover:bg-garnet-edge/90 text-white px-8 py-3 font-medium"
-                  >
-                    Download Flyer
-                  </Button>
-                </div>
               </div>
             </div>
 
