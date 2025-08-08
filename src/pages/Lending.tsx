@@ -29,7 +29,7 @@ const Lending = () => {
               <div>
                 {/* Program Badge */}
                 <div className="mb-4">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/25 text-garnet-edge border border-garnet-edge/50 shadow-sm">
                     Lending Overview
                   </span>
                 </div>
