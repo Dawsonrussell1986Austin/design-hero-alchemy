@@ -73,7 +73,7 @@ const HeroSection = () => {
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.2s" }}>
               <div className="text-4xl font-display font-medium text-silver-mist mb-3">$5B</div>
               <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-2">
-                OF BRIDGE LOANS COMPLETED
+                BRIDGE LOANS COMPLETED
               </div>
               <div className="text-xs font-body text-[#b1beab]/80">
                 in the Last 10 Years
