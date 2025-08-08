@@ -67,15 +67,6 @@ const OpportunisticBridge = () => {
                   </ul>
                 </div>
 
-                {/* Why Choose Red Oak */}
-                <div className="mb-8">
-                  <h2 className="text-xl font-display font-medium text-obsidian mb-4">
-                    WHY CHOOSE RED OAK?
-                  </h2>
-                  <p className="text-obsidian/80">
-                    Red Oak can, depending on the upside potential, provide a higher LTC (providing equity the borrower does not have to raise) than many other small-balance bridge lenders in the market.
-                  </p>
-                </div>
               </div>
               
               {/* Image */}
@@ -139,7 +130,7 @@ const OpportunisticBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Term</td>
-                      <td className="py-4 text-obsidian/80 pl-4">1 to 3 Years (fully extended)</td>
+                      <td className="py-4 text-obsidian/80 pl-4">18 – 36 months (fully extended)</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Floor / Rate Cap</td>
@@ -147,7 +138,7 @@ const OpportunisticBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Extensions</td>
-                      <td className="py-4 text-obsidian/80 pl-4">Up to four (4) extensions of 6 months each, at market extension fees</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to two (2) extensions of 6 months each, at market extension fees</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Origination Fees & Exit Fees</td>
