@@ -95,7 +95,7 @@ const CoreBridgeTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Loan Amount</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">$2 Million to $20 Million</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">$2 Million to $50 Million+</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Loan Purpose</td>
@@ -107,7 +107,7 @@ const CoreBridgeTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Maximum LTV/LTC</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Up to 75% LTV (based on stabilized value) Up to 75% LTC (based on transaction underwriting)</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Up to 80% LTV (based on stabilized value) Up to 75% LTC (based on transaction underwriting)</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Interest Rate</td>
@@ -115,7 +115,7 @@ const CoreBridgeTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Loan Term</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">1 to 5 Years (fully extended)</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">12 to 36 months (fully extended)</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Floor / Rate Cap</td>
@@ -123,7 +123,7 @@ const CoreBridgeTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Extensions</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Up to three (3) extension of 12 months each, at market extension fees</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Up to two (2) extensions of 6 months each, at market extension fees</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Origination Fees & Exit Fees</td>

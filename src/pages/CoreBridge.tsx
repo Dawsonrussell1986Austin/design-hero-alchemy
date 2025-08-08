@@ -175,14 +175,14 @@ const CoreBridge = () => {
                       <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
                       <h4 className="font-semibold text-obsidian">Loan Amount</h4>
                     </div>
-                    <p className="text-obsidian/80">$2 Million – $20 Million</p>
+                    <p className="text-obsidian/80">$2 Million – $50 Million+</p>
                   </div>
                   <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
                     <div className="flex items-center mb-3">
                       <Calendar className="h-5 w-5 text-garnet-edge mr-2" />
                       <h4 className="font-semibold text-obsidian">Loan Term</h4>
                     </div>
-                    <p className="text-obsidian/80">1 to 5 Years (Fully Extended)</p>
+                    <p className="text-obsidian/80">12 to 36 months (Fully Extended)</p>
                   </div>
                   <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
                     <div className="flex items-center mb-3">
@@ -196,7 +196,7 @@ const CoreBridge = () => {
                       <TrendingUp className="h-5 w-5 text-garnet-edge mr-2" />
                       <h4 className="font-semibold text-obsidian">Max LTV / LTC</h4>
                     </div>
-                    <p className="text-obsidian/80">Up to 75% LTV (stabilized)<br/>Up to 75% LTC (based on underwriting)</p>
+                    <p className="text-obsidian/80">Up to 80% LTV (stabilized)<br/>Up to 75% LTC (based on underwriting)</p>
                   </div>
                   <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
                     <div className="flex items-center mb-3">
@@ -270,7 +270,7 @@ const CoreBridge = () => {
                       <Clock className="h-5 w-5 text-garnet-edge mr-2" />
                       <h4 className="font-semibold text-obsidian">Extensions</h4>
                     </div>
-                    <p className="text-obsidian/80">Up to 3 extensions of 12 months, subject to market fees</p>
+                    <p className="text-obsidian/80">Up to two (2) extensions of 6 months each, subject to market fees</p>
                   </div>
                   <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.2s'}}>
                     <div className="flex items-center mb-3">
