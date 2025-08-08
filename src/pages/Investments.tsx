@@ -192,7 +192,7 @@ const Investments = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
-                  Income strategies rooted in structure—not speculation.
+                  Investment strategies rooted in structure — not speculation.
                 </h2>
                 <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
                   Private real estate credit offers unique benefits over corporate credit and equity strategies:
