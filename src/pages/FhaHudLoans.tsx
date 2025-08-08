@@ -39,10 +39,10 @@ const FhaHudLoans = () => {
                   Long-Term Government-Backed Financing
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  FHA/HUD-insured loan programs for multifamily, affordable housing, senior living, and healthcare properties.
+                  FHA/HUD insured loan programs for multifamily, affordable housing, senior living, and healthcare properties.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                  Through our subsidiary Johnson Capital Multifamily, Oak provides comprehensive FHA/HUD-insured financing solutions offering long-term, government-backed capital with competitive rates and favorable terms.
+                  Through our subsidiary Johnson Capital Multifamily, Oak provides comprehensive FHA/HUD insured financing solutions offering long term, government-backed capital with competitive rates and favorable terms.
                 </p>
 
                 {/* Key Features */}
@@ -104,7 +104,7 @@ const FhaHudLoans = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
-                        HUD 221(D)4 & 220
+                        HUD 221(D)(4) & 220
                       </h3>
                       <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
                         New Construction/Substantial Rehabilitation
@@ -168,7 +168,7 @@ const FhaHudLoans = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
-                        HUD 223(A)7
+                        HUD 223(A)(7)
                       </h3>
                       <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
                         Streamlined Refinance
@@ -246,7 +246,7 @@ const FhaHudLoans = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
-                        232/221(D)4
+                        232/221(D)(4)
                       </h3>
                       <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
                         Senior Housing Construction

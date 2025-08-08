@@ -37,7 +37,7 @@ const Hud232223a7Terms = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  232/223(a)(7)
+                  232/223(A)(7)
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Refinance of existing HUD-insured senior living and healthcare loans

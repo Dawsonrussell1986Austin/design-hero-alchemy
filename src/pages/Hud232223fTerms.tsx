@@ -16,7 +16,7 @@ const Hud232223fTerms = () => {
         items={[
           { label: "Lending", href: "/lending" },
           { label: "FHA/HUD Loans", href: "/lending/fha-hud" },
-          { label: "232/223 (f)" }
+          { label: "232/223(f)" }
         ]}
       />
 
@@ -37,7 +37,7 @@ const Hud232223fTerms = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  232/223 (f)
+                  232/223(F)
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Refinance or Acquisition of Nursing Homes, Intermediate Care Facilities, Board & Care, and Assisted Living Facilities

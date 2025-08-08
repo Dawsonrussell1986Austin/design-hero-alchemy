@@ -37,7 +37,7 @@ const Hud241aTerms = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  HUD 241(a)
+                  HUD 241(A)
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
                   Supplemental Mortgage Insurance for HUD-Insured Healthcare Loans
