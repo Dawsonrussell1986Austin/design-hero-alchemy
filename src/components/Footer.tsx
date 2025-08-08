@@ -41,15 +41,15 @@ const Footer = () => {
               <div className="space-y-4 text-silver-mist/80">
                 <div>
                   <p className="font-serif text-sm">Office</p>
-                  <p className="font-sans text-sm">123 Main Street<br />New York, NY 10001</p>
+                  <p className="font-sans text-sm">5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209</p>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Phone</p>
-                  <p className="font-sans text-sm">(555) 123-4567</p>
+                  <p className="font-sans text-sm">980.288.6627</p>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Email</p>
-                  <p className="font-sans text-sm">info@oakrep.com</p>
+                  <p className="font-sans text-sm">info@oakrepartners.com</p>
                 </div>
               </div>
             </div>
