@@ -30,6 +30,7 @@ import ThomasMcGovern from "./pages/ThomasMcGovern";
 import MatthewWebster from "./pages/MatthewWebster";
 import GaryBechtel from "./pages/GaryBechtel";
 import PaulCleary from "./pages/PaulCleary";
+import KevinKennedy from "./pages/KevinKennedy";
 import RaymondDavis from "./pages/RaymondDavis";
 import CoreBridgeTerms from "./pages/CoreBridgeTerms";
 import Hud221Terms from "./pages/Hud221Terms";
@@ -61,6 +62,7 @@ function App() {
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
         <Route path="/leadership/paul-cleary" element={<PaulCleary />} />
+        <Route path="/leadership/kevin-kennedy" element={<KevinKennedy />} />
         <Route path="/leadership/raymond-davis" element={<RaymondDavis />} />
         <Route path="/leadership/matthew-webster" element={<MatthewWebster />} />
         <Route path="/leadership/robert-kaplan" element={<RobertKaplan />} />

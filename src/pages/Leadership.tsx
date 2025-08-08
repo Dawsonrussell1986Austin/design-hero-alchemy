@@ -25,6 +25,12 @@ const Leadership = () => {
       bio: "Paul manages day-to-day operations and ensures operational excellence across all business units and geographic markets."
     },
     {
+      name: "Kevin P. Kennedy",
+      title: "Chief Sales and Distribution Officer",
+      image: "/src/assets/kevin-kennedy-bw.png",
+      bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
+    },
+    {
       name: "Robert R. Kaplan, Jr.",
       title: "Chief Legal Officer and Executive Vice President for Corporate Development",
       image: "/lovable-uploads/95be19e9-56b5-4d13-963d-51e2ac72fa2b.png",
@@ -170,6 +176,8 @@ const Leadership = () => {
                       window.location.href = "/leadership/gary-bechtel";
                     } else if (leader.name === "Paul Cleary") {
                       window.location.href = "/leadership/paul-cleary";
+                    } else if (leader.name === "Kevin P. Kennedy") {
+                      window.location.href = "/leadership/kevin-kennedy";
                     } else if (leader.name === "Raymond T. Davis") {
                       window.location.href = "/leadership/raymond-davis";
                     } else if (leader.name === "Matthew Webster") {
@@ -184,7 +192,7 @@ const Leadership = () => {
                   }}
                 >
                   <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
-                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
+                    {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Kevin P. Kennedy" || leader.name === "Matthew Webster" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
