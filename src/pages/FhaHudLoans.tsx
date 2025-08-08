@@ -106,7 +106,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         HUD 221(D)(4) & 220
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         New Construction/Substantial Rehabilitation
                       </p>
                     </div>
@@ -138,7 +138,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         HUD 223(F)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Acquisition/Refinance
                       </p>
                     </div>
@@ -170,7 +170,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         HUD 223(A)(7)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Streamlined Refinance
                       </p>
                     </div>
@@ -202,7 +202,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         HUD 241(A)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Supplemental Loans
                       </p>
                     </div>
@@ -248,7 +248,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         232/221(D)(4)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Senior Housing Construction
                       </p>
                     </div>
@@ -280,7 +280,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         232/223(F)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Senior Housing Acquisition
                       </p>
                     </div>
@@ -312,7 +312,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         232/223(A)(7)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Streamlined Senior Refinance
                       </p>
                     </div>
@@ -344,7 +344,7 @@ const FhaHudLoans = () => {
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
                         241(A) Senior
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                      <p className="text-sm font-medium text-accent-brown tracking-wider">
                         Senior Housing Supplemental
                       </p>
                     </div>
