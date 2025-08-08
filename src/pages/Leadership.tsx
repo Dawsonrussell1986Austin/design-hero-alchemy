@@ -10,7 +10,7 @@ const Leadership = () => {
       name: "Gary Bechtel",
       title: "Chief Executive Officer",
       image: "/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png",
-      bio: "Gary Bechtel is Chief Executive Officer of Red Oak Capital Holdings, responsible for managing the national commercial real estate finance firm's lending operations and business development efforts. Based in Charlotte, North Carolina."
+      bio: "Gary Bechtel is Chief Executive Officer of Red Oak Capital Holdings, responsible for managing the national commercial real estate finance firm's lending operations and business development efforts for the company, based in Charlotte, North Carolina."
     },
     {
       name: "Raymond T. Davis", 

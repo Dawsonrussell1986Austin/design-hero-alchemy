@@ -67,7 +67,7 @@ const GaryBechtel = () => {
                   <p className="text-lg">
                     Gary Bechtel heads the investment management leadership team at Oak Real Estate Partners (OREP). 
                     As CEO, he has direct oversight of all loan portfolios and operations for the 
-                    company. Based in Charlotte, North Carolina.
+                    company, based in Charlotte, North Carolina.
                   </p>
                 </div>
               </div>
