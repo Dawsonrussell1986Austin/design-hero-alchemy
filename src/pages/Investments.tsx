@@ -42,7 +42,7 @@ const Investments = () => {
                   Direct lending. Disciplined structure. Durable results.
                 </p>
                 <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
-                  Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary and secondary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
+                  Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary, secondary, and select tertiary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
                 </p>
                 
                 {/* Oak's Investment Focus - Under text */}
