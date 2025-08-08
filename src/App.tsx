@@ -2,6 +2,7 @@ import React from 'react'
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
@@ -42,6 +43,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Toaster />
       <Sonner />
       <Routes>
