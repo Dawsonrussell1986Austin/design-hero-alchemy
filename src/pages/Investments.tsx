@@ -146,7 +146,7 @@ const Investments = () => {
                     <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <div>
                       <h3 className="text-xl font-bold text-silver-mist mb-2">Predictable Income Streams</h3>
-                      <p className="text-silver-mist/80 leading-relaxed">Contract-based income streams designed for consistency.</p>
+                      <p className="text-silver-mist/80 leading-relaxed">Lease-based income streams designed for consistency.</p>
                     </div>
                   </div>
                 </div>
@@ -156,7 +156,7 @@ const Investments = () => {
                   <div className="h-full flex flex-col justify-center text-center">
                     <TrendingUp className="h-6 w-6 text-garnet-edge mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-silver-mist mb-3">Downside Protection</h3>
-                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and low LTV ratios for enhanced protection.</p>
+                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and conservative LTV ratios for enhanced protection.</p>
                   </div>
                 </div>
 
