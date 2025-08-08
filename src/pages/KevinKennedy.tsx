@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import kevinKennedyImage from "@/assets/kevin-kennedy-bw.png";
+import kevinKennedyImage from "@/assets/kevin-kennedy-bw-real.png";
 
 const KevinKennedy = () => {
   const navigate = useNavigate();

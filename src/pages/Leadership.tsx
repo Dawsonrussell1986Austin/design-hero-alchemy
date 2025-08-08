@@ -45,7 +45,7 @@ const Leadership = () => {
     {
       name: "Kevin P. Kennedy",
       title: "Chief Sales and Distribution Officer",
-      image: "/src/assets/kevin-kennedy-bw.png",
+      image: "/src/assets/kevin-kennedy-bw-real.png",
       bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
     },
     {
