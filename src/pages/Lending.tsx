@@ -161,12 +161,14 @@ const Lending = () => {
                 Our integrated platform ensures smooth execution from initial bridge loan to FHA takeout, offering borrowers a seamless path from acquisition through long-term financing.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
-                >
-                  Learn More About Integration
-                </Button>
+                <a href="/lending/fha-hud">
+                  <Button 
+                    variant="outline"
+                    className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
+                  >
+                    Learn More About Integration
+                  </Button>
+                </a>
               </div>
             </div>
 
