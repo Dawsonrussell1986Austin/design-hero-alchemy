@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import kevinKennedyImage from "@/assets/kevin-kennedy-bw-real.png";
+
 
 const KevinKennedy = () => {
   const navigate = useNavigate();
@@ -33,7 +33,7 @@ const KevinKennedy = () => {
               <div className="lg:col-span-1">
                 <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
-                    src={kevinKennedyImage}
+                    src="/lovable-uploads/1c85a245-d705-4428-8095-5354f22b90df.png"
                     alt="Kevin P. Kennedy"
                     className="w-full h-full object-cover rounded-sm"
                   />

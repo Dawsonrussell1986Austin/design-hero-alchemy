@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin } from "lucide-react";
-import kevinKennedyImage from "@/assets/kevin-kennedy-bw-real.png";
+
 
 const Leadership = () => {
   const leadershipTeam = [
@@ -46,7 +46,7 @@ const Leadership = () => {
     {
       name: "Kevin P. Kennedy",
       title: "Chief Sales and Distribution Officer",
-      image: kevinKennedyImage,
+      image: "/lovable-uploads/1c85a245-d705-4428-8095-5354f22b90df.png",
       bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
     },
     {
