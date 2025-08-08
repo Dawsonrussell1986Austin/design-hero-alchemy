@@ -132,9 +132,9 @@ const Offerings = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
@@ -146,9 +146,9 @@ const Offerings = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
@@ -160,9 +160,9 @@ const Offerings = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
@@ -174,9 +174,9 @@ const Offerings = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
@@ -188,9 +188,9 @@ const Offerings = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
@@ -202,9 +202,9 @@ const Offerings = () => {
                   </p>
                 </div>
 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group hover:shadow-xl">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg">
                   <div className="flex items-center space-x-4 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center group-hover:bg-garnet-edge/20 transition-colors duration-300">
+                    <div className="w-10 h-10 rounded-lg bg-garnet-edge/10 flex items-center justify-center">
                       <Building2 className="h-5 w-5 text-garnet-edge" />
                     </div>
                     <h3 className="text-xl font-semibold text-obsidian">
