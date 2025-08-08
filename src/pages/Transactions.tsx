@@ -199,12 +199,9 @@ const Transactions = () => {
                 </div>
                 
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  Strategic Transaction Portfolio
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+                  Disciplined execution. Diverse markets. Consistent performance.
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  Institutional-quality investments. Proven track record. Transparent execution.
-                </p>
                 <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
                   Our transaction history demonstrates Oak's commitment to disciplined underwriting and strategic asset selection across diverse commercial real estate markets. Each transaction reflects our focus on capital preservation and risk-adjusted returns.
                 </p>
