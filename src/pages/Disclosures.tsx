@@ -14,11 +14,11 @@ const Disclosures = () => {
               <Breadcrumb 
                 items={[
                   { label: "Home", href: "/" },
-                  { label: "Disclosures" }
+                  { label: "Disclaimers" }
                 ]}
               />
               <h1 className="text-4xl md:text-5xl font-display font-light text-silver-mist mb-6">
-                Disclosures
+                Disclaimers
               </h1>
             </div>
           </div>
@@ -27,65 +27,38 @@ const Disclosures = () => {
         <div className="py-16">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto prose prose-lg prose-slate">
+              <p className="mb-8">
+                If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:info@oakrepartners.com" className="text-accent-brown hover:underline">info@oakrepartners.com</a>.
+              </p>
+
               <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">Investment Risks</h2>
+                <h2 className="text-2xl font-display font-medium mb-4">General Information Disclaimer</h2>
                 <p className="mb-4">
-                  All investments involve risk, including the potential loss of principal. Real estate 
-                  investments are subject to various risks including market conditions, property values, 
-                  interest rates, and economic factors.
+                  All the information on this website - www.oakrepartners.com - is published in good faith and for general information purpose only. Oak Real Estate Partners does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (Oak Real Estate Partners), is strictly at your own risk. Oak Real Estate Partners will not be liable for any losses and/or damages in connection with the use of our website.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">No Guarantee of Returns</h2>
+                <h2 className="text-2xl font-display font-medium mb-4">External Links Disclaimer</h2>
                 <p className="mb-4">
-                  Past performance is not indicative of future results. There can be no assurance that 
-                  any investment strategy will achieve its investment objectives or avoid substantial losses.
+                  From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove a link which may have gone 'bad'.
+                </p>
+                <p className="mb-4">
+                  Please be also aware that when you leave our website, other sites may have different privacy policies and terms which are beyond our control. Please be sure to check the Privacy Policies of these sites as well as their "Terms of Service" before engaging in any business or uploading any information.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">Accredited Investors Only</h2>
+                <h2 className="text-2xl font-display font-medium mb-4">Consent</h2>
                 <p className="mb-4">
-                  Investment opportunities are available only to accredited investors as defined by 
-                  applicable securities laws. Prospective investors must meet certain income or net worth 
-                  requirements to participate in our investment programs.
+                  By using our website, you hereby consent to our disclaimer and agree to its terms.
                 </p>
               </section>
 
               <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">Professional Advice</h2>
+                <h2 className="text-2xl font-display font-medium mb-4">Update</h2>
                 <p className="mb-4">
-                  This information is not intended as investment, tax, or legal advice. Prospective 
-                  investors should consult with their own professional advisors before making any 
-                  investment decisions.
-                </p>
-              </section>
-
-              <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">No Public Solicitation</h2>
-                <p className="mb-4">
-                  The information contained on this website does not constitute a public offering of 
-                  securities. Any offers to sell or solicitations of offers to buy securities will be 
-                  made only to qualified investors through appropriate offering documents.
-                </p>
-              </section>
-
-              <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">Forward-Looking Statements</h2>
-                <p className="mb-4">
-                  This website may contain forward-looking statements that involve risks and uncertainties. 
-                  Actual results may differ materially from those projected in any forward-looking statements.
-                </p>
-              </section>
-
-              <section className="mb-8">
-                <h2 className="text-2xl font-display font-medium mb-4">Questions</h2>
-                <p>
-                  For questions regarding these disclosures, please contact us at{" "}
-                  <a href="mailto:compliance@oakrep.com" className="text-accent-brown hover:underline">
-                    compliance@oakrep.com
-                  </a>
+                  Should we update, amend or make any changes to this document, those changes will be prominently posted here.
                 </p>
               </section>
             </div>
