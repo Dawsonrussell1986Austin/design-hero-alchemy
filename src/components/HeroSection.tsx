@@ -60,19 +60,19 @@ const HeroSection = () => {
           </div>
           
           {/* Right Column - Statistics Cards */}
-          <div className="space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4 lg:gap-6 lg:space-y-0">
             {/* 150+ Years */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1s" }}>
-              <div className="text-4xl font-display font-medium text-silver-mist mb-3">150+</div>
-              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide">
+            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1s" }}>
+              <div className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">150+</div>
+              <div className="text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 YEARS OF EXPERIENCE
               </div>
             </div>
             
             {/* $5B Bridge */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.2s" }}>
-              <div className="text-4xl font-display font-medium text-silver-mist mb-3">$5B</div>
-              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-2">
+            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.2s" }}>
+              <div className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B</div>
+              <div className="text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
                 BRIDGE LOANS COMPLETED
               </div>
               <div className="text-xs font-body text-[#b1beab]/80">
@@ -81,9 +81,9 @@ const HeroSection = () => {
             </div>
             
             {/* $18B Transactions */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.4s" }}>
-              <div className="text-4xl font-display font-medium text-silver-mist mb-3">$210B</div>
-              <div className="text-sm font-body text-silver-mist/70 uppercase tracking-wide">
+            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30" style={{ animationDelay: "1.4s" }}>
+              <div className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$210B</div>
+              <div className="text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 TOTAL LOAN VOLUME
               </div>
             </div>

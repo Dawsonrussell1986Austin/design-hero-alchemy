@@ -207,26 +207,70 @@ const Navigation = () => {
                 {/* Navigation Links */}
                 <div className="flex-1 px-8 py-8">
                   <div className="space-y-1">
-                    <a 
-                      href="/about" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <span className="relative">
+                    {/* Our Firm with sub-items */}
+                    <div className="space-y-2">
+                      <span className="block text-silver-mist/60 font-body font-medium text-sm py-2 px-0 uppercase tracking-wider">
                         Our Firm
-                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
-                    </a>
-                    <a 
-                      href="/lending" 
-                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      <span className="relative">
+                      <a 
+                        href="/about" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          About Us
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                      <a 
+                        href="/leadership" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          Leadership
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                    </div>
+                    
+                    {/* Lending with sub-items */}
+                    <div className="space-y-2">
+                      <span className="block text-silver-mist/60 font-body font-medium text-sm py-2 px-0 uppercase tracking-wider">
                         Lending
-                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
-                    </a>
+                      <a 
+                        href="/lending" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          Overview
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                      <a 
+                        href="/lending/bridge" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          Bridge Loans
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                      <a 
+                        href="/lending/fha-hud" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          FHA/HUD Programs
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                    </div>
+                    
                     <a 
                       href="/investments" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
@@ -234,6 +278,16 @@ const Navigation = () => {
                     >
                       <span className="relative">
                         Why Oak
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="/offerings" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Offerings
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
@@ -273,7 +327,7 @@ const Navigation = () => {
                 {/* Bottom CTA */}
                 <div className="px-8 py-6 border-t border-garnet-edge/10">
                   <Button 
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-none transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge min-h-[56px]"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Investor Login
