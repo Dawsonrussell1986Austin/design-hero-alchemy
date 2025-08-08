@@ -14,7 +14,7 @@ const WhyPrivateCredit = () => {
                   <video 
                     className="w-full h-full object-cover"
                     controls
-                    poster="/lovable-uploads/027f9f7e-bd2f-4668-9d63-93eb7f55234c.png"
+                    poster="/lovable-uploads/a871f442-5ea6-4eb1-a845-6d39eab1f679.png"
                     style={{
                       filter: 'contrast(1.1) brightness(0.95)'
                     }}
