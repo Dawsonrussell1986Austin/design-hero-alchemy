@@ -80,15 +80,6 @@ const ParticipatingBridge = () => {
                   </ul>
                 </div>
 
-                {/* Why Choose Red Oak */}
-                <div className="mb-8">
-                  <h2 className="text-xl font-display font-medium text-obsidian mb-4">
-                    WHY CHOOSE RED OAK?
-                  </h2>
-                  <p className="text-obsidian/80">
-                    Red Oak will take on a substantial amount of the project risk, while your loan is fully, or almost fully, financed in exchange for a participation in the property's upside.
-                  </p>
-                </div>
               </div>
               
               {/* Image */}
@@ -152,7 +143,7 @@ const ParticipatingBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Loan Term</td>
-                      <td className="py-4 text-obsidian/80 pl-4">1 to 3 Years (fully extended)</td>
+                      <td className="py-4 text-obsidian/80 pl-4">24 – 48 months (fully extended)</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Floor Cap / Rate Cap</td>
@@ -160,7 +151,7 @@ const ParticipatingBridge = () => {
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Extensions</td>
-                      <td className="py-4 text-obsidian/80 pl-4">Up to four (4) extensions up to 6 months each, at market extension fees</td>
+                      <td className="py-4 text-obsidian/80 pl-4">Up to two (2) extensions of 6 months each, at market extension fees</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
                       <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Origination Fees & Exit Fees</td>
@@ -183,7 +174,7 @@ const ParticipatingBridge = () => {
                       <td className="py-4 text-obsidian/80 pl-4">Non-recourse, other than standard "bad boy acts" or recourse structure for higher-risk transactions</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
-                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Recourse</td>
+                      <td className="py-4 pr-8 font-semibold text-obsidian bg-gray-50/50 pl-4">Timing to Close</td>
                       <td className="py-4 text-obsidian/80 pl-4">Typically 30 to 45 days from acceptance of LOI and receipt of deposits</td>
                     </tr>
                     <tr className="border-b border-obsidian/10">
