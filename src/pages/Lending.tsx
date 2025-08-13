@@ -48,8 +48,8 @@ const Lending = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/532a5a8d-e9d8-4e31-add3-a9ac474630da.png"
-                  alt="Bridge over mountains at sunset"
+                  src="/lovable-uploads/1cfb1140-cb93-4a96-abb4-f7d1973a1750.png"
+                  alt="Modern bridge with artistic composition"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
               </div>
@@ -62,7 +62,7 @@ const Lending = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
-                    src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
+                    src="/lovable-uploads/40f7469a-b5db-4904-bb2a-2065ad063b00.png"
                     alt="Bridge loans for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
@@ -108,7 +108,7 @@ const Lending = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
-                    src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                    src="/lovable-uploads/d97430dc-5df2-43a1-84ee-7bf9d697fe35.png"
                     alt="FHA/HUD financing programs"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />

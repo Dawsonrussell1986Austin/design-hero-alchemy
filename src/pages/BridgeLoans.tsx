@@ -74,7 +74,7 @@ const BridgeLoans = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
+                  src="/lovable-uploads/99870fa0-f9c8-4198-a91b-04c2fc12f026.png"
                   alt="Bridge loans for commercial real estate"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
@@ -89,7 +89,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/e3e45441-b983-4174-b86c-c9c473235e7b.png"
+                      src="/lovable-uploads/157c27b3-f2f2-40cf-a6be-24fa22b44f75.png"
                       alt="Urban cityscape"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -136,7 +136,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/874bf40b-1604-47fe-a6ec-dda4da8ddf2c.png"
+                      src="/lovable-uploads/9a1eb236-6af3-4954-a179-bc89e6815a07.png"
                       alt="Construction development"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -183,7 +183,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
+                      src="/lovable-uploads/7b4cb246-768e-4f46-8aea-6cf58b3ff235.png"
                       alt="Bridge to opportunity"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -230,7 +230,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/e97b4477-fafb-49f0-b011-b4eb2dcd6a0a.png"
+                      src="/lovable-uploads/ba0ea0ef-0855-4876-ae87-4dc9db106cf0.png"
                       alt="Climbing to success"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
