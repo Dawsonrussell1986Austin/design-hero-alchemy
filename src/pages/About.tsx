@@ -63,7 +63,7 @@ const About = () => {
                 <div className="relative">
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/lovable-uploads/55f40082-fc81-4584-ab22-ec6acc5246a8.png"
+                      src="/lovable-uploads/07020f9e-4f0f-4aa8-b3bc-11ca79ca5dfc.png"
                       alt="Professional pathway"
                       className="w-full h-[600px] object-cover"
                     />
@@ -99,7 +99,7 @@ const About = () => {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
-              src="/lovable-uploads/674a9da9-1494-4665-8600-bd2709ef907b.png"
+              src="/lovable-uploads/6aea8420-4225-4c6a-94f2-a9636609c22f.png"
               alt="Abstract architectural design"
               className="w-full h-full object-cover"
             />
