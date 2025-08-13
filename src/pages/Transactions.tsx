@@ -235,7 +235,7 @@ const Transactions = () => {
               {/* Image with Overlay Cards */}
               <div className="relative h-full">
                 <img 
-                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  src="/lovable-uploads/5f563ba2-7f4e-4e06-bf3e-93319a7ebe93.png"
                   alt="Transaction portfolio illustration"
                   className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
                 />
