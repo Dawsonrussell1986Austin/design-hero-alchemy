@@ -56,7 +56,7 @@ const BlogAtlantaFinancing = () => {
             {/* Featured image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/fd2a1b7e-1f4e-466b-84b8-06939b630008.png"
+                src="/lovable-uploads/8e8ee768-84c7-470a-acc5-4f7ccdf08de2.png"
                 alt="Garden Courts Apartments"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />

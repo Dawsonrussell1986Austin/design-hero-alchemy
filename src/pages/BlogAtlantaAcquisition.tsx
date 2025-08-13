@@ -56,7 +56,7 @@ const BlogAtlantaAcquisition = () => {
             {/* Featured image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/3842fd81-69ed-40e9-abc5-b0c4ac8bd5c8.png"
+                src="/lovable-uploads/7e2e9015-a748-4e8f-aeb3-6012fe57d4aa.png"
                 alt="Garden Courts Apartments"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />

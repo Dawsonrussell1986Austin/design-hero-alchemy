@@ -56,7 +56,7 @@ const BlogPhiladelphiaMidrise = () => {
             {/* Featured image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/403d76e1-5d7b-4f4c-b865-ee5d118a616d.png"
+                src="/lovable-uploads/f67ec951-f2a1-40e1-a760-1a53e00c3cfa.png"
                 alt="Ridge Avenue Apartments"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
