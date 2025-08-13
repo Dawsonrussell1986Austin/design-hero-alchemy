@@ -113,7 +113,7 @@ const Leadership = () => {
                 <div className="relative">
                   <div className="rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/lovable-uploads/7b292b7c-cd6f-4729-866e-b650516c9c44.png"
+                      src="/lovable-uploads/ae1f0af6-35a7-4086-899f-7ddfd8f27fd0.png"
                       alt="Modern conference room"
                       className="w-full h-[600px] object-cover"
                     />
