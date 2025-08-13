@@ -73,7 +73,7 @@ const OpportunisticBridge = () => {
               <div className="relative">
                 <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-8 rounded-lg shadow-xl">
                   <img 
-                    src="/lovable-uploads/9a879281-cdc6-4044-9e95-3b82d65786ec.png"
+                    src="/lovable-uploads/7b4cb246-768e-4f46-8aea-6cf58b3ff235.png"
                     alt="Bridge connecting to opportunity - symbolic representation of our bridge financing"
                     className="w-full h-auto rounded-lg mb-6"
                   />
