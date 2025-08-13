@@ -92,7 +92,7 @@ const Offerings = () => {
               {/* Image with Overlay Cards */}
               <div className="relative h-full">
                 <img 
-                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  src="/lovable-uploads/e9a78b16-fa6b-41b9-ba61-a19e8a3e271b.png"
                   alt="Investment offerings illustration"
                   className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
                 />
