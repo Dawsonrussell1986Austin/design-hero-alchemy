@@ -8,7 +8,7 @@ const RecentNews = () => {
       title: "OAK CAPITAL HOLDINGS PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
       excerpt: "Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
-      image: "/lovable-uploads/5a0affb5-9412-48b6-a237-d971b7940165.png",
+      image: "/lovable-uploads/9d3cb99a-c508-4f8d-b64f-85007ace3417.png",
       slug: "philadelphia-midrise"
     },
     {
