@@ -22,7 +22,7 @@ const RecentNews = () => {
       title: "OAK CAPITAL HOLDINGS PROVIDES $8.65M FINANCING FOR THE ATLANTA",
       excerpt: "Oak Capital Holdings, LLC, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
-      image: "/lovable-uploads/5a0affb5-9412-48b6-a237-d971b7940165.png",
+      image: "/lovable-uploads/33d8cf3c-977d-4dc6-a353-935461fb076b.png",
       slug: "atlanta-financing"
     }
   ];
