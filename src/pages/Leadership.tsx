@@ -113,8 +113,8 @@ const Leadership = () => {
                 <div className="relative">
                   <div className="rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/lovable-uploads/ae1f0af6-35a7-4086-899f-7ddfd8f27fd0.png"
-                      alt="Modern conference room"
+                      src="/lovable-uploads/a62fb2ce-f8ae-45b6-be2e-0063bf99e0c0.png"
+                      alt="Modern conference room with green chairs"
                       className="w-full h-[600px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-obsidian/30 via-transparent to-transparent"></div>
