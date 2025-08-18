@@ -15,7 +15,7 @@ const RecentNews = () => {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
       excerpt: "EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "May 2, 2025",
-      image: "/lovable-uploads/c749ada6-401b-4ae9-8575-cf50392c8e8a.png",
+      image: "/lovable-uploads/cb1b1c2b-1875-48b9-b9b9-f5ab87bc46a2.png",
       slug: "atlanta-acquisition-loan"
     },
     {
