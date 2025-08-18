@@ -1,7 +1,7 @@
 const OurEdge = () => {
   return (
     <div className="relative z-10 py-32 min-h-screen flex items-center" style={{
-      backgroundImage: 'url(/lovable-uploads/6d6fb4d0-ffd8-466e-9c4c-d2f8a38b9092.png)',
+      backgroundImage: 'url(/lovable-uploads/2ab50538-665d-4c2e-81d2-9a8276214b54.png)',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat'
