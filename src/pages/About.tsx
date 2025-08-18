@@ -63,8 +63,8 @@ const About = () => {
                 <div className="relative">
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/lovable-uploads/0ade94d9-a27b-4388-b0a9-1f1ac4b739cd.png"
-                      alt="Modern commercial building architecture"
+                      src="/lovable-uploads/9ab74e35-d4f1-4eff-bf61-dc4e3cd8fad1.png"
+                      alt="Business handshake with architectural plans"
                       className="w-full h-[600px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
