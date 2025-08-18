@@ -99,8 +99,8 @@ const About = () => {
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
-              src="/lovable-uploads/6aea8420-4225-4c6a-94f2-a9636609c22f.png"
-              alt="Abstract architectural design"
+              src="/lovable-uploads/01825524-320f-4d0a-981d-ff536cf5d707.png"
+              alt="Modern commercial building with green rooftop"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-deep-petrol/50"></div>
