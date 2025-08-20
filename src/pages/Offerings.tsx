@@ -117,7 +117,33 @@ const Offerings = () => {
       </div>
       
       
-      {/* Track Record Section - Cream Background */}
+      {/* Current Offerings Section - Cream Background */}
+      <div className="bg-silver-mist">
+        <section className="py-20">
+          <div className="container mx-auto px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
+                  Current Offerings
+                </h2>
+                <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto mb-8">
+                  Access our current investment opportunities through our secure investor portal:
+                </p>
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 max-w-2xl mx-auto">
+                  <p className="text-accent-brown font-medium mb-4">
+                    InvestNext Portal Login
+                  </p>
+                  <p className="text-sm text-obsidian/70">
+                    [Portal integration placeholder - connects to InvestNext platform for current offering access]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      
+      {/* Closed Offerings Section - Cream Background */}
       <div className="bg-silver-mist">
         <section className="py-20">
           <div className="container mx-auto px-6 lg:px-8">
