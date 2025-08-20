@@ -124,7 +124,7 @@ const Offerings = () => {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
-                  Proven Track Record
+                  Closed Offerings
                 </h2>
                 <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
                   Our closed offerings demonstrate Oak's commitment to delivering consistent results through disciplined investment strategies:
