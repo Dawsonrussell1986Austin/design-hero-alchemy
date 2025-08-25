@@ -74,14 +74,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Janet Bujko</h3>
                         <p className="text-sm text-deep-petrol mb-4">SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -96,14 +88,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Jason Pumpelly</h3>
                         <p className="text-sm text-deep-petrol mb-4">PRESIDENT</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -118,14 +102,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Guy Johnson</h3>
                         <p className="text-sm text-deep-petrol mb-4">PRINCIPAL</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -140,14 +116,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Matthew J. Morgan</h3>
                         <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -162,14 +130,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Kevin M. Kirton</h3>
                         <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -206,14 +166,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Anderson</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, ASSET MANAGEMENT</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -228,14 +180,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Stratos Athanassiades</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -250,14 +194,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Dylan Beaulieu</h4>
                         <p className="text-sm text-deep-petrol mb-4">MANAGER, INVESTOR OPERATIONS</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -272,14 +208,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">David K. Christensen</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -294,14 +222,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Nicolas Jans</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -316,14 +236,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Mac Culbertson</h4>
                         <p className="text-sm text-deep-petrol mb-4">ANALYST</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -344,14 +256,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Ellis</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, FINANCE</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -366,14 +270,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Thomas J. Gorski</h4>
                         <p className="text-sm text-deep-petrol mb-4">SENIOR CRE UNDERWRITER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -388,14 +284,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">James Myatt</h4>
                         <p className="text-sm text-deep-petrol mb-4">LOAN ADMINISTRATOR</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -410,14 +298,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Jamie Tripp</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT OF INTERNAL OPERATIONS</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -432,14 +312,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Rob Mendham</h4>
                         <p className="text-sm text-deep-petrol mb-4">MANAGER, INFORMATION TECHNOLOGY</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                     
@@ -454,14 +326,6 @@ const OurSubsidiaries = () => {
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Tanner Morgan</h4>
                         <p className="text-sm text-deep-petrol mb-4">CONTROLLER</p>
-                        <div className="flex justify-center space-x-3">
-                          <a href="mailto:" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Mail className="h-5 w-5" />
-                          </a>
-                          <a href="#" className="text-accent-brown hover:text-accent-brown/80 transition-colors">
-                            <Linkedin className="h-5 w-5" />
-                          </a>
-                        </div>
                       </div>
                     </div>
                   </div>
