@@ -180,6 +180,13 @@ const OurSubsidiaries = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/31c8e413-e49d-45f0-b289-23cef6842eed.png" 
+                            alt="Ryan Anderson" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Anderson</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, ASSET MANAGEMENT</p>
                         <div className="flex justify-center space-x-3">
@@ -195,6 +202,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/374c72eb-53c2-4e84-b46e-b78e58ef7a85.png" 
+                            alt="Stratos Athanassiades" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Stratos Athanassiades</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
                         <div className="flex justify-center space-x-3">
@@ -210,6 +224,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/55c42f2a-0ab2-49c3-94da-646480e1fcc7.png" 
+                            alt="Dylan Beaulieu" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Dylan Beaulieu</h4>
                         <p className="text-sm text-deep-petrol mb-4">MANAGER, INVESTOR OPERATIONS</p>
                         <div className="flex justify-center space-x-3">
@@ -225,6 +246,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/49a1436a-e57e-4522-a2b9-b40f539e9803.png" 
+                            alt="David K. Christensen" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">David K. Christensen</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
                         <div className="flex justify-center space-x-3">
@@ -240,6 +268,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/1900f810-94ae-41a2-a5c3-61a55ad00f66.png" 
+                            alt="Nicolas Jans" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Nicolas Jans</h4>
                         <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
                         <div className="flex justify-center space-x-3">
@@ -255,6 +290,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/1747f8f3-160f-49d4-b713-dd72be51d004.png" 
+                            alt="Mac Culbertson" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Mac Culbertson</h4>
                         <p className="text-sm text-deep-petrol mb-4">ANALYST</p>
                         <div className="flex justify-center space-x-3">
@@ -276,6 +318,13 @@ const OurSubsidiaries = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/76c2daaa-5415-480e-85df-16119fbc639a.png" 
+                            alt="Ryan Ellis" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Ellis</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, FINANCE</p>
                         <div className="flex justify-center space-x-3">
@@ -291,6 +340,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/b73b34cc-ac9e-499c-b7ac-c09f2097413e.png" 
+                            alt="Thomas J. Gorski" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Thomas J. Gorski</h4>
                         <p className="text-sm text-deep-petrol mb-4">SENIOR CRE UNDERWRITER</p>
                         <div className="flex justify-center space-x-3">
