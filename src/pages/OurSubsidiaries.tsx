@@ -362,6 +362,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/569d91ea-63ba-4d6d-ae15-e224a63f481c.png" 
+                            alt="James Myatt" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">James Myatt</h4>
                         <p className="text-sm text-deep-petrol mb-4">LOAN ADMINISTRATOR</p>
                         <div className="flex justify-center space-x-3">
@@ -377,6 +384,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/d79e003e-2083-4515-bd8c-da4e7748ef9d.png" 
+                            alt="Jamie Tripp" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Jamie Tripp</h4>
                         <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT OF INTERNAL OPERATIONS</p>
                         <div className="flex justify-center space-x-3">
@@ -392,6 +406,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/172b9df3-c5a8-4a00-83f7-12c550923d84.png" 
+                            alt="Rob Mendham" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Rob Mendham</h4>
                         <p className="text-sm text-deep-petrol mb-4">MANAGER, INFORMATION TECHNOLOGY</p>
                         <div className="flex justify-center space-x-3">
@@ -407,6 +428,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/dceb532f-a791-412e-a1fc-638c2122d06d.png" 
+                            alt="Tanner Morgan" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h4 className="font-bold text-obsidian mb-2">Tanner Morgan</h4>
                         <p className="text-sm text-deep-petrol mb-4">CONTROLLER</p>
                         <div className="flex justify-center space-x-3">
