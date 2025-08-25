@@ -133,7 +133,7 @@ const Contact = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
                 {/* Background Image */}
                 <img 
-                  src="/lovable-uploads/e70a399e-e1ef-485c-bd8d-057fa55ccb26.png"
+                  src="/lovable-uploads/c1a6af83-6cf1-489c-b8b6-49e68e411f86.png"
                   alt="Modern office setup with geometric design elements"
                   className="w-full h-full object-cover"
                 />
