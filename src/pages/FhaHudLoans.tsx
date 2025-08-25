@@ -96,11 +96,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/73604eb5-db6d-45d5-9a5b-698de4128481.png"
-                        alt="Multifamily construction"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/d4969f74-dcee-4460-ad73-a02e76a666b7.png"
+                         alt="Multifamily construction"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
@@ -128,11 +128,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/7a4a2d56-54b9-4cc3-80b4-d2f264beba2a.png"
-                        alt="Multifamily acquisition"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/fc8f59e9-2126-48bf-8315-153205395564.png"
+                         alt="Multifamily acquisition"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
@@ -192,11 +192,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/61c8211a-9c78-483a-9447-aae1ca4b62c4.png"
-                        alt="Capital improvements"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/96eba6e1-209d-482d-b123-727083eb911b.png"
+                         alt="Capital improvements"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
@@ -238,11 +238,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/e989fe48-0eb9-46d3-b3ac-64afaaa324f7.png"
-                        alt="Senior housing construction"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/7565248c-d249-4e32-a9ea-2a1d142000c5.png"
+                         alt="Senior housing construction"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
@@ -270,11 +270,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/183a077d-c61e-4f2a-9016-a37cac8a9300.png"
-                        alt="Senior housing acquisition"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/fb5863d0-f4f3-4076-bfbb-e85094de2ac0.png"
+                         alt="Senior housing acquisition"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">

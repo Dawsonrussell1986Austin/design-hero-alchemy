@@ -72,7 +72,7 @@ const Hud232223fTerms = () => {
               <div className="space-y-6">
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/lovable-uploads/17252ac7-0ec8-422c-bc79-20f52ada725a.png" 
+                    src="/lovable-uploads/fb5863d0-f4f3-4076-bfbb-e85094de2ac0.png" 
                     alt="Healthcare facility acquisition financing"
                     className="w-full h-64 object-cover"
                   />
