@@ -8,21 +8,21 @@ const RecentNews = () => {
       title: "OAK CAPITAL HOLDINGS PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
       excerpt: "Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
-      image: "/lovable-uploads/9d3cb99a-c508-4f8d-b64f-85007ace3417.png",
+      image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",
       slug: "philadelphia-midrise"
     },
     {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
       excerpt: "EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "May 2, 2025",
-      image: "/lovable-uploads/cb1b1c2b-1875-48b9-b9b9-f5ab87bc46a2.png",
+      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png",
       slug: "atlanta-acquisition-loan"
     },
     {
       title: "OAK CAPITAL HOLDINGS PROVIDES $8.65M FINANCING FOR THE ATLANTA",
       excerpt: "Oak Capital Holdings, LLC, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
-      image: "/lovable-uploads/ce64343a-bf25-471d-984b-813ebd1d9d52.png",
+      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png",
       slug: "atlanta-financing"
     }
   ];

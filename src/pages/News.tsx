@@ -11,55 +11,55 @@ const News = () => {
       title: "THE OAK COMPANIES PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
       excerpt: "The Oak Companies has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
-      image: "/lovable-uploads/f67ec951-f2a1-40e1-a760-1a53e00c3cfa.png"
+      image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png"
     },
     {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
       excerpt: "EAST POINT, GA. — The Oak Companies has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments, an 86-unit multifamily community in the area.",
       date: "May 2, 2025",
-      image: "/lovable-uploads/7e2e9015-a748-4e8f-aeb3-6012fe57d4aa.png"
+      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png"
     },
     {
       title: "THE OAK COMPANIES PROVIDES $8.65M FINANCING FOR THE ATLANTA",
       excerpt: "The Oak Companies, a leading provider of private capital solutions for commercial real estate, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
-      image: "/lovable-uploads/8e8ee768-84c7-470a-acc5-4f7ccdf08de2.png"
+      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png"
     },
     {
       title: "THIS WEEK'S DALLAS-FORT WORTH DEAL SHEET",
       excerpt: "Westmount Realty Capital Sells 1980s-Era Multifamily Property After adding extensive upgrades, a Dallas-based company sold a 45-year-old apartment complex in Arlington.",
       date: "April 21, 2025",
-      image: "/lovable-uploads/bc1f7c6a-0e1f-46f3-8d18-c94f5bbea0eb.png"
+      image: "/lovable-uploads/d8141168-4c47-48f5-ad2f-5c933bca4b04.png"
     },
     {
       title: "THE OAK COMPANIES PROVIDES $10.30 MILLION IN FINANCING",
       excerpt: "The Oak Companies provided a combined $10.30 million in financing for a pair of multifamily properties located in metropolitan Indianapolis. The separate bridge loans funded the acquisition and planned renovations.",
       date: "April 16, 2025",
-      image: "/lovable-uploads/ce78c6e7-6018-40af-8faa-83a88a0ac28a.png"
+      image: "/lovable-uploads/28b6260b-1406-4eab-a488-22e013d45c19.png"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO NOVEMBER 30, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (October 31, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "October 31, 2024",
-      image: "/lovable-uploads/a9f5496e-4231-4a32-b454-392c32d28cc1.png"
+      image: "/lovable-uploads/24298811-8997-4d25-aede-2af891615fb8.png"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO OCTOBER 31, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (September 24, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "September 24, 2024",
-      image: "/lovable-uploads/36c6c9a4-f4c3-427a-8d46-709253e77b18.png"
+      image: "/lovable-uploads/1d0ee0fb-7652-422c-8708-b56d61f1304c.png"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO SEPTEMBER 30, 2024",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "August 30, 2024",
-      image: "/lovable-uploads/f67ec951-f2a1-40e1-a760-1a53e00c3cfa.png"
+      image: "/lovable-uploads/f99afb6c-01df-4e96-a03b-151ca914423e.png"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION OF EXPIRATION TIME",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "July 31, 2024",
-      image: "/lovable-uploads/7e2e9015-a748-4e8f-aeb3-6012fe57d4aa.png"
+      image: "/lovable-uploads/c86d708b-68f6-408c-92ec-d6851ddb868b.png"
     }
   ];
 
