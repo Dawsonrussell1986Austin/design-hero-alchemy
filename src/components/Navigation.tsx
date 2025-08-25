@@ -70,6 +70,14 @@ const Navigation = () => {
                   >
                     Leadership
                   </a>
+                  <a 
+                    href="/subsidiaries" 
+                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                    }`}
+                  >
+                    Our Subsidiaries
+                  </a>
                 </div>
               </div>
             </div>
@@ -229,6 +237,16 @@ const Navigation = () => {
                       >
                         <span className="relative">
                           Leadership
+                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                        </span>
+                      </a>
+                      <a 
+                        href="/subsidiaries" 
+                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        <span className="relative">
+                          Our Subsidiaries
                           <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                         </span>
                       </a>

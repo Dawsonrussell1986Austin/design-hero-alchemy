@@ -41,6 +41,7 @@ import Hud241aTerms from "./pages/Hud241aTerms";
 import BlogAtlantaAcquisition from "./pages/BlogAtlantaAcquisition";
 import BlogAtlantaFinancing from "./pages/BlogAtlantaFinancing";
 import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
+import OurSubsidiaries from "./pages/OurSubsidiaries";
 
 function App() {
   return (
@@ -60,6 +61,7 @@ function App() {
         <Route path="/webinar" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />
         <Route path="/leadership" element={<Leadership />} />
+        <Route path="/subsidiaries" element={<OurSubsidiaries />} />
         <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
         <Route path="/leadership/paul-cleary" element={<PaulCleary />} />
         <Route path="/leadership/kevin-kennedy" element={<KevinKennedy />} />
