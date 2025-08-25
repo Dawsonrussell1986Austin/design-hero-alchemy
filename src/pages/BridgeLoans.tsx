@@ -89,7 +89,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/8ab92b4b-8536-4410-b535-f3795e3e72b6.png"
+                      src="/lovable-uploads/914ef162-2add-4296-9a39-2d81ce9fabfb.png"
                       alt="Core Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -136,7 +136,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/bab7fc13-3c36-4226-8d49-0f80788fd78f.png"
+                      src="/lovable-uploads/bb8b02f0-9440-4394-a855-8d5e2ebf4100.png"
                       alt="Core-Plus Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -183,7 +183,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/1039caaa-1ddf-4c6c-aaa5-a88efbf42b25.png"
+                      src="/lovable-uploads/6007eb22-bc11-4f64-97d4-5a5d82ce5650.png"
                       alt="Opportunistic Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
@@ -230,7 +230,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/26721304-91ae-4d59-9b9e-36f7ab7d4025.png"
+                      src="/lovable-uploads/1e3bbbae-9b54-429f-9eea-10bb9a1ee2be.png"
                       alt="Participating Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
