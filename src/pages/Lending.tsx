@@ -62,7 +62,7 @@ const Lending = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
-                    src="/lovable-uploads/a3395940-8ece-4e0f-be5d-090f76e9f933.png"
+                    src="/lovable-uploads/e9d4be6f-f66b-4ec3-9cd1-bf0f44baf61f.png"
                     alt="Bridge loans for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
