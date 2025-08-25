@@ -74,7 +74,7 @@ const BridgeLoans = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/99870fa0-f9c8-4198-a91b-04c2fc12f026.png"
+                  src="/lovable-uploads/b1a75cbe-cc49-45b4-98d9-d2780bfba631.png"
                   alt="Bridge loans for commercial real estate"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
