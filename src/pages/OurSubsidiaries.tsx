@@ -5,30 +5,47 @@ import { Mail, Linkedin } from "lucide-react";
 
 const OurSubsidiaries = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-silver-mist to-white">
-      <Navigation />
+    <div className="min-h-screen">
+      {/* Navigation */}
+      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <Navigation />
+      </div>
       
-      <div className="pt-24 pb-16">
-        <div className="container mx-auto px-6">
-          <Breadcrumb 
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Our Firm", href: "/about" },
-              { label: "Our Subsidiaries", href: "/subsidiaries" }
-            ]} 
-          />
-          
-          {/* Header Section */}
-          <section className="py-16">
-            <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-4xl lg:text-5xl font-bold text-obsidian mb-6 tracking-tight">
-                Our Subsidiaries
-              </h1>
-              <p className="text-xl text-deep-petrol leading-relaxed max-w-3xl mx-auto">
-                Oak's strategic subsidiaries extend our capabilities in specialized markets, providing comprehensive solutions across the commercial real estate and multifamily lending landscape.
-              </p>
+      {/* Breadcrumb */}
+      <Breadcrumb 
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Our Firm", href: "/about" },
+          { label: "Our Subsidiaries", href: "/subsidiaries" }
+        ]} 
+      />
+
+      {/* Cream background for content */}
+      <div className="bg-silver-mist">
+        {/* Content Section */}
+        <section className="container mx-auto px-6 py-20">
+          <div className="max-w-6xl mx-auto">
+            
+            <div className="mb-16">
+              {/* Program Badge */}
+              <div className="mb-4 text-center">
+                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/25 text-garnet-edge border border-garnet-edge/50 shadow-sm">
+                  Our Subsidiaries
+                </span>
+              </div>
+              
+              <div className="text-center">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                  Strategic Subsidiaries Extending Our Market Reach
+                </h1>
+                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                  Specialized expertise across commercial real estate and multifamily lending landscapes.
+                </p>
+                <p className="text-lg font-body text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
+                  Oak's strategic subsidiaries extend our capabilities in specialized markets, providing comprehensive solutions across the commercial real estate and multifamily lending landscape.
+                </p>
+              </div>
             </div>
-          </section>
 
           {/* Johnson Capital Multifamily Section */}
           <section className="py-16">
@@ -452,7 +469,9 @@ const OurSubsidiaries = () => {
               </div>
             </div>
           </section>
-        </div>
+
+          </div>
+        </section>
       </div>
       
       <Footer />
