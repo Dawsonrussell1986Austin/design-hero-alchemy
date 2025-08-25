@@ -48,6 +48,13 @@ const OurSubsidiaries = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/72acba3c-0e00-4a56-b2b0-312d8d8d20f8.png" 
+                            alt="Janet Bujko" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="font-bold text-obsidian mb-2">Janet Bujko</h3>
                         <p className="text-sm text-deep-petrol mb-4">SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS</p>
                         <div className="flex justify-center space-x-3">
@@ -63,6 +70,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/c66e3a2e-945c-491f-9234-87f426bb79f3.png" 
+                            alt="Jason Pumpelly" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="font-bold text-obsidian mb-2">Jason Pumpelly</h3>
                         <p className="text-sm text-deep-petrol mb-4">PRESIDENT</p>
                         <div className="flex justify-center space-x-3">
@@ -78,6 +92,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/9d94a353-d253-43ef-8f26-ba5b48847381.png" 
+                            alt="Guy Johnson" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="font-bold text-obsidian mb-2">Guy Johnson</h3>
                         <p className="text-sm text-deep-petrol mb-4">PRINCIPAL</p>
                         <div className="flex justify-center space-x-3">
@@ -93,6 +114,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/e8f32d5e-1126-478e-9860-811f1e095458.png" 
+                            alt="Matthew J. Morgan" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="font-bold text-obsidian mb-2">Matthew J. Morgan</h3>
                         <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
                         <div className="flex justify-center space-x-3">
@@ -108,6 +136,13 @@ const OurSubsidiaries = () => {
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                          <img 
+                            src="/lovable-uploads/0bc2aab8-ce33-43a0-936d-422b00463acd.png" 
+                            alt="Kevin M. Kirton" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
                         <h3 className="font-bold text-obsidian mb-2">Kevin M. Kirton</h3>
                         <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
                         <div className="flex justify-center space-x-3">
