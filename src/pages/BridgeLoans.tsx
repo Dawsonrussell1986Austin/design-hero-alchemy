@@ -89,7 +89,7 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/c350ee15-4dbd-43db-aa88-61866cd6c1ab.png"
+                      src="/lovable-uploads/7da7b9fa-dd38-4c14-9362-fc48fee525f0.png"
                       alt="Urban cityscape"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
