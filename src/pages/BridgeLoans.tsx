@@ -89,8 +89,8 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/7da7b9fa-dd38-4c14-9362-fc48fee525f0.png"
-                      alt="Urban cityscape"
+                      src="/lovable-uploads/8ab92b4b-8536-4410-b535-f3795e3e72b6.png"
+                      alt="Core Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
@@ -136,8 +136,8 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/3c06f0bb-7ebc-4c70-b6df-0c4a20a27b5f.png"
-                      alt="Construction development"
+                      src="/lovable-uploads/bab7fc13-3c36-4226-8d49-0f80788fd78f.png"
+                      alt="Core-Plus Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
@@ -183,8 +183,8 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/7b4cb246-768e-4f46-8aea-6cf58b3ff235.png"
-                      alt="Bridge to opportunity"
+                      src="/lovable-uploads/1039caaa-1ddf-4c6c-aaa5-a88efbf42b25.png"
+                      alt="Opportunistic Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>
@@ -230,8 +230,8 @@ const BridgeLoans = () => {
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
-                      src="/lovable-uploads/ba0ea0ef-0855-4876-ae87-4dc9db106cf0.png"
-                      alt="Climbing to success"
+                      src="/lovable-uploads/26721304-91ae-4d59-9b9e-36f7ab7d4025.png"
+                      alt="Participating Bridge financing"
                       className="w-full h-full object-cover rounded-lg shadow-md"
                     />
                   </div>

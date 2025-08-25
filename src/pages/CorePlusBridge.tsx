@@ -75,8 +75,8 @@ const CorePlusBridge = () => {
               <div className="relative">
                 <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-8 rounded-lg shadow-xl">
                   <img 
-                    src="/lovable-uploads/9a1eb236-6af3-4954-a179-bc89e6815a07.png"
-                    alt="Construction project development"
+                    src="/lovable-uploads/bb8b02f0-9440-4394-a855-8d5e2ebf4100.png"
+                    alt="Core-Plus Bridge financing program"
                     className="w-full h-auto rounded-lg mb-6"
                   />
                 </div>
