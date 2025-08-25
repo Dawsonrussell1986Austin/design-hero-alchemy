@@ -78,7 +78,7 @@ const Investments = () => {
               {/* Image with Overlay Cards - Expanded Height */}
               <div className="relative h-full">
                 <img 
-                  src="/lovable-uploads/0d0e2b87-2fc4-4799-8cde-2eb9dacccd41.png"
+                  src="/lovable-uploads/010f20cf-31ce-4639-986e-f156dcfea986.png"
                   alt="Investment platform illustration"
                   className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
                 />
