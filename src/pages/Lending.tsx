@@ -48,7 +48,7 @@ const Lending = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/6f505d1a-6def-4274-8277-271685a82c9f.png"
+                  src="/lovable-uploads/6b5ae029-afee-401f-a617-f33b5c24dd95.png"
                   alt="Bridge infrastructure over water with reflections"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
