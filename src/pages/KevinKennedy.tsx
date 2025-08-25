@@ -33,7 +33,7 @@ const KevinKennedy = () => {
               <div className="lg:col-span-1">
                 <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
-                    src="/lovable-uploads/1c85a245-d705-4428-8095-5354f22b90df.png"
+                    src="/lovable-uploads/5f9925fa-1749-4ea4-bbf1-0b7b03de1010.png"
                     alt="Kevin P. Kennedy"
                     className="w-full h-full object-cover rounded-sm grayscale"
                   />
