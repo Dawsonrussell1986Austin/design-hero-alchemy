@@ -16,24 +16,24 @@ const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
   const currentPath = window.location.pathname;
   
   return (
-    <div className="bg-gradient-to-r from-obsidian via-graphite-fog to-deep-petrol py-6 border-b border-silver-mist/10 mt-20">
+    <div className="bg-gradient-to-r from-obsidian to-graphite-fog py-8 border-b border-silver-mist/20">
       <div className="container mx-auto px-6">
-        <nav className="flex items-center space-x-2 text-silver-mist">
+        <nav className="flex items-center space-x-2">
           {/* Main breadcrumb path */}
           {items.map((item, index) => (
             <div key={index} className="flex items-center">
               {index > 0 && (
-                <ChevronRight className="h-4 w-4 mx-2 text-silver-mist/60" />
+                <ChevronRight className="h-4 w-4 mx-3 text-silver-mist/40" />
               )}
               {item.href ? (
                 <a 
                   href={item.href}
-                  className="text-silver-mist/80 hover:text-silver-mist transition-colors duration-200 font-body font-medium"
+                  className="text-silver-mist/70 hover:text-silver-mist transition-colors duration-200 font-body font-medium text-sm tracking-wide"
                 >
                   {item.label}
                 </a>
               ) : (
-                <span className="text-silver-mist font-body font-medium">
+                <span className="text-silver-mist font-body font-medium text-sm tracking-wide">
                   {item.label}
                 </span>
               )}
