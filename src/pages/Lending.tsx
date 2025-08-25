@@ -108,8 +108,8 @@ const Lending = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
-                    src="/lovable-uploads/a7afe329-a365-4207-bcab-ade6ea3fa5d0.png"
-                    alt="FHA/HUD financing programs"
+                    src="/lovable-uploads/3eea10a2-658b-45bc-9a65-72f8dbf07c61.png"
+                    alt="Government-backed FHA/HUD financing for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
                   <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-accent-brown transition-colors duration-300">
