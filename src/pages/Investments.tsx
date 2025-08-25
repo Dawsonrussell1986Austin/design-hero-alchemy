@@ -118,7 +118,7 @@ const Investments = () => {
                   {/* Background Image with Fade */}
                   <div className="absolute inset-0">
                     <img 
-                      src="/lovable-uploads/91c70c0b-89ec-47b1-9656-33be70bc18fa.png"
+                      src="/lovable-uploads/2d3fe4fa-9cca-491b-b199-929c12b00e11.png"
                       alt="Collateral backing"
                       className="w-full h-full object-cover opacity-20"
                     />
