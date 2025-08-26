@@ -74,7 +74,7 @@ const FhaHudLoans = () => {
               {/* Image */}
               <div className="relative">
                 <img 
-                  src="/lovable-uploads/a0a32165-8a82-49e2-a34a-b867086efb2e.png"
+                  src="/lovable-uploads/33fb7950-e7d9-426c-b448-ca4b55752614.png"
                   alt="FHA/HUD financing programs"
                   className="w-full h-auto rounded-lg shadow-xl"
                 />
