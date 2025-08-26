@@ -96,7 +96,7 @@ const CoreBridge = () => {
                 <img 
                   src="/lovable-uploads/617cafa2-a319-4fda-b563-a78e2b90af78.png"
                   alt="Core Bridge financing program"
-                  className="w-full h-auto rounded-lg shadow-xl"
+                  className="w-full h-96 lg:h-[500px] object-cover rounded-lg shadow-xl"
                 />
               </div>
             </div>
