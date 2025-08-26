@@ -22,10 +22,10 @@ const FhaHudLoans = () => {
       {/* Cream background for content */}
       <div className="bg-silver-mist">
         {/* Hero Section */}
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-16">
               {/* Text Content */}
               <div>
                 {/* Program Badge */}
@@ -35,7 +35,7 @@ const FhaHudLoans = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 sm:mb-6 leading-tight">
                   Long-Term Government-Backed Financing
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">

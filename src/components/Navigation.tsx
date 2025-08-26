@@ -23,15 +23,15 @@ const Navigation = () => {
         ? 'bg-silver-mist/95 backdrop-blur-xl border-b border-gray-200 shadow-lg' 
         : 'bg-silver-mist/90 backdrop-blur-sm border-b border-gray-100'
     }`}>
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="block">
               <img 
                 src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
                 alt="OAK" 
-                className="h-14 w-auto transition-transform duration-300 hover:scale-105"
+                className="h-10 sm:h-12 lg:h-14 w-auto transition-transform duration-300 hover:scale-105"
               />
             </a>
           </div>
@@ -201,10 +201,10 @@ const Navigation = () => {
                 <span className="sr-only">Toggle menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[380px] bg-obsidian border-l border-garnet-edge/20 p-0">
+            <SheetContent side="right" className="w-[300px] sm:w-[380px] bg-obsidian border-l border-garnet-edge/20 p-0 mobile-nav-safe">
               <div className="flex flex-col h-full">
                 {/* Header with Logo */}
-                <div className="px-8 py-6 border-b border-garnet-edge/10">
+                <div className="px-6 sm:px-8 py-4 sm:py-6 border-b border-garnet-edge/10">
                   <img 
                     src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
                     alt="OAK" 
@@ -213,7 +213,7 @@ const Navigation = () => {
                 </div>
                 
                 {/* Navigation Links */}
-                <div className="flex-1 px-8 py-8">
+                <div className="flex-1 px-6 sm:px-8 py-6 sm:py-8 overflow-y-auto">
                   <div className="space-y-1">
                     {/* Our Firm with sub-items */}
                     <div className="space-y-2">

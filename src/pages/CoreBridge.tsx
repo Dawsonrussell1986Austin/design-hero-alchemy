@@ -42,10 +42,10 @@ const CoreBridge = () => {
       {/* Cream background for content */}
       <div className="bg-silver-mist">
         {/* Content Section with Image */}
-        <section className="container mx-auto px-6 py-20">
+        <section className="container mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
           <div className="max-w-6xl mx-auto">
             
-            <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-8 lg:mb-12">
               {/* Text Content */}
               <div>
                 {/* Program Badge */}
@@ -55,7 +55,7 @@ const CoreBridge = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 sm:mb-6 leading-tight">
                   Flexible Bridge Financing for Institutional-Quality Assets in Transition
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
@@ -104,7 +104,7 @@ const CoreBridge = () => {
         </section>
 
         {/* Detailed Content - Always Show */}
-        <section className="container mx-auto px-6 pb-16">
+        <section className="container mx-auto px-4 sm:px-6 pb-12 sm:pb-16">
           <div className="max-w-6xl mx-auto">
               
               {/* Loan Basics */}
@@ -112,7 +112,7 @@ const CoreBridge = () => {
                 <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
                   Loan Basics
                 </h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                   <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
                     <div className="flex items-center mb-3">
                       <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />

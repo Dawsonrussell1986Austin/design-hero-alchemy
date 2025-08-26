@@ -175,16 +175,62 @@
     .text-obsidian\/80 {
       color: hsl(var(--obsidian) / 0.9);
     }
+    
+    /* Better mobile spacing */
+    .hero-mobile-spacing {
+      padding-top: 6rem;
+      padding-bottom: 3rem;
+    }
+    
+    /* Mobile text sizing */
+    .mobile-text-scale {
+      font-size: clamp(1rem, 4vw, 1.25rem);
+      line-height: 1.5;
+    }
+    
+    /* Mobile card improvements */
+    .mobile-card-spacing {
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Better mobile navigation spacing */
+    .mobile-nav-safe {
+      padding-top: env(safe-area-inset-top);
+    }
+    
+    /* Prevent text overflow on mobile */
+    h1, h2, h3 {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    /* Mobile image containers */
+    .mobile-image-container {
+      max-height: 300px;
+      overflow: hidden;
+    }
   }
   
   /* Prevent horizontal scrolling */
-  body {
+  html, body {
     overflow-x: hidden;
+    max-width: 100vw;
   }
   
   /* Improve button touch targets */
   .touch-target {
     min-height: 44px;
     min-width: 44px;
+  }
+  
+  /* Ensure cards are mobile-friendly */
+  .mobile-friendly-card {
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
