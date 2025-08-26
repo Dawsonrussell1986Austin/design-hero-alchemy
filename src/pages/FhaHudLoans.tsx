@@ -160,11 +160,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                      <img 
-                        src="/lovable-uploads/c909e33f-1bab-44c4-bd3d-1664d824f83d.png"
-                        alt="Streamlined refinance"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                      />
+                       <img 
+                         src="/lovable-uploads/55aa3358-a2c6-4c6c-8c48-9e0d1cdca6a6.png"
+                         alt="Streamlined refinance"
+                         className="w-full h-full object-cover rounded-lg shadow-md"
+                       />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
@@ -302,11 +302,11 @@ const FhaHudLoans = () => {
                 <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
-                       <img 
-                         src="/lovable-uploads/4f68c5eb-57c3-4294-89d1-0830268c5cf3.png"
-                         alt="Senior housing refinance"
-                         className="w-full h-full object-cover rounded-lg shadow-md"
-                       />
+                        <img 
+                          src="/lovable-uploads/55aa3358-a2c6-4c6c-8c48-9e0d1cdca6a6.png"
+                          alt="Senior housing refinance"
+                          className="w-full h-full object-cover rounded-lg shadow-md"
+                        />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
