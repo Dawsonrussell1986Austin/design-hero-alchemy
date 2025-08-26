@@ -103,66 +103,9 @@ const CoreBridge = () => {
           </div>
         </section>
 
-        {/* Email Opt-in Form or Detailed Content */}
-        {!showDetails ? (
-          <section className="container mx-auto px-6 pb-20">
-            <div className="max-w-4xl mx-auto">
-              <div className="bg-white/70 backdrop-blur-xl border border-obsidian/10 p-12 rounded-lg shadow-xl text-center">
-                <div className="mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
-                    Access Core Bridge Details
-                  </h2>
-                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed">
-                    Get detailed loan basics, terms, fees, and special considerations for our Core Bridge program. 
-                    Enter your information below to access the complete program details.
-                  </p>
-                </div>
-                
-                <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-6">
-                  <div>
-                    <Input
-                      type="text"
-                      placeholder="Full Name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
-                    />
-                  </div>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Email Address"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                      className="w-full px-4 py-3 text-lg border border-obsidian/20 rounded-lg focus:ring-2 focus:ring-garnet-edge focus:border-garnet-edge"
-                    />
-                  </div>
-                  <Button 
-                    type="submit"
-                    size="lg"
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"
-                  >
-                    Access Program Details
-                  </Button>
-                </form>
-                
-                <p className="text-sm text-obsidian/60 mt-6">
-                  We respect your privacy. Your information will only be used to provide you with program details and relevant updates.
-                </p>
-              </div>
-            </div>
-          </section>
-        ) : (
-          <section className="container mx-auto px-6 pb-16">
-            <div className="max-w-6xl mx-auto">
-              
-              {/* Thank you message */}
-              <div className="bg-garnet-edge/15 border border-garnet-edge/40 rounded-lg p-6 mb-12 text-center">
-                <h3 className="text-xl font-semibold text-garnet-edge mb-2">Thank you, {name}!</h3>
-                <p className="text-obsidian">Here are the detailed Core Bridge program specifications:</p>
-              </div>
+        {/* Detailed Content - Always Show */}
+        <section className="container mx-auto px-6 pb-16">
+          <div className="max-w-6xl mx-auto">
               
               {/* Loan Basics */}
               <div className="mb-12">
@@ -300,11 +243,10 @@ const CoreBridge = () => {
                     </div>
                     <p className="text-obsidian/80">Minimum 1.00x DSCR on in-place cash flow</p>
                   </div>
-                </div>
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
       </div>
 
       {/* Footer */}
