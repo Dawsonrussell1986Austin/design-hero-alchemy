@@ -42,7 +42,7 @@ const BrookScardina = () => {
                 <div>
                   <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Brook Scardina</h1>
                   <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
-                    Capital Markets & Investments
+                    Managing Partner, Capital Markets & Investments
                   </p>
                   <div className="flex space-x-3">
                     <Button
