@@ -356,6 +356,21 @@ const Navigation = () => {
           </Sheet>
         </div>
       </div>
+      
+      {/* Disclaimer Banner */}
+      <div className={`border-t transition-all duration-300 ${
+        scrolled 
+          ? 'bg-silver-mist/95 border-gray-200' 
+          : 'bg-silver-mist/90 border-gray-100'
+      }`}>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="py-2">
+            <p className="text-center text-xs font-body text-gray-600 leading-relaxed max-w-6xl mx-auto">
+              <span className="font-semibold">³</span> Team experience vs. Oak results. The statistics presented describe the experience of certain members of Oak Real Estate Partners' management team across affiliates, predecessor, and commonly controlled platforms (including Red Oak Capital Holdings and White Oak Capital Holdings) and are not solely the results of Oak Real Estate Partners.
+            </p>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 };
