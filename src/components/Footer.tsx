@@ -62,10 +62,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Footnote Disclaimer */}
-          <div className="mb-6">
+          {/* Footnote Disclaimers */}
+          <div className="mb-6 space-y-4">
             <p className="text-center text-silver-mist/60 text-xs font-sans leading-relaxed max-w-5xl mx-auto">
               ¹ "Bridge loans structured" reflects the aggregate original principal amount of bridge loans that members of Oak's current management team underwrote/structured and that closed while at Red Oak Capital Holdings, White Oak Capital Holdings, and related affiliates during the last ten years. Figures are rounded and unaudited.
+            </p>
+            <p className="text-center text-silver-mist/60 text-xs font-sans leading-relaxed max-w-5xl mx-auto">
+              ² "Closed transactions" reflects the cumulative principal amount of real estate debt/equity transactions completed by members of the current team across prior firms and affiliates in roles including principal, co-lender, arranger, or advisor. Not all transactions were sponsored by Oak.
             </p>
           </div>
 
