@@ -62,6 +62,13 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* Footnote Disclaimer */}
+          <div className="mb-6">
+            <p className="text-center text-silver-mist/60 text-xs font-sans leading-relaxed max-w-5xl mx-auto">
+              ¹ "Bridge loans structured" reflects the aggregate original principal amount of bridge loans that members of Oak's current management team underwrote/structured and that closed while at Red Oak Capital Holdings, White Oak Capital Holdings, and related affiliates during the last ten years. Figures are rounded and unaudited.
+            </p>
+          </div>
+
           {/* Bottom Border and Copyright */}
           <div className="border-t border-deep-petrol/30 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">

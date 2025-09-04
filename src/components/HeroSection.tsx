@@ -75,11 +75,8 @@ const HeroSection = () => {
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
                 BRIDGE LOANS COMPLETED¹
               </div>
-              <div className="text-xs font-body text-[#b1beab]/80 mb-2">
+              <div className="text-xs font-body text-[#b1beab]/80">
                 in the Last 10 Years
-              </div>
-              <div className="text-[10px] font-body text-[#b1beab]/60 leading-tight">
-                ¹ "Bridge loans structured" reflects the aggregate original principal amount of bridge loans that members of Oak's current management team underwrote/structured and that closed while at Red Oak Capital Holdings, White Oak Capital Holdings, and related affiliates during the last ten years. Figures are rounded and unaudited.
               </div>
             </div>
             
