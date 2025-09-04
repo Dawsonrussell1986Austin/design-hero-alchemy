@@ -82,8 +82,8 @@ const About = () => {
                           <div className="text-deep-petrol/80 font-body text-xs">Bridge Loans Structured</div>
                         </div>
                         <div>
-                          <div className="text-xl font-display font-medium text-accent-brown mb-1">$210B+</div>
-                          <div className="text-deep-petrol/80 font-body text-xs">Total Transactions</div>
+                          <div className="text-xl font-display font-medium text-accent-brown mb-1">$18B</div>
+                          <div className="text-deep-petrol/80 font-body text-xs">TOTAL TRANSACTIONS²</div>
                         </div>
                       </div>
                     </div>
