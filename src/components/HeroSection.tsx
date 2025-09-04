@@ -65,7 +65,7 @@ const HeroSection = () => {
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target" style={{ animationDelay: "1s" }}>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">150+</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
-                YEARS OF EXPERIENCE
+                YEARS OF EXPERIENCE<sup>³</sup>
               </div>
             </div>
             
