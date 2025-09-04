@@ -70,6 +70,9 @@ const Footer = () => {
             <p className="text-center text-silver-mist/60 text-xs font-sans leading-relaxed max-w-5xl mx-auto">
               ² "Closed transactions" reflects the cumulative principal amount of real estate debt/equity transactions completed by members of the current team across prior firms and affiliates in roles including principal, co-lender, arranger, or advisor. Not all transactions were sponsored by Oak.
             </p>
+            <p className="text-center text-silver-mist/60 text-xs font-sans leading-relaxed max-w-5xl mx-auto">
+              ³ Team experience vs. Oak results. The statistics presented describe the experience of certain members of Oak Real Estate Partners' management team across affiliates, predecessor, and commonly controlled platforms (including Red Oak Capital Holdings and White Oak Capital Holdings) and are not solely the results of Oak Real Estate Partners.
+            </p>
           </div>
 
           {/* Bottom Border and Copyright */}
