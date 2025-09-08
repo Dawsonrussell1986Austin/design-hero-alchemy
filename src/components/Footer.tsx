@@ -84,7 +84,7 @@ const Footer = () => {
                 <a href="/disclosures" className="hover:text-accent-brown transition-colors">Disclosures</a>
               </div>
               <p className="text-sm text-silver-mist/60 font-serif">
-                © 2024 White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners. All rights reserved.
+                © 2025 White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners. All rights reserved.
               </p>
             </div>
           </div>
