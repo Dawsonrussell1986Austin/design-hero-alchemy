@@ -65,7 +65,7 @@ const BridgeLoans = () => {
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Bridge-to-FHA takeout options available</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Coordination with JCM for FHA takeout options</p>
                     </div>
                   </div>
                 </div>

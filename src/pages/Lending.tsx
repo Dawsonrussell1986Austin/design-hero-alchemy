@@ -41,7 +41,7 @@ const Lending = () => {
                   Comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed">
-                  Oak offers both short-term private bridge loans and long term, government-backed FHA/HUD insured mortgages—individually or in a seamless Bridge-to-FHA structure. Our national lending platform combines efficiency and innovation with institutional-grade standards.
+                  Oak offers short-term private bridge loans with seamless coordination to long-term government-backed financing through our subsidiary Johnson Capital Multifamily (JCM), which provides FHA/HUD insured mortgages. This integrated platform delivers comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
               </div>
               
@@ -152,13 +152,12 @@ const Lending = () => {
 
             </div>
 
-            {/* Bridge-to-FHA Transition */}
             <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
               <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
-                Bridge-to-FHA Transition
+                Bridge-to-FHA Coordination
               </h3>
               <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-4xl mx-auto">
-                Our integrated platform ensures smooth execution from initial bridge loan to FHA takeout, offering borrowers a seamless path from acquisition through long-term financing.
+                Through our subsidiary Johnson Capital Multifamily (JCM), we can coordinate seamless transitions from Oak bridge financing to FHA takeout loans, providing borrowers with an integrated financing solution from acquisition through long-term stabilization.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/lending/fha-hud">
@@ -166,7 +165,7 @@ const Lending = () => {
                     variant="outline"
                     className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
                   >
-                    Learn More About Integration
+                    Learn More About JCM FHA Programs
                   </Button>
                 </a>
               </div>
