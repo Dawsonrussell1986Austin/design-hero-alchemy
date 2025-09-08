@@ -119,7 +119,7 @@ const Lending = () => {
                     Long-term, government-backed financing for essential real estate assets
                   </p>
                   <p className="text-obsidian/80 leading-relaxed mb-6">
-                    Through our subsidiary Johnson Capital Multifamily, we provide FHA/HUD insured loan programs offering long term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
+                    Johnson Capital Multifamily (JCM) provides FHA/HUD insured loan programs offering long term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
                   </p>
                   
                   <div className="space-y-3 mb-6">

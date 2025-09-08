@@ -42,7 +42,7 @@ const FhaHudLoans = () => {
                   FHA/HUD insured loan programs for multifamily, affordable housing, senior living, and healthcare properties.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                  Through our subsidiary Johnson Capital Multifamily, Oak provides comprehensive FHA/HUD insured financing solutions offering long term, government-backed capital with competitive rates and favorable terms.
+                  Johnson Capital Multifamily (JCM) provides comprehensive FHA/HUD insured financing solutions offering long term, government-backed capital with competitive rates and favorable terms.
                 </p>
 
                 {/* Key Features */}
@@ -371,14 +371,14 @@ const FhaHudLoans = () => {
                 Ready to Explore FHA/HUD Financing?
               </h3>
               <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-3xl mx-auto">
-                Our FHA/HUD specialists can help you navigate the application process and determine the best program for your multifamily, senior housing, or healthcare property.
+                JCM's FHA/HUD specialists can help you navigate the application process and determine the best program for your multifamily, senior housing, or healthcare property.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   className="bg-accent-brown hover:bg-accent-brown/90 text-white px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
-                  Contact FHA/HUD Team
+                  Contact JCM FHA/HUD Team
                 </Button>
                 <Button 
                   variant="outline"
