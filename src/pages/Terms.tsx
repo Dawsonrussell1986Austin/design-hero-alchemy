@@ -42,7 +42,7 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-display font-medium mb-4">Use License</h2>
                 <p className="mb-4">
-                  Permission is granted to temporarily download one copy of the materials on OAK Real Estate Partners' 
+                  Permission is granted to temporarily download one copy of the materials on White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners' 
                   website for personal, non-commercial transitory viewing only.
                 </p>
               </section>
@@ -50,8 +50,8 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-display font-medium mb-4">Disclaimer</h2>
                 <p className="mb-4">
-                  The materials on OAK Real Estate Partners' website are provided on an 'as is' basis. 
-                  OAK Real Estate Partners makes no warranties, expressed or implied, and hereby disclaims 
+                  The materials on White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners' website are provided on an 'as is' basis. 
+                  White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners makes no warranties, expressed or implied, and hereby disclaims 
                   and negates all other warranties including without limitation, implied warranties or 
                   conditions of merchantability, fitness for a particular purpose, or non-infringement 
                   of intellectual property or other violation of rights.
@@ -61,10 +61,10 @@ const Terms = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-display font-medium mb-4">Limitations</h2>
                 <p className="mb-4">
-                  In no event shall OAK Real Estate Partners or its suppliers be liable for any damages 
+                  In no event shall White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners or its suppliers be liable for any damages 
                   (including, without limitation, damages for loss of data or profit, or due to business 
-                  interruption) arising out of the use or inability to use the materials on OAK Real Estate Partners' 
-                  website, even if OAK Real Estate Partners or an authorized representative has been notified 
+                  interruption) arising out of the use or inability to use the materials on White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners' 
+                  website, even if White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners or an authorized representative has been notified 
                   orally or in writing of the possibility of such damage.
                 </p>
               </section>

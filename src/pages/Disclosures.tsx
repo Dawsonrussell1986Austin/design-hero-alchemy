@@ -34,7 +34,7 @@ const Disclosures = () => {
               <section className="mb-8">
                 <h2 className="text-2xl font-display font-medium mb-4">General Information Disclaimer</h2>
                 <p className="mb-4">
-                  All the information on this website - www.oakrepartners.com - is published in good faith and for general information purpose only. Oak Real Estate Partners does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (Oak Real Estate Partners), is strictly at your own risk. Oak Real Estate Partners will not be liable for any losses and/or damages in connection with the use of our website.
+                  All the information on this website - www.oakrepartners.com - is published in good faith and for general information purpose only. White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website (White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners), is strictly at your own risk. White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners will not be liable for any losses and/or damages in connection with the use of our website.
                 </p>
               </section>
 
