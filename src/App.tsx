@@ -8,7 +8,7 @@ import About from "./pages/About";
 import Lending from "./pages/Lending";
 import Investments from "./pages/Investments";
 import Transactions from "./pages/Transactions";
-import Offerings from "./pages/Offerings";
+import Investing from "./pages/Investing";
 import BridgeLoans from "./pages/BridgeLoans";
 import CoreBridge from "./pages/CoreBridge";
 import CorePlusBridge from "./pages/CorePlusBridge";
@@ -56,7 +56,7 @@ function App() {
         <Route path="/lending/bridge" element={<BridgeLoans />} />
         <Route path="/lending/fha-hud" element={<FhaHudLoans />} />
         <Route path="/investments" element={<Investments />} />
-        <Route path="/offerings" element={<Offerings />} />
+        <Route path="/investing" element={<Investing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/webinar" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />

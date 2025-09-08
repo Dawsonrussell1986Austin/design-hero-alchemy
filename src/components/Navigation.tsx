@@ -135,10 +135,10 @@ const Navigation = () => {
               }`}></div>
             </div>
             <div className="group relative">
-              <a href="/offerings" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+              <a href="/investing" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
-                Offerings
+                Investing
               </a>
               <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
@@ -302,12 +302,12 @@ const Navigation = () => {
                       </span>
                     </a>
                     <a 
-                      href="/offerings" 
+                      href="/investing" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       <span className="relative">
-                        Offerings
+                        Investing
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
