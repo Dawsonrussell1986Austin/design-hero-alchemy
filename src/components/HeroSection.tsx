@@ -71,9 +71,9 @@ const HeroSection = () => {
             
             {/* $5B Bridge */}
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-4 sm:p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target" style={{ animationDelay: "1.2s" }}>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B<sup>³</sup></div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
-                BRIDGE LOANS COMPLETED¹
+                BRIDGE LOANS COMPLETED
               </div>
               <div className="text-xs font-body text-[#b1beab]/80">
                 in the Last 10 Years
@@ -82,11 +82,18 @@ const HeroSection = () => {
             
             {/* $18B Transactions */}
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target" style={{ animationDelay: "1.4s" }}>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$18B</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$18B<sup>³</sup></div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
-                TOTAL TRANSACTIONS²
+                TOTAL TRANSACTIONS
               </div>
             </div>
+          </div>
+          
+          {/* Statistics Footnote */}
+          <div className="lg:col-span-2 mt-6">
+            <p className="text-xs text-silver-mist/60 font-sans text-center lg:text-left">
+              ³ Represents experience of current management team, whether at Oak or predecessor firms.
+            </p>
           </div>
           
         </div>
