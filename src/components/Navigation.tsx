@@ -179,15 +179,21 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Investor Login Button */}
-          <Button 
-            className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
-              scrolled 
-                ? 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown' 
-                : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
-            }`}
+          <a 
+            href="https://app.investnext.com/fundraise/8768/settings/access/None/portal/offerings/8768/oak-institutional-credit-solutions-llc/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Investor Login
-          </Button>
+            <Button 
+              className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
+                scrolled 
+                  ? 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown' 
+                  : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
+              }`}
+            >
+              Investor Login
+            </Button>
+          </a>
 
           {/* Mobile Hamburger Menu */}
           <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
@@ -348,12 +354,19 @@ const Navigation = () => {
                 
                 {/* Bottom CTA */}
                 <div className="px-8 py-6 border-t border-garnet-edge/10">
-                  <Button 
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge min-h-[56px]"
-                    onClick={() => setIsMenuOpen(false)}
+                  <a 
+                    href="https://app.investnext.com/fundraise/8768/settings/access/None/portal/offerings/8768/oak-institutional-credit-solutions-llc/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
                   >
-                    Investor Login
-                  </Button>
+                    <Button 
+                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge min-h-[56px]"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      Investor Login
+                    </Button>
+                  </a>
                 </div>
               </div>
             </SheetContent>
