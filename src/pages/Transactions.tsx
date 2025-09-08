@@ -225,9 +225,15 @@ const Transactions = () => {
                       <p className="text-sm text-obsidian/70">Regions</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">$5B+</p>
-                      <p className="text-sm text-obsidian/70">Bridge Loans Completed</p>
+                      <p className="text-2xl font-bold text-garnet-edge">Various</p>
+                      <p className="text-sm text-obsidian/70">Loan Programs</p>
                     </div>
+                  </div>
+                  
+                  <div className="mt-4 pt-4 border-t border-obsidian/20">
+                    <p className="text-xs text-obsidian/60 leading-relaxed">
+                      Transactions shown include loans from Oak and affiliated entities. Not all loans represent full cycle completions.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -396,6 +402,9 @@ const Transactions = () => {
             )}
 
             <div className="text-center mt-12">
+              <p className="text-obsidian/70 text-sm mb-2">
+                Transactions include loans from Oak Real Estate Partners and affiliated entities including Red Oak Capital Holdings and Johnson Capital Multifamily. Not all loans represent full cycle completions.
+              </p>
               <p className="text-obsidian/70 text-sm">
                 * Past performance does not guarantee future results. All investments involve risk of loss.
               </p>
