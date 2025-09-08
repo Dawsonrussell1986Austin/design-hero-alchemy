@@ -225,8 +225,8 @@ const Transactions = () => {
                       <p className="text-sm text-obsidian/70">Regions</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">Various</p>
-                      <p className="text-sm text-obsidian/70">Loan Programs</p>
+                      <p className="text-2xl font-bold text-garnet-edge">Multiple</p>
+                      <p className="text-sm text-obsidian/70">Loan Types</p>
                     </div>
                   </div>
                   
