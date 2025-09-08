@@ -371,14 +371,14 @@ const FhaHudLoans = () => {
                 Ready to Explore FHA/HUD Financing?
               </h3>
               <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-3xl mx-auto">
-                JCM's FHA/HUD specialists can help you navigate the application process and determine the best program for your multifamily, senior housing, or healthcare property.
+                Johnson Capital Multifamily specialists can help you navigate the application process and determine the best program for your multifamily, senior housing, or healthcare property.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
                   className="bg-accent-brown hover:bg-accent-brown/90 text-white px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
-                  Contact JCM FHA/HUD Team
+                  Contact Johnson Capital Multifamily
                 </Button>
                 <Button 
                   variant="outline"
