@@ -197,19 +197,6 @@ const OurSubsidiaries = () => {
                       </div>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
-                        <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                          <img 
-                            src="/lovable-uploads/49a1436a-e57e-4522-a2b9-b40f539e9803.png" 
-                            alt="David K. Christensen" 
-                            className="w-full h-full object-cover"
-                          />
-                        </div>
-                        <h4 className="font-bold text-obsidian mb-2">David K. Christensen</h4>
-                        <p className="text-sm text-deep-petrol mb-4">INDEPENDENT CONTRACTOR</p>
-                      </div>
-                    </div>
                     
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
