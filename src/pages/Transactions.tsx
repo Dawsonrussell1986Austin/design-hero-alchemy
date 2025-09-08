@@ -211,7 +211,7 @@ const Transactions = () => {
                   <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Portfolio Overview
                   </h3>
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-3 gap-4">
                     <div className="text-center">
                       <p className="text-2xl font-bold text-garnet-edge">{featuredTransactions.length}</p>
                       <p className="text-sm text-obsidian/70">Transactions</p>
@@ -223,10 +223,6 @@ const Transactions = () => {
                     <div className="text-center">
                       <p className="text-2xl font-bold text-garnet-edge">6</p>
                       <p className="text-sm text-obsidian/70">Regions</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">Multiple</p>
-                      <p className="text-sm text-obsidian/70">Loan Types</p>
                     </div>
                   </div>
                   
