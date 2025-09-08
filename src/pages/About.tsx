@@ -42,10 +42,6 @@ const About = () => {
                       Oak is a premier commercial real estate lender with a core business focus on senior secured loans backed by income producing properties. Our lending philosophy is grounded in real asset investment, institutional discipline, and a commitment to long-term capital protection.
                     </p>
                     
-                    <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol leading-relaxed mb-6">
-                      In a private credit landscape where polish often outpaces performance, Oak delivers industry leading expertise in a highly inefficient, fragmented and underserved sector of the market. We don't chase headlines — we create income strategies that prioritize downside protection, predictability, and trust.
-                    </p>
-                    
                     <div className="mt-8">
                       <a href="/leadership">
                         <Button 
@@ -86,6 +82,9 @@ const About = () => {
                           <div className="text-deep-petrol/80 font-body text-xs">TOTAL TRANSACTIONS²</div>
                         </div>
                       </div>
+                      <p className="text-xs text-deep-petrol/60 font-sans text-center mt-3">
+                        Represents experience of current management team, whether at Oak or predecessor firms.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -124,7 +123,7 @@ const About = () => {
                     </p>
                     
                     <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
-                      We're strong because we're structured. Dependable because we're disciplined. 
+                      We're strong because we're WELL structured. Dependable because we're disciplined. 
                       Trusted for our consistent execution, especially when stakes are highest.
                     </p>
                   </div>
@@ -220,112 +219,8 @@ const About = () => {
           </div>
         </section>
 
-        {/* Why Real Estate Credit Section */}
-        <section className="py-20 bg-white/40">
-          <div className="container mx-auto px-6">
-            <div className="max-w-7xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
-                  Why Real Estate Credit Lending <span className="text-accent-brown">Matters</span>
-                </h2>
-                <p className="text-lg font-body text-deep-petrol leading-relaxed max-w-5xl mx-auto">
-                  At Oak, we focus on real estate credit that's backed by the property itself — and structured so 
-                  our investors' capital is prioritized to be repaid first. This approach offers clear advantages:
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <Building2 className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Collateral Security</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    Every lending opportunity is backed by physical real estate, offering tangible assets 
-                    in the event of default.
-                  </p>
-                </div>
-                
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <DollarSign className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Predictable Cash Flows</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    Senior position loans generate stable and predictable income.
-                  </p>
-                </div>
-                
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <ShieldCheck className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Inflation Protection</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    Real estate values and rental income often rise with inflation, helping preserve asset values.
-                  </p>
-                </div>
-                
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <Activity className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Low Volatility</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    Real estate markets tend to be more stable and exhibit less volatility relative to public equities or debt markets.
-                  </p>
-                </div>
-                
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <RotateCcw className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">High Recovery Potential</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    In adverse scenarios, hard real estate assets offer greater value recovery than intangible assets.
-                  </p>
-                </div>
-                
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-4">
-                    <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <TrendingUp className="h-5 w-5 text-accent-brown" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Appreciation Opportunity</h3>
-                  </div>
-                  <p className="text-deep-petrol leading-relaxed font-body">
-                    In addition to current income, real estate assets have historically appreciated in value over time.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="text-center mt-12">
-                <a href="/investments">
-                  <Button 
-                    size="lg"
-                    className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-                  >
-                    Learn More About Our Approach
-                  </Button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
