@@ -73,10 +73,10 @@ const HeroSection = () => {
             <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-4 sm:p-6 lg:p-8 animate-fade-in hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target" style={{ animationDelay: "1.2s" }}>
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
-                BRIDGE LOANS COMPLETED*
+                BRIDGE LOANS COMPLETED
               </div>
-              <div className="text-xs font-body text-[#b1beab]/80">
-                IN THE LAST 10 YEARS
+              <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
+                IN THE LAST 10 YEARS*
               </div>
             </div>
             
