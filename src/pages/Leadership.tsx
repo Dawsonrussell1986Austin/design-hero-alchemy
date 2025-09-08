@@ -53,7 +53,7 @@ const Leadership = () => {
       name: "Brook Scardina",
       title: "Capital Markets & Investments",
       image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png",
-      bio: "Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners (OREP), where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector. Based in Irvine, California."
+      bio: "Brook Scardina leads Capital Markets & Investments for OREP, where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector. Based in Irvine, California."
     }
   ];
 
@@ -84,7 +84,7 @@ const Leadership = () => {
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
                   <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
-                    Operational Expertise Backed by <span className="text-accent-brown">$210B in Transactions</span>
+                    Operational Expertise Backed by <span className="text-accent-brown">$210B<sup>³</sup> in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
                     Oak's leadership team brings unmatched experience and depth to our real estate lending operations, 
@@ -93,9 +93,8 @@ const Leadership = () => {
                     cycles, geographies, and asset classes.
                   </p>
                   
-                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
-                    We take our fiduciary responsibility seriously. Every investment decision is guided by a disciplined 
-                    mindset and a shared commitment to protect investor capital.
+                  <p className="text-xs text-obsidian/60 font-sans mb-6">
+                    ³ Represents experience of current management team, whether at Oak or predecessor firms.
                   </p>
                   
                   <div className="pt-4">
@@ -124,24 +123,24 @@ const Leadership = () => {
                   <div className="absolute inset-x-0 top-8 flex justify-center">
                      <div className="bg-silver-mist/20 backdrop-blur-md rounded-lg border border-silver-mist/30 p-8 max-w-lg shadow-lg">
                        <div className="space-y-6">
-                         <div className="text-center">
-                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Control and Stability</h4>
-                           <p className="text-white text-base leading-relaxed">
-                             Disciplined oversight and consistent execution
-                           </p>
+                          <div className="text-center">
+                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Operational Excellence</h4>
+                            <p className="text-white text-base leading-relaxed">
+                              Proven execution across all business functions
+                            </p>
+                          </div>
+                          <div className="text-center">
+                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Approach</h4>
+                            <p className="text-white text-base leading-relaxed">
+                              Consistent methodology for all stakeholders
+                            </p>
+                          </div>
+                          <div className="text-center">
+                            <h4 className="text-lg font-medium text-garnet-edge mb-2">Trusted Partnership</h4>
+                            <p className="text-white text-base leading-relaxed">
+                              Reliable service for borrowers and investors
+                            </p>
                          </div>
-                         <div className="text-center">
-                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Risk-Taking</h4>
-                           <p className="text-white text-base leading-relaxed">
-                             Calculated decisions based on thorough analysis
-                           </p>
-                         </div>
-                         <div className="text-center">
-                           <h4 className="text-lg font-medium text-garnet-edge mb-2">Predictability and Reliability</h4>
-                           <p className="text-white text-base leading-relaxed">
-                             Consistent results through proven processes
-                           </p>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -252,7 +251,7 @@ const Leadership = () => {
             </h2>
             <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
               Connect with Oak's leadership team to discuss how our experience and disciplined approach 
-              can benefit your investment strategy.
+              can benefit your real estate financing needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
