@@ -42,6 +42,10 @@ const About = () => {
                       Oak is a premier commercial real estate lender with a core business focus on senior secured loans backed by income producing properties. Our lending philosophy is grounded in real asset investment, institutional discipline, and a commitment to long-term capital protection.
                     </p>
                     
+                    <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol leading-relaxed mb-6">
+                      Oak represents the combination of White Oak Capital Holdings (WOCH) and Red Oak Capital Holdings (ROCH), creating a single powerful platform of comprehensive lending services for commercial real estate borrowers and investors.
+                    </p>
+                    
                     <div className="mt-8">
                       <a href="/leadership">
                         <Button 

@@ -147,7 +147,7 @@ const OurSubsidiaries = () => {
                     RED OAK CAPITAL HOLDINGS
                   </h2>
                   <p className="text-lg text-deep-petrol max-w-3xl mx-auto mb-8">
-                    Our comprehensive asset management and investment operations subsidiary, providing specialized expertise in commercial real estate finance and portfolio management.
+                    Our commercial real estate lending subsidiary, providing specialized expertise in commercial real estate finance and lending operations.
                   </p>
                 </div>
                 
@@ -207,7 +207,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">David K. Christensen</h4>
-                        <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
+                        <p className="text-sm text-deep-petrol mb-4">INDEPENDENT CONTRACTOR</p>
                       </div>
                     </div>
                     
