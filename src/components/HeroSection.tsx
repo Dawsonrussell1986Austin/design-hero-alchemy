@@ -20,13 +20,13 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
-                STRONG because
+                Where Strength
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                <span className="text-silver-mist">we are</span>
+                <span className="text-silver-mist">Meets</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
-                <span className="text-silver-mist">WELL structured</span>
+                <span className="text-silver-mist">Stewardship.</span>
               </h1>
             </div>
             
