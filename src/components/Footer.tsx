@@ -56,8 +56,8 @@ const Footer = () => {
 
           {/* Compliance Disclosure */}
           <div className="border-t border-deep-petrol/30 pt-8 mb-6">
-            <p className="text-center text-silver-mist/70 text-sm font-sans leading-relaxed max-w-4xl mx-auto">
-              Oak is a private real estate credit platform. Communications are for informational purposes only and do not constitute an offer to sell or a solicitation of an offer to buy securities.
+            <p className="text-center text-silver-mist/70 text-xs font-sans leading-relaxed max-w-6xl mx-auto">
+              This website and the information contained herein provides general information related to the overall business, loan programs and experience of White Oak Capital Holdings, LLC d/b/a/ Oak Real Estate Partners ("OAK") and its controlled affiliates and does not necessarily differentiate as between those entities. This website and the information contained herein does NOT constitute an offer to sell, nor a solicitation of an offer to purchase, any security. Offers will only be made through an offering circular, private placement memorandum or prospectus, and only where permitted by law. Certain statements contained on this website constitute "forward looking statements". Any such statements, performance projections and results have been based upon assumptions, some of which will vary, perhaps materially, from actual events and do not constitute a prediction or representation as to actual performance. Prior performance of OAK or any of its affiliates is not indicative of future results. There is no assurance that the Company objectives will be achieved.
             </p>
           </div>
 
