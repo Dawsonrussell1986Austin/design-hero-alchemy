@@ -53,7 +53,7 @@ const Leadership = () => {
       name: "Brook Scardina",
       title: "Capital Markets & Investments",
       image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png",
-      bio: "Brook Scardina leads Capital Markets & Investments for OREP, where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector. Based in Irvine, California."
+      bio: "Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners, where he leads the external capital markets strategy for the national fund manager focused on the institutional investment sector. Based in Irvine, California."
     }
   ];
 
