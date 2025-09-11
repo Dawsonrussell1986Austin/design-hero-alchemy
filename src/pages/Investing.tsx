@@ -94,36 +94,6 @@ const Investing = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-7xl mx-auto">
             
-            {/* Large Video Player */}
-            <div className="mb-20">
-              <div className="w-full">
-                <div className="relative rounded-2xl overflow-hidden bg-obsidian/10 backdrop-blur-sm border border-deep-petrol/30 shadow-2xl">
-                  <div className="aspect-[16/9] bg-gradient-to-br from-obsidian/20 to-deep-petrol/20 relative" style={{ minHeight: '60vh' }}>
-                    <video 
-                      className="w-full h-full object-cover"
-                      controls
-                      poster="/lovable-uploads/2a8467d8-1a6e-48bc-b185-d81375aec644.png"
-                      style={{
-                        filter: 'contrast(1.1) brightness(0.95)'
-                      }}
-                    >
-                      <source src="#" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                    
-                    {/* Custom overlay for branding */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/40 via-transparent to-transparent pointer-events-none"></div>
-                    
-                    {/* Play button overlay when paused */}
-                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                      <div className="w-32 h-32 bg-garnet-edge/90 rounded-full flex items-center justify-center backdrop-blur-sm border border-silver-mist/20 shadow-lg">
-                        <div className="w-0 h-0 border-l-[20px] border-l-obsidian border-y-[16px] border-y-transparent"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
