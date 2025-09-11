@@ -20,20 +20,30 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight animate-fade-in">
-                Where Strength
+                Unlocking Community
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.2s" }}>
-                <span className="text-silver-mist">Meets</span>
+                <span className="text-silver-mist">Value Through</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight animate-fade-in" style={{ animationDelay: "0.4s" }}>
-                <span className="text-silver-mist">Stewardship.</span>
+                <span className="text-silver-mist">Real Estate.</span>
               </h1>
             </div>
             
             {/* Subtitle */}
-            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal animate-fade-in mobile-text-scale" style={{ animationDelay: "0.6s" }}>
-              Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-2xl leading-relaxed font-body font-normal animate-fade-in mobile-text-scale" style={{ animationDelay: "0.6s" }}>
+              Oak was founded over a decade ago with a simple mission: to transform potential into progress. We design lending products that support housing and drive efficiencies across retail, industrial, and suburban office sectors—partnering with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
             </p>
+            
+            {/* Additional Content */}
+            <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.7s" }}>
+              <p className="text-sm sm:text-base lg:text-lg text-silver-mist/70 max-w-2xl leading-relaxed font-body font-normal">
+                Where traditional banks are slow and inefficient, Oak is built for speed and clarity. We provide timely, practical solutions that empower real estate sponsors to execute their business plans with confidence.
+              </p>
+              <p className="text-sm sm:text-base lg:text-lg text-silver-mist/70 max-w-2xl leading-relaxed font-body font-normal">
+                From day one, Oak has committed to an institutional framework rooted in ethics, accountability, transparency, and durability—principles that ensure we're not just financing projects, but fueling long-term community growth.
+              </p>
+            </div>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
