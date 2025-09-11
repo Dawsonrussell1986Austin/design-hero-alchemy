@@ -127,7 +127,7 @@ const About = () => {
                     </p>
                     
                     <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
-                      We're strong because we're WELL structured. Dependable because we're disciplined. 
+                      We're strong because we're well structured. Dependable because we're disciplined. 
                       Trusted for our consistent execution, especially when stakes are highest.
                     </p>
                   </div>
