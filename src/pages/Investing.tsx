@@ -83,19 +83,6 @@ const Investing = () => {
                   className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
                 />
                 
-                {/* Glassmorphic Overlay Cards */}
-                <div className="absolute inset-0 flex flex-col justify-center space-y-4 p-6">
-                  <h2 className="text-xl font-bold text-white text-center drop-shadow-lg mb-2">Offering Structures</h2>
-                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
-                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Regulation D 506(c)</h3>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
-                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Regulation A+ Tier II</h3>
-                  </div>
-                  <div className="bg-white/20 backdrop-blur-md border border-white/30 rounded-lg p-4 shadow-lg hover:bg-white/30 transition-all duration-300">
-                    <h3 className="text-lg font-bold text-white text-center drop-shadow-lg">Private Placements</h3>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
