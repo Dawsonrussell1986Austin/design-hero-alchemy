@@ -147,7 +147,7 @@ const OurSubsidiaries = () => {
                     RED OAK CAPITAL HOLDINGS
                   </h2>
                   <p className="text-lg text-deep-petrol max-w-3xl mx-auto mb-8">
-                    Our commercial real estate lending subsidiary, providing specialized financing solutions serving the retail investment community.
+                    Our commercial real estate lending subsidiary, providing specialized financing solutions funded by the retail investment community.
                   </p>
                 </div>
                 
