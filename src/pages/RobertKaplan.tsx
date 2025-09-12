@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin, ArrowLeft } from "lucide-react";
+import { Mail, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const RobertKaplan = () => {
@@ -51,13 +51,6 @@ const RobertKaplan = () => {
                       className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
                     >
                       <Mail className="h-4 w-4" />
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                    >
-                      <Linkedin className="h-4 w-4" />
                     </Button>
                   </div>
                 </div>
