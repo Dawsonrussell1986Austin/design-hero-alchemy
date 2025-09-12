@@ -49,6 +49,7 @@ const RaymondDavis = () => {
                       variant="ghost"
                       size="sm"
                       className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
+                      onClick={() => window.location.href = 'mailto:rdavis@oakrepartners.com'}
                     >
                       <Mail className="h-4 w-4" />
                     </Button>
