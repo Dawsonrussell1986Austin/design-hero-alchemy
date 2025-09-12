@@ -70,7 +70,7 @@ const BrookScardina = () => {
                     Brook Scardina leads Capital Markets & Investments for Oak Real Estate Partners (OREP), 
                     where he leads the external capital markets strategy for the national fund manager focused on the 
                     institutional investment sector. He is responsible for advising on, solving and delivering alternative 
-                    investment solutions that support the return objectives of institutional investors. Based in Irvine, California.
+                    investment solutions that support the return objectives of institutional investors. He is based in Atlanta, GA.
                   </p>
                 </div>
               </div>
