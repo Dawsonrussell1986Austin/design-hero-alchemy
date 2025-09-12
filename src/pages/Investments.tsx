@@ -38,11 +38,14 @@ const Investments = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   A Platform Built for Performance
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  Direct lending. Disciplined structure. Durable results.
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                  Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment. We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
+                </p>
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                  Where traditional banks are slow and inefficient, Oak is built for speed and clarity. We provide timely, practical solutions that empower real estate sponsors to execute their business plans with confidence. Our platform is designed for fast, efficient, and scalable commercial real estate transactions.
                 </p>
                 <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
-                  Oak is a vertically integrated Non-Bank Financial Institution focused on senior position commercial real estate lending in primary, secondary, and select tertiary markets. Acting as both lender and sponsor, we offer institutional-quality investment opportunities with capital preservation, predictable income, and investment transparency.
+                  From day one, Oak has committed to an institutional framework rooted in best practices. We've built a company on ethics, accountability, transparency, and durability—principles that ensure we're not just financing projects, but fueling long-term community growth.
                 </p>
                 
                 {/* Oak's Investment Focus - Under text */}
