@@ -30,23 +30,10 @@ const HeroSection = () => {
               </h1>
             </div>
             
-            {/* Subtitle - Broken into key points */}
-            <div className="space-y-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-              <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal mobile-text-scale">
-                Private commercial real estate credit:
-              </p>
-              <div className="space-y-2 pl-4 border-l-2 border-accent-brown/40">
-                <p className="text-sm sm:text-base text-silver-mist/70 font-body">
-                  • Structured for protection
-                </p>
-                <p className="text-sm sm:text-base text-silver-mist/70 font-body">
-                  • Built for performance
-                </p>
-                <p className="text-sm sm:text-base text-silver-mist/70 font-body">
-                  • Guided by partnership in long-term value creation
-                </p>
-              </div>
-            </div>
+            {/* Subtitle */}
+            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal animate-fade-in mobile-text-scale" style={{ animationDelay: "0.6s" }}>
+              Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
+            </p>
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in" style={{ animationDelay: "0.8s" }}>
