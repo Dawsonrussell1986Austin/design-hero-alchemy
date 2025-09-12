@@ -100,34 +100,6 @@ const RobertKaplan = () => {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-8">
-              Connect with Robert
-            </h2>
-            <p className="text-lg text-silver-mist/80 leading-relaxed mb-12">
-              Interested in learning more about Oak's legal strategy and corporate development initiatives?
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button 
-                size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-              >
-                Contact Robert
-              </Button>
-              <Button 
-                variant="outline"
-                size="lg"
-                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-              >
-                View All Leadership
-              </Button>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {/* Footer */}
       <Footer />
