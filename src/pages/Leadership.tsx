@@ -225,13 +225,15 @@ const Leadership = () => {
                       >
                         <Mail className="h-4 w-4" />
                       </Button>
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                      >
-                        <Linkedin className="h-4 w-4" />
-                      </Button>
+                      {leader.name !== "Robert R. Kaplan, Jr." && (
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
+                        >
+                          <Linkedin className="h-4 w-4" />
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </div>
