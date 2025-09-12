@@ -56,6 +56,7 @@ const BrookScardina = () => {
                       variant="ghost"
                       size="sm"
                       className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
+                      onClick={() => window.open('https://www.linkedin.com/in/brook-scardina-00bb5415/', '_blank')}
                     >
                       <Linkedin className="h-4 w-4" />
                     </Button>
