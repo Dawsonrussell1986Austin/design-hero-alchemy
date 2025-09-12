@@ -41,9 +41,9 @@ const Investments = () => {
                 
                 {/* Mission Statement */}
                 <div className="mb-8">
-                  <h2 className="text-xl font-semibold text-obsidian mb-3">Our Mission</h2>
+                  <h2 className="text-xl font-semibold text-obsidian mb-3">We design lending products that transform potential into progress</h2>
                   <p className="text-lg font-body font-normal text-obsidian/80 leading-relaxed">
-                    Unlock local community value through real estate enhancement and redevelopment. We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors.
+                    We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
                   </p>
                 </div>
 
