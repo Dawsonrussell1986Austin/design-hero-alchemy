@@ -200,18 +200,13 @@ const Investing = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <a 
-                  href="https://app.investnext.com/fundraise/8768/settings/access/None/portal/offerings/8768/oak-institutional-credit-solutions-llc/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Button 
+                  size="lg"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                  onClick={() => window.location.href = '/contact'}
                 >
-                  <Button 
-                    size="lg"
-                    className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
-                  >
-                    Investor Login
-                  </Button>
-                </a>
+                  Contact Us
+                </Button>
                 <Button 
                   variant="outline"
                   size="lg"
