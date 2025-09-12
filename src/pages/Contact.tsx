@@ -147,13 +147,20 @@ const Contact = () => {
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Office</h3>
-                      <p className="text-xs text-white/90">5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209</p>
+                      <a 
+                        href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs text-white/90 hover:text-accent-brown transition-colors block"
+                      >
+                        5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209
+                      </a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <Phone className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Phone</h3>
-                      <p className="text-xs text-white/90">980.288.6627</p>
+                      <a href="tel:+19802886627" className="text-xs text-white/90 hover:text-accent-brown transition-colors">980.288.6627</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
