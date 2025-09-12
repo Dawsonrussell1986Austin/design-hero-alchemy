@@ -36,7 +36,7 @@ const Investments = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  A Platform Built for Performance
+                  Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment.
                 </h1>
                 
                 {/* Mission Statement */}
