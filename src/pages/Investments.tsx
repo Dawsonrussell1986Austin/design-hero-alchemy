@@ -36,38 +36,43 @@ const Investments = () => {
                 </div>
                 
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
-                  Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment.
+                  A Platform Built for Performance
                 </h1>
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                  Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment. We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
+                </p>
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                  Where traditional banks are slow and inefficient, Oak is built for speed and clarity. We provide timely, practical solutions that empower real estate sponsors to execute their business plans with confidence. Our platform is designed for fast, efficient, and scalable commercial real estate transactions.
+                </p>
+                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
+                  From day one, Oak has committed to an institutional framework rooted in best practices. We've built a company on ethics, accountability, transparency, and durability—principles that ensure we're not just financing projects, but fueling long-term community growth.
+                </p>
                 
-                {/* Mission Statement */}
-                <div className="mb-8">
-                  <h2 className="text-xl font-semibold text-obsidian mb-3">We design lending products that transform potential into progress</h2>
-                  <p className="text-lg font-body font-normal text-obsidian/80 leading-relaxed">
-                    We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
-                  </p>
-                </div>
-
-                {/* What Sets Us Apart */}
-                <div className="mb-8">
-                  <h2 className="text-xl font-semibold text-obsidian mb-3">What Sets Us Apart</h2>
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-3">
+                {/* Oak's Investment Focus - Under text */}
+                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                    Oak's Investment Focus
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-lg font-body font-normal text-obsidian/80 leading-relaxed">
-                        <strong>Speed & Clarity:</strong> Where traditional banks are slow and inefficient, Oak delivers timely, practical solutions
-                      </p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">First-lien, senior-position loans</p>
                     </div>
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-lg font-body font-normal text-obsidian/80 leading-relaxed">
-                        <strong>Proven Results:</strong> Every day, we partner with developers who depend on our capital to deliver measurable results
-                      </p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Short-duration debt strategies</p>
                     </div>
-                    <div className="flex items-start space-x-3">
+                    <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-lg font-body font-normal text-obsidian/80 leading-relaxed">
-                        <strong>Institutional Framework:</strong> Built on ethics, accountability, transparency, and durability
-                      </p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
+                    </div>
+                    <div className="flex items-start space-x-2">
+                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
                     </div>
                   </div>
                 </div>
