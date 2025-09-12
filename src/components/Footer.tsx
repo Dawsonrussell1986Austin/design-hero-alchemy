@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="font-serif text-sm">Phone</p>
-                  <p className="font-sans text-sm">980.288.6627</p>
+                  <a href="tel:+19802886627" className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors">980.288.6627</a>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Email</p>
