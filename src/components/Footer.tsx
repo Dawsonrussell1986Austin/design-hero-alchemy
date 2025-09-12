@@ -48,7 +48,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="font-serif text-sm">Email</p>
-                  <p className="font-sans text-sm">info@oakrepartners.com</p>
+                  <a href="mailto:info@oakrepartners.com" className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors">info@oakrepartners.com</a>
                 </div>
               </div>
             </div>
