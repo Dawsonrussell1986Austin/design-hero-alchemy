@@ -159,7 +159,7 @@ const Contact = () => {
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
                       <Mail className="h-8 w-8 text-accent-brown mx-auto mb-2" />
                       <h3 className="text-sm font-medium text-white mb-1">Email</h3>
-                      <p className="text-xs text-white/90">info@oakrepartners.com</p>
+                      <a href="mailto:info@oakrepartners.com" className="text-xs text-white/90 hover:text-accent-brown transition-colors">info@oakrepartners.com</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
