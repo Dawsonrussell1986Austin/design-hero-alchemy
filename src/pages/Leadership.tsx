@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Mail, Linkedin } from "lucide-react";
 
 
 const Leadership = () => {
@@ -217,24 +216,6 @@ const Leadership = () => {
                     <p className="text-garnet-edge text-xs italic">
                       Click to read full bio →
                     </p>
-                    <div className="flex space-x-3 pt-2">
-                      <Button
-                        variant="ghost"
-                        size="sm"
-                        className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                      >
-                        <Mail className="h-4 w-4" />
-                      </Button>
-                      {leader.name !== "Robert R. Kaplan, Jr." && (
-                        <Button
-                          variant="ghost"
-                          size="sm"
-                          className="text-garnet-edge hover:text-silver-mist hover:bg-garnet-edge/20 p-2"
-                        >
-                          <Linkedin className="h-4 w-4" />
-                        </Button>
-                      )}
-                    </div>
                   </div>
                 </div>
               ))}
