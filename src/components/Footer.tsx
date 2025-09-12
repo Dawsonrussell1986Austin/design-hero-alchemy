@@ -40,7 +40,14 @@ const Footer = () => {
               <div className="space-y-4 text-silver-mist/80">
                 <div>
                   <p className="font-serif text-sm">Office</p>
-                  <p className="font-sans text-sm">5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209</p>
+                  <a 
+                    href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors block"
+                  >
+                    5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209
+                  </a>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Phone</p>
