@@ -71,35 +71,6 @@ const Investments = () => {
                     </div>
                   </div>
                 </div>
-                
-                {/* Oak's Investment Focus - Under text */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
-                    Oak's Investment Focus
-                  </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">First-lien, senior-position loans</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Short-duration debt strategies</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
-                    </div>
-                  </div>
-                </div>
               </div>
               
               {/* Image with Overlay Cards - Expanded Height */}
