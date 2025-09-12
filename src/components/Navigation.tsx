@@ -178,12 +178,8 @@ const Navigation = () => {
             </div>
           </div>
           
-          {/* Desktop Investor Login Button */}
-          <a 
-            href="https://app.investnext.com/fundraise/8768/settings/access/None/portal/offerings/8768/oak-institutional-credit-solutions-llc/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          {/* Desktop Contact Us Button */}
+          <a href="/contact">
             <Button 
               className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
                 scrolled 
@@ -191,7 +187,7 @@ const Navigation = () => {
                   : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
               }`}
             >
-              Investor Login
+              Contact Us
             </Button>
           </a>
 
@@ -354,17 +350,12 @@ const Navigation = () => {
                 
                 {/* Bottom CTA */}
                 <div className="px-8 py-6 border-t border-garnet-edge/10">
-                  <a 
-                    href="https://app.investnext.com/fundraise/8768/settings/access/None/portal/offerings/8768/oak-institutional-credit-solutions-llc/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
+                  <a href="/contact" className="block">
                     <Button 
                       className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge min-h-[56px]"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      Investor Login
+                      Contact Us
                     </Button>
                   </a>
                 </div>
