@@ -29,7 +29,7 @@ const OurEdge = () => {
             {/* Key points grid */}
             <div className="grid md:grid-cols-3 gap-8 mt-16">
               <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
-                <div className="text-3xl font-display font-medium text-garnet-edge mb-4">$18B+</div>
+                <div className="text-lg font-display font-medium text-garnet-edge mb-4">Proven Experience</div>
                 <p className="text-silver-mist/90 font-body">in closed transactions over the past three decades</p>
               </div>
               
