@@ -109,16 +109,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  <div>
-                    <label htmlFor="attachment" className="block text-sm text-obsidian mb-2">Attachment</label>
-                    <p className="text-xs text-obsidian/60 mb-2">Upload pro forma, executive summary, or other relevant documents</p>
-                    <Input
-                      id="attachment"
-                      type="file"
-                      accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx"
-                      className="bg-white border-obsidian/20 text-obsidian file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:text-sm file:font-medium file:bg-obsidian/5 file:text-obsidian hover:file:bg-obsidian/10"
-                    />
-                  </div>
 
                   <Button 
                     type="submit"
