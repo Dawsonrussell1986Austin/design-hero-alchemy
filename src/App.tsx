@@ -9,6 +9,10 @@ import Lending from "./pages/Lending";
 import Investments from "./pages/Investments";
 import BlogIndianapolisFinancing from "./pages/BlogIndianapolisFinancing";
 import BlogExtensionNovember from "./pages/BlogExtensionNovember";
+import BlogDallasDealSheet from "./pages/BlogDallasDealSheet";
+import BlogExtensionOctober from "./pages/BlogExtensionOctober";
+import BlogExtensionSeptember from "./pages/BlogExtensionSeptember";
+import BlogExtensionJuly from "./pages/BlogExtensionJuly";
 import Transactions from "./pages/Transactions";
 import Investing from "./pages/Investing";
 import BridgeLoans from "./pages/BridgeLoans";
@@ -87,6 +91,10 @@ function App() {
         <Route path="/news/atlanta-financing" element={<BlogAtlantaFinancing />} />
         <Route path="/news/indianapolis-financing" element={<BlogIndianapolisFinancing />} />
         <Route path="/news/extension-november-2024" element={<BlogExtensionNovember />} />
+        <Route path="/news/dallas-deal-sheet" element={<BlogDallasDealSheet />} />
+        <Route path="/news/extension-october-2024" element={<BlogExtensionOctober />} />
+        <Route path="/news/extension-september-2024" element={<BlogExtensionSeptember />} />
+        <Route path="/news/extension-july-2024" element={<BlogExtensionJuly />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/disclosures" element={<Disclosures />} />

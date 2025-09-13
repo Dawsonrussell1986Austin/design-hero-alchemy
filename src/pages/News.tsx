@@ -33,7 +33,8 @@ const News = () => {
       title: "THIS WEEK'S DALLAS-FORT WORTH DEAL SHEET",
       excerpt: "Westmount Realty Capital Sells 1980s-Era Multifamily Property After adding extensive upgrades, a Dallas-based company sold a 45-year-old apartment complex in Arlington.",
       date: "April 21, 2025",
-      image: "/lovable-uploads/d8141168-4c47-48f5-ad2f-5c933bca4b04.png"
+      image: "/lovable-uploads/d8141168-4c47-48f5-ad2f-5c933bca4b04.png",
+      slug: "dallas-deal-sheet"
     },
     {
       title: "THE OAK COMPANIES PROVIDES $10.30 MILLION IN FINANCING",
@@ -53,19 +54,22 @@ const News = () => {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO OCTOBER 31, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (September 24, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "September 24, 2024",
-      image: "/lovable-uploads/1d0ee0fb-7652-422c-8708-b56d61f1304c.png"
+      image: "/lovable-uploads/1d0ee0fb-7652-422c-8708-b56d61f1304c.png",
+      slug: "extension-october-2024"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO SEPTEMBER 30, 2024",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "August 30, 2024",
-      image: "/lovable-uploads/f99afb6c-01df-4e96-a03b-151ca914423e.png"
+      image: "/lovable-uploads/f99afb6c-01df-4e96-a03b-151ca914423e.png",
+      slug: "extension-september-2024"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION OF EXPIRATION TIME",
       excerpt: "ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to September 30, 2024.",
       date: "July 31, 2024",
-      image: "/lovable-uploads/c86d708b-68f6-408c-92ec-d6851ddb868b.png"
+      image: "/lovable-uploads/c86d708b-68f6-408c-92ec-d6851ddb868b.png",
+      slug: "extension-july-2024"
     }
   ];
 
