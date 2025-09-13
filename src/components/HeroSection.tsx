@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-24 sm:pt-24 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe" style={{marginTop: window.innerWidth < 640 ? '88px' : '0px'}}>
+    <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-24 sm:pt-24 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe" style={{marginTop: window.innerWidth < 640 ? '97px' : '0px'}}>
       {/* Animated gradient glow backgrounds */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/20 rounded-full blur-3xl animate-pulse"></div>
