@@ -16,7 +16,7 @@ const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
   const currentPath = window.location.pathname;
   
   return (
-    <div className="bg-gradient-to-r from-obsidian to-graphite-fog py-6 md:py-8 border-b border-silver-mist/20 mt-20">
+    <div className="bg-gradient-to-r from-obsidian to-graphite-fog py-6 md:py-8 border-b border-silver-mist/20 pt-20">
       <div className="container mx-auto px-4 sm:px-6">
         <nav className="hidden md:flex items-center justify-between md:justify-start md:space-x-2 overflow-x-auto">
           {/* Main breadcrumb path */}
