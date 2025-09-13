@@ -22,24 +22,24 @@ const Contact = () => {
       />
         
       {/* Contact Section with Image Background and Glassmorphic Form */}
-      <section className="py-16 px-6 min-h-screen flex items-center">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 min-h-screen flex items-center">
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
             
             {/* Main Title */}
-            <div className="text-center mb-12">
-              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 leading-tight">
+            <div className="text-center mb-8 sm:mb-12">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 leading-tight px-2">
                 Get in <span className="text-accent-brown">Touch</span>
               </h1>
-              <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg lg:text-xl font-body font-normal text-obsidian/80 max-w-2xl mx-auto px-2">
                 Whether you're seeking bridge financing or exploring investment opportunities.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               
               {/* Left Side - Contact Form */}
-              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-8 shadow-lg">
+              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
                 <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
                 
                 <form className="space-y-4">
@@ -130,7 +130,7 @@ const Contact = () => {
               </div>
 
               {/* Right Side - Image with Glassmorphic Contact Info */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[400px] sm:h-[500px] lg:h-[600px] order-1 lg:order-2">
                 {/* Background Image */}
                 <img 
                   src="/lovable-uploads/abdf8150-965c-4bb4-89dc-307370b6762b.png"
@@ -142,37 +142,37 @@ const Contact = () => {
                 <div className="absolute inset-0 bg-gradient-to-l from-obsidian/40 via-transparent to-obsidian/60"></div>
 
                 {/* Glassmorphic Contact Info Cards */}
-                <div className="absolute inset-0 flex items-center justify-center p-8">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-sm w-full">
-                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
-                      <MapPin className="h-8 w-8 text-accent-brown mx-auto mb-2" />
-                      <h3 className="text-sm font-medium text-white mb-1">Office</h3>
+                <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8">
+                  <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-sm w-full">
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
+                      <MapPin className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <h3 className="text-xs sm:text-sm font-medium text-white mb-1">Office</h3>
                       <a 
                         href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-xs text-white/90 hover:text-accent-brown transition-colors block"
+                        className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors block leading-tight"
                       >
-                        5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209
+                        5925 Carnegie Blvd<br />Suite 110<br />Charlotte, NC 28209
                       </a>
                     </div>
                     
-                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
-                      <Phone className="h-8 w-8 text-accent-brown mx-auto mb-2" />
-                      <h3 className="text-sm font-medium text-white mb-1">Phone</h3>
-                      <a href="tel:+19802886627" className="text-xs text-white/90 hover:text-accent-brown transition-colors">980.288.6627</a>
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
+                      <Phone className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <h3 className="text-xs sm:text-sm font-medium text-white mb-1">Phone</h3>
+                      <a href="tel:+19802886627" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors">980.288.6627</a>
                     </div>
                     
-                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
-                      <Mail className="h-8 w-8 text-accent-brown mx-auto mb-2" />
-                      <h3 className="text-sm font-medium text-white mb-1">Email</h3>
-                      <a href="mailto:info@oakrepartners.com" className="text-xs text-white/90 hover:text-accent-brown transition-colors">info@oakrepartners.com</a>
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
+                      <Mail className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <h3 className="text-xs sm:text-sm font-medium text-white mb-1">Email</h3>
+                      <a href="mailto:info@oakrepartners.com" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors break-all">info@oakrepartners.com</a>
                     </div>
                     
-                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-4 text-center shadow-lg">
-                      <Clock className="h-8 w-8 text-accent-brown mx-auto mb-2" />
-                      <h3 className="text-sm font-medium text-white mb-1">Hours</h3>
-                      <p className="text-xs text-white/90">Mon-Fri: 9AM-6PM EST</p>
+                    <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
+                      <Clock className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <h3 className="text-xs sm:text-sm font-medium text-white mb-1">Hours</h3>
+                      <p className="text-[10px] sm:text-xs text-white/90 leading-tight">Mon-Fri<br />9AM-6PM EST</p>
                     </div>
                   </div>
                 </div>
