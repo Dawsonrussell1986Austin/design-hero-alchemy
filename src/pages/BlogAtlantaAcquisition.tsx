@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-import SimplePageHeader from "@/components/SimplePageHeader";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -27,11 +26,8 @@ const BlogAtlantaAcquisition = () => {
         ]}
       />
 
-      {/* Header */}
-      <SimplePageHeader title="News Article" />
-      
       {/* Content */}
-      <div className="bg-silver-mist py-20">
+      <div className="bg-silver-mist pt-8 pb-20">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             {/* Back button */}
