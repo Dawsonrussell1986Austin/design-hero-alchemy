@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import businessPartnership from "@/assets/business-partnership.jpg";
 
 const BlogAtlantaFinancing = () => {
   useEffect(() => {
@@ -52,8 +53,8 @@ const BlogAtlantaFinancing = () => {
             {/* Featured image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/8e8ee768-84c7-470a-acc5-4f7ccdf08de2.png"
-                alt="Garden Courts Apartments"
+                src={businessPartnership}
+                alt="Commercial Real Estate Partnership"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
             </div>

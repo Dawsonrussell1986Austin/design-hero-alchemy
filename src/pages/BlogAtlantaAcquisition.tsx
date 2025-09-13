@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import atlantaSkyline from "@/assets/atlanta-skyline.jpg";
 
 const BlogAtlantaAcquisition = () => {
   useEffect(() => {
@@ -52,8 +53,8 @@ const BlogAtlantaAcquisition = () => {
             {/* Featured image */}
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/7e2e9015-a748-4e8f-aeb3-6012fe57d4aa.png"
-                alt="Garden Courts Apartments"
+                src={atlantaSkyline}
+                alt="Atlanta Commercial Properties"
                 className="w-full h-[400px] object-cover rounded-lg shadow-lg"
               />
             </div>
