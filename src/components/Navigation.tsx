@@ -154,7 +154,6 @@ const Navigation = () => {
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
             </div>
-            {/* News link hidden for now
             <div className="group relative">
               <a href="/news" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
@@ -165,7 +164,6 @@ const Navigation = () => {
                 scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
               }`}></div>
             </div>
-            */}
             <div className="group relative">
               <a href="/contact" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
@@ -323,7 +321,6 @@ const Navigation = () => {
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
-                    {/* News link hidden for now
                     <a 
                       href="/news" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
@@ -334,7 +331,6 @@ const Navigation = () => {
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
-                    */}
                     <a 
                       href="/contact" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
