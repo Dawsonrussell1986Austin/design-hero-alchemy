@@ -125,7 +125,7 @@ const Navigation = () => {
               </div>
             </div>
             <div className="group relative">
-              <a href="/investments" className={`transition-all duration-300 font-body font-medium text-sm tracking-wide ${
+              <a href="/whyoak" className={`transition-all duration-300 font-body font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
                 Why Oak
@@ -294,7 +294,7 @@ const Navigation = () => {
                     </div>
                     
                     <a 
-                      href="/investments" 
+                      href="/whyoak" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
                       onClick={() => setIsMenuOpen(false)}
                     >

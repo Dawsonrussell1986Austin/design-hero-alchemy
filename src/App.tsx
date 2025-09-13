@@ -55,7 +55,7 @@ function App() {
         <Route path="/lending" element={<Lending />} />
         <Route path="/lending/bridge" element={<BridgeLoans />} />
         <Route path="/lending/fha-hud" element={<FhaHudLoans />} />
-        <Route path="/investments" element={<Investments />} />
+        <Route path="/whyoak" element={<Investments />} />
         <Route path="/investing" element={<Investing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/webinar" element={<WebinarRegistration />} />
