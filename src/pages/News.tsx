@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const News = () => {
   const newsArticles = [
@@ -11,19 +12,22 @@ const News = () => {
       title: "THE OAK COMPANIES PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
       excerpt: "The Oak Companies has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
       date: "May 6, 2025",
-      image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png"
+      image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",
+      slug: "philadelphia-midrise"
     },
     {
       title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
       excerpt: "EAST POINT, GA. — The Oak Companies has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments, an 86-unit multifamily community in the area.",
       date: "May 2, 2025",
-      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png"
+      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png",
+      slug: "atlanta-acquisition-loan"
     },
     {
       title: "THE OAK COMPANIES PROVIDES $8.65M FINANCING FOR THE ATLANTA",
       excerpt: "The Oak Companies, a leading provider of private capital solutions for commercial real estate, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
       date: "April 30, 2025",
-      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png"
+      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png",
+      slug: "atlanta-financing"
     },
     {
       title: "THIS WEEK'S DALLAS-FORT WORTH DEAL SHEET",
@@ -111,13 +115,26 @@ const News = () => {
                     <p className="text-deep-petrol/80 leading-relaxed text-sm font-body font-normal mb-6 line-clamp-3">
                       {article.excerpt}
                     </p>
-                    <Button 
-                      variant="outline"
-                      className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
-                    >
-                      Read More
-                      <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button>
+                    {article.slug ? (
+                      <Link to={`/news/${article.slug}`}>
+                        <Button 
+                          variant="outline"
+                          className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
+                        >
+                          Read More
+                          <ArrowRight className="h-4 w-4 ml-2" />
+                        </Button>
+                      </Link>
+                    ) : (
+                      <Button 
+                        variant="outline"
+                        className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
+                        disabled
+                      >
+                        Read More
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </Button>
+                    )}
                   </div>
                 </div>
               ))}
