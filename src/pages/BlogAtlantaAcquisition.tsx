@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import atlantaSkyline from "@/assets/atlanta-skyline.jpg";
+import atlantaSkyline from "@/assets/atlanta-skyline-clouds.png";
 
 const BlogAtlantaAcquisition = () => {
   useEffect(() => {

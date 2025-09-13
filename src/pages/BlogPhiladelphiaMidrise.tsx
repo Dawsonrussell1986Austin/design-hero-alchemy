@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import philadelphiaMidrise from "@/assets/philadelphia-midrise.jpg";
+import philadelphiaMidrise from "@/assets/philadelphia-building.png";
 
 const BlogPhiladelphiaMidrise = () => {
   useEffect(() => {

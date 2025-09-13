@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import businessPartnership from "@/assets/business-partnership.jpg";
+import businessPartnership from "@/assets/handshake-business.png";
 
 const BlogAtlantaFinancing = () => {
   useEffect(() => {
