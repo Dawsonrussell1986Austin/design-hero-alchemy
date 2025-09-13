@@ -39,13 +39,15 @@ const News = () => {
       title: "THE OAK COMPANIES PROVIDES $10.30 MILLION IN FINANCING",
       excerpt: "The Oak Companies provided a combined $10.30 million in financing for a pair of multifamily properties located in metropolitan Indianapolis. The separate bridge loans funded the acquisition and planned renovations.",
       date: "April 16, 2025",
-      image: "/lovable-uploads/28b6260b-1406-4eab-a488-22e013d45c19.png"
+      image: "/lovable-uploads/28b6260b-1406-4eab-a488-22e013d45c19.png",
+      slug: "indianapolis-financing"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO NOVEMBER 30, 2024",
       excerpt: "FOR IMMEDIATE RELEASE. Charlotte, NC. (October 31, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline.",
       date: "October 31, 2024",
-      image: "/lovable-uploads/24298811-8997-4d25-aede-2af891615fb8.png"
+      image: "/lovable-uploads/24298811-8997-4d25-aede-2af891615fb8.png",
+      slug: "extension-november-2024"
     },
     {
       title: "THE OAK COMPANIES ANNOUNCES EXTENSION TO OCTOBER 31, 2024",

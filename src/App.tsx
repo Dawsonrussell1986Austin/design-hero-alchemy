@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
 import Investments from "./pages/Investments";
+import BlogIndianapolisFinancing from "./pages/BlogIndianapolisFinancing";
+import BlogExtensionNovember from "./pages/BlogExtensionNovember";
 import Transactions from "./pages/Transactions";
 import Investing from "./pages/Investing";
 import BridgeLoans from "./pages/BridgeLoans";
@@ -83,6 +85,8 @@ function App() {
         <Route path="/news/philadelphia-midrise" element={<BlogPhiladelphiaMidrise />} />
         <Route path="/news/atlanta-acquisition-loan" element={<BlogAtlantaAcquisition />} />
         <Route path="/news/atlanta-financing" element={<BlogAtlantaFinancing />} />
+        <Route path="/news/indianapolis-financing" element={<BlogIndianapolisFinancing />} />
+        <Route path="/news/extension-november-2024" element={<BlogExtensionNovember />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/disclosures" element={<Disclosures />} />
