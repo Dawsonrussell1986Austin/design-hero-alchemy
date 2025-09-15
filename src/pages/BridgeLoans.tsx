@@ -166,7 +166,7 @@ const BridgeLoans = () => {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">18-36 months</span>
+                    <span className="text-sm font-medium text-obsidian">24-36 months</span>
                   </div>
                 </div>
                 
