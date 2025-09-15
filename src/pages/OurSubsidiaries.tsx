@@ -193,7 +193,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Dylan Beaulieu</h4>
-                        <p className="text-sm text-deep-petrol mb-4">MANAGER, INVESTOR OPERATIONS</p>
+                        <p className="text-sm text-deep-petrol mb-4">PRIMARY SERVICING MANAGER</p>
                       </div>
                     </div>
                     
