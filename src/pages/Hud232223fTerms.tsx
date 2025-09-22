@@ -40,10 +40,10 @@ const Hud232223fTerms = () => {
                   232/223(F)
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  Refinance or Acquisition of Nursing Homes, Intermediate Care Facilities, Board & Care, and Assisted Living Facilities
+                  Multifamily Refinance or Acquisition
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                  Refinance or acquisition of an existing Nursing Home, Intermediate Care Facility, Board & Care Home or Assisted Living Facility having no less than 20 units/beds.
+                  Refinancing of existing Multifamily (minimum 5 units) structures with proven debt service coverage performance.
                 </p>
 
                 {/* Why Consider This Program */}
@@ -54,15 +54,15 @@ const Hud232223fTerms = () => {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You're acquiring or refinancing healthcare facilities with 20+ units/beds</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You're refinancing or acquiring multifamily properties with 5+ units</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Your facility has been rehabilitated within the last 3 years</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">Your property has demonstrated debt service coverage for at least 3 months</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need long-term, non-recourse financing for healthcare properties</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You need long-term, non-recourse financing for multifamily properties</p>
                     </div>
                   </div>
                 </div>
@@ -90,49 +90,50 @@ const Hud232223fTerms = () => {
                 <table className="w-full">
                   <tbody className="divide-y divide-obsidian/10">
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Purpose</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Refinance or acquisition of an existing Nursing Home, Intermediate Care Facility, Board & Care Home or Assisted Living Facility having no less than 20 units/Beds.</td>
-                    </tr>
-                    <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Eligible Properties</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">The facility must have been completed or substantially rehabilitated at least three (3) years prior to the date of the Firm Commitment application.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Refinancing of existing Multifamily (minimum 5 units) structures that have at least one full month of Debt Service Coverage Ratio being 1.15 for a market rate property, 1.11 for an affordable property or for a broadly affordable property. The property must have this consecutive coverage for at least 3-months prior to loan endorsement.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Commercial Space</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Eligible for up to 20% of total square footage and 20% of EGI.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Eligible for up to 25% of total net rentable area and 20% of EGL.</td>
+                    </tr>
+                    <tr>
+                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Borrower</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Single asset and single purpose entity, either for-profit or non-profit.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Maximum Mortgage Limits</td>
                       <td className="py-4 px-6 text-sm text-obsidian/80">
                         <div>The lesser of:</div>
                         <div className="mt-2 space-y-1 text-xs">
-                          <div>a) Recommended % of LTV.</div>
-                          <div>b) Recommended % of Purchase Price.</div>
-                          <div>c) Recommended Debt Service Coverage Ratio.</div>
-                          <div>d) Existing debt plus transaction costs and proposed repairs.</div>
+                          <div>a) Applicable percentage of LTV.</div>
+                          <div>b) Applicable debt service coverage ratio.</div>
+                          <div>c) 87% of transaction costs, if purchase transaction.</div>
+                          <div>d) HUD statutory limits.</div>
+                          <div>e) Greater of 100% of transaction costs or 80% LTV if refinance cash out transaction.</div>
+                          <div>f) For market rate properties, applicable factors: 87% LTV, 1.15 DSCR.</div>
+                          <div>g) For affordable and broadly affordable properties: 90% LTV,1.11 DSCR.</div>
+                          <div>h) For Manufactured Home Community Program: 90% LTV Maximum, 1.11 DSCR, No Cash Out</div>
                         </div>
                         <div className="mt-4 text-xs">
-                          <div className="font-medium">Based on current economic and fiscal environment, HUD has recommended the following parameters:</div>
-                          <div className="mt-2 space-y-1">
-                            <div>Skilled Nursing and Assisted Living: 80% LTV, 1.45 DSCR.</div>
-                            <div>For Board and Care and Independent Living: 80% LTV, 1.45 DSCR.</div>
-                            <div>For Non-Profit Mortgagors: 85% LTV, 1.45 DSCR.</div>
-                            <div>*Other than the above constraints, there are no minimum or maximum loan sizes.</div>
-                          </div>
+                          <div>* If built and occupied for 3-years or more, the Property must have a stabilized average physical occupancy of 85%. If less than 3-years of age, the property may have at least 1-month physical occupancy of not less than 85% with 60 days of that same occupancy prior to Endorsement.</div>
+                          <div className="mt-2">* 50% of cash out funded at closing; remainder upon completion of non-critical repairs.</div>
+                          <div className="mt-2">* Other parameters apply to mortgage over $120 million.</div>
+                          <div className="mt-2">* Other than the above constraints, there are no minimum or maximum loan sizes.</div>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Amortization & Term</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">A maximum term of the lesser of 35 years fully amortizing or 75% of remaining economic life.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">A maximum term of the lesser of: 35 years fully amortizing or 75% of remaining economic life.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Interest Rate</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Fixed rate subject to market conditions at the time of rate lock.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Fixed rate determined by market conditions at the time of rate lock.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Mortgage Insurance Premium</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">1% payable at closing, 0.65% annually (0.45% for affordable) - Subject to change by HUD.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">1% payable at closing, 0.60% (0.35% for affordable and 0.25% for broadly affordable) annually or 0.25% for GreenMIP, escrowed monthly. Subject to change by HUD.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Recourse</td>
@@ -148,7 +149,7 @@ const Hud232223fTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Third Party Reports</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Appraisal, Phase I, Radon, Property Condition & Needs Assessment (PCNA).</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Typically Appraisal, PCNA, and Phase I ESA. Other reports as needed.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Escrows</td>
@@ -167,20 +168,12 @@ const Hud232223fTerms = () => {
                       <td className="py-4 px-6 text-sm text-obsidian/80">$3 per $1,000 of requested mortgage.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">OZ HUD Application Fee</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">$2 per $1,000 of requested mortgage.</td>
-                    </tr>
-                    <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">HUD Inspection Fee</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Greater of 1% of the cost of repairs or $30 per bed.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Greater of 1% of the cost of repairs or $30 per unit ($1,500 max if repairs are less than $100k).</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Rate Lock Deposit</td>
                       <td className="py-4 px-6 text-sm text-obsidian/80">Typically 0.5% of mortgage amount, refunded at closing.</td>
-                    </tr>
-                    <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Professional Liability Insurance</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Minimum $1,000,000 / $3,000,000 coverage for operators / managers.</td>
                     </tr>
                   </tbody>
                 </table>
