@@ -72,8 +72,8 @@ const Hud232223fTerms = () => {
               <div className="space-y-6">
                 <div className="rounded-lg overflow-hidden shadow-lg">
                   <img 
-                    src="/multifamily-building.png" 
-                    alt="Multifamily building financing"
+                    src="/multifamily-bridge-image.png" 
+                    alt="Multifamily financing solutions - bridging opportunities"
                     className="w-full h-64 object-cover"
                   />
                 </div>
