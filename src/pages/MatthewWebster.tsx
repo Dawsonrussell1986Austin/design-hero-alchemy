@@ -42,7 +42,7 @@ const MatthewWebster = () => {
                 <div>
                   <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Matthew Webster</h1>
                   <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
-                    Chief Credit Officer, Senior Vice President
+                    Executive Vice President / Chief Credit Officer
                   </p>
                   <div className="flex space-x-3">
                     <Button
