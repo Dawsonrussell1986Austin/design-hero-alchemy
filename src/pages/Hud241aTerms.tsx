@@ -40,10 +40,10 @@ const Hud241aTerms = () => {
                   HUD 241(A)
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
-                  Supplemental Mortgage Insurance for HUD-Insured Healthcare Loans
+                  Supplemental Mortgage Insurance for HUD-Insured Multifamily Loans
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
-                  Secondary financing for improvements or additions to healthcare properties with a HUD-insured first mortgage in need of repairs, substantial rehabilitation, energy conservation measures and/or improvements.
+                  Secondary financing for improvements or additions to properties with a HUD-insured first mortgage in need of repairs, substantial rehabilitation, or additional units.
                 </p>
 
                 {/* Why Consider This Program */}
@@ -54,7 +54,7 @@ const Hud241aTerms = () => {
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need supplemental financing for improvements to healthcare properties</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You need supplemental financing for improvements to multifamily properties</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
@@ -62,7 +62,7 @@ const Hud241aTerms = () => {
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need funding for energy conservation measures or improvements</p>
+                      <p className="text-sm text-obsidian/80 leading-relaxed">You need funding for repairs, rehabilitation, or additional units</p>
                     </div>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const Hud241aTerms = () => {
                   <tbody className="divide-y divide-obsidian/10">
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Purpose</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Secondary financing for improvements or additions to healthcare properties with a HUD-insured first mortgage in need of repairs, substantial rehabilitation, (including major movables), energy conservation measures and/or improvements.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Secondary financing for improvements or additions to properties with a HUD-insured first mortgage in need of repairs, substantial rehabilitation, or additional units.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Borrower</td>
@@ -104,14 +104,14 @@ const Hud241aTerms = () => {
                         <div className="mt-2 space-y-1 text-xs">
                           <div>a) 90% LTV</div>
                           <div>b) 90% LTC</div>
-                          <div>c) Minimum DSCR of 1.45x (combined first and second mortgages)</div>
+                          <div>c) Minimum DSCR of 1.11x (combined first and second mortgages)</div>
                           <div>d) HUD statutory per unit limitations</div>
                         </div>
                       </td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Amortization & Term</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">If the existing loan has more than 25-years of amortization remaining, the term is generally coterminous with the first FHA-insured mortgage. If the remaining term is less than 25-years, the supplemental loan will have an amortization period of up to 40-years; as long as the term is no greater than 75% of the project's remaining economic life.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">If the existing loan has more than 25-years of amortization remaining, the term is generally coterminous with the first FHA-insured mortgage. If the remaining term is less than 25-years, then the supplemental loan will have an amortization period of up to 40-years; as long as the term is no greater than 75% of the project's remaining economic life.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Interest Rate</td>
@@ -122,8 +122,9 @@ const Hud241aTerms = () => {
                       <td className="py-4 px-6 text-sm text-obsidian/80">
                         <div>Maximum loan amount will be the lesser of:</div>
                         <div className="mt-2 space-y-1 text-xs">
-                          <div>a) 0.72% for Market Rate</div>
-                          <div>b) 0.45% for Affordable</div>
+                          <div>a) 0.95% for Market Rate</div>
+                          <div>b) 0.35% for Affordable</div>
+                          <div>c) 0.25% for Broadly Affordable or Green Properties</div>
                         </div>
                       </td>
                     </tr>
@@ -133,7 +134,7 @@ const Hud241aTerms = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Assumability</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Fully assumable with HUD approval.</td>
+                      <td className="py-4 px-6 text-sm text-obsidian/80">Fully assumable, subject to HUD approval.</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Prepayment</td>
