@@ -26,7 +26,7 @@ const Leadership = () => {
     },
     {
       name: "Matthew Webster",
-      title: "Chief Credit Officer, Senior Vice President", 
+      title: "Executive Vice President / Chief Credit Officer", 
       image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
       bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
     },
