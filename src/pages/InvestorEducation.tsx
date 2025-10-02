@@ -40,7 +40,7 @@ const videoLibrary: VideoCategory[] = [
         id: "intro-1",
         title: "Introduction to Our Platform",
         description: "Learn the basics of our productivity platform and how it can transform your workflow.",
-        mediaId: "0eykhn0v2g",
+        mediaId: "yiyqt2ifnu",
       },
       {
         id: "intro-2",
