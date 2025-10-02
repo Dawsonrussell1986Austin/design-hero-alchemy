@@ -31,6 +31,7 @@ import News from "./pages/News";
 import WebinarRegistration from "./pages/WebinarRegistration";
 import NotFound from "./pages/NotFound";
 import Investors from "./pages/Investors";
+import InvestorEducation from "./pages/InvestorEducation";
 import RobertKaplan from "./pages/RobertKaplan";
 import BrookScardina from "./pages/BrookScardina";
 import ThomasMcGovern from "./pages/ThomasMcGovern";
@@ -101,6 +102,7 @@ function App() {
         <Route path="/disclosures" element={<Disclosures />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/investors" element={<Investors />} />
+        <Route path="/investor-education" element={<InvestorEducation />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
