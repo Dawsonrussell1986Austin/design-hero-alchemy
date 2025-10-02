@@ -57,7 +57,7 @@ const videoLibrary: VideoCategory[] = [
         id: "market-1",
         title: "Market Analysis",
         description: "Deep dive into the $50B productivity software market and our competitive advantage.",
-        mediaId: "0eykhn0v2g",
+        mediaId: "l66qlx90f9",
       },
       {
         id: "market-2",
