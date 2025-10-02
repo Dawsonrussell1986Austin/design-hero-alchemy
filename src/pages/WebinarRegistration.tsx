@@ -35,7 +35,7 @@ const WebinarRegistration = () => {
                 Join Our Exclusive Investor Webinar
               </h1>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
-                Learn proven strategies for commercial real estate investing from industry experts.
+                Join us on the third week of every month for investor updates, deal insights, and market trends. Each session provides a clear overview of portfolio performance, new opportunities, and the latest developments shaping commercial real estate.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
