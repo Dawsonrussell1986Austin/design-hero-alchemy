@@ -96,7 +96,7 @@ const Investors = () => {
             </div>
 
             {/* Opt-in Form */}
-            <div className="bg-silver-mist rounded-xl shadow-2xl p-8 mt-8 lg:mt-0">
+            <div className="bg-silver-mist rounded-xl shadow-2xl p-8 mt-16 lg:mt-0">
               {isSuccess ? (
                 <div className="text-center space-y-4 py-8">
                   <div className="mx-auto w-16 h-16 bg-accent-brown/10 rounded-full flex items-center justify-center">
