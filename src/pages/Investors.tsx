@@ -15,7 +15,7 @@ const investorSchema = z.object({
   full_name: z.string().min(2, "Name must be at least 2 characters").max(100),
   email: z.string().email("Invalid email address").max(255),
   company: z.string().max(100).optional(),
-  investment_range: z.string().optional(),
+  phone: z.string().min(10, "Phone number must be at least 10 digits").max(20),
   message: z.string().max(500).optional(),
 });
 
@@ -41,7 +41,7 @@ const Investors = () => {
         full_name: data.full_name,
         email: data.email,
         company: data.company || null,
-        investment_range: data.investment_range || null,
+        investment_range: data.phone,
         message: data.message || null,
       }]);
 
@@ -96,7 +96,7 @@ const Investors = () => {
             </div>
 
             {/* Opt-in Form */}
-            <div className="bg-silver-mist rounded-xl shadow-2xl p-8">
+            <div className="bg-silver-mist rounded-xl shadow-2xl p-8 mt-8 lg:mt-0">
               {isSuccess ? (
                 <div className="text-center space-y-4 py-8">
                   <div className="mx-auto w-16 h-16 bg-accent-brown/10 rounded-full flex items-center justify-center">
@@ -125,11 +125,12 @@ const Investors = () => {
                   </p>
                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="full_name">Full Name *</Label>
+                      <Label htmlFor="full_name" className="text-graphite-fog">Full Name *</Label>
                       <Input
                         id="full_name"
                         {...register("full_name")}
                         placeholder="John Doe"
+                        className="bg-white"
                       />
                       {errors.full_name && (
                         <p className="text-sm text-destructive">
@@ -139,12 +140,13 @@ const Investors = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
+                      <Label htmlFor="email" className="text-graphite-fog">Email *</Label>
                       <Input
                         id="email"
                         type="email"
                         {...register("email")}
                         placeholder="john@example.com"
+                        className="bg-white"
                       />
                       {errors.email && (
                         <p className="text-sm text-destructive">
@@ -158,26 +160,25 @@ const Investors = () => {
                       <Input
                         id="company"
                         {...register("company")}
-                        placeholder="Your Investment Firm"
+                        placeholder="Your Company"
                         className="bg-white"
                       />
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="investment_range" className="text-graphite-fog">
-                        Investment Capacity (Optional)
-                      </Label>
-                      <select
-                        id="investment_range"
-                        {...register("investment_range")}
-                        className="flex h-10 w-full rounded-md border border-input bg-white px-3 py-2 text-sm text-graphite-fog ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-brown focus-visible:ring-offset-2"
-                      >
-                        <option value="">Select a range</option>
-                        <option value="under-500k">Under $500K</option>
-                        <option value="500k-1m">$500K - $1M</option>
-                        <option value="1m-5m">$1M - $5M</option>
-                        <option value="5m-plus">$5M+</option>
-                      </select>
+                      <Label htmlFor="phone" className="text-graphite-fog">Phone *</Label>
+                      <Input
+                        id="phone"
+                        type="tel"
+                        {...register("phone")}
+                        placeholder="+1 (555) 000-0000"
+                        className="bg-white"
+                      />
+                      {errors.phone && (
+                        <p className="text-sm text-destructive">
+                          {errors.phone.message}
+                        </p>
+                      )}
                     </div>
 
                     <div className="space-y-2">
