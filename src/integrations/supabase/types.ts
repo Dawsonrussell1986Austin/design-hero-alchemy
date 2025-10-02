@@ -98,6 +98,39 @@ export type Database = {
         }
         Relationships: []
       }
+      investor_leads: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string
+          full_name: string
+          id: string
+          investment_range: string | null
+          message: string | null
+          status: string
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email: string
+          full_name: string
+          id?: string
+          investment_range?: string | null
+          message?: string | null
+          status?: string
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string
+          id?: string
+          investment_range?: string | null
+          message?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
       invites: {
         Row: {
           accepted_at: string | null
