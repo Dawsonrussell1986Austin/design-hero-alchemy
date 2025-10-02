@@ -32,7 +32,7 @@ const WebinarRegistration = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-tight tracking-tight">
-                Join Our Exclusive Real Estate Investment Webinar
+                Join Our Exclusive Investor Webinar
               </h1>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
                 Learn proven strategies for commercial real estate investing from industry experts.
