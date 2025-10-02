@@ -73,22 +73,22 @@ const Investors = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6">
-              <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-silver-mist font-display">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-tight tracking-tight">
                 Stay Updated on OAK Real Estate Opportunities
               </h1>
-              <p className="text-xl text-silver-mist/80 leading-relaxed font-body">
+              <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
                 Get exclusive access to investment updates, market insights, and new property opportunities.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <div className="flex items-center gap-2 text-sm text-silver-mist/90">
+                <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
                   <Building2 className="h-5 w-5 text-accent-brown" />
                   <span>Exclusive Deals</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-silver-mist/90">
+                <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
                   <TrendingUp className="h-5 w-5 text-accent-brown" />
                   <span>Market Insights</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-silver-mist/90">
+                <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
                   <FileText className="h-5 w-5 text-accent-brown" />
                   <span>Quarterly Reports</span>
                 </div>
@@ -102,7 +102,7 @@ const Investors = () => {
                   <div className="mx-auto w-16 h-16 bg-accent-brown/10 rounded-full flex items-center justify-center">
                     <Mail className="h-8 w-8 text-accent-brown" />
                   </div>
-                  <h3 className="text-2xl font-semibold text-obsidian font-display">
+                  <h3 className="text-2xl font-display font-medium text-obsidian">
                     Thank You!
                   </h3>
                   <p className="text-graphite-fog font-body">
@@ -117,15 +117,15 @@ const Investors = () => {
                 </div>
               ) : (
                 <>
-                  <h2 className="text-2xl font-bold mb-2 text-obsidian font-display">
+                  <h2 className="text-2xl font-display font-medium text-obsidian mb-2">
                     Join Our Investor Network
                   </h2>
                   <p className="text-graphite-fog mb-6 font-body">
                     Subscribe to receive exclusive investment opportunities and market updates.
                   </p>
-                  <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     <div className="space-y-2">
-                      <Label htmlFor="full_name" className="text-graphite-fog">Full Name *</Label>
+                      <Label htmlFor="full_name" className="text-graphite-fog font-body">Full Name *</Label>
                       <Input
                         id="full_name"
                         {...register("full_name")}
@@ -133,14 +133,14 @@ const Investors = () => {
                         className="bg-white"
                       />
                       {errors.full_name && (
-                        <p className="text-sm text-destructive">
+                        <p className="text-sm text-destructive font-body">
                           {errors.full_name.message}
                         </p>
                       )}
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="email" className="text-graphite-fog">Email *</Label>
+                      <Label htmlFor="email" className="text-graphite-fog font-body">Email *</Label>
                       <Input
                         id="email"
                         type="email"
@@ -149,14 +149,14 @@ const Investors = () => {
                         className="bg-white"
                       />
                       {errors.email && (
-                        <p className="text-sm text-destructive">
+                        <p className="text-sm text-destructive font-body">
                           {errors.email.message}
                         </p>
                       )}
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="company" className="text-graphite-fog">Company (Optional)</Label>
+                      <Label htmlFor="company" className="text-graphite-fog font-body">Company (Optional)</Label>
                       <Input
                         id="company"
                         {...register("company")}
@@ -166,7 +166,7 @@ const Investors = () => {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-graphite-fog">Phone *</Label>
+                      <Label htmlFor="phone" className="text-graphite-fog font-body">Phone *</Label>
                       <Input
                         id="phone"
                         type="tel"
@@ -175,32 +175,32 @@ const Investors = () => {
                         className="bg-white"
                       />
                       {errors.phone && (
-                        <p className="text-sm text-destructive">
+                        <p className="text-sm text-destructive font-body">
                           {errors.phone.message}
                         </p>
                       )}
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="message" className="text-graphite-fog">Message (Optional)</Label>
+                      <Label htmlFor="message" className="text-graphite-fog font-body">Message (Optional)</Label>
                       <textarea
                         id="message"
                         {...register("message")}
                         placeholder="Tell us about your investment interests..."
                         rows={3}
-                        className="flex w-full rounded-md border border-input bg-white px-3 py-2 text-sm text-graphite-fog ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-brown focus-visible:ring-offset-2"
+                        className="flex w-full rounded-md border border-input bg-white px-3 py-2 text-sm text-graphite-fog font-body ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-brown focus-visible:ring-offset-2"
                       />
                     </div>
 
                     <Button
                       type="submit"
-                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-semibold"
+                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Subscribing..." : "Subscribe to Updates"}
                     </Button>
 
-                    <p className="text-xs text-graphite-fog/70 text-center">
+                    <p className="text-xs text-graphite-fog/70 text-center font-body">
                       <Lock className="inline h-3 w-3 mr-1" />
                       Your information is secure and will never be shared.
                     </p>
@@ -215,7 +215,7 @@ const Investors = () => {
       {/* Benefits Section */}
       <section className="py-16 px-4 bg-silver-mist">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl font-bold text-center mb-12 text-obsidian font-display">
+          <h2 className="text-3xl lg:text-4xl font-display font-medium text-center mb-12 text-obsidian">
             Why Join Our Investor Network
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -223,10 +223,10 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
                 <Building2 className="h-6 w-6 text-accent-brown" />
               </div>
-              <h3 className="text-xl font-semibold text-obsidian font-display">
+              <h3 className="text-lg font-display font-medium text-obsidian">
                 Exclusive Opportunities
               </h3>
-              <p className="text-graphite-fog font-body">
+              <p className="text-deep-petrol font-body leading-relaxed">
                 Get first access to off-market deals and pre-construction projects.
               </p>
             </div>
@@ -235,10 +235,10 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
                 <TrendingUp className="h-6 w-6 text-accent-brown" />
               </div>
-              <h3 className="text-xl font-semibold text-obsidian font-display">
+              <h3 className="text-lg font-display font-medium text-obsidian">
                 Market Intelligence
               </h3>
-              <p className="text-graphite-fog font-body">
+              <p className="text-deep-petrol font-body leading-relaxed">
                 Receive detailed market analysis and investment trend reports quarterly.
               </p>
             </div>
@@ -247,10 +247,10 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
                 <FileText className="h-6 w-6 text-accent-brown" />
               </div>
-              <h3 className="text-xl font-semibold text-obsidian font-display">
+              <h3 className="text-lg font-display font-medium text-obsidian">
                 Portfolio Updates
               </h3>
-              <p className="text-graphite-fog font-body">
+              <p className="text-deep-petrol font-body leading-relaxed">
                 Track performance metrics and ROI across our active investments.
               </p>
             </div>
@@ -261,15 +261,15 @@ const Investors = () => {
       {/* CTA Section */}
       <section className="py-16 px-4 bg-gradient-to-br from-obsidian to-graphite-fog">
         <div className="container mx-auto max-w-4xl text-center space-y-6">
-          <h2 className="text-3xl font-bold text-silver-mist font-display">
+          <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist">
             Don't Miss the Next Opportunity
           </h2>
-          <p className="text-xl text-silver-mist/80 font-body">
+          <p className="text-lg font-body font-normal text-silver-mist/80">
             Join successful investors who trust OAK for exclusive real estate opportunities.
           </p>
           <Button
             size="lg"
-            className="bg-accent-brown hover:bg-accent-brown/90 text-white"
+            className="bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
             onClick={() =>
               document
                 .querySelector("form")
