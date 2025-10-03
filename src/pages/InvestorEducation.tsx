@@ -44,8 +44,8 @@ const videoLibrary: VideoCategory[] = [
       },
       {
         id: "intro-2",
-        title: "Investment Overview",
-        description: "Discover the investment opportunity and our growth trajectory in the productivity market.",
+        title: "Oak's Lending Strategy",
+        description: "Discover Oak's strategic approach to lending and investment opportunities.",
         mediaId: "xl6orct4jo",
       },
     ],
