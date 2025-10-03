@@ -73,7 +73,7 @@ const videoLibrary: VideoCategory[] = [
       },
       {
         id: "strategy-3",
-        title: "Our Selection Process",
+        title: "The Genesis of Oak",
         description: "Learn about our rigorous investment selection and due diligence process.",
         mediaId: "wn4w0z7jch",
       },
