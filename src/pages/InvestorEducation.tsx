@@ -44,7 +44,7 @@ const videoLibrary: VideoCategory[] = [
       },
       {
         id: "oak-2",
-        title: "Leadership",
+        title: "Fragmented Market",
         description: "Meet the experienced team leading Oak's strategic initiatives and growth.",
         mediaId: "l66qlx90f9",
       },
