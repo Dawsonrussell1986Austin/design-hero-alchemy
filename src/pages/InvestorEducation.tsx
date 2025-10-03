@@ -84,6 +84,29 @@ const videoLibrary: VideoCategory[] = [
       },
     ],
   },
+  {
+    category: "Private Credit & Lending",
+    videos: [
+      {
+        id: "credit-1",
+        title: "What is Private Credit Lending",
+        description: "Understanding the fundamentals of private credit lending and how it works.",
+        mediaId: "cqwvt434dh",
+      },
+      {
+        id: "credit-2",
+        title: "Investment Opportunities",
+        description: "Explore the investment landscape and opportunities in private credit.",
+        mediaId: "etr16bubjs",
+      },
+      {
+        id: "credit-3",
+        title: "Market Insights",
+        description: "Key insights and trends shaping the private credit market.",
+        mediaId: "wn4w0z7jch",
+      },
+    ],
+  },
 ];
 
 const VideoCard = ({ video }: { video: Video }) => {
