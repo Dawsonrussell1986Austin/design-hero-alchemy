@@ -34,82 +34,71 @@ interface VideoCategory {
 
 const videoLibrary: VideoCategory[] = [
   {
-    category: "Getting Started",
+    category: "About Oak",
     videos: [
       {
-        id: "intro-1",
-        title: "Oak's Diversification Strategy",
+        id: "oak-1",
+        title: "How Oak Started",
+        description: "Learn about Oak's founding story and the vision behind our approach to private credit.",
+        mediaId: "c156cbp2ql",
+      },
+      {
+        id: "oak-2",
+        title: "Leadership",
+        description: "Meet the experienced team leading Oak's strategic initiatives and growth.",
+        mediaId: "l66qlx90f9",
+      },
+      {
+        id: "oak-3",
+        title: "Oak's Future Outlook",
+        description: "Discover our vision for the future and strategic growth plans.",
+        mediaId: "0eykhn0v2g",
+      },
+    ],
+  },
+  {
+    category: "Investment Strategy",
+    videos: [
+      {
+        id: "strategy-1",
+        title: "Diversification",
         description: "Discover how Oak's diversified approach mitigates risk and maximizes returns.",
         mediaId: "yiyqt2ifnu",
       },
       {
-        id: "intro-2",
-        title: "Oak's Lending Strategy",
-        description: "Discover Oak's strategic approach to lending and investment opportunities.",
+        id: "strategy-2",
+        title: "Lending",
+        description: "Explore Oak's strategic approach to lending and investment opportunities.",
         mediaId: "xl6orct4jo",
       },
-    ],
-  },
-  {
-    category: "Market & Growth",
-    videos: [
       {
-        id: "market-1",
-        title: "Market Analysis",
-        description: "Deep dive into the $50B productivity software market and our competitive advantage.",
-        mediaId: "l66qlx90f9",
-      },
-      {
-        id: "market-2",
-        title: "Growth Metrics",
-        description: "Review our 40% month-over-month growth and key performance indicators.",
-        mediaId: "0eykhn0v2g",
+        id: "strategy-3",
+        title: "Our Selection Process",
+        description: "Learn about our rigorous investment selection and due diligence process.",
+        mediaId: "wn4w0z7jch",
       },
     ],
   },
   {
-    category: "Technology & Product",
-    videos: [
-      {
-        id: "tech-1",
-        title: "Platform Technology",
-        description: "Explore the robust technology stack powering our scalable solution.",
-        mediaId: "0eykhn0v2g",
-      },
-      {
-        id: "tech-2",
-        title: "Product Roadmap",
-        description: "See what's coming next and how we're innovating in the productivity space.",
-        mediaId: "0eykhn0v2g",
-      },
-    ],
-  },
-  {
-    category: "Private Credit & Lending",
+    category: "Private Credit & Risk Management",
     videos: [
       {
         id: "credit-1",
-        title: "What is Private Credit Lending",
+        title: "Private Credit",
         description: "Understanding the fundamentals of private credit lending and how it works.",
         mediaId: "cqwvt434dh",
       },
       {
         id: "credit-2",
-        title: "Investment Opportunities",
-        description: "Explore the investment landscape and opportunities in private credit.",
-        mediaId: "etr16bubjs",
+        title: "Underwriting Approach",
+        description: "Learn about our rigorous underwriting process and risk management strategy.",
+        mediaId: "4zedgzfvfw",
       },
       {
         id: "credit-3",
-        title: "Market Insights",
-        description: "Key insights and trends shaping the private credit market.",
-        mediaId: "wn4w0z7jch",
-      },
-      {
-        id: "credit-4",
-        title: "Oak's Underwriting Approach",
-        description: "Learn about our rigorous underwriting process and risk management strategy.",
-        mediaId: "4zedgzfvfw",
+        title: "The Fragmented Market",
+        description: "Explore the opportunities in the fragmented private credit market landscape.",
+        mediaId: "etr16bubjs",
       },
     ],
   },
