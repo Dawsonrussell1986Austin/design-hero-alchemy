@@ -38,8 +38,8 @@ const videoLibrary: VideoCategory[] = [
     videos: [
       {
         id: "intro-1",
-        title: "Introduction to Our Platform",
-        description: "Learn the basics of our productivity platform and how it can transform your workflow.",
+        title: "Oak's Diversification Strategy",
+        description: "Discover how Oak's diversified approach mitigates risk and maximizes returns.",
         mediaId: "yiyqt2ifnu",
       },
       {
