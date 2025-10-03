@@ -105,6 +105,12 @@ const videoLibrary: VideoCategory[] = [
         description: "Key insights and trends shaping the private credit market.",
         mediaId: "wn4w0z7jch",
       },
+      {
+        id: "credit-4",
+        title: "Oak's Underwriting Approach",
+        description: "Learn about our rigorous underwriting process and risk management strategy.",
+        mediaId: "4zedgzfvfw",
+      },
     ],
   },
 ];
