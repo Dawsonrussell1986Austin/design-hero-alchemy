@@ -96,7 +96,7 @@ const videoLibrary: VideoCategory[] = [
       },
       {
         id: "credit-3",
-        title: "The Fragmented Market",
+        title: "Understanding Private Credit",
         description: "Explore the opportunities in the fragmented private credit market landscape.",
         mediaId: "etr16bubjs",
       },
