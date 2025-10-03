@@ -38,7 +38,7 @@ const videoLibrary: VideoCategory[] = [
     videos: [
       {
         id: "oak-1",
-        title: "How Oak Started",
+        title: "Opportunity Selection Process",
         description: "Learn about Oak's founding story and the vision behind our approach to private credit.",
         mediaId: "c156cbp2ql",
       },
