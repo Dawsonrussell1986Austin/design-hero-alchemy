@@ -165,6 +165,16 @@ const Navigation = () => {
               }`}></div>
             </div>
             <div className="group relative">
+              <a href="/investor-education" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
+                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+              }`}>
+                Resources
+              </a>
+              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
+                scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
+              }`}></div>
+            </div>
+            <div className="group relative">
               <a href="/contact" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
@@ -328,6 +338,16 @@ const Navigation = () => {
                     >
                       <span className="relative">
                         News
+                        <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
+                      </span>
+                    </a>
+                    <a 
+                      href="/investor-education" 
+                      className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      <span className="relative">
+                        Resources
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>

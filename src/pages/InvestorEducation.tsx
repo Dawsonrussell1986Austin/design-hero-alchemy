@@ -181,7 +181,7 @@ const InvestorEducation = () => {
                 <BookOpen className="h-10 w-10 text-accent-brown" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
-                Investor Education Library
+                Resources
               </h1>
               <p className="text-xl font-body text-deep-petrol leading-relaxed">
                 Explore our comprehensive video library to learn about our platform, market opportunity, and growth strategy.
