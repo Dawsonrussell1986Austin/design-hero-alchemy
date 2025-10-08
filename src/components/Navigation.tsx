@@ -165,33 +165,6 @@ const Navigation = () => {
               }`}></div>
             </div>
             <div className="group relative">
-              <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
-              }`}>
-                Resources
-                <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
-              </button>
-              <div className={`absolute w-full h-0.5 scale-x-0 transition-transform duration-300 origin-left group-hover:scale-x-100 bottom-0 ${
-                scrolled ? 'bg-garnet-edge' : 'bg-garnet-edge'
-              }`}></div>
-              
-              {/* Resources Dropdown Menu */}
-              <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
-              }`}>
-                <div className="py-2">
-                  <a 
-                    href="/investor-education" 
-                    className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
-                    }`}
-                  >
-                    Videos
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="group relative">
               <a href="/contact" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
                 scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
               }`}>
@@ -358,23 +331,6 @@ const Navigation = () => {
                         <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
                       </span>
                     </a>
-                    {/* Resources with sub-items */}
-                    <div className="space-y-2">
-                      <span className="block text-silver-mist/60 font-body font-medium text-sm py-2 px-0 uppercase tracking-wider">
-                        Resources
-                      </span>
-                      <a 
-                        href="/investor-education" 
-                        className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-lg py-3 px-4 ml-2 group"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        <span className="relative">
-                          Videos
-                          <div className="absolute -bottom-1 left-0 w-0 h-px bg-garnet-edge transition-all duration-300 group-hover:w-full"></div>
-                        </span>
-                      </a>
-                    </div>
-                    
                     <a 
                       href="/contact" 
                       className="block text-silver-mist hover:text-garnet-edge transition-all duration-300 font-body font-medium text-xl py-4 px-0 group"
