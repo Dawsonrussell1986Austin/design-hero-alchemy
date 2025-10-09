@@ -1,5 +1,6 @@
 import SimplePageHeader from "@/components/SimplePageHeader";
 import emailBanner from "@/assets/email-banner.png";
+import emailBanner2 from "@/assets/email-banner-2.png";
 import thumbnail from "@/assets/thumbnail.png";
 
 const Media = () => {
@@ -14,6 +15,11 @@ const Media = () => {
             className="w-full h-auto"
           />
           <img 
+            src={emailBanner2} 
+            alt="Oak Partners Email Banner 2" 
+            className="w-full h-auto"
+          />
+          <img
             src={thumbnail} 
             alt="Who is Oak Real Estate Partners" 
             className="w-full h-auto"
