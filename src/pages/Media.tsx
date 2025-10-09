@@ -1,6 +1,7 @@
 import SimplePageHeader from "@/components/SimplePageHeader";
 import oakBanner from "@/assets/oak-banner.png";
 import oakVideoThumbnail from "@/assets/oak-video-thumbnail.png";
+import oakVideoThumbnailActual from "@/assets/oak-video-thumbnail-actual.png";
 
 const Media = () => {
   return (
@@ -14,7 +15,7 @@ const Media = () => {
             className="w-full h-auto"
           />
           <img 
-            src={oakVideoThumbnail} 
+            src={oakVideoThumbnailActual} 
             alt="Who is Oak Real Estate Partners" 
             className="w-full h-auto"
           />
