@@ -1,68 +1,9 @@
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import * as z from "zod";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
-import { Building2, TrendingUp, FileText, Lock, Mail } from "lucide-react";
+import { Building2, TrendingUp, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const investorSchema = z.object({
-  full_name: z.string().min(2, "Name must be at least 2 characters").max(100),
-  email: z.string().email("Invalid email address").max(255),
-  company: z.string().max(100).optional(),
-  phone: z.string().min(10, "Phone number must be at least 10 digits").max(20),
-  message: z.string().max(500).optional(),
-});
-
-type InvestorFormData = z.infer<typeof investorSchema>;
-
 const Investors = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-  } = useForm<InvestorFormData>({
-    resolver: zodResolver(investorSchema),
-  });
-
-  const onSubmit = async (data: InvestorFormData) => {
-    setIsSubmitting(true);
-    try {
-      const { error } = await supabase.from("investor_leads").insert([{
-        full_name: data.full_name,
-        email: data.email,
-        company: data.company || null,
-        investment_range: data.phone,
-        message: data.message || null,
-      }]);
-
-      if (error) {
-        if (error.code === "23505") {
-          toast.error("This email has already been registered");
-        } else {
-          throw error;
-        }
-      } else {
-        setIsSuccess(true);
-        toast.success("Thank you! We'll be in touch soon.");
-        reset();
-      }
-    } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
@@ -97,116 +38,19 @@ const Investors = () => {
 
             {/* Opt-in Form */}
             <div className="bg-silver-mist rounded-xl shadow-2xl p-8 mt-16 lg:mt-0">
-              {isSuccess ? (
-                <div className="text-center space-y-4 py-8">
-                  <div className="mx-auto w-16 h-16 bg-accent-brown/10 rounded-full flex items-center justify-center">
-                    <Mail className="h-8 w-8 text-accent-brown" />
-                  </div>
-                  <h3 className="text-2xl font-display font-medium text-obsidian">
-                    Thank You!
-                  </h3>
-                  <p className="text-graphite-fog font-body">
-                    You're now subscribed to OAK investor updates and exclusive opportunities.
-                  </p>
-                  <Button
-                    onClick={() => setIsSuccess(false)}
-                    className="mt-4 bg-accent-brown hover:bg-accent-brown/90 text-white"
-                  >
-                    Submit Another
-                  </Button>
-                </div>
-              ) : (
-                <>
-                  <h2 className="text-2xl font-display font-medium text-obsidian mb-2">
-                    Join Our Investor Network
-                  </h2>
-                  <p className="text-graphite-fog mb-6 font-body">
-                    Subscribe to receive exclusive investment opportunities and market updates.
-                  </p>
-                   <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="full_name" className="text-graphite-fog font-body">Full Name *</Label>
-                      <Input
-                        id="full_name"
-                        {...register("full_name")}
-                        placeholder="John Doe"
-                        className="bg-white"
-                      />
-                      {errors.full_name && (
-                        <p className="text-sm text-destructive font-body">
-                          {errors.full_name.message}
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="email" className="text-graphite-fog font-body">Email *</Label>
-                      <Input
-                        id="email"
-                        type="email"
-                        {...register("email")}
-                        placeholder="john@example.com"
-                        className="bg-white"
-                      />
-                      {errors.email && (
-                        <p className="text-sm text-destructive font-body">
-                          {errors.email.message}
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="company" className="text-graphite-fog font-body">Company (Optional)</Label>
-                      <Input
-                        id="company"
-                        {...register("company")}
-                        placeholder="Your Company"
-                        className="bg-white"
-                      />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="phone" className="text-graphite-fog font-body">Phone *</Label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        {...register("phone")}
-                        placeholder="+1 (555) 000-0000"
-                        className="bg-white"
-                      />
-                      {errors.phone && (
-                        <p className="text-sm text-destructive font-body">
-                          {errors.phone.message}
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message" className="text-graphite-fog font-body">Message (Optional)</Label>
-                      <textarea
-                        id="message"
-                        {...register("message")}
-                        placeholder="Tell us about your investment interests..."
-                        rows={3}
-                        className="flex w-full rounded-md border border-input bg-white px-3 py-2 text-sm text-graphite-fog font-body ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-brown focus-visible:ring-offset-2"
-                      />
-                    </div>
-
-                    <Button
-                      type="submit"
-                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? "Subscribing..." : "Subscribe to Updates"}
-                    </Button>
-
-                    <p className="text-xs text-graphite-fog/70 text-center font-body">
-                      <Lock className="inline h-3 w-3 mr-1" />
-                      Your information is secure and will never be shared.
-                    </p>
-                  </form>
-                </>
-              )}
+              <h2 className="text-2xl font-display font-medium text-obsidian mb-2">
+                Join Our Investor Network
+              </h2>
+              <p className="text-graphite-fog mb-6 font-body">
+                Subscribe to receive exclusive investment opportunities and market updates.
+              </p>
+              <iframe 
+                src="https://go.oakrepartners.com/l/1105131/2025-10-09/b4jkzt" 
+                width="100%" 
+                height="500" 
+                style={{ border: 0 }}
+                title="Investor Subscription Form"
+              />
             </div>
           </div>
         </div>
@@ -272,7 +116,7 @@ const Investors = () => {
             className="bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
             onClick={() =>
               document
-                .querySelector("form")
+                .querySelector("iframe")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
           >
