@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Index from "./pages/Index";
 import HomepageDraft from "./pages/HomepageDraft";
+import HomepageDraft2 from "./pages/HomepageDraft2";
 import About from "./pages/About";
 import Lending from "./pages/Lending";
 import Investments from "./pages/Investments";
@@ -62,6 +63,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/homepage-draft" element={<HomepageDraft />} />
+        <Route path="/homepage-draft-2" element={<HomepageDraft2 />} />
         <Route path="/about" element={<About />} />
         <Route path="/lending" element={<Lending />} />
         <Route path="/lending/bridge" element={<BridgeLoans />} />
