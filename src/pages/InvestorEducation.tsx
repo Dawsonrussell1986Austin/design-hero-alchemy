@@ -5,6 +5,18 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play } from "lucide-react";
 
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      'wistia-player': {
+        'media-id'?: string;
+        aspect?: string;
+        className?: string;
+      };
+    }
+  }
+}
+
 interface Video {
   id: string;
   title: string;
