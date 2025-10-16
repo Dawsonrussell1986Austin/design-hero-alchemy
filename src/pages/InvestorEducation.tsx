@@ -5,21 +5,6 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play } from "lucide-react";
 
-// Declare Wistia player custom element for TypeScript
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "wistia-player": React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement> & {
-          "media-id"?: string;
-          aspect?: string;
-        },
-        HTMLElement
-      >;
-    }
-  }
-}
-
 interface Video {
   id: string;
   title: string;
