@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import videoThumbnail from "@/assets/video-thumbnail.png";
 
 declare global {
   namespace JSX {
@@ -13,6 +14,8 @@ declare global {
 }
 
 const VideoPlayerSection = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
   useEffect(() => {
     // Load Wistia embed script
     const script = document.createElement('script');
@@ -53,10 +56,29 @@ const VideoPlayerSection = () => {
               
               {/* Video Player */}
               <div className="relative aspect-video">
-                <wistia-player 
-                  media-id="kfl12nwwt8"
-                  className="w-full h-full"
-                />
+                {!isPlaying && (
+                  <div 
+                    className="absolute inset-0 cursor-pointer group"
+                    onClick={() => setIsPlaying(true)}
+                  >
+                    <img 
+                      src={videoThumbnail} 
+                      alt="Who is Oak Real Estate Partners" 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
+                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center">
+                        <div className="w-0 h-0 border-l-[24px] border-l-accent-brown border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+                {isPlaying && (
+                  <wistia-player 
+                    media-id="kfl12nwwt8"
+                    className="w-full h-full"
+                  />
+                )}
               </div>
             </div>
 
