@@ -26,19 +26,12 @@ const ThankYou = () => {
               We've received your information and will be in touch soon. You'll receive monthly investor updates and important information about your investment.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button
                 onClick={() => navigate("/")}
                 className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 px-8"
               >
                 Return Home
-              </Button>
-              <Button
-                onClick={() => navigate("/investors")}
-                variant="outline"
-                className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium h-12 px-8"
-              >
-                Back to Investors
               </Button>
             </div>
           </div>
