@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Building2, TrendingUp, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import InvestorForm from "@/components/InvestorForm";
 
 const Investors = () => {
 
@@ -37,16 +38,7 @@ const Investors = () => {
             </div>
 
             {/* Opt-in Form */}
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden mt-16 lg:mt-0">
-              <iframe 
-                src="https://go.oakrepartners.com/l/1105131/2025-10-09/b4jkzt" 
-                width="100%" 
-                height="440" 
-                frameBorder="0"
-                style={{ border: 0, display: 'block' }}
-                title="Investor Subscription Form"
-              />
-            </div>
+            <InvestorForm />
           </div>
         </div>
       </section>
@@ -109,11 +101,10 @@ const Investors = () => {
           <Button
             size="lg"
             className="bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
-            onClick={() =>
-              document
-                .querySelector("iframe")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
+            onClick={() => {
+              const form = document.querySelector('form');
+              form?.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
           >
             Stay Updated
           </Button>
