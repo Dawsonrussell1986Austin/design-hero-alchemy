@@ -48,6 +48,7 @@ const Investors = () => {
                 src="https://go.oakrepartners.com/l/1105131/2025-10-09/b4jkzt" 
                 width="100%" 
                 height="500" 
+                frameBorder="0"
                 style={{ border: 0 }}
                 title="Investor Subscription Form"
               />
