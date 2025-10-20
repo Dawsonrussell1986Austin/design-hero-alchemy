@@ -1,0 +1,53 @@
+import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+
+const ThankYou = () => {
+  const navigate = useNavigate();
+
+  return (
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-silver-mist to-white">
+      <Navigation />
+      
+      <main className="flex-1 flex items-center justify-center px-4 py-16">
+        <div className="max-w-2xl w-full text-center">
+          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-brown/10 rounded-full mb-6">
+              <Check className="w-8 h-8 text-accent-brown" />
+            </div>
+            
+            <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
+              Thank You!
+            </h1>
+            
+            <p className="text-lg text-graphite-fog mb-8 font-body leading-relaxed">
+              We've received your information and will be in touch soon. You'll receive monthly investor updates and important information about your investment.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button
+                onClick={() => navigate("/")}
+                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 px-8"
+              >
+                Return Home
+              </Button>
+              <Button
+                onClick={() => navigate("/investors")}
+                variant="outline"
+                className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium h-12 px-8"
+              >
+                Back to Investors
+              </Button>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+};
+
+export default ThankYou;
