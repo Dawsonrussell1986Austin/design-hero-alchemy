@@ -37,17 +37,11 @@ const Investors = () => {
             </div>
 
             {/* Opt-in Form */}
-            <div className="bg-silver-mist rounded-xl shadow-2xl p-6 lg:p-8 mt-16 lg:mt-0">
-              <h2 className="text-2xl font-display font-medium text-obsidian mb-2">
-                Stay Connected
-              </h2>
-              <p className="text-graphite-fog mb-6 font-body">
-                Join our monthly Investor Update Calls and receive important updates about your investment.
-              </p>
+            <div className="mt-16 lg:mt-0">
               <iframe 
                 src="https://go.oakrepartners.com/l/1105131/2025-10-09/b4jkzt" 
                 width="100%" 
-                height="380" 
+                height="500" 
                 frameBorder="0"
                 style={{ border: 0 }}
                 title="Investor Subscription Form"
