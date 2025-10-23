@@ -6,6 +6,17 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, ArrowRight } from "lucide-react";
 import { videoCategories } from "@/data/videoCategories";
+import videoThumbWhoIsOak from "@/assets/video-thumb-who-is-oak.jpg";
+import videoThumbStrategy from "@/assets/video-thumb-strategy.jpg";
+import videoThumbCredit from "@/assets/video-thumb-credit.jpg";
+import videoThumbRisk from "@/assets/video-thumb-risk.jpg";
+
+const thumbnailMap: Record<string, string> = {
+  "/src/assets/video-thumb-who-is-oak.jpg": videoThumbWhoIsOak,
+  "/src/assets/video-thumb-strategy.jpg": videoThumbStrategy,
+  "/src/assets/video-thumb-credit.jpg": videoThumbCredit,
+  "/src/assets/video-thumb-risk.jpg": videoThumbRisk,
+};
 
 const InvestorEducation = () => {
   return (
@@ -56,17 +67,29 @@ const InvestorEducation = () => {
                   className="group"
                 >
                   <div className="bg-white border-2 border-obsidian/20 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-accent-brown transition-all duration-300 h-full">
+                    {/* Thumbnail Image */}
+                    <div className="relative aspect-video overflow-hidden">
+                      <img 
+                        src={thumbnailMap[category.thumbnail]} 
+                        alt={category.question}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                      <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors duration-300" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300">
+                          <Play className="h-8 w-8 text-obsidian group-hover:text-white ml-1" fill="currentColor" />
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Card Content */}
                     <div className="p-8 space-y-4">
                       <div className="flex items-start justify-between">
-                        <div className="w-16 h-16 bg-accent-brown/10 rounded-lg flex items-center justify-center group-hover:bg-accent-brown/20 transition-colors">
-                          <Play className="h-8 w-8 text-accent-brown" />
-                        </div>
-                        <ArrowRight className="h-6 w-6 text-accent-brown opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors">
+                          {category.question}
+                        </h3>
+                        <ArrowRight className="h-6 w-6 text-accent-brown opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 ml-2" />
                       </div>
-                      
-                      <h3 className="text-2xl lg:text-3xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors">
-                        {category.question}
-                      </h3>
                       
                       <p className="font-body text-deep-petrol leading-relaxed">
                         {category.description}
