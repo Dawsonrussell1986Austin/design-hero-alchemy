@@ -1,7 +1,7 @@
 
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
-import RecentTransactionsHomepage from "./RecentTransactionsHomepage";
+import VideoPlayerSection from "./VideoPlayerSection";
 import OurEdge from "./OurEdge";
 import RecentNews from "./RecentNews";
 import Footer from "./Footer";
@@ -15,8 +15,8 @@ const Hero = () => {
       {/* Main hero content */}
       <HeroSection />
 
-      {/* Recent Transactions Section */}
-      <RecentTransactionsHomepage />
+      {/* Video Player Section */}
+      <VideoPlayerSection />
 
       {/* Our Edge Section */}
       <OurEdge />
