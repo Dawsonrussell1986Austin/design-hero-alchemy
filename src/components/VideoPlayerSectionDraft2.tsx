@@ -19,18 +19,19 @@ const VideoPlayerSectionDraft2 = () => {
   useEffect(() => {
     // Load Wistia embed script
     const script = document.createElement('script');
-    script.src = 'https://fast.wistia.com/embed/medias/kfl12nwwt8.jsonp';
+    script.src = 'https://fast.wistia.com/embed/wn4w0z7jch.js';
     script.async = true;
+    script.type = 'module';
     document.head.appendChild(script);
 
-    const embedScript = document.createElement('script');
-    embedScript.src = 'https://fast.wistia.com/assets/external/E-v1.js';
-    embedScript.async = true;
-    document.head.appendChild(embedScript);
+    const playerScript = document.createElement('script');
+    playerScript.src = 'https://fast.wistia.com/player.js';
+    playerScript.async = true;
+    document.head.appendChild(playerScript);
 
     return () => {
       document.head.removeChild(script);
-      document.head.removeChild(embedScript);
+      document.head.removeChild(playerScript);
     };
   }, []);
 
@@ -75,7 +76,8 @@ const VideoPlayerSectionDraft2 = () => {
                 )}
                 {isPlaying && (
                   <wistia-player 
-                    media-id="kfl12nwwt8"
+                    media-id="wn4w0z7jch"
+                    aspect="1.7777777777777777"
                     className="w-full h-full"
                   />
                 )}
