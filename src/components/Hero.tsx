@@ -1,7 +1,7 @@
 
 import Navigation from "./Navigation";
 import HeroSection from "./HeroSection";
-import VideoPlayerSection from "./VideoPlayerSection";
+import VideoPlayerSectionDraft2 from "./VideoPlayerSectionDraft2";
 import OurEdge from "./OurEdge";
 import RecentNews from "./RecentNews";
 import Footer from "./Footer";
@@ -16,7 +16,7 @@ const Hero = () => {
       <HeroSection />
 
       {/* Video Player Section */}
-      <VideoPlayerSection />
+      <VideoPlayerSectionDraft2 />
 
       {/* Our Edge Section */}
       <OurEdge />
