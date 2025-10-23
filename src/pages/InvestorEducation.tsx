@@ -1,153 +1,11 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { BookOpen, Play } from "lucide-react";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'wistia-player': {
-        'media-id'?: string;
-        aspect?: string;
-        className?: string;
-      };
-    }
-  }
-}
-
-interface Video {
-  id: string;
-  title: string;
-  description: string;
-  mediaId: string;
-}
-
-interface VideoCategory {
-  category: string;
-  videos: Video[];
-}
-
-const videoLibrary: VideoCategory[] = [
-  {
-    category: "About Oak",
-    videos: [
-      {
-        id: "oak-1",
-        title: "Opportunity Selection Process",
-        description: "Learn about Oak's founding story and the vision behind our approach to private credit.",
-        mediaId: "c156cbp2ql",
-      },
-      {
-        id: "oak-2",
-        title: "Fragmented Market",
-        description: "Meet the experienced team leading Oak's strategic initiatives and growth.",
-        mediaId: "l66qlx90f9",
-      },
-      {
-        id: "oak-3",
-        title: "Oak's Future Outlook",
-        description: "Discover our vision for the future and strategic growth plans.",
-        mediaId: "0eykhn0v2g",
-      },
-    ],
-  },
-  {
-    category: "Investment Strategy",
-    videos: [
-      {
-        id: "strategy-1",
-        title: "Diversification",
-        description: "Discover how Oak's diversified approach mitigates risk and maximizes returns.",
-        mediaId: "yiyqt2ifnu",
-      },
-      {
-        id: "strategy-2",
-        title: "Lending",
-        description: "Explore Oak's strategic approach to lending and investment opportunities.",
-        mediaId: "xl6orct4jo",
-      },
-      {
-        id: "strategy-3",
-        title: "The Genesis of Oak",
-        description: "Learn about our rigorous investment selection and due diligence process.",
-        mediaId: "wn4w0z7jch",
-      },
-    ],
-  },
-  {
-    category: "Private Credit & Risk Management",
-    videos: [
-      {
-        id: "credit-1",
-        title: "Private Credit",
-        description: "Understanding the fundamentals of private credit lending and how it works.",
-        mediaId: "cqwvt434dh",
-      },
-      {
-        id: "credit-2",
-        title: "Underwriting Approach",
-        description: "Learn about our rigorous underwriting process and risk management strategy.",
-        mediaId: "4zedgzfvfw",
-      },
-      {
-        id: "credit-3",
-        title: "Understanding Private Credit",
-        description: "Explore the opportunities in the fragmented private credit market landscape.",
-        mediaId: "etr16bubjs",
-      },
-    ],
-  },
-];
-
-const VideoCard = ({ video }: { video: Video }) => {
-  useEffect(() => {
-    // Load Wistia player script
-    const script1 = document.createElement("script");
-    script1.src = "https://fast.wistia.com/player.js";
-    script1.async = true;
-    document.body.appendChild(script1);
-
-    const script2 = document.createElement("script");
-    script2.src = `https://fast.wistia.com/embed/${video.mediaId}.js`;
-    script2.async = true;
-    script2.type = "module";
-    document.body.appendChild(script2);
-
-    return () => {
-      document.body.removeChild(script1);
-      document.body.removeChild(script2);
-    };
-  }, [video.mediaId]);
-
-  return (
-    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-      <div className="relative aspect-video bg-obsidian/5">
-        <style>{`
-          wistia-player[media-id='${video.mediaId}']:not(:defined) {
-            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${video.mediaId}/swatch');
-            display: block;
-            filter: blur(5px);
-            padding-top: 56.25%;
-          }
-        `}</style>
-        <wistia-player
-          media-id={video.mediaId}
-          aspect="1.7777777777777777"
-          className="w-full h-full"
-        />
-      </div>
-      <div className="p-6 space-y-3">
-        <h3 className="font-display text-xl font-medium text-obsidian flex items-center gap-2">
-          <Play className="h-5 w-5 text-accent-brown" />
-          {video.title}
-        </h3>
-        <p className="font-body text-deep-petrol leading-relaxed">{video.description}</p>
-      </div>
-    </div>
-  );
-};
+import { BookOpen, Play, ArrowRight } from "lucide-react";
+import { videoCategories } from "@/data/videoCategories";
 
 const InvestorEducation = () => {
   return (
@@ -178,32 +36,52 @@ const InvestorEducation = () => {
                 <BookOpen className="h-10 w-10 text-accent-brown" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
-                Resources
+                Video Library
               </h1>
               <p className="text-xl font-body text-deep-petrol leading-relaxed">
-                Explore our comprehensive video library to learn about our platform, market opportunity, and growth strategy.
+                Explore our comprehensive video library. Select a topic below to watch videos and learn more.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Video Library */}
+        {/* Category Tiles */}
         <section className="pb-20 px-4">
-          <div className="container mx-auto max-w-7xl space-y-16">
-            {videoLibrary.map((category) => (
-              <div key={category.category} className="space-y-8">
-                <div className="border-b-2 border-accent-brown pb-4">
-                  <h2 className="text-3xl font-display font-medium text-obsidian">
-                    {category.category}
-                  </h2>
-                </div>
-                <div className="grid gap-8 md:grid-cols-2">
-                  {category.videos.map((video) => (
-                    <VideoCard key={video.id} video={video} />
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="container mx-auto max-w-7xl">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+              {videoCategories.map((category) => (
+                <Link 
+                  key={category.id} 
+                  to={`/videos/${category.id}`}
+                  className="group"
+                >
+                  <div className="bg-white border-2 border-obsidian/20 rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:border-accent-brown transition-all duration-300 h-full">
+                    <div className="p-8 space-y-4">
+                      <div className="flex items-start justify-between">
+                        <div className="w-16 h-16 bg-accent-brown/10 rounded-lg flex items-center justify-center group-hover:bg-accent-brown/20 transition-colors">
+                          <Play className="h-8 w-8 text-accent-brown" />
+                        </div>
+                        <ArrowRight className="h-6 w-6 text-accent-brown opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                      
+                      <h3 className="text-2xl lg:text-3xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors">
+                        {category.question}
+                      </h3>
+                      
+                      <p className="font-body text-deep-petrol leading-relaxed">
+                        {category.description}
+                      </p>
+                      
+                      <div className="pt-4">
+                        <span className="text-sm font-body text-accent-brown font-medium">
+                          {category.videos.length} {category.videos.length === 1 ? 'Video' : 'Videos'}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
 

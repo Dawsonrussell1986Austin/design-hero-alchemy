@@ -55,6 +55,7 @@ import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
 import OurSubsidiaries from "./pages/OurSubsidiaries";
 import ThankYou from "./pages/ThankYou";
 import VideoPage from "./pages/VideoPage";
+import VideoCategory from "./pages/VideoCategory";
 
 function App() {
   return (
@@ -110,6 +111,7 @@ function App() {
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/investors" element={<Investors />} />
         <Route path="/investor-education" element={<InvestorEducation />} />
+        <Route path="/videos/:categoryId" element={<VideoCategory />} />
         <Route path="/media" element={<Media />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/video" element={<VideoPage />} />
