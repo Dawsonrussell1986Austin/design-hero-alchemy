@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Calendar, ArrowRight, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const WebinarFloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const location = useLocation();
 
   useEffect(() => {
     // Auto-dismiss after 20 seconds
@@ -13,6 +14,11 @@ const WebinarFloatingCTA = () => {
 
     return () => clearTimeout(timer);
   }, []);
+
+  // Don't show on webinar registration page
+  if (location.pathname === '/webinar-registration') {
+    return null;
+  }
 
   if (!isVisible) return null;
 
