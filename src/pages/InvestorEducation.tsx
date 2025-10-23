@@ -6,16 +6,16 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, ArrowRight } from "lucide-react";
 import { videoCategories } from "@/data/videoCategories";
-import videoThumbWhoIsOak from "@/assets/video-thumb-who-is-oak.jpg";
-import videoThumbStrategy from "@/assets/video-thumb-strategy.jpg";
-import videoThumbCredit from "@/assets/video-thumb-credit.jpg";
-import videoThumbRisk from "@/assets/video-thumb-risk.jpg";
+import videoThumbWhoIsOak from "@/assets/video-thumb-who-is-oak.png";
+import videoThumbStrategy from "@/assets/video-thumb-strategy.png";
+import videoThumbCredit from "@/assets/video-thumb-credit.png";
+import videoThumbRisk from "@/assets/video-thumb-risk.png";
 
 const thumbnailMap: Record<string, string> = {
-  "/src/assets/video-thumb-who-is-oak.jpg": videoThumbWhoIsOak,
-  "/src/assets/video-thumb-strategy.jpg": videoThumbStrategy,
-  "/src/assets/video-thumb-credit.jpg": videoThumbCredit,
-  "/src/assets/video-thumb-risk.jpg": videoThumbRisk,
+  "/src/assets/video-thumb-who-is-oak.png": videoThumbWhoIsOak,
+  "/src/assets/video-thumb-strategy.png": videoThumbStrategy,
+  "/src/assets/video-thumb-credit.png": videoThumbCredit,
+  "/src/assets/video-thumb-risk.png": videoThumbRisk,
 };
 
 const InvestorEducation = () => {

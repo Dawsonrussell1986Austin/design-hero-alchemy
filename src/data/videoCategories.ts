@@ -18,7 +18,7 @@ export const videoCategories: VideoCategory[] = [
     id: "who-is-oak",
     question: "Who is Oak?",
     description: "Learn about Oak's founding story, team, and vision for the future.",
-    thumbnail: "/src/assets/video-thumb-who-is-oak.jpg",
+    thumbnail: "/src/assets/video-thumb-who-is-oak.png",
     videos: [
       {
         id: "oak-1",
@@ -44,7 +44,7 @@ export const videoCategories: VideoCategory[] = [
     id: "investment-strategy",
     question: "What is Oak's Investment Strategy?",
     description: "Discover Oak's diversified approach to lending and investment opportunities.",
-    thumbnail: "/src/assets/video-thumb-strategy.jpg",
+    thumbnail: "/src/assets/video-thumb-strategy.png",
     videos: [
       {
         id: "strategy-1",
@@ -70,7 +70,7 @@ export const videoCategories: VideoCategory[] = [
     id: "what-is-private-credit",
     question: "What is Private Credit?",
     description: "Understanding the fundamentals of private credit lending and market opportunities.",
-    thumbnail: "/src/assets/video-thumb-credit.jpg",
+    thumbnail: "/src/assets/video-thumb-credit.png",
     videos: [
       {
         id: "oak-2",
@@ -90,7 +90,7 @@ export const videoCategories: VideoCategory[] = [
     id: "risk-management",
     question: "How Does Oak Handle Risk Management?",
     description: "Learn about our rigorous underwriting process and risk management strategies.",
-    thumbnail: "/src/assets/video-thumb-risk.jpg",
+    thumbnail: "/src/assets/video-thumb-risk.png",
     videos: [
       {
         id: "credit-2",
