@@ -25,6 +25,12 @@ export const videoCategories: VideoCategory[] = [
         mediaId: "c156cbp2ql",
       },
       {
+        id: "credit-1",
+        title: "From the Ashes",
+        description: "The story of taking two portfolios and the character of management - making it right for investors.",
+        mediaId: "cqwvt434dh",
+      },
+      {
         id: "oak-3",
         title: "Oak's Future Outlook",
         description: "Discover our vision for the future and strategic growth plans.",
@@ -67,12 +73,6 @@ export const videoCategories: VideoCategory[] = [
         title: "Fragmented Market",
         description: "Exploring the fragmented market of private lending capital and its opportunities.",
         mediaId: "l66qlx90f9",
-      },
-      {
-        id: "credit-1",
-        title: "From the Ashes",
-        description: "The story of taking two portfolios and the character of management - making it right for investors.",
-        mediaId: "cqwvt434dh",
       },
       {
         id: "credit-3",
