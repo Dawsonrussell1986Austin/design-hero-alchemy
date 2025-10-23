@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import WebinarFloatingCTA from "./components/WebinarFloatingCTA";
 import Index from "./pages/Index";
 import HomepageDraft from "./pages/HomepageDraft";
 import HomepageDraft2 from "./pages/HomepageDraft2";
@@ -61,6 +62,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <WebinarFloatingCTA />
       <Toaster />
       <Sonner />
       <Routes>
