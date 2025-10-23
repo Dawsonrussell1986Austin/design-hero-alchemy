@@ -38,6 +38,12 @@ export const videoCategories: VideoCategory[] = [
         description: "Discover our vision for the future and strategic growth plans.",
         mediaId: "0eykhn0v2g",
       },
+      {
+        id: "strategy-3",
+        title: "The Genesis of Oak",
+        description: "Learn about our rigorous investment selection and due diligence process.",
+        mediaId: "wn4w0z7jch",
+      },
     ],
   },
   {
@@ -57,12 +63,6 @@ export const videoCategories: VideoCategory[] = [
         title: "Lending",
         description: "Explore Oak's strategic approach to lending and investment opportunities.",
         mediaId: "xl6orct4jo",
-      },
-      {
-        id: "strategy-3",
-        title: "The Genesis of Oak",
-        description: "Learn about our rigorous investment selection and due diligence process.",
-        mediaId: "wn4w0z7jch",
       },
     ],
   },
