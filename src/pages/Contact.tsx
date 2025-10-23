@@ -5,8 +5,95 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
+import { z } from "zod";
+
+const contactSchema = z.object({
+  firstName: z.string().trim().min(1, "First name is required").max(100),
+  lastName: z.string().trim().min(1, "Last name is required").max(100),
+  email: z.string().trim().email("Invalid email address").max(255),
+  phone: z.string().trim().max(20).optional(),
+  company: z.string().trim().max(100).optional(),
+  message: z.string().trim().min(1, "Message is required").max(1000, "Message must be less than 1000 characters"),
+});
 
 const Contact = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    company: "",
+    message: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // Validate form data
+      const validatedData = contactSchema.parse(formData);
+
+      // Insert into Supabase
+      const { error } = await supabase
+        .from('contact_submissions')
+        .insert({
+          first_name: validatedData.firstName,
+          last_name: validatedData.lastName,
+          email: validatedData.email,
+          phone: validatedData.phone || null,
+          company: validatedData.company || null,
+          message: validatedData.message,
+        });
+
+      if (error) throw error;
+
+      // Show success message
+      toast({
+        title: "Message sent!",
+        description: "Thank you for contacting us. We'll get back to you soon.",
+      });
+
+      // Reset form
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        company: "",
+        message: "",
+      });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        toast({
+          title: "Validation Error",
+          description: error.errors[0].message,
+          variant: "destructive",
+        });
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-silver-mist">
       {/* Header with dark background */}
@@ -42,7 +129,7 @@ const Contact = () => {
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
                 <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
                 
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label htmlFor="firstName" className="block text-sm text-obsidian mb-2">First Name *</label>
@@ -50,6 +137,8 @@ const Contact = () => {
                         id="firstName"
                         type="text"
                         required
+                        value={formData.firstName}
+                        onChange={handleChange}
                         className="bg-white border-obsidian/20 text-obsidian"
                         placeholder="John"
                       />
@@ -60,6 +149,8 @@ const Contact = () => {
                         id="lastName"
                         type="text"
                         required
+                        value={formData.lastName}
+                        onChange={handleChange}
                         className="bg-white border-obsidian/20 text-obsidian"
                         placeholder="Doe"
                       />
@@ -72,6 +163,8 @@ const Contact = () => {
                       id="email"
                       type="email"
                       required
+                      value={formData.email}
+                      onChange={handleChange}
                       className="bg-white border-obsidian/20 text-obsidian"
                       placeholder="john@example.com"
                     />
@@ -83,6 +176,8 @@ const Contact = () => {
                       <Input
                         id="phone"
                         type="tel"
+                        value={formData.phone}
+                        onChange={handleChange}
                         className="bg-white border-obsidian/20 text-obsidian"
                         placeholder="(555) 123-4567"
                       />
@@ -92,6 +187,8 @@ const Contact = () => {
                       <Input
                         id="company"
                         type="text"
+                        value={formData.company}
+                        onChange={handleChange}
                         className="bg-white border-obsidian/20 text-obsidian"
                         placeholder="Company Name"
                       />
@@ -104,6 +201,8 @@ const Contact = () => {
                       id="message"
                       rows={5}
                       required
+                      value={formData.message}
+                      onChange={handleChange}
                       className="bg-white border-obsidian/20 text-obsidian resize-none"
                       placeholder="Tell us about your project..."
                     />
@@ -112,9 +211,10 @@ const Contact = () => {
 
                   <Button 
                     type="submit"
+                    disabled={isSubmitting}
                     className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
                   >
-                    Send Message
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </div>

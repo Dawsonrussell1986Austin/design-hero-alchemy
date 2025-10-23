@@ -98,6 +98,42 @@ export type Database = {
         }
         Relationships: []
       }
+      contact_submissions: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          message: string
+          phone: string | null
+          status: string
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          message: string
+          phone?: string | null
+          status?: string
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          message?: string
+          phone?: string | null
+          status?: string
+        }
+        Relationships: []
+      }
       investor_leads: {
         Row: {
           company: string | null
@@ -375,10 +411,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      has_active_subscription: {
-        Args: { user_id: string }
-        Returns: boolean
-      }
+      has_active_subscription: { Args: { user_id: string }; Returns: boolean }
     }
     Enums: {
       badge_type: "SPEED" | "STREAK" | "FOCUS" | "CHALLENGE"
