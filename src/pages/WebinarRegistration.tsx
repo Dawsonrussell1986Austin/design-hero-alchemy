@@ -66,7 +66,7 @@ const WebinarRegistration = () => {
               <div className="demio-embed-container">
                 <span 
                   className="demio-embed-registration" 
-                  data-hash="mK5N0rPeRRYEHhnH" 
+                  data-hash="98qou4sOdVpQ5PqL" 
                   data-api="api/v1" 
                   data-base-uri="https://my.demio.com/" 
                   data-form-width="100%" 
