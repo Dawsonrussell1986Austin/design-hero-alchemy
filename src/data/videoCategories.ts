@@ -70,8 +70,8 @@ export const videoCategories: VideoCategory[] = [
     videos: [
       {
         id: "credit-1",
-        title: "Private Credit",
-        description: "Understanding the fundamentals of private credit lending and how it works.",
+        title: "From the Ashes",
+        description: "The story of taking two portfolios and the character of management - making it right for investors.",
         mediaId: "cqwvt434dh",
       },
       {
