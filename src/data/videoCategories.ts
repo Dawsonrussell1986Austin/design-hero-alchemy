@@ -25,12 +25,6 @@ export const videoCategories: VideoCategory[] = [
         mediaId: "c156cbp2ql",
       },
       {
-        id: "oak-2",
-        title: "Fragmented Market",
-        description: "Meet the experienced team leading Oak's strategic initiatives and growth.",
-        mediaId: "l66qlx90f9",
-      },
-      {
         id: "oak-3",
         title: "Oak's Future Outlook",
         description: "Discover our vision for the future and strategic growth plans.",
@@ -68,6 +62,12 @@ export const videoCategories: VideoCategory[] = [
     question: "What is Private Credit?",
     description: "Understanding the fundamentals of private credit lending and market opportunities.",
     videos: [
+      {
+        id: "oak-2",
+        title: "Fragmented Market",
+        description: "Exploring the fragmented market of private lending capital and its opportunities.",
+        mediaId: "l66qlx90f9",
+      },
       {
         id: "credit-1",
         title: "From the Ashes",
