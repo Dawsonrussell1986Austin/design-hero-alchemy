@@ -72,7 +72,7 @@ function App() {
         <Route path="/whyoak" element={<Investments />} />
         <Route path="/investing" element={<Investing />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/webinar" element={<WebinarRegistration />} />
+        <Route path="/webinar-registration" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/subsidiaries" element={<OurSubsidiaries />} />
