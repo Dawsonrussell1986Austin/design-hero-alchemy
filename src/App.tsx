@@ -54,6 +54,7 @@ import BlogAtlantaFinancing from "./pages/BlogAtlantaFinancing";
 import BlogPhiladelphiaMidrise from "./pages/BlogPhiladelphiaMidrise";
 import OurSubsidiaries from "./pages/OurSubsidiaries";
 import ThankYou from "./pages/ThankYou";
+import VideoPage from "./pages/VideoPage";
 
 function App() {
   return (
@@ -111,6 +112,7 @@ function App() {
         <Route path="/investor-education" element={<InvestorEducation />} />
         <Route path="/media" element={<Media />} />
         <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/video" element={<VideoPage />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
