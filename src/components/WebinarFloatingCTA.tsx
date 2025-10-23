@@ -3,10 +3,22 @@ import { Calendar, ArrowRight, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const WebinarFloatingCTA = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
+    // Check if banner was dismissed in the last 48 hours
+    const dismissedAt = localStorage.getItem('webinarBannerDismissed');
+    if (dismissedAt) {
+      const hoursSinceDismissal = (Date.now() - parseInt(dismissedAt)) / (1000 * 60 * 60);
+      if (hoursSinceDismissal < 48) {
+        return; // Don't show if dismissed within last 48 hours
+      }
+    }
+    
+    // Show the banner
+    setIsVisible(true);
+
     // Auto-dismiss after 20 seconds
     const timer = setTimeout(() => {
       setIsVisible(false);
@@ -28,7 +40,10 @@ const WebinarFloatingCTA = () => {
         <div className="relative">
           {/* Close Button */}
           <button
-            onClick={() => setIsVisible(false)}
+            onClick={() => {
+              setIsVisible(false);
+              localStorage.setItem('webinarBannerDismissed', Date.now().toString());
+            }}
             className="absolute top-3 right-3 p-1.5 hover:bg-white/20 rounded-md transition-colors z-10"
             aria-label="Close"
           >
