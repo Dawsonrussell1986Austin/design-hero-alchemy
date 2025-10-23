@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
+import WebinarBanner from "@/components/WebinarBanner";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Play, ArrowRight } from "lucide-react";
 import { videoCategories } from "@/data/videoCategories";
@@ -21,6 +22,9 @@ const thumbnailMap: Record<string, string> = {
 const InvestorEducation = () => {
   return (
     <div className="min-h-screen">
+      {/* Webinar Banner */}
+      <WebinarBanner />
+      
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
