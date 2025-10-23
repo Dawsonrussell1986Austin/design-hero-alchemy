@@ -1,9 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import videoThumbnail from "@/assets/video-thumbnail-draft2.png";
 
 declare global {
   namespace JSX {
@@ -18,8 +17,6 @@ declare global {
 }
 
 const VideoPage = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   useEffect(() => {
     // Load Wistia embed script
     const script = document.createElement('script');
@@ -51,30 +48,11 @@ const VideoPage = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
               
               <div className="relative aspect-video">
-                {!isPlaying && (
-                  <div 
-                    className="absolute inset-0 cursor-pointer group"
-                    onClick={() => setIsPlaying(true)}
-                  >
-                    <img 
-                      src={videoThumbnail} 
-                      alt="Who is Oak Real Estate Partners" 
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-obsidian/10 group-hover:bg-obsidian/20 transition-colors flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center">
-                        <div className="w-0 h-0 border-l-[24px] border-l-accent-brown border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-                {isPlaying && (
-                  <wistia-player 
-                    media-id="wn4w0z7jch"
-                    aspect="1.7777777777777777"
-                    className="w-full h-full"
-                  />
-                )}
+                <wistia-player 
+                  media-id="wn4w0z7jch"
+                  aspect="1.7777777777777777"
+                  className="w-full h-full"
+                />
               </div>
             </div>
 
