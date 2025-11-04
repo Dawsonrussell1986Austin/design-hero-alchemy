@@ -252,10 +252,24 @@ const OakChristmasParty = () => {
               <h3 className="text-xl font-display font-medium text-obsidian mb-3">🛍️ SouthPark Shopping & Stroll</h3>
               <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
                 <p>
-                  <strong>SouthPark Mall</strong> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
+                  <a 
+                    href="https://www.simon.com/mall/southpark" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-accent-brown hover:underline font-semibold"
+                  >
+                    SouthPark Mall
+                  </a> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
                 </p>
                 <p>
-                  <strong>Symphony Park & Green Spaces</strong> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
+                  <a 
+                    href="https://southparkclt.org/go/symphony-park" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-accent-brown hover:underline font-semibold"
+                  >
+                    Symphony Park & Green Spaces
+                  </a> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
                 </p>
               </div>
             </div>
