@@ -12,33 +12,23 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative px-4 sm:px-6 pt-32 md:pt-40 pb-16">
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/10 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
-          <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-garnet-edge/10 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]"></div>
+      <section className="relative">
+        <div className="w-full">
+          <img 
+            src={merryOakChristmasHeader} 
+            alt="A Very Merry Oak Christmas" 
+            className="w-full h-auto object-cover"
+          />
         </div>
         
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center space-y-8">
-            {/* Festive Header Image */}
-            <div className="animate-[fadeIn_0.8s_ease-out_forwards]">
-              <img 
-                src={merryOakChristmasHeader} 
-                alt="A Very Merry Oak Christmas" 
-                className="w-full max-w-5xl mx-auto rounded-lg"
-              />
-            </div>
-            
-            {/* Subtitle and Date */}
-            <div className="space-y-3 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
-              <p className="text-xl sm:text-2xl md:text-3xl text-[#e8dcc8] font-display font-medium leading-relaxed">
-                Celebrating Another Year of Excellence Together
-              </p>
-              <div className="flex items-center justify-center gap-3 text-[#e8dcc8]/90 pt-2">
-                <Calendar className="w-5 h-5" />
-                <span className="text-base sm:text-lg font-body">December 2025</span>
-              </div>
-            </div>
+        {/* Subtitle and Date positioned over or below the image */}
+        <div className="absolute bottom-8 left-0 right-0 text-center space-y-3">
+          <p className="text-xl sm:text-2xl md:text-3xl text-[#e8dcc8] font-display font-medium leading-relaxed drop-shadow-lg">
+            Celebrating Another Year of Excellence Together
+          </p>
+          <div className="flex items-center justify-center gap-3 text-[#e8dcc8]/90">
+            <Calendar className="w-5 h-5 drop-shadow-lg" />
+            <span className="text-base sm:text-lg font-body drop-shadow-lg">December 2025</span>
           </div>
         </div>
       </section>
