@@ -1,4 +1,4 @@
-import { Sparkles, Calendar, Users, Music, Heart, Plane, Clock, Utensils, PartyPopper, Coffee } from "lucide-react";
+import { Sparkles, Calendar, Users, Music, MapPin, Heart, Plane, Clock, Utensils, PartyPopper, Coffee } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -207,7 +207,8 @@ const OakChristmasParty = () => {
       <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
           <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-4">🎉 Things to Do While You're Here</h2>
+            <MapPin className="w-10 h-10 text-accent-brown mx-auto mb-3" />
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-4">Things to Do While You're Here</h2>
             <p className="text-deep-petrol text-lg font-body">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
 
