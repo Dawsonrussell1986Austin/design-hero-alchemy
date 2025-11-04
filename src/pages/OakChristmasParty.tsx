@@ -1,4 +1,4 @@
-import { Sparkles, Calendar, Users, Music, MapPin, Heart, Plane, Clock, Utensils, PartyPopper, Coffee } from "lucide-react";
+import { Sparkles, Calendar, Users, Music, Heart, Plane, Clock, Utensils, PartyPopper, Coffee } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -206,58 +206,74 @@ const OakChristmasParty = () => {
       {/* Things to Do Section */}
       <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <MapPin className="w-12 h-12 text-accent-brown mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-obsidian mb-4">Things to Do</h2>
-            <p className="text-deep-petrol text-lg">Make the most of your evening</p>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-4">🎉 Things to Do While You're Here</h2>
+            <p className="text-deep-petrol text-lg font-body">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                title: "Photo Booth",
-                description: "Capture memories with colleagues in our festive photo booth",
-                icon: "📸"
-              },
-              {
-                title: "Secret Santa Exchange",
-                description: "Participate in our annual gift exchange tradition",
-                icon: "🎁"
-              },
-              {
-                title: "Holiday Cocktails",
-                description: "Enjoy signature drinks at our premium open bar",
-                icon: "🍹"
-              },
-              {
-                title: "Dance Floor",
-                description: "Show off your moves to holiday classics and favorites",
-                icon: "🕺"
-              },
-              {
-                title: "Networking Lounge",
-                description: "Connect with colleagues in our cozy lounge area",
-                icon: "💼"
-              },
-              {
-                title: "Dessert Bar",
-                description: "Indulge in gourmet desserts and holiday treats",
-                icon: "🍰"
-              }
-            ].map((activity, index) => (
-              <Card 
-                key={index}
-                className="bg-white border-obsidian/10 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
-              >
-                <CardHeader>
-                  <div className="text-5xl mb-3 text-center">{activity.icon}</div>
-                  <CardTitle className="text-obsidian text-xl text-center">{activity.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-deep-petrol text-center">{activity.description}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto space-y-8">
+            {/* NASCAR Hall of Fame */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">NASCAR Hall of Fame</h3>
+              <p className="text-deep-petrol font-body leading-relaxed">
+                Located right in Uptown Charlotte, this museum showcases racing history with interactive exhibits and simulator rides — great for a quick visit or pre-dinner stop.
+              </p>
+            </div>
+
+            {/* Little Sugar Creek Greenway */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">Little Sugar Creek Greenway / Freedom Park</h3>
+              <p className="text-deep-petrol font-body leading-relaxed">
+                A scenic stroll or casual bike ride along the greenway or around Freedom Park offers a relaxed escape without leaving the city.
+              </p>
+            </div>
+
+            {/* SouthPark Shopping */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🛍️ SouthPark Shopping & Stroll</h3>
+              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                <p>
+                  <strong>SouthPark Mall</strong> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
+                </p>
+                <p>
+                  <strong>Symphony Park & Green Spaces</strong> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
+                </p>
+              </div>
+            </div>
+
+            {/* Dining */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🍽️ Dining & Craft Cocktails</h3>
+              <p className="text-deep-petrol font-body leading-relaxed">
+                Explore restaurants and rooftop bars in SouthPark's Sharon Road/Monroe Road corridor. Great spots for pre-dinner drinks or casual bites.
+              </p>
+            </div>
+
+            {/* Art & Culture */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🎨 Art & Culture (15 Minutes or Less)</h3>
+              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                <p>
+                  Head into Uptown Charlotte (≈ 10–12 min) for quick visits like the Bechtler Museum of Modern Art or the Levine Center for the Arts complex.
+                </p>
+                <p>
+                  For a peaceful escape: <strong>Wing Haven Gardens & Bird Sanctuary</strong> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
+                </p>
+              </div>
+            </div>
+
+            {/* Quick Relaxation */}
+            <div className="bg-white rounded-lg shadow-md p-6">
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">☕ Quick Relaxation</h3>
+              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                <p>
+                  Grab a coffee or tea and lounge at a café near the hotel. Use the time to recharge and enjoy the SouthPark surroundings.
+                </p>
+                <p>
+                  Consider a short stop at the hotel spa or nearby wellness studio for a refresh during your stay.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
