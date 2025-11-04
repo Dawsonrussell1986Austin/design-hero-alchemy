@@ -13,11 +13,11 @@ const OakChristmasParty = () => {
       
       {/* Hero/Welcome Section */}
       <section className="relative pt-20">
-        <div className="w-full max-w-4xl mx-auto px-6">
+        <div className="w-full">
           <img 
             src={merryOakChristmasHeader} 
             alt="A Very Merry Oak Christmas" 
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-cover"
           />
         </div>
       </section>
