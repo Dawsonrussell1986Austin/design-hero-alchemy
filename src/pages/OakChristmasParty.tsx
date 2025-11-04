@@ -215,7 +215,16 @@ const OakChristmasParty = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             {/* NASCAR Hall of Fame */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">NASCAR Hall of Fame</h3>
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">
+                <a 
+                  href="https://www.nascarhall.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-accent-brown hover:underline"
+                >
+                  NASCAR Hall of Fame
+                </a>
+              </h3>
               <p className="text-deep-petrol font-body leading-relaxed">
                 Located right in Uptown Charlotte, this museum showcases racing history with interactive exhibits and simulator rides — great for a quick visit or pre-dinner stop.
               </p>
@@ -223,7 +232,16 @@ const OakChristmasParty = () => {
 
             {/* Little Sugar Creek Greenway */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">Little Sugar Creek Greenway / Freedom Park</h3>
+              <h3 className="text-xl font-display font-medium text-obsidian mb-3">
+                <a 
+                  href="https://www.carolinathreadtrailmap.org/trails/trail/little-sugar-creek-brandywine-to-7th" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-accent-brown hover:underline"
+                >
+                  Little Sugar Creek Greenway / Freedom Park
+                </a>
+              </h3>
               <p className="text-deep-petrol font-body leading-relaxed">
                 A scenic stroll or casual bike ride along the greenway or around Freedom Park offers a relaxed escape without leaving the city.
               </p>
