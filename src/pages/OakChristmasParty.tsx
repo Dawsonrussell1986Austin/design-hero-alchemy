@@ -323,7 +323,7 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <Music className="w-12 h-12 text-gold-leaf mx-auto mb-4 animate-pulse" />
-            <h2 className="text-4xl font-bold text-silver-mist mb-4">Oak Holiday Playlist</h2>
+            <h2 className="text-4xl font-bold text-silver-mist mb-4">🌲 A Very Merry Oak Christmas Playlist</h2>
             <p className="text-slate-whisper text-lg">Scan to enjoy our curated holiday music collection</p>
           </div>
 
