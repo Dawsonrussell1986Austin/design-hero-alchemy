@@ -59,46 +59,56 @@ const OakChristmasParty = () => {
       {/* Message from CEO */}
       <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl font-bold text-obsidian mb-2">Welcome to the Oak Real Estate Partners</h2>
-            <h2 className="text-4xl font-bold text-obsidian">Holiday Celebration</h2>
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-2">Welcome to the Oak Real Estate Partners</h2>
+            <h2 className="text-3xl md:text-4xl font-display font-medium text-accent-brown">Holiday Celebration</h2>
           </div>
           
-          <Card className="max-w-5xl mx-auto bg-white border-obsidian/10 shadow-lg">
-            <CardHeader>
-              <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className="flex-shrink-0">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12">
+              {/* Left Column - Photo */}
+              <div className="flex flex-col items-center lg:items-start space-y-4">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-accent-brown/10 blur-xl rounded-lg"></div>
                   <img 
                     src={garyBechtel} 
                     alt="Gary Bechtel, CEO" 
-                    className="w-48 h-48 rounded-lg object-cover shadow-md"
+                    className="relative w-full h-auto rounded-lg shadow-lg object-cover"
                   />
                 </div>
-                <div className="flex-1">
-                  <CardTitle className="text-2xl text-obsidian mb-2">Message from Gary Bechtel</CardTitle>
-                  <p className="text-accent-brown font-semibold">Chief Executive Officer</p>
+                <div className="text-center lg:text-left">
+                  <h3 className="text-2xl font-display font-medium text-obsidian">Gary Bechtel</h3>
+                  <p className="text-accent-brown font-body font-semibold">Chief Executive Officer</p>
                 </div>
               </div>
-            </CardHeader>
-            <CardContent className="text-deep-petrol space-y-4 text-base leading-relaxed">
-              <p>
-                As we close out another remarkable year, I want to take a moment to thank each of you — our team, partners, and guests — for being part of Oak's continued growth and success.
-              </p>
-              <p>
-                This evening is about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
-              </p>
-              <p>
-                I hope tonight reminds you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the evening — great food, great company, and the well-deserved chance to relax and celebrate all we've accomplished.
-              </p>
-              <p>
-                Here's to a strong close to 2025 and an even brighter year ahead.
-              </p>
-              <p className="text-accent-brown font-semibold pt-4">
-                Warm regards,<br />
-                Gary Bechtel, CEO
-              </p>
-            </CardContent>
-          </Card>
+              
+              {/* Right Column - Message */}
+              <div className="space-y-5">
+                <div className="border-l-4 border-accent-brown pl-6">
+                  <h3 className="text-xl md:text-2xl font-display font-medium text-obsidian mb-2">A Message from Our CEO</h3>
+                </div>
+                
+                <div className="text-deep-petrol space-y-4 text-base md:text-lg leading-relaxed font-body">
+                  <p>
+                    As we close out another remarkable year, I want to take a moment to thank each of you — our team, partners, and guests — for being part of Oak's continued growth and success.
+                  </p>
+                  <p>
+                    This evening is about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
+                  </p>
+                  <p>
+                    I hope tonight reminds you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the evening — great food, great company, and the well-deserved chance to relax and celebrate all we've accomplished.
+                  </p>
+                  <p>
+                    Here's to a strong close to 2025 and an even brighter year ahead.
+                  </p>
+                  <p className="text-accent-brown font-semibold pt-4 italic">
+                    Warm regards,<br />
+                    Gary Bechtel
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
