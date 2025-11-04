@@ -101,7 +101,14 @@ const OakChristmasParty = () => {
                     <p className="font-semibold text-[#e8dcc8]">Arrivals – Guests arrive in Charlotte and check in at:</p>
                   </div>
                   <p className="text-lg ml-7">Renaissance Charlotte SouthPark</p>
-                  <p className="ml-7">5501 Carnegie Blvd | Charlotte, NC 28209</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=5501+Carnegie+Blvd+Charlotte+NC+28209" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="ml-7 text-gold-leaf hover:underline inline-block"
+                  >
+                    5501 Carnegie Blvd | Charlotte, NC 28209
+                  </a>
                 </div>
                 
                 <div>
@@ -109,7 +116,14 @@ const OakChristmasParty = () => {
                     <Clock className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
                     <p className="font-semibold text-[#e8dcc8]">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
                   </div>
-                  <p className="mb-1 ml-7">5610 Carnegie Blvd (0.1 mi from hotel)</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=5610+Carnegie+Blvd+Charlotte+NC+28209" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mb-1 ml-7 text-gold-leaf hover:underline inline-block"
+                  >
+                    5610 Carnegie Blvd (0.1 mi from hotel)
+                  </a>
                   <p className="italic ml-7">Join us for casual drinks before the big night!</p>
                 </div>
               </div>
@@ -126,7 +140,14 @@ const OakChristmasParty = () => {
                     <p className="font-semibold text-[#e8dcc8]">5:00 – 6:30 PM | Happy Hour</p>
                   </div>
                   <p className="text-lg text-[#e8dcc8] ml-7">Del Frisco's Double Eagle Steakhouse</p>
-                  <p className="mb-1 ml-7">4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209</p>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=4725+Piedmont+Row+Dr+Suite+170+Charlotte+NC+28209" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="mb-1 ml-7 text-gold-leaf hover:underline inline-block"
+                  >
+                    4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209
+                  </a>
                   <p className="mb-2 font-medium ml-7">Del Frisco's – Mezzanine Point Room</p>
                   <p className="italic ml-7">Enjoy cocktails, conversation, and holiday cheer.</p>
                 </div>
