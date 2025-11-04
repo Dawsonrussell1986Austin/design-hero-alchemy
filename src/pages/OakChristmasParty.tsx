@@ -65,7 +65,29 @@ const OakChristmasParty = () => {
           </div>
           
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12">
+            <div className="relative grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12 overflow-hidden">
+              {/* Decorative ornaments - bottom right */}
+              <div className="absolute bottom-4 right-4 opacity-20 pointer-events-none">
+                <div className="relative">
+                  <div className="absolute w-16 h-16 bg-gold-leaf rounded-full blur-xl"></div>
+                  <svg className="relative w-20 h-20 text-gold-leaf" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="14" r="8" opacity="0.6"/>
+                    <rect x="11" y="4" width="2" height="4" rx="1"/>
+                    <circle cx="12" cy="5" r="1.5"/>
+                  </svg>
+                </div>
+              </div>
+              <div className="absolute bottom-12 right-20 opacity-15 pointer-events-none">
+                <div className="relative">
+                  <div className="absolute w-12 h-12 bg-accent-brown rounded-full blur-lg"></div>
+                  <svg className="relative w-12 h-12 text-accent-brown" viewBox="0 0 24 24" fill="currentColor">
+                    <circle cx="12" cy="14" r="6" opacity="0.5"/>
+                    <rect x="11" y="6" width="2" height="3" rx="1"/>
+                    <circle cx="12" cy="7" r="1"/>
+                  </svg>
+                </div>
+              </div>
+              
               {/* Left Column - Photo */}
               <div className="flex flex-col items-center lg:items-start space-y-4">
                 <div className="relative">
@@ -83,7 +105,7 @@ const OakChristmasParty = () => {
               </div>
               
               {/* Right Column - Message */}
-              <div className="space-y-5">
+              <div className="space-y-5 relative z-10">
                 <div className="border-l-4 border-accent-brown pl-6">
                   <h3 className="text-xl md:text-2xl font-display font-medium text-obsidian mb-2">A Message from Our CEO</h3>
                 </div>
