@@ -14,7 +14,7 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative pt-20 bg-obsidian">
+      <section className="relative pt-20 bg-deep-petrol">
         <div className="container mx-auto px-6 py-8">
           <img 
             src={merryOakChristmasHeader} 
