@@ -56,16 +56,16 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Message from CEO */}
-      <section className="py-16 bg-obsidian/50 backdrop-blur-sm">
+      <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
-          <Card className="max-w-4xl mx-auto bg-white/5 border-white/10 backdrop-blur-sm">
+          <Card className="max-w-4xl mx-auto bg-white border-obsidian/10 shadow-lg">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
-                <Heart className="w-8 h-8 text-gold-leaf" />
-                <CardTitle className="text-3xl text-silver-mist">A Message from Our CEO</CardTitle>
+                <Heart className="w-8 h-8 text-accent-brown" />
+                <CardTitle className="text-3xl text-obsidian">A Message from Our CEO</CardTitle>
               </div>
             </CardHeader>
-            <CardContent className="text-slate-whisper space-y-4 text-lg leading-relaxed">
+            <CardContent className="text-deep-petrol space-y-4 text-lg leading-relaxed">
               <p>
                 Dear Oak Family,
               </p>
@@ -78,7 +78,7 @@ const OakChristmasParty = () => {
               <p>
                 Thank you for being part of this incredible journey. Here's to a joyful holiday season and an even brighter year ahead!
               </p>
-              <p className="text-gold-leaf font-semibold pt-4">
+              <p className="text-accent-brown font-semibold pt-4">
                 With appreciation and warm wishes,<br />
                 [CEO Name]
               </p>
@@ -123,12 +123,12 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Things to Do Section */}
-      <section className="py-16 bg-obsidian/50 backdrop-blur-sm">
+      <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <MapPin className="w-12 h-12 text-gold-leaf mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-silver-mist mb-4">Things to Do</h2>
-            <p className="text-slate-whisper text-lg">Make the most of your evening</p>
+            <MapPin className="w-12 h-12 text-accent-brown mx-auto mb-4" />
+            <h2 className="text-4xl font-bold text-obsidian mb-4">Things to Do</h2>
+            <p className="text-deep-petrol text-lg">Make the most of your evening</p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -166,14 +166,14 @@ const OakChristmasParty = () => {
             ].map((activity, index) => (
               <Card 
                 key={index}
-                className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300 hover:scale-105"
+                className="bg-white border-obsidian/10 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 <CardHeader>
                   <div className="text-5xl mb-3 text-center">{activity.icon}</div>
-                  <CardTitle className="text-silver-mist text-xl text-center">{activity.title}</CardTitle>
+                  <CardTitle className="text-obsidian text-xl text-center">{activity.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-slate-whisper text-center">{activity.description}</p>
+                  <p className="text-deep-petrol text-center">{activity.description}</p>
                 </CardContent>
               </Card>
             ))}
