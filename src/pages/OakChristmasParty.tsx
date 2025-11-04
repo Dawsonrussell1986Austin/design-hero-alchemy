@@ -82,8 +82,8 @@ const OakChristmasParty = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-display font-medium text-silver-mist mb-4">A Very Merry Oak Christmas – Holiday Party Agenda</h2>
-            <p className="text-slate-whisper text-xl">🗓️ Wednesday, December 3 – Friday, December 5, 2025</p>
+            <h2 className="text-4xl font-display font-medium text-[#e8dcc8] mb-4">A Very Merry Oak Christmas – Holiday Party Agenda</h2>
+            <p className="text-[#e8dcc8]/90 text-xl">🗓️ Wednesday, December 3 – Friday, December 5, 2025</p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
@@ -91,9 +91,9 @@ const OakChristmasParty = () => {
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
               <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
               
-              <div className="space-y-6 text-slate-whisper">
+              <div className="space-y-6 text-[#e8dcc8]/90">
                 <div>
-                  <p className="font-semibold text-silver-mist mb-2">✈️ Arrivals – Guests arrive in Charlotte and check in at:</p>
+                  <p className="font-semibold text-[#e8dcc8] mb-2">✈️ Arrivals – Guests arrive in Charlotte and check in at:</p>
                   <p className="text-lg">Renaissance Charlotte SouthPark</p>
                   <p>5501 Carnegie Blvd | Charlotte, NC 28209</p>
                 </div>
@@ -110,10 +110,10 @@ const OakChristmasParty = () => {
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
               <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Thursday, December 4 – The Main Event</h3>
               
-              <div className="space-y-6 text-slate-whisper">
+              <div className="space-y-6 text-[#e8dcc8]/90">
                 <div>
                   <p className="font-semibold text-gold-leaf mb-2">🕔 5:00 – 6:30 PM | Happy Hour</p>
-                  <p className="text-lg text-silver-mist">Del Frisco's Double Eagle Steakhouse</p>
+                  <p className="text-lg text-[#e8dcc8]">Del Frisco's Double Eagle Steakhouse</p>
                   <p className="mb-1">4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209</p>
                   <p className="mb-2 font-medium">Del Frisco's – Mezzanine Point Room</p>
                   <p className="italic">Enjoy cocktails, conversation, and holiday cheer.</p>
@@ -140,7 +140,7 @@ const OakChristmasParty = () => {
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
               <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Friday, December 5 – Farewell & Departures</h3>
               
-              <div className="space-y-4 text-slate-whisper">
+              <div className="space-y-4 text-[#e8dcc8]/90">
                 <p>☕ Enjoy breakfast at your leisure before checkout.</p>
                 <p>✈️ Depart Charlotte – wishing you safe travels and a happy holiday season!</p>
               </div>
