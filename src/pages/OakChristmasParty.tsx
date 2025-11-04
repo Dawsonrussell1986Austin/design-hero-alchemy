@@ -12,12 +12,12 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative">
-        <div className="w-full">
+      <section className="relative pt-20">
+        <div className="w-full max-w-4xl mx-auto px-6">
           <img 
             src={merryOakChristmasHeader} 
             alt="A Very Merry Oak Christmas" 
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-contain"
           />
         </div>
       </section>
