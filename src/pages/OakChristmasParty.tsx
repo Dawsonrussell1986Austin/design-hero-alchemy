@@ -2,6 +2,7 @@ import { Sparkles, Calendar, Users, Music, MapPin, Heart } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import christmasOrnament from "@/assets/christmas-ornament.png";
 
 const OakChristmasParty = () => {
   return (
@@ -18,18 +19,26 @@ const OakChristmasParty = () => {
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <Sparkles className="w-16 h-16 text-gold-leaf mx-auto mb-6 animate-pulse" />
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fadeInUp">
-              Oak Christmas Party
-            </h1>
-            <p className="text-xl md:text-2xl text-slate-whisper mb-8 animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-              Celebrating Another Year of Excellence Together
-            </p>
-            <div className="flex items-center justify-center gap-3 text-gold-leaf animate-fadeInUp" style={{ animationDelay: '0.4s' }}>
-              <Calendar className="w-5 h-5" />
-              <span className="text-lg">December 2025</span>
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-7xl mx-auto">
+            <div className="flex-1 text-left">
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fadeInUp">
+                Oak Christmas Party
+              </h1>
+              <p className="text-xl md:text-2xl text-slate-whisper animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+                Celebrating Another Year of Excellence Together
+              </p>
             </div>
+            <div className="flex-shrink-0 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+              <img 
+                src={christmasOrnament} 
+                alt="Christmas ornament decoration" 
+                className="w-64 h-auto md:w-80 lg:w-96 rounded-lg shadow-2xl"
+              />
+            </div>
+          </div>
+          <div className="flex items-center justify-center gap-3 text-gold-leaf animate-fadeInUp mt-12" style={{ animationDelay: '0.4s' }}>
+            <Calendar className="w-5 h-5" />
+            <span className="text-lg">December 2025</span>
           </div>
         </div>
       </section>
