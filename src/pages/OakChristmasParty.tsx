@@ -6,6 +6,7 @@ import christmasOrnament from "@/assets/christmas-ornament.png";
 import garyBechtel from "@/assets/gary-bechtel.png";
 import merryOakChristmasHeader from "@/assets/merry-oak-christmas-header.png";
 import winterCityBackground from "@/assets/winter-city-background.png";
+import qrCodePlaylist from "@/assets/qr-code-playlist-placeholder.png";
 
 const OakChristmasParty = () => {
   return (
@@ -337,14 +338,11 @@ const OakChristmasParty = () => {
           <Card className="max-w-md mx-auto bg-white/5 border-white/10 backdrop-blur-sm">
             <CardContent className="p-8 text-center">
               <div className="bg-white p-6 rounded-lg inline-block mb-6">
-                {/* Placeholder for QR Code */}
-                <div className="w-64 h-64 bg-gradient-to-br from-obsidian to-graphite-fog flex items-center justify-center rounded">
-                  <div className="text-white/30 text-center">
-                    <Music className="w-16 h-16 mx-auto mb-2" />
-                    <p className="text-sm">QR Code</p>
-                    <p className="text-xs">Scan with your phone</p>
-                  </div>
-                </div>
+                <img 
+                  src={qrCodePlaylist} 
+                  alt="Scan to access A Very Merry Oak Christmas Playlist" 
+                  className="w-64 h-64 object-contain"
+                />
               </div>
               <p className="text-silver-mist text-lg mb-2">Scan to Access Spotify Playlist</p>
               <p className="text-slate-whisper">Available on Spotify, Apple Music, and YouTube</p>
