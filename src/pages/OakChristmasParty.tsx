@@ -82,33 +82,69 @@ const OakChristmasParty = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <Calendar className="w-12 h-12 text-gold-leaf mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-silver-mist mb-4">Event Agenda</h2>
-            <p className="text-slate-whisper text-lg">Your evening at a glance</p>
+            <h2 className="text-4xl font-display font-medium text-silver-mist mb-4">A Very Merry Oak Christmas – Holiday Party Agenda</h2>
+            <p className="text-slate-whisper text-xl">🗓️ Wednesday, December 3 – Friday, December 5, 2025</p>
           </div>
 
-          <div className="max-w-3xl mx-auto space-y-4">
-            {[
-              { time: "6:00 PM", event: "Arrival & Cocktail Reception", icon: "🥂" },
-              { time: "7:00 PM", event: "Welcome Remarks & CEO Address", icon: "🎤" },
-              { time: "7:30 PM", event: "Dinner Service Begins", icon: "🍽️" },
-              { time: "8:30 PM", event: "Awards & Recognition", icon: "🏆" },
-              { time: "9:00 PM", event: "Dancing & Entertainment", icon: "💃" },
-              { time: "11:00 PM", event: "Event Concludes", icon: "✨" },
-            ].map((item, index) => (
-              <Card 
-                key={index} 
-                className="bg-white/5 border-white/10 backdrop-blur-sm hover:bg-white/10 transition-all duration-300"
-              >
-                <CardContent className="flex items-center gap-6 p-6">
-                  <span className="text-4xl">{item.icon}</span>
-                  <div className="flex-1">
-                    <p className="text-gold-leaf font-semibold text-lg">{item.time}</p>
-                    <p className="text-silver-mist text-xl">{item.event}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="max-w-4xl mx-auto space-y-8">
+            {/* Wednesday */}
+            <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
+              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
+              
+              <div className="space-y-6 text-slate-whisper">
+                <div>
+                  <p className="font-semibold text-silver-mist mb-2">✈️ Arrivals – Guests arrive in Charlotte and check in at:</p>
+                  <p className="text-lg">Renaissance Charlotte SouthPark</p>
+                  <p>5501 Carnegie Blvd | Charlotte, NC 28209</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-gold-leaf mb-2">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
+                  <p className="mb-1">5610 Carnegie Blvd (0.1 mi from hotel)</p>
+                  <p className="italic">Join us for casual drinks before the big night!</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Thursday */}
+            <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
+              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Thursday, December 4 – The Main Event</h3>
+              
+              <div className="space-y-6 text-slate-whisper">
+                <div>
+                  <p className="font-semibold text-gold-leaf mb-2">🕔 5:00 – 6:30 PM | Happy Hour</p>
+                  <p className="text-lg text-silver-mist">Del Frisco's Double Eagle Steakhouse</p>
+                  <p className="mb-1">4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209</p>
+                  <p className="mb-2 font-medium">Del Frisco's – Mezzanine Point Room</p>
+                  <p className="italic">Enjoy cocktails, conversation, and holiday cheer.</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-gold-leaf mb-2">🕡 6:30 – 7:00 PM | Holiday Message from Gary Bechtel, CEO</p>
+                  <p className="italic">A short toast celebrating our team, partnerships, and another great year.</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-gold-leaf mb-2">🍽️ 7:00 PM | Dinner Service Begins</p>
+                  <p className="italic">Order from the evening's curated menu.</p>
+                </div>
+                
+                <div>
+                  <p className="font-semibold text-gold-leaf mb-2">🎉 9:30 PM | Evening Concludes</p>
+                  <p className="italic">Thank you for celebrating with us!</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Friday */}
+            <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
+              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Friday, December 5 – Farewell & Departures</h3>
+              
+              <div className="space-y-4 text-slate-whisper">
+                <p>☕ Enjoy breakfast at your leisure before checkout.</p>
+                <p>✈️ Depart Charlotte – wishing you safe travels and a happy holiday season!</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
