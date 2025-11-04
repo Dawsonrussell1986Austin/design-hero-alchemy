@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import christmasOrnament from "@/assets/christmas-ornament.png";
 import garyBechtel from "@/assets/gary-bechtel.png";
-import oakChristmasHeader from "@/assets/oak-christmas-header.png";
+import merryOakChristmasHeader from "@/assets/merry-oak-christmas-header.png";
 
 const OakChristmasParty = () => {
   return (
@@ -23,8 +23,8 @@ const OakChristmasParty = () => {
             {/* Festive Header Image */}
             <div className="animate-[fadeIn_0.8s_ease-out_forwards]">
               <img 
-                src={oakChristmasHeader} 
-                alt="Oak Merry Christmas" 
+                src={merryOakChristmasHeader} 
+                alt="A Very Merry Oak Christmas" 
                 className="w-full max-w-5xl mx-auto rounded-lg"
               />
             </div>
