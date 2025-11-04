@@ -19,7 +19,7 @@ const OakChristmasParty = () => {
           <img 
             src={merryOakChristmasHeader} 
             alt="A Very Merry Oak Christmas" 
-            className="w-full max-w-4xl mx-auto h-auto object-contain"
+            className="w-full max-w-5xl mx-auto h-auto object-contain"
           />
         </div>
       </section>
