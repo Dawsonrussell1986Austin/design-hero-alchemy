@@ -65,53 +65,9 @@ const OakChristmasParty = () => {
           </div>
           
           <div className="max-w-7xl mx-auto">
-            <div className="relative grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12 overflow-hidden">
-              {/* Decorative gold scrollwork - top left corner */}
-              <div className="absolute top-0 left-0 w-32 h-32 opacity-20 pointer-events-none">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-gold-leaf" fill="currentColor">
-                  <path d="M0,25 Q10,15 20,20 T35,15 Q40,10 45,15 L40,20 Q35,22 30,25 T20,30 Q15,35 10,30 T0,25 Z" />
-                  <path d="M25,0 Q15,10 20,20 T15,35 Q10,40 15,45 L20,40 Q22,35 25,30 T30,20 Q35,15 30,10 T25,0 Z" />
-                  <circle cx="15" cy="15" r="2" />
-                  <circle cx="8" cy="8" r="1" />
-                  <circle cx="22" cy="8" r="1" />
-                </svg>
-              </div>
-              
-              {/* Decorative gold scrollwork - top right corner */}
-              <div className="absolute top-0 right-0 w-32 h-32 opacity-20 pointer-events-none transform scale-x-[-1]">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-gold-leaf" fill="currentColor">
-                  <path d="M0,25 Q10,15 20,20 T35,15 Q40,10 45,15 L40,20 Q35,22 30,25 T20,30 Q15,35 10,30 T0,25 Z" />
-                  <path d="M25,0 Q15,10 20,20 T15,35 Q10,40 15,45 L20,40 Q22,35 25,30 T30,20 Q35,15 30,10 T25,0 Z" />
-                  <circle cx="15" cy="15" r="2" />
-                  <circle cx="8" cy="8" r="1" />
-                  <circle cx="22" cy="8" r="1" />
-                </svg>
-              </div>
-              
-              {/* Decorative gold scrollwork - bottom right corner */}
-              <div className="absolute bottom-0 right-0 w-32 h-32 opacity-20 pointer-events-none transform rotate-180">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-gold-leaf" fill="currentColor">
-                  <path d="M0,25 Q10,15 20,20 T35,15 Q40,10 45,15 L40,20 Q35,22 30,25 T20,30 Q15,35 10,30 T0,25 Z" />
-                  <path d="M25,0 Q15,10 20,20 T15,35 Q10,40 15,45 L20,40 Q22,35 25,30 T30,20 Q35,15 30,10 T25,0 Z" />
-                  <circle cx="15" cy="15" r="2" />
-                  <circle cx="8" cy="8" r="1" />
-                  <circle cx="22" cy="8" r="1" />
-                </svg>
-              </div>
-              
-              {/* Decorative gold scrollwork - bottom left corner */}
-              <div className="absolute bottom-0 left-0 w-32 h-32 opacity-20 pointer-events-none transform scale-x-[-1] rotate-180">
-                <svg viewBox="0 0 100 100" className="w-full h-full text-gold-leaf" fill="currentColor">
-                  <path d="M0,25 Q10,15 20,20 T35,15 Q40,10 45,15 L40,20 Q35,22 30,25 T20,30 Q15,35 10,30 T0,25 Z" />
-                  <path d="M25,0 Q15,10 20,20 T15,35 Q10,40 15,45 L20,40 Q22,35 25,30 T30,20 Q35,15 30,10 T25,0 Z" />
-                  <circle cx="15" cy="15" r="2" />
-                  <circle cx="8" cy="8" r="1" />
-                  <circle cx="22" cy="8" r="1" />
-                </svg>
-              </div>
-              
+            <div className="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12">
               {/* Left Column - Photo */}
-              <div className="flex flex-col items-center lg:items-start space-y-4 relative z-10">
+              <div className="flex flex-col items-center lg:items-start space-y-4">
                 <div className="relative">
                   <div className="absolute inset-0 bg-accent-brown/10 blur-xl rounded-lg"></div>
                   <img 
@@ -127,7 +83,7 @@ const OakChristmasParty = () => {
               </div>
               
               {/* Right Column - Message */}
-              <div className="space-y-5 relative z-10">
+              <div className="space-y-5">
                 <div className="border-l-4 border-accent-brown pl-6">
                   <h3 className="text-xl md:text-2xl font-display font-medium text-obsidian mb-2">A Message from Our CEO</h3>
                 </div>
