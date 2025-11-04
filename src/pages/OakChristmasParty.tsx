@@ -26,14 +26,14 @@ const OakChristmasParty = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left Column - Text Content */}
             <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-medium text-silver-mist leading-tight tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-medium text-[#e8dcc8] leading-tight tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
                 Oak Christmas Party
               </h1>
               <div className="space-y-3 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
-                <p className="text-lg sm:text-xl md:text-2xl text-slate-whisper font-body leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl text-[#e8dcc8]/90 font-body leading-relaxed">
                   Celebrating Another Year of Excellence Together
                 </p>
-                <div className="flex items-center gap-3 text-slate-whisper pt-2">
+                <div className="flex items-center gap-3 text-[#e8dcc8]/90 pt-2">
                   <Calendar className="w-5 h-5" />
                   <span className="text-base sm:text-lg font-body">December 2025</span>
                 </div>
