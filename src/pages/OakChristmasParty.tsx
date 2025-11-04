@@ -23,15 +23,15 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Message from CEO */}
-      <section className="py-16 bg-silver-mist">
+      <section className="py-12 bg-silver-mist">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-2">Welcome to the Oak Real Estate Partners</h2>
-            <h2 className="text-3xl md:text-4xl font-display font-medium text-accent-brown">Holiday Celebration</h2>
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-display font-medium text-obsidian mb-1">Welcome to the Oak Real Estate Partners</h2>
+            <h2 className="text-2xl md:text-3xl font-display font-medium text-accent-brown">Holiday Celebration</h2>
           </div>
           
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-[400px_1fr] gap-8 lg:gap-12 items-start bg-white rounded-lg shadow-xl p-8 md:p-12">
+            <div className="grid lg:grid-cols-[350px_1fr] gap-6 lg:gap-8 items-start bg-white rounded-lg shadow-xl p-6 md:p-8">
               {/* Left Column - Photo */}
               <div className="flex flex-col items-center lg:items-start space-y-4">
                 <div className="relative">
