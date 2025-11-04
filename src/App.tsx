@@ -57,6 +57,7 @@ import OurSubsidiaries from "./pages/OurSubsidiaries";
 import ThankYou from "./pages/ThankYou";
 import VideoPage from "./pages/VideoPage";
 import VideoCategory from "./pages/VideoCategory";
+import OakChristmasParty from "./pages/OakChristmasParty";
 
 function App() {
   return (
@@ -117,6 +118,7 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/video" element={<VideoPage />} />
+        <Route path="/oak-christmas-party" element={<OakChristmasParty />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
