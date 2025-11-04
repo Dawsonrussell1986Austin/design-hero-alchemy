@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import christmasOrnament from "@/assets/christmas-ornament.png";
 import garyBechtel from "@/assets/gary-bechtel.png";
 import merryOakChristmasHeader from "@/assets/merry-oak-christmas-header.png";
+import winterCityBackground from "@/assets/winter-city-background.png";
 
 const OakChristmasParty = () => {
   return (
@@ -79,8 +80,13 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Agenda Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-6">
+      <section className="py-16 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${winterCityBackground})` }}
+        />
+        <div className="absolute inset-0 bg-deep-petrol/80" />
+        <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-display font-medium text-[#e8dcc8] mb-4">A Very Merry Oak Christmas - Holiday Party Agenda</h2>
             <div className="flex items-center justify-center gap-2 text-[#e8dcc8]/90 text-lg">
