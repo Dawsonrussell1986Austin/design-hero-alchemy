@@ -85,7 +85,7 @@ const OakChristmasParty = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${winterCityBackground})` }}
         />
-        <div className="absolute inset-0 bg-deep-petrol/80" />
+        <div className="absolute inset-0 bg-deep-petrol/90" />
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-display font-medium text-[#e8dcc8] mb-4">A Very Merry Oak Christmas - Holiday Party Agenda</h2>
