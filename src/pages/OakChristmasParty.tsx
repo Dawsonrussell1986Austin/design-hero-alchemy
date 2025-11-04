@@ -1,4 +1,4 @@
-import { Sparkles, Calendar, Users, Music, MapPin, Heart } from "lucide-react";
+import { Sparkles, Calendar, Users, Music, MapPin, Heart, Plane, Clock, Utensils, PartyPopper, Coffee } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -83,66 +83,93 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-display font-medium text-[#e8dcc8] mb-4">A Very Merry Oak Christmas – Holiday Party Agenda</h2>
-            <p className="text-[#e8dcc8]/90 text-xl">🗓️ Wednesday, December 3 – Friday, December 5, 2025</p>
+            <div className="flex items-center justify-center gap-2 text-[#e8dcc8]/90 text-xl">
+              <Calendar className="w-6 h-6 text-gold-leaf" />
+              <p>Wednesday, December 3 – Friday, December 5, 2025</p>
+            </div>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Wednesday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
-              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
+              <h3 className="text-2xl font-display font-medium text-[#e8dcc8] mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
               
               <div className="space-y-6 text-[#e8dcc8]/90">
                 <div>
-                  <p className="font-semibold text-[#e8dcc8] mb-2">✈️ Arrivals – Guests arrive in Charlotte and check in at:</p>
-                  <p className="text-lg">Renaissance Charlotte SouthPark</p>
-                  <p>5501 Carnegie Blvd | Charlotte, NC 28209</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Plane className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">Arrivals – Guests arrive in Charlotte and check in at:</p>
+                  </div>
+                  <p className="text-lg ml-7">Renaissance Charlotte SouthPark</p>
+                  <p className="ml-7">5501 Carnegie Blvd | Charlotte, NC 28209</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-gold-leaf mb-2">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
-                  <p className="mb-1">5610 Carnegie Blvd (0.1 mi from hotel)</p>
-                  <p className="italic">Join us for casual drinks before the big night!</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Clock className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
+                  </div>
+                  <p className="mb-1 ml-7">5610 Carnegie Blvd (0.1 mi from hotel)</p>
+                  <p className="italic ml-7">Join us for casual drinks before the big night!</p>
                 </div>
               </div>
             </div>
 
             {/* Thursday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
-              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Thursday, December 4 – The Main Event</h3>
+              <h3 className="text-2xl font-display font-medium text-[#e8dcc8] mb-6">Thursday, December 4 – The Main Event</h3>
               
               <div className="space-y-6 text-[#e8dcc8]/90">
                 <div>
-                  <p className="font-semibold text-gold-leaf mb-2">🕔 5:00 – 6:30 PM | Happy Hour</p>
-                  <p className="text-lg text-[#e8dcc8]">Del Frisco's Double Eagle Steakhouse</p>
-                  <p className="mb-1">4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209</p>
-                  <p className="mb-2 font-medium">Del Frisco's – Mezzanine Point Room</p>
-                  <p className="italic">Enjoy cocktails, conversation, and holiday cheer.</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Clock className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">5:00 – 6:30 PM | Happy Hour</p>
+                  </div>
+                  <p className="text-lg text-[#e8dcc8] ml-7">Del Frisco's Double Eagle Steakhouse</p>
+                  <p className="mb-1 ml-7">4725 Piedmont Row Dr, Suite 170 | Charlotte, NC 28209</p>
+                  <p className="mb-2 font-medium ml-7">Del Frisco's – Mezzanine Point Room</p>
+                  <p className="italic ml-7">Enjoy cocktails, conversation, and holiday cheer.</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-gold-leaf mb-2">🕡 6:30 – 7:00 PM | Holiday Message from Gary Bechtel, CEO</p>
-                  <p className="italic">A short toast celebrating our team, partnerships, and another great year.</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Sparkles className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">6:30 – 7:00 PM | Holiday Message from Gary Bechtel, CEO</p>
+                  </div>
+                  <p className="italic ml-7">A short toast celebrating our team, partnerships, and another great year.</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-gold-leaf mb-2">🍽️ 7:00 PM | Dinner Service Begins</p>
-                  <p className="italic">Order from the evening's curated menu.</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <Utensils className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">7:00 PM | Dinner Service Begins</p>
+                  </div>
+                  <p className="italic ml-7">Order from the evening's curated menu.</p>
                 </div>
                 
                 <div>
-                  <p className="font-semibold text-gold-leaf mb-2">🎉 9:30 PM | Evening Concludes</p>
-                  <p className="italic">Thank you for celebrating with us!</p>
+                  <div className="flex items-start gap-2 mb-2">
+                    <PartyPopper className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                    <p className="font-semibold text-[#e8dcc8]">9:30 PM | Evening Concludes</p>
+                  </div>
+                  <p className="italic ml-7">Thank you for celebrating with us!</p>
                 </div>
               </div>
             </div>
 
             {/* Friday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-8">
-              <h3 className="text-2xl font-display font-medium text-gold-leaf mb-6">Friday, December 5 – Farewell & Departures</h3>
+              <h3 className="text-2xl font-display font-medium text-[#e8dcc8] mb-6">Friday, December 5 – Farewell & Departures</h3>
               
               <div className="space-y-4 text-[#e8dcc8]/90">
-                <p>☕ Enjoy breakfast at your leisure before checkout.</p>
-                <p>✈️ Depart Charlotte – wishing you safe travels and a happy holiday season!</p>
+                <div className="flex items-start gap-2">
+                  <Coffee className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                  <p>Enjoy breakfast at your leisure before checkout.</p>
+                </div>
+                <div className="flex items-start gap-2">
+                  <Plane className="w-5 h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
+                  <p>Depart Charlotte – wishing you safe travels and a happy holiday season!</p>
+                </div>
               </div>
             </div>
           </div>
