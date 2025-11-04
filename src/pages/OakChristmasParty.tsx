@@ -20,17 +20,6 @@ const OakChristmasParty = () => {
             className="w-full h-auto object-cover"
           />
         </div>
-        
-        {/* Subtitle and Date positioned over or below the image */}
-        <div className="absolute bottom-8 left-0 right-0 text-center space-y-3">
-          <p className="text-xl sm:text-2xl md:text-3xl text-[#e8dcc8] font-display font-medium leading-relaxed drop-shadow-lg">
-            Celebrating Another Year of Excellence Together
-          </p>
-          <div className="flex items-center justify-center gap-3 text-[#e8dcc8]/90">
-            <Calendar className="w-5 h-5 drop-shadow-lg" />
-            <span className="text-base sm:text-lg font-body drop-shadow-lg">December 2025</span>
-          </div>
-        </div>
       </section>
 
       {/* Message from CEO */}
