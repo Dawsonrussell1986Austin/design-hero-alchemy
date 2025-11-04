@@ -82,7 +82,7 @@ const OakChristmasParty = () => {
       <section className="py-16">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-display font-medium text-[#e8dcc8] mb-4">Holiday Party Agenda</h2>
+            <h2 className="text-2xl md:text-3xl font-display font-medium text-[#e8dcc8] mb-4">A Very Merry Oak Christmas - Holiday Party Agenda</h2>
             <div className="flex items-center justify-center gap-2 text-[#e8dcc8]/90 text-lg">
               <Calendar className="w-5 h-5 text-gold-leaf" />
               <p>December 3 – 5, 2025</p>
