@@ -290,7 +290,14 @@ const OakChristmasParty = () => {
                   Head into Uptown Charlotte (≈ 10–12 min) for quick visits like the Bechtler Museum of Modern Art or the Levine Center for the Arts complex.
                 </p>
                 <p>
-                  For a peaceful escape: <strong>Wing Haven Gardens & Bird Sanctuary</strong> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
+                  For a peaceful escape: <a 
+                    href="https://winghavengardens.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-accent-brown hover:underline font-semibold"
+                  >
+                    Wing Haven Gardens & Bird Sanctuary
+                  </a> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
                 </p>
               </div>
             </div>
