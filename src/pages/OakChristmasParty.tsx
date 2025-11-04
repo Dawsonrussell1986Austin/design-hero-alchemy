@@ -21,7 +21,7 @@ const OakChristmasParty = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-8">
             {/* Festive Header Image */}
-            <div className="opacity-0 animate-[fadeIn_0.8s_ease-out_0.2s_forwards]">
+            <div className="animate-[fadeIn_0.8s_ease-out_forwards]">
               <img 
                 src={oakChristmasHeader} 
                 alt="Oak Merry Christmas" 
@@ -30,7 +30,7 @@ const OakChristmasParty = () => {
             </div>
             
             {/* Subtitle and Date */}
-            <div className="space-y-3 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
+            <div className="space-y-3 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
               <p className="text-xl sm:text-2xl md:text-3xl text-[#e8dcc8] font-display font-medium leading-relaxed">
                 Celebrating Another Year of Excellence Together
               </p>
