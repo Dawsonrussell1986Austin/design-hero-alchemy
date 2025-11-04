@@ -3,6 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import christmasOrnament from "@/assets/christmas-ornament.png";
+import garyBechtel from "@/assets/gary-bechtel.png";
 
 const OakChristmasParty = () => {
   return (
@@ -58,29 +59,43 @@ const OakChristmasParty = () => {
       {/* Message from CEO */}
       <section className="py-16 bg-silver-mist">
         <div className="container mx-auto px-6">
-          <Card className="max-w-4xl mx-auto bg-white border-obsidian/10 shadow-lg">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-obsidian mb-2">Welcome to the Oak Real Estate Partners</h2>
+            <h2 className="text-4xl font-bold text-obsidian">Holiday Celebration</h2>
+          </div>
+          
+          <Card className="max-w-5xl mx-auto bg-white border-obsidian/10 shadow-lg">
             <CardHeader>
-              <div className="flex items-center gap-3 mb-2">
-                <Heart className="w-8 h-8 text-accent-brown" />
-                <CardTitle className="text-3xl text-obsidian">A Message from Our CEO</CardTitle>
+              <div className="flex flex-col md:flex-row items-start gap-6">
+                <div className="flex-shrink-0">
+                  <img 
+                    src={garyBechtel} 
+                    alt="Gary Bechtel, CEO" 
+                    className="w-48 h-48 rounded-lg object-cover shadow-md"
+                  />
+                </div>
+                <div className="flex-1">
+                  <CardTitle className="text-2xl text-obsidian mb-2">Message from Gary Bechtel</CardTitle>
+                  <p className="text-accent-brown font-semibold">Chief Executive Officer</p>
+                </div>
               </div>
             </CardHeader>
-            <CardContent className="text-deep-petrol space-y-4 text-lg leading-relaxed">
+            <CardContent className="text-deep-petrol space-y-4 text-base leading-relaxed">
               <p>
-                Dear Oak Family,
+                As we close out another remarkable year, I want to take a moment to thank each of you — our team, partners, and guests — for being part of Oak's continued growth and success.
               </p>
               <p>
-                As we gather to celebrate this holiday season, I'm filled with immense gratitude for each and every one of you. This year has been remarkable, and it's your dedication, innovation, and unwavering commitment that has made Oak Real Estate Partners the success it is today.
+                This evening is about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
               </p>
               <p>
-                The holidays are a time to reflect on our achievements and look forward to the possibilities ahead. Together, we've not only met our goals but exceeded them, creating lasting value for our clients and building something truly special.
+                I hope tonight reminds you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the evening — great food, great company, and the well-deserved chance to relax and celebrate all we've accomplished.
               </p>
               <p>
-                Thank you for being part of this incredible journey. Here's to a joyful holiday season and an even brighter year ahead!
+                Here's to a strong close to 2025 and an even brighter year ahead.
               </p>
               <p className="text-accent-brown font-semibold pt-4">
-                With appreciation and warm wishes,<br />
-                [CEO Name]
+                Warm regards,<br />
+                Gary Bechtel, CEO
               </p>
             </CardContent>
           </Card>
