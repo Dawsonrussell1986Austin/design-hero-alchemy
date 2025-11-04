@@ -10,35 +10,47 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 text-white/20 animate-float">❄</div>
-          <div className="absolute top-40 right-20 text-white/20 animate-float" style={{ animationDelay: '1s' }}>✨</div>
-          <div className="absolute bottom-20 left-1/4 text-white/20 animate-float" style={{ animationDelay: '2s' }}>❄</div>
-          <div className="absolute top-60 right-1/3 text-white/20 animate-float" style={{ animationDelay: '1.5s' }}>✨</div>
+      <section className="relative px-4 sm:px-6 pt-32 md:pt-40 pb-16 overflow-hidden">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/10 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
+          <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-garnet-edge/10 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]"></div>
+          <div className="absolute inset-0 opacity-5">
+            <div className="absolute top-10 left-10 text-white/40 animate-float">❄</div>
+            <div className="absolute top-40 right-20 text-white/40 animate-float" style={{ animationDelay: '1s' }}>✨</div>
+            <div className="absolute bottom-20 left-1/4 text-white/40 animate-float" style={{ animationDelay: '2s' }}>❄</div>
+            <div className="absolute top-60 right-1/3 text-white/40 animate-float" style={{ animationDelay: '1.5s' }}>✨</div>
+          </div>
         </div>
         
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 max-w-7xl mx-auto">
-            <div className="flex-1 text-left">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 animate-fadeInUp">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left Column - Text Content */}
+            <div className="space-y-6">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-medium text-silver-mist leading-tight tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
                 Oak Christmas Party
               </h1>
-              <p className="text-xl md:text-2xl text-slate-whisper animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-                Celebrating Another Year of Excellence Together
-              </p>
+              <div className="space-y-3 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
+                <p className="text-lg sm:text-xl md:text-2xl text-slate-whisper font-body leading-relaxed">
+                  Celebrating Another Year of Excellence Together
+                </p>
+                <div className="flex items-center gap-3 text-slate-whisper pt-2">
+                  <Calendar className="w-5 h-5" />
+                  <span className="text-base sm:text-lg font-body">December 2025</span>
+                </div>
+              </div>
             </div>
-            <div className="flex-shrink-0 animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
-              <img 
-                src={christmasOrnament} 
-                alt="Christmas ornament decoration" 
-                className="w-64 h-auto md:w-80 lg:w-96 rounded-lg shadow-2xl"
-              />
+            
+            {/* Right Column - Image */}
+            <div className="flex justify-center lg:justify-end opacity-0 animate-[slideInRight_0.8s_ease-out_0.6s_forwards]">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gold-leaf/20 blur-2xl rounded-lg"></div>
+                <img 
+                  src={christmasOrnament} 
+                  alt="Christmas ornament decoration" 
+                  className="relative w-72 h-auto sm:w-80 md:w-96 lg:w-[28rem] rounded-lg shadow-2xl"
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex items-center justify-center gap-3 text-gold-leaf animate-fadeInUp mt-12" style={{ animationDelay: '0.4s' }}>
-            <Calendar className="w-5 h-5" />
-            <span className="text-lg">December 2025</span>
           </div>
         </div>
       </section>
@@ -50,7 +62,7 @@ const OakChristmasParty = () => {
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
                 <Heart className="w-8 h-8 text-gold-leaf" />
-                <CardTitle className="text-3xl text-white">A Message from Our CEO</CardTitle>
+                <CardTitle className="text-3xl text-silver-mist">A Message from Our CEO</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="text-slate-whisper space-y-4 text-lg leading-relaxed">
@@ -80,7 +92,7 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <Calendar className="w-12 h-12 text-gold-leaf mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-white mb-4">Event Agenda</h2>
+            <h2 className="text-4xl font-bold text-silver-mist mb-4">Event Agenda</h2>
             <p className="text-slate-whisper text-lg">Your evening at a glance</p>
           </div>
 
@@ -101,7 +113,7 @@ const OakChristmasParty = () => {
                   <span className="text-4xl">{item.icon}</span>
                   <div className="flex-1">
                     <p className="text-gold-leaf font-semibold text-lg">{item.time}</p>
-                    <p className="text-white text-xl">{item.event}</p>
+                    <p className="text-silver-mist text-xl">{item.event}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -115,7 +127,7 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <MapPin className="w-12 h-12 text-gold-leaf mx-auto mb-4" />
-            <h2 className="text-4xl font-bold text-white mb-4">Things to Do</h2>
+            <h2 className="text-4xl font-bold text-silver-mist mb-4">Things to Do</h2>
             <p className="text-slate-whisper text-lg">Make the most of your evening</p>
           </div>
 
@@ -158,7 +170,7 @@ const OakChristmasParty = () => {
               >
                 <CardHeader>
                   <div className="text-5xl mb-3 text-center">{activity.icon}</div>
-                  <CardTitle className="text-white text-xl text-center">{activity.title}</CardTitle>
+                  <CardTitle className="text-silver-mist text-xl text-center">{activity.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-whisper text-center">{activity.description}</p>
@@ -174,7 +186,7 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <Music className="w-12 h-12 text-gold-leaf mx-auto mb-4 animate-pulse" />
-            <h2 className="text-4xl font-bold text-white mb-4">Oak Holiday Playlist</h2>
+            <h2 className="text-4xl font-bold text-silver-mist mb-4">Oak Holiday Playlist</h2>
             <p className="text-slate-whisper text-lg">Scan to enjoy our curated holiday music collection</p>
           </div>
 
@@ -190,7 +202,7 @@ const OakChristmasParty = () => {
                   </div>
                 </div>
               </div>
-              <p className="text-white text-lg mb-2">Scan to Access Spotify Playlist</p>
+              <p className="text-silver-mist text-lg mb-2">Scan to Access Spotify Playlist</p>
               <p className="text-slate-whisper">Available on Spotify, Apple Music, and YouTube</p>
             </CardContent>
           </Card>
