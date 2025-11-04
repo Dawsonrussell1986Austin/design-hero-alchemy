@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import christmasOrnament from "@/assets/christmas-ornament.png";
 import garyBechtel from "@/assets/gary-bechtel.png";
+import oakChristmasHeader from "@/assets/oak-christmas-header.png";
 
 const OakChristmasParty = () => {
   return (
@@ -11,45 +12,31 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative px-4 sm:px-6 pt-32 md:pt-40 pb-16 overflow-hidden">
+      <section className="relative px-4 sm:px-6 pt-32 md:pt-40 pb-16">
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/10 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
           <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-garnet-edge/10 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]"></div>
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-10 left-10 text-white/40 animate-float">❄</div>
-            <div className="absolute top-40 right-20 text-white/40 animate-float" style={{ animationDelay: '1s' }}>✨</div>
-            <div className="absolute bottom-20 left-1/4 text-white/40 animate-float" style={{ animationDelay: '2s' }}>❄</div>
-            <div className="absolute top-60 right-1/3 text-white/40 animate-float" style={{ animationDelay: '1.5s' }}>✨</div>
-          </div>
         </div>
         
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left Column - Text Content */}
-            <div className="space-y-6">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-medium text-[#e8dcc8] leading-tight tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
-                Oak Christmas Party
-              </h1>
-              <div className="space-y-3 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.4s_forwards]">
-                <p className="text-lg sm:text-xl md:text-2xl text-[#e8dcc8]/90 font-body leading-relaxed">
-                  Celebrating Another Year of Excellence Together
-                </p>
-                <div className="flex items-center gap-3 text-[#e8dcc8]/90 pt-2">
-                  <Calendar className="w-5 h-5" />
-                  <span className="text-base sm:text-lg font-body">December 2025</span>
-                </div>
-              </div>
+          <div className="text-center space-y-8">
+            {/* Festive Header Image */}
+            <div className="opacity-0 animate-[fadeIn_0.8s_ease-out_0.2s_forwards]">
+              <img 
+                src={oakChristmasHeader} 
+                alt="Oak Merry Christmas" 
+                className="w-full max-w-5xl mx-auto rounded-lg"
+              />
             </div>
             
-            {/* Right Column - Image */}
-            <div className="flex justify-center lg:justify-end opacity-0 animate-[slideInRight_0.8s_ease-out_0.6s_forwards]">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gold-leaf/20 blur-2xl rounded-lg"></div>
-                <img 
-                  src={christmasOrnament} 
-                  alt="Christmas ornament decoration" 
-                  className="relative w-72 h-auto sm:w-80 md:w-96 lg:w-[28rem] rounded-lg shadow-2xl"
-                />
+            {/* Subtitle and Date */}
+            <div className="space-y-3 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
+              <p className="text-xl sm:text-2xl md:text-3xl text-[#e8dcc8] font-display font-medium leading-relaxed">
+                Celebrating Another Year of Excellence Together
+              </p>
+              <div className="flex items-center justify-center gap-3 text-[#e8dcc8]/90 pt-2">
+                <Calendar className="w-5 h-5" />
+                <span className="text-base sm:text-lg font-body">December 2025</span>
               </div>
             </div>
           </div>
