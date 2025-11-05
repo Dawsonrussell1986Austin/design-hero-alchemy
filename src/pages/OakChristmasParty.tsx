@@ -104,7 +104,18 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative pt-16 sm:pt-20 pb-0" style={{ backgroundColor: '#2F4A55' }}>
+      <section 
+        className="relative pt-16 sm:pt-20 pb-0" 
+        style={{ 
+          backgroundColor: '#2F4A55',
+          backgroundImage: `
+            radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.03) 0%, transparent 50%),
+            radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
+            radial-gradient(circle at 40% 80%, rgba(200, 180, 140, 0.02) 0%, transparent 40%)
+          `,
+          backgroundBlendMode: 'overlay'
+        }}
+      >
         <div className="container mx-auto px-4 sm:px-6 flex justify-center items-center">
           <img 
             src={oakChristmasHeader} 
