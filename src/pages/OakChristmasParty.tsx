@@ -154,7 +154,7 @@ const OakChristmasParty = () => {
                     These two days are about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
                   </p>
                   <p>
-                    I hope these next couple of evenings remind you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the evening — great food, great company, and the well-deserved chance to relax and celebrate all we've accomplished.
+                    I hope these next couple of evenings remind you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the great food, company and the well-deserved chance to relax and celebrate all we've accomplished.
                   </p>
                   <p>
                     Here's to a strong close to 2025 and an even brighter year ahead.
