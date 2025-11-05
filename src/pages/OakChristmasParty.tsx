@@ -151,7 +151,7 @@ const OakChristmasParty = () => {
                     As we close out another remarkable year, I want to take a moment to thank each of you — our team, partners, and guests — for being part of Oak's continued growth and success.
                   </p>
                   <p>
-                    This evening is about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
+                    These two days are about connection, appreciation, and celebration. Every milestone we've achieved this year is the result of your dedication, collaboration, and belief in our mission. Together, we've built more than a company — we've built a community defined by trust, excellence, and shared purpose.
                   </p>
                   <p>
                     I hope tonight reminds you how much your contributions matter, not only to Oak's success but to the people beside you. Enjoy the evening — great food, great company, and the well-deserved chance to relax and celebrate all we've accomplished.
