@@ -294,88 +294,105 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Things to Do Section */}
-      <section className="py-16 bg-silver-mist">
+      <section className="py-16 bg-silver-mist overflow-hidden">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-8">
+          <div className="text-center mb-12">
             <MapPin className="w-10 h-10 text-accent-brown mx-auto mb-3" />
             <h2 className="text-3xl md:text-4xl font-display font-medium text-obsidian mb-4">Things to Do While You're Here</h2>
             <p className="text-deep-petrol text-lg font-body">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
 
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-center">
+          <div className="max-w-7xl mx-auto relative">
+            <div className="grid lg:grid-cols-[1fr_500px] gap-12 items-center">
               {/* Left Column - Carousel Content */}
-              <div className="relative">
-                <div className="bg-white rounded-lg shadow-lg p-8 min-h-[300px] flex flex-col justify-between">
-                  <div>
-                    <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
-                      {activities[currentActivity].link ? (
-                        <a 
-                          href={activities[currentActivity].link}
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-accent-brown hover:underline"
-                        >
-                          {activities[currentActivity].title}
-                        </a>
-                      ) : (
-                        activities[currentActivity].title
-                      )}
-                    </h3>
-                    <div className="text-deep-petrol font-body leading-relaxed text-lg">
-                      {typeof activities[currentActivity].content === 'string' ? (
-                        <p>{activities[currentActivity].content}</p>
-                      ) : (
-                        activities[currentActivity].content
-                      )}
-                    </div>
-                  </div>
+              <div className="relative z-10">
+                <div className="bg-white rounded-2xl shadow-2xl p-10 relative overflow-hidden">
+                  {/* Decorative accent */}
+                  <div className="absolute top-0 left-0 w-2 h-full bg-accent-brown"></div>
                   
-                  <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-200">
-                    <button
-                      onClick={prevActivity}
-                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-colors"
-                      aria-label="Previous activity"
-                    >
-                      <ChevronLeft className="w-5 h-5" />
-                      Previous
-                    </button>
-                    
-                    <div className="flex gap-2">
-                      {activities.map((_, index) => (
-                        <button
-                          key={index}
-                          onClick={() => setCurrentActivity(index)}
-                          className={`w-2 h-2 rounded-full transition-all ${
-                            index === currentActivity 
-                              ? 'bg-accent-brown w-8' 
-                              : 'bg-gray-300 hover:bg-gray-400'
-                          }`}
-                          aria-label={`Go to activity ${index + 1}`}
-                        />
-                      ))}
+                  <div className="min-h-[280px] flex flex-col">
+                    <div className="flex-grow">
+                      <div className="flex items-center justify-between mb-6">
+                        <h3 className="text-2xl md:text-3xl font-display font-medium text-obsidian">
+                          {activities[currentActivity].link ? (
+                            <a 
+                              href={activities[currentActivity].link}
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="text-accent-brown hover:underline transition-colors"
+                            >
+                              {activities[currentActivity].title}
+                            </a>
+                          ) : (
+                            <span className="text-obsidian">{activities[currentActivity].title}</span>
+                          )}
+                        </h3>
+                        <div className="text-sm text-deep-petrol/60 font-body">
+                          {currentActivity + 1} / {activities.length}
+                        </div>
+                      </div>
+                      <div className="text-deep-petrol font-body leading-relaxed text-lg">
+                        {typeof activities[currentActivity].content === 'string' ? (
+                          <p>{activities[currentActivity].content}</p>
+                        ) : (
+                          activities[currentActivity].content
+                        )}
+                      </div>
                     </div>
                     
-                    <button
-                      onClick={nextActivity}
-                      className="flex items-center gap-2 px-4 py-2 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-colors"
-                      aria-label="Next activity"
-                    >
-                      Next
-                      <ChevronRight className="w-5 h-5" />
-                    </button>
+                    {/* Navigation Controls */}
+                    <div className="flex items-center justify-between mt-10 pt-6 border-t border-gray-200">
+                      <button
+                        onClick={prevActivity}
+                        className="group flex items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white transition-all duration-300 font-semibold"
+                        aria-label="Previous activity"
+                      >
+                        <ChevronLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
+                        Previous
+                      </button>
+                      
+                      {/* Pagination Dots */}
+                      <div className="flex gap-2.5">
+                        {activities.map((_, index) => (
+                          <button
+                            key={index}
+                            onClick={() => setCurrentActivity(index)}
+                            className={`h-2.5 rounded-full transition-all duration-300 ${
+                              index === currentActivity 
+                                ? 'bg-accent-brown w-10' 
+                                : 'bg-gray-300 w-2.5 hover:bg-accent-brown/50'
+                            }`}
+                            aria-label={`Go to activity ${index + 1}`}
+                          />
+                        ))}
+                      </div>
+                      
+                      <button
+                        onClick={nextActivity}
+                        className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+                        aria-label="Next activity"
+                      >
+                        Next
+                        <ChevronRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Right Column - Image */}
-              <div className="lg:sticky lg:top-8">
-                <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img 
-                    src={christmasGiftScene} 
-                    alt="Christmas gift scene with decorated tree and golden bokeh lights" 
-                    className="w-full h-auto object-cover"
-                  />
+              <div className="relative lg:-ml-20">
+                <div className="relative">
+                  {/* Decorative background element */}
+                  <div className="absolute -top-6 -right-6 w-full h-full bg-accent-brown/10 rounded-2xl"></div>
+                  
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                    <img 
+                      src={christmasGiftScene} 
+                      alt="Christmas gift scene with decorated tree and golden bokeh lights" 
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
