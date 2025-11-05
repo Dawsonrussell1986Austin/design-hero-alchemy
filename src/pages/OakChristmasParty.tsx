@@ -105,13 +105,11 @@ const OakChristmasParty = () => {
       
       {/* Hero/Welcome Section */}
       <section className="relative pt-16 sm:pt-20" style={{ backgroundColor: 'hsl(var(--header-blue))' }}>
-        <div className="container mx-auto px-4 sm:px-6 py-6 sm:py-8">
-          <img 
-            src={oakChristmasHeader} 
-            alt="A Very Merry Oak Christmas" 
-            className="w-full max-w-3xl sm:max-w-5xl mx-auto h-auto object-contain"
-          />
-        </div>
+        <img 
+          src={oakChristmasHeader} 
+          alt="A Very Merry Oak Christmas" 
+          className="w-full h-auto object-cover"
+        />
       </section>
 
       {/* Message from CEO */}
