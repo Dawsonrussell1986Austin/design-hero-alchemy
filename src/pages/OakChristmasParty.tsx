@@ -9,6 +9,7 @@ import merryOakChristmasHeader from "@/assets/merry-oak-christmas-header.png";
 import winterCityBackground from "@/assets/winter-city-background.png";
 import qrCodePlaylist from "@/assets/qr-code-playlist-placeholder.png";
 import christmasGiftScene from "@/assets/christmas-gift-scene.png";
+import christmasOrnamentsBackground from "@/assets/christmas-ornaments-background.png";
 
 const OakChristmasParty = () => {
   const [currentActivity, setCurrentActivity] = useState(0);
@@ -439,8 +440,13 @@ const OakChristmasParty = () => {
       </section>
 
       {/* Oak Holiday Playlist with QR Code */}
-      <section className="py-12 sm:py-16">
-        <div className="container mx-auto px-4 sm:px-6">
+      <section className="py-12 sm:py-16 relative">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${christmasOrnamentsBackground})` }}
+        />
+        <div className="absolute inset-0 bg-obsidian/80" />
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-silver-mist mb-3 sm:mb-4 px-2">🌲 A Very Merry Oak Christmas Playlist</h2>
           </div>
