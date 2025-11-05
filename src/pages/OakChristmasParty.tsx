@@ -104,7 +104,7 @@ const OakChristmasParty = () => {
       <Navigation />
       
       {/* Hero/Welcome Section */}
-      <section className="relative pt-16 sm:pt-20 py-8 sm:py-12" style={{ backgroundColor: '#1a472a' }}>
+      <section className="relative pt-16 sm:pt-20 py-8 sm:py-12" style={{ backgroundColor: '#3C4C58' }}>
         <div className="container mx-auto px-4 sm:px-6">
           <img 
             src={oakChristmasHeader} 
