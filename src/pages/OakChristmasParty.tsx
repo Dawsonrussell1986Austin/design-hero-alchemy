@@ -386,11 +386,11 @@ const OakChristmasParty = () => {
                   {/* Decorative background element */}
                   <div className="absolute -top-6 -right-6 w-full h-full bg-accent-brown/10 rounded-2xl"></div>
                   
-                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+                  <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white max-h-[450px]">
                     <img 
                       src={christmasGiftScene} 
                       alt="Christmas gift scene with decorated tree and golden bokeh lights" 
-                      className="w-full h-auto object-cover"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
