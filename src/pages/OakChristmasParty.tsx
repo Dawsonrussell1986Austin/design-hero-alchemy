@@ -7,6 +7,7 @@ import garyBechtel from "@/assets/gary-bechtel.png";
 import merryOakChristmasHeader from "@/assets/merry-oak-christmas-header.png";
 import winterCityBackground from "@/assets/winter-city-background.png";
 import qrCodePlaylist from "@/assets/qr-code-playlist-placeholder.png";
+import christmasGiftScene from "@/assets/christmas-gift-scene.png";
 
 const OakChristmasParty = () => {
   return (
@@ -213,106 +214,122 @@ const OakChristmasParty = () => {
             <p className="text-deep-petrol text-lg font-body">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-8">
-            {/* NASCAR Hall of Fame */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">
-                <a 
-                  href="https://www.nascarhall.com/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-accent-brown hover:underline"
-                >
-                  NASCAR Hall of Fame
-                </a>
-              </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                Located right in Uptown Charlotte, this museum showcases racing history with interactive exhibits and simulator rides — great for a quick visit or pre-dinner stop.
-              </p>
-            </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
+              {/* Left Column - Scrollable Content */}
+              <div className="space-y-6 max-h-[600px] overflow-y-auto pr-4 scrollbar-thin">
+                {/* NASCAR Hall of Fame */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">
+                    <a 
+                      href="https://www.nascarhall.com/" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-accent-brown hover:underline"
+                    >
+                      NASCAR Hall of Fame
+                    </a>
+                  </h3>
+                  <p className="text-deep-petrol font-body leading-relaxed">
+                    Located right in Uptown Charlotte, this museum showcases racing history with interactive exhibits and simulator rides — great for a quick visit or pre-dinner stop.
+                  </p>
+                </div>
 
-            {/* Little Sugar Creek Greenway */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">
-                <a 
-                  href="https://www.carolinathreadtrailmap.org/trails/trail/little-sugar-creek-brandywine-to-7th" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-accent-brown hover:underline"
-                >
-                  Little Sugar Creek Greenway / Freedom Park
-                </a>
-              </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                A scenic stroll or casual bike ride along the greenway or around Freedom Park offers a relaxed escape without leaving the city.
-              </p>
-            </div>
+                {/* Little Sugar Creek Greenway */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">
+                    <a 
+                      href="https://www.carolinathreadtrailmap.org/trails/trail/little-sugar-creek-brandywine-to-7th" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-accent-brown hover:underline"
+                    >
+                      Little Sugar Creek Greenway / Freedom Park
+                    </a>
+                  </h3>
+                  <p className="text-deep-petrol font-body leading-relaxed">
+                    A scenic stroll or casual bike ride along the greenway or around Freedom Park offers a relaxed escape without leaving the city.
+                  </p>
+                </div>
 
-            {/* SouthPark Shopping */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🛍️ SouthPark Shopping & Stroll</h3>
-              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
-                <p>
-                  <a 
-                    href="https://www.simon.com/mall/southpark" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-accent-brown hover:underline font-semibold"
-                  >
-                    SouthPark Mall
-                  </a> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
-                </p>
-                <p>
-                  <a 
-                    href="https://southparkclt.org/go/symphony-park" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-accent-brown hover:underline font-semibold"
-                  >
-                    Symphony Park & Green Spaces
-                  </a> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
-                </p>
+                {/* SouthPark Shopping */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">🛍️ SouthPark Shopping & Stroll</h3>
+                  <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                    <p>
+                      <a 
+                        href="https://www.simon.com/mall/southpark" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-accent-brown hover:underline font-semibold"
+                      >
+                        SouthPark Mall
+                      </a> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
+                    </p>
+                    <p>
+                      <a 
+                        href="https://southparkclt.org/go/symphony-park" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-accent-brown hover:underline font-semibold"
+                      >
+                        Symphony Park & Green Spaces
+                      </a> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Dining */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">🍽️ Dining & Craft Cocktails</h3>
+                  <p className="text-deep-petrol font-body leading-relaxed">
+                    Explore restaurants and rooftop bars in SouthPark's Sharon Road/Monroe Road corridor. Great spots for pre-dinner drinks or casual bites.
+                  </p>
+                </div>
+
+                {/* Art & Culture */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">🎨 Art & Culture (15 Minutes or Less)</h3>
+                  <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                    <p>
+                      Head into Uptown Charlotte (≈ 10–12 min) for quick visits like the Bechtler Museum of Modern Art or the Levine Center for the Arts complex.
+                    </p>
+                    <p>
+                      For a peaceful escape: <a 
+                        href="https://winghavengardens.org/" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-accent-brown hover:underline font-semibold"
+                      >
+                        Wing Haven Gardens & Bird Sanctuary
+                      </a> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Quick Relaxation */}
+                <div className="bg-white rounded-lg shadow-md p-6">
+                  <h3 className="text-xl font-display font-medium text-obsidian mb-3">☕ Quick Relaxation</h3>
+                  <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
+                    <p>
+                      Grab a coffee or tea and lounge at a café near the hotel. Use the time to recharge and enjoy the SouthPark surroundings.
+                    </p>
+                    <p>
+                      Consider a short stop at the hotel spa or nearby wellness studio for a refresh during your stay.
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            {/* Dining */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🍽️ Dining & Craft Cocktails</h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                Explore restaurants and rooftop bars in SouthPark's Sharon Road/Monroe Road corridor. Great spots for pre-dinner drinks or casual bites.
-              </p>
-            </div>
-
-            {/* Art & Culture */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">🎨 Art & Culture (15 Minutes or Less)</h3>
-              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
-                <p>
-                  Head into Uptown Charlotte (≈ 10–12 min) for quick visits like the Bechtler Museum of Modern Art or the Levine Center for the Arts complex.
-                </p>
-                <p>
-                  For a peaceful escape: <a 
-                    href="https://winghavengardens.org/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-accent-brown hover:underline font-semibold"
-                  >
-                    Wing Haven Gardens & Bird Sanctuary
-                  </a> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
-                </p>
-              </div>
-            </div>
-
-            {/* Quick Relaxation */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-xl font-display font-medium text-obsidian mb-3">☕ Quick Relaxation</h3>
-              <div className="space-y-3 text-deep-petrol font-body leading-relaxed">
-                <p>
-                  Grab a coffee or tea and lounge at a café near the hotel. Use the time to recharge and enjoy the SouthPark surroundings.
-                </p>
-                <p>
-                  Consider a short stop at the hotel spa or nearby wellness studio for a refresh during your stay.
-                </p>
+              {/* Right Column - Image */}
+              <div className="lg:sticky lg:top-8">
+                <div className="rounded-lg overflow-hidden shadow-xl">
+                  <img 
+                    src={christmasGiftScene} 
+                    alt="Christmas gift scene with decorated tree and golden bokeh lights" 
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
