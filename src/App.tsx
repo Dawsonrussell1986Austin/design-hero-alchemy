@@ -32,6 +32,7 @@ import Disclosures from "./pages/Disclosures";
 import Disclaimer from "./pages/Disclaimer";
 import News from "./pages/News";
 import WebinarRegistration from "./pages/WebinarRegistration";
+import WebinarSelection from "./pages/WebinarSelection";
 import NotFound from "./pages/NotFound";
 import Investors from "./pages/Investors";
 import InvestorEducation from "./pages/InvestorEducation";
@@ -77,6 +78,7 @@ function App() {
         <Route path="/whyoak" element={<Investments />} />
         <Route path="/investing" element={<Investing />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/webinars" element={<WebinarSelection />} />
         <Route path="/webinar-registration" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />
         <Route path="/leadership" element={<Leadership />} />
