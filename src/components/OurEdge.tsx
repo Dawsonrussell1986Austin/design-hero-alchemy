@@ -7,7 +7,7 @@ const OurEdge = () => {
       backgroundRepeat: 'no-repeat'
     }}>
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-obsidian/50"></div>
+      <div className="absolute inset-0 bg-obsidian/75"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto text-center">
@@ -28,17 +28,17 @@ const OurEdge = () => {
 
             {/* Key points grid */}
             <div className="grid md:grid-cols-3 gap-8 mt-16">
-              <div className="bg-silver-mist/10 backdrop-blur-sm border-2 border-accent-brown/60 rounded-lg p-8 hover:bg-silver-mist/15 hover:border-accent-brown/80 transition-all duration-300">
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
                 <div className="text-lg font-display font-medium text-garnet-edge mb-4">Proven Experience</div>
                 <p className="text-silver-mist/90 font-body">$18B+ in closed transactions over the past three decades</p>
               </div>
               
-              <div className="bg-silver-mist/10 backdrop-blur-sm border-2 border-accent-brown/60 rounded-lg p-8 hover:bg-silver-mist/15 hover:border-accent-brown/80 transition-all duration-300">
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
                 <div className="text-lg font-display font-medium text-garnet-edge mb-4">Deep Expertise</div>
                 <p className="text-silver-mist/90 font-body">Institutional underwriting coupled with deep market expertise</p>
               </div>
               
-              <div className="bg-silver-mist/10 backdrop-blur-sm border-2 border-accent-brown/60 rounded-lg p-8 hover:bg-silver-mist/15 hover:border-accent-brown/80 transition-all duration-300">
+              <div className="bg-silver-mist/10 backdrop-blur-sm border border-silver-mist/20 rounded-lg p-8 hover:bg-silver-mist/15 transition-all duration-300">
                 <div className="text-lg font-display font-medium text-garnet-edge mb-4">Flexible Solutions</div>
                 <p className="text-silver-mist/90 font-body">Flexible capital structures including debt and equity for real estate sponsors</p>
               </div>
