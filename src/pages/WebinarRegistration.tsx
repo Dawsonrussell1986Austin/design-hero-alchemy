@@ -14,7 +14,70 @@ const WebinarRegistration = () => {
     'oak-investment': 'Join Our Exclusive Oak Investment Review Webinar'
   };
 
-  const webinarTitle = webinarTitles[webinarType as keyof typeof webinarTitles] || webinarTitles['red-oak-investor'];
+  const webinarContent = {
+    'red-oak-investor': {
+      title: webinarTitles['red-oak-investor'],
+      topics: [
+        {
+          icon: Video,
+          title: 'Portfolio Performance',
+          description: 'Review Red Oak investment performance, returns, and key metrics from the current period.'
+        },
+        {
+          icon: Calendar,
+          title: 'Market Updates',
+          description: 'Get insights on market trends affecting Red Oak investments and future opportunities.'
+        },
+        {
+          icon: Users,
+          title: 'Investor Q&A',
+          description: 'Ask questions directly to the management team about your Red Oak investments.'
+        }
+      ]
+    },
+    'oak-accounting': {
+      title: webinarTitles['oak-accounting'],
+      topics: [
+        {
+          icon: Video,
+          title: 'Financial Statements',
+          description: 'Comprehensive review of financial statements, accounting practices, and reporting standards.'
+        },
+        {
+          icon: Calendar,
+          title: 'Tax Strategies',
+          description: 'Learn about tax planning opportunities, deductions, and compliance requirements for your investments.'
+        },
+        {
+          icon: Users,
+          title: 'Compliance Updates',
+          description: 'Stay informed about regulatory changes and compliance requirements affecting your accounts.'
+        }
+      ]
+    },
+    'oak-investment': {
+      title: webinarTitles['oak-investment'],
+      topics: [
+        {
+          icon: Video,
+          title: 'Investment Opportunities',
+          description: 'Explore current and upcoming investment opportunities with detailed deal analysis and projections.'
+        },
+        {
+          icon: Calendar,
+          title: 'Portfolio Strategy',
+          description: 'Learn about strategic portfolio management, diversification, and long-term growth planning.'
+        },
+        {
+          icon: Users,
+          title: 'Deal Structures',
+          description: 'Understand the structure of investment deals, terms, and expected returns for new opportunities.'
+        }
+      ]
+    }
+  };
+
+  const currentWebinar = webinarContent[webinarType as keyof typeof webinarContent] || webinarContent['red-oak-investor'];
 
   useEffect(() => {
     // Load Demio script
@@ -44,7 +107,7 @@ const WebinarRegistration = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-tight tracking-tight">
-                {webinarTitle}
+                {currentWebinar.title}
               </h1>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
                 Join us on the third week of every month for investor updates, deal insights, and market trends. Each session provides a clear overview of portfolio performance, new opportunities, and the latest developments shaping commercial real estate.
@@ -98,41 +161,22 @@ const WebinarRegistration = () => {
             What You'll Learn
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <Video className="h-6 w-6 text-accent-brown" />
-              </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
-                Investment Strategies
-              </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                Discover proven methods for identifying and evaluating commercial real estate opportunities.
-              </p>
-            </div>
-
-            <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <Calendar className="h-6 w-6 text-accent-brown" />
-              </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
-                Market Analysis
-              </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                Learn how to analyze market trends and identify the best timing for your investments.
-              </p>
-            </div>
-
-            <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <Users className="h-6 w-6 text-accent-brown" />
-              </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
-                Risk Management
-              </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
-                Understand how to protect your capital and minimize risk in commercial real estate.
-              </p>
-            </div>
+            {currentWebinar.topics.map((topic, index) => {
+              const IconComponent = topic.icon;
+              return (
+                <div key={index} className="text-center space-y-3">
+                  <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
+                    <IconComponent className="h-6 w-6 text-accent-brown" />
+                  </div>
+                  <h3 className="text-lg font-display font-medium text-obsidian">
+                    {topic.title}
+                  </h3>
+                  <p className="text-deep-petrol font-body leading-relaxed">
+                    {topic.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
