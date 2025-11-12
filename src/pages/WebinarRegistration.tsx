@@ -1,9 +1,21 @@
 import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Video, Calendar, Users } from "lucide-react";
 
 const WebinarRegistration = () => {
+  const [searchParams] = useSearchParams();
+  const webinarType = searchParams.get('type') || 'red-oak-investor';
+
+  const webinarTitles = {
+    'red-oak-investor': 'Join Our Exclusive Red Oak Investor Update Webinar',
+    'oak-accounting': 'Join Our Exclusive Oak Accounting Review Webinar',
+    'oak-investment': 'Join Our Exclusive Oak Investment Review Webinar'
+  };
+
+  const webinarTitle = webinarTitles[webinarType as keyof typeof webinarTitles] || webinarTitles['red-oak-investor'];
+
   useEffect(() => {
     // Load Demio script
     const script = document.createElement('script');
@@ -32,7 +44,7 @@ const WebinarRegistration = () => {
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
             <div className="space-y-6">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-tight tracking-tight">
-                Join Our Exclusive Investor Webinar
+                {webinarTitle}
               </h1>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
                 Join us on the third week of every month for investor updates, deal insights, and market trends. Each session provides a clear overview of portfolio performance, new opportunities, and the latest developments shaping commercial real estate.
