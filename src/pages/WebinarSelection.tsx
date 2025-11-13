@@ -9,7 +9,7 @@ const WebinarSelection = () => {
   const webinars = [
     {
       id: "red-oak-investor",
-      title: "Red Oak Investor Update",
+      title: "Red Oak Financial Update",
       description: "Monthly updates on Red Oak investments, portfolio performance, and market insights for our investor community.",
       icon: TrendingUp,
       color: "text-accent-brown",
@@ -18,7 +18,7 @@ const WebinarSelection = () => {
     },
     {
       id: "oak-accounting",
-      title: "Oak Accounting Review",
+      title: "Oak Institutional Financial Update",
       description: "Comprehensive accounting review sessions covering financial statements, tax strategies, and compliance updates.",
       icon: Calculator,
       color: "text-deep-petrol",
@@ -27,7 +27,7 @@ const WebinarSelection = () => {
     },
     {
       id: "oak-investment",
-      title: "Oak Investment Review",
+      title: "Oak Real Estate Partners Investor Webinar",
       description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
       icon: Calendar,
       color: "text-graphite-fog",

@@ -9,9 +9,9 @@ const WebinarRegistration = () => {
   const webinarType = searchParams.get('type') || 'red-oak-investor';
 
   const webinarTitles = {
-    'red-oak-investor': 'Join Our Exclusive Red Oak Investor Update Webinar',
-    'oak-accounting': 'Join Our Exclusive Oak Accounting Review Webinar',
-    'oak-investment': 'Join Our Exclusive Oak Investment Review Webinar'
+    'red-oak-investor': 'Join Our Exclusive Red Oak Financial Update Webinar',
+    'oak-accounting': 'Join Our Exclusive Oak Institutional Financial Update Webinar',
+    'oak-investment': 'Join Our Exclusive Oak Real Estate Partners Investor Webinar'
   };
 
   const webinarContent = {
