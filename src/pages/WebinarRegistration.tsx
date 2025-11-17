@@ -14,6 +14,12 @@ const WebinarRegistration = () => {
     'oak-investment': 'Join Our Exclusive Oak Real Estate Partners Investor Webinar'
   };
 
+  const demioHashes = {
+    'red-oak-investor': 'WsUAdDrAu9eGJvcD',
+    'oak-accounting': '98qou4sOdVpQ5PqL',
+    'oak-investment': '98qou4sOdVpQ5PqL'
+  };
+
   const webinarContent = {
     'red-oak-investor': {
       title: webinarTitles['red-oak-investor'],
@@ -141,7 +147,7 @@ const WebinarRegistration = () => {
               <div className="demio-embed-container">
                 <span 
                   className="demio-embed-registration" 
-                  data-hash="98qou4sOdVpQ5PqL" 
+                  data-hash={demioHashes[webinarType as keyof typeof demioHashes] || demioHashes['red-oak-investor']} 
                   data-api="api/v1" 
                   data-base-uri="https://my.demio.com/" 
                   data-form-width="100%" 
