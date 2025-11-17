@@ -200,32 +200,70 @@ export type Database = {
         }
         Relationships: []
       }
+      journal_entries: {
+        Row: {
+          created_at: string
+          date: string
+          full_prayer: string | null
+          id: string
+          psalm_number: number
+          reflections: Json
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          date: string
+          full_prayer?: string | null
+          id?: string
+          psalm_number: number
+          reflections: Json
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          date?: string
+          full_prayer?: string | null
+          id?: string
+          psalm_number?: number
+          reflections?: Json
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "journal_entries_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       profiles: {
         Row: {
-          avatar_url: string | null
           created_at: string
-          day_end_hour: number
-          day_start_hour: number
-          display_name: string | null
+          email: string | null
+          has_completed_onboarding: boolean | null
           id: string
+          is_premium: boolean | null
           updated_at: string
         }
         Insert: {
-          avatar_url?: string | null
           created_at?: string
-          day_end_hour?: number
-          day_start_hour?: number
-          display_name?: string | null
+          email?: string | null
+          has_completed_onboarding?: boolean | null
           id: string
+          is_premium?: boolean | null
           updated_at?: string
         }
         Update: {
-          avatar_url?: string | null
           created_at?: string
-          day_end_hour?: number
-          day_start_hour?: number
-          display_name?: string | null
+          email?: string | null
+          has_completed_onboarding?: boolean | null
           id?: string
+          is_premium?: boolean | null
           updated_at?: string
         }
         Relationships: []
