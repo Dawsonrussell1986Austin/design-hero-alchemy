@@ -17,7 +17,7 @@ const WebinarRegistration = () => {
   const demioHashes = {
     'red-oak-investor': 'WsUAdDrAu9eGJvcD',
     'oak-accounting': 'xZ9YFGemsi5DKfBR',
-    'oak-investment': '98qou4sOdVpQ5PqL'
+    'oak-investment': 'IaQROe5ALcV9ouMm'
   };
 
   const webinarContent = {
