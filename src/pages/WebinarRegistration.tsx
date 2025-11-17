@@ -116,7 +116,7 @@ const WebinarRegistration = () => {
                 {currentWebinar.title}
               </h1>
               <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 leading-relaxed font-body font-normal">
-                Join us on the third week of every month for investor updates, deal insights, and market trends. Each session provides a clear overview of portfolio performance, new opportunities, and the latest developments shaping commercial real estate.
+                Join us quarterly for investor updates, deal insights, and market trends. Each session provides a clear overview of portfolio performance, new opportunities, and the latest developments shaping commercial real estate.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
@@ -156,33 +156,6 @@ const WebinarRegistration = () => {
                 ></span>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What You'll Learn Section */}
-      <section className="py-16 px-4 bg-silver-mist">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl lg:text-4xl font-display font-medium text-center mb-12 text-obsidian">
-            What You'll Learn
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {currentWebinar.topics.map((topic, index) => {
-              const IconComponent = topic.icon;
-              return (
-                <div key={index} className="text-center space-y-3">
-                  <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                    <IconComponent className="h-6 w-6 text-accent-brown" />
-                  </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">
-                    {topic.title}
-                  </h3>
-                  <p className="text-deep-petrol font-body leading-relaxed">
-                    {topic.description}
-                  </p>
-                </div>
-              );
-            })}
           </div>
         </div>
       </section>
