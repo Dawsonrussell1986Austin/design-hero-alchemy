@@ -187,7 +187,7 @@ const Navigation = () => {
                     Videos
                   </a>
                   <a 
-                    href="/webinar-selection" 
+                    href="/webinars" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
                       scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
