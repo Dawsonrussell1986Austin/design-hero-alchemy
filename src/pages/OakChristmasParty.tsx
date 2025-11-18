@@ -456,7 +456,7 @@ const OakChristmasParty = () => {
         <div className="absolute inset-0 bg-obsidian/80" />
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-silver-mist mb-3 sm:mb-4 px-2">🌲 A Very Merry Oak Christmas Playlist</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-silver-mist mb-3 sm:mb-4 px-2">A Very Oak Holiday Playlist</h2>
           </div>
 
           <div className="max-w-3xl mx-auto mb-6 sm:mb-8 text-center space-y-3 sm:space-y-4 px-4">
