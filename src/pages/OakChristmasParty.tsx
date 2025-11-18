@@ -10,6 +10,7 @@ import winterCityBackground from "@/assets/winter-city-background.png";
 import qrCodePlaylist from "@/assets/qr-code-playlist-placeholder.png";
 import christmasGiftScene from "@/assets/christmas-gift-scene.png";
 import christmasOrnamentsBackground from "@/assets/christmas-ornaments-background.png";
+import spotifyLogo from "@/assets/spotify-logo.png";
 
 const OakChristmasParty = () => {
   const [currentActivity, setCurrentActivity] = useState(0);
@@ -472,8 +473,12 @@ const OakChristmasParty = () => {
               rel="noopener noreferrer"
               className="group"
             >
-              <div className="bg-[#1DB954] hover:bg-[#1ed760] transition-all duration-300 rounded-full p-8 sm:p-12 shadow-lg hover:shadow-xl hover:scale-105">
-                <Music className="w-20 h-20 sm:w-28 sm:h-28 text-white" />
+              <div className="bg-[#1DB954] hover:bg-[#1ed760] transition-all duration-300 rounded-full p-8 sm:p-12 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center">
+                <img 
+                  src={spotifyLogo} 
+                  alt="Spotify" 
+                  className="w-20 h-20 sm:w-28 sm:h-28"
+                />
               </div>
               <p className="text-silver-mist text-base sm:text-lg mt-6 text-center">Click to Open Playlist on Spotify</p>
             </a>
