@@ -471,15 +471,13 @@ const OakChristmasParty = () => {
               href="https://open.spotify.com/playlist/68G9I3DSdR7ruELJcJ2i8j?si=9fSPUZ-2QsuUQY6H6z34cA&pi=0RDg25eyRSybR"
               target="_blank"
               rel="noopener noreferrer"
-              className="group"
+              className="group inline-block"
             >
-              <div className="bg-[#1DB954] hover:bg-[#1ed760] transition-all duration-300 rounded-full p-8 sm:p-12 shadow-lg hover:shadow-xl hover:scale-105 flex items-center justify-center">
-                <img 
-                  src={spotifyLogo} 
-                  alt="Spotify" 
-                  className="w-20 h-20 sm:w-28 sm:h-28"
-                />
-              </div>
+              <img 
+                src={spotifyLogo} 
+                alt="Spotify" 
+                className="w-32 h-32 sm:w-40 sm:h-40 transition-transform duration-300 hover:scale-110 mx-auto"
+              />
               <p className="text-silver-mist text-base sm:text-lg mt-6 text-center">Click to Open Playlist on Spotify</p>
             </a>
           </div>
