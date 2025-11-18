@@ -465,19 +465,19 @@ const OakChristmasParty = () => {
             </p>
           </div>
 
-          <Card className="max-w-md mx-auto bg-white/5 border-white/10 backdrop-blur-sm">
-            <CardContent className="p-6 sm:p-8 text-center">
-              <div className="bg-white p-4 sm:p-6 rounded-lg inline-block mb-4 sm:mb-6">
-                <img 
-                  src={qrCodePlaylist} 
-                  alt="Scan to access A Very Merry Oak Christmas Playlist" 
-                  className="w-48 h-48 sm:w-64 sm:h-64 object-contain mx-auto"
-                />
+          <div className="flex justify-center">
+            <a 
+              href="https://open.spotify.com/playlist/68G9I3DSdR7ruELJcJ2i8j?si=9fSPUZ-2QsuUQY6H6z34cA&pi=0RDg25eyRSybR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group"
+            >
+              <div className="bg-[#1DB954] hover:bg-[#1ed760] transition-all duration-300 rounded-full p-8 sm:p-12 shadow-lg hover:shadow-xl hover:scale-105">
+                <Music className="w-20 h-20 sm:w-28 sm:h-28 text-white" />
               </div>
-              <p className="text-silver-mist text-base sm:text-lg mb-2">Scan to Access Spotify Playlist</p>
-              <p className="text-slate-whisper text-sm sm:text-base">Available on Spotify, Apple Music, and YouTube</p>
-            </CardContent>
-          </Card>
+              <p className="text-silver-mist text-base sm:text-lg mt-6 text-center">Click to Open Playlist on Spotify</p>
+            </a>
+          </div>
         </div>
       </section>
 
