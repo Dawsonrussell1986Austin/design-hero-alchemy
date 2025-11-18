@@ -459,12 +459,9 @@ const OakChristmasParty = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-silver-mist mb-3 sm:mb-4 px-2">A Very Oak Holiday Playlist</h2>
           </div>
 
-          <div className="max-w-3xl mx-auto mb-6 sm:mb-8 text-center space-y-3 sm:space-y-4 px-4">
+          <div className="max-w-3xl mx-auto mb-6 sm:mb-8 text-center px-4">
             <p className="text-silver-mist text-base sm:text-lg font-body leading-relaxed">
-              We've created something special to add a little extra cheer to your stay.
-            </p>
-            <p className="text-silver-mist text-base sm:text-lg font-body leading-relaxed">
-              Scan the QR code below to listen to <span className="font-semibold text-gold-leaf">A Very Merry Oak Christmas</span> — a hand-picked playlist featuring some of our team's favorite holiday tunes. It's a mix of timeless classics and modern favorites to help you get in the holiday spirit.
+              Click below to listen to our Very Oak Holiday playlist on Spotify. Enjoy a selection of some of our team's favorite holiday tunes to help you get in the holiday spirit.
             </p>
           </div>
 
