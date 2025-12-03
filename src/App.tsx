@@ -60,6 +60,7 @@ import VideoPage from "./pages/VideoPage";
 import VideoCategory from "./pages/VideoCategory";
 import OakChristmasParty from "./pages/OakChristmasParty";
 import Blog from "./pages/Blog";
+import BlogPrivateCreditLendingGap from "./pages/BlogPrivateCreditLendingGap";
 
 function App() {
   return (
@@ -83,6 +84,7 @@ function App() {
         <Route path="/webinar-registration" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/private-credit-lending-gap" element={<BlogPrivateCreditLendingGap />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/subsidiaries" element={<OurSubsidiaries />} />
         <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
