@@ -8,25 +8,11 @@ import { Link } from "react-router-dom";
 const Blog = () => {
   const blogPosts = [
     {
-      title: "Understanding Bridge Loans in Commercial Real Estate",
-      excerpt: "Bridge loans serve as a crucial financing tool for real estate investors looking to capitalize on time-sensitive opportunities. Learn how these short-term solutions can bridge the gap in your investment strategy.",
-      date: "December 1, 2025",
+      title: "Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why",
+      excerpt: "Over the past eighteen months, the commercial real estate lending environment has shifted dramatically. Regional and mid-sized banks have pulled back more than $90B in commercial real estate lending since early 2023, creating a noticeable gap between borrower demand and traditional credit supply.",
+      date: "December 3, 2025",
       image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",
-      slug: ""
-    },
-    {
-      title: "The Benefits of Multifamily Investing in Today's Market",
-      excerpt: "Multifamily properties continue to offer stable returns and growth potential. Discover why experienced investors are focusing on this asset class and how to evaluate opportunities.",
-      date: "November 15, 2025",
-      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png",
-      slug: ""
-    },
-    {
-      title: "Navigating FHA/HUD Loan Programs for Apartment Buildings",
-      excerpt: "FHA and HUD loan programs offer attractive terms for multifamily property financing. This guide breaks down the requirements, benefits, and application process.",
-      date: "November 1, 2025",
-      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png",
-      slug: ""
+      slug: "private-credit-lending-gap"
     }
   ];
 
