@@ -59,6 +59,7 @@ import ThankYou from "./pages/ThankYou";
 import VideoPage from "./pages/VideoPage";
 import VideoCategory from "./pages/VideoCategory";
 import OakChristmasParty from "./pages/OakChristmasParty";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
@@ -81,6 +82,7 @@ function App() {
         <Route path="/webinars" element={<WebinarSelection />} />
         <Route path="/webinar-registration" element={<WebinarRegistration />} />
         <Route path="/news" element={<News />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/subsidiaries" element={<OurSubsidiaries />} />
         <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
