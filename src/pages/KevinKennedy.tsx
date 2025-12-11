@@ -35,7 +35,7 @@ const KevinKennedy = () => {
                   <img 
                     src="/lovable-uploads/kevin-kennedy-headshot.jpg"
                     alt="Kevin P. Kennedy"
-                    className="w-full h-full object-cover rounded-sm grayscale"
+                    className="w-full h-full object-cover object-top rounded-sm grayscale"
                   />
                 </div>
               </div>
