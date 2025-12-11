@@ -32,7 +32,7 @@ const ThomasMcGovern = () => {
               <div className="lg:col-span-1">
                 <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
-                    src="/lovable-uploads/8751a90a-69d4-476a-9989-f106bb73f3e5.png"
+                    src="/lovable-uploads/tom-mcgovern-headshot.jpg"
                     alt="Thomas A. McGovern"
                     className="w-full h-full object-cover rounded-sm filter grayscale"
                   />
