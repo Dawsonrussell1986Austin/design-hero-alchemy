@@ -45,7 +45,7 @@ const Leadership = () => {
     {
       name: "Kevin P. Kennedy",
       title: "Chief Sales and Distribution Officer",
-      image: "/lovable-uploads/5f9925fa-1749-4ea4-bbf1-0b7b03de1010.png",
+      image: "/lovable-uploads/kevin-kennedy-headshot.jpg",
       bio: "Kevin P. Kennedy is a Managing Principal and Chief Sales and Distribution officer with Red Oak Capital Holdings, responsible for capital acquisition, platform distribution and broker dealer-relationships for the firm's offerings."
     },
     {
@@ -195,7 +195,7 @@ const Leadership = () => {
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
-                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" ? "filter grayscale" : ""}`}
+                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" || leader.name === "Kevin P. Kennedy" ? "filter grayscale" : ""}`}
                       />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
