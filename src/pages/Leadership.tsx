@@ -39,7 +39,7 @@ const Leadership = () => {
     {
       name: "Thomas A. McGovern", 
       title: "Chief Financial Officer",
-      image: "/lovable-uploads/8751a90a-69d4-476a-9989-f106bb73f3e5.png",
+      image: "/lovable-uploads/tom-mcgovern-headshot.jpg",
       bio: "Thomas oversees all financial operations, reporting, and strategic financial planning to support Oak's continued growth and stability."
     },
     {
