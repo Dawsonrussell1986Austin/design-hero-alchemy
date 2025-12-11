@@ -34,7 +34,7 @@ const ThomasMcGovern = () => {
                   <img 
                     src="/lovable-uploads/tom-mcgovern-headshot.jpg"
                     alt="Thomas A. McGovern"
-                    className="w-full h-full object-cover object-top rounded-sm filter grayscale"
+                    className="w-full h-full object-cover object-[center_20%] rounded-sm filter grayscale"
                   />
                 </div>
               </div>
