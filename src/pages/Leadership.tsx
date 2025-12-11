@@ -195,7 +195,7 @@ const Leadership = () => {
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
-                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" || leader.name === "Kevin P. Kennedy" ? "filter grayscale" : ""}`}
+                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" || leader.name === "Kevin P. Kennedy" ? "filter grayscale" : ""} ${leader.name === "Kevin P. Kennedy" ? "object-top" : ""}`}
                       />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">
