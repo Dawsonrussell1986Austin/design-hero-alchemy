@@ -34,7 +34,7 @@ const MatthewWebster = () => {
                   <img 
                     src="/lovable-uploads/matt-webster-headshot.jpg"
                     alt="Matthew Webster"
-                    className="w-full h-full object-cover rounded-sm filter grayscale"
+                    className="w-full h-full object-cover object-top rounded-sm filter grayscale"
                   />
                 </div>
               </div>
