@@ -27,7 +27,7 @@ const Leadership = () => {
     {
       name: "Matthew Webster",
       title: "Executive Vice President / Chief Credit Officer", 
-      image: "/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png",
+      image: "/lovable-uploads/matt-webster-headshot.jpg",
       bio: "Matthew leads credit analysis and risk management, ensuring all lending decisions meet Oak's disciplined underwriting standards."
     },
     {
@@ -195,7 +195,7 @@ const Leadership = () => {
                       <img 
                         src={leader.image} 
                         alt={leader.name} 
-                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" || leader.name === "Kevin P. Kennedy" ? "filter grayscale" : ""} ${leader.name === "Kevin P. Kennedy" ? "object-top" : ""} ${leader.name === "Thomas A. McGovern" ? "object-[center_20%]" : ""}`}
+                        className={`w-full h-full object-cover rounded-sm ${leader.name === "Thomas A. McGovern" || leader.name === "Kevin P. Kennedy" || leader.name === "Matthew Webster" ? "filter grayscale" : ""} ${leader.name === "Kevin P. Kennedy" ? "object-top" : ""} ${leader.name === "Thomas A. McGovern" ? "object-[center_20%]" : ""}`}
                       />
                     ) : (
                       <div className="w-full h-full bg-silver-mist/10 rounded-sm flex items-center justify-center">

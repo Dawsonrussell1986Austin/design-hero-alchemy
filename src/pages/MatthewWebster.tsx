@@ -32,9 +32,9 @@ const MatthewWebster = () => {
               <div className="lg:col-span-1">
                 <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
-                    src="/lovable-uploads/f5a3bb32-821d-40e0-bf1d-c02e5a2e29a9.png"
+                    src="/lovable-uploads/matt-webster-headshot.jpg"
                     alt="Matthew Webster"
-                    className="w-full h-full object-cover rounded-sm"
+                    className="w-full h-full object-cover rounded-sm filter grayscale"
                   />
                 </div>
               </div>
