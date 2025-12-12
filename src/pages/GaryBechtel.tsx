@@ -32,9 +32,9 @@ const GaryBechtel = () => {
               <div className="lg:col-span-1">
                 <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
                   <img 
-                    src="/lovable-uploads/530fe815-0792-49e8-86f6-0355f22308eb.png"
+                    src="/lovable-uploads/gary-bechtel-headshot.jpg"
                     alt="Gary Bechtel"
-                    className="w-full h-full object-cover rounded-sm"
+                    className="w-full h-full object-cover rounded-sm filter grayscale"
                   />
                 </div>
               </div>
