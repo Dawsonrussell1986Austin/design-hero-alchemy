@@ -34,7 +34,7 @@ const GaryBechtel = () => {
                   <img 
                     src="/lovable-uploads/gary-bechtel-headshot.jpg"
                     alt="Gary Bechtel"
-                    className="w-full h-full object-cover rounded-sm filter grayscale"
+                    className="w-full h-full object-cover object-top rounded-sm filter grayscale"
                   />
                 </div>
               </div>
