@@ -1,4 +1,4 @@
-import { Shield } from "lucide-react";
+import { Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -19,6 +19,15 @@ const Footer = () => {
               <p className="text-silver-mist/80 leading-relaxed font-body max-w-md">
                 Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
               </p>
+              <a 
+                href="https://www.linkedin.com/company/oak-real-estate-partners/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-silver-mist/80 hover:text-accent-brown transition-colors font-body mt-4"
+              >
+                <Linkedin className="w-5 h-5" />
+                <span>Follow us</span>
+              </a>
             </div>
 
             {/* Quick Links */}
