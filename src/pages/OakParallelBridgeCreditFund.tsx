@@ -33,23 +33,9 @@ const OakParallelBridgeCreditFund = () => {
               <p className="text-deep-petrol font-body leading-relaxed">
                 As outlined in the Fund Administrator Transition letter, HC Global Fund Services is now the independent fund administrator for the Oak Funds effective January 1, 2026. HC Global will facilitate investor onboarding and the processing of subscription booklets and required documentation.
               </p>
-            </div>
-
-            <div className="space-y-4">
-              <h3 className="text-xl font-display font-medium text-obsidian">
-                Platform Availability
-              </h3>
               <p className="text-deep-petrol font-body leading-relaxed">
-                The Funds reside on both the Fidelity and Schwab platforms. Depending upon the account type, the subscription booklet can be accessed at the following links:
+                The Funds reside on both the Fidelity and Schwab platforms.
               </p>
-              <ul className="list-disc list-inside space-y-2 text-deep-petrol font-body">
-                <li>
-                  <strong>Oak Institutional Credit Solutions Subscription Booklet</strong> — Non-ERISA accounts including Foundations and Endowments, Insurance, Trust, taxable accounts, etc.
-                </li>
-                <li>
-                  <strong>Oak Parallel Bridge Credit Fund Subscription Booklet</strong> — ERISA accounts including public and corporate pension plans, IRAs and qualified accounts.
-                </li>
-              </ul>
             </div>
 
             {/* Download Section */}
