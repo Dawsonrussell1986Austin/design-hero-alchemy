@@ -43,29 +43,16 @@ const OakInstitutionalCreditSolutions = () => {
               <h3 className="text-xl font-display font-medium text-obsidian">
                 Download Subscription Documents
               </h3>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button
-                  size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
-                  asChild
-                >
-                  <a href="/documents/Oak_Institutional_Credit_Solutions_Subscription_Agreement.pdf" download>
-                    <FileDown className="mr-2 h-5 w-5" />
-                    Download PDF
-                  </a>
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium"
-                  asChild
-                >
-                  <a href="/documents/Oak_Institutional_Credit_Solutions_Subscription_Agreement.docx" download>
-                    <FileDown className="mr-2 h-5 w-5" />
-                    Download Word Document
-                  </a>
-                </Button>
-              </div>
+              <Button
+                size="lg"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
+                asChild
+              >
+                <a href="/documents/Oak_Institutional_Credit_Solutions_Subscription_Agreement.pdf" download>
+                  <FileDown className="mr-2 h-5 w-5" />
+                  Download PDF
+                </a>
+              </Button>
               <p className="text-sm text-deep-petrol/70 font-body">
                 Complete and upload the subscription booklet and required documentation to HC Global Fund Services team. Upload instructions will be provided upon request.
               </p>
