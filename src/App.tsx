@@ -62,6 +62,7 @@ import OakChristmasParty from "./pages/OakChristmasParty";
 import Blog from "./pages/Blog";
 import BlogPrivateCreditLendingGap from "./pages/BlogPrivateCreditLendingGap";
 import OakParallelBridgeCreditFund from "./pages/OakParallelBridgeCreditFund";
+import OakInstitutionalCreditSolutions from "./pages/OakInstitutionalCreditSolutions";
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
         <Route path="/video" element={<VideoPage />} />
         <Route path="/oak-christmas-party" element={<OakChristmasParty />} />
         <Route path="/oak-parallel-bridge-credit-fund" element={<OakParallelBridgeCreditFund />} />
+        <Route path="/oak-institutional-credit-solutions" element={<OakInstitutionalCreditSolutions />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
