@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import blogBuildingHero from "@/assets/blog-building-hero-collage.jpg";
+import blogBuildingHero from "@/assets/blog-building-collage.png";
 
 const Blog = () => {
   const blogPosts = [

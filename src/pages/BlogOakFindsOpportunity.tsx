@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import blogBuildingHero from "@/assets/blog-building-hero-collage.jpg";
+import blogBuildingHero from "@/assets/blog-building-collage.png";
 
 const BlogOakFindsOpportunity = () => {
   useEffect(() => {
