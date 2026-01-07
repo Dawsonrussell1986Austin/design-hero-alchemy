@@ -61,6 +61,7 @@ import VideoCategory from "./pages/VideoCategory";
 import OakChristmasParty from "./pages/OakChristmasParty";
 import Blog from "./pages/Blog";
 import BlogPrivateCreditLendingGap from "./pages/BlogPrivateCreditLendingGap";
+import BlogOakFindsOpportunity from "./pages/BlogOakFindsOpportunity";
 import OakParallelBridgeCreditFund from "./pages/OakParallelBridgeCreditFund";
 import OakInstitutionalCreditSolutions from "./pages/OakInstitutionalCreditSolutions";
 
@@ -87,6 +88,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/private-credit-lending-gap" element={<BlogPrivateCreditLendingGap />} />
+        <Route path="/blog/oak-finds-opportunity" element={<BlogOakFindsOpportunity />} />
         <Route path="/leadership" element={<Leadership />} />
         <Route path="/subsidiaries" element={<OurSubsidiaries />} />
         <Route path="/leadership/gary-bechtel" element={<GaryBechtel />} />
