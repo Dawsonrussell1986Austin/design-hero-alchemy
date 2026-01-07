@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import blogBuildingHero from "@/assets/blog-building-hero.jpg";
 
 const Blog = () => {
   const blogPosts = [
@@ -11,7 +12,7 @@ const Blog = () => {
       title: "How Oak Finds Opportunity Where Banks Can't",
       excerpt: "In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.",
       date: "January 7, 2026",
-      image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",
+      image: blogBuildingHero,
       slug: "oak-finds-opportunity"
     },
     {

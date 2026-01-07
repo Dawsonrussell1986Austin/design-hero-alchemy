@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import blogBuildingHero from "@/assets/blog-building-hero.jpg";
 
 const BlogOakFindsOpportunity = () => {
   useEffect(() => {
@@ -42,6 +43,15 @@ const BlogOakFindsOpportunity = () => {
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-obsidian leading-tight mb-8">
                 How Oak Finds Opportunity Where Banks Can't
               </h1>
+            </div>
+            
+            {/* Featured Image */}
+            <div className="aspect-[16/9] overflow-hidden rounded-2xl mb-12">
+              <img 
+                src={blogBuildingHero}
+                alt="Commercial Real Estate Building"
+                className="w-full h-full object-cover"
+              />
             </div>
             
             {/* Article Content */}
