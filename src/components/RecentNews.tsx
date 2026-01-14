@@ -1,29 +1,25 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import blogBuildingHero from "@/assets/blog-building-collage.png";
 
 const RecentNews = () => {
   const recentArticles = [
     {
-      title: "OAK CAPITAL HOLDINGS PROVIDES BRIDGE LOAN FOR PHILADELPHIA MIDRISE",
-      excerpt: "Oak Capital Holdings, LLC, has provided a $9.225-million bridge loan for the Ridge Avenue Apartments, a newly built residential community in Philadelphia.",
-      date: "May 6, 2025",
+      title: "How Oak Finds Opportunity Where Banks Can't",
+      excerpt: "In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.",
+      date: "January 7, 2026",
+      image: blogBuildingHero,
+      slug: "oak-finds-opportunity",
+      isBlog: true
+    },
+    {
+      title: "Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why",
+      excerpt: "Over the past eighteen months, the commercial real estate lending environment has shifted dramatically. Regional and mid-sized banks have pulled back more than $90B in commercial real estate lending since early 2023.",
+      date: "December 3, 2025",
       image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",
-      slug: "philadelphia-midrise"
-    },
-    {
-      title: "OAK CAPITAL PROVIDES $8.7M ACQUISITION LOAN FOR MULTIFAMILY PROPERTY",
-      excerpt: "EAST POINT, GA. — Oak Capital Holdings has provided an $8.7 million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
-      date: "May 2, 2025",
-      image: "/lovable-uploads/4d884eb1-b32f-41c8-99ea-cd282f2e9ee9.png",
-      slug: "atlanta-acquisition-loan"
-    },
-    {
-      title: "OAK CAPITAL HOLDINGS PROVIDES $8.65M FINANCING FOR THE ATLANTA",
-      excerpt: "Oak Capital Holdings, LLC, has closed an $8.65-million bridge loan for the acquisition and renovation of Garden Courts Apartments.",
-      date: "April 30, 2025",
-      image: "/lovable-uploads/cccb1c23-6fdc-45cd-b7fe-dec532603687.png",
-      slug: "atlanta-financing"
+      slug: "private-credit-lending-gap",
+      isBlog: true
     }
   ];
 
@@ -61,7 +57,7 @@ const RecentNews = () => {
                   <p className="text-deep-petrol leading-relaxed font-body text-sm mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
-                  <Link to={`/news/${article.slug}`}>
+                  <Link to={article.isBlog ? `/blog/${article.slug}` : `/news/${article.slug}`}>
                     <Button 
                       variant="outline"
                       size="sm"
