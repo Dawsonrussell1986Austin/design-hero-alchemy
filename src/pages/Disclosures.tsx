@@ -28,7 +28,7 @@ const Disclosures = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto prose prose-lg prose-slate">
               <p className="mb-8">
-                If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:info@oakrepartners.com" className="text-accent-brown hover:underline">info@oakrepartners.com</a>.
+                If you require any more information or have any questions about our site's disclaimer, please feel free to contact us by email at <a href="mailto:ir@oakrepartners.com" className="text-accent-brown hover:underline">ir@oakrepartners.com</a>.
               </p>
 
               <section className="mb-8">

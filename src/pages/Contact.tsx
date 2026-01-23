@@ -256,7 +256,7 @@ const Contact = () => {
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
                       <Mail className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-white mb-1">Email</h3>
-                      <a href="mailto:info@oakrepartners.com" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors break-all">info@oakrepartners.com</a>
+                      <a href="mailto:ir@oakrepartners.com" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors break-all">ir@oakrepartners.com</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
