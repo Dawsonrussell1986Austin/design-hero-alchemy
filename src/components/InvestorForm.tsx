@@ -2,12 +2,25 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
-import { trackFormSubmission } from "@/lib/gtm";
+import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
 
 const InvestorForm = () => {
   const handleSubmit = () => {
-    // Track form submission before it redirects
-    trackFormSubmission('investor_subscription', 'investors_page', true);
+    // Track form submission
+    trackFormSubmission('investor_inquiry_form', 'investors_page', true, {
+      form_type: 'investor_subscription',
+    });
+    
+    // Track as a conversion event for GTM
+    trackConversion('investor_lead', undefined, {
+      conversion_action: 'investor_form_submit',
+      page_location: window.location.href,
+    });
+    
+    // Track lead generation (GA4 recommended event)
+    trackLeadGeneration('investor_inquiry', 'investors_page', {
+      form_name: 'investor_subscription_form',
+    });
   };
 
   return (

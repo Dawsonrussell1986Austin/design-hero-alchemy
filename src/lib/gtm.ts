@@ -55,6 +55,39 @@ export const trackFormSubmission = (
 };
 
 /**
+ * Track conversion events (for high-value actions like lead forms)
+ */
+export const trackConversion = (
+  conversionType: string,
+  conversionValue?: number,
+  additionalData?: Record<string, unknown>
+) => {
+  pushToDataLayer({
+    event: 'conversion',
+    conversion_type: conversionType,
+    conversion_value: conversionValue,
+    ...additionalData,
+  });
+};
+
+/**
+ * Track lead generation events
+ */
+export const trackLeadGeneration = (
+  leadType: string,
+  leadSource: string,
+  additionalData?: Record<string, unknown>
+) => {
+  pushToDataLayer({
+    event: 'generate_lead',
+    lead_type: leadType,
+    lead_source: leadSource,
+    currency: 'USD',
+    ...additionalData,
+  });
+};
+
+/**
  * Track CTA clicks
  */
 export const trackCTAClick = (
