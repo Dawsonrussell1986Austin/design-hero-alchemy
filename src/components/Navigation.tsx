@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
+import { trackCTAClick } from "@/lib/gtm";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -218,7 +219,7 @@ const Navigation = () => {
           </div>
           
           {/* Desktop Contact Us Button */}
-          <a href="/contact">
+          <a href="/contact" onClick={() => trackCTAClick('Contact Us', '/contact', 'navigation_header')}>
             <Button 
               className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
                 scrolled 

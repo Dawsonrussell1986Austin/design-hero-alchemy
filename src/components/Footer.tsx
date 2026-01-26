@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import { trackExternalLink, trackCTAClick } from "@/lib/gtm";
 
 const Footer = () => {
   return (
@@ -24,6 +25,7 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-silver-mist/80 hover:text-accent-brown transition-colors font-body mt-4"
+                onClick={() => trackExternalLink('https://www.linkedin.com/company/oak-real-estate-partners/', 'Follow us on LinkedIn', 'footer')}
               >
                 <Linkedin className="w-5 h-5" />
                 <span>Follow us</span>

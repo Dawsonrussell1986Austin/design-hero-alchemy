@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
@@ -37,7 +38,7 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_1s_forwards]">
-              <Link to="/lending">
+              <Link to="/lending" onClick={() => trackCTAClick('Borrowers', '/lending', 'hero_section')}>
                 <Button 
                   size="lg" 
                   className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-accent-brown/20"
@@ -46,7 +47,7 @@ const HeroSection = () => {
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link to="/whyoak">
+              <Link to="/whyoak" onClick={() => trackCTAClick('Why Oak', '/whyoak', 'hero_section')}>
                 <Button 
                   size="lg" 
                   variant="outline"

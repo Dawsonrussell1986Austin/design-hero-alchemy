@@ -2,8 +2,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
+import { trackFormSubmission } from "@/lib/gtm";
 
 const InvestorForm = () => {
+  const handleSubmit = () => {
+    // Track form submission before it redirects
+    trackFormSubmission('investor_subscription', 'investors_page', true);
+  };
 
   return (
     <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-10">
@@ -18,6 +23,7 @@ const InvestorForm = () => {
         action="http://go.oakrepartners.com/l/1105131/2025-10-20/b4kkx7"
         method="post"
         className="space-y-6"
+        onSubmit={handleSubmit}
       >
         <div className="space-y-2">
           <Label htmlFor="first_name" className="text-obsidian font-body font-medium">
