@@ -9,7 +9,7 @@ import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { trackFormSubmission } from "@/lib/gtm";
+import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
 
 const contactSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(100),
@@ -65,6 +65,18 @@ const Contact = () => {
       trackFormSubmission('contact_form', 'contact_page', true, {
         has_company: !!validatedData.company,
         has_phone: !!validatedData.phone,
+      });
+
+      // Track as a conversion event for GTM
+      trackConversion('contact_lead', undefined, {
+        conversion_action: 'contact_form_submit',
+        page_location: window.location.href,
+      });
+
+      // Track lead generation (GA4 recommended event)
+      trackLeadGeneration('contact_inquiry', 'contact_page', {
+        form_name: 'contact_form',
+        has_company: !!validatedData.company,
       });
 
       // Show success message
