@@ -9,6 +9,7 @@ import { useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
+import { trackFormSubmission } from "@/lib/gtm";
 
 const contactSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(100),
@@ -60,6 +61,12 @@ const Contact = () => {
 
       if (error) throw error;
 
+      // Track successful form submission
+      trackFormSubmission('contact_form', 'contact_page', true, {
+        has_company: !!validatedData.company,
+        has_phone: !!validatedData.phone,
+      });
+
       // Show success message
       toast({
         title: "Message sent!",
@@ -76,6 +83,11 @@ const Contact = () => {
         message: "",
       });
     } catch (error) {
+      // Track failed form submission
+      trackFormSubmission('contact_form', 'contact_page', false, {
+        error_type: error instanceof z.ZodError ? 'validation' : 'submission',
+      });
+
       if (error instanceof z.ZodError) {
         toast({
           title: "Validation Error",
