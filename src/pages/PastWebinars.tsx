@@ -26,14 +26,13 @@ interface PastWebinar {
 
 // Add past webinars here as they become available
 const pastWebinars: PastWebinar[] = [
-  // Example structure:
-  // {
-  //   id: "webinar-jan-2025",
-  //   title: "Q4 2024 Investor Update",
-  //   date: "January 15, 2025",
-  //   description: "Quarterly update covering portfolio performance, market outlook, and investment opportunities.",
-  //   mediaId: "your-wistia-media-id",
-  // },
+  {
+    id: "special-situation-cre-jan-2026",
+    title: "Special Situation Commercial Real Estate",
+    date: "January 8, 2026",
+    description: "Oak President and Chief Strategy Officer Ray Davis. Not distressed. Not speculative. Just good real estate going through change. That's the core of special situation commercial real estate — and it's where Oak Real Estate Partners has built its platform.",
+    mediaId: "ol7nphf8a0",
+  },
 ];
 
 const PastWebinars = () => {
