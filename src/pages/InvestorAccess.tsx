@@ -5,7 +5,8 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
-import { CheckCircle, FileText, Bell, Calendar, Shield } from "lucide-react";
+import { FileText, Bell, Calendar, Shield } from "lucide-react";
+import Navigation from "@/components/Navigation";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
@@ -69,19 +70,10 @@ const InvestorAccess = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-obsidian to-obsidian/95">
-      {/* Header */}
-      <header className="py-6 px-6 border-b border-white/10">
-        <div className="max-w-7xl mx-auto">
-          <img 
-            src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
-            alt="Oak Real Estate Partners" 
-            className="h-12 w-auto"
-          />
-        </div>
-      </header>
-
+      <Navigation />
+      
       {/* Main Content */}
-      <main className="py-12 px-6">
+      <main className="pt-28 pb-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             
