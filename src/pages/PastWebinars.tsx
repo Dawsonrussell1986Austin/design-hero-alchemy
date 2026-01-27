@@ -30,7 +30,7 @@ const pastWebinars: PastWebinar[] = [
     id: "special-situation-cre-jan-2026",
     title: "Special Situation Commercial Real Estate",
     date: "January 8, 2026",
-    description: "Oak President and Chief Strategy Officer Ray Davis. Not distressed. Not speculative. Just good real estate going through change. That's the core of special situation commercial real estate — and it's where Oak Real Estate Partners has built its platform.",
+    description: "Oak President and Chief Strategy Officer Ray Davis discusses special situation commercial real estate. Not distressed. Not speculative. Just good real estate going through change. That's the core of special situation commercial real estate, and it's where Oak Real Estate Partners has built its platform.",
     mediaId: "ol7nphf8a0",
   },
 ];
