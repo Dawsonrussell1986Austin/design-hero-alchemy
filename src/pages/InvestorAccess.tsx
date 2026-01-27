@@ -73,7 +73,7 @@ const InvestorAccess = () => {
       <header className="py-6 px-6 border-b border-white/10">
         <div className="max-w-7xl mx-auto">
           <img 
-            src="/lovable-uploads/3f7ab0a5-d3f1-4ab9-9bc2-cc1a61cfae08.png" 
+            src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png" 
             alt="Oak Real Estate Partners" 
             className="h-12 w-auto"
           />
