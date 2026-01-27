@@ -1,0 +1,251 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { useToast } from "@/hooks/use-toast";
+import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
+import { CheckCircle, FileText, Bell, Calendar, Shield } from "lucide-react";
+
+const US_STATES = [
+  "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
+  "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
+  "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi",
+  "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico",
+  "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
+  "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
+  "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming", "District of Columbia"
+];
+
+const InvestorAccess = () => {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    state: "",
+    phone: ""
+  });
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Track form submission
+    trackFormSubmission('investor_access_form', 'investor_access_page', true, {
+      form_type: 'dtc_investor_registration',
+    });
+
+    // Track as a conversion event
+    trackConversion('investor_portal_registration', undefined, {
+      conversion_action: 'dtc_investor_register',
+      page_location: window.location.href,
+    });
+
+    // Track lead generation
+    trackLeadGeneration('investor_portal', 'investor_access_page', {
+      form_name: 'dtc_investor_registration_form',
+    });
+
+    // Simulate form submission
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    toast({
+      title: "Registration Submitted",
+      description: "Thank you for registering. We will be in touch shortly.",
+    });
+
+    setIsSubmitting(false);
+    setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
+  };
+
+  const benefits = [
+    { icon: FileText, text: "Distribution notices and tax documents" },
+    { icon: Bell, text: "Important fund updates and required shareholder communications" },
+    { icon: Shield, text: "Access to offering documents, PPMs, financial reports, and statements" },
+    { icon: Calendar, text: "Time-sensitive information that may relate to liquidity, elections, or fund actions" },
+  ];
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-obsidian to-obsidian/95">
+      {/* Header */}
+      <header className="py-6 px-6 border-b border-white/10">
+        <div className="max-w-7xl mx-auto">
+          <img 
+            src="/lovable-uploads/3f7ab0a5-d3f1-4ab9-9bc2-cc1a61cfae08.png" 
+            alt="Oak Real Estate Partners" 
+            className="h-12 w-auto"
+          />
+        </div>
+      </header>
+
+      {/* Main Content */}
+      <main className="py-12 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            
+            {/* Left Column - Form */}
+            <div className="bg-white rounded-2xl shadow-2xl p-8 lg:p-10">
+              <h1 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-6">
+                Investor Portal Registration
+              </h1>
+              
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName" className="text-obsidian font-body font-medium">
+                      First Name <span className="text-accent-brown">*</span>
+                    </Label>
+                    <Input
+                      type="text"
+                      id="firstName"
+                      value={formData.firstName}
+                      onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
+                      placeholder="First name"
+                      required
+                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="lastName" className="text-obsidian font-body font-medium">
+                      Last Name <span className="text-accent-brown">*</span>
+                    </Label>
+                    <Input
+                      type="text"
+                      id="lastName"
+                      value={formData.lastName}
+                      onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
+                      placeholder="Last name"
+                      required
+                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-obsidian font-body font-medium">
+                    Email Address <span className="text-accent-brown">*</span>
+                  </Label>
+                  <Input
+                    type="email"
+                    id="email"
+                    value={formData.email}
+                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                    placeholder="your@email.com"
+                    required
+                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="state" className="text-obsidian font-body font-medium">
+                    State <span className="text-accent-brown">*</span>
+                  </Label>
+                  <Select 
+                    value={formData.state} 
+                    onValueChange={(value) => setFormData(prev => ({ ...prev, state: value }))}
+                    required
+                  >
+                    <SelectTrigger className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
+                      <SelectValue placeholder="Select your state" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {US_STATES.map((state) => (
+                        <SelectItem key={state} value={state}>
+                          {state}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-obsidian font-body font-medium">
+                    Phone Number <span className="text-accent-brown">*</span>
+                  </Label>
+                  <Input
+                    type="tel"
+                    id="phone"
+                    value={formData.phone}
+                    onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
+                    placeholder="(555) 123-4567"
+                    required
+                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 text-base mt-6"
+                >
+                  {isSubmitting ? "Submitting..." : "Register for Portal Access"}
+                </Button>
+              </form>
+            </div>
+
+            {/* Right Column - Message */}
+            <div className="text-white space-y-8">
+              <div className="space-y-6">
+                <h2 className="text-xl lg:text-2xl font-display font-medium text-white/90">
+                  Important Information for DTC Investors
+                </h2>
+                
+                <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
+                  <p className="text-white/80 font-body leading-relaxed">
+                    Because your investment was made through a custodial bank or broker account and 
+                    processed via the Depository Trust Corporation ("DTC"), we do not receive your 
+                    individual contact details directly.
+                  </p>
+                  <p className="text-white/80 font-body leading-relaxed mt-4">
+                    As a result, we are unable to provide you with account-specific information 
+                    unless you register for the portal.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <h3 className="text-lg font-display font-medium text-accent-brown">
+                  Why Registration Is Important
+                </h3>
+                
+                <p className="text-white/70 font-body leading-relaxed">
+                  In recent months, we've identified several cases where investors holding through 
+                  a bank or broker account did not receive essential communications related to 
+                  their investments.
+                </p>
+
+                <p className="text-white/80 font-body leading-relaxed">
+                  Registering for the Oak Investor Portal ensures you receive:
+                </p>
+
+                <ul className="space-y-4">
+                  {benefits.map((benefit, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent-brown/20 flex items-center justify-center mt-0.5">
+                        <benefit.icon className="w-4 h-4 text-accent-brown" />
+                      </div>
+                      <span className="text-white/80 font-body">{benefit.text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="py-8 px-6 border-t border-white/10 mt-12">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-white/50 text-sm font-body">
+            © {new Date().getFullYear()} Oak Real Estate Partners. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default InvestorAccess;
