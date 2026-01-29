@@ -2,10 +2,21 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 
 const Lending = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Commercial Real Estate Lending"
+        description="Oak Real Estate Partners offers bridge loans and HUD/FHA financing for commercial real estate. Senior secured loans backed by income-producing properties."
+        canonicalUrl="/lending"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Lending', url: '/lending' }
+      ]} />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

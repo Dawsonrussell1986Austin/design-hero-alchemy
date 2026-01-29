@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import SEOHead from "@/components/SEOHead";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const BlogPrivateCreditLendingGap = () => {
   useEffect(() => {
@@ -13,6 +15,27 @@ const BlogPrivateCreditLendingGap = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="Private Credit's Role in the Current Lending Gap"
+        description="Explore how private credit is expanding to fill the lending gap left by traditional banks, and why special situation commercial real estate offers unique opportunities."
+        canonicalUrl="/blog/private-credit-lending-gap"
+        ogType="article"
+        article={{
+          publishedTime: "2025-12-03",
+          author: "Oak Real Estate Partners"
+        }}
+      />
+      <ArticleSchema
+        headline="Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why"
+        description="Explore how private credit is expanding to fill the lending gap left by traditional banks."
+        datePublished="2025-12-03"
+        url="/blog/private-credit-lending-gap"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Blog', url: '/blog' },
+        { name: 'Private Credit Lending Gap', url: '/blog/private-credit-lending-gap' }
+      ]} />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

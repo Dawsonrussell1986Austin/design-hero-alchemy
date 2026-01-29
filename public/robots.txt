@@ -1,8 +1,13 @@
+# Robots.txt for Oak Real Estate Partners
+# https://oakrealestatepartners.com
+
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -10,5 +15,19 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
 User-agent: *
 Allow: /
+Crawl-delay: 2
+
+# Sitemap location
+Sitemap: https://oakrealestatepartners.com/sitemap.xml
+
+# Disallow admin/internal pages
+Disallow: /homepage-draft
+Disallow: /homepage-draft-2
+Disallow: /past-webinars
+Disallow: /oak-christmas-party
+Disallow: /investor-access
