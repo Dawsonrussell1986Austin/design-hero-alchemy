@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import blogBuildingHero from "@/assets/blog-building-collage.png";
+import SEOHead from "@/components/SEOHead";
+import { OrganizationSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Blog = () => {
   const blogPosts = [
@@ -26,6 +28,18 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Blog - Insights & Articles"
+        description="Expert insights on commercial real estate lending, private credit strategies, and market trends from Oak Real Estate Partners. Articles on bridge loans, HUD financing, and investment opportunities."
+        canonicalUrl="/blog"
+      />
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Blog', url: 'https://oakrealestatepartners.com/blog' }
+        ]}
+      />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

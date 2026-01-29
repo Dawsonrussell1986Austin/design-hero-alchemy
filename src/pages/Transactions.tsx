@@ -7,6 +7,8 @@ import { featuredTransactions } from "@/data/transactions";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Building, MapPin, DollarSign, Filter } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Transactions = () => {
   const [filteredTransactions, setFilteredTransactions] = useState(featuredTransactions);
@@ -170,6 +172,18 @@ const Transactions = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Transaction Portfolio"
+        description="Oak Real Estate Partners transaction history. Browse our portfolio of commercial real estate loans across multifamily, industrial, office, retail, and healthcare properties nationwide."
+        canonicalUrl="/transactions"
+      />
+      <FinancialServiceSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Transactions', url: 'https://oakrealestatepartners.com/transactions' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

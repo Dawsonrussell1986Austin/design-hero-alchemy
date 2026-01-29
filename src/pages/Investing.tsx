@@ -3,10 +3,24 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Shield, BarChart3, DollarSign, Target, MapPin } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Investing = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Investment Offerings"
+        description="Strategic investment solutions from Oak Real Estate Partners. Institutional-quality private credit opportunities with transparent structures and professional management."
+        canonicalUrl="/investing"
+      />
+      <FinancialServiceSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Investing', url: 'https://oakrealestatepartners.com/investing' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

@@ -3,11 +3,19 @@ import { Building2, TrendingUp, FileText } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import InvestorForm from "@/components/InvestorForm";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema } from "@/components/StructuredData";
 
 const Investors = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <SEOHead
+        title="Investor Portal"
+        description="Oak Real Estate Partners investor portal. Stay updated with monthly calls, transparent reporting, and senior-position commercial real estate lending strategies."
+        canonicalUrl="/investors"
+      />
+      <FinancialServiceSchema />
       <Navigation />
       
       {/* Hero Section */}

@@ -1,10 +1,16 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
+import SEOHead from "@/components/SEOHead";
 
 const Disclosures = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Disclosures"
+        description="Oak Real Estate Partners disclosures and disclaimers. Important regulatory and legal information for investors."
+        canonicalUrl="/disclosures"
+      />
       <Navigation />
       
       <main className="flex-1">

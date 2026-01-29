@@ -1,10 +1,16 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
+import SEOHead from "@/components/SEOHead";
 
 const Privacy = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Privacy Policy"
+        description="Oak Real Estate Partners privacy policy. Learn how we collect, use, and protect your personal information."
+        canonicalUrl="/privacy"
+      />
       <Navigation />
       
       <main className="flex-1">

@@ -3,10 +3,24 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Shield, TrendingUp, DollarSign, Award, BarChart3, Lock, Activity, Target, Building, CreditCard, Settings } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Investments = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Why Oak - Investment Platform"
+        description="Oak Real Estate Partners' investment platform built for performance. First-lien senior loans, short-duration debt strategies, and institutional-quality commercial real estate credit."
+        canonicalUrl="/investments"
+      />
+      <FinancialServiceSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Why Oak', url: 'https://oakrealestatepartners.com/investments' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

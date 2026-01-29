@@ -1,6 +1,7 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 const NotFound = () => {
   const location = useLocation();
@@ -14,6 +15,11 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">
+      <SEOHead
+        title="Page Not Found"
+        description="The page you're looking for doesn't exist or has been moved."
+        noIndex={true}
+      />
       <div className="text-center space-y-6 px-4">
         <div className="space-y-2">
           <h1 className="text-6xl font-bold text-primary">404</h1>

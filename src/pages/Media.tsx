@@ -2,10 +2,17 @@ import SimplePageHeader from "@/components/SimplePageHeader";
 import emailBanner from "@/assets/email-banner.png";
 import emailBanner2 from "@/assets/email-banner-2.png";
 import thumbnail from "@/assets/thumbnail.png";
+import SEOHead from "@/components/SEOHead";
 
 const Media = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Media Resources"
+        description="Oak Real Estate Partners media resources, press materials, and brand assets for journalists and partners."
+        canonicalUrl="/media"
+        noIndex={true}
+      />
       <SimplePageHeader title="Media" />
       <div className="container mx-auto px-6 py-12">
         <div className="max-w-4xl mx-auto space-y-8">

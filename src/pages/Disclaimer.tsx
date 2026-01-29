@@ -1,10 +1,16 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
+import SEOHead from "@/components/SEOHead";
 
 const Disclaimer = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Disclaimer"
+        description="Oak Real Estate Partners website disclaimer. Important information about the use of content on our website."
+        canonicalUrl="/disclaimer"
+      />
       <Navigation />
       
       <main className="flex-1">
