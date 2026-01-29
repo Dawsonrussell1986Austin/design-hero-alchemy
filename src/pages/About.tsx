@@ -3,10 +3,21 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { Shield, TrendingDown, BarChart, Building2, DollarSign, ShieldCheck, Activity, RotateCcw, TrendingUp } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead 
+        title="About Us"
+        description="Oak Real Estate Partners combines institutional discipline with private credit lending expertise. Over 150 years combined experience and $18B+ in total transactions."
+        canonicalUrl="/about"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'About Us', url: '/about' }
+      ]} />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

@@ -10,6 +10,8 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
+import SEOHead from "@/components/SEOHead";
+import { BreadcrumbSchema } from "@/components/StructuredData";
 
 const contactSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(100),
@@ -120,6 +122,15 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-silver-mist">
+      <SEOHead 
+        title="Contact Us"
+        description="Get in touch with Oak Real Estate Partners. Contact our team for commercial real estate lending inquiries, bridge loans, and HUD financing questions."
+        canonicalUrl="/contact"
+      />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Contact', url: '/contact' }
+      ]} />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />
