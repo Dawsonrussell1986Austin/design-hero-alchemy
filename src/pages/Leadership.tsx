@@ -2,7 +2,8 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-
+import SEOHead from "@/components/SEOHead";
+import { OrganizationSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const Leadership = () => {
   const leadershipTeam = [
@@ -58,6 +59,18 @@ const Leadership = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Leadership Team"
+        description="Meet Oak Real Estate Partners' experienced leadership team with $18B+ in transaction experience. Executives in commercial real estate lending, investment management, and strategic development."
+        canonicalUrl="/leadership"
+      />
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Leadership', url: 'https://oakrealestatepartners.com/leadership' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

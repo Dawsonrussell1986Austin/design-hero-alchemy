@@ -5,6 +5,8 @@ import SimplePageHeader from "@/components/SimplePageHeader";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
+import { OrganizationSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const News = () => {
   const newsArticles = [
@@ -75,6 +77,18 @@ const News = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="News & Announcements"
+        description="Latest news and announcements from Oak Real Estate Partners. Stay updated on transactions, market insights, and company developments in commercial real estate lending."
+        canonicalUrl="/news"
+      />
+      <OrganizationSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'News', url: 'https://oakrealestatepartners.com/news' }
+        ]}
+      />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

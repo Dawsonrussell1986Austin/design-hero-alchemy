@@ -1,10 +1,16 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Breadcrumb from "../components/Breadcrumb";
+import SEOHead from "@/components/SEOHead";
 
 const Terms = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title="Terms of Service"
+        description="Oak Real Estate Partners terms of service. Read the terms and conditions governing use of our website."
+        canonicalUrl="/terms"
+      />
       <Navigation />
       
       <main className="flex-1">

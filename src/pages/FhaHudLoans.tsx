@@ -2,10 +2,25 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const FhaHudLoans = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="FHA/HUD Loan Programs"
+        description="FHA/HUD insured financing from Johnson Capital Multifamily. Long-term government-backed loans for multifamily, affordable housing, senior living, and healthcare properties."
+        canonicalUrl="/lending/fha-hud"
+      />
+      <FinancialServiceSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Lending', url: 'https://oakrealestatepartners.com/lending' },
+          { name: 'FHA/HUD Loans', url: 'https://oakrealestatepartners.com/lending/fha-hud' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

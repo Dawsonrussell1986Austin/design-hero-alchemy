@@ -6,6 +6,8 @@ import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import blogBuildingHero from "@/assets/blog-building-collage.png";
+import SEOHead from "@/components/SEOHead";
+import { ArticleSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const BlogOakFindsOpportunity = () => {
   useEffect(() => {
@@ -14,6 +16,30 @@ const BlogOakFindsOpportunity = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="How Oak Finds Opportunity Where Banks Can't"
+        description="Learn how Oak Real Estate Partners finds compelling investment opportunities in transitional commercial real estate. Special situation assets, conservative lending, and capital protection strategies."
+        canonicalUrl="/blog/oak-finds-opportunity"
+        ogType="article"
+        article={{
+          publishedTime: '2026-01-07',
+          author: 'Oak Real Estate Partners'
+        }}
+      />
+      <ArticleSchema
+        headline="How Oak Finds Opportunity Where Banks Can't"
+        description="In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition."
+        datePublished="2026-01-07"
+        author="Oak Real Estate Partners"
+        url="/blog/oak-finds-opportunity"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Blog', url: 'https://oakrealestatepartners.com/blog' },
+          { name: 'How Oak Finds Opportunity', url: 'https://oakrealestatepartners.com/blog/oak-finds-opportunity' }
+        ]}
+      />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

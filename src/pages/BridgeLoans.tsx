@@ -2,10 +2,25 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
+import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
 const BridgeLoans = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Bridge Loans - Short-Term CRE Financing"
+        description="Commercial real estate bridge loans from Oak Real Estate Partners. Core, Core-Plus, Opportunistic, and Participating bridge programs for acquisition, renovation, and stabilization."
+        canonicalUrl="/lending/bridge"
+      />
+      <FinancialServiceSchema />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Lending', url: 'https://oakrealestatepartners.com/lending' },
+          { name: 'Bridge Loans', url: 'https://oakrealestatepartners.com/lending/bridge' }
+        ]}
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
         <Navigation />

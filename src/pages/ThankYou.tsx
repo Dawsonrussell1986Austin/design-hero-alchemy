@@ -3,12 +3,18 @@ import { Check } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const ThankYou = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-silver-mist to-white">
+      <SEOHead
+        title="Thank You"
+        description="Thank you for your interest in Oak Real Estate Partners. We'll be in touch soon."
+        noIndex={true}
+      />
       <Navigation />
       
       <main className="flex-1 flex items-center justify-center px-4 py-16">
