@@ -134,6 +134,36 @@ export type Database = {
         }
         Relationships: []
       }
+      investor_access_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          phone: string
+          state: string
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          phone: string
+          state: string
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          phone?: string
+          state?: string
+        }
+        Relationships: []
+      }
       investor_leads: {
         Row: {
           company: string | null
