@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import { supabase } from "@/integrations/supabase/client";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
@@ -49,16 +50,40 @@ const InvestorAccess = () => {
       form_name: 'dtc_investor_registration_form',
     });
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    try {
+      // Submit to edge function which sends to Google Sheets
+      const { data, error } = await supabase.functions.invoke('submit-investor-access', {
+        body: formData,
+      });
 
-    toast({
-      title: "Registration Submitted",
-      description: "Thank you for registering. We will be in touch shortly.",
-    });
+      if (error) {
+        console.error('Error submitting form:', error);
+        toast({
+          title: "Submission Error",
+          description: "There was an error submitting your registration. Please try again.",
+          variant: "destructive",
+        });
+        setIsSubmitting(false);
+        return;
+      }
 
-    setIsSubmitting(false);
-    setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
+      console.log('Form submission successful:', data);
+      toast({
+        title: "Registration Submitted",
+        description: "Thank you for registering. We will be in touch shortly.",
+      });
+
+      setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Submission Error",
+        description: "There was an error submitting your registration. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const benefits = [
