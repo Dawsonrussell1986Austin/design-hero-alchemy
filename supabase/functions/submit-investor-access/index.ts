@@ -21,31 +21,65 @@ serve(async (req) => {
   }
 
   try {
-    const supabaseUrl = Deno.env.get('SUPABASE_URL')!;
-    const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
-    
-    const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
     const data: InvestorAccessData = await req.json();
     console.log('Received investor access submission:', data);
 
-    // Insert into Supabase
-    const { error } = await supabase
-      .from('investor_access_submissions')
-      .insert({
-        first_name: data.firstName,
-        last_name: data.lastName,
-        email: data.email,
-        state: data.state,
-        phone: data.phone,
-      });
-
-    if (error) {
-      console.error('Supabase insert error:', error);
-      throw new Error(`Failed to save submission: ${error.message}`);
+    const zapierWebhook = Deno.env.get('ZAPIER_INVESTOR_ACCESS_WEBHOOK');
+    if (!zapierWebhook) {
+      throw new Error('ZAPIER_INVESTOR_ACCESS_WEBHOOK is not configured');
     }
 
-    console.log('Successfully saved investor access submission');
+    // Send to Zapier webhook
+    const zapierPayload = {
+      timestamp: new Date().toISOString(),
+      first_name: data.firstName,
+      last_name: data.lastName,
+      email: data.email,
+      state: data.state,
+      phone: data.phone,
+    };
+
+    console.log('Sending to Zapier:', zapierPayload);
+
+    const zapierResponse = await fetch(zapierWebhook, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(zapierPayload),
+    });
+
+    if (!zapierResponse.ok) {
+      const errorText = await zapierResponse.text();
+      console.error('Zapier webhook error:', zapierResponse.status, errorText);
+      throw new Error(`Zapier webhook failed: ${zapierResponse.status}`);
+    }
+
+    console.log('Successfully sent to Zapier');
+
+    // Also save to Supabase as backup
+    const supabaseUrl = Deno.env.get('SUPABASE_URL');
+    const supabaseServiceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
+    
+    if (supabaseUrl && supabaseServiceKey) {
+      const supabase = createClient(supabaseUrl, supabaseServiceKey);
+      const { error } = await supabase
+        .from('investor_access_submissions')
+        .insert({
+          first_name: data.firstName,
+          last_name: data.lastName,
+          email: data.email,
+          state: data.state,
+          phone: data.phone,
+        });
+
+      if (error) {
+        console.error('Supabase backup insert error:', error);
+        // Don't throw - Zapier already succeeded
+      } else {
+        console.log('Also saved to Supabase as backup');
+      }
+    }
 
     return new Response(
       JSON.stringify({ success: true, message: 'Submission recorded successfully' }),
