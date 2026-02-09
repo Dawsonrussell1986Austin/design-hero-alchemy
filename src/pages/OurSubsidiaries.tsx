@@ -215,14 +215,12 @@ const OurSubsidiaries = () => {
                     <div className="text-center">
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                          <img 
-                            src="/lovable-uploads/1747f8f3-160f-49d4-b713-dd72be51d004.png" 
-                            alt="Mac Culbertson" 
-                            className="w-full h-full object-cover"
-                          />
+                          <div className="w-full h-full bg-graphite-fog/30 flex items-center justify-center">
+                            <span className="text-deep-petrol/40 text-4xl font-display">KS</span>
+                          </div>
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Mac Culbertson</h4>
-                        <p className="text-sm text-deep-petrol mb-4">ANALYST</p>
+                        <h4 className="font-bold text-obsidian mb-2">Kate Smith</h4>
+                        <p className="text-sm text-deep-petrol mb-4">SR. CRE ANALYST</p>
                       </div>
                     </div>
                   </div>
