@@ -16,6 +16,11 @@ const InvestorForm = () => {
       conversion_action: 'investor_form_submit',
       page_location: window.location.href,
     });
+
+    // Track Meta Pixel Lead conversion
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', { content_name: 'investor_inquiry_form' });
+    }
     
     // Track lead generation (GA4 recommended event)
     trackLeadGeneration('investor_inquiry', 'investors_page', {

@@ -75,6 +75,11 @@ const Contact = () => {
         page_location: window.location.href,
       });
 
+      // Track Meta Pixel Lead conversion
+      if (typeof window !== 'undefined' && (window as any).fbq) {
+        (window as any).fbq('track', 'Lead', { content_name: 'contact_form' });
+      }
+
       // Track lead generation (GA4 recommended event)
       trackLeadGeneration('contact_inquiry', 'contact_page', {
         form_name: 'contact_form',
