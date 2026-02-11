@@ -45,6 +45,11 @@ const InvestorAccess = () => {
       page_location: window.location.href,
     });
 
+    // Track Meta Pixel Lead conversion
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead', { content_name: 'investor_access_form' });
+    }
+
     // Track lead generation
     trackLeadGeneration('investor_portal', 'investor_access_page', {
       form_name: 'dtc_investor_registration_form',
