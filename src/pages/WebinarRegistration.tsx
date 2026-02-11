@@ -94,7 +94,29 @@ const WebinarRegistration = () => {
     script.async = true;
     document.body.appendChild(script);
 
+    // Listen for Demio form submissions to track as Facebook Pixel Lead
+    const handleDemioSubmit = () => {
+      if ((window as any).fbq) {
+        (window as any).fbq('track', 'Lead', { content_name: 'webinar_registration' });
+      }
+    };
+
+    // Poll for Demio form to appear and attach listener
+    const interval = setInterval(() => {
+      const form = document.querySelector('.demio-registration-form');
+      if (form && !form.getAttribute('data-fb-tracked')) {
+        form.setAttribute('data-fb-tracked', 'true');
+        form.addEventListener('submit', handleDemioSubmit);
+        clearInterval(interval);
+      }
+    }, 1000);
+
     return () => {
+      clearInterval(interval);
+      const form = document.querySelector('.demio-registration-form');
+      if (form) {
+        form.removeEventListener('submit', handleDemioSubmit);
+      }
       // Cleanup script on unmount
       const existingScript = document.getElementById('demio-js');
       if (existingScript) {
