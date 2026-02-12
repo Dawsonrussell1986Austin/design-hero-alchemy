@@ -99,6 +99,10 @@ const WebinarRegistration = () => {
       if ((window as any).fbq) {
         (window as any).fbq('track', 'Lead', { content_name: 'webinar_registration' });
       }
+      // Google Ads conversion event
+      if ((window as any).gtag) {
+        (window as any).gtag('event', 'conversion_event_submit_lead_form');
+      }
     };
 
     // Poll for Demio form to appear and attach listener
