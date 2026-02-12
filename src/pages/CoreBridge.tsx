@@ -14,6 +14,10 @@ const CoreBridge = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email && name) {
+      // Google Ads conversion event
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'conversion_event_submit_lead_form');
+      }
       setShowDetails(true);
     }
   };
