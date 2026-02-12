@@ -55,6 +55,11 @@ const InvestorAccess = () => {
       form_name: 'dtc_investor_registration_form',
     });
 
+    // Google Ads conversion event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion_event_submit_lead_form');
+    }
+
     try {
       // Submit to edge function which sends to Google Sheets
       const { data, error } = await supabase.functions.invoke('submit-investor-access', {

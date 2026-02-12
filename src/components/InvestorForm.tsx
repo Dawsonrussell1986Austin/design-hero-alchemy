@@ -26,6 +26,11 @@ const InvestorForm = () => {
     trackLeadGeneration('investor_inquiry', 'investors_page', {
       form_name: 'investor_subscription_form',
     });
+
+    // Google Ads conversion event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion_event_submit_lead_form');
+    }
   };
 
   return (

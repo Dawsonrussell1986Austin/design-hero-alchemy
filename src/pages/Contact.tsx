@@ -86,6 +86,11 @@ const Contact = () => {
         has_company: !!validatedData.company,
       });
 
+      // Google Ads conversion event
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'conversion_event_submit_lead_form');
+      }
+
       // Show success message
       toast({
         title: "Message sent!",
