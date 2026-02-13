@@ -81,9 +81,9 @@ const OurSubsidiaries = () => {
                       <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
-                            src="/lovable-uploads/c66e3a2e-945c-491f-9234-87f426bb79f3.png" 
+                            src="/lovable-uploads/jason-sutherland-headshot.jpg" 
                             alt="Jason Pumpelly" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover object-top grayscale"
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Jason Pumpelly</h3>
