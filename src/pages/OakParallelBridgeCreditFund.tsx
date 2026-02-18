@@ -49,7 +49,7 @@ const OakParallelBridgeCreditFund = () => {
                   className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
                   asChild
                 >
-                  <a href="/documents/Oak_Parallel_Bridge_Credit_Fund_Subscription_Agreement.pdf" download>
+                  <a href="/documents/Oak_Parallel_Bridge_Credit_Fund_Subscription_Agreement.pdf" download target="_blank" rel="noopener noreferrer">
                     <FileDown className="mr-2 h-5 w-5" />
                     Subscription Agreement
                   </a>
@@ -60,7 +60,7 @@ const OakParallelBridgeCreditFund = () => {
                   className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium"
                   asChild
                 >
-                  <a href="/documents/HC_Global_AML_Requirements.pdf" download>
+                  <a href="/documents/HC_Global_AML_Requirements.pdf" download target="_blank" rel="noopener noreferrer">
                     <FileDown className="mr-2 h-5 w-5" />
                     KYC/AML Requirements
                   </a>
@@ -71,7 +71,7 @@ const OakParallelBridgeCreditFund = () => {
                   className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium"
                   asChild
                 >
-                  <a href="/documents/Fact_Sheet_-_Oak_Parallel_Bridge_Credit_Fund.pdf" download>
+                  <a href="/documents/Fact_Sheet_-_Oak_Parallel_Bridge_Credit_Fund.pdf" download target="_blank" rel="noopener noreferrer">
                     <FileDown className="mr-2 h-5 w-5" />
                     Fund Fact Sheet
                   </a>
