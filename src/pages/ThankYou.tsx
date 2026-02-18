@@ -29,7 +29,7 @@ const ThankYou = () => {
             </h1>
             
             <p className="text-lg text-graphite-fog mb-8 font-body leading-relaxed">
-              We've received your information and will be in touch soon. You'll receive monthly investor updates and important information about your investment.
+              Thank you for submitting the form. Please check your inbox for the download link.
             </p>
             
             <div className="flex justify-center">
