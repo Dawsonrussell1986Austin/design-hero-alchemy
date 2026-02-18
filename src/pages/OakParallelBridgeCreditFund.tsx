@@ -43,7 +43,7 @@ const OakParallelBridgeCreditFund = () => {
               <h3 className="text-xl font-display font-medium text-obsidian">
                 Download Subscription Documents
               </h3>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 flex-wrap">
                 <Button
                   size="lg"
                   className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
@@ -63,6 +63,17 @@ const OakParallelBridgeCreditFund = () => {
                   <a href="/documents/HC_Global_AML_Requirements.pdf" download>
                     <FileDown className="mr-2 h-5 w-5" />
                     KYC/AML Requirements
+                  </a>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium"
+                  asChild
+                >
+                  <a href="/documents/Fact_Sheet_-_Oak_Parallel_Bridge_Credit_Fund.pdf" download>
+                    <FileDown className="mr-2 h-5 w-5" />
+                    Fund Fact Sheet
                   </a>
                 </Button>
               </div>
