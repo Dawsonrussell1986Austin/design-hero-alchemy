@@ -67,6 +67,7 @@ import OakParallelBridgeFactSheet from "./pages/OakParallelBridgeFactSheet";
 import OakInstitutionalCreditSolutions from "./pages/OakInstitutionalCreditSolutions";
 import InvestorAccess from "./pages/InvestorAccess";
 import PastWebinars from "./pages/PastWebinars";
+import ThankYouDownload from "./pages/ThankYouDownload";
 
 function App() {
   return (
@@ -137,6 +138,7 @@ function App() {
         <Route path="/oak-institutional-credit-solutions" element={<OakInstitutionalCreditSolutions />} />
         <Route path="/investor-access" element={<InvestorAccess />} />
         <Route path="/past-webinars" element={<PastWebinars />} />
+        <Route path="/thank-you-download" element={<ThankYouDownload />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
