@@ -1,134 +1,22 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { useToast } from "@/hooks/use-toast";
-import { z } from "zod";
-import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
+import { useEffect } from "react";
 import SEOHead from "@/components/SEOHead";
 import { BreadcrumbSchema } from "@/components/StructuredData";
 
-const contactSchema = z.object({
-  firstName: z.string().trim().min(1, "First name is required").max(100),
-  lastName: z.string().trim().min(1, "Last name is required").max(100),
-  email: z.string().trim().email("Invalid email address").max(255),
-  phone: z.string().trim().max(20).optional(),
-  company: z.string().trim().max(100).optional(),
-  message: z.string().trim().min(1, "Message is required").max(1000, "Message must be less than 1000 characters"),
-});
-
 const Contact = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    phone: "",
-    company: "",
-    message: "",
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.id]: e.target.value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Validate form data
-      const validatedData = contactSchema.parse(formData);
-
-      // Insert into Supabase
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert({
-          first_name: validatedData.firstName,
-          last_name: validatedData.lastName,
-          email: validatedData.email,
-          phone: validatedData.phone || null,
-          company: validatedData.company || null,
-          message: validatedData.message,
-        });
-
-      if (error) throw error;
-
-      // Track successful form submission
-      trackFormSubmission('contact_form', 'contact_page', true, {
-        has_company: !!validatedData.company,
-        has_phone: !!validatedData.phone,
-      });
-
-      // Track as a conversion event for GTM
-      trackConversion('contact_lead', undefined, {
-        conversion_action: 'contact_form_submit',
-        page_location: window.location.href,
-      });
-
-      // Track Meta Pixel Lead conversion
-      if (typeof window !== 'undefined' && (window as any).fbq) {
-        (window as any).fbq('track', 'Lead', { content_name: 'contact_form' });
-      }
-
-      // Track lead generation (GA4 recommended event)
-      trackLeadGeneration('contact_inquiry', 'contact_page', {
-        form_name: 'contact_form',
-        has_company: !!validatedData.company,
-      });
-
-      // Google Ads conversion event
-      if (typeof window !== 'undefined' && (window as any).gtag) {
-        (window as any).gtag('event', 'conversion_event_submit_lead_form');
-      }
-
-      // Show success message
-      toast({
-        title: "Message sent!",
-        description: "Thank you for contacting us. We'll get back to you soon.",
-      });
-
-      // Reset form
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        company: "",
-        message: "",
-      });
-    } catch (error) {
-      // Track failed form submission
-      trackFormSubmission('contact_form', 'contact_page', false, {
-        error_type: error instanceof z.ZodError ? 'validation' : 'submission',
-      });
-
-      if (error instanceof z.ZodError) {
-        toast({
-          title: "Validation Error",
-          description: error.errors[0].message,
-          variant: "destructive",
-        });
-      } else {
-        toast({
-          title: "Error",
-          description: "Failed to send message. Please try again.",
-          variant: "destructive",
-        });
-      }
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+  useEffect(() => {
+    // Load the GHL form embed script
+    const script = document.createElement("script");
+    script.src = "https://invest.oakrepartners.com/js/form_embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-silver-mist">
@@ -153,8 +41,8 @@ const Contact = () => {
         ]}
       />
         
-      {/* Contact Section with Image Background and Glassmorphic Form */}
-      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 min-h-screen flex items-center">
+      {/* Contact Section */}
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
             
@@ -170,98 +58,26 @@ const Contact = () => {
 
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               
-              {/* Left Side - Contact Form */}
+              {/* Left Side - Embedded GHL Form */}
               <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
                 <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
-                
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="firstName" className="block text-sm text-obsidian mb-2">First Name *</label>
-                      <Input
-                        id="firstName"
-                        type="text"
-                        required
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        className="bg-white border-obsidian/20 text-obsidian"
-                        placeholder="John"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-sm text-obsidian mb-2">Last Name *</label>
-                      <Input
-                        id="lastName"
-                        type="text"
-                        required
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        className="bg-white border-obsidian/20 text-obsidian"
-                        placeholder="Doe"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm text-obsidian mb-2">Email *</label>
-                    <Input
-                      id="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="bg-white border-obsidian/20 text-obsidian"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="phone" className="block text-sm text-obsidian mb-2">Phone</label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        className="bg-white border-obsidian/20 text-obsidian"
-                        placeholder="(555) 123-4567"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="company" className="block text-sm text-obsidian mb-2">Company</label>
-                      <Input
-                        id="company"
-                        type="text"
-                        value={formData.company}
-                        onChange={handleChange}
-                        className="bg-white border-obsidian/20 text-obsidian"
-                        placeholder="Company Name"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm text-obsidian mb-2">Message *</label>
-                    <Textarea
-                      id="message"
-                      rows={5}
-                      required
-                      value={formData.message}
-                      onChange={handleChange}
-                      className="bg-white border-obsidian/20 text-obsidian resize-none"
-                      placeholder="Tell us about your project..."
-                    />
-                  </div>
-
-
-                  <Button 
-                    type="submit"
-                    disabled={isSubmitting}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
-                  >
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
+                <iframe
+                  src="https://invest.oakrepartners.com/widget/form/794zC2IpExPALxESsWC5"
+                  style={{ width: "100%", height: "600px", border: "none", borderRadius: "3px" }}
+                  id="inline-794zC2IpExPALxESsWC5"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Contact Form"
+                  data-height="undefined"
+                  data-layout-iframe-id="inline-794zC2IpExPALxESsWC5"
+                  data-form-id="794zC2IpExPALxESsWC5"
+                  title="Contact Form"
+                />
               </div>
 
               {/* Right Side - Image with Glassmorphic Contact Info */}
@@ -273,7 +89,7 @@ const Contact = () => {
                   className="w-full h-full object-cover"
                 />
                 
-                {/* Dark Overlay for Better Text Contrast */}
+                {/* Dark Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-l from-obsidian/40 via-transparent to-obsidian/60"></div>
 
                 {/* Glassmorphic Contact Info Cards */}
