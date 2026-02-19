@@ -29,7 +29,7 @@ const ThankYou = () => {
             </h1>
             
             <p className="text-lg text-graphite-fog mb-8 font-body leading-relaxed">
-              We've received your information and will be in touch soon. You'll receive monthly investor updates and important information about your investment.
+              We've received your submission and a member of our team will be in touch shortly. Thank you for your interest in Oak Real Estate Partners.
             </p>
             
             <div className="flex justify-center">
