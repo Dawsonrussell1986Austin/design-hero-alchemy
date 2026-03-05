@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { CalendarCheck, Play, FileText, Video, ArrowRight } from "lucide-react";
 import { useNavigate, Link } from "react-router-dom";
@@ -7,6 +8,12 @@ import SEOHead from "@/components/SEOHead";
 
 const ThankYouBooking = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Schedule');
+    }
+  }, []);
 
   const resources = [
     {
