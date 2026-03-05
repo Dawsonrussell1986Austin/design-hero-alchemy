@@ -69,6 +69,7 @@ import InvestorAccess from "./pages/InvestorAccess";
 import PastWebinars from "./pages/PastWebinars";
 import ThankYouDownload from "./pages/ThankYouDownload";
 import CedarMillCaseStudy from "./pages/CedarMillCaseStudy";
+import ThankYouBooking from "./pages/ThankYouBooking";
 
 function App() {
   return (
@@ -141,6 +142,7 @@ function App() {
         <Route path="/past-webinars" element={<PastWebinars />} />
         <Route path="/thank-you-download" element={<ThankYouDownload />} />
         <Route path="/cedar-mill-case-study" element={<CedarMillCaseStudy />} />
+        <Route path="/thank-you-booking" element={<ThankYouBooking />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
