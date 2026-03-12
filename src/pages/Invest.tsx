@@ -41,25 +41,23 @@ const Invest = () => {
 
       <section className="px-4 pb-20">
         <div className="container mx-auto max-w-lg">
-          <div className="rounded-xl overflow-hidden shadow-2xl">
-            <iframe
-              src="https://invest.oakrepartners.com/widget/form/u5nCHB3DqBF0njukPwuh"
-              style={{ width: "100%", height: "450px", border: "none" }}
-              id="inline-u5nCHB3DqBF0njukPwuh"
-              data-layout="{'id':'INLINE'}"
-              data-trigger-type="alwaysShow"
-              data-trigger-value=""
-              data-activation-type="alwaysActivated"
-              data-activation-value=""
-              data-deactivation-type="neverDeactivate"
-              data-deactivation-value=""
-              data-form-name="Oak Fact Sheet Download"
-              data-height="450"
-              data-layout-iframe-id="inline-u5nCHB3DqBF0njukPwuh"
-              data-form-id="u5nCHB3DqBF0njukPwuh"
-              title="Oak Fact Sheet Download"
-            />
-          </div>
+          <iframe
+            src="https://invest.oakrepartners.com/widget/form/u5nCHB3DqBF0njukPwuh"
+            style={{ width: "100%", height: "450px", border: "none" }}
+            id="inline-u5nCHB3DqBF0njukPwuh"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Oak Fact Sheet Download"
+            data-height="450"
+            data-layout-iframe-id="inline-u5nCHB3DqBF0njukPwuh"
+            data-form-id="u5nCHB3DqBF0njukPwuh"
+            title="Oak Fact Sheet Download"
+          />
         </div>
       </section>
 
