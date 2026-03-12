@@ -70,6 +70,7 @@ import PastWebinars from "./pages/PastWebinars";
 import ThankYouDownload from "./pages/ThankYouDownload";
 import CedarMillCaseStudy from "./pages/CedarMillCaseStudy";
 import ThankYouBooking from "./pages/ThankYouBooking";
+import Invest from "./pages/Invest";
 
 function App() {
   return (
