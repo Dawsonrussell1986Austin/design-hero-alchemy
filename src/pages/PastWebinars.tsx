@@ -30,7 +30,7 @@ const pastWebinars: PastWebinar[] = [
     id: "risk-before-returns-feb-2026",
     title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Credit",
     date: "February 12, 2026",
-    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private credit — before a single dollar of capital is deployed.\n\nWhat Matt will cover:\n\n• Why risk in real estate private credit is physical and structural — not theoretical\n• The two lenses Oak uses to evaluate every loan: borrower willingness and asset ability to pay\n• Why \"construction risk\" is not a single category — and how Oak maps risk phase by phase\n• The critical inflection point that separates existential risk from manageable execution risk\n• The specific red flags that cause Oak to walk away from a deal entirely\n• Why senior-secured, real-asset-backed lending behaves differently in stressed markets",
+    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private credit — before a single dollar of capital is deployed.\n\nWhat Matt will cover:\n\nWhy risk in real estate private credit is physical and structural — not theoretical\nThe two lenses Oak uses to evaluate every loan: borrower willingness and asset ability to pay\nWhy \"construction risk\" is not a single category — and how Oak maps risk phase by phase\nThe critical inflection point that separates existential risk from manageable execution risk\nThe specific red flags that cause Oak to walk away from a deal entirely\nWhy senior-secured, real-asset-backed lending behaves differently in stressed markets",
     mediaId: "i6sw318ela",
   },
   {
