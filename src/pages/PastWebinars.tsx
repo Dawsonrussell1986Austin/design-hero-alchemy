@@ -30,7 +30,7 @@ const pastWebinars: PastWebinar[] = [
     id: "risk-before-returns-feb-2026",
     title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Credit",
     date: "February 12, 2026",
-    description: "Oak's Chief Credit Officer Matt Webster and Senior CRE Underwriter Tom Gorski open the file on an 86-unit multifamily deal in East Point, Georgia and walk through exactly how it was evaluated, structured, and managed from first review to final payoff. Topics include lease-up and occupancy risk analysis, valuation discipline, renovation budget stress-testing, sponsor execution risk assessment, and why senior-secured, first-lien structure changes recovery outcomes.",
+    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private credit — before a single dollar of capital is deployed.\n\nWhat Matt will cover:\n\n• Why risk in real estate private credit is physical and structural — not theoretical\n• The two lenses Oak uses to evaluate every loan: borrower willingness and asset ability to pay\n• Why \"construction risk\" is not a single category — and how Oak maps risk phase by phase\n• The critical inflection point that separates existential risk from manageable execution risk\n• The specific red flags that cause Oak to walk away from a deal entirely\n• Why senior-secured, real-asset-backed lending behaves differently in stressed markets",
     mediaId: "i6sw318ela",
   },
   {
@@ -112,9 +112,9 @@ const PastWebinars = () => {
                       <h3 className="text-xl lg:text-2xl font-display font-medium text-white leading-tight">
                         {webinar.title}
                       </h3>
-                      <p className="font-body text-silver-mist/90 leading-relaxed">
+                      <div className="font-body text-silver-mist/90 leading-relaxed whitespace-pre-line">
                         {webinar.description}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 ))}
