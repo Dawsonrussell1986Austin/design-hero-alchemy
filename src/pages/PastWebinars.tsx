@@ -112,9 +112,9 @@ const PastWebinars = () => {
                       <h3 className="text-xl lg:text-2xl font-display font-medium text-white leading-tight">
                         {webinar.title}
                       </h3>
-                      <p className="font-body text-silver-mist/90 leading-relaxed">
+                      <div className="font-body text-silver-mist/90 leading-relaxed whitespace-pre-line">
                         {webinar.description}
-                      </p>
+                      </div>
                     </div>
                   </div>
                 ))}
