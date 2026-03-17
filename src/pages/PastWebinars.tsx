@@ -27,6 +27,13 @@ interface PastWebinar {
 // Add past webinars here as they become available
 const pastWebinars: PastWebinar[] = [
   {
+    id: "risk-before-returns-feb-2026",
+    title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Credit",
+    date: "February 12, 2026",
+    description: "Oak's Chief Credit Officer Matt Webster and Senior CRE Underwriter Tom Gorski open the file on an 86-unit multifamily deal in East Point, Georgia and walk through exactly how it was evaluated, structured, and managed from first review to final payoff. Topics include lease-up and occupancy risk analysis, valuation discipline, renovation budget stress-testing, sponsor execution risk assessment, and why senior-secured, first-lien structure changes recovery outcomes.",
+    mediaId: "i6sw318ela",
+  },
+  {
     id: "special-situation-cre-jan-2026",
     title: "Special Situation Commercial Real Estate",
     date: "January 8, 2026",
