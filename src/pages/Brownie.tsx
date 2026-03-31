@@ -75,6 +75,58 @@ const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; 
   );
 };
 
+const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onChange: (url: string | null) => void }) => {
+  const [draft, setDraft] = useState(value || "");
+  const [open, setOpen] = useState(false);
+
+  const save = () => {
+    onChange(draft.trim() || null);
+    setOpen(false);
+  };
+
+  return (
+    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(value || ""); }}>
+      <PopoverTrigger asChild>
+        {value ? (
+          <a
+            href={value}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="flex items-center text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        ) : (
+          <button className="flex items-center text-gray-300 hover:text-gray-500 transition-colors flex-shrink-0">
+            <Link2 className="w-3.5 h-3.5" />
+          </button>
+        )}
+      </PopoverTrigger>
+      <PopoverContent className="w-[300px] p-3" align="start">
+        <div className="space-y-2">
+          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Document / Creative Link</label>
+          <Input
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            placeholder="https://..."
+            className="h-8 text-xs"
+            onKeyDown={(e) => { if (e.key === "Enter") save(); }}
+          />
+          <div className="flex gap-2">
+            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#a85839" }}>Save</Button>
+            {value && (
+              <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => { onChange(null); setOpen(false); }}>
+                <X className="w-3 h-3" />
+              </Button>
+            )}
+          </div>
+        </div>
+      </PopoverContent>
+    </Popover>
+  );
+};
+
 const Brownie = () => {
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
