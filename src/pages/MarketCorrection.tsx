@@ -93,9 +93,9 @@ const MarketCorrection = () => {
       />
 
       {/* ════════ HERO ════════ */}
-      <section className="relative min-h-screen flex flex-col justify-between px-6 sm:px-12 lg:px-20 pt-14 pb-12 overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-12 lg:px-20 pt-10 sm:pt-14 pb-8 sm:pb-12 overflow-hidden">
         {/* Ghost watermark */}
-        <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none" style={{ opacity: 0.03 }}>
+        <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none hidden sm:block" style={{ opacity: 0.03 }}>
           <span className="text-[28rem] sm:text-[36rem] font-light leading-none block" style={{ ...serif, color: "#f0ece3" }}>79</span>
         </div>
 
@@ -105,43 +105,41 @@ const MarketCorrection = () => {
             <img
               src="/lovable-uploads/white_oak.png"
               alt="Oak Real Estate Partners"
-              className="h-10 sm:h-12 w-auto"
+              className="h-8 sm:h-10 md:h-12 w-auto"
             />
           </a>
         </div>
 
         {/* Two-column: copy + form */}
-        <div className="relative z-10 max-w-5xl mt-auto mb-auto py-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="relative z-10 max-w-5xl mt-auto mb-auto py-6 sm:py-8">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             {/* Left — Copy */}
             <div>
-              <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-10" style={{ ...sans, color: "#c9a84c", opacity: 0.8, fontWeight: 500 }}>
+              <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#c9a84c", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
               </p>
-              <h1 className="text-[5rem] sm:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
+              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
                 79%
               </h1>
-              <p className="text-3xl sm:text-4xl leading-[1.1] mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
-                Seventy-nine percent of institutional investors
-                <br />expect a market
-                <br />correction in{" "}
+              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
+                Seventy-nine percent of institutional investors expect a market correction in{" "}
                 <em style={{ color: "#dbb96a", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-sm leading-[1.7] mt-8 max-w-[300px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
+              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
 
             {/* Right — Form */}
-            <div className="p-8 sm:p-10" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-              <p className="text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
+            <div className="p-6 sm:p-8 md:p-10" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
+              <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-base mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} style={inputStyle} required />
                   <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} style={inputStyle} required />
                 </div>
@@ -166,16 +164,16 @@ const MarketCorrection = () => {
         </div>
 
         {/* Bottom stats */}
-        <div className="relative z-10 pt-8 mt-8" style={{ borderTop: "1px solid rgba(240,236,227,0.05)" }}>
-          <div className="grid grid-cols-3 gap-8 sm:gap-16 max-w-4xl mx-auto text-center">
+        <div className="relative z-10 pt-6 sm:pt-8 mt-6 sm:mt-8" style={{ borderTop: "1px solid rgba(240,236,227,0.05)" }}>
+          <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-4xl mx-auto text-center">
             {[
               { stat: "49%", note: "expect 10–20% decline" },
               { stat: "45%", note: "cite geopolitical risk as #1 fear" },
               { stat: "63%", note: "cite valuations as top portfolio risk" },
             ].map((d) => (
               <div key={d.stat}>
-                <p className="text-3xl sm:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
-                <p className="text-xs sm:text-sm mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
+                <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
           </div>
