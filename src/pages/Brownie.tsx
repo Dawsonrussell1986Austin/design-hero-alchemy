@@ -81,6 +81,8 @@ const Brownie = () => {
   const [filterAssignee, setFilterAssignee] = useState<string>("all");
   const [filterPriority, setFilterPriority] = useState<string>("all");
   const [viewMode, setViewMode] = useState<ViewMode>("list");
+  const [noteCounts, setNoteCounts] = useState<Record<number, number>>({});
+  const [notesPanel, setNotesPanel] = useState<{ taskId: number; taskName: string } | null>(null);
   const { toast } = useToast();
 
   useEffect(() => {
