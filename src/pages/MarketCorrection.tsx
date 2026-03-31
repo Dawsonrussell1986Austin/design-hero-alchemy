@@ -225,10 +225,10 @@ const MarketCorrection = () => {
       {/* ════════ CLOSING CTA — DARK ════════ */}
       <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#07090f" }}>
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] font-light" style={{ ...serif, color: "rgba(255,255,255,0.85)", fontStyle: "italic" }}>
+          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] font-light" style={{ ...serif, color: "rgba(255,255,255,0.85)" }}>
             If a correction arrives in the next 90 days, does your portfolio hold?
           </p>
-          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] mt-2 font-light" style={{ ...serif, color: "#dbb96a", fontStyle: "italic" }}>
+          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] mt-2 font-light" style={{ ...serif, color: "#dbb96a" }}>
             Or does it just feel like it will?
           </p>
           <p className="text-[11px] mt-8 max-w-md mx-auto" style={{ ...sans, color: "#8da0b8", fontWeight: 300 }}>
