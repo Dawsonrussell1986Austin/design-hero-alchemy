@@ -4,7 +4,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2 } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2, Settings, Mail } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
@@ -154,6 +154,10 @@ const Brownie = () => {
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
 
+  // Team email settings
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [teamEmails, setTeamEmails] = useState<Record<string, string>>({});
+
   const { toast } = useToast();
 
   const fetchNoteCounts = useCallback(async () => {
@@ -168,6 +172,23 @@ const Brownie = () => {
       setNoteCounts(counts);
     }
   }, []);
+
+  const fetchTeamEmails = useCallback(async () => {
+    const { data } = await supabase.from("team_members").select("name, email");
+    if (data) {
+      const emails: Record<string, string> = {};
+      data.forEach((m: { name: string; email: string }) => { emails[m.name] = m.email; });
+      setTeamEmails(emails);
+    }
+  }, []);
+
+  const saveTeamEmails = async () => {
+    for (const [name, email] of Object.entries(teamEmails)) {
+      await supabase.from("team_members").update({ email }).eq("name", name);
+    }
+    toast({ title: "Team emails saved" });
+    setSettingsOpen(false);
+  };
 
   useEffect(() => {
     const fetchTasks = async () => {
@@ -184,7 +205,8 @@ const Brownie = () => {
     };
     fetchTasks();
     fetchNoteCounts();
-  }, [fetchNoteCounts]);
+    fetchTeamEmails();
+  }, [fetchNoteCounts, fetchTeamEmails]);
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((t) => {
@@ -221,8 +243,37 @@ const Brownie = () => {
     }
   }, [toast]);
 
-  const updateStatus = (id: number, status: TaskStatus) => updateField(id, "status", status);
-  const updateAssignee = (id: number, assigned: string) => updateField(id, "assigned", assigned);
+  const sendNotification = useCallback(async (type: string, taskName: string, assignedTo: string, oldValue?: string, newValue?: string) => {
+    if (assignedTo === "Unassigned") return;
+    try {
+      await supabase.functions.invoke("send-task-notification", {
+        body: { type, taskName, assignedTo, oldValue, newValue },
+      });
+    } catch (e) {
+      console.error("Notification failed:", e);
+    }
+  }, []);
+
+  const updateStatus = async (id: number, status: TaskStatus) => {
+    const task = tasks.find((t) => t.id === id);
+    if (task) {
+      const oldStatus = task.status;
+      await updateField(id, "status", status);
+      sendNotification("status_change", task.task, task.assigned, oldStatus, status);
+    }
+  };
+
+  const updateAssignee = async (id: number, assigned: string) => {
+    const task = tasks.find((t) => t.id === id);
+    if (task) {
+      const oldAssigned = task.assigned;
+      await updateField(id, "assigned", assigned);
+      if (assigned !== oldAssigned) {
+        sendNotification("assignment_change", task.task, assigned, oldAssigned, assigned);
+      }
+    }
+  };
+
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
   const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
 
@@ -374,6 +425,9 @@ const Brownie = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <button onClick={() => setSettingsOpen(true)} className="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Team Email Settings">
+              <Settings className="w-4 h-4" />
+            </button>
             <Button onClick={openNewTask} size="sm" className="h-8 text-xs gap-1.5" style={{ background: "#a85839" }}>
               <Plus className="w-3.5 h-3.5" /> New Task
             </Button>
@@ -836,6 +890,34 @@ const Brownie = () => {
           <DialogFooter>
             <Button variant="outline" onClick={() => setDeleteConfirm(null)}>Cancel</Button>
             <Button variant="destructive" onClick={() => deleteConfirm && deleteTask(deleteConfirm)}>Delete</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Team Email Settings Dialog */}
+      <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
+        <DialogContent className="sm:max-w-[450px]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2"><Mail className="w-5 h-5" /> Team Email Settings</DialogTitle>
+          </DialogHeader>
+          <p className="text-xs text-gray-500">Set email addresses for each team member to receive task notifications (status changes, assignments, and daily overdue digests).</p>
+          <div className="space-y-3 py-2">
+            {assignees.filter((a) => a !== "Unassigned").map((name) => (
+              <div key={name} className="flex items-center gap-3">
+                <span className={`text-xs font-medium px-2.5 py-1 rounded-full w-[80px] text-center ${assigneeColors[name]}`}>{name}</span>
+                <Input
+                  value={teamEmails[name] || ""}
+                  onChange={(e) => setTeamEmails((prev) => ({ ...prev, [name]: e.target.value }))}
+                  placeholder={`${name.toLowerCase()}@company.com`}
+                  className="h-8 text-xs flex-1"
+                  type="email"
+                />
+              </div>
+            ))}
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setSettingsOpen(false)}>Cancel</Button>
+            <Button onClick={saveTeamEmails} style={{ background: "#a85839" }}>Save Emails</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
