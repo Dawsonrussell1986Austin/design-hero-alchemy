@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowRight, Download, Mail } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const ThankYouReport = () => {
