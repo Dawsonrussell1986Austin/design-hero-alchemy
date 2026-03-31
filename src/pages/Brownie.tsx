@@ -21,7 +21,7 @@ const statusConfig: Record<TaskStatus, { icon: React.ReactNode; color: string; b
 };
 
 const priorityConfig: Record<string, string> = {
-  "LAUNCH-CRITICAL": "bg-red-100 text-red-800 border-red-200",
+  "CRITICAL": "bg-red-100 text-red-800 border-red-200",
   "TRAILING": "bg-slate-100 text-slate-700 border-slate-200",
   "LAUNCH": "bg-blue-100 text-blue-800 border-blue-200",
 };
@@ -181,8 +181,8 @@ const Brownie = () => {
     const total = tasks.length;
     const complete = tasks.filter((t) => t.status === "Complete").length;
     const inProgress = tasks.filter((t) => t.status === "In Progress").length;
-    const critical = tasks.filter((t) => t.priority.startsWith("LAUNCH-CRITICAL")).length;
-    const criticalComplete = tasks.filter((t) => t.priority.startsWith("LAUNCH-CRITICAL") && t.status === "Complete").length;
+    const critical = tasks.filter((t) => t.priority.startsWith("CRITICAL")).length;
+    const criticalComplete = tasks.filter((t) => t.priority.startsWith("CRITICAL") && t.status === "Complete").length;
     return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0 };
   }, [tasks]);
 
@@ -335,7 +335,7 @@ const Brownie = () => {
             <SelectTrigger className="w-[160px] h-8 text-xs border-gray-200 bg-white text-gray-700"><SelectValue placeholder="Priority" /></SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Priorities</SelectItem>
-              <SelectItem value="LAUNCH-CRITICAL">Launch-Critical</SelectItem>
+              <SelectItem value="CRITICAL">Launch-Critical</SelectItem>
               <SelectItem value="LAUNCH">Launch</SelectItem>
               <SelectItem value="TRAILING">Trailing</SelectItem>
             </SelectContent>
@@ -388,7 +388,7 @@ const Brownie = () => {
                               <span className="text-xs text-gray-400">{t.platform}</span>
                             </td>
                             <td className="px-4 py-3">
-                              <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["LAUNCH-CRITICAL"]}`}>
+                              <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
                                 {t.priority.split("(")[0].trim()}
                               </span>
                             </td>
@@ -452,7 +452,7 @@ const Brownie = () => {
                           </div>
                         </div>
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["LAUNCH-CRITICAL"]}`}>
+                          <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
                             {t.priority.split("(")[0].trim()}
                           </span>
                           <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{t.assigned}</span>
