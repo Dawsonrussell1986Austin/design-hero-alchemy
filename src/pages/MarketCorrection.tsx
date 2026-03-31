@@ -169,7 +169,7 @@ const MarketCorrection = () => {
             {[
               { stat: "49%", note: "expect 10–20% decline" },
               { stat: "45%", note: "cite geopolitical risk as #1 fear" },
-              { stat: "63%", note: "cite valuations as top portfolio risk" },
+              { stat: "63%", note: "cite elevated valuations as top concern" },
             ].map((d) => (
               <div key={d.stat}>
                 <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
