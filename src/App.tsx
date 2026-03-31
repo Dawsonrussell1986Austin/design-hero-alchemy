@@ -150,7 +150,7 @@ function App() {
         <Route path="/invest" element={<Invest />} />
         <Route path="/market-correction-report" element={<MarketCorrection />} />
         <Route path="/thank-you-report" element={<ThankYouReport />} />
-        <Route path="/brownie" element={<Brownie />} />
+        <Route path="/cinnamonroll" element={<Brownie />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
