@@ -20,6 +20,7 @@ const statusConfig: Record<TaskStatus, { icon: React.ReactNode; color: string; b
   "Not Started": { icon: <Circle className="w-3.5 h-3.5" />, color: "text-gray-500", bg: "bg-gray-100 border-gray-200" },
   "In Progress": { icon: <Clock className="w-3.5 h-3.5" />, color: "text-amber-700", bg: "bg-amber-50 border-amber-200" },
   "Complete": { icon: <CheckCircle2 className="w-3.5 h-3.5" />, color: "text-emerald-700", bg: "bg-emerald-50 border-emerald-200" },
+  "Archived": { icon: <Archive className="w-3.5 h-3.5" />, color: "text-gray-400", bg: "bg-gray-100 border-gray-200" },
 };
 
 const priorityOptions = ["CRITICAL", "LAUNCH", "TRAILING"];
