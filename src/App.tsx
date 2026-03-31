@@ -71,6 +71,7 @@ import ThankYouDownload from "./pages/ThankYouDownload";
 import CedarMillCaseStudy from "./pages/CedarMillCaseStudy";
 import ThankYouBooking from "./pages/ThankYouBooking";
 import Invest from "./pages/Invest";
+import MarketCorrection from "./pages/MarketCorrection";
 
 function App() {
   return (
@@ -145,6 +146,7 @@ function App() {
         <Route path="/cedar-mill-case-study" element={<CedarMillCaseStudy />} />
         <Route path="/thank-you-booking" element={<ThankYouBooking />} />
         <Route path="/invest" element={<Invest />} />
+        <Route path="/market-correction-report" element={<MarketCorrection />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
