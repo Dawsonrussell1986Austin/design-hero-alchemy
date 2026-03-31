@@ -182,7 +182,7 @@ const MarketCorrection = () => {
 
       {/* ════════ BODY — PARCHMENT ════════ */}
       <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#faf7f2" }}>
-        <div className="max-w-4xl">
+        <div className="max-w-4xl mx-auto">
           <div className="w-12 h-[1px] mb-6" style={{ backgroundColor: "#c9a84c" }} />
           <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-16" style={{ ...sans, color: "#c9a84c", fontWeight: 500 }}>
             Oak Real Estate Partners
