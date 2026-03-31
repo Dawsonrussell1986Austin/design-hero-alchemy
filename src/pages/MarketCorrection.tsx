@@ -204,8 +204,6 @@ const MarketCorrection = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
