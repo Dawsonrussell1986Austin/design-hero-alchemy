@@ -291,7 +291,7 @@ const Brownie = () => {
             { label: "Total Tasks", value: stats.total, sub: `${stats.pct}% complete` },
             { label: "Completed", value: stats.complete, sub: `of ${stats.total}` },
             { label: "In Progress", value: stats.inProgress, sub: "active" },
-            { label: "Launch-Critical", value: `${stats.criticalComplete}/${stats.critical}`, sub: "done" },
+            { label: "Critical", value: `${stats.criticalComplete}/${stats.critical}`, sub: "done" },
           ].map((s, i) => (
             <div key={i} className="rounded-xl p-4 bg-white border border-gray-200 shadow-sm">
               <p className="text-xs font-medium mb-1 text-gray-400">{s.label}</p>
@@ -335,7 +335,7 @@ const Brownie = () => {
             <SelectTrigger className="w-[160px] h-8 text-xs border-gray-200 bg-white text-gray-700"><SelectValue placeholder="Priority" /></SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Priorities</SelectItem>
-              <SelectItem value="CRITICAL">Launch-Critical</SelectItem>
+              <SelectItem value="CRITICAL">Critical</SelectItem>
               <SelectItem value="LAUNCH">Launch</SelectItem>
               <SelectItem value="TRAILING">Trailing</SelectItem>
             </SelectContent>
