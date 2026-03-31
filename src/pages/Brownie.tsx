@@ -552,6 +552,16 @@ const Brownie = () => {
           <p className="text-[10px] tracking-widest uppercase text-gray-300">Fortified Capital · Internal Use Only</p>
         </div>
       </div>
+
+      <TaskNotesPanel
+        taskId={notesPanel?.taskId ?? null}
+        taskName={notesPanel?.taskName ?? ""}
+        open={!!notesPanel}
+        onClose={() => {
+          setNotesPanel(null);
+          fetchNoteCounts();
+        }}
+      />
     </div>
   );
 };
