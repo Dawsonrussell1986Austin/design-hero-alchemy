@@ -21,6 +21,7 @@ interface TaskNotesPanelProps {
   taskName: string;
   open: boolean;
   onClose: () => void;
+  currentUserName?: string;
 }
 
 const authors = ["Matt", "Dawson", "Nicole", "Ray"];
