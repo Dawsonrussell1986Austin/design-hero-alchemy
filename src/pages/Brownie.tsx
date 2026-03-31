@@ -154,6 +154,10 @@ const Brownie = () => {
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
 
+  // Team email settings
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [teamEmails, setTeamEmails] = useState<Record<string, string>>({});
+
   const { toast } = useToast();
 
   const fetchNoteCounts = useCallback(async () => {
