@@ -73,6 +73,7 @@ import ThankYouBooking from "./pages/ThankYouBooking";
 import Invest from "./pages/Invest";
 import MarketCorrection from "./pages/MarketCorrection";
 import ThankYouReport from "./pages/ThankYouReport";
+import Brownie from "./pages/Brownie";
 
 function App() {
   return (
