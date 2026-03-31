@@ -927,4 +927,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   );
 };
 
+const Brownie = () => (
+  <CinnamonrollAuth>
+    {(_user, teamName) => <BrownieInner currentUserName={teamName} />}
+  </CinnamonrollAuth>
+);
+
 export default Brownie;
