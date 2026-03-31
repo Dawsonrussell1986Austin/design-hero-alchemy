@@ -202,6 +202,7 @@ const Brownie = () => {
   const updateStatus = (id: number, status: TaskStatus) => updateField(id, "status", status);
   const updateAssignee = (id: number, assigned: string) => updateField(id, "assigned", assigned);
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
+  const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
 
   const groupedTasks = useMemo(() => {
     const groups: Record<string, BrownieTask[]> = {};
