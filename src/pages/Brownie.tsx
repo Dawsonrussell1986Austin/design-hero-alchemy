@@ -319,7 +319,7 @@ const Brownie = () => {
   }, [filteredTasks]);
 
   const boardColumns = useMemo(() => {
-    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "Complete": [] };
+    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "Complete": [], "Archived": [] };
     filteredTasks.forEach((t) => {
       if (cols[t.status]) cols[t.status].push(t);
     });
