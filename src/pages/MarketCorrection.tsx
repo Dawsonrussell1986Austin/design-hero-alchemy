@@ -67,10 +67,13 @@ const MarketCorrection = () => {
 
         {/* Top bar */}
         <div className="relative z-10">
-          <div className="w-10 h-[2px] mb-3" style={{ backgroundColor: "#B8963E" }} />
-          <p className="font-display text-[10px] sm:text-xs tracking-[0.3em] uppercase" style={{ color: "#B8963E" }}>
-            Oak Real Estate Partners
-          </p>
+          <a href="/">
+            <img
+              src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
+              alt="Oak Real Estate Partners"
+              className="h-10 sm:h-12 w-auto"
+            />
+          </a>
         </div>
 
         {/* Two-column: copy + form */}
