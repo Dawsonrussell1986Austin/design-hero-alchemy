@@ -425,6 +425,9 @@ const Brownie = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <button onClick={() => setSettingsOpen(true)} className="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Team Email Settings">
+              <Settings className="w-4 h-4" />
+            </button>
             <Button onClick={openNewTask} size="sm" className="h-8 text-xs gap-1.5" style={{ background: "#a85839" }}>
               <Plus className="w-3.5 h-3.5" /> New Task
             </Button>
