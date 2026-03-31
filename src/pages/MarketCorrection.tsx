@@ -264,12 +264,17 @@ const MarketCorrection = () => {
 
       {/* Minimal footer */}
       <footer className="px-6 sm:px-12 lg:px-20 py-8" style={{ backgroundColor: "#07090f", borderTop: "1px solid rgba(240,236,227,0.04)" }}>
-        <div className="max-w-4xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
-          <div>
-            <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>Oak Real Estate Partners</p>
-            <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "rgba(240,236,227,0.15)", fontWeight: 300 }}>
-              Institutional CRE Lending · Senior Secured · Real Assets
-            </p>
+        <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+          <div className="flex items-center gap-4">
+            <a href="/">
+              <img src="/lovable-uploads/white_oak.png" alt="Oak Real Estate Partners" className="h-8 w-auto" />
+            </a>
+            <div>
+              <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>Oak Real Estate Partners</p>
+              <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "rgba(240,236,227,0.15)", fontWeight: 300 }}>
+                Institutional CRE Lending · Senior Secured · Real Assets
+              </p>
+            </div>
           </div>
           <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}>
             oakrepartners.com
