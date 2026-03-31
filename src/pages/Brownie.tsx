@@ -85,6 +85,19 @@ const Brownie = () => {
   const [notesPanel, setNotesPanel] = useState<{ taskId: number; taskName: string } | null>(null);
   const { toast } = useToast();
 
+  const fetchNoteCounts = useCallback(async () => {
+    const { data, error } = await supabase
+      .from("brownie_task_notes")
+      .select("task_id");
+    if (!error && data) {
+      const counts: Record<number, number> = {};
+      (data as { task_id: number }[]).forEach((n) => {
+        counts[n.task_id] = (counts[n.task_id] || 0) + 1;
+      });
+      setNoteCounts(counts);
+    }
+  }, []);
+
   useEffect(() => {
     const fetchTasks = async () => {
       const { data, error } = await supabase
@@ -99,7 +112,8 @@ const Brownie = () => {
       setLoading(false);
     };
     fetchTasks();
-  }, []);
+    fetchNoteCounts();
+  }, [fetchNoteCounts]);
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((t) => {
