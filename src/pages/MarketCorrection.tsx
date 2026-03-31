@@ -193,7 +193,7 @@ const MarketCorrection = () => {
             <em style={{ color: "#c9a84c", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
           </h2>
 
-          <p className="text-[13px] sm:text-sm leading-[1.7] max-w-lg mt-10" style={{ ...sans, color: "#4a607e", fontWeight: 300, letterSpacing: "0.02em" }}>
+          <p className="text-sm sm:text-base leading-[1.7] max-w-lg mt-10" style={{ ...sans, color: "#4a607e", fontWeight: 300, letterSpacing: "0.02em" }}>
             Insurance companies, foundations, endowments — the same institutions tracking these numbers are the ones who invest alongside Oak Real Estate Partners. They didn't wait. They structured around it.
           </p>
 
