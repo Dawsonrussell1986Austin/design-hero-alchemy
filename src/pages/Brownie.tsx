@@ -4,7 +4,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X } from "lucide-react";
+import { Input } from "@/components/ui/input";
 import TaskNotesPanel from "@/components/TaskNotesPanel";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -69,6 +70,58 @@ const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; 
           initialFocus
           className={cn("p-3 pointer-events-auto")}
         />
+      </PopoverContent>
+    </Popover>
+  );
+};
+
+const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onChange: (url: string | null) => void }) => {
+  const [draft, setDraft] = useState(value || "");
+  const [open, setOpen] = useState(false);
+
+  const save = () => {
+    onChange(draft.trim() || null);
+    setOpen(false);
+  };
+
+  return (
+    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(value || ""); }}>
+      <PopoverTrigger asChild>
+        {value ? (
+          <a
+            href={value}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="flex items-center text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        ) : (
+          <button className="flex items-center text-gray-300 hover:text-gray-500 transition-colors flex-shrink-0">
+            <Link2 className="w-3.5 h-3.5" />
+          </button>
+        )}
+      </PopoverTrigger>
+      <PopoverContent className="w-[300px] p-3" align="start">
+        <div className="space-y-2">
+          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Document / Creative Link</label>
+          <Input
+            value={draft}
+            onChange={(e) => setDraft(e.target.value)}
+            placeholder="https://..."
+            className="h-8 text-xs"
+            onKeyDown={(e) => { if (e.key === "Enter") save(); }}
+          />
+          <div className="flex gap-2">
+            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#a85839" }}>Save</Button>
+            {value && (
+              <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => { onChange(null); setOpen(false); }}>
+                <X className="w-3 h-3" />
+              </Button>
+            )}
+          </div>
+        </div>
       </PopoverContent>
     </Popover>
   );
@@ -149,6 +202,7 @@ const Brownie = () => {
   const updateStatus = (id: number, status: TaskStatus) => updateField(id, "status", status);
   const updateAssignee = (id: number, assigned: string) => updateField(id, "assigned", assigned);
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
+  const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
 
   const groupedTasks = useMemo(() => {
     const groups: Record<string, BrownieTask[]> = {};
@@ -320,6 +374,7 @@ const Brownie = () => {
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
                                 <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                                   className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0"
@@ -387,13 +442,16 @@ const Brownie = () => {
                       <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50">
                         <div className="flex items-start justify-between gap-2 mb-2">
                           <p className="text-sm text-gray-800 flex-1">{t.task}</p>
-                          <button
-                            onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
-                            className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0 mt-0.5"
-                          >
-                            <MessageSquare className="w-3.5 h-3.5" />
-                            {noteCounts[t.id] ? <span className="text-[10px] font-semibold text-gray-500">{noteCounts[t.id]}</span> : null}
-                          </button>
+                          <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
+                            <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                            <button
+                              onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
+                              className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors"
+                            >
+                              <MessageSquare className="w-3.5 h-3.5" />
+                              {noteCounts[t.id] ? <span className="text-[10px] font-semibold text-gray-500">{noteCounts[t.id]}</span> : null}
+                            </button>
+                          </div>
                         </div>
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["LAUNCH-CRITICAL"]}`}>
