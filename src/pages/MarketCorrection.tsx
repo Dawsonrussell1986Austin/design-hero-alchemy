@@ -12,7 +12,7 @@ import { ArrowRight } from "lucide-react";
  * --lp-dark:    #0C1A2A  (deep navy-black)
  * --lp-gold:    #C4A24B  (warm muted gold)
  * --lp-cream:   #E6E0D4  (warm cream headlines)
- * --lp-muted:   #5E7A86  (steel-teal sublabels)
+ * --lp-muted:   #8A8070  (steel-teal sublabels)
  * --lp-light:   #FAF5EE  (cream section bg)
  * --lp-body:    #1E3347  (dark navy on light bg)
  */
@@ -118,7 +118,7 @@ const MarketCorrection = () => {
               <p className="text-xl sm:text-2xl leading-[1.35] mt-6" style={{ ...serif, color: "rgba(230,224,212,0.8)" }}>
                 of institutional investors expect a market correction in 2026.
               </p>
-              <p className="text-sm leading-relaxed mt-8 max-w-sm" style={{ ...body, color: "#5E7A86" }}>
+              <p className="text-sm leading-relaxed mt-8 max-w-sm" style={{ ...body, color: "#8A8070" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
@@ -128,7 +128,7 @@ const MarketCorrection = () => {
               <p className="text-sm tracking-[0.15em] uppercase mb-2" style={{ ...sans, color: "#E6E0D4" }}>
                 Get the Full Report
               </p>
-              <p className="text-sm mb-8" style={{ ...body, color: "#5E7A86" }}>
+              <p className="text-sm mb-8" style={{ ...body, color: "#8A8070" }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -166,7 +166,7 @@ const MarketCorrection = () => {
             ].map((d) => (
               <div key={d.stat}>
                 <p className="text-xl sm:text-2xl font-bold" style={{ ...serif, color: "#E6E0D4" }}>{d.stat}</p>
-                <p className="text-[10px] sm:text-xs mt-1 leading-snug" style={{ ...body, color: "#5E7A86" }}>{d.note}</p>
+                <p className="text-[10px] sm:text-xs mt-1 leading-snug" style={{ ...body, color: "#8A8070" }}>{d.note}</p>
               </div>
             ))}
           </div>
@@ -186,7 +186,7 @@ const MarketCorrection = () => {
             <em style={{ color: "#C4A24B", fontStyle: "italic" }}>arrive.</em>
           </h2>
 
-          <p className="text-sm sm:text-base leading-relaxed max-w-lg mt-10" style={{ ...body, color: "#4A6070" }}>
+          <p className="text-sm sm:text-base leading-relaxed max-w-lg mt-10" style={{ ...body, color: "#6B6358" }}>
             Insurance companies, foundations, endowments — the same institutions tracking these numbers are the ones who invest alongside Oak Real Estate Partners. They didn't wait. They structured around it.
           </p>
 
@@ -206,7 +206,7 @@ const MarketCorrection = () => {
             ].map((card) => (
               <div key={card.title} className="p-6 sm:p-8" style={{ backgroundColor: "#FAF5EE" }}>
                 <p className="text-xs tracking-wider uppercase mb-4" style={{ ...sans, color: "#1E3347", fontWeight: 600 }}>{card.title}</p>
-                <p className="text-sm leading-relaxed" style={{ ...body, color: "#4A6070" }}>{card.text}</p>
+                <p className="text-sm leading-relaxed" style={{ ...body, color: "#6B6358" }}>{card.text}</p>
               </div>
             ))}
           </div>
@@ -222,7 +222,7 @@ const MarketCorrection = () => {
           <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.4] mt-2" style={{ ...serif, color: "#C4A24B", fontStyle: "italic" }}>
             Or does it just feel like it will?
           </p>
-          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...body, color: "#5E7A86" }}>
+          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...body, color: "#8A8070" }}>
             The gap between those two answers is where fortunes are quietly lost.
           </p>
           <button
