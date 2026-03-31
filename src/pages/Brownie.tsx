@@ -23,6 +23,7 @@ const assigneeColors: Record<string, string> = {
   "Matt": "bg-violet-100 text-violet-800",
   "Dawson": "bg-sky-100 text-sky-800",
   "Nicole": "bg-rose-100 text-rose-800",
+  "Ray": "bg-teal-100 text-teal-800",
   "Unassigned": "bg-gray-100 text-gray-500",
 };
 
