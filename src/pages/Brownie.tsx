@@ -261,9 +261,7 @@ const Brownie = () => {
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center text-sm font-bold text-white" style={{ background: "linear-gradient(135deg, #a85839, #e8c468)" }}>
-                FC
-              </div>
+              <img src="/lovable-uploads/white_oak.png" alt="Oak Logo" className="w-8 h-8 rounded-lg object-contain bg-gray-900 p-0.5" />
               <div>
                 <h1 className="text-lg font-semibold tracking-tight text-gray-900">Fortified Capital — Marketing Tasks</h1>
                 <p className="text-xs text-gray-400">Oak Real Estate Partners · Investor Ad Campaign · March 2026</p>
