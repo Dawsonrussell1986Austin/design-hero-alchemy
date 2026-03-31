@@ -231,7 +231,7 @@ const MarketCorrection = () => {
           <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] mt-2 font-light" style={{ ...serif, color: "#dbb96a" }}>
             Or does it just feel like it will?
           </p>
-          <p className="text-[11px] mt-8 max-w-md mx-auto" style={{ ...sans, color: "#8da0b8", fontWeight: 300 }}>
+          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
             The gap between those two answers is where fortunes are quietly lost.
           </p>
           <button
