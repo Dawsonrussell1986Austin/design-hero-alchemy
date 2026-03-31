@@ -54,7 +54,7 @@ const MarketCorrection = () => {
         message: "Market Correction Report landing page opt-in",
       });
       if (error) throw error;
-      navigate("/thank-you");
+      navigate("/thank-you-report");
     } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
