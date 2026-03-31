@@ -63,8 +63,8 @@ const MarketCorrection = () => {
   };
 
   // Font stacks matching the ad design system exactly
-  const serif = { fontFamily: "'Cormorant Garamond', Georgia, serif" };
-  const sans = { fontFamily: "'Manrope', sans-serif" };
+  const serif = { fontFamily: "'Playfair Display', Georgia, serif" };
+  const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
 
   const inputStyle: React.CSSProperties = {
     ...sans,
