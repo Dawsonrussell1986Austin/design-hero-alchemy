@@ -28,7 +28,7 @@ const WebinarFloatingCTA = () => {
   }, []);
 
   // Don't show on webinar registration page or landing pages
-  if (location.pathname === '/webinar-registration' || location.pathname === '/market-correction-report') {
+  if (location.pathname === '/webinar-registration' || location.pathname === '/market-correction-report' || location.pathname === '/thank-you-report') {
     return null;
   }
 
