@@ -21,6 +21,7 @@ interface TaskNotesPanelProps {
   taskName: string;
   open: boolean;
   onClose: () => void;
+  currentUserName?: string;
 }
 
 const authors = ["Matt", "Dawson", "Nicole", "Ray"];
@@ -32,11 +33,11 @@ const authorColors: Record<string, string> = {
   "Ray": "bg-teal-500",
 };
 
-const TaskNotesPanel = ({ taskId, taskName, open, onClose }: TaskNotesPanelProps) => {
+const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName }: TaskNotesPanelProps) => {
   const [notes, setNotes] = useState<TaskNote[]>([]);
   const [loading, setLoading] = useState(false);
   const [content, setContent] = useState("");
-  const [author, setAuthor] = useState("Matt");
+  const [author, setAuthor] = useState(currentUserName || "Matt");
   const [submitting, setSubmitting] = useState(false);
   const { toast } = useToast();
 
@@ -56,6 +57,10 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose }: TaskNotesPanelProps
     }
     setLoading(false);
   }, [taskId, toast]);
+
+  useEffect(() => {
+    if (currentUserName) setAuthor(currentUserName);
+  }, [currentUserName]);
 
   useEffect(() => {
     if (open && taskId) {

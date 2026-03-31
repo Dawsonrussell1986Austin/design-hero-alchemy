@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, useCallback } from "react";
+import CinnamonrollAuth from "@/components/CinnamonrollAuth";
 import { categories, assignees, type BrownieTask, type TaskStatus } from "@/data/brownieTasks";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
@@ -136,7 +137,7 @@ const emptyTask: Partial<BrownieTask> = {
   link_url: null,
 };
 
-const Brownie = () => {
+const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterCategory, setFilterCategory] = useState<string>("all");
@@ -815,6 +816,7 @@ const Brownie = () => {
           setNotesPanel(null);
           fetchNoteCounts();
         }}
+        currentUserName={currentUserName}
       />
 
       {/* Add/Edit Task Dialog */}
@@ -924,5 +926,11 @@ const Brownie = () => {
     </div>
   );
 };
+
+const Brownie = () => (
+  <CinnamonrollAuth>
+    {(_user, teamName) => <BrownieInner currentUserName={teamName} />}
+  </CinnamonrollAuth>
+);
 
 export default Brownie;
