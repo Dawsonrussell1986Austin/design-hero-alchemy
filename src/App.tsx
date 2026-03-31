@@ -72,6 +72,7 @@ import CedarMillCaseStudy from "./pages/CedarMillCaseStudy";
 import ThankYouBooking from "./pages/ThankYouBooking";
 import Invest from "./pages/Invest";
 import MarketCorrection from "./pages/MarketCorrection";
+import ThankYouReport from "./pages/ThankYouReport";
 
 function App() {
   return (
