@@ -1,0 +1,1 @@
+ALTER TABLE public.brownie_tasks ADD COLUMN link_url TEXT;
