@@ -318,7 +318,18 @@ const Brownie = () => {
                         return (
                           <tr key={t.id} className="border-t border-gray-100 transition-colors hover:bg-gray-50/50">
                             <td className="px-4 py-3">
-                              <span className={`text-sm ${t.status === "Complete" ? "text-gray-400 line-through" : "text-gray-800"}`}>{t.task}</span>
+                              <div className="flex items-center gap-2">
+                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <button
+                                  onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
+                                  className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0"
+                                >
+                                  <MessageSquare className="w-3.5 h-3.5" />
+                                  {noteCounts[t.id] ? (
+                                    <span className="text-[10px] font-semibold text-gray-500">{noteCounts[t.id]}</span>
+                                  ) : null}
+                                </button>
+                              </div>
                             </td>
                             <td className="px-4 py-3 hidden md:table-cell">
                               <span className="text-xs text-gray-400">{t.platform}</span>
