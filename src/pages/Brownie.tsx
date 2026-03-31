@@ -173,6 +173,23 @@ const Brownie = () => {
     }
   }, []);
 
+  const fetchTeamEmails = useCallback(async () => {
+    const { data } = await supabase.from("team_members").select("name, email");
+    if (data) {
+      const emails: Record<string, string> = {};
+      data.forEach((m: { name: string; email: string }) => { emails[m.name] = m.email; });
+      setTeamEmails(emails);
+    }
+  }, []);
+
+  const saveTeamEmails = async () => {
+    for (const [name, email] of Object.entries(teamEmails)) {
+      await supabase.from("team_members").update({ email }).eq("name", name);
+    }
+    toast({ title: "Team emails saved" });
+    setSettingsOpen(false);
+  };
+
   useEffect(() => {
     const fetchTasks = async () => {
       const { data, error } = await supabase
@@ -188,7 +205,8 @@ const Brownie = () => {
     };
     fetchTasks();
     fetchNoteCounts();
-  }, [fetchNoteCounts]);
+    fetchTeamEmails();
+  }, [fetchNoteCounts, fetchTeamEmails]);
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((t) => {
