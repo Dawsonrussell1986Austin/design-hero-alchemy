@@ -59,6 +59,10 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName }: Ta
   }, [taskId, toast]);
 
   useEffect(() => {
+    if (currentUserName) setAuthor(currentUserName);
+  }, [currentUserName]);
+
+  useEffect(() => {
     if (open && taskId) {
       fetchNotes();
       setContent("");
