@@ -816,6 +816,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           setNotesPanel(null);
           fetchNoteCounts();
         }}
+        currentUserName={currentUserName}
       />
 
       {/* Add/Edit Task Dialog */}
