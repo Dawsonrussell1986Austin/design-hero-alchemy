@@ -45,7 +45,7 @@ const MarketCorrection = () => {
         description="79% of institutional investors expect a market correction in 2026. Learn how senior-secured, real-asset-backed lending is structured to protect capital."
         canonicalUrl="/market-correction-report"
       />
-      <Navigation />
+      
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-obsidian via-graphite-fog to-obsidian pt-32 pb-20 px-4 overflow-hidden">
