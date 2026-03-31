@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Footer from "@/components/Footer";
+
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
