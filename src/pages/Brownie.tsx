@@ -893,6 +893,34 @@ const Brownie = () => {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+
+      {/* Team Email Settings Dialog */}
+      <Dialog open={settingsOpen} onOpenChange={setSettingsOpen}>
+        <DialogContent className="sm:max-w-[450px]">
+          <DialogHeader>
+            <DialogTitle className="flex items-center gap-2"><Mail className="w-5 h-5" /> Team Email Settings</DialogTitle>
+          </DialogHeader>
+          <p className="text-xs text-gray-500">Set email addresses for each team member to receive task notifications (status changes, assignments, and daily overdue digests).</p>
+          <div className="space-y-3 py-2">
+            {assignees.filter((a) => a !== "Unassigned").map((name) => (
+              <div key={name} className="flex items-center gap-3">
+                <span className={`text-xs font-medium px-2.5 py-1 rounded-full w-[80px] text-center ${assigneeColors[name]}`}>{name}</span>
+                <Input
+                  value={teamEmails[name] || ""}
+                  onChange={(e) => setTeamEmails((prev) => ({ ...prev, [name]: e.target.value }))}
+                  placeholder={`${name.toLowerCase()}@company.com`}
+                  className="h-8 text-xs flex-1"
+                  type="email"
+                />
+              </div>
+            ))}
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setSettingsOpen(false)}>Cancel</Button>
+            <Button onClick={saveTeamEmails} style={{ background: "#a85839" }}>Save Emails</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
