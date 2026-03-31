@@ -98,7 +98,7 @@ serve(async (req) => {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${RESEND_API_KEY}` },
       body: JSON.stringify({
-        from: "Fortified Capital <onboarding@resend.dev>",
+        from: "Fortified Capital <hello@updates.raiselaunch.com>",
         to: [member.email],
         subject,
         html,
