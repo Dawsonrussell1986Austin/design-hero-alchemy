@@ -137,7 +137,7 @@ const emptyTask: Partial<BrownieTask> = {
   link_url: null,
 };
 
-const Brownie = () => {
+const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterCategory, setFilterCategory] = useState<string>("all");
