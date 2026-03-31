@@ -103,7 +103,7 @@ const MarketCorrection = () => {
         <div className="relative z-10">
           <a href="/">
             <img
-              src="/lovable-uploads/e323112f-3778-4823-a73c-459340f8fc23.png"
+              src="/lovable-uploads/white_oak.png"
               alt="Oak Real Estate Partners"
               className="h-10 sm:h-12 w-auto"
             />
