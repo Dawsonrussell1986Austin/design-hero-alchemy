@@ -127,7 +127,7 @@ const MarketCorrection = () => {
                 <br />correction in{" "}
                 <em style={{ color: "#dbb96a", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-sm leading-[1.7] mt-8 max-w-[300px]" style={{ ...sans, color: "#c8d6e5", fontWeight: 400, letterSpacing: "0.02em" }}>
+              <p className="text-sm leading-[1.7] mt-8 max-w-[300px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
@@ -137,7 +137,7 @@ const MarketCorrection = () => {
               <p className="text-[10px] tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-sm mb-8" style={{ ...sans, color: "#c8d6e5", fontWeight: 400 }}>
+              <p className="text-sm mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
