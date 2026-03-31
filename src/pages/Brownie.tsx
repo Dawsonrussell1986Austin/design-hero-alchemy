@@ -1,4 +1,5 @@
 import React, { useState, useMemo, useEffect, useCallback } from "react";
+import CinnamonrollAuth from "@/components/CinnamonrollAuth";
 import { categories, assignees, type BrownieTask, type TaskStatus } from "@/data/brownieTasks";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
