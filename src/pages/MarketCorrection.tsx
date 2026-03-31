@@ -205,15 +205,15 @@ const MarketCorrection = () => {
           </div>
 
           {/* Value prop cards */}
-          <div className="grid sm:grid-cols-3 gap-[1px] mt-20 overflow-hidden" style={{ backgroundColor: "rgba(17,24,39,0.06)" }}>
+          <div className="grid sm:grid-cols-3 gap-[1px] mt-20 overflow-hidden max-w-4xl mx-auto" style={{ backgroundColor: "rgba(17,24,39,0.06)" }}>
             {[
               { title: "Senior-Secured", text: "First-lien position on every loan. Capital preservation is structural, not theoretical." },
               { title: "Real Asset Backed", text: "Every dollar tied to a specific, income-producing commercial property." },
               { title: "Downside Structured", text: "Behaves differently in stressed markets because the collateral is physical and verifiable." },
             ].map((card) => (
-              <div key={card.title} className="p-6 sm:p-8" style={{ backgroundColor: "#faf7f2" }}>
-                <p className="text-[9px] tracking-[0.3em] uppercase mb-4" style={{ ...sans, color: "#1a2333", fontWeight: 600 }}>{card.title}</p>
-                <p className="text-[12px] leading-[1.7]" style={{ ...sans, color: "#4a607e", fontWeight: 300 }}>{card.text}</p>
+              <div key={card.title} className="p-8 sm:p-10 text-center" style={{ backgroundColor: "#faf7f2" }}>
+                <p className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-4" style={{ ...sans, color: "#1a2333", fontWeight: 600 }}>{card.title}</p>
+                <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#4a607e", fontWeight: 300 }}>{card.text}</p>
               </div>
             ))}
           </div>
