@@ -15,11 +15,12 @@ import { useToast } from "@/hooks/use-toast";
 import { format, parseISO, differenceInDays, addDays, isAfter, isBefore, startOfDay } from "date-fns";
 import { cn } from "@/lib/utils";
 
-const statusOptions: TaskStatus[] = ["Not Started", "In Progress", "Complete"];
+const statusOptions: TaskStatus[] = ["Not Started", "In Progress", "In Review", "Complete"];
 
 const statusConfig: Record<TaskStatus, { icon: React.ReactNode; color: string; bg: string }> = {
   "Not Started": { icon: <Circle className="w-3.5 h-3.5" />, color: "text-gray-500", bg: "bg-gray-100 border-gray-200" },
   "In Progress": { icon: <Clock className="w-3.5 h-3.5" />, color: "text-amber-700", bg: "bg-amber-50 border-amber-200" },
+  "In Review": { icon: <GanttChart className="w-3.5 h-3.5" />, color: "text-blue-700", bg: "bg-blue-50 border-blue-200" },
   "Complete": { icon: <CheckCircle2 className="w-3.5 h-3.5" />, color: "text-emerald-700", bg: "bg-emerald-50 border-emerald-200" },
   "Archived": { icon: <Archive className="w-3.5 h-3.5" />, color: "text-gray-400", bg: "bg-gray-100 border-gray-200" },
 };
@@ -371,7 +372,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   }, [filteredTasks]);
 
   const boardColumns = useMemo(() => {
-    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "Complete": [], "Archived": [] };
+    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "In Review": [], "Complete": [], "Archived": [] };
     filteredTasks.forEach((t) => {
       if (cols[t.status]) cols[t.status].push(t);
     });
