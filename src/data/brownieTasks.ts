@@ -9,7 +9,7 @@ export interface BrownieTask {
   status: TaskStatus;
   assigned: string;
   category: string;
-  due_date: string | null;
+  due_date?: string | null;
 }
 
 export const categories = [
