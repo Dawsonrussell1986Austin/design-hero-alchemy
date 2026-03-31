@@ -78,6 +78,7 @@ export type Database = {
         Row: {
           assigned: string
           category: string
+          due_date: string | null
           id: number
           platform: string
           priority: string
@@ -87,6 +88,7 @@ export type Database = {
         Insert: {
           assigned?: string
           category: string
+          due_date?: string | null
           id: number
           platform: string
           priority: string
@@ -96,6 +98,7 @@ export type Database = {
         Update: {
           assigned?: string
           category?: string
+          due_date?: string | null
           id?: number
           platform?: string
           priority?: string
