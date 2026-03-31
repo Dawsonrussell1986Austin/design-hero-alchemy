@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import Navigation from "@/components/Navigation";
+
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
@@ -45,7 +45,7 @@ const MarketCorrection = () => {
         description="79% of institutional investors expect a market correction in 2026. Learn how senior-secured, real-asset-backed lending is structured to protect capital."
         canonicalUrl="/market-correction-report"
       />
-      <Navigation />
+      
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-obsidian via-graphite-fog to-obsidian pt-32 pb-20 px-4 overflow-hidden">
