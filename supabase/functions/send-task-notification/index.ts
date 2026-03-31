@@ -69,6 +69,24 @@ serve(async (req) => {
           </div>
         </div>
       `;
+    } else if (type === "note_added") {
+      subject = `New Note on Task: ${taskName}`;
+      html = `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="background: linear-gradient(135deg, #a85839, #e8c468); padding: 20px 25px; border-radius: 8px 8px 0 0;">
+            <h2 style="color: white; margin: 0; font-size: 18px;">💬 New Note Added</h2>
+          </div>
+          <div style="background: #ffffff; padding: 25px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 8px 8px;">
+            <p style="color: #374151; font-size: 14px; margin: 0 0 15px;"><strong>Task:</strong> ${taskName}</p>
+            <p style="color: #374151; font-size: 14px; margin: 0 0 15px;"><strong>Note by:</strong> ${oldValue || "Team"}</p>
+            <div style="background: #f9fafb; border-left: 3px solid #a85839; padding: 12px 16px; margin: 0 0 15px; border-radius: 0 4px 4px 0;">
+              <p style="color: #374151; font-size: 13px; margin: 0; white-space: pre-wrap;">${newValue || ""}</p>
+            </div>
+            <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
+            <p style="color: #9ca3af; font-size: 11px; margin: 0;">Oak Real Estate Partners · Fortified Capital Marketing</p>
+          </div>
+        </div>
+      `;
     } else {
       return new Response(
         JSON.stringify({ success: false, reason: "Unknown notification type" }),

@@ -817,6 +817,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           fetchNoteCounts();
         }}
         currentUserName={currentUserName}
+        assignedTo={notesPanel ? tasks.find(t => t.id === notesPanel.taskId)?.assigned : undefined}
       />
 
       {/* Add/Edit Task Dialog */}

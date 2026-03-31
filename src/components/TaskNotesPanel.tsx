@@ -22,6 +22,7 @@ interface TaskNotesPanelProps {
   open: boolean;
   onClose: () => void;
   currentUserName?: string;
+  assignedTo?: string;
 }
 
 const authors = ["Matt", "Dawson", "Nicole", "Ray"];
@@ -33,7 +34,7 @@ const authorColors: Record<string, string> = {
   "Ray": "bg-teal-500",
 };
 
-const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName }: TaskNotesPanelProps) => {
+const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName, assignedTo }: TaskNotesPanelProps) => {
   const [notes, setNotes] = useState<TaskNote[]>([]);
   const [loading, setLoading] = useState(false);
   const [content, setContent] = useState("");
@@ -81,6 +82,12 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName }: Ta
     } else {
       setContent("");
       fetchNotes();
+      // Notify assigned person about new note
+      if (assignedTo && assignedTo !== "Unassigned" && assignedTo !== author) {
+        supabase.functions.invoke("send-task-notification", {
+          body: { type: "note_added", taskName, assignedTo, oldValue: author, newValue: content.trim() },
+        }).catch(console.error);
+      }
     }
     setSubmitting(false);
   };
