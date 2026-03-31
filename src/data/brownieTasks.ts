@@ -1,4 +1,4 @@
-export type TaskStatus = "Not Started" | "In Progress" | "Complete" | "Archived";
+export type TaskStatus = "Not Started" | "In Progress" | "In Review" | "Complete" | "Archived";
 export type TaskPriority = "CRITICAL" | "TRAILING" | "LAUNCH";
 
 export interface BrownieTask {
