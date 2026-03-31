@@ -63,7 +63,7 @@ const CinnamonrollAuth = ({ children }: CinnamonrollAuthProps) => {
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim(),
       options: {
-        emailRedirectTo: window.location.origin + "/cinnamonroll",
+        emailRedirectTo: "https://www.oakrepartners.com/cinnamonroll",
       },
     });
     setSending(false);
