@@ -1,0 +1,1 @@
+UPDATE public.brownie_tasks SET priority = REPLACE(priority, 'LAUNCH-CRITICAL', 'CRITICAL') WHERE priority LIKE '%LAUNCH-CRITICAL%';
