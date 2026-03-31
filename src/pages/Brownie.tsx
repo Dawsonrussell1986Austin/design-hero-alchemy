@@ -385,7 +385,16 @@ const Brownie = () => {
                   <div className="space-y-2">
                     {colTasks.map((t) => (
                       <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50">
-                        <p className="text-sm mb-2 text-gray-800">{t.task}</p>
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <p className="text-sm text-gray-800 flex-1">{t.task}</p>
+                          <button
+                            onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
+                            className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0 mt-0.5"
+                          >
+                            <MessageSquare className="w-3.5 h-3.5" />
+                            {noteCounts[t.id] ? <span className="text-[10px] font-semibold text-gray-500">{noteCounts[t.id]}</span> : null}
+                          </button>
+                        </div>
                         <div className="flex items-center gap-2 flex-wrap">
                           <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["LAUNCH-CRITICAL"]}`}>
                             {t.priority.split("(")[0].trim()}
