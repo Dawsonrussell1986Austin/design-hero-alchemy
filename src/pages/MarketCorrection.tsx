@@ -118,7 +118,10 @@ const MarketCorrection = () => {
               <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-10" style={{ ...sans, color: "#c9a84c", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
               </p>
-              <p className="text-2xl sm:text-3xl lg:text-4xl leading-[1.1] font-light" style={{ ...serif, color: "#ffffff" }}>
+              <h1 className="text-[5rem] sm:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
+                79%
+              </h1>
+              <p className="text-2xl sm:text-3xl leading-[1.1] mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
                 Seventy-nine percent of institutional investors
                 <br />expect a market
                 <br />correction in{" "}
