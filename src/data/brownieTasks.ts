@@ -1,5 +1,5 @@
 export type TaskStatus = "Not Started" | "In Progress" | "Complete";
-export type TaskPriority = "LAUNCH-CRITICAL" | "TRAILING" | "LAUNCH";
+export type TaskPriority = "CRITICAL" | "TRAILING" | "LAUNCH";
 
 export interface BrownieTask {
   id: number;
@@ -31,14 +31,14 @@ export const assignees = ["Matt", "Dawson", "Nicole", "Ray", "Unassigned"];
 
 export const initialTasks: BrownieTask[] = [
   // Digital Advertising Creative
-  { id: 1, task: "Design & export 5-8 original static ads (1080×1080) from HTML designs", priority: "LAUNCH-CRITICAL", platform: "Canva", status: "In Progress", assigned: "Matt", category: "Digital Advertising Creative" },
+  { id: 1, task: "Design & export 5-8 original static ads (1080×1080) from HTML designs", priority: "CRITICAL", platform: "Canva", status: "In Progress", assigned: "Matt", category: "Digital Advertising Creative" },
   { id: 3, task: "Produce 2 video ads (15–30 sec) — Ads 7 & 8", priority: "TRAILING", platform: "Runway ML + Adobe Premiere Pro", status: "Not Started", assigned: "Dawson", category: "Digital Advertising Creative" },
   { id: 4, task: "Create platform-specific ad variants (LinkedIn, Stories, Display sizes)", priority: "TRAILING", platform: "Figma + Canva Pro", status: "In Progress", assigned: "Matt", category: "Digital Advertising Creative" },
   { id: 45, task: "Create 5-8 organic social graphics", priority: "TRAILING", platform: "Canva", status: "Not Started", assigned: "Matt", category: "Digital Advertising Creative" },
 
   // Landing Pages
-  { id: 5, task: "Build 5 fear-trigger landing pages", priority: "LAUNCH-CRITICAL", platform: "Lovable", status: "Not Started", assigned: "Dawson", category: "Landing Pages" },
-  { id: 6, task: "Build thank-you / confirmation pages with next-step CTAs", priority: "LAUNCH-CRITICAL", platform: "Lovable", status: "Not Started", assigned: "Dawson", category: "Landing Pages" },
+  { id: 5, task: "Build 5 fear-trigger landing pages", priority: "CRITICAL", platform: "Lovable", status: "Not Started", assigned: "Dawson", category: "Landing Pages" },
+  { id: 6, task: "Build thank-you / confirmation pages with next-step CTAs", priority: "CRITICAL", platform: "Lovable", status: "Not Started", assigned: "Dawson", category: "Landing Pages" },
 
   // Gated Content Assets
   { id: 7, task: "Draft & design 'The 2026 Accredited Investor Risk Report' (6-page PDF)", priority: "TRAILING", platform: "Claude → Canva", status: "Not Started", assigned: "Nicole", category: "Gated Content Assets" },
@@ -46,8 +46,8 @@ export const initialTasks: BrownieTask[] = [
   { id: 9, task: "Draft & design 'The 8-Cycle Track Record' timeline document", priority: "TRAILING", platform: "Claude → Canva", status: "Not Started", assigned: "Nicole", category: "Gated Content Assets" },
 
   // Email Marketing (SFMC)
-  { id: 10, task: "Draft & load 8-email nurture sequence into SFMC Journey Builder", priority: "LAUNCH-CRITICAL", platform: "SFMC Journey Builder", status: "In Progress", assigned: "Dawson", category: "Email Marketing (SFMC)" },
-  { id: 46, task: "Load in final and approved email sequence into SFMC", priority: "LAUNCH-CRITICAL", platform: "SFMC Journey Builder", status: "Not Started", assigned: "Dawson", category: "Email Marketing (SFMC)" },
+  { id: 10, task: "Draft & load 8-email nurture sequence into SFMC Journey Builder", priority: "CRITICAL", platform: "SFMC Journey Builder", status: "In Progress", assigned: "Dawson", category: "Email Marketing (SFMC)" },
+  { id: 46, task: "Load in final and approved email sequence into SFMC", priority: "CRITICAL", platform: "SFMC Journey Builder", status: "Not Started", assigned: "Dawson", category: "Email Marketing (SFMC)" },
   { id: 11, task: "Build 'The Oak Report' monthly newsletter template", priority: "TRAILING", platform: "SFMC Content Builder", status: "Not Started", assigned: "Dawson", category: "Email Marketing (SFMC)" },
   { id: 12, task: "Pre-draft & load 3 re-engagement trigger email templates", priority: "TRAILING", platform: "SFMC Automation Studio", status: "Not Started", assigned: "Dawson", category: "Email Marketing (SFMC)" },
 
@@ -65,30 +65,30 @@ export const initialTasks: BrownieTask[] = [
   { id: 21, task: "Produce 2–3 min principal introduction video", priority: "TRAILING", platform: "Professional production + Premiere", status: "Not Started", assigned: "Unassigned", category: "Video Content" },
 
   // Analytics & Tracking
-  { id: 22, task: "Build UTM parameter framework for all 10 ads across all platforms", priority: "LAUNCH-CRITICAL", platform: "Google Analytics 4 + UTM.io", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
-  { id: 23, task: "Deploy conversion tracking pixels (LinkedIn, Meta, GA4)", priority: "LAUNCH-CRITICAL", platform: "Google Tag Manager", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
-  { id: 24, task: "Configure lead scoring model", priority: "LAUNCH-CRITICAL", platform: "SFMC Einstein + Juniper Square", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
+  { id: 22, task: "Build UTM parameter framework for all 10 ads across all platforms", priority: "CRITICAL", platform: "Google Analytics 4 + UTM.io", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
+  { id: 23, task: "Deploy conversion tracking pixels (LinkedIn, Meta, GA4)", priority: "CRITICAL", platform: "Google Tag Manager", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
+  { id: 24, task: "Configure lead scoring model", priority: "CRITICAL", platform: "SFMC Einstein + Juniper Square", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
   { id: 25, task: "Set up campaign dashboard", priority: "TRAILING", platform: "SFMC Intelligence / Databox", status: "Not Started", assigned: "Unassigned", category: "Analytics & Tracking" },
 
   // CRM & Platform Integration
-  { id: 26, task: "Configure SFMC Journey Builder nurture sequence logic & load content", priority: "LAUNCH-CRITICAL", platform: "SFMC (existing)", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
-  { id: 27, task: "Configure Juniper Square investor portal for campaign converts", priority: "LAUNCH-CRITICAL", platform: "Juniper Square (existing)", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
-  { id: 28, task: "Set up lead routing & assignment rules in Salesforce CRM", priority: "LAUNCH-CRITICAL", platform: "Salesforce Sales Cloud", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
+  { id: 26, task: "Configure SFMC Journey Builder nurture sequence logic & load content", priority: "CRITICAL", platform: "SFMC (existing)", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
+  { id: 27, task: "Configure Juniper Square investor portal for campaign converts", priority: "CRITICAL", platform: "Juniper Square (existing)", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
+  { id: 28, task: "Set up lead routing & assignment rules in Salesforce CRM", priority: "CRITICAL", platform: "Salesforce Sales Cloud", status: "Not Started", assigned: "Unassigned", category: "CRM & Platform Integration" },
 
   // Website & SEO
   { id: 29, task: "Build campaign microsite / landing hub", priority: "TRAILING", platform: "Webflow / WordPress", status: "Not Started", assigned: "Unassigned", category: "Website & SEO" },
   { id: 30, task: "Draft & publish 3–5 SEO blog articles (1/week from Week 3)", priority: "TRAILING", platform: "WordPress + Clearscope", status: "Not Started", assigned: "Unassigned", category: "Website & SEO" },
 
   // Compliance & Legal
-  { id: 31, task: "Draft & get legal approval for ad disclaimer / disclosure copy", priority: "LAUNCH-CRITICAL", platform: "Internal legal review", status: "Not Started", assigned: "Unassigned", category: "Compliance & Legal" },
-  { id: 32, task: "Set up accredited investor verification on lead-capture forms", priority: "LAUNCH-CRITICAL", platform: "Juniper Square / Verify Investor", status: "Not Started", assigned: "Unassigned", category: "Compliance & Legal" },
+  { id: 31, task: "Draft & get legal approval for ad disclaimer / disclosure copy", priority: "CRITICAL", platform: "Internal legal review", status: "Not Started", assigned: "Unassigned", category: "Compliance & Legal" },
+  { id: 32, task: "Set up accredited investor verification on lead-capture forms", priority: "CRITICAL", platform: "Juniper Square / Verify Investor", status: "Not Started", assigned: "Unassigned", category: "Compliance & Legal" },
 
   // Campaign Operations
-  { id: 33, task: "Lock brand guidelines", priority: "LAUNCH-CRITICAL", platform: "Internal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
-  { id: 34, task: "Set up LinkedIn Campaign Manager — audiences, creatives, UTMs", priority: "LAUNCH-CRITICAL", platform: "LinkedIn Campaign Manager", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
-  { id: 35, task: "Set up Meta Ads Manager — lookalike build, pixel verification", priority: "LAUNCH-CRITICAL", platform: "Meta Ads Manager", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
-  { id: 36, task: "Conduct condensed 2-hour sales team training session", priority: "LAUNCH-CRITICAL", platform: "Internal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
-  { id: 37, task: "Complete compliance / legal review of all ad creative", priority: "LAUNCH-CRITICAL", platform: "Internal legal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
+  { id: 33, task: "Lock brand guidelines", priority: "CRITICAL", platform: "Internal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
+  { id: 34, task: "Set up LinkedIn Campaign Manager — audiences, creatives, UTMs", priority: "CRITICAL", platform: "LinkedIn Campaign Manager", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
+  { id: 35, task: "Set up Meta Ads Manager — lookalike build, pixel verification", priority: "CRITICAL", platform: "Meta Ads Manager", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
+  { id: 36, task: "Conduct condensed 2-hour sales team training session", priority: "CRITICAL", platform: "Internal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
+  { id: 37, task: "Complete compliance / legal review of all ad creative", priority: "CRITICAL", platform: "Internal legal", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
   { id: 38, task: "Soft launch Ads 1 & 5 on LinkedIn + Meta", priority: "LAUNCH", platform: "LinkedIn + Meta", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
   { id: 39, task: "QA landing pages across devices & verify conversion tracking", priority: "LAUNCH", platform: "Unbounce + GTM", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
   { id: 40, task: "Activate email nurture sequence (form-triggered)", priority: "LAUNCH", platform: "SFMC Journey Builder", status: "Not Started", assigned: "Unassigned", category: "Campaign Operations" },
