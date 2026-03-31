@@ -82,6 +82,12 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName, assi
     } else {
       setContent("");
       fetchNotes();
+      // Notify assigned person about new note
+      if (assignedTo && assignedTo !== "Unassigned" && assignedTo !== author) {
+        supabase.functions.invoke("send-task-notification", {
+          body: { type: "note_added", taskName, assignedTo, oldValue: author, newValue: content.trim() },
+        }).catch(console.error);
+      }
     }
     setSubmitting(false);
   };
