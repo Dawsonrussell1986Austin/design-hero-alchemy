@@ -121,7 +121,7 @@ const MarketCorrection = () => {
               <h1 className="text-[5rem] sm:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
                 79%
               </h1>
-              <p className="text-2xl sm:text-3xl leading-[1.1] mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
+              <p className="text-3xl sm:text-4xl leading-[1.1] mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
                 Seventy-nine percent of institutional investors
                 <br />expect a market
                 <br />correction in{" "}
