@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 
 /*
  * Palette matched exactly to OREP ad design system:
@@ -176,6 +176,14 @@ const MarketCorrection = () => {
                 <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="relative z-10 flex justify-center mt-4 sm:mt-6">
+          <div className="flex flex-col items-center gap-1 animate-bounce" style={{ animationDuration: "2s" }}>
+            <span className="text-[9px] tracking-[0.3em] uppercase" style={{ ...sans, color: "rgba(240,236,227,0.3)", fontWeight: 400 }}>Scroll</span>
+            <ChevronDown className="w-4 h-4" style={{ color: "rgba(240,236,227,0.3)" }} />
           </div>
         </div>
       </section>
