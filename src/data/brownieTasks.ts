@@ -25,7 +25,7 @@ export const categories = [
   "Campaign Operations",
 ];
 
-export const assignees = ["Matt", "Dawson", "Nicole", "Unassigned"];
+export const assignees = ["Matt", "Dawson", "Nicole", "Ray", "Unassigned"];
 
 export const initialTasks: BrownieTask[] = [
   // Digital Advertising Creative
