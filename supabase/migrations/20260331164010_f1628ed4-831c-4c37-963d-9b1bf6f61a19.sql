@@ -1,0 +1,1 @@
+CREATE POLICY "Anyone can delete brownie tasks" ON public.brownie_tasks FOR DELETE TO anon, authenticated USING (true);
