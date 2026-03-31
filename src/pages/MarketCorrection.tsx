@@ -10,7 +10,7 @@ import { ArrowRight } from "lucide-react";
 /*
  * Landing-page-only palette (matched to Oak social ads):
  * --lp-dark:    #0C1A2A  (deep navy-black)
- * --lp-gold:    #B8963E  (warm muted gold)
+ * --lp-gold:    #C4A24B  (warm muted gold)
  * --lp-cream:   #E6E0D4  (warm cream headlines)
  * --lp-muted:   #5E7A86  (steel-teal sublabels)
  * --lp-light:   #FAF5EE  (cream section bg)
@@ -109,7 +109,7 @@ const MarketCorrection = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             {/* Left — Copy */}
             <div>
-              <p className="text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-10" style={{ ...sans, color: "#B8963E" }}>
+              <p className="text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-10" style={{ ...sans, color: "#C4A24B" }}>
                 2026 Institutional Investor Data
               </p>
               <h1 className="text-[5rem] sm:text-[7rem] lg:text-[9rem] font-extrabold leading-[0.85] tracking-tight" style={{ ...serif, color: "#E6E0D4" }}>
@@ -142,7 +142,7 @@ const MarketCorrection = () => {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full flex items-center justify-center gap-3 py-3.5 text-sm tracking-[0.12em] uppercase transition-opacity disabled:opacity-50"
-                    style={{ ...sans, backgroundColor: "#B8963E", color: "#0C1A2A", fontWeight: 600 }}
+                    style={{ ...sans, backgroundColor: "#C4A24B", color: "#0C1A2A", fontWeight: 600 }}
                   >
                     {isSubmitting ? "Submitting..." : "Send Me the Report"}
                     {!isSubmitting && <ArrowRight className="h-4 w-4" />}
@@ -176,14 +176,14 @@ const MarketCorrection = () => {
       {/* ════════ BODY — WARM CREAM ════════ */}
       <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#FAF5EE" }}>
         <div className="max-w-4xl">
-          <div className="w-12 h-[2px] mb-6" style={{ backgroundColor: "#B8963E" }} />
-          <p className="text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-16" style={{ ...sans, color: "#B8963E" }}>
+          <div className="w-12 h-[2px] mb-6" style={{ backgroundColor: "#C4A24B" }} />
+          <p className="text-[10px] sm:text-xs tracking-[0.3em] uppercase mb-16" style={{ ...sans, color: "#C4A24B" }}>
             Oak Real Estate Partners
           </p>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.1] max-w-2xl" style={{ ...serif, color: "#1E3347" }}>
             The institutions tracking this data aren't waiting for the correction to{" "}
-            <em style={{ color: "#B8963E", fontStyle: "italic" }}>arrive.</em>
+            <em style={{ color: "#C4A24B", fontStyle: "italic" }}>arrive.</em>
           </h2>
 
           <p className="text-sm sm:text-base leading-relaxed max-w-lg mt-10" style={{ ...body, color: "#4A6070" }}>
@@ -191,7 +191,7 @@ const MarketCorrection = () => {
           </p>
 
           {/* Blockquote */}
-          <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "2px solid #B8963E" }}>
+          <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "2px solid #C4A24B" }}>
             <p className="text-lg sm:text-xl leading-relaxed max-w-lg" style={{ ...serif, color: "#1E3347", fontStyle: "italic" }}>
               Senior-secured, first-lien bridge loans on income-producing commercial real estate. Every dollar backed by a specific property you can see, value, and verify. Not a ticker. Not a blind pool. An address.
             </p>
@@ -219,7 +219,7 @@ const MarketCorrection = () => {
           <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.4]" style={{ ...serif, color: "rgba(230,224,212,0.8)", fontStyle: "italic" }}>
             If a correction arrives in the next 90 days, does your portfolio hold?
           </p>
-          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.4] mt-2" style={{ ...serif, color: "#B8963E", fontStyle: "italic" }}>
+          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.4] mt-2" style={{ ...serif, color: "#C4A24B", fontStyle: "italic" }}>
             Or does it just feel like it will?
           </p>
           <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...body, color: "#5E7A86" }}>
@@ -228,7 +228,7 @@ const MarketCorrection = () => {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="mt-10 inline-flex items-center gap-3 py-3 px-10 text-sm tracking-[0.12em] uppercase transition-opacity"
-            style={{ ...sans, backgroundColor: "#B8963E", color: "#0C1A2A", fontWeight: 600 }}
+            style={{ ...sans, backgroundColor: "#C4A24B", color: "#0C1A2A", fontWeight: 600 }}
           >
             Get the Report <ArrowRight className="h-4 w-4" />
           </button>
@@ -244,7 +244,7 @@ const MarketCorrection = () => {
               Institutional CRE Lending · Senior Secured · Real Assets
             </p>
           </div>
-          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wide hover:underline underline-offset-4" style={{ ...body, color: "#B8963E" }}>
+          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-xs tracking-wide hover:underline underline-offset-4" style={{ ...body, color: "#C4A24B" }}>
             oakrepartners.com
           </a>
         </div>
