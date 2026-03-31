@@ -221,8 +221,37 @@ const Brownie = () => {
     }
   }, [toast]);
 
-  const updateStatus = (id: number, status: TaskStatus) => updateField(id, "status", status);
-  const updateAssignee = (id: number, assigned: string) => updateField(id, "assigned", assigned);
+  const sendNotification = useCallback(async (type: string, taskName: string, assignedTo: string, oldValue?: string, newValue?: string) => {
+    if (assignedTo === "Unassigned") return;
+    try {
+      await supabase.functions.invoke("send-task-notification", {
+        body: { type, taskName, assignedTo, oldValue, newValue },
+      });
+    } catch (e) {
+      console.error("Notification failed:", e);
+    }
+  }, []);
+
+  const updateStatus = async (id: number, status: TaskStatus) => {
+    const task = tasks.find((t) => t.id === id);
+    if (task) {
+      const oldStatus = task.status;
+      await updateField(id, "status", status);
+      sendNotification("status_change", task.task, task.assigned, oldStatus, status);
+    }
+  };
+
+  const updateAssignee = async (id: number, assigned: string) => {
+    const task = tasks.find((t) => t.id === id);
+    if (task) {
+      const oldAssigned = task.assigned;
+      await updateField(id, "assigned", assigned);
+      if (assigned !== oldAssigned) {
+        sendNotification("assignment_change", task.task, assigned, oldAssigned, assigned);
+      }
+    }
+  };
+
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
   const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
 
