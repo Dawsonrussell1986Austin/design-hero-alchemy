@@ -35,10 +35,6 @@ const ThankYouReport = () => {
         </a>
 
         <div className="max-w-2xl mx-auto text-center">
-          {/* Confirmation icon */}
-          <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-8" style={{ backgroundColor: "rgba(201,168,76,0.1)", border: "1px solid rgba(201,168,76,0.2)" }}>
-            <Mail className="w-7 h-7" style={{ color: "#c9a84c" }} />
-          </div>
 
           <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#c9a84c", fontWeight: 500 }}>
             You're In
