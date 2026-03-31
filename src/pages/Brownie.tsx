@@ -4,8 +4,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2 } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
 import TaskNotesPanel from "@/components/TaskNotesPanel";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
@@ -19,6 +21,8 @@ const statusConfig: Record<TaskStatus, { icon: React.ReactNode; color: string; b
   "In Progress": { icon: <Clock className="w-3.5 h-3.5" />, color: "text-amber-700", bg: "bg-amber-50 border-amber-200" },
   "Complete": { icon: <CheckCircle2 className="w-3.5 h-3.5" />, color: "text-emerald-700", bg: "bg-emerald-50 border-emerald-200" },
 };
+
+const priorityOptions = ["CRITICAL", "LAUNCH", "TRAILING"];
 
 const priorityConfig: Record<string, string> = {
   "CRITICAL": "bg-red-100 text-red-800 border-red-200",
@@ -50,26 +54,18 @@ const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; 
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button
-          variant="outline"
-          className={cn(
-            "h-7 w-[110px] text-[11px] justify-start font-normal gap-1 px-2",
-            !value && "text-gray-400",
-            isOverdue && "text-red-600 border-red-200 bg-red-50"
-          )}
-        >
+        <button className={cn("flex items-center gap-1 text-[11px] px-1.5 py-0.5 rounded hover:bg-gray-100 transition-colors", isOverdue ? "text-red-500 font-semibold" : value ? "text-gray-600" : "text-gray-300")}>
           <CalendarIcon className="w-3 h-3" />
           {value ? format(parseISO(value), "MMM d") : "Set date"}
-        </Button>
+        </button>
       </PopoverTrigger>
       <PopoverContent className="w-auto p-0" align="start">
-        <Calendar
-          mode="single"
-          selected={selected}
-          onSelect={(d) => onChange(d ? format(d, "yyyy-MM-dd") : null)}
-          initialFocus
-          className={cn("p-3 pointer-events-auto")}
-        />
+        <Calendar mode="single" selected={selected} onSelect={(d) => { onChange(d ? format(d, "yyyy-MM-dd") : null); }} initialFocus className="pointer-events-auto" />
+        {value && (
+          <div className="px-3 pb-3">
+            <Button variant="outline" size="sm" className="w-full h-7 text-xs" onClick={() => onChange(null)}>Clear date</Button>
+          </div>
+        )}
       </PopoverContent>
     </Popover>
   );
@@ -127,6 +123,18 @@ const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onC
   );
 };
 
+// Blank task for the add/edit dialog
+const emptyTask: Partial<BrownieTask> = {
+  task: "",
+  priority: "TRAILING",
+  status: "Not Started" as TaskStatus,
+  assigned: "Unassigned",
+  category: categories[0],
+  platform: "",
+  due_date: null,
+  link_url: null,
+};
+
 const Brownie = () => {
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
@@ -136,6 +144,15 @@ const Brownie = () => {
   const [viewMode, setViewMode] = useState<ViewMode>("list");
   const [noteCounts, setNoteCounts] = useState<Record<number, number>>({});
   const [notesPanel, setNotesPanel] = useState<{ taskId: number; taskName: string } | null>(null);
+  const [showArchived, setShowArchived] = useState(false);
+
+  // Add/Edit dialog state
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [editingTask, setEditingTask] = useState<Partial<BrownieTask> & { isNew?: boolean }>(emptyTask);
+
+  // Delete confirmation
+  const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
+
   const { toast } = useToast();
 
   const fetchNoteCounts = useCallback(async () => {
@@ -170,20 +187,24 @@ const Brownie = () => {
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((t) => {
+      if (!showArchived && t.status === "Archived") return false;
+      if (showArchived && t.status !== "Archived") return false;
       if (filterCategory !== "all" && t.category !== filterCategory) return false;
       if (filterAssignee !== "all" && t.assigned !== filterAssignee) return false;
       if (filterPriority !== "all" && !t.priority.startsWith(filterPriority)) return false;
       return true;
     });
-  }, [tasks, filterCategory, filterAssignee, filterPriority]);
+  }, [tasks, filterCategory, filterAssignee, filterPriority, showArchived]);
 
   const stats = useMemo(() => {
-    const total = tasks.length;
-    const complete = tasks.filter((t) => t.status === "Complete").length;
-    const inProgress = tasks.filter((t) => t.status === "In Progress").length;
-    const critical = tasks.filter((t) => t.priority.startsWith("CRITICAL")).length;
-    const criticalComplete = tasks.filter((t) => t.priority.startsWith("CRITICAL") && t.status === "Complete").length;
-    return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0 };
+    const activeTasks = tasks.filter((t) => t.status !== "Archived");
+    const total = activeTasks.length;
+    const complete = activeTasks.filter((t) => t.status === "Complete").length;
+    const inProgress = activeTasks.filter((t) => t.status === "In Progress").length;
+    const critical = activeTasks.filter((t) => t.priority.startsWith("CRITICAL")).length;
+    const criticalComplete = activeTasks.filter((t) => t.priority.startsWith("CRITICAL") && t.status === "Complete").length;
+    const archived = tasks.filter((t) => t.status === "Archived").length;
+    return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0, archived };
   }, [tasks]);
 
   const updateField = useCallback(async (id: number, field: string, value: string | null) => {
@@ -204,6 +225,89 @@ const Brownie = () => {
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
   const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
 
+  const archiveTask = async (id: number) => {
+    await updateField(id, "status", "Archived");
+    toast({ title: "Task archived" });
+  };
+
+  const unarchiveTask = async (id: number) => {
+    await updateField(id, "status", "Not Started");
+    toast({ title: "Task restored" });
+  };
+
+  const deleteTask = async (id: number) => {
+    // Delete notes first, then the task
+    await supabase.from("brownie_task_notes").delete().eq("task_id", id);
+    const { error } = await supabase.from("brownie_tasks").delete().eq("id", id);
+    if (error) {
+      toast({ title: "Failed to delete", description: error.message, variant: "destructive" });
+    } else {
+      setTasks((prev) => prev.filter((t) => t.id !== id));
+      toast({ title: "Task deleted" });
+    }
+    setDeleteConfirm(null);
+  };
+
+  const openNewTask = () => {
+    setEditingTask({ ...emptyTask, isNew: true });
+    setDialogOpen(true);
+  };
+
+  const openEditTask = (task: BrownieTask) => {
+    setEditingTask({ ...task, isNew: false });
+    setDialogOpen(true);
+  };
+
+  const saveTask = async () => {
+    if (!editingTask.task?.trim()) {
+      toast({ title: "Task name is required", variant: "destructive" });
+      return;
+    }
+
+    if (editingTask.isNew) {
+      // Get next ID
+      const maxId = tasks.length > 0 ? Math.max(...tasks.map((t) => t.id)) : 0;
+      const newTask = {
+        id: maxId + 1,
+        task: editingTask.task!.trim(),
+        priority: editingTask.priority || "TRAILING",
+        platform: editingTask.platform || "",
+        status: (editingTask.status || "Not Started") as string,
+        assigned: editingTask.assigned || "Unassigned",
+        category: editingTask.category || categories[0],
+        due_date: editingTask.due_date || null,
+        link_url: editingTask.link_url || null,
+      };
+
+      const { error } = await supabase.from("brownie_tasks").insert(newTask);
+      if (error) {
+        toast({ title: "Failed to create task", description: error.message, variant: "destructive" });
+        return;
+      }
+      setTasks((prev) => [...prev, newTask as BrownieTask]);
+      toast({ title: "Task created" });
+    } else {
+      // Update existing
+      const updates = {
+        task: editingTask.task!.trim(),
+        priority: editingTask.priority,
+        category: editingTask.category,
+        assigned: editingTask.assigned,
+        status: editingTask.status,
+        due_date: editingTask.due_date || null,
+        link_url: editingTask.link_url || null,
+      };
+      const { error } = await supabase.from("brownie_tasks").update(updates).eq("id", editingTask.id);
+      if (error) {
+        toast({ title: "Failed to update", description: error.message, variant: "destructive" });
+        return;
+      }
+      setTasks((prev) => prev.map((t) => (t.id === editingTask.id ? { ...t, ...updates } as BrownieTask : t)));
+      toast({ title: "Task updated" });
+    }
+    setDialogOpen(false);
+  };
+
   const groupedTasks = useMemo(() => {
     const groups: Record<string, BrownieTask[]> = {};
     filteredTasks.forEach((t) => {
@@ -215,7 +319,9 @@ const Brownie = () => {
 
   const boardColumns = useMemo(() => {
     const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "Complete": [] };
-    filteredTasks.forEach((t) => cols[t.status].push(t));
+    filteredTasks.forEach((t) => {
+      if (cols[t.status]) cols[t.status].push(t);
+    });
     return cols;
   }, [filteredTasks]);
 
@@ -229,12 +335,10 @@ const Brownie = () => {
     const earliest = dates.reduce((a, b) => (isBefore(a, b) ? a : b), today);
     const latest = dates.reduce((a, b) => (isAfter(a, b) ? a : b), addDays(today, 14));
 
-    // Add some padding
     const start = addDays(isBefore(earliest, today) ? earliest : today, -2);
     const end = addDays(latest, 5);
     const totalDays = differenceInDays(end, start) + 1;
 
-    // Generate week markers
     const weeks: { date: Date; label: string; offset: number }[] = [];
     for (let i = 0; i < totalDays; i++) {
       const d = addDays(start, i);
@@ -269,6 +373,9 @@ const Brownie = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <Button onClick={openNewTask} size="sm" className="h-8 text-xs gap-1.5" style={{ background: "#a85839" }}>
+              <Plus className="w-3.5 h-3.5" /> New Task
+            </Button>
             <div className="flex items-center gap-1 rounded-lg p-0.5 bg-gray-100">
               <button onClick={() => setViewMode("list")} className={`p-1.5 rounded-md transition-colors ${viewMode === "list" ? "bg-white shadow-sm text-gray-900" : "text-gray-400 hover:text-gray-600"}`}>
                 <List className="w-4 h-4" />
@@ -340,6 +447,15 @@ const Brownie = () => {
               <SelectItem value="TRAILING">Trailing</SelectItem>
             </SelectContent>
           </Select>
+
+          <button
+            onClick={() => setShowArchived(!showArchived)}
+            className={cn("flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-lg border transition-colors", showArchived ? "bg-gray-800 text-white border-gray-800" : "bg-white text-gray-500 border-gray-200 hover:border-gray-300")}
+          >
+            <Archive className="w-3 h-3" />
+            Archived{stats.archived > 0 && ` (${stats.archived})`}
+          </button>
+
           <span className="text-xs ml-auto text-gray-400">{filteredTasks.length} task{filteredTasks.length !== 1 ? "s" : ""}</span>
         </div>
 
@@ -357,21 +473,21 @@ const Brownie = () => {
                     <thead>
                       <tr className="bg-gray-50">
                         <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400">Task</th>
-                        <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 hidden md:table-cell text-gray-400">Platform</th>
                         <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400">Priority</th>
                         <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400">Due Date</th>
                         <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400">Status</th>
                         <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400">Assigned</th>
+                        <th className="text-left text-[10px] font-semibold uppercase tracking-wider px-4 py-2.5 text-gray-400 w-[80px]">Actions</th>
                       </tr>
                     </thead>
                     <tbody>
                       {catTasks.map((t) => {
-                        const sc = statusConfig[t.status];
+                        const sc = statusConfig[t.status] || statusConfig["Not Started"];
                         return (
                           <tr key={t.id} className="border-t border-gray-100 transition-colors hover:bg-gray-50/50">
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
-                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
                                 <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
@@ -384,9 +500,6 @@ const Brownie = () => {
                                 </button>
                               </div>
                             </td>
-                            <td className="px-4 py-3 hidden md:table-cell">
-                              <span className="text-xs text-gray-400">{t.platform}</span>
-                            </td>
                             <td className="px-4 py-3">
                               <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
                                 {t.priority.split("(")[0].trim()}
@@ -396,12 +509,16 @@ const Brownie = () => {
                               <DueDatePicker value={t.due_date} onChange={(d) => updateDueDate(t.id, d)} />
                             </td>
                             <td className="px-4 py-3">
-                              <Select value={t.status} onValueChange={(v) => updateStatus(t.id, v as TaskStatus)}>
-                                <SelectTrigger className={`h-7 w-[130px] text-[11px] border ${sc.bg} ${sc.color} gap-1`}>
-                                  {sc.icon}<SelectValue />
-                                </SelectTrigger>
-                                <SelectContent>{statusOptions.map((s) => <SelectItem key={s} value={s}>{s}</SelectItem>)}</SelectContent>
-                              </Select>
+                              {t.status === "Archived" ? (
+                                <span className="text-[11px] text-gray-400 italic">Archived</span>
+                              ) : (
+                                <Select value={t.status} onValueChange={(v) => updateStatus(t.id, v as TaskStatus)}>
+                                  <SelectTrigger className={`h-7 w-[130px] text-[11px] border ${sc.bg} ${sc.color} gap-1`}>
+                                    {sc.icon}<SelectValue />
+                                  </SelectTrigger>
+                                  <SelectContent>{statusOptions.map((s) => <SelectItem key={s} value={s}>{s}</SelectItem>)}</SelectContent>
+                                </Select>
+                              )}
                             </td>
                             <td className="px-4 py-3">
                               <Select value={t.assigned} onValueChange={(v) => updateAssignee(t.id, v)}>
@@ -411,6 +528,25 @@ const Brownie = () => {
                                 <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
                               </Select>
                             </td>
+                            <td className="px-4 py-3">
+                              <div className="flex items-center gap-1">
+                                <button onClick={() => openEditTask(t)} className="p-1 text-gray-300 hover:text-gray-600 transition-colors rounded hover:bg-gray-100">
+                                  <Pencil className="w-3.5 h-3.5" />
+                                </button>
+                                {t.status === "Archived" ? (
+                                  <button onClick={() => unarchiveTask(t.id)} className="p-1 text-gray-300 hover:text-blue-600 transition-colors rounded hover:bg-blue-50" title="Restore">
+                                    <Archive className="w-3.5 h-3.5" />
+                                  </button>
+                                ) : (
+                                  <button onClick={() => archiveTask(t.id)} className="p-1 text-gray-300 hover:text-amber-600 transition-colors rounded hover:bg-amber-50" title="Archive">
+                                    <Archive className="w-3.5 h-3.5" />
+                                  </button>
+                                )}
+                                <button onClick={() => setDeleteConfirm(t.id)} className="p-1 text-gray-300 hover:text-red-600 transition-colors rounded hover:bg-red-50" title="Delete">
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </td>
                           </tr>
                         );
                       })}
@@ -419,6 +555,11 @@ const Brownie = () => {
                 </div>
               </div>
             ))}
+            {filteredTasks.length === 0 && (
+              <div className="text-center py-12 text-gray-400 text-sm">
+                {showArchived ? "No archived tasks" : "No tasks match your filters"}
+              </div>
+            )}
           </div>
         )}
 
@@ -437,10 +578,16 @@ const Brownie = () => {
                   </div>
                   <div className="space-y-2">
                     {colTasks.map((t) => (
-                      <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50">
+                      <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50 group">
                         <div className="flex items-start justify-between gap-2 mb-2">
                           <p className="text-sm text-gray-800 flex-1">{t.task}</p>
                           <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
+                            <button onClick={() => openEditTask(t)} className="p-0.5 text-gray-300 hover:text-gray-600 transition-colors opacity-0 group-hover:opacity-100">
+                              <Pencil className="w-3 h-3" />
+                            </button>
+                            <button onClick={() => archiveTask(t.id)} className="p-0.5 text-gray-300 hover:text-amber-600 transition-colors opacity-0 group-hover:opacity-100">
+                              <Archive className="w-3 h-3" />
+                            </button>
                             <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                             <button
                               onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
@@ -458,7 +605,7 @@ const Brownie = () => {
                           <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{t.assigned}</span>
                         </div>
                         <div className="flex items-center gap-2 mt-2">
-                          <p className="text-[10px] text-gray-400 flex-1">{t.platform}</p>
+                          <span className="text-[10px] text-gray-400 flex-1">{t.category}</span>
                           {t.due_date && (
                             <span className={cn("text-[10px] font-medium", isBefore(parseISO(t.due_date), startOfDay(new Date())) ? "text-red-500" : "text-gray-400")}>
                               Due {format(parseISO(t.due_date), "MMM d")}
@@ -507,7 +654,6 @@ const Brownie = () => {
                           <span className="text-[9px] font-medium text-gray-400 whitespace-nowrap">{w.label}</span>
                         </div>
                       ))}
-                      {/* Today marker */}
                       {(() => {
                         const todayOffset = (differenceInDays(startOfDay(new Date()), timelineData.start) / timelineData.totalDays) * 100;
                         if (todayOffset >= 0 && todayOffset <= 100) {
@@ -531,7 +677,7 @@ const Brownie = () => {
                       const dueDate = parseISO(t.due_date!);
                       const dayOffset = differenceInDays(dueDate, timelineData.start);
                       const position = (dayOffset / timelineData.totalDays) * 100;
-                      const barWidth = Math.max(3, (3 / timelineData.totalDays) * 100); // min 3 days wide
+                      const barWidth = Math.max(3, (3 / timelineData.totalDays) * 100);
                       const barStart = Math.max(0, position - barWidth);
                       const isOverdue = isBefore(dueDate, startOfDay(new Date())) && t.status !== "Complete";
 
@@ -551,11 +697,9 @@ const Brownie = () => {
                             </div>
                           </div>
                           <div className="flex-1 relative h-10 overflow-hidden">
-                            {/* Week grid lines */}
                             {timelineData.weeks.map((w, i) => (
                               <div key={i} className="absolute top-0 h-full border-l border-gray-100" style={{ left: `${w.offset}%` }} />
                             ))}
-                            {/* Today line */}
                             {(() => {
                               const todayOffset = (differenceInDays(startOfDay(new Date()), timelineData.start) / timelineData.totalDays) * 100;
                               if (todayOffset >= 0 && todayOffset <= 100) {
@@ -563,7 +707,6 @@ const Brownie = () => {
                               }
                               return null;
                             })()}
-                            {/* Gantt bar */}
                             <div
                               className={cn(
                                 "absolute top-2.5 h-5 rounded-full transition-all",
@@ -576,7 +719,6 @@ const Brownie = () => {
                                 minWidth: "8px",
                               }}
                             >
-                              {/* Due date diamond */}
                               <div
                                 className={cn(
                                   "absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-2.5 h-2.5 rotate-45 rounded-sm border-2 border-white",
@@ -609,6 +751,7 @@ const Brownie = () => {
         </div>
       </div>
 
+      {/* Task Notes Panel */}
       <TaskNotesPanel
         taskId={notesPanel?.taskId ?? null}
         taskName={notesPanel?.taskName ?? ""}
@@ -618,6 +761,83 @@ const Brownie = () => {
           fetchNoteCounts();
         }}
       />
+
+      {/* Add/Edit Task Dialog */}
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
+        <DialogContent className="sm:max-w-[500px]">
+          <DialogHeader>
+            <DialogTitle className="text-lg font-semibold">{editingTask.isNew ? "New Task" : "Edit Task"}</DialogTitle>
+          </DialogHeader>
+          <div className="space-y-4 py-2">
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Task Name</label>
+              <Textarea
+                value={editingTask.task || ""}
+                onChange={(e) => setEditingTask((prev) => ({ ...prev, task: e.target.value }))}
+                placeholder="Describe the task..."
+                className="text-sm min-h-[60px]"
+              />
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              <div>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Category</label>
+                <Select value={editingTask.category || categories[0]} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, category: v }))}>
+                  <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
+                  <SelectContent>{categories.map((c) => <SelectItem key={c} value={c}>{c}</SelectItem>)}</SelectContent>
+                </Select>
+              </div>
+              <div>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Priority</label>
+                <Select value={editingTask.priority || "TRAILING"} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, priority: v }))}>
+                  <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
+                  <SelectContent>{priorityOptions.map((p) => <SelectItem key={p} value={p}>{p}</SelectItem>)}</SelectContent>
+                </Select>
+              </div>
+              <div>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Assigned To</label>
+                <Select value={editingTask.assigned || "Unassigned"} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, assigned: v }))}>
+                  <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
+                  <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
+                </Select>
+              </div>
+              <div>
+                <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Status</label>
+                <Select value={editingTask.status || "Not Started"} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, status: v as TaskStatus }))}>
+                  <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
+                  <SelectContent>{statusOptions.map((s) => <SelectItem key={s} value={s}>{s}</SelectItem>)}</SelectContent>
+                </Select>
+              </div>
+            </div>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Link (optional)</label>
+              <Input
+                value={editingTask.link_url || ""}
+                onChange={(e) => setEditingTask((prev) => ({ ...prev, link_url: e.target.value }))}
+                placeholder="https://..."
+                className="h-9 text-xs"
+              />
+            </div>
+          </div>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setDialogOpen(false)}>Cancel</Button>
+            <Button onClick={saveTask} style={{ background: "#a85839" }}>{editingTask.isNew ? "Create Task" : "Save Changes"}</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+
+      {/* Delete Confirmation Dialog */}
+      <Dialog open={deleteConfirm !== null} onOpenChange={(open) => { if (!open) setDeleteConfirm(null); }}>
+        <DialogContent className="sm:max-w-[400px]">
+          <DialogHeader>
+            <DialogTitle>Delete Task</DialogTitle>
+          </DialogHeader>
+          <p className="text-sm text-gray-600">This will permanently delete this task and all its notes. This cannot be undone.</p>
+          <DialogFooter>
+            <Button variant="outline" onClick={() => setDeleteConfirm(null)}>Cancel</Button>
+            <Button variant="destructive" onClick={() => deleteConfirm && deleteTask(deleteConfirm)}>Delete</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
