@@ -374,6 +374,7 @@ const Brownie = () => {
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
                                 <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                                   className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0"
