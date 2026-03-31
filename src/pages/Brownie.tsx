@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from "react";
-import { initialTasks, categories, assignees, type BrownieTask, type TaskStatus } from "@/data/brownieTasks";
-import { Badge } from "@/components/ui/badge";
+import React, { useState, useMemo, useEffect, useCallback } from "react";
+import { categories, assignees, type BrownieTask, type TaskStatus } from "@/data/brownieTasks";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Progress } from "@/components/ui/progress";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { useToast } from "@/hooks/use-toast";
 
 const statusOptions: TaskStatus[] = ["Not Started", "In Progress", "Complete"];
 
@@ -30,11 +30,31 @@ const assigneeColors: Record<string, string> = {
 type ViewMode = "list" | "board";
 
 const Brownie = () => {
-  const [tasks, setTasks] = useState<BrownieTask[]>(initialTasks);
+  const [tasks, setTasks] = useState<BrownieTask[]>([]);
+  const [loading, setLoading] = useState(true);
   const [filterCategory, setFilterCategory] = useState<string>("all");
   const [filterAssignee, setFilterAssignee] = useState<string>("all");
   const [filterPriority, setFilterPriority] = useState<string>("all");
   const [viewMode, setViewMode] = useState<ViewMode>("list");
+  const { toast } = useToast();
+
+  // Fetch tasks from Supabase
+  useEffect(() => {
+    const fetchTasks = async () => {
+      const { data, error } = await supabase
+        .from("brownie_tasks")
+        .select("*")
+        .order("id");
+
+      if (error) {
+        toast({ title: "Error loading tasks", description: error.message, variant: "destructive" });
+        return;
+      }
+      setTasks(data as BrownieTask[]);
+      setLoading(false);
+    };
+    fetchTasks();
+  }, []);
 
   const filteredTasks = useMemo(() => {
     return tasks.filter((t) => {
@@ -51,16 +71,28 @@ const Brownie = () => {
     const inProgress = tasks.filter((t) => t.status === "In Progress").length;
     const critical = tasks.filter((t) => t.priority.startsWith("LAUNCH-CRITICAL")).length;
     const criticalComplete = tasks.filter((t) => t.priority.startsWith("LAUNCH-CRITICAL") && t.status === "Complete").length;
-    return { total, complete, inProgress, critical, criticalComplete, pct: Math.round((complete / total) * 100) };
+    return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0 };
   }, [tasks]);
 
-  const updateStatus = (id: number, status: TaskStatus) => {
-    setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, status } : t)));
-  };
+  const updateField = useCallback(async (id: number, field: "status" | "assigned", value: string) => {
+    // Optimistic update
+    setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
 
-  const updateAssignee = (id: number, assigned: string) => {
-    setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, assigned } : t)));
-  };
+    const { error } = await supabase
+      .from("brownie_tasks")
+      .update({ [field]: value })
+      .eq("id", id);
+
+    if (error) {
+      toast({ title: "Failed to save", description: error.message, variant: "destructive" });
+      // Revert on error
+      const { data } = await supabase.from("brownie_tasks").select("*").eq("id", id).single();
+      if (data) setTasks((prev) => prev.map((t) => (t.id === id ? data as BrownieTask : t)));
+    }
+  }, [toast]);
+
+  const updateStatus = (id: number, status: TaskStatus) => updateField(id, "status", status);
+  const updateAssignee = (id: number, assigned: string) => updateField(id, "assigned", assigned);
 
   const groupedTasks = useMemo(() => {
     const groups: Record<string, BrownieTask[]> = {};
@@ -76,6 +108,14 @@ const Brownie = () => {
     filteredTasks.forEach((t) => cols[t.status].push(t));
     return cols;
   }, [filteredTasks]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <Loader2 className="w-6 h-6 animate-spin text-gray-400" />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">

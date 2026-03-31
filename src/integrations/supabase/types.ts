@@ -74,6 +74,36 @@ export type Database = {
         }
         Relationships: []
       }
+      brownie_tasks: {
+        Row: {
+          assigned: string
+          category: string
+          id: number
+          platform: string
+          priority: string
+          status: string
+          task: string
+        }
+        Insert: {
+          assigned?: string
+          category: string
+          id: number
+          platform: string
+          priority: string
+          status?: string
+          task: string
+        }
+        Update: {
+          assigned?: string
+          category?: string
+          id?: number
+          platform?: string
+          priority?: string
+          status?: string
+          task?: string
+        }
+        Relationships: []
+      }
       calendar_integrations: {
         Row: {
           created_at: string
