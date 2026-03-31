@@ -134,10 +134,10 @@ const MarketCorrection = () => {
 
             {/* Right — Form */}
             <div className="p-8 sm:p-10" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-              <p className="text-[10px] tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
+              <p className="text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-sm mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+              <p className="text-base mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
