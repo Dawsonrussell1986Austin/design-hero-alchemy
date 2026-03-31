@@ -167,15 +167,15 @@ const MarketCorrection = () => {
 
         {/* Bottom stats */}
         <div className="relative z-10 pt-8 mt-8" style={{ borderTop: "1px solid rgba(240,236,227,0.05)" }}>
-          <div className="grid grid-cols-3 gap-6 sm:gap-12 max-w-2xl">
+          <div className="grid grid-cols-3 gap-8 sm:gap-16 max-w-4xl mx-auto text-center">
             {[
               { stat: "49%", note: "expect 10–20% decline" },
               { stat: "45%", note: "cite geopolitical risk as #1 fear" },
               { stat: "63%", note: "cite valuations as top portfolio risk" },
             ].map((d) => (
               <div key={d.stat}>
-                <p className="text-xl sm:text-2xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
-                <p className="text-[9px] sm:text-[10px] mt-1 leading-snug tracking-wide" style={{ ...sans, color: "#8da0b8", fontWeight: 300 }}>{d.note}</p>
+                <p className="text-3xl sm:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
+                <p className="text-xs sm:text-sm mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
           </div>
