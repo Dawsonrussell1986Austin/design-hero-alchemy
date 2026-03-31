@@ -178,6 +178,14 @@ const MarketCorrection = () => {
             ))}
           </div>
         </div>
+
+        {/* Scroll indicator */}
+        <div className="relative z-10 flex justify-center mt-4 sm:mt-6">
+          <div className="flex flex-col items-center gap-1 animate-bounce" style={{ animationDuration: "2s" }}>
+            <span className="text-[9px] tracking-[0.3em] uppercase" style={{ ...sans, color: "rgba(240,236,227,0.3)", fontWeight: 400 }}>Scroll</span>
+            <ChevronDown className="w-4 h-4" style={{ color: "rgba(240,236,227,0.3)" }} />
+          </div>
+        </div>
       </section>
 
       {/* ════════ BODY — PARCHMENT ════════ */}
