@@ -188,10 +188,32 @@ const MarketCorrection = () => {
             Oak Real Estate Partners
           </p>
 
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#111827", letterSpacing: "-0.01em" }}>
-            The institutions tracking this data aren't waiting for the correction to{" "}
-            <em style={{ color: "#c9a84c", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
-          </h2>
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#111827", letterSpacing: "-0.01em" }}>
+              The institutions tracking this data aren't waiting for the correction to{" "}
+              <em style={{ color: "#c9a84c", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
+            </h2>
+
+            {/* Mini bar chart */}
+            <div className="flex items-end justify-center gap-6 sm:gap-8 h-48">
+              {[
+                { label: "2024", height: "35%", color: "rgba(201,168,76,0.25)" },
+                { label: "2025", height: "55%", color: "rgba(201,168,76,0.45)" },
+                { label: "2026", height: "79%", color: "#c9a84c", active: true },
+              ].map((bar) => (
+                <div key={bar.label} className="flex flex-col items-center gap-2 h-full justify-end">
+                  {bar.active && (
+                    <span className="text-sm font-light" style={{ ...sans, color: "#111827", fontWeight: 600 }}>79%</span>
+                  )}
+                  <div
+                    className="w-12 sm:w-16 rounded-sm transition-all"
+                    style={{ height: bar.height, backgroundColor: bar.color }}
+                  />
+                  <span className="text-[10px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "#4a607e", fontWeight: 400 }}>{bar.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
 
           <p className="text-sm sm:text-base leading-[1.7] max-w-lg mt-10" style={{ ...sans, color: "#4a607e", fontWeight: 300, letterSpacing: "0.02em" }}>
             Insurance companies, foundations, endowments — the same institutions tracking these numbers are the ones who invest alongside Oak Real Estate Partners. They didn't wait. They structured around it.
