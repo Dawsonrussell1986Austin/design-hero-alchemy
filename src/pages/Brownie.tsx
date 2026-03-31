@@ -372,7 +372,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   }, [filteredTasks]);
 
   const boardColumns = useMemo(() => {
-    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "Complete": [], "Archived": [] };
+    const cols: Record<TaskStatus, BrownieTask[]> = { "Not Started": [], "In Progress": [], "In Review": [], "Complete": [], "Archived": [] };
     filteredTasks.forEach((t) => {
       if (cols[t.status]) cols[t.status].push(t);
     });
