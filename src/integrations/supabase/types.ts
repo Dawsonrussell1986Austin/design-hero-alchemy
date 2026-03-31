@@ -74,6 +74,38 @@ export type Database = {
         }
         Relationships: []
       }
+      brownie_task_notes: {
+        Row: {
+          author: string
+          content: string
+          created_at: string
+          id: string
+          task_id: number
+        }
+        Insert: {
+          author?: string
+          content: string
+          created_at?: string
+          id?: string
+          task_id: number
+        }
+        Update: {
+          author?: string
+          content?: string
+          created_at?: string
+          id?: string
+          task_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "brownie_task_notes_task_id_fkey"
+            columns: ["task_id"]
+            isOneToOne: false
+            referencedRelation: "brownie_tasks"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       brownie_tasks: {
         Row: {
           assigned: string
