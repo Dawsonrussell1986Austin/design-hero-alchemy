@@ -127,7 +127,7 @@ const MarketCorrection = () => {
                 <br />correction in{" "}
                 <em style={{ color: "#dbb96a", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-[11px] leading-[1.7] mt-8 max-w-[300px]" style={{ ...sans, color: "#8da0b8", fontWeight: 300, letterSpacing: "0.02em" }}>
+              <p className="text-sm leading-[1.7] mt-8 max-w-[300px]" style={{ ...sans, color: "#c8d6e5", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
