@@ -34,7 +34,7 @@ const authorColors: Record<string, string> = {
   "Ray": "bg-teal-500",
 };
 
-const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName }: TaskNotesPanelProps) => {
+const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName, assignedTo }: TaskNotesPanelProps) => {
   const [notes, setNotes] = useState<TaskNote[]>([]);
   const [loading, setLoading] = useState(false);
   const [content, setContent] = useState("");
