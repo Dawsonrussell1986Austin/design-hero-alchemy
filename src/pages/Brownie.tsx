@@ -507,7 +507,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             <SelectTrigger className="w-[140px] h-8 text-xs border-gray-200 bg-white text-gray-700"><Users className="w-3 h-3 mr-1" /><SelectValue placeholder="Assignee" /></SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Assignees</SelectItem>
-              {assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}
+              {sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}
             </SelectContent>
           </Select>
           <Select value={filterPriority} onValueChange={setFilterPriority}>
@@ -597,7 +597,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                 <SelectTrigger className={`h-7 w-[100px] text-[11px] font-medium rounded-full border-0 ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>
                                   <SelectValue />
                                 </SelectTrigger>
-                                <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
+                                <SelectContent>{sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}</SelectContent>
                               </Select>
                             </td>
                             <td className="px-4 py-3">
@@ -871,7 +871,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Assigned To</label>
                 <Select value={editingTask.assigned || "Unassigned"} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, assigned: v }))}>
                   <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
-                  <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
+                  <SelectContent>{sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}</SelectContent>
                 </Select>
               </div>
               <div>
