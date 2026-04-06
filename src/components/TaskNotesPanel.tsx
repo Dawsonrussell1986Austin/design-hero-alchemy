@@ -25,7 +25,7 @@ interface TaskNotesPanelProps {
   assignedTo?: string;
 }
 
-const authors = ["Matt", "Dawson", "Nicole", "Ray"];
+const authors = ["Matt", "Dawson", "Nicole", "Ray", "Team"];
 
 const authorColors: Record<string, string> = {
   "Matt": "bg-violet-500",

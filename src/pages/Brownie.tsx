@@ -674,7 +674,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                           <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
                             {t.priority.split("(")[0].trim()}
                           </span>
-                          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{t.assigned}</span>
+                          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{getAssigneeLabel(t.assigned)}</span>
                         </div>
                         <div className="flex items-center gap-2 mt-2">
                           <span className="text-[10px] text-gray-400 flex-1">{t.category}</span>
