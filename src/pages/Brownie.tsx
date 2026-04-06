@@ -166,7 +166,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
 
   // Add/Edit dialog state
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [editingTask, setEditingTask] = useState<Partial<BrownieTask> & { isNew?: boolean }>(emptyTask);
+  const [editingTask, setEditingTask] = useState<Partial<BrownieTask> & { isNew?: boolean }>(makeEmptyTask(currentUserName));
 
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
@@ -318,7 +318,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   };
 
   const openNewTask = () => {
-    setEditingTask({ ...emptyTask, isNew: true });
+    setEditingTask({ ...makeEmptyTask(currentUserName), isNew: true });
     setDialogOpen(true);
   };
 
