@@ -127,18 +127,33 @@ const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onC
 };
 
 // Blank task for the add/edit dialog
-const emptyTask: Partial<BrownieTask> = {
+// emptyTask is now a function so it can default to the current user
+const makeEmptyTask = (currentUser: string): Partial<BrownieTask> & { isNew?: boolean } => ({
   task: "",
   priority: "TRAILING",
   status: "Not Started" as TaskStatus,
-  assigned: "Unassigned",
+  assigned: currentUser && currentUser !== "Team" ? currentUser : "Unassigned",
   category: categories[0],
   platform: "",
   due_date: null,
   link_url: null,
-};
+});
 
 const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
+  // Build sorted assignee list: current user shown as "Me (Name)" first
+  const sortedAssignees = useMemo(() => {
+    const others = assignees.filter((a) => a !== currentUserName && a !== "Unassigned");
+    return [
+      ...(currentUserName && currentUserName !== "Team" ? [currentUserName] : []),
+      ...others,
+      "Unassigned",
+    ];
+  }, [currentUserName]);
+
+  const getAssigneeLabel = (name: string) => {
+    if (name === currentUserName && currentUserName !== "Team") return `Me (${name})`;
+    return name;
+  };
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterCategory, setFilterCategory] = useState<string>("all");
