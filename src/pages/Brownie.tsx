@@ -127,18 +127,33 @@ const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onC
 };
 
 // Blank task for the add/edit dialog
-const emptyTask: Partial<BrownieTask> = {
+// emptyTask is now a function so it can default to the current user
+const makeEmptyTask = (currentUser: string): Partial<BrownieTask> & { isNew?: boolean } => ({
   task: "",
   priority: "TRAILING",
   status: "Not Started" as TaskStatus,
-  assigned: "Unassigned",
+  assigned: currentUser && currentUser !== "Team" ? currentUser : "Unassigned",
   category: categories[0],
   platform: "",
   due_date: null,
   link_url: null,
-};
+});
 
 const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
+  // Build sorted assignee list: current user shown as "Me (Name)" first
+  const sortedAssignees = useMemo(() => {
+    const others = assignees.filter((a) => a !== currentUserName && a !== "Unassigned");
+    return [
+      ...(currentUserName && currentUserName !== "Team" ? [currentUserName] : []),
+      ...others,
+      "Unassigned",
+    ];
+  }, [currentUserName]);
+
+  const getAssigneeLabel = (name: string) => {
+    if (name === currentUserName && currentUserName !== "Team") return `Me (${name})`;
+    return name;
+  };
   const [tasks, setTasks] = useState<BrownieTask[]>([]);
   const [loading, setLoading] = useState(true);
   const [filterCategory, setFilterCategory] = useState<string>("all");
@@ -151,7 +166,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
 
   // Add/Edit dialog state
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [editingTask, setEditingTask] = useState<Partial<BrownieTask> & { isNew?: boolean }>(emptyTask);
+  const [editingTask, setEditingTask] = useState<Partial<BrownieTask> & { isNew?: boolean }>(makeEmptyTask(currentUserName));
 
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
@@ -303,7 +318,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   };
 
   const openNewTask = () => {
-    setEditingTask({ ...emptyTask, isNew: true });
+    setEditingTask({ ...makeEmptyTask(currentUserName), isNew: true });
     setDialogOpen(true);
   };
 
@@ -492,7 +507,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             <SelectTrigger className="w-[140px] h-8 text-xs border-gray-200 bg-white text-gray-700"><Users className="w-3 h-3 mr-1" /><SelectValue placeholder="Assignee" /></SelectTrigger>
             <SelectContent>
               <SelectItem value="all">All Assignees</SelectItem>
-              {assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}
+              {sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}
             </SelectContent>
           </Select>
           <Select value={filterPriority} onValueChange={setFilterPriority}>
@@ -582,7 +597,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                 <SelectTrigger className={`h-7 w-[100px] text-[11px] font-medium rounded-full border-0 ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>
                                   <SelectValue />
                                 </SelectTrigger>
-                                <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
+                                <SelectContent>{sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}</SelectContent>
                               </Select>
                             </td>
                             <td className="px-4 py-3">
@@ -659,7 +674,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                           <span className={`text-[9px] font-semibold px-1.5 py-0.5 rounded-full border ${priorityConfig[t.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
                             {t.priority.split("(")[0].trim()}
                           </span>
-                          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{t.assigned}</span>
+                          <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[t.assigned] || assigneeColors["Unassigned"]}`}>{getAssigneeLabel(t.assigned)}</span>
                         </div>
                         <div className="flex items-center gap-2 mt-2">
                           <span className="text-[10px] text-gray-400 flex-1">{t.category}</span>
@@ -856,7 +871,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Assigned To</label>
                 <Select value={editingTask.assigned || "Unassigned"} onValueChange={(v) => setEditingTask((prev) => ({ ...prev, assigned: v }))}>
                   <SelectTrigger className="h-9 text-xs"><SelectValue /></SelectTrigger>
-                  <SelectContent>{assignees.map((a) => <SelectItem key={a} value={a}>{a}</SelectItem>)}</SelectContent>
+                  <SelectContent>{sortedAssignees.map((a) => <SelectItem key={a} value={a}>{getAssigneeLabel(a)}</SelectItem>)}</SelectContent>
                 </Select>
               </div>
               <div>

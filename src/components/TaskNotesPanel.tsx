@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 import { supabase } from "@/integrations/supabase/client";
 import { Send, Trash2, Loader2, MessageSquare } from "lucide-react";
 import { format } from "date-fns";
@@ -25,7 +25,7 @@ interface TaskNotesPanelProps {
   assignedTo?: string;
 }
 
-const authors = ["Matt", "Dawson", "Nicole", "Ray"];
+const authors = ["Matt", "Dawson", "Nicole", "Ray", "Team"];
 
 const authorColors: Record<string, string> = {
   "Matt": "bg-violet-500",
@@ -167,16 +167,9 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName, assi
         <div className="border-t border-gray-100 px-5 py-4 bg-white">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-[10px] text-gray-400">Posting as</span>
-            <Select value={author} onValueChange={setAuthor}>
-              <SelectTrigger className="h-6 w-[90px] text-[11px] border-gray-200 bg-gray-50">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                {authors.map((a) => (
-                  <SelectItem key={a} value={a}>{a}</SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+            <span className={`text-[11px] font-medium px-2 py-0.5 rounded-full ${authorColors[author] || "bg-gray-100 text-gray-600"}`}>
+              {author}
+            </span>
           </div>
           <div className="flex gap-2">
             <Textarea
