@@ -5,22 +5,20 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
-/*
- * Palette matched exactly to OREP ad design system:
- * --void:      #07090f
- * --abyss:     #0d1119
- * --deep:      #111827
- * --midnight:  #1a2333
- * --slate:     #2d3d56
- * --steel:     #4a607e
- * --mist:      #8da0b8
- * --ivory:     #f0ece3
- * --parchment: #faf7f2
- * --gold:      #c9a84c
- * --gold-warm: #dbb96a
- * --gold-dark: #8a6d28
- * --copper:    #b07d3a
- */
+  /*
+   * Palette matched to OREP brand guidelines:
+   * --abyss:     #060D14   (Primary dark bg)
+   * --midnight:  #082233   (Midnight Navy)
+   * --deep:      #0A1520   (Deep - supporting)
+   * --slate:     #233F52   (Slate Blue - accent)
+   * --soft-gray: #6C7D80   (Soft Gray - accent)
+   * --stone:     #E4E3E1   (Soft Stone)
+   * --cream:     #FAF7F2   (Cream - light bg)
+   * --gold:      #C9A84C   (Gold - key accent)
+   * --gold-warm: #D4B35C   (Gold Warm - supporting)
+   * --copper:    #A85839   (Burnt Copper - accent)
+   * --sage:      #AEBEA9   (Pale Sage - supporting)
+   */
 
 const MarketCorrection = () => {
   const navigate = useNavigate();
@@ -68,7 +66,7 @@ const MarketCorrection = () => {
 
   const inputStyle: React.CSSProperties = {
     ...sans,
-    color: "#f0ece3",
+    color: "#E4E3E1",
     borderBottom: "1px solid rgba(240,236,227,0.1)",
     background: "transparent",
     padding: "0",
@@ -85,7 +83,7 @@ const MarketCorrection = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#07090f" }}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#060D14" }}>
       <SEOHead
         title="2026 Institutional Investor Report"
         description="79% of institutional investors expect a market correction in 2026. Learn how senior-secured, real-asset-backed lending is structured to protect capital."
@@ -96,7 +94,7 @@ const MarketCorrection = () => {
       <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-12 lg:px-20 pt-10 sm:pt-14 pb-8 sm:pb-12 overflow-hidden">
         {/* Ghost watermark */}
         <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none hidden sm:block" style={{ opacity: 0.03 }}>
-          <span className="text-[28rem] sm:text-[36rem] font-light leading-none block" style={{ ...serif, color: "#f0ece3" }}>79</span>
+          <span className="text-[28rem] sm:text-[36rem] font-light leading-none block" style={{ ...serif, color: "#E4E3E1" }}>79</span>
         </div>
 
         {/* Logo */}
@@ -123,7 +121,7 @@ const MarketCorrection = () => {
               </h1>
               <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
-                <em style={{ color: "#dbb96a", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
+                <em style={{ color: "#D4B35C", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
               <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
@@ -132,7 +130,7 @@ const MarketCorrection = () => {
 
             {/* Right — Form */}
             <div className="p-6 sm:p-8 md:p-10" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-              <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>
+              <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
                 Get the Full Report
               </p>
               <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
@@ -149,7 +147,7 @@ const MarketCorrection = () => {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full flex items-center justify-center gap-3 py-3.5 text-[11px] tracking-[0.3em] uppercase transition-opacity disabled:opacity-50"
-                    style={{ ...sans, backgroundColor: "#c9a84c", color: "#07090f", fontWeight: 600 }}
+                    style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
                   >
                     {isSubmitting ? "Submitting..." : "Send Me the Report"}
                     {!isSubmitting && <ArrowRight className="h-4 w-4" />}
@@ -197,7 +195,7 @@ const MarketCorrection = () => {
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#111827", letterSpacing: "-0.01em" }}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#0A1520", letterSpacing: "-0.01em" }}>
               The institutions tracking this data aren't waiting for the correction to{" "}
               <em style={{ color: "#c9a84c", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
             </h2>
@@ -211,25 +209,25 @@ const MarketCorrection = () => {
               ].map((bar) => (
                 <div key={bar.label} className="flex flex-col items-center gap-2 h-full justify-end">
                   {bar.active && (
-                    <span className="text-sm font-light" style={{ ...sans, color: "#111827", fontWeight: 600 }}>79%</span>
+                    <span className="text-sm font-light" style={{ ...sans, color: "#0A1520", fontWeight: 600 }}>79%</span>
                   )}
                   <div
                     className="w-12 sm:w-16 rounded-sm transition-all"
                     style={{ height: bar.height, backgroundColor: bar.color }}
                   />
-                  <span className="text-[10px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "#4a607e", fontWeight: 400 }}>{bar.label}</span>
+                  <span className="text-[10px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>{bar.label}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <p className="text-sm sm:text-base leading-[1.7] max-w-lg mt-10" style={{ ...sans, color: "#4a607e", fontWeight: 300, letterSpacing: "0.02em" }}>
+          <p className="text-sm sm:text-base leading-[1.7] max-w-lg mt-10" style={{ ...sans, color: "#6C7D80", fontWeight: 300, letterSpacing: "0.02em" }}>
             Insurance companies, foundations, endowments — the same institutions tracking these numbers are the ones who invest alongside Oak Real Estate Partners. They didn't wait. They structured around it.
           </p>
 
           {/* Blockquote */}
           <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #c9a84c" }}>
-            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...serif, color: "#111827", fontStyle: "italic" }}>
+            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...serif, color: "#0A1520", fontStyle: "italic" }}>
               Senior-secured, first-lien bridge loans on income-producing commercial real estate. Every dollar backed by a specific property you can see, value, and verify. Not a ticker. Not a blind pool. An address.
             </p>
           </div>
@@ -242,8 +240,8 @@ const MarketCorrection = () => {
               { title: "Downside Structured", text: "Behaves differently in stressed markets because the collateral is physical and verifiable." },
             ].map((card) => (
               <div key={card.title} className="p-8 sm:p-10 text-center" style={{ backgroundColor: "#faf7f2" }}>
-                <p className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-4" style={{ ...sans, color: "#1a2333", fontWeight: 600 }}>{card.title}</p>
-                <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#4a607e", fontWeight: 300 }}>{card.text}</p>
+                <p className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-4" style={{ ...sans, color: "#082233", fontWeight: 600 }}>{card.title}</p>
+                <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>{card.text}</p>
               </div>
             ))}
           </div>
@@ -251,11 +249,11 @@ const MarketCorrection = () => {
       </section>
 
       {/* ════════ CLOSING CTA — DARK ════════ */}
-      <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#07090f" }}>
+      <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#060D14" }}>
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] font-light" style={{ ...serif, color: "rgba(255,255,255,0.85)" }}>
             If a correction arrives in the next 90 days, does your portfolio hold?{" "}
-            <span style={{ color: "#dbb96a" }}>Or does it just feel like it will?</span>
+            <span style={{ color: "#D4B35C" }}>Or does it just feel like it will?</span>
           </p>
           <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
             The gap between those two answers is where fortunes are quietly lost.
@@ -263,7 +261,7 @@ const MarketCorrection = () => {
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="mt-10 inline-flex items-center gap-3 py-3 px-10 text-[11px] tracking-[0.3em] uppercase transition-opacity"
-            style={{ ...sans, backgroundColor: "#c9a84c", color: "#07090f", fontWeight: 600 }}
+            style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
           >
             Get the Report <ArrowRight className="h-4 w-4" />
           </button>
@@ -271,14 +269,14 @@ const MarketCorrection = () => {
       </section>
 
       {/* Minimal footer */}
-      <footer className="px-6 sm:px-12 lg:px-20 py-8" style={{ backgroundColor: "#07090f", borderTop: "1px solid rgba(240,236,227,0.04)" }}>
+      <footer className="px-6 sm:px-12 lg:px-20 py-8" style={{ backgroundColor: "#060D14", borderTop: "1px solid rgba(240,236,227,0.04)" }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div className="flex items-center gap-4">
             <a href="/">
               <img src="/lovable-uploads/white_oak.png" alt="Oak Real Estate Partners" className="h-8 w-auto" />
             </a>
             <div>
-              <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>Oak Real Estate Partners</p>
+              <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>Oak Real Estate Partners</p>
               <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "rgba(240,236,227,0.15)", fontWeight: 300 }}>
                 Institutional CRE Lending · Senior Secured · Real Assets
               </p>
