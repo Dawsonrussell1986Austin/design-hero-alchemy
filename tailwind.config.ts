@@ -76,7 +76,12 @@ export default {
 				'deep-petrol': 'hsl(var(--deep-petrol))',
 				'garnet-edge': 'hsl(var(--garnet-edge))',
 				'nav-light': 'hsl(var(--nav-light))',
-				'accent-brown': 'hsl(var(--accent-brown))'
+				'accent-brown': 'hsl(var(--accent-brown))',
+				'abyss': 'hsl(var(--abyss))',
+				'cream': 'hsl(var(--cream))',
+				'gold-accent': 'hsl(var(--gold-accent))',
+				'gold-warm': 'hsl(var(--gold-warm))',
+				'deep-dark': 'hsl(var(--deep-dark))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
