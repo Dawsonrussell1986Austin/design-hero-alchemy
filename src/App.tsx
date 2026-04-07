@@ -74,6 +74,7 @@ import Invest from "./pages/Invest";
 import MarketCorrection from "./pages/MarketCorrection";
 import ThankYouReport from "./pages/ThankYouReport";
 import Brownie from "./pages/Brownie";
+import HomepageDraft3 from "./pages/HomepageDraft3";
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/homepage-draft" element={<HomepageDraft />} />
         <Route path="/homepage-draft-2" element={<HomepageDraft2 />} />
+        <Route path="/homepage-draft-3" element={<HomepageDraft3 />} />
         <Route path="/about" element={<About />} />
         <Route path="/lending" element={<Lending />} />
         <Route path="/lending/bridge" element={<BridgeLoans />} />
