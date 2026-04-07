@@ -17,7 +17,7 @@ const ThankYouReport = () => {
   const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#07090f" }}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#060D14" }}>
       <SEOHead
         title="Thank You — Your Report is Ready"
         description="Your 2026 Institutional Investor Report is on its way."
@@ -59,7 +59,7 @@ const ThankYouReport = () => {
               rel="noopener noreferrer"
               download
               className="inline-flex items-center gap-3 py-3 px-8 text-[11px] tracking-[0.3em] uppercase transition-opacity hover:opacity-90"
-              style={{ ...sans, backgroundColor: "#c9a84c", color: "#07090f", fontWeight: 600 }}
+              style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
             >
               <Download className="h-4 w-4" />
               Download the Report
@@ -81,7 +81,7 @@ const ThankYouReport = () => {
       <footer className="px-4 sm:px-12 lg:px-20 py-8" style={{ borderTop: "1px solid rgba(240,236,227,0.04)" }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
           <div>
-            <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#f0ece3", fontWeight: 500 }}>Oak Real Estate Partners</p>
+            <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>Oak Real Estate Partners</p>
             <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "rgba(240,236,227,0.15)", fontWeight: 300 }}>
               Institutional CRE Lending · Senior Secured · Real Assets
             </p>
