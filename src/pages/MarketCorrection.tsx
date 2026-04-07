@@ -5,22 +5,20 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ArrowRight, ChevronDown } from "lucide-react";
 
-/*
- * Palette matched exactly to OREP ad design system:
- * --void:      #07090f
- * --abyss:     #0d1119
- * --deep:      #111827
- * --midnight:  #1a2333
- * --slate:     #2d3d56
- * --steel:     #4a607e
- * --mist:      #8da0b8
- * --ivory:     #f0ece3
- * --parchment: #faf7f2
- * --gold:      #c9a84c
- * --gold-warm: #dbb96a
- * --gold-dark: #8a6d28
- * --copper:    #b07d3a
- */
+  /*
+   * Palette matched to OREP brand guidelines:
+   * --abyss:     #060D14   (Primary dark bg)
+   * --midnight:  #082233   (Midnight Navy)
+   * --deep:      #0A1520   (Deep - supporting)
+   * --slate:     #233F52   (Slate Blue - accent)
+   * --soft-gray: #6C7D80   (Soft Gray - accent)
+   * --stone:     #E4E3E1   (Soft Stone)
+   * --cream:     #FAF7F2   (Cream - light bg)
+   * --gold:      #C9A84C   (Gold - key accent)
+   * --gold-warm: #D4B35C   (Gold Warm - supporting)
+   * --copper:    #A85839   (Burnt Copper - accent)
+   * --sage:      #AEBEA9   (Pale Sage - supporting)
+   */
 
 const MarketCorrection = () => {
   const navigate = useNavigate();
