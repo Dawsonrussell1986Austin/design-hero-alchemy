@@ -159,6 +159,14 @@ const InvestorAccess = () => {
                 Thank you for registering. Our team will be in touch with you shortly.
               </p>
             </div>
+
+            <Button
+              onClick={() => setSubmitted(false)}
+              variant="outline"
+              className="border-cream/30 text-cream hover:bg-white/10 font-body font-medium h-12 px-8"
+            >
+              Register Another Investor
+            </Button>
           </div>
         </main>
 
