@@ -55,8 +55,8 @@ const ThankYouBooking = () => {
         <div className="max-w-4xl mx-auto">
           {/* Confirmation */}
           <div className="text-center mb-12 lg:mb-16">
-            <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-brown/10 rounded-full mb-6">
-              <CalendarCheck className="w-8 h-8 text-accent-brown" />
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gold-accent/10 rounded-full mb-6">
+              <CalendarCheck className="w-8 h-8 text-gold-accent" />
             </div>
             <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
               You're All Set!
@@ -73,8 +73,8 @@ const ThankYouBooking = () => {
                 key={resource.title}
                 className="bg-cream/95 backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col items-start hover:shadow-xl transition-shadow"
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-accent-brown/10 rounded-xl mb-4">
-                  <resource.icon className="w-6 h-6 text-accent-brown" />
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-gold-accent/10 rounded-xl mb-4">
+                  <resource.icon className="w-6 h-6 text-gold-accent" />
                 </div>
                 <h3 className="text-lg font-display font-medium text-obsidian mb-2">
                   {resource.title}
@@ -85,7 +85,7 @@ const ThankYouBooking = () => {
                 {resource.internal ? (
                   <Link
                     to={resource.href}
-                    className="inline-flex items-center gap-1.5 text-accent-brown font-body font-medium text-sm hover:underline"
+                    className="inline-flex items-center gap-1.5 text-gold-accent font-body font-medium text-sm hover:underline"
                   >
                     {resource.linkText} <ArrowRight className="w-4 h-4" />
                   </Link>
@@ -94,7 +94,7 @@ const ThankYouBooking = () => {
                     href={resource.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-accent-brown font-body font-medium text-sm hover:underline"
+                    className="inline-flex items-center gap-1.5 text-gold-accent font-body font-medium text-sm hover:underline"
                   >
                     {resource.linkText} <ArrowRight className="w-4 h-4" />
                   </a>
@@ -108,7 +108,7 @@ const ThankYouBooking = () => {
             <Button
               onClick={() => navigate("/")}
               variant="outline"
-              className="font-body font-medium h-12 px-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream"
+              className="font-body font-medium h-12 px-8 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream"
             >
               Return Home
             </Button>

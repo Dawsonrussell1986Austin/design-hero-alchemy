@@ -8,9 +8,9 @@ const HeroSection = () => {
     <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-28 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe">
       {/* Smooth floating gradient backgrounds */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/15 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
+        <div className="absolute top-20 left-1/4 w-96 h-96 bg-gold-accent/15 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
         <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-garnet-edge/15 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-accent-brown/8 to-garnet-edge/8 rounded-full blur-3xl opacity-60 animate-[breathe_6s_ease-in-out_infinite]"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-gold-accent/8 to-garnet-edge/8 rounded-full blur-3xl opacity-60 animate-[breathe_6s_ease-in-out_infinite]"></div>
       </div>
       
       <div className="max-w-7xl mx-auto">
@@ -41,7 +41,7 @@ const HeroSection = () => {
               <Link to="/lending" onClick={() => trackCTAClick('Borrowers', '/lending', 'hero_section')}>
                 <Button 
                   size="lg" 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-accent-brown/20"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-gold-accent/20"
                 >
                   Borrowers
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

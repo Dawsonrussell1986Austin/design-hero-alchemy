@@ -39,7 +39,7 @@ const Hud232223fTerms = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   232/223(F)
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Multifamily Refinance or Acquisition
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">

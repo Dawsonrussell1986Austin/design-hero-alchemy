@@ -16,7 +16,7 @@ const RobertKaplan = () => {
       <div className="container mx-auto px-6 lg:px-8 pt-8">
         <Button 
           variant="ghost"
-          className="text-silver-mist hover:text-accent-brown transition-all duration-300"
+          className="text-silver-mist hover:text-gold-accent transition-all duration-300"
           onClick={() => navigate("/leadership")}
         >
           <ArrowLeft className="h-4 w-4 mr-2" />
@@ -40,7 +40,7 @@ const RobertKaplan = () => {
               </div>
               <div className="lg:col-span-2 space-y-6">
                 <div>
-                  <h1 className="text-3xl lg:text-4xl font-light text-accent-brown mb-3">Robert R. Kaplan, Jr.</h1>
+                  <h1 className="text-3xl lg:text-4xl font-light text-gold-accent mb-3">Robert R. Kaplan, Jr.</h1>
                   <p className="text-silver-mist font-medium mb-4 uppercase tracking-wide text-lg">
                     Chief Legal Officer and Executive Vice President for Corporate Development
                   </p>

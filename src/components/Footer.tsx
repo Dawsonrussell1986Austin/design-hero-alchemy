@@ -24,7 +24,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/oak-real-estate-partners/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-silver-mist/80 hover:text-accent-brown transition-colors font-body mt-4"
+                className="inline-flex items-center gap-2 text-silver-mist/80 hover:text-gold-accent transition-colors font-body mt-4"
                 onClick={() => trackExternalLink('https://www.linkedin.com/company/oak-real-estate-partners/', 'Follow us on LinkedIn', 'footer')}
               >
                 <Linkedin className="w-5 h-5" />
@@ -36,13 +36,13 @@ const Footer = () => {
             <div className="space-y-6">
               <h4 className="text-lg font-display font-medium text-silver-mist">Quick Links</h4>
               <nav className="space-y-3">
-                <a href="/about" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">About</a>
-                <a href="/leadership" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Leadership</a>
-                <a href="/lending" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Lending</a>
-                <a href="/investing" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Investing</a>
-                <a href="/transactions" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Transactions</a>
-                <a href="/news" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">News</a>
-                <a href="/contact" className="block text-silver-mist/80 hover:text-accent-brown transition-colors font-body">Contact</a>
+                <a href="/about" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">About</a>
+                <a href="/leadership" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">Leadership</a>
+                <a href="/lending" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">Lending</a>
+                <a href="/investing" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">Investing</a>
+                <a href="/transactions" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">Transactions</a>
+                <a href="/news" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">News</a>
+                <a href="/contact" className="block text-silver-mist/80 hover:text-gold-accent transition-colors font-body">Contact</a>
               </nav>
             </div>
 
@@ -56,18 +56,18 @@ const Footer = () => {
                     href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors block"
+                    className="font-sans text-sm text-silver-mist/80 hover:text-gold-accent transition-colors block"
                   >
                     5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209
                   </a>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Phone</p>
-                  <a href="tel:+19802886627" className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors">980.288.6627</a>
+                  <a href="tel:+19802886627" className="font-sans text-sm text-silver-mist/80 hover:text-gold-accent transition-colors">980.288.6627</a>
                 </div>
                 <div>
                   <p className="font-serif text-sm">Email</p>
-                  <a href="mailto:ir@oakrepartners.com" className="font-sans text-sm text-silver-mist/80 hover:text-accent-brown transition-colors">ir@oakrepartners.com</a>
+                  <a href="mailto:ir@oakrepartners.com" className="font-sans text-sm text-silver-mist/80 hover:text-gold-accent transition-colors">ir@oakrepartners.com</a>
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ const Footer = () => {
           <div className="border-t border-deep-petrol/30 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="flex space-x-6 text-sm text-silver-mist/60 font-serif">
-                <a href="/privacy" className="hover:text-accent-brown transition-colors">Privacy Policy</a>
-                <a href="/terms" className="hover:text-accent-brown transition-colors">Terms of Service</a>
-                <a href="/disclosures" className="hover:text-accent-brown transition-colors">Disclosures</a>
+                <a href="/privacy" className="hover:text-gold-accent transition-colors">Privacy Policy</a>
+                <a href="/terms" className="hover:text-gold-accent transition-colors">Terms of Service</a>
+                <a href="/disclosures" className="hover:text-gold-accent transition-colors">Disclosures</a>
               </div>
               <p className="text-sm text-silver-mist/60 font-serif">
                 © 2025 White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners. All rights reserved.

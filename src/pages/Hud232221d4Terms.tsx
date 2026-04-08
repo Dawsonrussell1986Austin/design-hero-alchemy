@@ -39,7 +39,7 @@ const Hud232221d4Terms = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   232/221(d)4
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   New Construction or Sub-Rehab of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">

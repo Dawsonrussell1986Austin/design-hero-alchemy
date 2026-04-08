@@ -146,15 +146,15 @@ const WebinarRegistration = () => {
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <Video className="h-5 w-5 text-accent-brown" />
+                  <Video className="h-5 w-5 text-gold-accent" />
                   <span>Live Q&A Session</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <Calendar className="h-5 w-5 text-accent-brown" />
+                  <Calendar className="h-5 w-5 text-gold-accent" />
                   <span>Expert Insights</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <Users className="h-5 w-5 text-accent-brown" />
+                  <Users className="h-5 w-5 text-gold-accent" />
                   <span>Limited Seats</span>
                 </div>
               </div>

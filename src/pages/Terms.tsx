@@ -79,7 +79,7 @@ const Terms = () => {
                 <h2 className="text-2xl font-display font-medium mb-4">Contact Information</h2>
                 <p>
                   If you have any questions about these Terms of Service, please contact us at{" "}
-                  <a href="mailto:legal@oakrep.com" className="text-accent-brown hover:underline">
+                  <a href="mailto:legal@oakrep.com" className="text-gold-accent hover:underline">
                     legal@oakrep.com
                   </a>
                 </p>

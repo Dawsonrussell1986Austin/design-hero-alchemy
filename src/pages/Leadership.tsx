@@ -96,7 +96,7 @@ const Leadership = () => {
                 {/* Left Column - Content */}
                 <div className="space-y-8 text-obsidian">
                   <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
-                    Operational Expertise Backed by <span className="text-accent-brown">$18B+<sup>³</sup> in Transactions</span>
+                    Operational Expertise Backed by <span className="text-gold-accent">$18B+<sup>³</sup> in Transactions</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
                     Oak's leadership team brings unmatched experience and depth to our real estate lending operations, 
@@ -112,7 +112,7 @@ const Leadership = () => {
                   <div className="pt-4">
                     <Button 
                       size="lg"
-                      className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                      className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                       onClick={() => window.location.href = "/contact"}
                     >
                       Contact Us
@@ -219,7 +219,7 @@ const Leadership = () => {
                   <div className="p-6 space-y-4">
                     <div>
                       <h3 className="text-xl font-medium text-silver-mist mb-2">{leader.name}</h3>
-                      <p className="text-accent-brown font-medium text-sm uppercase tracking-wide">
+                      <p className="text-gold-accent font-medium text-sm uppercase tracking-wide">
                         {leader.title}
                       </p>
                     </div>
@@ -252,7 +252,7 @@ const Leadership = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                 onClick={() => window.location.href = '/contact'}
               >
                 Contact Leadership

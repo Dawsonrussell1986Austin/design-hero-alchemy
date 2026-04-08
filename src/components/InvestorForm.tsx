@@ -50,7 +50,7 @@ const InvestorForm = () => {
       >
         <div className="space-y-2">
           <Label htmlFor="first_name" className="text-obsidian font-body font-medium">
-            First Name <span className="text-accent-brown">*</span>
+            First Name <span className="text-gold-accent">*</span>
           </Label>
           <Input
             type="text"
@@ -58,13 +58,13 @@ const InvestorForm = () => {
             name="first_name"
             placeholder="First name"
             required
-            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20 font-body"
           />
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="last_name" className="text-obsidian font-body font-medium">
-            Last Name <span className="text-accent-brown">*</span>
+            Last Name <span className="text-gold-accent">*</span>
           </Label>
           <Input
             type="text"
@@ -72,13 +72,13 @@ const InvestorForm = () => {
             name="last_name"
             placeholder="Last name"
             required
-            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20 font-body"
           />
         </div>
 
         <div className="space-y-2">
           <Label htmlFor="email" className="text-obsidian font-body font-medium">
-            Email <span className="text-accent-brown">*</span>
+            Email <span className="text-gold-accent">*</span>
           </Label>
           <Input
             type="email"
@@ -86,7 +86,7 @@ const InvestorForm = () => {
             name="email"
             placeholder="Work email"
             required
-            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20 font-body"
           />
         </div>
 
@@ -109,7 +109,7 @@ const InvestorForm = () => {
           <Checkbox
             id="consent"
             required
-            className="border-graphite-fog/40 data-[state=checked]:bg-accent-brown data-[state=checked]:border-accent-brown mt-0.5"
+            className="border-graphite-fog/40 data-[state=checked]:bg-gold-accent data-[state=checked]:border-gold-accent mt-0.5"
           />
           <Label
             htmlFor="consent"
@@ -121,7 +121,7 @@ const InvestorForm = () => {
 
         <Button
           type="submit"
-          className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base"
+          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium h-12 text-base"
         >
           Subscribe to Updates
         </Button>

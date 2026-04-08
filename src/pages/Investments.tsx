@@ -287,7 +287,7 @@ const Investments = () => {
               </div>
 
               <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Building className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-xl font-medium text-silver-mist">Diversified Credit Funds</h3>
@@ -297,7 +297,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <CreditCard className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-xl font-medium text-silver-mist">Income-Generating Structured Credit</h3>
@@ -307,7 +307,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-8 bg-gradient-to-br from-accent-brown/20 to-garnet-edge/20 backdrop-blur-sm border border-accent-brown/30 rounded-lg hover:border-accent-brown/50 transition-all duration-300 group">
+                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Settings className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-xl font-medium text-silver-mist">Custom Investment Vehicles</h3>
@@ -321,7 +321,7 @@ const Investments = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                 >
                   Explore Investment Opportunities
                 </Button>

@@ -58,7 +58,7 @@ const BlogOakFindsOpportunity = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto">
             {/* Back Button */}
-            <Link to="/blog" className="inline-flex items-center text-accent-brown hover:text-accent-brown/80 transition-colors mb-8">
+            <Link to="/blog" className="inline-flex items-center text-gold-accent hover:text-gold-accent/80 transition-colors mb-8">
               <ArrowLeft className="h-4 w-4 mr-2" />
               Back to Blog
             </Link>
@@ -224,7 +224,7 @@ const BlogOakFindsOpportunity = () => {
                   rel="noopener noreferrer"
                   className="inline-block"
                 >
-                  <Button className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg">
+                  <Button className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg">
                     Register for the Webinar
                   </Button>
                 </a>

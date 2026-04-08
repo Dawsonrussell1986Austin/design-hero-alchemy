@@ -36,7 +36,7 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
           />
         )}
-        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-cream px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
+        <div className="absolute top-3 left-3 bg-gold-accent/90 backdrop-blur-sm text-cream px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
           {transaction.propertyType}
         </div>
       </div>
@@ -50,7 +50,7 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
             {transaction.location}
           </div>
           
-          <div className="text-accent-brown text-xl font-display font-medium border-b border-obsidian/20 pb-2">
+          <div className="text-gold-accent text-xl font-display font-medium border-b border-obsidian/20 pb-2">
             {transaction.loanSize}
           </div>
           
@@ -133,7 +133,7 @@ const RecentTransactionsHomepage = () => {
             <Link to="/transactions">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
               >
                 SEE MORE
                 <ArrowRight className="h-4 w-4 ml-2" />

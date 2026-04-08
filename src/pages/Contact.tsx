@@ -49,7 +49,7 @@ const Contact = () => {
             {/* Main Title */}
             <div className="text-center mb-8 sm:mb-12">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 leading-tight px-2">
-                Get in <span className="text-accent-brown">Touch</span>
+                Get in <span className="text-gold-accent">Touch</span>
               </h1>
               <p className="text-base sm:text-lg lg:text-xl font-body font-normal text-obsidian/80 max-w-2xl mx-auto px-2">
                 Whether you're seeking bridge financing or exploring investment opportunities.
@@ -96,32 +96,32 @@ const Contact = () => {
                 <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8">
                   <div className="grid grid-cols-2 gap-2 sm:gap-4 max-w-xs sm:max-w-sm w-full">
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
-                      <MapPin className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <MapPin className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-gold-accent mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Office</h3>
                       <a 
                         href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors block leading-tight"
+                        className="text-[10px] sm:text-xs text-cream/90 hover:text-gold-accent transition-colors block leading-tight"
                       >
                         5925 Carnegie Blvd<br />Suite 110<br />Charlotte, NC 28209
                       </a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
-                      <Phone className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <Phone className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-gold-accent mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Phone</h3>
-                      <a href="tel:+19802886627" className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors">980.288.6627</a>
+                      <a href="tel:+19802886627" className="text-[10px] sm:text-xs text-cream/90 hover:text-gold-accent transition-colors">980.288.6627</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
-                      <Mail className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <Mail className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-gold-accent mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Email</h3>
-                      <a href="mailto:ir@oakrepartners.com" className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors break-all">ir@oakrepartners.com</a>
+                      <a href="mailto:ir@oakrepartners.com" className="text-[10px] sm:text-xs text-cream/90 hover:text-gold-accent transition-colors break-all">ir@oakrepartners.com</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
-                      <Clock className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
+                      <Clock className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-gold-accent mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Hours</h3>
                       <p className="text-[10px] sm:text-xs text-cream/90 leading-tight">Mon-Fri<br />9AM-6PM EST</p>
                     </div>

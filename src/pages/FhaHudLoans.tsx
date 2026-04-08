@@ -53,7 +53,7 @@ const FhaHudLoans = () => {
                 <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 sm:mb-6 leading-tight">
                   Long-Term Government-Backed Financing
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   FHA/HUD insured loan programs for multifamily, affordable housing, senior living, and healthcare properties.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
@@ -118,10 +118,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 221(D)(4) & 220
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         New Construction/Substantial Rehabilitation
                       </p>
                     </div>
@@ -133,7 +133,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-221"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -150,10 +150,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 223(F)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Acquisition/Refinance
                       </p>
                     </div>
@@ -165,7 +165,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223f"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -182,10 +182,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 223(A)(7)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Streamlined Refinance
                       </p>
                     </div>
@@ -197,7 +197,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223a7"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -214,10 +214,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 241(A)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Supplemental Loans
                       </p>
                     </div>
@@ -229,7 +229,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-241a"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -260,10 +260,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/221(D)(4)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Senior Housing Construction
                       </p>
                     </div>
@@ -275,7 +275,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-221"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -292,10 +292,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/223(F)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Senior Housing Acquisition
                       </p>
                     </div>
@@ -307,7 +307,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223f"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -324,10 +324,10 @@ const FhaHudLoans = () => {
                         />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/223(A)(7)
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Streamlined Senior Refinance
                       </p>
                     </div>
@@ -339,7 +339,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223a7"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -356,10 +356,10 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         241(A) Senior
                       </h3>
-                      <p className="text-sm font-medium text-accent-brown tracking-wider">
+                      <p className="text-sm font-medium text-gold-accent tracking-wider">
                         Senior Housing Supplemental
                       </p>
                     </div>
@@ -371,7 +371,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-241a"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                    className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -390,14 +390,14 @@ const FhaHudLoans = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-8 py-3 font-medium"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Contact Johnson Capital Multifamily
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-8 py-3 font-medium"
+                  className="border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Request Program Information

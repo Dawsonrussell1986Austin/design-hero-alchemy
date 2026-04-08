@@ -42,7 +42,7 @@ const BlogAtlantaAcquisition = () => {
             {/* Article header */}
             <div className="mb-8">
               <div className="flex items-center space-x-2 mb-4">
-                <Calendar className="h-4 w-4 text-accent-brown" />
+                <Calendar className="h-4 w-4 text-gold-accent" />
                 <span className="text-sm text-deep-petrol/70">May 2, 2025</span>
               </div>
               <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">

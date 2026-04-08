@@ -395,7 +395,7 @@ const Transactions = () => {
                 <p className="text-obsidian/70 text-lg">No transactions match your current filters.</p>
                 <Button 
                   onClick={clearFilters}
-                  className="mt-4 bg-accent-brown hover:bg-accent-brown/90 text-cream"
+                  className="mt-4 bg-gold-accent hover:bg-gold-accent/90 text-cream"
                 >
                   Clear All Filters
                 </Button>

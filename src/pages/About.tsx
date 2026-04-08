@@ -47,7 +47,7 @@ const About = () => {
                 <div className="space-y-8">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
-                      Private Credit Lending with <span className="text-accent-brown">Institutional Discipline</span>
+                      Private Credit Lending with <span className="text-gold-accent">Institutional Discipline</span>
                     </h1>
                     <p className="text-lg lg:text-xl font-body font-normal text-deep-petrol leading-relaxed mb-6">
                       Oak is a premier commercial real estate lender with a core business focus on senior secured loans backed by income producing properties. Our lending philosophy is grounded in real asset investment, institutional discipline, and a commitment to long-term capital protection.
@@ -61,7 +61,7 @@ const About = () => {
                       <a href="/leadership">
                         <Button 
                           size="lg"
-                          className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                          className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                         >
                           Our Leadership Team
                         </Button>
@@ -85,15 +85,15 @@ const About = () => {
                       <h3 className="text-lg font-display font-medium text-obsidian mb-4">Experience That Matters</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                         <div>
-                          <div className="text-xl font-display font-medium text-accent-brown mb-1">150+</div>
+                          <div className="text-xl font-display font-medium text-gold-accent mb-1">150+</div>
                           <div className="text-deep-petrol/80 font-body text-xs">Years Combined Experience</div>
                         </div>
                         <div>
-                          <div className="text-xl font-display font-medium text-accent-brown mb-1">$5B+</div>
+                          <div className="text-xl font-display font-medium text-gold-accent mb-1">$5B+</div>
                           <div className="text-deep-petrol/80 font-body text-xs">Bridge Loans Structured</div>
                         </div>
                         <div>
-                          <div className="text-xl font-display font-medium text-accent-brown mb-1">$18B</div>
+                          <div className="text-xl font-display font-medium text-gold-accent mb-1">$18B</div>
                           <div className="text-deep-petrol/80 font-body text-xs">TOTAL TRANSACTIONS²</div>
                         </div>
                       </div>
@@ -127,7 +127,7 @@ const About = () => {
                 {/* Left Column - Content */}
                 <div className="space-y-8">
                   <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist leading-tight">
-                    Our <span className="text-accent-brown">Philosophy</span>
+                    Our <span className="text-gold-accent">Philosophy</span>
                   </h2>
                   
                   <div className="space-y-6">
@@ -149,8 +149,8 @@ const About = () => {
                   <div className="bg-cream/95 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
                     <div className="space-y-8">
                       <div className="text-center">
-                        <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-8 h-8 bg-accent-brown rounded-full"></div>
+                        <div className="w-16 h-16 bg-gold-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                          <div className="w-8 h-8 bg-gold-accent rounded-full"></div>
                         </div>
                         <h3 className="text-lg font-display font-medium text-obsidian mb-3">Structured</h3>
                         <p className="text-deep-petrol font-body text-sm">Systems and processes that ensure consistency</p>
@@ -186,7 +186,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
-                  Discipline and <span className="text-accent-brown">Stability</span>
+                  Discipline and <span className="text-gold-accent">Stability</span>
                 </h2>
                 <p className="text-lg font-body text-deep-petrol leading-relaxed max-w-4xl mx-auto">
                   Discipline is a strong predictor of success, which in turn drives stability across multiple market cycles.
@@ -196,8 +196,8 @@ const About = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <Shield className="h-6 w-6 text-accent-brown" />
+                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
+                      <Shield className="h-6 w-6 text-gold-accent" />
                     </div>
                     <h3 className="text-lg font-display font-medium text-obsidian">Control and Stability</h3>
                   </div>
@@ -208,8 +208,8 @@ const About = () => {
                 
                 <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <TrendingDown className="h-6 w-6 text-accent-brown" />
+                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
+                      <TrendingDown className="h-6 w-6 text-gold-accent" />
                     </div>
                     <h3 className="text-lg font-display font-medium text-obsidian">Reduced Risk-Taking</h3>
                   </div>
@@ -220,8 +220,8 @@ const About = () => {
                 
                 <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
-                      <BarChart className="h-6 w-6 text-accent-brown" />
+                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
+                      <BarChart className="h-6 w-6 text-gold-accent" />
                     </div>
                     <h3 className="text-lg font-display font-medium text-obsidian">Predictability</h3>
                   </div>

@@ -31,15 +31,15 @@ const Investors = () => {
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <Building2 className="h-5 w-5 text-accent-brown" />
+                  <Building2 className="h-5 w-5 text-gold-accent" />
                   <span>Capital preservation first</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <TrendingUp className="h-5 w-5 text-accent-brown" />
+                  <TrendingUp className="h-5 w-5 text-gold-accent" />
                   <span>Attractive, risk-adjusted returns</span>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-silver-mist/90 font-body">
-                  <FileText className="h-5 w-5 text-accent-brown" />
+                  <FileText className="h-5 w-5 text-gold-accent" />
                   <span>Transparent reporting</span>
                 </div>
               </div>
@@ -59,8 +59,8 @@ const Investors = () => {
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <Building2 className="h-6 w-6 text-accent-brown" />
+              <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
+                <Building2 className="h-6 w-6 text-gold-accent" />
               </div>
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Senior-Position Lending
@@ -71,8 +71,8 @@ const Investors = () => {
             </div>
 
             <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <TrendingUp className="h-6 w-6 text-accent-brown" />
+              <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
+                <TrendingUp className="h-6 w-6 text-gold-accent" />
               </div>
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Monthly Update Calls
@@ -83,8 +83,8 @@ const Investors = () => {
             </div>
 
             <div className="text-center space-y-3">
-              <div className="mx-auto w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center">
-                <FileText className="h-6 w-6 text-accent-brown" />
+              <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
+                <FileText className="h-6 w-6 text-gold-accent" />
               </div>
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Thoughtful Structure
@@ -108,7 +108,7 @@ const Investors = () => {
           </p>
           <Button
             size="lg"
-            className="bg-accent-brown hover:bg-accent-brown/90 text-cream text-base font-body font-medium"
+            className="bg-gold-accent hover:bg-gold-accent/90 text-cream text-base font-body font-medium"
             onClick={() => {
               const form = document.querySelector('form');
               form?.scrollIntoView({ behavior: "smooth", block: "center" });

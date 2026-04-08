@@ -70,8 +70,8 @@ const PastWebinars = () => {
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-7xl">
             <div className="text-center space-y-6 max-w-3xl mx-auto">
-              <div className="mx-auto w-20 h-20 bg-accent-brown/10 rounded-xl flex items-center justify-center mb-6">
-                <Play className="h-10 w-10 text-accent-brown" fill="currentColor" />
+              <div className="mx-auto w-20 h-20 bg-gold-accent/10 rounded-xl flex items-center justify-center mb-6">
+                <Play className="h-10 w-10 text-gold-accent" fill="currentColor" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
                 Watch Our Webinars
@@ -91,7 +91,7 @@ const PastWebinars = () => {
                 {pastWebinars.map((webinar) => (
                   <div 
                     key={webinar.id}
-                    className="bg-obsidian rounded-xl overflow-hidden shadow-lg border-2 border-accent-brown/20 hover:border-accent-brown transition-all duration-300"
+                    className="bg-obsidian rounded-xl overflow-hidden shadow-lg border-2 border-gold-accent/20 hover:border-gold-accent transition-all duration-300"
                   >
                     {/* Video Player */}
                     <div className="relative aspect-video overflow-hidden">
@@ -105,7 +105,7 @@ const PastWebinars = () => {
                     {/* Card Content */}
                     <div className="p-6 space-y-3 bg-obsidian">
                       <div className="flex items-center justify-between">
-                        <span className="text-sm font-body text-accent-brown font-semibold">
+                        <span className="text-sm font-body text-gold-accent font-semibold">
                           {webinar.date}
                         </span>
                       </div>

@@ -122,7 +122,7 @@ const InvestorAccess = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="firstName" className="text-obsidian font-body font-medium">
-                      First Name <span className="text-accent-brown">*</span>
+                      First Name <span className="text-gold-accent">*</span>
                     </Label>
                     <Input
                       type="text"
@@ -131,12 +131,12 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
                       placeholder="First name"
                       required
-                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20"
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="lastName" className="text-obsidian font-body font-medium">
-                      Last Name <span className="text-accent-brown">*</span>
+                      Last Name <span className="text-gold-accent">*</span>
                     </Label>
                     <Input
                       type="text"
@@ -145,14 +145,14 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
                       placeholder="Last name"
                       required
-                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="email" className="text-obsidian font-body font-medium">
-                    Email Address <span className="text-accent-brown">*</span>
+                    Email Address <span className="text-gold-accent">*</span>
                   </Label>
                   <Input
                     type="email"
@@ -161,20 +161,20 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="your@email.com"
                     required
-                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20"
                   />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="state" className="text-obsidian font-body font-medium">
-                    State <span className="text-accent-brown">*</span>
+                    State <span className="text-gold-accent">*</span>
                   </Label>
                   <Select 
                     value={formData.state} 
                     onValueChange={(value) => setFormData(prev => ({ ...prev, state: value }))}
                     required
                   >
-                    <SelectTrigger className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
+                    <SelectTrigger className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20">
                       <SelectValue placeholder="Select your state" />
                     </SelectTrigger>
                     <SelectContent>
@@ -189,7 +189,7 @@ const InvestorAccess = () => {
 
                 <div className="space-y-2">
                   <Label htmlFor="phone" className="text-obsidian font-body font-medium">
-                    Phone Number <span className="text-accent-brown">*</span>
+                    Phone Number <span className="text-gold-accent">*</span>
                   </Label>
                   <Input
                     type="tel"
@@ -198,14 +198,14 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                     placeholder="(555) 123-4567"
                     required
-                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-gold-accent focus:ring-gold-accent/20"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base mt-6"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium h-12 text-base mt-6"
                 >
                   {isSubmitting ? "Submitting..." : "Register for Portal Access"}
                 </Button>
@@ -233,7 +233,7 @@ const InvestorAccess = () => {
               </div>
 
               <div className="space-y-6">
-                <h3 className="text-lg font-display font-medium text-accent-brown">
+                <h3 className="text-lg font-display font-medium text-gold-accent">
                   Why Registration Is Important
                 </h3>
                 
@@ -250,8 +250,8 @@ const InvestorAccess = () => {
                 <ul className="space-y-4">
                   {benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent-brown/20 flex items-center justify-center mt-0.5">
-                        <benefit.icon className="w-4 h-4 text-accent-brown" />
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold-accent/20 flex items-center justify-center mt-0.5">
+                        <benefit.icon className="w-4 h-4 text-gold-accent" />
                       </div>
                       <span className="text-cream/80 font-body">{benefit.text}</span>
                     </li>
