@@ -75,6 +75,7 @@ import MarketCorrection from "./pages/MarketCorrection";
 import ThankYouReport from "./pages/ThankYouReport";
 import Brownie from "./pages/Brownie";
 import HomepageDraft3 from "./pages/HomepageDraft3";
+import AdCreatives from "./pages/AdCreatives";
 
 function App() {
   return (
@@ -153,6 +154,7 @@ function App() {
         <Route path="/market-correction-report" element={<MarketCorrection />} />
         <Route path="/thank-you-report" element={<ThankYouReport />} />
         <Route path="/cinnamonroll" element={<Brownie />} />
+        <Route path="/ad-creatives" element={<AdCreatives />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
