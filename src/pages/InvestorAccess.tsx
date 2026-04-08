@@ -34,34 +34,28 @@ const InvestorAccess = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Track form submission
     trackFormSubmission('investor_access_form', 'investor_access_page', true, {
       form_type: 'dtc_investor_registration',
     });
 
-    // Track as a conversion event
     trackConversion('investor_portal_registration', undefined, {
       conversion_action: 'dtc_investor_register',
       page_location: window.location.href,
     });
 
-    // Track Meta Pixel Lead conversion
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Lead', { content_name: 'investor_access_form' });
     }
 
-    // Track lead generation
     trackLeadGeneration('investor_portal', 'investor_access_page', {
       form_name: 'dtc_investor_registration_form',
     });
 
-    // Google Ads conversion event
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'conversion_event_submit_lead_form');
     }
 
     try {
-      // Submit to edge function which sends to Google Sheets
       const { data, error } = await supabase.functions.invoke('submit-investor-access', {
         body: formData,
       });
@@ -86,97 +80,14 @@ const InvestorAccess = () => {
     { icon: Calendar, text: "Time-sensitive information that may relate to liquidity, elections, or fund actions" },
   ];
 
-  if (submitted) {
-    return (
-      <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
-        <Navigation />
-        <main className="pt-28 pb-12 px-6">
-          <div className="max-w-3xl mx-auto text-center space-y-10">
-            {/* Oak Logo / Header */}
-            <div className="space-y-4">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gold-accent/20 mb-4">
-                <Shield className="w-8 h-8 text-gold-accent" />
-              </div>
-              <h1 className="text-3xl lg:text-4xl font-display font-medium text-cream">
-                Important Information for DTC Investors
-              </h1>
-            </div>
-
-            {/* Info Card */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-10 border border-white/10 text-left space-y-6">
-              <p className="text-cream/85 font-body leading-relaxed text-lg">
-                Because your investment was made through a custodial bank or broker account and 
-                processed via the Depository Trust Corporation ("DTC"), we do not receive your 
-                individual contact details directly.
-              </p>
-              <p className="text-cream/85 font-body leading-relaxed text-lg">
-                As a result, we are unable to provide you with account-specific information 
-                unless you register for the portal.
-              </p>
-            </div>
-
-            {/* Why Registration Is Important */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 lg:p-10 border border-white/10 text-left space-y-6">
-              <h2 className="text-xl lg:text-2xl font-display font-medium text-gold-accent">
-                Why Registration Is Important
-              </h2>
-              <p className="text-cream/75 font-body leading-relaxed">
-                In recent months, we've identified several cases where investors holding through 
-                a bank or broker account did not receive essential communications related to 
-                their investments.
-              </p>
-              <p className="text-cream/85 font-body leading-relaxed">
-                Registering for the Oak Investor Portal ensures you receive:
-              </p>
-              <ul className="space-y-4">
-                {benefits.map((benefit, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gold-accent/20 flex items-center justify-center mt-0.5">
-                      <benefit.icon className="w-4 h-4 text-gold-accent" />
-                    </div>
-                    <span className="text-cream/80 font-body">{benefit.text}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
-              <p className="text-cream/80 font-body">
-                Thank you for registering. Our team will be in touch with you shortly.
-              </p>
-            </div>
-
-            <Button
-              onClick={() => setSubmitted(false)}
-              variant="outline"
-              className="border-cream/30 text-cream hover:bg-white/10 font-body font-medium h-12 px-8"
-            >
-              Register Another Investor
-            </Button>
-          </div>
-        </main>
-
-        <footer className="py-8 px-6 border-t border-white/10 mt-12">
-          <div className="max-w-7xl mx-auto text-center">
-            <p className="text-cream/50 text-sm font-body">
-              © {new Date().getFullYear()} Oak Real Estate Partners. All rights reserved.
-            </p>
-          </div>
-        </footer>
-      </div>
-    );
-  }
-
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
       <Navigation />
       
-      {/* Main Content */}
       <main className="pt-28 pb-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             
-            {/* Left Column - Form */}
             <div className="bg-cream rounded-2xl shadow-2xl p-8 lg:p-10">
               <h1 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-6">
                 Investor Portal Registration
@@ -276,7 +187,6 @@ const InvestorAccess = () => {
               </form>
             </div>
 
-            {/* Right Column - Message */}
             <div className="text-cream space-y-8">
               <div className="space-y-6">
                 <h2 className="text-xl lg:text-2xl font-display font-medium text-cream/90">
@@ -327,7 +237,6 @@ const InvestorAccess = () => {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="py-8 px-6 border-t border-white/10 mt-12">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-cream/50 text-sm font-body">
