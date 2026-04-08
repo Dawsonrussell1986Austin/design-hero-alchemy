@@ -369,7 +369,7 @@ const OakChristmasParty = () => {
                     </div>
                     
                     {/* Navigation Controls */}
-                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-gray-200">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-obsidian/10">
                       {/* Mobile: Simple arrows */}
                       <div className="flex sm:hidden items-center justify-between w-full gap-4">
                         <button
@@ -389,7 +389,7 @@ const OakChristmasParty = () => {
                               className={`h-2 rounded-full transition-all duration-300 ${
                                 index === currentActivity 
                                   ? 'bg-accent-brown w-8' 
-                                  : 'bg-gray-300 w-2 active:bg-accent-brown/50'
+                                  : 'bg-deep-petrol/30 w-2 active:bg-accent-brown/50'
                               }`}
                               aria-label={`Go to activity ${index + 1}`}
                             />
@@ -424,7 +424,7 @@ const OakChristmasParty = () => {
                             className={`h-2.5 rounded-full transition-all duration-300 ${
                               index === currentActivity 
                                 ? 'bg-accent-brown w-10' 
-                                : 'bg-gray-300 w-2.5 hover:bg-accent-brown/50'
+                                : 'bg-deep-petrol/30 w-2.5 hover:bg-accent-brown/50'
                             }`}
                             aria-label={`Go to activity ${index + 1}`}
                           />
