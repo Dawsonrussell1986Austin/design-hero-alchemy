@@ -62,7 +62,7 @@ const VideoPage = () => {
 
           {/* Call to Actions */}
           <div className="text-center space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-6">
               Ready to Learn More?
             </h2>
             
@@ -80,7 +80,7 @@ const VideoPage = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>

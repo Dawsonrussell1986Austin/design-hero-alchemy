@@ -40,7 +40,7 @@ const VideoCard = ({ video }: { video: Video }) => {
   }, [video.mediaId]);
 
   return (
-    <div className="bg-white border border-obsidian/20 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+    <div className="bg-cream border border-obsidian/20 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
       <div className="relative aspect-video bg-obsidian/5">
         <style>{`
           wistia-player[media-id='${video.mediaId}']:not(:defined) {
@@ -109,7 +109,7 @@ const VideoCategory = () => {
             <Link to="/investor-education">
               <Button 
                 variant="outline" 
-                className="mb-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white"
+                className="mb-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to All Categories
@@ -160,7 +160,7 @@ const VideoCategory = () => {
               <Link to="/contact">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium px-8 py-6 text-lg rounded-md"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md"
                 >
                   Contact Us
                 </Button>

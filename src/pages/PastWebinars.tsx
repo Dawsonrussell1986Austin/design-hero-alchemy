@@ -109,7 +109,7 @@ const PastWebinars = () => {
                           {webinar.date}
                         </span>
                       </div>
-                      <h3 className="text-xl lg:text-2xl font-display font-medium text-white leading-tight">
+                      <h3 className="text-xl lg:text-2xl font-display font-medium text-cream leading-tight">
                         {webinar.title}
                       </h3>
                       <div className="font-body text-silver-mist/90 leading-relaxed whitespace-pre-line">

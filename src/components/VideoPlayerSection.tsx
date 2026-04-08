@@ -40,7 +40,7 @@ const VideoPlayerSection = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-display font-medium text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-6">
               Experience the Oak Difference
             </h2>
             <p className="text-silver-mist/90 text-lg font-body max-w-3xl mx-auto leading-relaxed">
@@ -67,7 +67,7 @@ const VideoPlayerSection = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center">
+                      <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center">
                         <div className="w-0 h-0 border-l-[24px] border-l-accent-brown border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
                       </div>
                     </div>

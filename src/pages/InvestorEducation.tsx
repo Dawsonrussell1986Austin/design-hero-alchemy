@@ -78,14 +78,14 @@ const InvestorEducation = () => {
                       
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300 shadow-xl">
-                          <Play className="h-10 w-10 text-obsidian group-hover:text-white ml-1" fill="currentColor" />
+                        <div className="w-20 h-20 bg-cream/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300 shadow-xl">
+                          <Play className="h-10 w-10 text-obsidian group-hover:text-cream ml-1" fill="currentColor" />
                         </div>
                       </div>
                       
                       {/* Title Overlay */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-white group-hover:text-accent-brown transition-colors leading-tight">
+                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-cream group-hover:text-accent-brown transition-colors leading-tight">
                           {category.question}
                         </h3>
                       </div>
@@ -123,7 +123,7 @@ const InvestorEducation = () => {
             <a href="/investors">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
               >
                 Get Investment Details
               </Button>

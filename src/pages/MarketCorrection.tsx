@@ -14,7 +14,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
    * --soft-gray: #6C7D80   (Soft Gray - accent)
    * --stone:     #E4E3E1   (Soft Stone)
    * --cream:     #FAF7F2   (Cream - light bg)
-   * --gold:      #C9A84C   (Gold - key accent)
+   * --gold:      #C7A74C   (Gold - key accent)
    * --gold-warm: #D4B35C   (Gold Warm - supporting)
    * --copper:    #A85839   (Burnt Copper - accent)
    * --sage:      #AEBEA9   (Pale Sage - supporting)
@@ -113,17 +113,17 @@ const MarketCorrection = () => {
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
             {/* Left — Copy */}
             <div>
-              <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#c9a84c", opacity: 0.8, fontWeight: 500 }}>
+              <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
               </p>
-              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
+              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
                 79%
               </h1>
-              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
+              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#FAF7F2" }}>
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
                 <em style={{ color: "#D4B35C", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
+              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
@@ -133,7 +133,7 @@ const MarketCorrection = () => {
               <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -147,7 +147,7 @@ const MarketCorrection = () => {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full flex items-center justify-center gap-3 py-3.5 text-[11px] tracking-[0.3em] uppercase transition-opacity disabled:opacity-50"
-                    style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
+                    style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
                   >
                     {isSubmitting ? "Submitting..." : "Send Me the Report"}
                     {!isSubmitting && <ArrowRight className="h-4 w-4" />}
@@ -170,8 +170,8 @@ const MarketCorrection = () => {
               { stat: "63%", note: "cite elevated valuations as top concern" },
             ].map((d) => (
               <div key={d.stat}>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
-                <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#FAF7F2" }}>{d.stat}</p>
+                <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
           </div>
@@ -189,15 +189,15 @@ const MarketCorrection = () => {
       {/* ════════ BODY — PARCHMENT ════════ */}
       <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#faf7f2" }}>
         <div className="max-w-4xl mx-auto">
-          <div className="w-12 h-[1px] mb-6" style={{ backgroundColor: "#c9a84c" }} />
-          <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-16" style={{ ...sans, color: "#c9a84c", fontWeight: 500 }}>
+          <div className="w-12 h-[1px] mb-6" style={{ backgroundColor: "#C7A74C" }} />
+          <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-16" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
             Oak Real Estate Partners
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#0A1520", letterSpacing: "-0.01em" }}>
               The institutions tracking this data aren't waiting for the correction to{" "}
-              <em style={{ color: "#c9a84c", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
+              <em style={{ color: "#C7A74C", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
             </h2>
 
             {/* Mini bar chart */}
@@ -205,7 +205,7 @@ const MarketCorrection = () => {
               {[
                 { label: "2024", height: "35%", color: "rgba(201,168,76,0.25)" },
                 { label: "2025", height: "55%", color: "rgba(201,168,76,0.45)" },
-                { label: "2026", height: "79%", color: "#c9a84c", active: true },
+                { label: "2026", height: "79%", color: "#C7A74C", active: true },
               ].map((bar) => (
                 <div key={bar.label} className="flex flex-col items-center gap-2 h-full justify-end">
                   {bar.active && (
@@ -226,7 +226,7 @@ const MarketCorrection = () => {
           </p>
 
           {/* Blockquote */}
-          <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #c9a84c" }}>
+          <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #C7A74C" }}>
             <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...serif, color: "#0A1520", fontStyle: "italic" }}>
               Senior-secured, first-lien bridge loans on income-producing commercial real estate. Every dollar backed by a specific property you can see, value, and verify. Not a ticker. Not a blind pool. An address.
             </p>
@@ -255,13 +255,13 @@ const MarketCorrection = () => {
             If a correction arrives in the next 90 days, does your portfolio hold?{" "}
             <span style={{ color: "#D4B35C" }}>Or does it just feel like it will?</span>
           </p>
-          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
             The gap between those two answers is where fortunes are quietly lost.
           </p>
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="mt-10 inline-flex items-center gap-3 py-3 px-10 text-[11px] tracking-[0.3em] uppercase transition-opacity"
-            style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
+            style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
           >
             Get the Report <ArrowRight className="h-4 w-4" />
           </button>
@@ -282,7 +282,7 @@ const MarketCorrection = () => {
               </p>
             </div>
           </div>
-          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}>
+          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}>
             oakrepartners.com
           </a>
         </div>

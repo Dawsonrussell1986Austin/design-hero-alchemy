@@ -61,7 +61,7 @@ const FhaHudLoans = () => {
                 </p>
 
                 {/* Key Features */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
                   <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     FHA/HUD Program Advantages
                   </h3>
@@ -108,7 +108,7 @@ const FhaHudLoans = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 
                 {/* HUD 221(D)4 & 220 */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -133,14 +133,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-221"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* HUD 223(F) */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -165,14 +165,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223f"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* HUD 223(A)7 */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -197,14 +197,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223a7"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* HUD 241(A) */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -229,7 +229,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-241a"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -250,7 +250,7 @@ const FhaHudLoans = () => {
               <div className="grid md:grid-cols-2 gap-8">
                 
                 {/* 232/221(D)4 */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -275,14 +275,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-221"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* 232/223(F) */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -307,14 +307,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223f"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* 232/223(A)(7) */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                         <img 
@@ -339,14 +339,14 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-232-223a7"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
                 </div>
 
                 {/* 241(A) Senior */}
-                <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -371,7 +371,7 @@ const FhaHudLoans = () => {
                   
                   <Button 
                     onClick={() => window.location.href = "/lending/fha-hud/hud-241a"}
-                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                    className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                   >
                     View Terms & Details
                   </Button>
@@ -381,7 +381,7 @@ const FhaHudLoans = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
+            <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
               <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
                 Ready to Explore FHA/HUD Financing?
               </h3>
@@ -390,14 +390,14 @@ const FhaHudLoans = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white px-8 py-3 font-medium"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Contact Johnson Capital Multifamily
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Request Program Information

@@ -61,7 +61,7 @@ const BlogDallasDealSheet = () => {
 
             {/* Article content */}
             <div className="prose prose-lg max-w-none">
-              <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
+              <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
                   <strong>Westmount Realty Capital Sells 1980s-Era Multifamily Property</strong><br />
                   After adding extensive upgrades, a Dallas-based company sold a 45-year-old apartment complex in Arlington.
@@ -90,7 +90,7 @@ const BlogDallasDealSheet = () => {
               <h3 className="text-xl font-display font-medium text-obsidian mb-6">Related News</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <Link to="/news/indianapolis-financing" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Provides $10.30 Million in Financing
                     </h4>
@@ -98,7 +98,7 @@ const BlogDallasDealSheet = () => {
                   </div>
                 </Link>
                 <Link to="/news/atlanta-acquisition-loan" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       Oak Capital Provides $8.7M Acquisition Loan for Multifamily Property
                     </h4>

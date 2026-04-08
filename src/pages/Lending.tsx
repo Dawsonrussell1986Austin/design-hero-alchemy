@@ -70,7 +70,7 @@ const Lending = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               
               {/* Bridge Loans Card */}
-              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
                     src="/lovable-uploads/e9d4be6f-f66b-4ec3-9cd1-bf0f44baf61f.png"
@@ -109,14 +109,14 @@ const Lending = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                 >
                   Explore Bridge Loan Programs
                 </Button>
               </div>
 
               {/* FHA/HUD Loans Card */}
-              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-white/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
                     src="/lovable-uploads/3eea10a2-658b-45bc-9a65-72f8dbf07c61.png"
@@ -155,7 +155,7 @@ const Lending = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/fha-hud"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white py-3 font-medium"
+                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
                 >
                   Explore FHA/HUD Programs
                 </Button>
@@ -163,7 +163,7 @@ const Lending = () => {
 
             </div>
 
-            <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
+            <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
               <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
                 Bridge-to-FHA Coordination
               </h3>
@@ -174,7 +174,7 @@ const Lending = () => {
                 <a href="/lending/fha-hud">
                   <Button 
                     variant="outline"
-                    className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-8 py-3 font-medium"
+                    className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-8 py-3 font-medium"
                   >
                     Learn More About JCM FHA Programs
                   </Button>

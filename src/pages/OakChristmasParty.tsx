@@ -108,7 +108,7 @@ const OakChristmasParty = () => {
       <section 
         className="relative pt-16 sm:pt-20 pb-0" 
         style={{ 
-          backgroundColor: '#263B45',
+          backgroundColor: 'hsl(200, 29%, 21%)',
           backgroundImage: `
             url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.15'/%3E%3C/svg%3E")
           `
@@ -132,7 +132,7 @@ const OakChristmasParty = () => {
           </div>
           
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-start bg-white rounded-lg shadow-xl p-4 sm:p-6 md:p-8">
+            <div className="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-start bg-cream rounded-lg shadow-xl p-4 sm:p-6 md:p-8">
               {/* Left Column - Photo */}
               <div className="flex flex-col items-center lg:items-start space-y-3 sm:space-y-4">
                 <div className="relative w-full max-w-[280px] lg:max-w-none">
@@ -188,8 +188,8 @@ const OakChristmasParty = () => {
         <div className="absolute inset-0 bg-obsidian/80" />
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-[#e8dcc8] mb-3 sm:mb-4 px-2">A Very Merry Oak Holiday--Party Agenda</h2>
-            <div className="flex items-center justify-center gap-2 text-[#e8dcc8]/90 text-base sm:text-lg">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-cream mb-3 sm:mb-4 px-2">A Very Merry Oak Holiday--Party Agenda</h2>
+            <div className="flex items-center justify-center gap-2 text-cream/90 text-base sm:text-lg">
               <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf" />
               <p>December 3 – 5, 2025</p>
             </div>
@@ -198,13 +198,13 @@ const OakChristmasParty = () => {
           <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
             {/* Wednesday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-6 sm:p-8">
-              <h3 className="text-xl sm:text-2xl font-display font-medium text-[#e8dcc8] mb-4 sm:mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
+              <h3 className="text-xl sm:text-2xl font-display font-medium text-cream mb-4 sm:mb-6">Wednesday, December 3 – Arrival & Welcome</h3>
               
-              <div className="space-y-4 sm:space-y-6 text-[#e8dcc8]/90 text-sm sm:text-base">
+              <div className="space-y-4 sm:space-y-6 text-cream/90 text-sm sm:text-base">
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <Plane className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">Arrivals – Guests arrive in Charlotte and check in at:</p>
+                    <p className="font-semibold text-cream">Arrivals – Guests arrive in Charlotte and check in at:</p>
                   </div>
                   <p className="text-base sm:text-lg ml-6 sm:ml-7">Renaissance Charlotte SouthPark</p>
                   <a 
@@ -220,7 +220,7 @@ const OakChristmasParty = () => {
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
+                    <p className="font-semibold text-cream">5:00 PM (Optional) – Welcome Happy Hour at Legion Brewing South Park</p>
                   </div>
                   <a 
                     href="https://www.google.com/maps/search/?api=1&query=5610+Carnegie+Blvd+Charlotte+NC+28209" 
@@ -237,15 +237,15 @@ const OakChristmasParty = () => {
 
             {/* Thursday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-6 sm:p-8">
-              <h3 className="text-xl sm:text-2xl font-display font-medium text-[#e8dcc8] mb-4 sm:mb-6">Thursday, December 4 – The Main Event</h3>
+              <h3 className="text-xl sm:text-2xl font-display font-medium text-cream mb-4 sm:mb-6">Thursday, December 4 – The Main Event</h3>
               
-              <div className="space-y-4 sm:space-y-6 text-[#e8dcc8]/90 text-sm sm:text-base">
+              <div className="space-y-4 sm:space-y-6 text-cream/90 text-sm sm:text-base">
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <Clock className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">5:00 – 6:30 PM | Happy Hour</p>
+                    <p className="font-semibold text-cream">5:00 – 6:30 PM | Happy Hour</p>
                   </div>
-                  <p className="text-base sm:text-lg text-[#e8dcc8] ml-6 sm:ml-7">Del Frisco's Double Eagle Steakhouse</p>
+                  <p className="text-base sm:text-lg text-cream ml-6 sm:ml-7">Del Frisco's Double Eagle Steakhouse</p>
                   <a 
                     href="https://www.google.com/maps/search/?api=1&query=4725+Piedmont+Row+Dr+Suite+170+Charlotte+NC+28209" 
                     target="_blank" 
@@ -261,7 +261,7 @@ const OakChristmasParty = () => {
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">6:30 – 7:00 PM | Holiday Message from Gary Bechtel, CEO</p>
+                    <p className="font-semibold text-cream">6:30 – 7:00 PM | Holiday Message from Gary Bechtel, CEO</p>
                   </div>
                   <p className="italic ml-6 sm:ml-7">A short toast celebrating our team, partnerships, and another great year.</p>
                 </div>
@@ -269,7 +269,7 @@ const OakChristmasParty = () => {
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <Utensils className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">7:00 PM | Dinner Service Begins</p>
+                    <p className="font-semibold text-cream">7:00 PM | Dinner Service Begins</p>
                   </div>
                   <p className="italic ml-6 sm:ml-7">Order from the evening's curated menu.</p>
                 </div>
@@ -277,7 +277,7 @@ const OakChristmasParty = () => {
                 <div>
                   <div className="flex items-start gap-2 mb-2">
                     <PartyPopper className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
-                    <p className="font-semibold text-[#e8dcc8]">9:30 PM | Evening Concludes</p>
+                    <p className="font-semibold text-cream">9:30 PM | Evening Concludes</p>
                   </div>
                   <p className="italic ml-6 sm:ml-7">Thank you for celebrating with us!</p>
                 </div>
@@ -286,9 +286,9 @@ const OakChristmasParty = () => {
 
             {/* Friday */}
             <div className="bg-white/5 border-white/10 backdrop-blur-sm rounded-lg p-6 sm:p-8">
-              <h3 className="text-xl sm:text-2xl font-display font-medium text-[#e8dcc8] mb-4 sm:mb-6">Friday, December 5 – Farewell & Departures</h3>
+              <h3 className="text-xl sm:text-2xl font-display font-medium text-cream mb-4 sm:mb-6">Friday, December 5 – Farewell & Departures</h3>
               
-              <div className="space-y-3 sm:space-y-4 text-[#e8dcc8]/90 text-sm sm:text-base">
+              <div className="space-y-3 sm:space-y-4 text-cream/90 text-sm sm:text-base">
                 <div className="flex items-start gap-2">
                   <Coffee className="w-4 h-4 sm:w-5 sm:h-5 text-gold-leaf mt-0.5 flex-shrink-0" />
                   <p>Enjoy breakfast at your leisure before checkout.</p>
@@ -334,7 +334,7 @@ const OakChristmasParty = () => {
 
               {/* Carousel Content - Shows second on mobile */}
               <div className="order-2 lg:order-1 relative z-10 w-full">
-                <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 relative overflow-hidden">
+                <div className="bg-cream rounded-2xl shadow-2xl p-6 sm:p-10 relative overflow-hidden">
                   {/* Decorative accent */}
                   <div className="absolute top-0 left-0 w-2 h-full bg-accent-brown"></div>
                   
@@ -369,12 +369,12 @@ const OakChristmasParty = () => {
                     </div>
                     
                     {/* Navigation Controls */}
-                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-gray-200">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-obsidian/10">
                       {/* Mobile: Simple arrows */}
                       <div className="flex sm:hidden items-center justify-between w-full gap-4">
                         <button
                           onClick={prevActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white transition-all duration-300"
+                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300"
                           aria-label="Previous activity"
                         >
                           <ChevronLeft className="w-6 h-6" />
@@ -389,7 +389,7 @@ const OakChristmasParty = () => {
                               className={`h-2 rounded-full transition-all duration-300 ${
                                 index === currentActivity 
                                   ? 'bg-accent-brown w-8' 
-                                  : 'bg-gray-300 w-2 active:bg-accent-brown/50'
+                                  : 'bg-deep-petrol/30 w-2 active:bg-accent-brown/50'
                               }`}
                               aria-label={`Go to activity ${index + 1}`}
                             />
@@ -398,7 +398,7 @@ const OakChristmasParty = () => {
                         
                         <button
                           onClick={nextActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-all duration-300 shadow-lg"
+                          className="group flex items-center justify-center p-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 shadow-lg"
                           aria-label="Next activity"
                         >
                           <ChevronRight className="w-6 h-6" />
@@ -408,7 +408,7 @@ const OakChristmasParty = () => {
                       {/* Desktop: Full buttons with text */}
                       <button
                         onClick={prevActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white transition-all duration-300 font-semibold"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300 font-semibold"
                         aria-label="Previous activity"
                       >
                         <ChevronLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
@@ -424,7 +424,7 @@ const OakChristmasParty = () => {
                             className={`h-2.5 rounded-full transition-all duration-300 ${
                               index === currentActivity 
                                 ? 'bg-accent-brown w-10' 
-                                : 'bg-gray-300 w-2.5 hover:bg-accent-brown/50'
+                                : 'bg-deep-petrol/30 w-2.5 hover:bg-accent-brown/50'
                             }`}
                             aria-label={`Go to activity ${index + 1}`}
                           />
@@ -433,7 +433,7 @@ const OakChristmasParty = () => {
                       
                       <button
                         onClick={nextActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
                         aria-label="Next activity"
                       >
                         Next

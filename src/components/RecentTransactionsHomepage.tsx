@@ -22,7 +22,7 @@ interface TransactionCardHomepageProps {
 
 const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) => {
   return (
-    <Card className="bg-white/90 border border-obsidian/20 overflow-hidden hover:bg-white transition-all duration-300 group shadow-lg h-full">
+    <Card className="bg-cream/90 border border-obsidian/20 overflow-hidden hover:bg-cream transition-all duration-300 group shadow-lg h-full">
       <div className="aspect-video overflow-hidden relative">
         <img 
           src={transaction.image}
@@ -36,11 +36,11 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
           />
         )}
-        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
+        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-cream px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
           {transaction.propertyType}
         </div>
       </div>
-      <CardContent className="p-6 flex-1 bg-white">
+      <CardContent className="p-6 flex-1 bg-cream">
         <h3 className="text-lg font-display font-medium text-obsidian mb-4 leading-tight border-b border-obsidian/20 pb-3">
           {transaction.name}
         </h3>
@@ -83,7 +83,7 @@ const RecentTransactionsHomepage = () => {
           
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-8">
               Recent Transactions
             </h2>
           </div>

@@ -47,7 +47,7 @@ const Hud232223a7Terms = () => {
                 </p>
 
                 {/* Why Consider This Program */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
                   <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Why Consider This Program?
                   </h3>
@@ -81,7 +81,7 @@ const Hud232223a7Terms = () => {
             </div>
 
             {/* Financing Parameters Table */}
-            <div className="bg-white/80 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
+            <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
               <h2 className="text-2xl font-display font-medium text-obsidian mb-8 text-center">
                 Financing Parameters
               </h2>

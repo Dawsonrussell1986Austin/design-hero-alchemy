@@ -36,7 +36,7 @@ const ThankYouReport = () => {
 
         <div className="max-w-2xl mx-auto text-center">
 
-          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#c9a84c", fontWeight: 500 }}>
+          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
             You're In
           </p>
 
@@ -44,13 +44,13 @@ const ThankYouReport = () => {
             Check your inbox.
           </h1>
 
-          <p className="text-base sm:text-lg leading-[1.7] mt-6 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+          <p className="text-base sm:text-lg leading-[1.7] mt-6 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
             We've sent the 2026 Institutional Investor Report to your email. If you don't see it within a few minutes, check your spam folder.
           </p>
 
           {/* Download link */}
           <div className="mt-10 p-6 sm:p-8 text-center" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-            <p className="text-sm mb-4" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+            <p className="text-sm mb-4" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
               Don't want to wait? Download it now.
             </p>
             <a
@@ -59,7 +59,7 @@ const ThankYouReport = () => {
               rel="noopener noreferrer"
               download
               className="inline-flex items-center gap-3 py-3 px-8 text-[11px] tracking-[0.3em] uppercase transition-opacity hover:opacity-90"
-              style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
+              style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
             >
               <Download className="h-4 w-4" />
               Download the Report
@@ -70,7 +70,7 @@ const ThankYouReport = () => {
           <a
             href="/"
             className="inline-flex items-center gap-2 mt-12 text-sm tracking-wide hover:underline underline-offset-4 transition-opacity"
-            style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}
+            style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}
           >
             Visit oakrepartners.com <ArrowRight className="h-4 w-4" />
           </a>
@@ -86,7 +86,7 @@ const ThankYouReport = () => {
               Institutional CRE Lending · Senior Secured · Real Assets
             </p>
           </div>
-          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}>
+          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}>
             oakrepartners.com
           </a>
         </div>

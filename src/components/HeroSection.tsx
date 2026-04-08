@@ -5,7 +5,7 @@ import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-24 sm:pt-24 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe" style={{marginTop: window.innerWidth < 640 ? '97px' : '0px'}}>
+    <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-28 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe">
       {/* Smooth floating gradient backgrounds */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-20 left-1/4 w-96 h-96 bg-accent-brown/15 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-silver-mist bg-silver-mist/10 text-white hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
+                  className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
                 >
                   Why Oak
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </div>
             
             {/* $5B Bridge */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-[#b1beab]/30 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.4s_forwards] hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target">
+            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.4s_forwards] hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
                 BRIDGE LOANS COMPLETED

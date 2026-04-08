@@ -69,7 +69,7 @@ const Invest = () => {
           <div className="grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
             <Link
               to="/webinars"
-              className="group bg-white rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
+              className="group bg-cream rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
             >
               <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-deep-petrol/10 rounded-full group-hover:bg-deep-petrol/20 transition-colors">
                 <Video className="w-6 h-6 text-deep-petrol" />
@@ -87,7 +87,7 @@ const Invest = () => {
 
             <Link
               to="/cedar-mill-case-study"
-              className="group bg-white rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
+              className="group bg-cream rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
             >
               <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-deep-petrol/10 rounded-full group-hover:bg-deep-petrol/20 transition-colors">
                 <Play className="w-6 h-6 text-deep-petrol" />

@@ -64,7 +64,7 @@ const Investing = () => {
                 </p>
                 
                 {/* Investment Philosophy - Under text */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
                   <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Investor-Focused Philosophy
                   </h3>

@@ -113,7 +113,7 @@ const InvestorAccess = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Column - Form */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 lg:p-10">
+            <div className="bg-cream rounded-2xl shadow-2xl p-8 lg:p-10">
               <h1 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-6">
                 Investor Portal Registration
               </h1>
@@ -131,7 +131,7 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
                       placeholder="First name"
                       required
-                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -145,7 +145,7 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
                       placeholder="Last name"
                       required
-                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                     />
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="your@email.com"
                     required
-                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                   />
                 </div>
 
@@ -174,7 +174,7 @@ const InvestorAccess = () => {
                     onValueChange={(value) => setFormData(prev => ({ ...prev, state: value }))}
                     required
                   >
-                    <SelectTrigger className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
+                    <SelectTrigger className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
                       <SelectValue placeholder="Select your state" />
                     </SelectTrigger>
                     <SelectContent>
@@ -198,14 +198,14 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                     placeholder="(555) 123-4567"
                     required
-                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                   />
                 </div>
 
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 text-base mt-6"
+                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base mt-6"
                 >
                   {isSubmitting ? "Submitting..." : "Register for Portal Access"}
                 </Button>
@@ -213,19 +213,19 @@ const InvestorAccess = () => {
             </div>
 
             {/* Right Column - Message */}
-            <div className="text-white space-y-8">
+            <div className="text-cream space-y-8">
               <div className="space-y-6">
-                <h2 className="text-xl lg:text-2xl font-display font-medium text-white/90">
+                <h2 className="text-xl lg:text-2xl font-display font-medium text-cream/90">
                   Important Information for DTC Investors
                 </h2>
                 
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                  <p className="text-white/80 font-body leading-relaxed">
+                  <p className="text-cream/80 font-body leading-relaxed">
                     Because your investment was made through a custodial bank or broker account and 
                     processed via the Depository Trust Corporation ("DTC"), we do not receive your 
                     individual contact details directly.
                   </p>
-                  <p className="text-white/80 font-body leading-relaxed mt-4">
+                  <p className="text-cream/80 font-body leading-relaxed mt-4">
                     As a result, we are unable to provide you with account-specific information 
                     unless you register for the portal.
                   </p>
@@ -237,13 +237,13 @@ const InvestorAccess = () => {
                   Why Registration Is Important
                 </h3>
                 
-                <p className="text-white/70 font-body leading-relaxed">
+                <p className="text-cream/70 font-body leading-relaxed">
                   In recent months, we've identified several cases where investors holding through 
                   a bank or broker account did not receive essential communications related to 
                   their investments.
                 </p>
 
-                <p className="text-white/80 font-body leading-relaxed">
+                <p className="text-cream/80 font-body leading-relaxed">
                   Registering for the Oak Investor Portal ensures you receive:
                 </p>
 
@@ -253,7 +253,7 @@ const InvestorAccess = () => {
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent-brown/20 flex items-center justify-center mt-0.5">
                         <benefit.icon className="w-4 h-4 text-accent-brown" />
                       </div>
-                      <span className="text-white/80 font-body">{benefit.text}</span>
+                      <span className="text-cream/80 font-body">{benefit.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -266,7 +266,7 @@ const InvestorAccess = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-white/10 mt-12">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/50 text-sm font-body">
+          <p className="text-cream/50 text-sm font-body">
             © {new Date().getFullYear()} Oak Real Estate Partners. All rights reserved.
           </p>
         </div>

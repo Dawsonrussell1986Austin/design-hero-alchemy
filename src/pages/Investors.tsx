@@ -108,7 +108,7 @@ const Investors = () => {
           </p>
           <Button
             size="lg"
-            className="bg-accent-brown hover:bg-accent-brown/90 text-white text-base font-body font-medium"
+            className="bg-accent-brown hover:bg-accent-brown/90 text-cream text-base font-body font-medium"
             onClick={() => {
               const form = document.querySelector('form');
               form?.scrollIntoView({ behavior: "smooth", block: "center" });

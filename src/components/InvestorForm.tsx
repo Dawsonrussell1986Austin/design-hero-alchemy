@@ -34,7 +34,7 @@ const InvestorForm = () => {
   };
 
   return (
-    <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-10">
+    <div className="bg-cream/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-10">
       <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-2">
         Stay Connected
       </h2>
@@ -58,7 +58,7 @@ const InvestorForm = () => {
             name="first_name"
             placeholder="First name"
             required
-            className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
           />
         </div>
 
@@ -72,7 +72,7 @@ const InvestorForm = () => {
             name="last_name"
             placeholder="Last name"
             required
-            className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
           />
         </div>
 
@@ -86,7 +86,7 @@ const InvestorForm = () => {
             name="email"
             placeholder="Work email"
             required
-            className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
+            className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20 font-body"
           />
         </div>
 
@@ -121,7 +121,7 @@ const InvestorForm = () => {
 
         <Button
           type="submit"
-          className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 text-base"
+          className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base"
         >
           Subscribe to Updates
         </Button>

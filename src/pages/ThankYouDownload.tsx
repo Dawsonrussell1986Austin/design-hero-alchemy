@@ -19,7 +19,7 @@ const ThankYouDownload = () => {
       
       <main className="flex-1 flex items-center justify-center px-4 py-16">
         <div className="max-w-2xl w-full text-center">
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-12">
+          <div className="bg-cream/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-12">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-accent-brown/10 rounded-full mb-6">
               <Mail className="w-8 h-8 text-accent-brown" />
             </div>
@@ -35,7 +35,7 @@ const ThankYouDownload = () => {
             <div className="flex justify-center">
               <Button
                 onClick={() => navigate("/")}
-                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 px-8"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 px-8"
               >
                 Return Home
               </Button>

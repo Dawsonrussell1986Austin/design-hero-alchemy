@@ -17,10 +17,10 @@ interface TransactionCardProps {
 
 const TransactionCard = ({ transaction }: TransactionCardProps) => {
   return (
-    <Card className="bg-white border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
+    <Card className="bg-cream border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
       {/* Property Type Badge */}
       <div className="relative">
-        <div className="absolute top-4 left-4 bg-accent-brown text-white px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
+        <div className="absolute top-4 left-4 bg-accent-brown text-cream px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
           {transaction.propertyType}
         </div>
         
@@ -41,7 +41,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
         </div>
       </div>
       
-      <CardContent className="p-6 bg-white">
+      <CardContent className="p-6 bg-cream">
         {/* Property Name */}
         <h3 className="text-xl font-display font-medium text-obsidian mb-4 leading-tight pb-3 border-b border-obsidian/10">
           {transaction.name}

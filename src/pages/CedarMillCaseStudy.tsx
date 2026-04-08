@@ -17,7 +17,7 @@ const CedarMillCaseStudy = () => {
         <div className="max-w-6xl mx-auto">
           {/* Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-display font-medium text-white mb-4">
+            <h1 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-4">
               Ciel of Cedar Mill Case Study
             </h1>
             <p className="text-silver-mist/90 text-xl font-body">
@@ -42,7 +42,7 @@ const CedarMillCaseStudy = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center shadow-lg">
+                      <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center shadow-lg">
                         <Play className="w-8 h-8 text-accent-brown ml-1" fill="currentColor" />
                       </div>
                     </div>
@@ -61,7 +61,7 @@ const CedarMillCaseStudy = () => {
 
           {/* Call to Actions */}
           <div className="text-center space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-6">
               Ready to Learn More?
             </h2>
             
@@ -79,7 +79,7 @@ const CedarMillCaseStudy = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>

@@ -46,7 +46,7 @@ const OakInstitutionalCreditSolutions = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium"
                   asChild
                 >
                   <a href="/documents/Oak_Institutional_Credit_Solutions_Subscription_Agreement.pdf" download>

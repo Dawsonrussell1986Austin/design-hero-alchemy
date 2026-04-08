@@ -61,7 +61,7 @@ const BlogIndianapolisFinancing = () => {
 
             {/* Article content */}
             <div className="prose prose-lg max-w-none">
-              <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
+              <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
                   The Oak Companies provided a combined $10.30 million in financing for a pair of multifamily properties located in metropolitan Indianapolis. The separate bridge loans funded the acquisition and planned renovations.
                 </p>
@@ -89,7 +89,7 @@ const BlogIndianapolisFinancing = () => {
               <h3 className="text-xl font-display font-medium text-obsidian mb-6">Related News</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <Link to="/news/philadelphia-midrise" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Provides Bridge Loan for Philadelphia Midrise
                     </h4>
@@ -97,7 +97,7 @@ const BlogIndianapolisFinancing = () => {
                   </div>
                 </Link>
                 <Link to="/news/atlanta-acquisition-loan" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       Oak Capital Provides $8.7M Acquisition Loan for Multifamily Property
                     </h4>
