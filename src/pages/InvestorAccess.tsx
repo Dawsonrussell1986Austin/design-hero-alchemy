@@ -79,11 +79,7 @@ const InvestorAccess = () => {
       }
 
       console.log('Form submission successful:', data);
-      toast({
-        title: "Registration Submitted",
-        description: "Thank you for registering. We will be in touch shortly.",
-      });
-
+      setSubmitted(true);
       setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
     } catch (error) {
       console.error('Error submitting form:', error);
