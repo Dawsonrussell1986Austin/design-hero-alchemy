@@ -76,6 +76,7 @@ import ThankYouReport from "./pages/ThankYouReport";
 import Brownie from "./pages/Brownie";
 import HomepageDraft3 from "./pages/HomepageDraft3";
 import AdCreatives from "./pages/AdCreatives";
+import ThankYouInvestorAccess from "./pages/ThankYouInvestorAccess";
 
 function App() {
   return (
@@ -155,6 +156,7 @@ function App() {
         <Route path="/thank-you-report" element={<ThankYouReport />} />
         <Route path="/cinnamonroll" element={<Brownie />} />
         <Route path="/ad-creatives" element={<AdCreatives />} />
+        <Route path="/thank-you-investor-access" element={<ThankYouInvestorAccess />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
