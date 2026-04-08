@@ -62,7 +62,7 @@ const BlogPrivateCreditLendingGap = () => {
             {/* Article Header */}
             <div className="mb-12">
               <p className="text-graphite-fog/70 mb-4">December 3, 2025</p>
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-obsidian leading-tight mb-8">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss leading-tight mb-8">
                 Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why
               </h1>
             </div>
@@ -94,7 +94,7 @@ const BlogPrivateCreditLendingGap = () => {
                 Private CRE credit has grown into a $1.7 trillion global market, and multiple industry research groups project continued expansion. Preqin's 2025 Global Alternatives Report notes that private credit is expected to be the fastest-growing alternative asset class through 2026, driven by demand for secure, yield-oriented structures that are less correlated to public markets.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 Why This Matters for Institutional Allocators
               </h2>
               
@@ -117,7 +117,7 @@ const BlogPrivateCreditLendingGap = () => {
                 The Boston Consulting Group recently reported that 65% of institutional investment committees plan to increase their exposure to private credit over the next two years, citing yield stability and structural transparency as primary reasons.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 Why Sponsors Are Also Turning to Private Credit
               </h2>
               
@@ -143,7 +143,7 @@ const BlogPrivateCreditLendingGap = () => {
                 Private lenders with experienced underwriting teams and track records across multiple market cycles are positioned to provide both.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 Where Oak Fits
               </h2>
               
@@ -151,7 +151,7 @@ const BlogPrivateCreditLendingGap = () => {
                 Oak Real Estate Partners manages multiple senior-secured credit strategies, each designed to originate and manage first-lien bridge loans backed by income-producing or value-add commercial real estate across U.S. growth markets.
               </p>
               
-              <h3 className="text-xl font-display font-medium text-obsidian mt-10 mb-4">
+              <h3 className="text-xl font-display font-medium text-abyss mt-10 mb-4">
                 The Oak Institutional Credit Solutions Fund
               </h3>
               
@@ -176,7 +176,7 @@ const BlogPrivateCreditLendingGap = () => {
                 <li>Transparent and continuous portfolio oversight</li>
               </ul>
               
-              <h3 className="text-xl font-display font-medium text-obsidian mt-10 mb-4">
+              <h3 className="text-xl font-display font-medium text-abyss mt-10 mb-4">
                 The Oak Parallel Bridge Credit Fund
               </h3>
               
@@ -201,7 +201,7 @@ const BlogPrivateCreditLendingGap = () => {
                 <li>Adaptability to evolving borrower needs and market conditions</li>
               </ul>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 Why This Matters Now
               </h2>
               
@@ -209,7 +209,7 @@ const BlogPrivateCreditLendingGap = () => {
                 As traditional lenders continue to retrench, strategies grounded in underwriting discipline, collateral-backed security, and real asset-level transparency have become increasingly valued by investors and sponsors alike. These structures are designed not only to seek attractive risk-adjusted returns, but also to provide stability and resilience across market cycles.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 The Bottom Line
               </h2>
               

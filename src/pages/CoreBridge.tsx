@@ -59,37 +59,37 @@ const CoreBridge = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 sm:mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-abyss mb-4 sm:mb-6 leading-tight">
                   Flexible Bridge Financing for Institutional-Quality Assets in Transition
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
                   Oak's Core Bridge lending program is designed for income-producing commercial real estate assets that are in transition and require short-term capital to reach stabilization. Ideal for borrowers with assets that are already cash-flowing (1.00x DSCR or greater), this program offers a streamlined path to stabilizing, refinancing, or recapitalizing a property without sacrificing speed or structure.
                 </p>
                 
                 {/* Who Should Consider - Integrated */}
-                <h2 className="text-xl font-display font-medium text-obsidian mb-6">
+                <h2 className="text-xl font-display font-medium text-abyss mb-6">
                   Who Should Consider This Program?
                 </h2>
                 <div className="space-y-4">
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Acquisition & Repositioning</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors acquiring or repositioning a commercial property and need transitional capital</p>
+                      <h3 className="font-semibold text-abyss mb-1">Acquisition & Repositioning</h3>
+                      <p className="text-abyss/80 text-sm">Sponsors acquiring or repositioning a commercial property and need transitional capital</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Stabilization Strategy</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors seeking to enhance or stabilize performance before securing long-term financing</p>
+                      <h3 className="font-semibold text-abyss mb-1">Stabilization Strategy</h3>
+                      <p className="text-abyss/80 text-sm">Sponsors seeking to enhance or stabilize performance before securing long-term financing</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
                     <div>
-                      <h3 className="font-semibold text-obsidian mb-1">Rapid Execution</h3>
-                      <p className="text-obsidian/80 text-sm">Sponsors needing rapid execution to close an urgent transaction with certainty of execution</p>
+                      <h3 className="font-semibold text-abyss mb-1">Rapid Execution</h3>
+                      <p className="text-abyss/80 text-sm">Sponsors needing rapid execution to close an urgent transaction with certainty of execution</p>
                     </div>
                   </div>
                 </div>
@@ -113,139 +113,139 @@ const CoreBridge = () => {
               
               {/* Loan Basics */}
               <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                <h3 className="text-xl font-semibold text-abyss mb-6 border-b border-abyss/20 pb-2">
                   Loan Basics
                 </h3>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in">
                     <div className="flex items-center mb-3">
                       <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Loan Amount</h4>
+                      <h4 className="font-semibold text-abyss">Loan Amount</h4>
                     </div>
-                    <p className="text-obsidian/80">$2 Million – $50 Million+</p>
+                    <p className="text-abyss/80">$2 Million – $50 Million+</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
                     <div className="flex items-center mb-3">
                       <Calendar className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Loan Term</h4>
+                      <h4 className="font-semibold text-abyss">Loan Term</h4>
                     </div>
-                    <p className="text-obsidian/80">12 to 36 months (Fully Extended)</p>
+                    <p className="text-abyss/80">12 to 36 months (Fully Extended)</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
                     <div className="flex items-center mb-3">
                       <Percent className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Interest Rate</h4>
+                      <h4 className="font-semibold text-abyss">Interest Rate</h4>
                     </div>
-                    <p className="text-obsidian/80">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</p>
+                    <p className="text-abyss/80">1-Month Term SOFR + 450 – 550 bps (Interest-Only)</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.3s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.3s'}}>
                     <div className="flex items-center mb-3">
                       <TrendingUp className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Max LTV / LTC</h4>
+                      <h4 className="font-semibold text-abyss">Max LTV / LTC</h4>
                     </div>
-                    <p className="text-obsidian/80">Up to 80% LTV (stabilized)<br/>Up to 75% LTC (based on underwriting)</p>
+                    <p className="text-abyss/80">Up to 80% LTV (stabilized)<br/>Up to 75% LTC (based on underwriting)</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.4s'}}>
                     <div className="flex items-center mb-3">
                       <Layers className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Lien Position</h4>
+                      <h4 className="font-semibold text-abyss">Lien Position</h4>
                     </div>
-                    <p className="text-obsidian/80">Senior (no secondary financing permitted)</p>
+                    <p className="text-abyss/80">Senior (no secondary financing permitted)</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.5s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.5s'}}>
                     <div className="flex items-center mb-3">
                       <Shield className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Recourse</h4>
+                      <h4 className="font-semibold text-abyss">Recourse</h4>
                     </div>
-                    <p className="text-obsidian/80">Generally non-recourse, with carve outs for "bad boy" acts</p>
+                    <p className="text-abyss/80">Generally non-recourse, with carve outs for "bad boy" acts</p>
                   </div>
                 </div>
               </div>
 
               {/* Property & Geography */}
               <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                <h3 className="text-xl font-semibold text-abyss mb-6 border-b border-abyss/20 pb-2">
                   Property & Geography
                 </h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.6s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.6s'}}>
                     <div className="flex items-center mb-3">
                       <Building className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Property Types</h4>
+                      <h4 className="font-semibold text-abyss">Property Types</h4>
                     </div>
-                    <p className="text-obsidian/80">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</p>
+                    <p className="text-abyss/80">Multifamily, Industrial, Retail, Mixed-Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.7s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.7s'}}>
                     <div className="flex items-center mb-3">
                       <MapPin className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Geography</h4>
+                      <h4 className="font-semibold text-abyss">Geography</h4>
                     </div>
-                    <p className="text-obsidian/80">Primary and secondary U.S. markets</p>
+                    <p className="text-abyss/80">Primary and secondary U.S. markets</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.8s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.8s'}}>
                     <div className="flex items-center mb-3">
                       <Target className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Purpose</h4>
+                      <h4 className="font-semibold text-abyss">Purpose</h4>
                     </div>
-                    <p className="text-obsidian/80">Acquisition, Refinance, Stabilization, Redevelopment</p>
+                    <p className="text-abyss/80">Acquisition, Refinance, Stabilization, Redevelopment</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.9s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '0.9s'}}>
                     <div className="flex items-center mb-3">
                       <Coins className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Funding Structure</h4>
+                      <h4 className="font-semibold text-abyss">Funding Structure</h4>
                     </div>
-                    <p className="text-obsidian/80">Full funding with customary holdbacks</p>
+                    <p className="text-abyss/80">Full funding with customary holdbacks</p>
                   </div>
                 </div>
               </div>
 
               {/* Terms & Fees */}
               <div className="mb-12">
-                <h3 className="text-xl font-semibold text-obsidian mb-6 border-b border-obsidian/20 pb-2">
+                <h3 className="text-xl font-semibold text-abyss mb-6 border-b border-abyss/20 pb-2">
                   Terms & Fees
                 </h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.0s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.0s'}}>
                     <div className="flex items-center mb-3">
                       <Percent className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Rate Floor / Cap</h4>
+                      <h4 className="font-semibold text-abyss">Rate Floor / Cap</h4>
                     </div>
-                    <p className="text-obsidian/80">Set at closing; No rate cap required</p>
+                    <p className="text-abyss/80">Set at closing; No rate cap required</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.1s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.1s'}}>
                     <div className="flex items-center mb-3">
                       <Clock className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Extensions</h4>
+                      <h4 className="font-semibold text-abyss">Extensions</h4>
                     </div>
-                    <p className="text-obsidian/80">Up to two (2) extensions of 6 months each, subject to market fees</p>
+                    <p className="text-abyss/80">Up to two (2) extensions of 6 months each, subject to market fees</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.2s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.2s'}}>
                     <div className="flex items-center mb-3">
                       <FileText className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Fees</h4>
+                      <h4 className="font-semibold text-abyss">Fees</h4>
                     </div>
-                    <p className="text-obsidian/80">Competitive market-based origination and exit fees</p>
+                    <p className="text-abyss/80">Competitive market-based origination and exit fees</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.3s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.3s'}}>
                     <div className="flex items-center mb-3">
                       <CreditCard className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Prepayment</h4>
+                      <h4 className="font-semibold text-abyss">Prepayment</h4>
                     </div>
-                    <p className="text-obsidian/80">Minimum interest, typically half the initial loan term</p>
+                    <p className="text-abyss/80">Minimum interest, typically half the initial loan term</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.4s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.4s'}}>
                     <div className="flex items-center mb-3">
                       <DollarSign className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Closing Timeline</h4>
+                      <h4 className="font-semibold text-abyss">Closing Timeline</h4>
                     </div>
-                    <p className="text-obsidian/80">30–45 days from LOI acceptance and deposit receipt</p>
+                    <p className="text-abyss/80">30–45 days from LOI acceptance and deposit receipt</p>
                   </div>
-                  <div className="bg-cream/70 backdrop-blur-xl border border-obsidian/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.5s'}}>
+                  <div className="bg-cream/70 backdrop-blur-xl border border-abyss/10 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 animate-fade-in" style={{animationDelay: '1.5s'}}>
                     <div className="flex items-center mb-3">
                       <Timer className="h-5 w-5 text-garnet-edge mr-2" />
-                      <h4 className="font-semibold text-obsidian">Debt Service Reserve</h4>
+                      <h4 className="font-semibold text-abyss">Debt Service Reserve</h4>
                     </div>
-                    <p className="text-obsidian/80">Minimum 1.00x DSCR on in-place cash flow</p>
+                    <p className="text-abyss/80">Minimum 1.00x DSCR on in-place cash flow</p>
                   </div>
               </div>
             </div>

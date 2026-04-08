@@ -24,7 +24,7 @@ const ThankYouDownload = () => {
               <Mail className="w-8 h-8 text-gold-accent" />
             </div>
             
-            <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
+            <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-4">
               Thank You!
             </h1>
             

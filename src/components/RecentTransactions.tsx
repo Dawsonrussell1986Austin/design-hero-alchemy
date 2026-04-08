@@ -25,7 +25,7 @@ const RecentTransactions = () => {
           
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-4xl lg:text-5xl font-serif font-light text-obsidian mb-4">
+            <h2 className="text-4xl lg:text-5xl font-serif font-light text-abyss mb-4">
               Recent Transactions
             </h2>
           </div>

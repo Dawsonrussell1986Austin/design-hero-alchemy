@@ -66,7 +66,7 @@ const BlogOakFindsOpportunity = () => {
             {/* Article Header */}
             <div className="mb-12">
               <p className="text-graphite-fog/70 mb-4">January 7, 2026</p>
-              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-obsidian leading-tight mb-8">
+              <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss leading-tight mb-8">
                 How Oak Finds Opportunity Where Banks Can't
               </h1>
             </div>
@@ -90,7 +90,7 @@ const BlogOakFindsOpportunity = () => {
                 At Oak Real Estate Partners, this is the space we focus on.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 The Market Gap Banks Can't Fill
               </h2>
               
@@ -116,7 +116,7 @@ const BlogOakFindsOpportunity = () => {
                 That gap is where Oak operates.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 What Are "Special Situation" Assets?
               </h2>
               
@@ -139,7 +139,7 @@ const BlogOakFindsOpportunity = () => {
                 Because banks can't move quickly or flexibly in these situations, borrowers are willing to pay higher interest rates for certainty and speed. That creates an opportunity for lenders who understand both the real estate and the transition.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 How Oak Approaches Risk and Protection
               </h2>
               
@@ -165,7 +165,7 @@ const BlogOakFindsOpportunity = () => {
                 We also work only with experienced property owners and actively monitor each loan throughout its life — we don't lend and walk away.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 Why This Opportunity Exists Today
               </h2>
               
@@ -184,7 +184,7 @@ const BlogOakFindsOpportunity = () => {
                 For investors, this has translated into higher income opportunities backed by real assets and conservative structures — when managed with discipline.
               </p>
               
-              <h2 className="text-2xl font-display font-medium text-obsidian mt-12 mb-6">
+              <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
                 A Conservative Alternative Within Private Credit
               </h2>
               

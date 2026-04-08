@@ -63,7 +63,7 @@ const Invest = () => {
 
       <section className="py-16 px-4 bg-silver-mist mt-auto">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-display font-medium text-obsidian text-center mb-10">
+          <h2 className="text-2xl font-display font-medium text-abyss text-center mb-10">
             More Investor Resources
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
@@ -75,7 +75,7 @@ const Invest = () => {
                 <Video className="w-6 h-6 text-graphite-fog" />
               </div>
               <div>
-                <h3 className="text-base font-display font-medium text-obsidian">
+                <h3 className="text-base font-display font-medium text-abyss">
                   Investor Webinar
                 </h3>
                 <p className="text-sm text-graphite-fog font-body">
@@ -93,7 +93,7 @@ const Invest = () => {
                 <Play className="w-6 h-6 text-graphite-fog" />
               </div>
               <div>
-                <h3 className="text-base font-display font-medium text-obsidian">
+                <h3 className="text-base font-display font-medium text-abyss">
                   Case Study
                 </h3>
                 <p className="text-sm text-graphite-fog font-body">

@@ -50,7 +50,7 @@ const VideoPlayerSection = () => {
 
           {/* Video Player Container */}
           <div className="relative max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-abyss/50 backdrop-blur-sm">
               {/* Decorative gradient overlay on edges */}
               <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-graphite-fog/10 pointer-events-none z-10"></div>
               
@@ -66,7 +66,7 @@ const VideoPlayerSection = () => {
                       alt="Who is Oak Real Estate Partners" 
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
+                    <div className="absolute inset-0 bg-abyss/20 group-hover:bg-abyss/10 transition-colors flex items-center justify-center">
                       <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center">
                         <div className="w-0 h-0 border-l-[24px] border-l-gold-accent border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
                       </div>

@@ -46,7 +46,7 @@ const About = () => {
                 {/* Left Column - Text Content */}
                 <div className="space-y-8">
                   <div>
-                    <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+                    <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
                       Private Credit Lending with <span className="text-gold-accent">Institutional Discipline</span>
                     </h1>
                     <p className="text-lg lg:text-xl font-body font-normal text-graphite-fog leading-relaxed mb-6">
@@ -78,11 +78,11 @@ const About = () => {
                       alt="Business handshake with architectural plans"
                       className="w-full h-[600px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-abyss/20 via-transparent to-transparent"></div>
                     
                     {/* Experience Stats Overlay Card */}
                     <div className="absolute bottom-6 right-6 bg-cream/95 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-6 shadow-xl max-w-sm">
-                      <h3 className="text-lg font-display font-medium text-obsidian mb-4">Experience That Matters</h3>
+                      <h3 className="text-lg font-display font-medium text-abyss mb-4">Experience That Matters</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                         <div>
                           <div className="text-xl font-display font-medium text-gold-accent mb-1">150+</div>
@@ -109,7 +109,7 @@ const About = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 relative overflow-hidden bg-obsidian">
+        <section className="py-20 relative overflow-hidden bg-abyss">
           {/* Background Image */}
           <div className="absolute inset-0 opacity-20">
             <img 
@@ -152,7 +152,7 @@ const About = () => {
                         <div className="w-16 h-16 bg-gold-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-gold-accent rounded-full"></div>
                         </div>
-                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Structured</h3>
+                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Structured</h3>
                         <p className="text-graphite-fog font-body text-sm">Systems and processes that ensure consistency</p>
                       </div>
                       
@@ -160,7 +160,7 @@ const About = () => {
                         <div className="w-16 h-16 bg-graphite-fog/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-graphite-fog rounded-full"></div>
                         </div>
-                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Disciplined</h3>
+                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Disciplined</h3>
                         <p className="text-graphite-fog font-body text-sm">Unwavering commitment to our principles</p>
                       </div>
                       
@@ -168,7 +168,7 @@ const About = () => {
                         <div className="w-16 h-16 bg-garnet-edge/20 rounded-full flex items-center justify-center mx-auto mb-4">
                           <div className="w-8 h-8 bg-garnet-edge rounded-full"></div>
                         </div>
-                        <h3 className="text-lg font-display font-medium text-obsidian mb-3">Trusted</h3>
+                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Trusted</h3>
                         <p className="text-graphite-fog font-body text-sm">Reliable execution when it matters most</p>
                       </div>
                     </div>
@@ -185,7 +185,7 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
                   Discipline and <span className="text-gold-accent">Stability</span>
                 </h2>
                 <p className="text-lg font-body text-graphite-fog leading-relaxed max-w-4xl mx-auto">
@@ -199,7 +199,7 @@ const About = () => {
                     <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
                       <Shield className="h-6 w-6 text-gold-accent" />
                     </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Control and Stability</h3>
+                    <h3 className="text-lg font-display font-medium text-abyss">Control and Stability</h3>
                   </div>
                   <p className="text-graphite-fog leading-relaxed font-body">
                     Discipline is a strong predictor of success, which in turn drives stability across market volatility.
@@ -211,7 +211,7 @@ const About = () => {
                     <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
                       <TrendingDown className="h-6 w-6 text-gold-accent" />
                     </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Reduced Risk-Taking</h3>
+                    <h3 className="text-lg font-display font-medium text-abyss">Reduced Risk-Taking</h3>
                   </div>
                   <p className="text-graphite-fog leading-relaxed font-body">
                     Disciplined organizations are less likely to engage in impulsive strategies that threaten stability.
@@ -223,7 +223,7 @@ const About = () => {
                     <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
                       <BarChart className="h-6 w-6 text-gold-accent" />
                     </div>
-                    <h3 className="text-lg font-display font-medium text-obsidian">Predictability</h3>
+                    <h3 className="text-lg font-display font-medium text-abyss">Predictability</h3>
                   </div>
                   <p className="text-graphite-fog leading-relaxed font-body">
                     Consistent habits and behaviors lead to greater reliability among investors and borrowers.

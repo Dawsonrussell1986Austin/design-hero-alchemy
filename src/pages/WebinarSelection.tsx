@@ -67,7 +67,7 @@ const WebinarSelection = () => {
                     <div className={`w-16 h-16 ${webinar.bgColor} rounded-lg flex items-center justify-center mb-4`}>
                       <IconComponent className={`h-8 w-8 ${webinar.color}`} />
                     </div>
-                    <CardTitle className="text-2xl font-display font-medium text-obsidian">
+                    <CardTitle className="text-2xl font-display font-medium text-abyss">
                       {webinar.title}
                     </CardTitle>
                     <CardDescription className="text-graphite-fog font-body leading-relaxed pt-2">

@@ -109,7 +109,7 @@ const News = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
                 Recent <span className="text-gold-accent">Announcements</span>
               </h2>
             </div>
@@ -129,7 +129,7 @@ const News = () => {
                       <Calendar className="h-4 w-4 text-gold-accent" />
                       <span className="text-sm text-graphite-fog/70">{article.date}</span>
                     </div>
-                    <h3 className="text-xl font-display font-medium text-obsidian mb-4 line-clamp-2 leading-tight">
+                    <h3 className="text-xl font-display font-medium text-abyss mb-4 line-clamp-2 leading-tight">
                       {article.title}
                     </h3>
                     <p className="text-graphite-fog/80 leading-relaxed text-sm font-body font-normal mb-6 line-clamp-3">
@@ -185,7 +185,7 @@ const News = () => {
                 <input 
                   type="email"
                   placeholder="Enter your email address"
-                  className="flex-1 bg-obsidian/20 border-silver-mist/30 focus:border-gold-accent focus:ring-gold-accent/20 text-silver-mist placeholder:text-silver-mist/50 py-3 px-4 rounded-lg backdrop-blur-sm"
+                  className="flex-1 bg-abyss/20 border-silver-mist/30 focus:border-gold-accent focus:ring-gold-accent/20 text-silver-mist placeholder:text-silver-mist/50 py-3 px-4 rounded-lg backdrop-blur-sm"
                 />
                 <Button 
                   className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"

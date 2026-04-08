@@ -213,35 +213,35 @@ const Transactions = () => {
                 </div>
                 
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
                   Disciplined execution. Diverse markets. Consistent performance.
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
                   Our transaction history demonstrates Oak's commitment to disciplined underwriting and strategic asset selection across diverse commercial real estate markets. Each transaction reflects our focus on capital preservation and risk-adjusted returns.
                 </p>
                 
                 {/* Transaction Stats - Under text */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Portfolio Overview
                   </h3>
                   <div className="grid grid-cols-3 gap-4">
                     <div className="text-center">
                       <p className="text-2xl font-bold text-garnet-edge">{featuredTransactions.length}</p>
-                      <p className="text-sm text-obsidian/70">Transactions</p>
+                      <p className="text-sm text-abyss/70">Transactions</p>
                     </div>
                     <div className="text-center">
                       <p className="text-2xl font-bold text-garnet-edge">8</p>
-                      <p className="text-sm text-obsidian/70">Property Types</p>
+                      <p className="text-sm text-abyss/70">Property Types</p>
                     </div>
                     <div className="text-center">
                       <p className="text-2xl font-bold text-garnet-edge">6</p>
-                      <p className="text-sm text-obsidian/70">Regions</p>
+                      <p className="text-sm text-abyss/70">Regions</p>
                     </div>
                   </div>
                   
-                  <div className="mt-4 pt-4 border-t border-obsidian/20">
-                    <p className="text-xs text-obsidian/60 leading-relaxed">
+                  <div className="mt-4 pt-4 border-t border-abyss/20">
+                    <p className="text-xs text-abyss/60 leading-relaxed">
                       Transactions shown include loans from Oak and affiliated entities. Not all loans represent full cycle completions.
                     </p>
                   </div>
@@ -272,7 +272,7 @@ const Transactions = () => {
         <section className="pt-12 pb-8 px-6">
           <div className="container mx-auto">
             <div className="max-w-6xl mx-auto text-center">
-              <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
+              <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss leading-tight">
                 Oak Real Estate Partner Transactions
               </h1>
             </div>
@@ -287,12 +287,12 @@ const Transactions = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
                   {/* Location Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
+                    <label className="text-sm font-medium text-abyss/70 flex items-center gap-2">
                       <MapPin className="h-4 w-4" />
                       Location
                     </label>
                     <Select value={filters.location} onValueChange={(value) => handleFilterChange("location", value)}>
-                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-abyss/20 text-abyss">
                         <SelectValue placeholder="All Locations" />
                       </SelectTrigger>
                       <SelectContent>
@@ -306,12 +306,12 @@ const Transactions = () => {
 
                   {/* Property Type Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
+                    <label className="text-sm font-medium text-abyss/70 flex items-center gap-2">
                       <Building className="h-4 w-4" />
                       Property Type
                     </label>
                     <Select value={filters.propertyType} onValueChange={(value) => handleFilterChange("propertyType", value)}>
-                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-abyss/20 text-abyss">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>
@@ -325,12 +325,12 @@ const Transactions = () => {
 
                   {/* Loan Size Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
+                    <label className="text-sm font-medium text-abyss/70 flex items-center gap-2">
                       <DollarSign className="h-4 w-4" />
                       Loan Size
                     </label>
                     <Select value={filters.loanSize} onValueChange={(value) => handleFilterChange("loanSize", value)}>
-                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-abyss/20 text-abyss">
                         <SelectValue placeholder="All Sizes" />
                       </SelectTrigger>
                       <SelectContent>
@@ -345,12 +345,12 @@ const Transactions = () => {
 
                   {/* Loan Type Filter */}
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-obsidian/70 flex items-center gap-2">
+                    <label className="text-sm font-medium text-abyss/70 flex items-center gap-2">
                       <Building className="h-4 w-4" />
                       Loan Type
                     </label>
                     <Select value={filters.loanType} onValueChange={(value) => handleFilterChange("loanType", value)}>
-                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-abyss/20 text-abyss">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>
@@ -364,14 +364,14 @@ const Transactions = () => {
                 </div>
 
                 <div className="flex justify-between items-center">
-                  <p className="text-sm text-obsidian/60">
+                  <p className="text-sm text-abyss/60">
                     Showing {filteredTransactions.length} of {featuredTransactions.length} transactions
                   </p>
                   <Button 
                     variant="ghost" 
                     size="sm"
                     onClick={clearFilters}
-                    className="text-obsidian/70 hover:text-obsidian hover:bg-obsidian/10"
+                    className="text-abyss/70 hover:text-abyss hover:bg-abyss/10"
                   >
                     Clear Filters
                   </Button>
@@ -392,7 +392,7 @@ const Transactions = () => {
 
             {filteredTransactions.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-obsidian/70 text-lg">No transactions match your current filters.</p>
+                <p className="text-abyss/70 text-lg">No transactions match your current filters.</p>
                 <Button 
                   onClick={clearFilters}
                   className="mt-4 bg-gold-accent hover:bg-gold-accent/90 text-cream"
@@ -403,10 +403,10 @@ const Transactions = () => {
             )}
 
             <div className="text-center mt-12">
-              <p className="text-obsidian/70 text-sm mb-2">
+              <p className="text-abyss/70 text-sm mb-2">
                 Transactions include loans from Oak Real Estate Partners and affiliated entities including Red Oak Capital Holdings and Johnson Capital Multifamily. Not all loans represent full cycle completions.
               </p>
-              <p className="text-obsidian/70 text-sm">
+              <p className="text-abyss/70 text-sm">
                 * Past performance does not guarantee future results. All investments involve risk of loss.
               </p>
             </div>

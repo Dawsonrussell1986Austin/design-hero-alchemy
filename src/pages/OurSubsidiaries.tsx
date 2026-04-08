@@ -35,13 +35,13 @@ const OurSubsidiaries = () => {
               </div>
               
               <div className="text-center">
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   Strategic Subsidiaries Extending Our Market Reach
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Specialized expertise across commercial real estate and multifamily lending landscapes.
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed max-w-4xl mx-auto">
                   Oak's strategic subsidiaries extend our capabilities in specialized markets, providing comprehensive solutions across the commercial real estate and multifamily lending landscape.
                 </p>
               </div>
@@ -52,7 +52,7 @@ const OurSubsidiaries = () => {
             <div className="max-w-6xl mx-auto">
               <div className="bg-cream rounded-lg shadow-lg p-8 mb-12">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4 tracking-tight">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-abyss mb-4 tracking-tight">
                     JOHNSON CAPITAL MULTIFAMILY
                   </h2>
                   <p className="text-lg text-graphite-fog max-w-3xl mx-auto">
@@ -72,7 +72,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-obsidian mb-2">Janet Bujko</h3>
+                        <h3 className="font-bold text-abyss mb-2">Janet Bujko</h3>
                         <p className="text-sm text-graphite-fog mb-4">SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS</p>
                       </div>
                     </div>
@@ -86,7 +86,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover object-top grayscale"
                           />
                         </div>
-                        <h3 className="font-bold text-obsidian mb-2">Jason Pumpelly</h3>
+                        <h3 className="font-bold text-abyss mb-2">Jason Pumpelly</h3>
                         <p className="text-sm text-graphite-fog mb-4">PRESIDENT</p>
                       </div>
                     </div>
@@ -100,7 +100,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-obsidian mb-2">Guy Johnson</h3>
+                        <h3 className="font-bold text-abyss mb-2">Guy Johnson</h3>
                         <p className="text-sm text-graphite-fog mb-4">PRINCIPAL</p>
                       </div>
                     </div>
@@ -114,7 +114,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-obsidian mb-2">Matthew J. Morgan</h3>
+                        <h3 className="font-bold text-abyss mb-2">Matthew J. Morgan</h3>
                         <p className="text-sm text-graphite-fog mb-4">UNDERWRITER</p>
                       </div>
                     </div>
@@ -128,7 +128,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h3 className="font-bold text-obsidian mb-2">Kevin M. Kirton</h3>
+                        <h3 className="font-bold text-abyss mb-2">Kevin M. Kirton</h3>
                         <p className="text-sm text-graphite-fog mb-4">UNDERWRITER</p>
                       </div>
                     </div>
@@ -153,7 +153,7 @@ const OurSubsidiaries = () => {
                 
                 {/* Red Oak Team Grid 1 */}
                 <div className="bg-silver-mist/30 rounded-lg p-6 mb-8">
-                  <h3 className="text-xl font-bold text-obsidian mb-6 text-center">Asset Management & Operations Team</h3>
+                  <h3 className="text-xl font-bold text-abyss mb-6 text-center">Asset Management & Operations Team</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
@@ -164,7 +164,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Ryan Anderson</h4>
+                        <h4 className="font-bold text-abyss mb-2">Ryan Anderson</h4>
                         <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT, ASSET MANAGEMENT</p>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Stratos Athanassiades</h4>
+                        <h4 className="font-bold text-abyss mb-2">Stratos Athanassiades</h4>
                         <p className="text-sm text-graphite-fog mb-4">REGIONAL MANAGER</p>
                       </div>
                     </div>
@@ -192,7 +192,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Dylan Beaulieu</h4>
+                        <h4 className="font-bold text-abyss mb-2">Dylan Beaulieu</h4>
                         <p className="text-sm text-graphite-fog mb-4">PRIMARY SERVICING MANAGER</p>
                       </div>
                     </div>
@@ -207,7 +207,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Nicolas Jans</h4>
+                        <h4 className="font-bold text-abyss mb-2">Nicolas Jans</h4>
                         <p className="text-sm text-graphite-fog mb-4">REGIONAL MANAGER</p>
                       </div>
                     </div>
@@ -219,7 +219,7 @@ const OurSubsidiaries = () => {
                             <span className="text-graphite-fog/40 text-4xl font-display">KS</span>
                           </div>
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Kate Smith</h4>
+                        <h4 className="font-bold text-abyss mb-2">Kate Smith</h4>
                         <p className="text-sm text-graphite-fog mb-4">SR. CRE ANALYST</p>
                       </div>
                     </div>
@@ -228,7 +228,7 @@ const OurSubsidiaries = () => {
 
                 {/* Red Oak Team Grid 2 */}
                 <div className="bg-silver-mist/30 rounded-lg p-6">
-                  <h3 className="text-xl font-bold text-obsidian mb-6 text-center">Finance & Operations Team</h3>
+                  <h3 className="text-xl font-bold text-abyss mb-6 text-center">Finance & Operations Team</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
                       <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
@@ -239,7 +239,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Ryan Ellis</h4>
+                        <h4 className="font-bold text-abyss mb-2">Ryan Ellis</h4>
                         <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT, FINANCE</p>
                       </div>
                     </div>
@@ -253,7 +253,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Thomas J. Gorski</h4>
+                        <h4 className="font-bold text-abyss mb-2">Thomas J. Gorski</h4>
                         <p className="text-sm text-graphite-fog mb-4">SENIOR CRE UNDERWRITER</p>
                       </div>
                     </div>
@@ -267,7 +267,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">James Myatt</h4>
+                        <h4 className="font-bold text-abyss mb-2">James Myatt</h4>
                         <p className="text-sm text-graphite-fog mb-4">LOAN ADMINISTRATOR</p>
                       </div>
                     </div>
@@ -281,7 +281,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Jamie Tripp</h4>
+                        <h4 className="font-bold text-abyss mb-2">Jamie Tripp</h4>
                         <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT OF INTERNAL OPERATIONS</p>
                       </div>
                     </div>
@@ -295,7 +295,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Rob Mendham</h4>
+                        <h4 className="font-bold text-abyss mb-2">Rob Mendham</h4>
                         <p className="text-sm text-graphite-fog mb-4">MANAGER, INFORMATION TECHNOLOGY</p>
                       </div>
                     </div>
@@ -309,7 +309,7 @@ const OurSubsidiaries = () => {
                             className="w-full h-full object-cover"
                           />
                         </div>
-                        <h4 className="font-bold text-obsidian mb-2">Tanner Morgan</h4>
+                        <h4 className="font-bold text-abyss mb-2">Tanner Morgan</h4>
                         <p className="text-sm text-graphite-fog mb-4">CONTROLLER</p>
                       </div>
                     </div>

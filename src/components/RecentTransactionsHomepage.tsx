@@ -22,7 +22,7 @@ interface TransactionCardHomepageProps {
 
 const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) => {
   return (
-    <Card className="bg-cream/90 border border-obsidian/20 overflow-hidden hover:bg-cream transition-all duration-300 group shadow-lg h-full">
+    <Card className="bg-cream/90 border border-abyss/20 overflow-hidden hover:bg-cream transition-all duration-300 group shadow-lg h-full">
       <div className="aspect-video overflow-hidden relative">
         <img 
           src={transaction.image}
@@ -41,20 +41,20 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
         </div>
       </div>
       <CardContent className="p-6 flex-1 bg-cream">
-        <h3 className="text-lg font-display font-medium text-obsidian mb-4 leading-tight border-b border-obsidian/20 pb-3">
+        <h3 className="text-lg font-display font-medium text-abyss mb-4 leading-tight border-b border-abyss/20 pb-3">
           {transaction.name}
         </h3>
         
         <div className="space-y-3">
-          <div className="text-obsidian/70 text-sm font-body border-b border-obsidian/20 pb-2">
+          <div className="text-abyss/70 text-sm font-body border-b border-abyss/20 pb-2">
             {transaction.location}
           </div>
           
-          <div className="text-gold-accent text-xl font-display font-medium border-b border-obsidian/20 pb-2">
+          <div className="text-gold-accent text-xl font-display font-medium border-b border-abyss/20 pb-2">
             {transaction.loanSize}
           </div>
           
-          <div className="text-obsidian/60 text-sm font-body leading-tight pt-2">
+          <div className="text-abyss/60 text-sm font-body leading-tight pt-2">
             {transaction.loanType}
           </div>
         </div>

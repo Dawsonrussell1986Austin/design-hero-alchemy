@@ -27,7 +27,7 @@ const OakInstitutionalCreditSolutions = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian">
+              <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss">
                 Onboarding Instructions
               </h2>
               <p className="text-graphite-fog font-body leading-relaxed">
@@ -39,8 +39,8 @@ const OakInstitutionalCreditSolutions = () => {
             </div>
 
             {/* Download Section */}
-            <div className="bg-obsidian/5 rounded-lg p-8 space-y-6">
-              <h3 className="text-xl font-display font-medium text-obsidian">
+            <div className="bg-abyss/5 rounded-lg p-8 space-y-6">
+              <h3 className="text-xl font-display font-medium text-abyss">
                 Download Subscription Documents
               </h3>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -73,7 +73,7 @@ const OakInstitutionalCreditSolutions = () => {
 
             {/* Contact Section */}
             <div className="space-y-4">
-              <h3 className="text-xl font-display font-medium text-obsidian">
+              <h3 className="text-xl font-display font-medium text-abyss">
                 Support & Inquiries
               </h3>
               <p className="text-graphite-fog font-body leading-relaxed">

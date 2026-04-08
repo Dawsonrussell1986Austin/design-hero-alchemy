@@ -3,7 +3,7 @@ import { trackExternalLink, trackCTAClick } from "@/lib/gtm";
 
 const Footer = () => {
   return (
-    <footer className="bg-obsidian py-12 sm:py-16">
+    <footer className="bg-abyss py-12 sm:py-16">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-8 sm:mb-12">

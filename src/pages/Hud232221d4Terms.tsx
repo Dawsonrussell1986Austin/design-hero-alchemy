@@ -36,33 +36,33 @@ const Hud232221d4Terms = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   232/221(d)4
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   New Construction or Sub-Rehab of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed mb-8">
                   New construction or substantial rehabilitation of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities.
                 </p>
 
                 {/* Why Consider This Program */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg mb-8">
+                  <h3 className="text-lg font-semibold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Why Consider This Program?
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You're developing new healthcare facilities or substantially rehabilitating existing ones</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">You're developing new healthcare facilities or substantially rehabilitating existing ones</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You need long-term, non-recourse construction and permanent financing</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">You need long-term, non-recourse construction and permanent financing</p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">You want competitive rates with HUD backing for healthcare properties</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">You want competitive rates with HUD backing for healthcare properties</p>
                     </div>
                   </div>
                 </div>
@@ -81,8 +81,8 @@ const Hud232221d4Terms = () => {
             </div>
 
             {/* Financing Parameters Table */}
-            <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
-              <h2 className="text-2xl font-display font-medium text-obsidian mb-8 text-center">
+            <div className="bg-cream/80 backdrop-blur-sm border border-abyss/20 rounded-lg p-8">
+              <h2 className="text-2xl font-display font-medium text-abyss mb-8 text-center">
                 Financing Parameters
               </h2>
               
@@ -90,16 +90,16 @@ const Hud232221d4Terms = () => {
                 <table className="w-full">
                   <tbody className="divide-y divide-obsidian/10">
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Purpose</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">New construction or substantial rehabilitation of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Purpose</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">New construction or substantial rehabilitation of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Borrower</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Single asset and single purpose entity, either for-profit or non-profit.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Borrower</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Single asset and single purpose entity, either for-profit or non-profit.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Maximum Mortgage Limits</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Maximum Mortgage Limits</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">
                         <div>New Construction: The lesser of:</div>
                         <div className="mt-2 space-y-1 text-xs">
                           <div>a) Recommended % of Loan to Value;</div>
@@ -137,64 +137,64 @@ const Hud232221d4Terms = () => {
                       </td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Amortization & Term</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Interest only during the construction period, plus 40 years fully amortizing.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Amortization & Term</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Interest only during the construction period, plus 40 years fully amortizing.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Interest Rate</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Fixed rate determined by market conditions at the time of rate lock.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Interest Rate</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Fixed rate determined by market conditions at the time of rate lock.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Mortgage Insurance Premium</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">0.77% each year during construction and 0.77% annually (0.45% for affordable) (0.25% for Green Energy) Subject to change by HUD.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Mortgage Insurance Premium</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">0.77% each year during construction and 0.77% annually (0.45% for affordable) (0.25% for Green Energy) Subject to change by HUD.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Recourse</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Non-recourse during both construction & permanent phases of financing.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Recourse</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Non-recourse during both construction & permanent phases of financing.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Assumability</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Fully assumable with HUD approval.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Assumability</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Fully assumable with HUD approval.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Prepayment</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Negotiable. Best rates typically have 1-2 year lockout with declining prepayment penalty for remainder of first 10 years.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Prepayment</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Negotiable. Best rates typically have 1-2 year lockout with declining prepayment penalty for remainder of first 10 years.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Third Party Reports</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Market study, Appraisal, Architectural and Costs Review and Environmental.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Third Party Reports</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Market study, Appraisal, Architectural and Costs Review and Environmental.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Escrows</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Escrows for debt service, mortgage insurance premium, taxes, insurance, replacement reserves, working capital, operating deficit, and minor movables are required.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Escrows</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Escrows for debt service, mortgage insurance premium, taxes, insurance, replacement reserves, working capital, operating deficit, and minor movables are required.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Federal Labor Standards</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Federal prevailing wage & reporting requirements.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Federal Labor Standards</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Federal prevailing wage & reporting requirements.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Assurance of Completion</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Payment & performance bond or cash deposit/letter of credit.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Assurance of Completion</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Payment & performance bond or cash deposit/letter of credit.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">HUD Application Fee</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">$3 per $1,000 of the requested mortgage.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">HUD Application Fee</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">$3 per $1,000 of the requested mortgage.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">OZ HUD Application Fee</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">$2 per $1,000 of the requested mortgage.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">OZ HUD Application Fee</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">$2 per $1,000 of the requested mortgage.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">HUD Inspection Fee</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">$5 per 1,000 of the requested mortgage for new construction, and $5 per 1,000 of improvements cost for substantial rehabilitation.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">HUD Inspection Fee</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">$5 per 1,000 of the requested mortgage for new construction, and $5 per 1,000 of improvements cost for substantial rehabilitation.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Rate Lock Deposit</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Typically 0.5% of mortgage amount, refunded at closing.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Rate Lock Deposit</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Typically 0.5% of mortgage amount, refunded at closing.</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 text-sm font-medium text-obsidian bg-obsidian/5">Professional Liability Insurance</td>
-                      <td className="py-4 px-6 text-sm text-obsidian/80">Minimum $1,000,000 / $3,000,000 coverage for operators / managers.</td>
+                      <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Professional Liability Insurance</td>
+                      <td className="py-4 px-6 text-sm text-abyss/80">Minimum $1,000,000 / $3,000,000 coverage for operators / managers.</td>
                     </tr>
                   </tbody>
                 </table>

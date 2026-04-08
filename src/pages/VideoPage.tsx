@@ -44,7 +44,7 @@ const VideoPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Video Player */}
           <div className="relative mb-12">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-abyss/50 backdrop-blur-sm">
               <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-graphite-fog/10 pointer-events-none z-10"></div>
               
               <div className="relative aspect-video">

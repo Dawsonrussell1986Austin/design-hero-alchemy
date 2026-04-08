@@ -45,13 +45,13 @@ const Lending = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   Structured Capital Solutions for Commercial Real Estate
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed">
                   Oak offers short-term private bridge loans with seamless coordination to long-term government-backed financing through our subsidiary Johnson Capital Multifamily (JCM), which provides FHA/HUD insured mortgages. This integrated platform delivers comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
               </div>
@@ -70,39 +70,39 @@ const Lending = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
               
               {/* Bridge Loans Card */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
                     src="/lovable-uploads/e9d4be6f-f66b-4ec3-9cd1-bf0f44baf61f.png"
                     alt="Bridge loans for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
-                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-gold-accent transition-colors duration-300">
+                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-4 group-hover:text-gold-accent transition-colors duration-300">
                     Bridge Loan Programs
                   </h2>
                   <p className="text-lg font-body font-medium text-gold-accent mb-4">
                     Short-term private financing for acquisition, renovation, and stabilization
                   </p>
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Our bridge loan programs provide flexible, short-term financing solutions for commercial real estate investors. From stabilized properties to value-add opportunities, we offer tailored structures to meet your investment strategy.
                   </p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Core Bridge - Stabilized properties</span>
+                      <span className="text-sm text-abyss/80">Core Bridge - Stabilized properties</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Core-Plus Bridge - Light value-add opportunities</span>
+                      <span className="text-sm text-abyss/80">Core-Plus Bridge - Light value-add opportunities</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Opportunistic Bridge - Higher leverage strategies</span>
+                      <span className="text-sm text-abyss/80">Opportunistic Bridge - Higher leverage strategies</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Participating Bridge - Shared appreciation structures</span>
+                      <span className="text-sm text-abyss/80">Participating Bridge - Shared appreciation structures</span>
                     </div>
                   </div>
                 </div>
@@ -116,39 +116,39 @@ const Lending = () => {
               </div>
 
               {/* FHA/HUD Loans Card */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="mb-6">
                   <img 
                     src="/lovable-uploads/3eea10a2-658b-45bc-9a65-72f8dbf07c61.png"
                     alt="Government-backed FHA/HUD financing for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
-                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-gold-accent transition-colors duration-300">
+                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-4 group-hover:text-gold-accent transition-colors duration-300">
                     FHA/HUD Loan Programs
                   </h2>
                   <p className="text-lg font-body font-medium text-gold-accent mb-4">
                     Long-term, government-backed financing for essential real estate assets
                   </p>
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Johnson Capital Multifamily (JCM) provides FHA/HUD insured loan programs offering long term, government-backed capital for multifamily, affordable housing, senior living, and healthcare properties.
                   </p>
                   
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Multifamily & Affordable Housing Programs</span>
+                      <span className="text-sm text-abyss/80">Multifamily & Affordable Housing Programs</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Senior Housing & Healthcare Programs</span>
+                      <span className="text-sm text-abyss/80">Senior Housing & Healthcare Programs</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Construction & Substantial Rehabilitation</span>
+                      <span className="text-sm text-abyss/80">Construction & Substantial Rehabilitation</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full"></div>
-                      <span className="text-sm text-obsidian/80">Acquisition & Refinance Programs</span>
+                      <span className="text-sm text-abyss/80">Acquisition & Refinance Programs</span>
                     </div>
                   </div>
                 </div>
@@ -163,11 +163,11 @@ const Lending = () => {
 
             </div>
 
-            <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
+            <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-display font-medium text-abyss mb-4">
                 Bridge-to-FHA Coordination
               </h3>
-              <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-4xl mx-auto">
+              <p className="text-lg text-abyss/80 leading-relaxed mb-6 max-w-4xl mx-auto">
                 Through our subsidiary Johnson Capital Multifamily (JCM), we can coordinate seamless transitions from Oak bridge financing to FHA takeout loans, providing borrowers with an integrated financing solution from acquisition through long-term stabilization.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -49,44 +49,44 @@ const Investments = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   A Platform Built for Performance
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
                   Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment. We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
                 </p>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
                   Where traditional banks are slow and inefficient, Oak is built for speed and clarity. We provide timely, practical solutions that empower real estate sponsors to execute their business plans with confidence. Our platform is designed for fast, efficient, and scalable commercial real estate transactions.
                 </p>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
                   From day one, Oak has committed to an institutional framework rooted in best practices. We've built a company on ethics, accountability, transparency, and durability—principles that ensure we're not just financing projects, but fueling long-term community growth.
                 </p>
                 
                 {/* Oak's Investment Focus - Under text */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Oak's Investment Focus
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">First-lien, senior-position loans</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">First-lien, senior-position loans</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Short-duration debt strategies</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Short-duration debt strategies</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
                     </div>
                   </div>
                 </div>
@@ -126,8 +126,8 @@ const Investments = () => {
                       alt="Collateral backing"
                       className="w-full h-full object-cover opacity-20"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-obsidian/60 via-obsidian/30 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-obsidian/40 via-transparent to-obsidian/20"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-abyss/60 via-obsidian/30 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-abyss/40 via-transparent to-obsidian/20"></div>
                   </div>
                   
                   {/* Content */}
@@ -195,71 +195,71 @@ const Investments = () => {
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6">
+                <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6">
                   Investment strategies rooted in structure — not speculation.
                 </h2>
-                <p className="text-lg text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
+                <p className="text-lg text-abyss/80 leading-relaxed max-w-4xl mx-auto">
                   Private real estate credit offers unique benefits over corporate credit and equity strategies:
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Lock className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Collateral Security</h3>
+                    <h3 className="text-lg font-bold text-abyss">Collateral Security</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Loans backed by income-producing real estate
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Cash Flow Predictability</h3>
+                    <h3 className="text-lg font-bold text-abyss">Cash Flow Predictability</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Structured payments and interest income
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Activity className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Low Volatility</h3>
+                    <h3 className="text-lg font-bold text-abyss">Low Volatility</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Less correlated to public market swings
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Risk Efficiency</h3>
+                    <h3 className="text-lg font-bold text-abyss">Risk Efficiency</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Strong collateralization and underwriting discipline
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <TrendingUp className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Inflation Resilience</h3>
+                    <h3 className="text-lg font-bold text-abyss">Inflation Resilience</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Real estate's natural hedge against inflation
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Target className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-obsidian">Asset Appreciation Potential</h3>
+                    <h3 className="text-lg font-bold text-abyss">Asset Appreciation Potential</h3>
                   </div>
-                  <p className="text-obsidian/80 leading-relaxed">
+                  <p className="text-abyss/80 leading-relaxed">
                     Exposure to value growth alongside income
                   </p>
                 </div>
@@ -328,7 +328,7 @@ const Investments = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-abyss hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Request Investment Materials

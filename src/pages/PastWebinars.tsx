@@ -73,7 +73,7 @@ const PastWebinars = () => {
               <div className="mx-auto w-20 h-20 bg-gold-accent/10 rounded-xl flex items-center justify-center mb-6">
                 <Play className="h-10 w-10 text-gold-accent" fill="currentColor" />
               </div>
-              <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
+              <h1 className="text-4xl lg:text-5xl font-display font-medium text-abyss">
                 Watch Our Webinars
               </h1>
               <p className="text-xl font-body text-graphite-fog leading-relaxed">
@@ -91,7 +91,7 @@ const PastWebinars = () => {
                 {pastWebinars.map((webinar) => (
                   <div 
                     key={webinar.id}
-                    className="bg-obsidian rounded-xl overflow-hidden shadow-lg border-2 border-gold-accent/20 hover:border-gold-accent transition-all duration-300"
+                    className="bg-abyss rounded-xl overflow-hidden shadow-lg border-2 border-gold-accent/20 hover:border-gold-accent transition-all duration-300"
                   >
                     {/* Video Player */}
                     <div className="relative aspect-video overflow-hidden">
@@ -103,7 +103,7 @@ const PastWebinars = () => {
                     </div>
                     
                     {/* Card Content */}
-                    <div className="p-6 space-y-3 bg-obsidian">
+                    <div className="p-6 space-y-3 bg-abyss">
                       <div className="flex items-center justify-between">
                         <span className="text-sm font-body text-gold-accent font-semibold">
                           {webinar.date}
@@ -121,10 +121,10 @@ const PastWebinars = () => {
               </div>
             ) : (
               <div className="text-center py-16">
-                <div className="mx-auto w-24 h-24 bg-obsidian/10 rounded-full flex items-center justify-center mb-6">
-                  <Play className="h-12 w-12 text-obsidian/40" />
+                <div className="mx-auto w-24 h-24 bg-abyss/10 rounded-full flex items-center justify-center mb-6">
+                  <Play className="h-12 w-12 text-abyss/40" />
                 </div>
-                <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
+                <h3 className="text-2xl font-display font-medium text-abyss mb-4">
                   Coming Soon
                 </h3>
                 <p className="text-lg font-body text-graphite-fog max-w-md mx-auto">

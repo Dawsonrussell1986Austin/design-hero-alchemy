@@ -51,7 +51,7 @@ const HeroSection = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-obsidian px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
+                  className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-abyss px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
                 >
                   Why Oak
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -54,7 +54,7 @@ const Investors = () => {
       {/* Benefits Section */}
       <section className="py-16 px-4 bg-silver-mist">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl lg:text-4xl font-display font-medium text-center mb-12 text-obsidian">
+          <h2 className="text-3xl lg:text-4xl font-display font-medium text-center mb-12 text-abyss">
             Our Commitment to You
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
@@ -62,7 +62,7 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
                 <Building2 className="h-6 w-6 text-gold-accent" />
               </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
+              <h3 className="text-lg font-display font-medium text-abyss">
                 Senior-Position Lending
               </h3>
               <p className="text-graphite-fog font-body leading-relaxed">
@@ -74,7 +74,7 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
                 <TrendingUp className="h-6 w-6 text-gold-accent" />
               </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
+              <h3 className="text-lg font-display font-medium text-abyss">
                 Monthly Update Calls
               </h3>
               <p className="text-graphite-fog font-body leading-relaxed">
@@ -86,7 +86,7 @@ const Investors = () => {
               <div className="mx-auto w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center">
                 <FileText className="h-6 w-6 text-gold-accent" />
               </div>
-              <h3 className="text-lg font-display font-medium text-obsidian">
+              <h3 className="text-lg font-display font-medium text-abyss">
                 Thoughtful Structure
               </h3>
               <p className="text-graphite-fog font-body leading-relaxed">
@@ -98,7 +98,7 @@ const Investors = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-br from-obsidian to-graphite-fog">
+      <section className="py-16 px-4 bg-gradient-to-br from-abyss to-graphite-fog">
         <div className="container mx-auto max-w-4xl text-center space-y-6">
           <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist">
             We're Here to Help

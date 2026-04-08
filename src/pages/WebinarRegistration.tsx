@@ -162,7 +162,7 @@ const WebinarRegistration = () => {
 
             {/* Registration Form */}
             <div className="bg-silver-mist rounded-xl shadow-2xl p-8 mt-16 lg:mt-0">
-              <h2 className="text-2xl font-display font-medium text-obsidian mb-2">
+              <h2 className="text-2xl font-display font-medium text-abyss mb-2">
                 Reserve Your Spot
               </h2>
               <p className="text-graphite-fog mb-6 font-body">

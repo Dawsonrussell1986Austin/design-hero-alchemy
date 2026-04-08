@@ -35,7 +35,7 @@ const InvestorForm = () => {
 
   return (
     <div className="bg-cream/95 backdrop-blur-sm rounded-2xl shadow-xl p-8 lg:p-10">
-      <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-2">
+      <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-2">
         Stay Connected
       </h2>
       <p className="text-graphite-fog mb-8 font-body leading-relaxed">
@@ -49,7 +49,7 @@ const InvestorForm = () => {
         onSubmit={handleSubmit}
       >
         <div className="space-y-2">
-          <Label htmlFor="first_name" className="text-obsidian font-body font-medium">
+          <Label htmlFor="first_name" className="text-abyss font-body font-medium">
             First Name <span className="text-gold-accent">*</span>
           </Label>
           <Input
@@ -63,7 +63,7 @@ const InvestorForm = () => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="last_name" className="text-obsidian font-body font-medium">
+          <Label htmlFor="last_name" className="text-abyss font-body font-medium">
             Last Name <span className="text-gold-accent">*</span>
           </Label>
           <Input
@@ -77,7 +77,7 @@ const InvestorForm = () => {
         </div>
 
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-obsidian font-body font-medium">
+          <Label htmlFor="email" className="text-abyss font-body font-medium">
             Email <span className="text-gold-accent">*</span>
           </Label>
           <Input
@@ -113,7 +113,7 @@ const InvestorForm = () => {
           />
           <Label
             htmlFor="consent"
-            className="text-sm text-obsidian font-body font-normal cursor-pointer leading-relaxed"
+            className="text-sm text-abyss font-body font-normal cursor-pointer leading-relaxed"
           >
             I agree to receive monthly investor updates and important information about my investment
           </Label>

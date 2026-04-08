@@ -104,7 +104,7 @@ const InvestorAccess = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-obsidian to-obsidian/95">
+    <div className="min-h-screen bg-gradient-to-b from-abyss to-obsidian/95">
       <Navigation />
       
       {/* Main Content */}
@@ -114,14 +114,14 @@ const InvestorAccess = () => {
             
             {/* Left Column - Form */}
             <div className="bg-cream rounded-2xl shadow-2xl p-8 lg:p-10">
-              <h1 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-6">
+              <h1 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-6">
                 Investor Portal Registration
               </h1>
               
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
-                    <Label htmlFor="firstName" className="text-obsidian font-body font-medium">
+                    <Label htmlFor="firstName" className="text-abyss font-body font-medium">
                       First Name <span className="text-gold-accent">*</span>
                     </Label>
                     <Input
@@ -135,7 +135,7 @@ const InvestorAccess = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="lastName" className="text-obsidian font-body font-medium">
+                    <Label htmlFor="lastName" className="text-abyss font-body font-medium">
                       Last Name <span className="text-gold-accent">*</span>
                     </Label>
                     <Input
@@ -151,7 +151,7 @@ const InvestorAccess = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="text-obsidian font-body font-medium">
+                  <Label htmlFor="email" className="text-abyss font-body font-medium">
                     Email Address <span className="text-gold-accent">*</span>
                   </Label>
                   <Input
@@ -166,7 +166,7 @@ const InvestorAccess = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="state" className="text-obsidian font-body font-medium">
+                  <Label htmlFor="state" className="text-abyss font-body font-medium">
                     State <span className="text-gold-accent">*</span>
                   </Label>
                   <Select 
@@ -188,7 +188,7 @@ const InvestorAccess = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="phone" className="text-obsidian font-body font-medium">
+                  <Label htmlFor="phone" className="text-abyss font-body font-medium">
                     Phone Number <span className="text-gold-accent">*</span>
                   </Label>
                   <Input

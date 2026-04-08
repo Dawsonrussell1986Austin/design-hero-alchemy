@@ -40,8 +40,8 @@ const VideoCard = ({ video }: { video: Video }) => {
   }, [video.mediaId]);
 
   return (
-    <div className="bg-cream border border-obsidian/20 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
-      <div className="relative aspect-video bg-obsidian/5">
+    <div className="bg-cream border border-abyss/20 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+      <div className="relative aspect-video bg-abyss/5">
         <style>{`
           wistia-player[media-id='${video.mediaId}']:not(:defined) {
             background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/${video.mediaId}/swatch');
@@ -57,7 +57,7 @@ const VideoCard = ({ video }: { video: Video }) => {
         />
       </div>
       <div className="p-6 space-y-3">
-        <h3 className="font-display text-xl font-medium text-obsidian flex items-center gap-2">
+        <h3 className="font-display text-xl font-medium text-abyss flex items-center gap-2">
           <Play className="h-5 w-5 text-gold-accent" />
           {video.title}
         </h3>
@@ -75,7 +75,7 @@ const VideoCategory = () => {
     return (
       <div className="min-h-screen bg-silver-mist flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-display text-obsidian mb-4">Category Not Found</h1>
+          <h1 className="text-3xl font-display text-abyss mb-4">Category Not Found</h1>
           <Link to="/investor-education">
             <Button className="bg-gold-accent hover:bg-gold-accent/90">
               Back to Video Library
@@ -117,7 +117,7 @@ const VideoCategory = () => {
             </Link>
             
             <div className="space-y-4 max-w-3xl">
-              <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
+              <h1 className="text-4xl lg:text-5xl font-display font-medium text-abyss">
                 {category.question}
               </h1>
               <p className="text-xl font-body text-graphite-fog leading-relaxed">

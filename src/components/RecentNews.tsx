@@ -36,7 +36,7 @@ const RecentNews = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8">
               Recent News & Updates
             </h2>
             <p className="text-lg text-graphite-fog leading-relaxed max-w-4xl mx-auto font-body">
@@ -59,7 +59,7 @@ const RecentNews = () => {
                     <Calendar className="h-4 w-4 text-gold-accent" />
                     <span className="text-sm text-graphite-fog/70">{article.date}</span>
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian mb-3 line-clamp-2 leading-tight">
+                  <h3 className="text-lg font-display font-medium text-abyss mb-3 line-clamp-2 leading-tight">
                     {article.title}
                   </h3>
                   <p className="text-graphite-fog leading-relaxed font-body text-sm mb-4 line-clamp-3">
