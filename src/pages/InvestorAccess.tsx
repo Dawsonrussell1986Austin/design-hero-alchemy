@@ -1,9 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
 import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -20,8 +20,8 @@ const US_STATES = [
 ];
 
 const InvestorAccess = () => {
-  const { toast } = useToast();
-  const [submitted, setSubmitted] = useState(false);
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -75,10 +75,8 @@ const InvestorAccess = () => {
     } catch (error) {
       console.error('Error submitting form (non-blocking):', error);
     } finally {
-      // Always redirect to the DTC info page regardless of backend success/failure
-      setSubmitted(true);
-      setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
       setIsSubmitting(false);
+      navigate("/thank-you-investor-access");
     }
   };
 
