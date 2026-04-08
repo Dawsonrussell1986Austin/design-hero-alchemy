@@ -21,19 +21,19 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
-                Where Strength
+                Protected Capital.
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.4s_forwards]">
-                <span className="text-silver-mist">Meets</span>
+                <span className="text-silver-mist">Proven Experience.</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.6s_forwards]">
-                <span className="text-silver-mist">Stewardship.</span>
+                <span className="text-silver-mist">Real Assets.</span>
               </h1>
             </div>
             
             {/* Subtitle */}
             <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards] mobile-text-scale">
-              Private commercial real estate credit, structured for protection, built for performance, and guided by partnership in the creation of long-term value.
+              Private commercial real estate credit backed by hard assets, guided by institutional discipline, and built by a team that has successfully navigated eight market cycles over 35 years.
             </p>
             
             {/* CTA Buttons */}
