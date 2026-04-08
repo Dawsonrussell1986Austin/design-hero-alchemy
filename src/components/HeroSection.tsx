@@ -21,13 +21,13 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-1 sm:space-y-2">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
-                <span className="text-silver-mist">Protected </span><span className="text-gold-accent italic">Capital.</span>
+                <span className="text-silver-mist">Protected </span><span className="text-gold-accent">Capital.</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.4s_forwards]">
-                <span className="text-silver-mist">Proven </span><span className="text-gold-accent italic">Experience.</span>
+                <span className="text-silver-mist">Proven </span><span className="text-gold-accent">Experience.</span>
               </h1>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.6s_forwards]">
-                <span className="text-silver-mist">Real </span><span className="text-gold-accent italic">Assets.</span>
+                <span className="text-silver-mist">Real </span><span className="text-gold-accent">Assets.</span>
               </h1>
             </div>
             
