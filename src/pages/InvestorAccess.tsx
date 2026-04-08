@@ -100,7 +100,7 @@ const InvestorAccess = () => {
     { icon: Calendar, text: "Time-sensitive information that may relate to liquidity, elections, or fund actions" },
   ];
 
-  if (!showForm) {
+  if (submitted) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
         <Navigation />
