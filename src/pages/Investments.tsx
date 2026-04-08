@@ -22,7 +22,7 @@ const Investments = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -108,7 +108,7 @@ const Investments = () => {
       </div>
       
       {/* Rest of content with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
 
         {/* Bento Box Section */}
         <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
@@ -270,7 +270,7 @@ const Investments = () => {
       </div>
 
       {/* Rest of content with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
 
 
         {/* Aligned Offerings Section */}

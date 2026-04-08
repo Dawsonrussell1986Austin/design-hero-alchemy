@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 const OakParallelBridgeCreditFund = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <Navigation />
       
       {/* Hero Section */}
@@ -30,10 +30,10 @@ const OakParallelBridgeCreditFund = () => {
               <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian">
                 Onboarding Instructions
               </h2>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 As outlined in the Fund Administrator Transition letter, HC Global Fund Services is now the independent fund administrator for the Oak Funds effective January 1, 2026. HC Global will facilitate investor onboarding and the processing of subscription booklets and required documentation.
               </p>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 The Funds reside on both the Fidelity and Schwab platforms.
               </p>
             </div>
@@ -66,7 +66,7 @@ const OakParallelBridgeCreditFund = () => {
                   </a>
                 </Button>
               </div>
-              <p className="text-sm text-deep-petrol/70 font-body">
+              <p className="text-sm text-graphite-fog/70 font-body">
                 Complete and upload the subscription booklet and required documentation to HC Global Fund Services team. The monthly close schedule and upload instructions will be provided upon request.
               </p>
             </div>
@@ -76,7 +76,7 @@ const OakParallelBridgeCreditFund = () => {
               <h3 className="text-xl font-display font-medium text-obsidian">
                 Support & Inquiries
               </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 All onboarding inquiries or investor level support can be directed to the HC Global Fund Services support team:
               </p>
               <a 

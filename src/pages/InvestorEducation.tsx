@@ -22,7 +22,7 @@ const InvestorEducation = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -49,7 +49,7 @@ const InvestorEducation = () => {
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
                 Video Library
               </h1>
-              <p className="text-xl font-body text-deep-petrol leading-relaxed">
+              <p className="text-xl font-body text-graphite-fog leading-relaxed">
                 Explore our comprehensive video library. Select a topic below to watch videos and learn more.
               </p>
             </div>
@@ -112,7 +112,7 @@ const InvestorEducation = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <section className="py-16 px-4 bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
           <div className="container mx-auto max-w-4xl text-center space-y-8">
             <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist">
               Ready to Invest?

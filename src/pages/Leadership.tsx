@@ -72,7 +72,7 @@ const Leadership = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -165,7 +165,7 @@ const Leadership = () => {
 
 
       {/* Team Cards */}
-      <div className="py-20 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="py-20 bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -203,7 +203,7 @@ const Leadership = () => {
                     }
                   }}
                 >
-                  <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
+                  <div className="aspect-square bg-gradient-to-br from-graphite-fog to-graphite-fog p-8 flex items-center justify-center">
                     {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Kevin P. Kennedy" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
                       <img 
                         src={leader.image} 

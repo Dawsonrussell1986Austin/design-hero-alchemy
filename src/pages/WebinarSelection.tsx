@@ -30,14 +30,14 @@ const WebinarSelection = () => {
       title: "Oak Institutional Quarterly Financial Update",
       description: "Comprehensive accounting review sessions covering financial statements, tax strategies, and compliance updates.",
       icon: Calculator,
-      color: "text-deep-petrol",
-      bgColor: "bg-deep-petrol/10",
+      color: "text-graphite-fog",
+      bgColor: "bg-graphite-fog/10",
       link: "/webinar-registration?type=oak-accounting"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <Navigation />
       
       {/* Hero Section */}
@@ -70,7 +70,7 @@ const WebinarSelection = () => {
                     <CardTitle className="text-2xl font-display font-medium text-obsidian">
                       {webinar.title}
                     </CardTitle>
-                    <CardDescription className="text-deep-petrol font-body leading-relaxed pt-2">
+                    <CardDescription className="text-graphite-fog font-body leading-relaxed pt-2">
                       {webinar.description}
                     </CardDescription>
                   </CardHeader>

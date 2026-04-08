@@ -77,7 +77,7 @@ const RecentTransactionsHomepage = () => {
   };
 
   return (
-    <div className="bg-deep-petrol py-20">
+    <div className="bg-graphite-fog py-20">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           
@@ -92,15 +92,15 @@ const RecentTransactionsHomepage = () => {
           <div className="flex justify-end mb-8 gap-2">
             <button 
               onClick={prevPage}
-              className="p-2 border border-deep-petrol/20 rounded hover:bg-deep-petrol/10 transition-colors"
+              className="p-2 border border-graphite-fog/20 rounded hover:bg-graphite-fog/10 transition-colors"
             >
-              <ChevronLeft className="h-5 w-5 text-deep-petrol" />
+              <ChevronLeft className="h-5 w-5 text-graphite-fog" />
             </button>
             <button 
               onClick={nextPage}
-              className="p-2 border border-deep-petrol/20 rounded hover:bg-deep-petrol/10 transition-colors"
+              className="p-2 border border-graphite-fog/20 rounded hover:bg-graphite-fog/10 transition-colors"
             >
-              <ChevronRight className="h-5 w-5 text-deep-petrol" />
+              <ChevronRight className="h-5 w-5 text-graphite-fog" />
             </button>
           </div>
 

@@ -30,7 +30,7 @@ const Contact = () => {
         { name: 'Contact', url: '/contact' }
       ]} />
       {/* Header with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       

@@ -37,7 +37,7 @@ const BlogPrivateCreditLendingGap = () => {
         { name: 'Private Credit Lending Gap', url: '/blog/private-credit-lending-gap' }
       ]} />
       {/* Header with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -61,7 +61,7 @@ const BlogPrivateCreditLendingGap = () => {
             
             {/* Article Header */}
             <div className="mb-12">
-              <p className="text-deep-petrol/70 mb-4">December 3, 2025</p>
+              <p className="text-graphite-fog/70 mb-4">December 3, 2025</p>
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-obsidian leading-tight mb-8">
                 Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why
               </h1>
@@ -78,19 +78,19 @@ const BlogPrivateCreditLendingGap = () => {
             
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Over the past eighteen months, the commercial real estate lending environment has shifted dramatically. Regional and mid-sized banks, which historically provided a significant share of U.S. commercial property loans, have been reducing exposure as liquidity constraints, regulatory oversight, and balance sheet pressures increase.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 According to FDIC data, regional banks have pulled back more than $90B in commercial real estate lending since early 2023, creating a noticeable gap between borrower demand and traditional credit supply. At the same time, over $1.2 trillion in commercial mortgages are scheduled to mature in the next 36 months, according to MSCI Real Assets. Borrowers still need capital — but the market landscape has changed.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6 font-semibold">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6 font-semibold">
                 This is where private credit has stepped forward.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Private CRE credit has grown into a $1.7 trillion global market, and multiple industry research groups project continued expansion. Preqin's 2025 Global Alternatives Report notes that private credit is expected to be the fastest-growing alternative asset class through 2026, driven by demand for secure, yield-oriented structures that are less correlated to public markets.
               </p>
               
@@ -98,22 +98,22 @@ const BlogPrivateCreditLendingGap = () => {
                 Why This Matters for Institutional Allocators
               </h2>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Insurance companies, foundations, endowments, and RIAs are increasingly looking for investment strategies that provide:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Consistent income distribution</li>
                 <li>Collateral-backed downside protection</li>
                 <li>Predictable underwriting frameworks</li>
                 <li>Lower volatility relative to public equities and REITs</li>
               </ul>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Private CRE credit, particularly first-lien, senior-secured lending, offers a way to achieve these goals with priority claim status and real asset backing.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 The Boston Consulting Group recently reported that 65% of institutional investment committees plan to increase their exposure to private credit over the next two years, citing yield stability and structural transparency as primary reasons.
               </p>
               
@@ -121,25 +121,25 @@ const BlogPrivateCreditLendingGap = () => {
                 Why Sponsors Are Also Turning to Private Credit
               </h2>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 This dynamic is not just investor-driven — real estate sponsors are adapting too.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 With banks slower to underwrite and close, sponsors require:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Speed</li>
                 <li>Certainty of execution</li>
                 <li>Capital partners who understand operations, not just spreadsheets</li>
               </ul>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 The value is not just in funding — it is in strategic alignment and execution reliability.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Private lenders with experienced underwriting teams and track records across multiple market cycles are positioned to provide both.
               </p>
               
@@ -147,7 +147,7 @@ const BlogPrivateCreditLendingGap = () => {
                 Where Oak Fits
               </h2>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Oak Real Estate Partners manages multiple senior-secured credit strategies, each designed to originate and manage first-lien bridge loans backed by income-producing or value-add commercial real estate across U.S. growth markets.
               </p>
               
@@ -155,22 +155,22 @@ const BlogPrivateCreditLendingGap = () => {
                 The Oak Institutional Credit Solutions Fund
               </h3>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Focused on accredited investors seeking current income, this fund targets short-term, senior-secured loans supported by:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Mandatory cash flow lockboxes</li>
                 <li>Conservative loan-to-value discipline</li>
                 <li>Dedicated reserves for capital improvements and operations</li>
                 <li>Active, hands-on asset monitoring</li>
               </ul>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 The structure is built to emphasize:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Current, recurring income</li>
                 <li>Capital protection through senior lien collateral</li>
                 <li>Transparent and continuous portfolio oversight</li>
@@ -180,22 +180,22 @@ const BlogPrivateCreditLendingGap = () => {
                 The Oak Parallel Bridge Credit Fund
               </h3>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 Designed exclusively for qualified plan assets, this parallel fund originates first-lien, senior-secured bridge loans on income-producing and transitional assets, with:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Short-duration loan terms to maintain flexibility</li>
                 <li>Cash reserves and rehabilitation holdbacks for asset stabilization</li>
                 <li>Mandatory lockbox structures</li>
                 <li>Interest accrual from day one to support yield consistency</li>
               </ul>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 This approach supports:
               </p>
               
-              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-deep-petrol/90">
+              <ul className="list-disc pl-6 mb-6 space-y-2 text-lg text-graphite-fog/90">
                 <li>Liquidity management</li>
                 <li>Diversification across markets and operators</li>
                 <li>Adaptability to evolving borrower needs and market conditions</li>
@@ -205,7 +205,7 @@ const BlogPrivateCreditLendingGap = () => {
                 Why This Matters Now
               </h2>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 As traditional lenders continue to retrench, strategies grounded in underwriting discipline, collateral-backed security, and real asset-level transparency have become increasingly valued by investors and sponsors alike. These structures are designed not only to seek attractive risk-adjusted returns, but also to provide stability and resilience across market cycles.
               </p>
               
@@ -213,20 +213,20 @@ const BlogPrivateCreditLendingGap = () => {
                 The Bottom Line
               </h2>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
                 The lending environment has changed.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-6 font-semibold">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6 font-semibold">
                 Private credit didn't just step into the gap — it is now shaping the lending landscape.
               </p>
               
-              <p className="text-lg text-deep-petrol/90 leading-relaxed mb-12">
+              <p className="text-lg text-graphite-fog/90 leading-relaxed mb-12">
                 For investors, this represents a structural opportunity to position capital in strategies designed to balance income, security, and practical real-world value creation.
               </p>
               
               {/* CTA Section */}
-              <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol rounded-2xl p-8 lg:p-12 text-center">
+              <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog rounded-2xl p-8 lg:p-12 text-center">
                 <h3 className="text-2xl font-display font-medium text-silver-mist mb-4">
                   Register For Our Live Investor Webinar
                 </h3>

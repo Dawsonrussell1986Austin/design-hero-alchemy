@@ -9,7 +9,7 @@ import { FinancialServiceSchema } from "@/components/StructuredData";
 const Investors = () => {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <SEOHead
         title="Investor Portal"
         description="Oak Real Estate Partners investor portal. Stay updated with monthly calls, transparent reporting, and senior-position commercial real estate lending strategies."
@@ -65,7 +65,7 @@ const Investors = () => {
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Senior-Position Lending
               </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 Focused exclusively on senior-position commercial real estate lending with disciplined underwriting.
               </p>
             </div>
@@ -77,7 +77,7 @@ const Investors = () => {
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Monthly Update Calls
               </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 Review live deals, walk through real case studies, and see how your capital is working.
               </p>
             </div>
@@ -89,7 +89,7 @@ const Investors = () => {
               <h3 className="text-lg font-display font-medium text-obsidian">
                 Thoughtful Structure
               </h3>
-              <p className="text-deep-petrol font-body leading-relaxed">
+              <p className="text-graphite-fog font-body leading-relaxed">
                 Delivering structured credit solutions designed to prioritize capital preservation and generate attractive returns.
               </p>
             </div>

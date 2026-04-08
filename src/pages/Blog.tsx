@@ -41,7 +41,7 @@ const Blog = () => {
         ]}
       />
       {/* Header with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -63,14 +63,14 @@ const Blog = () => {
               <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
                 Insights & <span className="text-gold-accent">Articles</span>
               </h2>
-              <p className="text-lg text-deep-petrol/80 max-w-2xl mx-auto">
+              <p className="text-lg text-graphite-fog/80 max-w-2xl mx-auto">
                 Expert perspectives on commercial real estate lending, investment strategies, and market trends.
               </p>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {blogPosts.map((post, index) => (
-                <div key={index} className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-2xl overflow-hidden hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
+                <div key={index} className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-2xl overflow-hidden hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-2xl group">
                   <div className="aspect-[16/10] overflow-hidden">
                     <img 
                       src={post.image}
@@ -81,12 +81,12 @@ const Blog = () => {
                   <div className="p-8">
                     <div className="flex items-center space-x-2 mb-4">
                       <Calendar className="h-4 w-4 text-gold-accent" />
-                      <span className="text-sm text-deep-petrol/70">{post.date}</span>
+                      <span className="text-sm text-graphite-fog/70">{post.date}</span>
                     </div>
                     <h3 className="text-xl font-display font-medium text-obsidian mb-4 line-clamp-2 leading-tight">
                       {post.title}
                     </h3>
-                    <p className="text-deep-petrol/80 leading-relaxed text-sm font-body font-normal mb-6 line-clamp-3">
+                    <p className="text-graphite-fog/80 leading-relaxed text-sm font-body font-normal mb-6 line-clamp-3">
                       {post.excerpt}
                     </p>
                     {post.slug ? (
@@ -118,7 +118,7 @@ const Blog = () => {
       </div>
 
       {/* Newsletter Signup Section */}
-      <div className="relative py-32 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol overflow-hidden">
+      <div className="relative py-32 bg-gradient-to-br from-abyss via-obsidian to-graphite-fog overflow-hidden">
         {/* Background texture */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-garnet-edge/20 to-transparent"></div>

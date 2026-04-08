@@ -60,7 +60,7 @@ const PastWebinars = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
 
@@ -76,7 +76,7 @@ const PastWebinars = () => {
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
                 Watch Our Webinars
               </h1>
-              <p className="text-xl font-body text-deep-petrol leading-relaxed">
+              <p className="text-xl font-body text-graphite-fog leading-relaxed">
                 Missed our last webinar? No problem, browse past webinars below and watch on your own time.
               </p>
             </div>
@@ -127,7 +127,7 @@ const PastWebinars = () => {
                 <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
                   Coming Soon
                 </h3>
-                <p className="text-lg font-body text-deep-petrol max-w-md mx-auto">
+                <p className="text-lg font-body text-graphite-fog max-w-md mx-auto">
                   Past webinar recordings will be available here after our upcoming sessions. Check back soon!
                 </p>
               </div>

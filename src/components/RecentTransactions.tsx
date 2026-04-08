@@ -34,15 +34,15 @@ const RecentTransactions = () => {
           <div className="flex justify-end mb-8 gap-2">
             <button 
               onClick={prevPage}
-              className="p-2 border border-deep-petrol/20 rounded hover:bg-deep-petrol/10 transition-colors"
+              className="p-2 border border-graphite-fog/20 rounded hover:bg-graphite-fog/10 transition-colors"
             >
-              <ChevronLeft className="h-5 w-5 text-deep-petrol" />
+              <ChevronLeft className="h-5 w-5 text-graphite-fog" />
             </button>
             <button 
               onClick={nextPage}
-              className="p-2 border border-deep-petrol/20 rounded hover:bg-deep-petrol/10 transition-colors"
+              className="p-2 border border-graphite-fog/20 rounded hover:bg-graphite-fog/10 transition-colors"
             >
-              <ChevronRight className="h-5 w-5 text-deep-petrol" />
+              <ChevronRight className="h-5 w-5 text-graphite-fog" />
             </button>
           </div>
 

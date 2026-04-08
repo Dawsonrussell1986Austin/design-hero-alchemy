@@ -63,7 +63,7 @@ const HeroSection = () => {
           {/* Right Column - Statistics Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4 lg:gap-6 lg:space-y-0 mt-8 lg:mt-0">
             {/* 150+ Years */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.2s_forwards] hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target">
+            <div className="bg-graphite-fog/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.2s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/30 mobile-friendly-card touch-target">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">150+</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 YEARS OF EXPERIENCE*
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </div>
             
             {/* $5B Bridge */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.4s_forwards] hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target">
+            <div className="bg-graphite-fog/20 backdrop-blur-sm border border-garnet-edge/30 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.4s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/30 mobile-friendly-card touch-target">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$5B</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide mb-1 lg:mb-2">
                 BRIDGE LOANS COMPLETED
@@ -82,7 +82,7 @@ const HeroSection = () => {
             </div>
             
             {/* $18B Transactions */}
-            <div className="bg-deep-petrol/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.6s_forwards] hover:scale-105 transition-all duration-300 hover:bg-deep-petrol/30 mobile-friendly-card touch-target">
+            <div className="bg-graphite-fog/20 backdrop-blur-sm border border-silver-mist/10 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.6s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/30 mobile-friendly-card touch-target">
               <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-2 lg:mb-3">$18B</div>
               <div className="text-xs sm:text-xs lg:text-sm font-body text-silver-mist/70 uppercase tracking-wide">
                 TOTAL TRANSACTIONS*

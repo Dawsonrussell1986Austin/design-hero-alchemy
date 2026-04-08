@@ -15,7 +15,7 @@ const BlogExtensionSeptember = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -43,7 +43,7 @@ const BlogExtensionSeptember = () => {
             <div className="mb-8">
               <div className="flex items-center space-x-2 mb-4">
                 <Calendar className="h-4 w-4 text-gold-accent" />
-                <span className="text-sm text-deep-petrol/70">August 30, 2024</span>
+                <span className="text-sm text-graphite-fog/70">August 30, 2024</span>
               </div>
               <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                 The Oak Companies Announces Extension to September 30, 2024
@@ -93,7 +93,7 @@ const BlogExtensionSeptember = () => {
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Announces Extension to October 31, 2024
                     </h4>
-                    <p className="text-sm text-deep-petrol/70 mt-2">September 24, 2024</p>
+                    <p className="text-sm text-graphite-fog/70 mt-2">September 24, 2024</p>
                   </div>
                 </Link>
                 <Link to="/news/extension-july-2024" className="group">
@@ -101,7 +101,7 @@ const BlogExtensionSeptember = () => {
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Announces Extension of Expiration Time
                     </h4>
-                    <p className="text-sm text-deep-petrol/70 mt-2">July 31, 2024</p>
+                    <p className="text-sm text-graphite-fog/70 mt-2">July 31, 2024</p>
                   </div>
                 </Link>
               </div>

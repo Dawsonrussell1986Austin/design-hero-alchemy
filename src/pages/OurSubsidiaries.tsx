@@ -7,7 +7,7 @@ const OurSubsidiaries = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -55,7 +55,7 @@ const OurSubsidiaries = () => {
                   <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4 tracking-tight">
                     JOHNSON CAPITAL MULTIFAMILY
                   </h2>
-                  <p className="text-lg text-deep-petrol max-w-3xl mx-auto">
+                  <p className="text-lg text-graphite-fog max-w-3xl mx-auto">
                     A leading originator of FHA multifamily loans, specializing in MAP and LEAN programs with a proven track record of success in affordable housing finance.
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Janet Bujko</h3>
-                        <p className="text-sm text-deep-petrol mb-4">SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS</p>
+                        <p className="text-sm text-graphite-fog mb-4">SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS</p>
                       </div>
                     </div>
                     
@@ -87,7 +87,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Jason Pumpelly</h3>
-                        <p className="text-sm text-deep-petrol mb-4">PRESIDENT</p>
+                        <p className="text-sm text-graphite-fog mb-4">PRESIDENT</p>
                       </div>
                     </div>
                     
@@ -101,7 +101,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Guy Johnson</h3>
-                        <p className="text-sm text-deep-petrol mb-4">PRINCIPAL</p>
+                        <p className="text-sm text-graphite-fog mb-4">PRINCIPAL</p>
                       </div>
                     </div>
                     
@@ -115,7 +115,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Matthew J. Morgan</h3>
-                        <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
+                        <p className="text-sm text-graphite-fog mb-4">UNDERWRITER</p>
                       </div>
                     </div>
                     
@@ -129,7 +129,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h3 className="font-bold text-obsidian mb-2">Kevin M. Kirton</h3>
-                        <p className="text-sm text-deep-petrol mb-4">UNDERWRITER</p>
+                        <p className="text-sm text-graphite-fog mb-4">UNDERWRITER</p>
                       </div>
                     </div>
                   </div>
@@ -146,7 +146,7 @@ const OurSubsidiaries = () => {
                   <h2 className="text-3xl lg:text-4xl font-bold text-gold-accent mb-4 tracking-tight">
                     RED OAK CAPITAL HOLDINGS
                   </h2>
-                  <p className="text-lg text-deep-petrol max-w-3xl mx-auto mb-8">
+                  <p className="text-lg text-graphite-fog max-w-3xl mx-auto mb-8">
                     Our commercial real estate lending subsidiary, providing specialized financing solutions funded by the retail investment community.
                   </p>
                 </div>
@@ -165,7 +165,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Anderson</h4>
-                        <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, ASSET MANAGEMENT</p>
+                        <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT, ASSET MANAGEMENT</p>
                       </div>
                     </div>
                     
@@ -179,7 +179,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Stratos Athanassiades</h4>
-                        <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
+                        <p className="text-sm text-graphite-fog mb-4">REGIONAL MANAGER</p>
                       </div>
                     </div>
                     
@@ -193,7 +193,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Dylan Beaulieu</h4>
-                        <p className="text-sm text-deep-petrol mb-4">PRIMARY SERVICING MANAGER</p>
+                        <p className="text-sm text-graphite-fog mb-4">PRIMARY SERVICING MANAGER</p>
                       </div>
                     </div>
                     
@@ -208,7 +208,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Nicolas Jans</h4>
-                        <p className="text-sm text-deep-petrol mb-4">REGIONAL MANAGER</p>
+                        <p className="text-sm text-graphite-fog mb-4">REGIONAL MANAGER</p>
                       </div>
                     </div>
                     
@@ -216,11 +216,11 @@ const OurSubsidiaries = () => {
                       <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <div className="w-full h-full bg-graphite-fog/30 flex items-center justify-center">
-                            <span className="text-deep-petrol/40 text-4xl font-display">KS</span>
+                            <span className="text-graphite-fog/40 text-4xl font-display">KS</span>
                           </div>
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Kate Smith</h4>
-                        <p className="text-sm text-deep-petrol mb-4">SR. CRE ANALYST</p>
+                        <p className="text-sm text-graphite-fog mb-4">SR. CRE ANALYST</p>
                       </div>
                     </div>
                   </div>
@@ -240,7 +240,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Ryan Ellis</h4>
-                        <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT, FINANCE</p>
+                        <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT, FINANCE</p>
                       </div>
                     </div>
                     
@@ -254,7 +254,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Thomas J. Gorski</h4>
-                        <p className="text-sm text-deep-petrol mb-4">SENIOR CRE UNDERWRITER</p>
+                        <p className="text-sm text-graphite-fog mb-4">SENIOR CRE UNDERWRITER</p>
                       </div>
                     </div>
                     
@@ -268,7 +268,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">James Myatt</h4>
-                        <p className="text-sm text-deep-petrol mb-4">LOAN ADMINISTRATOR</p>
+                        <p className="text-sm text-graphite-fog mb-4">LOAN ADMINISTRATOR</p>
                       </div>
                     </div>
                     
@@ -282,7 +282,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Jamie Tripp</h4>
-                        <p className="text-sm text-deep-petrol mb-4">VICE PRESIDENT OF INTERNAL OPERATIONS</p>
+                        <p className="text-sm text-graphite-fog mb-4">VICE PRESIDENT OF INTERNAL OPERATIONS</p>
                       </div>
                     </div>
                     
@@ -296,7 +296,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Rob Mendham</h4>
-                        <p className="text-sm text-deep-petrol mb-4">MANAGER, INFORMATION TECHNOLOGY</p>
+                        <p className="text-sm text-graphite-fog mb-4">MANAGER, INFORMATION TECHNOLOGY</p>
                       </div>
                     </div>
                     
@@ -310,7 +310,7 @@ const OurSubsidiaries = () => {
                           />
                         </div>
                         <h4 className="font-bold text-obsidian mb-2">Tanner Morgan</h4>
-                        <p className="text-sm text-deep-petrol mb-4">CONTROLLER</p>
+                        <p className="text-sm text-graphite-fog mb-4">CONTROLLER</p>
                       </div>
                     </div>
                   </div>

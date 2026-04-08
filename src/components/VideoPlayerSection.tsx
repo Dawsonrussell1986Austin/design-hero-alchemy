@@ -35,7 +35,7 @@ const VideoPlayerSection = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol py-24">
+    <div className="relative bg-gradient-to-br from-abyss via-obsidian to-graphite-fog py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -52,7 +52,7 @@ const VideoPlayerSection = () => {
           <div className="relative max-w-5xl mx-auto">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
               {/* Decorative gradient overlay on edges */}
-              <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-graphite-fog/10 pointer-events-none z-10"></div>
               
               {/* Video Player */}
               <div className="relative aspect-video">
@@ -84,7 +84,7 @@ const VideoPlayerSection = () => {
 
             {/* Decorative elements */}
             <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold-accent/20 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-deep-petrol/30 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-graphite-fog/30 rounded-full blur-3xl"></div>
           </div>
 
           {/* Bottom text */}

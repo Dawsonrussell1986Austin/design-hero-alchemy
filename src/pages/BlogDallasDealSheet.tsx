@@ -15,7 +15,7 @@ const BlogDallasDealSheet = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -43,7 +43,7 @@ const BlogDallasDealSheet = () => {
             <div className="mb-8">
               <div className="flex items-center space-x-2 mb-4">
                 <Calendar className="h-4 w-4 text-gold-accent" />
-                <span className="text-sm text-deep-petrol/70">April 21, 2025</span>
+                <span className="text-sm text-graphite-fog/70">April 21, 2025</span>
               </div>
               <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                 This Week's Dallas-Fort Worth Deal Sheet
@@ -94,7 +94,7 @@ const BlogDallasDealSheet = () => {
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Provides $10.30 Million in Financing
                     </h4>
-                    <p className="text-sm text-deep-petrol/70 mt-2">April 16, 2025</p>
+                    <p className="text-sm text-graphite-fog/70 mt-2">April 16, 2025</p>
                   </div>
                 </Link>
                 <Link to="/news/atlanta-acquisition-loan" className="group">
@@ -102,7 +102,7 @@ const BlogDallasDealSheet = () => {
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       Oak Capital Provides $8.7M Acquisition Loan for Multifamily Property
                     </h4>
-                    <p className="text-sm text-deep-petrol/70 mt-2">May 2, 2025</p>
+                    <p className="text-sm text-graphite-fog/70 mt-2">May 2, 2025</p>
                   </div>
                 </Link>
               </div>
