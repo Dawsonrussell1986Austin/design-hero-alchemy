@@ -68,27 +68,16 @@ const InvestorAccess = () => {
       });
 
       if (error) {
-        console.error('Error submitting form:', error);
-        toast({
-          title: "Submission Error",
-          description: "There was an error submitting your registration. Please try again.",
-          variant: "destructive",
-        });
-        setIsSubmitting(false);
-        return;
+        console.error('Error submitting form (non-blocking):', error);
+      } else {
+        console.log('Form submission successful:', data);
       }
-
-      console.log('Form submission successful:', data);
+    } catch (error) {
+      console.error('Error submitting form (non-blocking):', error);
+    } finally {
+      // Always redirect to the DTC info page regardless of backend success/failure
       setSubmitted(true);
       setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
-    } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Submission Error",
-        description: "There was an error submitting your registration. Please try again.",
-        variant: "destructive",
-      });
-    } finally {
       setIsSubmitting(false);
     }
   };
