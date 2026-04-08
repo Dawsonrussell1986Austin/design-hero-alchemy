@@ -62,7 +62,7 @@ const WebinarFloatingCTA = () => {
                 <h3 className="font-display font-semibold text-base leading-tight">
                   Join Our Next Investor Webinar
                 </h3>
-                <p className="font-body text-xs text-white/90 mt-0.5">
+                <p className="font-body text-xs text-cream/90 mt-0.5">
                   Get exclusive insights into Oak's investment opportunities
                 </p>
               </div>

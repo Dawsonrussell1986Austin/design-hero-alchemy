@@ -215,17 +215,17 @@ const InvestorAccess = () => {
             {/* Right Column - Message */}
             <div className="text-cream space-y-8">
               <div className="space-y-6">
-                <h2 className="text-xl lg:text-2xl font-display font-medium text-white/90">
+                <h2 className="text-xl lg:text-2xl font-display font-medium text-cream/90">
                   Important Information for DTC Investors
                 </h2>
                 
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                  <p className="text-white/80 font-body leading-relaxed">
+                  <p className="text-cream/80 font-body leading-relaxed">
                     Because your investment was made through a custodial bank or broker account and 
                     processed via the Depository Trust Corporation ("DTC"), we do not receive your 
                     individual contact details directly.
                   </p>
-                  <p className="text-white/80 font-body leading-relaxed mt-4">
+                  <p className="text-cream/80 font-body leading-relaxed mt-4">
                     As a result, we are unable to provide you with account-specific information 
                     unless you register for the portal.
                   </p>
@@ -237,13 +237,13 @@ const InvestorAccess = () => {
                   Why Registration Is Important
                 </h3>
                 
-                <p className="text-white/70 font-body leading-relaxed">
+                <p className="text-cream/70 font-body leading-relaxed">
                   In recent months, we've identified several cases where investors holding through 
                   a bank or broker account did not receive essential communications related to 
                   their investments.
                 </p>
 
-                <p className="text-white/80 font-body leading-relaxed">
+                <p className="text-cream/80 font-body leading-relaxed">
                   Registering for the Oak Investor Portal ensures you receive:
                 </p>
 
@@ -253,7 +253,7 @@ const InvestorAccess = () => {
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent-brown/20 flex items-center justify-center mt-0.5">
                         <benefit.icon className="w-4 h-4 text-accent-brown" />
                       </div>
-                      <span className="text-white/80 font-body">{benefit.text}</span>
+                      <span className="text-cream/80 font-body">{benefit.text}</span>
                     </li>
                   ))}
                 </ul>
@@ -266,7 +266,7 @@ const InvestorAccess = () => {
       {/* Footer */}
       <footer className="py-8 px-6 border-t border-white/10 mt-12">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-white/50 text-sm font-body">
+          <p className="text-cream/50 text-sm font-body">
             © {new Date().getFullYear()} Oak Real Estate Partners. All rights reserved.
           </p>
         </div>

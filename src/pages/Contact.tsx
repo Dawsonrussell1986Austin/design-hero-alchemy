@@ -102,7 +102,7 @@ const Contact = () => {
                         href="https://maps.google.com/?q=5925+Carnegie+Boulevard,+Suite+110,+Charlotte,+NC+28209" 
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors block leading-tight"
+                        className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors block leading-tight"
                       >
                         5925 Carnegie Blvd<br />Suite 110<br />Charlotte, NC 28209
                       </a>
@@ -111,19 +111,19 @@ const Contact = () => {
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
                       <Phone className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Phone</h3>
-                      <a href="tel:+19802886627" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors">980.288.6627</a>
+                      <a href="tel:+19802886627" className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors">980.288.6627</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
                       <Mail className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Email</h3>
-                      <a href="mailto:ir@oakrepartners.com" className="text-[10px] sm:text-xs text-white/90 hover:text-accent-brown transition-colors break-all">ir@oakrepartners.com</a>
+                      <a href="mailto:ir@oakrepartners.com" className="text-[10px] sm:text-xs text-cream/90 hover:text-accent-brown transition-colors break-all">ir@oakrepartners.com</a>
                     </div>
                     
                     <div className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-lg p-2 sm:p-3 lg:p-4 text-center shadow-lg">
                       <Clock className="h-5 w-5 sm:h-6 sm:w-6 lg:h-8 lg:w-8 text-accent-brown mx-auto mb-1 sm:mb-2" />
                       <h3 className="text-xs sm:text-sm font-medium text-cream mb-1">Hours</h3>
-                      <p className="text-[10px] sm:text-xs text-white/90 leading-tight">Mon-Fri<br />9AM-6PM EST</p>
+                      <p className="text-[10px] sm:text-xs text-cream/90 leading-tight">Mon-Fri<br />9AM-6PM EST</p>
                     </div>
                   </div>
                 </div>
