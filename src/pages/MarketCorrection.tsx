@@ -27,16 +27,7 @@ const MarketCorrection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Load Playfair Display for this page
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
+  // Montserrat is already loaded site-wide via the design system
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -60,8 +51,8 @@ const MarketCorrection = () => {
     }
   };
 
-  // Font stacks matching the ad design system exactly
-  const serif = { fontFamily: "'Playfair Display', Georgia, serif" };
+  // Font stacks matching the brand design system
+  const display = { fontFamily: "'Montserrat', sans-serif" };
   const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
 
   const inputStyle: React.CSSProperties = {
@@ -94,7 +85,7 @@ const MarketCorrection = () => {
       <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-12 lg:px-20 pt-10 sm:pt-14 pb-8 sm:pb-12 overflow-hidden">
         {/* Ghost watermark */}
         <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none hidden sm:block" style={{ opacity: 0.03 }}>
-          <span className="text-[28rem] sm:text-[36rem] font-light leading-none block" style={{ ...serif, color: "#E4E3E1" }}>79</span>
+          <span className="text-[28rem] sm:text-[36rem] font-light leading-none block" style={{ ...display, color: "#E4E3E1" }}>79</span>
         </div>
 
         {/* Logo */}
@@ -116,12 +107,12 @@ const MarketCorrection = () => {
               <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
               </p>
-              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
+              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
                 79%
               </h1>
-              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#FAF7F2" }}>
+              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...display, color: "#FAF7F2" }}>
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
-                <em style={{ color: "#D4B35C", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
+                <em style={{ color: "#D4B35C", fontWeight: 300 }}>2026.</em>
               </p>
               <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
@@ -170,7 +161,7 @@ const MarketCorrection = () => {
               { stat: "63%", note: "cite elevated valuations as top concern" },
             ].map((d) => (
               <div key={d.stat}>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#FAF7F2" }}>{d.stat}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...display, color: "#FAF7F2" }}>{d.stat}</p>
                 <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
@@ -195,9 +186,9 @@ const MarketCorrection = () => {
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...serif, color: "#0A1520", letterSpacing: "-0.01em" }}>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...display, color: "#0A1520", letterSpacing: "-0.01em" }}>
               The institutions tracking this data aren't waiting for the correction to{" "}
-              <em style={{ color: "#C7A74C", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
+              <em style={{ color: "#C7A74C", fontWeight: 300 }}>arrive.</em>
             </h2>
 
             {/* Mini bar chart */}
@@ -227,7 +218,7 @@ const MarketCorrection = () => {
 
           {/* Blockquote */}
           <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #C7A74C" }}>
-            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...serif, color: "#0A1520", fontStyle: "italic" }}>
+            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...display, color: "#0A1520" }}>
               Senior-secured, first-lien bridge loans on income-producing commercial real estate. Every dollar backed by a specific property you can see, value, and verify. Not a ticker. Not a blind pool. An address.
             </p>
           </div>
@@ -251,7 +242,7 @@ const MarketCorrection = () => {
       {/* ════════ CLOSING CTA — DARK ════════ */}
       <section className="px-6 sm:px-12 lg:px-20 py-24 lg:py-36" style={{ backgroundColor: "#060D14" }}>
         <div className="max-w-3xl mx-auto text-center">
-          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] font-light" style={{ ...serif, color: "rgba(255,255,255,0.85)" }}>
+          <p className="text-xl sm:text-2xl lg:text-3xl leading-[1.3] font-light" style={{ ...display, color: "rgba(255,255,255,0.85)" }}>
             If a correction arrives in the next 90 days, does your portfolio hold?{" "}
             <span style={{ color: "#D4B35C" }}>Or does it just feel like it will?</span>
           </p>
