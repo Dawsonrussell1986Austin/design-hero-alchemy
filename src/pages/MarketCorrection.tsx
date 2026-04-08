@@ -116,14 +116,14 @@ const MarketCorrection = () => {
               <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
               </p>
-              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#ffffff", letterSpacing: "-0.02em" }}>
+              <h1 className="text-[3.5rem] sm:text-[5rem] md:text-[7rem] lg:text-[9rem] font-light leading-[0.85] tracking-tight" style={{ ...serif, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
                 79%
               </h1>
-              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#ffffff" }}>
+              <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...serif, color: "#FAF7F2" }}>
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
                 <em style={{ color: "#D4B35C", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#a0a0a0", fontWeight: 400, letterSpacing: "0.02em" }}>
+              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
@@ -133,7 +133,7 @@ const MarketCorrection = () => {
               <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -170,8 +170,8 @@ const MarketCorrection = () => {
               { stat: "63%", note: "cite elevated valuations as top concern" },
             ].map((d) => (
               <div key={d.stat}>
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#ffffff" }}>{d.stat}</p>
-                <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>{d.note}</p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light" style={{ ...serif, color: "#FAF7F2" }}>{d.stat}</p>
+                <p className="text-[10px] sm:text-xs md:text-sm mt-1 sm:mt-2 leading-snug tracking-wide" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>{d.note}</p>
               </div>
             ))}
           </div>
@@ -255,7 +255,7 @@ const MarketCorrection = () => {
             If a correction arrives in the next 90 days, does your portfolio hold?{" "}
             <span style={{ color: "#D4B35C" }}>Or does it just feel like it will?</span>
           </p>
-          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+          <p className="text-sm mt-8 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
             The gap between those two answers is where fortunes are quietly lost.
           </p>
           <button

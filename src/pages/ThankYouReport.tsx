@@ -44,13 +44,13 @@ const ThankYouReport = () => {
             Check your inbox.
           </h1>
 
-          <p className="text-base sm:text-lg leading-[1.7] mt-6 max-w-md mx-auto" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+          <p className="text-base sm:text-lg leading-[1.7] mt-6 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
             We've sent the 2026 Institutional Investor Report to your email. If you don't see it within a few minutes, check your spam folder.
           </p>
 
           {/* Download link */}
           <div className="mt-10 p-6 sm:p-8 text-center" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-            <p className="text-sm mb-4" style={{ ...sans, color: "#a0a0a0", fontWeight: 400 }}>
+            <p className="text-sm mb-4" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
               Don't want to wait? Download it now.
             </p>
             <a

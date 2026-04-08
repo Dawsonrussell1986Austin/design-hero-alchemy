@@ -41,7 +41,7 @@ const VideoPlayerSectionDraft2 = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-display font-medium text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-6">
               Experience the Oak Difference
             </h2>
             <p className="text-silver-mist/90 text-lg font-body max-w-3xl mx-auto leading-relaxed">
