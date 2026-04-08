@@ -154,13 +154,11 @@ const InvestorAccess = () => {
               </ul>
             </div>
 
-            {/* CTA Button */}
-            <Button
-              onClick={() => setShowForm(true)}
-              className="bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium h-14 px-10 text-lg"
-            >
-              Register for Portal Access
-            </Button>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
+              <p className="text-cream/80 font-body">
+                Thank you for registering. Our team will be in touch with you shortly.
+              </p>
+            </div>
           </div>
         </main>
 
