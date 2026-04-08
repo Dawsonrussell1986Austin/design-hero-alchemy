@@ -70,7 +70,7 @@ const WebinarFloatingCTA = () => {
               {/* CTA Button */}
               <Link 
                 to="/webinar-registration?type=oak-investment"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-white text-accent-brown px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-silver-mist transition-all hover:shadow-lg group"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-cream text-accent-brown px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-silver-mist transition-all hover:shadow-lg group"
               >
                 Register Today
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

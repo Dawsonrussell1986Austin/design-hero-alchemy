@@ -22,7 +22,7 @@ interface TransactionCardHomepageProps {
 
 const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) => {
   return (
-    <Card className="bg-white/90 border border-obsidian/20 overflow-hidden hover:bg-white transition-all duration-300 group shadow-lg h-full">
+    <Card className="bg-cream/90 border border-obsidian/20 overflow-hidden hover:bg-cream transition-all duration-300 group shadow-lg h-full">
       <div className="aspect-video overflow-hidden relative">
         <img 
           src={transaction.image}
@@ -40,7 +40,7 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
           {transaction.propertyType}
         </div>
       </div>
-      <CardContent className="p-6 flex-1 bg-white">
+      <CardContent className="p-6 flex-1 bg-cream">
         <h3 className="text-lg font-display font-medium text-obsidian mb-4 leading-tight border-b border-obsidian/20 pb-3">
           {transaction.name}
         </h3>

@@ -29,7 +29,7 @@ const WebinarBanner = () => {
           <div className="flex items-center gap-2">
             <Link 
               to="/webinar-registration?type=oak-investment"
-              className="inline-flex items-center gap-2 bg-white text-accent-brown px-4 py-2 rounded-md font-body font-semibold text-sm hover:bg-silver-mist transition-colors whitespace-nowrap group"
+              className="inline-flex items-center gap-2 bg-cream text-accent-brown px-4 py-2 rounded-md font-body font-semibold text-sm hover:bg-silver-mist transition-colors whitespace-nowrap group"
             >
               Register Now
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />

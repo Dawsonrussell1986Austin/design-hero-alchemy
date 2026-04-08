@@ -63,7 +63,7 @@ const Investments = () => {
                 </p>
                 
                 {/* Oak's Investment Focus - Under text */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
                   <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Oak's Investment Focus
                   </h3>
@@ -204,7 +204,7 @@ const Investments = () => {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Lock className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Collateral Security</h3>
@@ -214,7 +214,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Cash Flow Predictability</h3>
@@ -224,7 +224,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Activity className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Low Volatility</h3>
@@ -234,7 +234,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Risk Efficiency</h3>
@@ -244,7 +244,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <TrendingUp className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Inflation Resilience</h3>
@@ -254,7 +254,7 @@ const Investments = () => {
                   </p>
                 </div>
                 
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-white/60 transition-all duration-300 group">
+                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-obsidian/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
                   <div className="flex items-center space-x-3 mb-3">
                     <Target className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
                     <h3 className="text-lg font-bold text-obsidian">Asset Appreciation Potential</h3>

@@ -78,8 +78,8 @@ const InvestorEducation = () => {
                       
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300 shadow-xl">
-                          <Play className="h-10 w-10 text-obsidian group-hover:text-white ml-1" fill="currentColor" />
+                        <div className="w-20 h-20 bg-cream/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300 shadow-xl">
+                          <Play className="h-10 w-10 text-obsidian group-hover:text-cream ml-1" fill="currentColor" />
                         </div>
                       </div>
                       

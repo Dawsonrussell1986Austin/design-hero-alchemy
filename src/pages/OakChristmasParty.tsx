@@ -132,7 +132,7 @@ const OakChristmasParty = () => {
           </div>
           
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-start bg-white rounded-lg shadow-xl p-4 sm:p-6 md:p-8">
+            <div className="grid lg:grid-cols-[300px_1fr] gap-6 lg:gap-8 items-start bg-cream rounded-lg shadow-xl p-4 sm:p-6 md:p-8">
               {/* Left Column - Photo */}
               <div className="flex flex-col items-center lg:items-start space-y-3 sm:space-y-4">
                 <div className="relative w-full max-w-[280px] lg:max-w-none">
@@ -334,7 +334,7 @@ const OakChristmasParty = () => {
 
               {/* Carousel Content - Shows second on mobile */}
               <div className="order-2 lg:order-1 relative z-10 w-full">
-                <div className="bg-white rounded-2xl shadow-2xl p-6 sm:p-10 relative overflow-hidden">
+                <div className="bg-cream rounded-2xl shadow-2xl p-6 sm:p-10 relative overflow-hidden">
                   {/* Decorative accent */}
                   <div className="absolute top-0 left-0 w-2 h-full bg-accent-brown"></div>
                   
@@ -374,7 +374,7 @@ const OakChristmasParty = () => {
                       <div className="flex sm:hidden items-center justify-between w-full gap-4">
                         <button
                           onClick={prevActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white transition-all duration-300"
+                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300"
                           aria-label="Previous activity"
                         >
                           <ChevronLeft className="w-6 h-6" />
@@ -408,7 +408,7 @@ const OakChristmasParty = () => {
                       {/* Desktop: Full buttons with text */}
                       <button
                         onClick={prevActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white transition-all duration-300 font-semibold"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300 font-semibold"
                         aria-label="Previous activity"
                       >
                         <ChevronLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />

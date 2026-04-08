@@ -81,7 +81,7 @@ const About = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-obsidian/20 via-transparent to-transparent"></div>
                     
                     {/* Experience Stats Overlay Card */}
-                    <div className="absolute bottom-6 right-6 bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-6 shadow-xl max-w-sm">
+                    <div className="absolute bottom-6 right-6 bg-cream/95 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-6 shadow-xl max-w-sm">
                       <h3 className="text-lg font-display font-medium text-obsidian mb-4">Experience That Matters</h3>
                       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                         <div>
@@ -146,7 +146,7 @@ const About = () => {
                 
                 {/* Right Column - Visual Element */}
                 <div className="relative">
-                  <div className="bg-white/95 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
+                  <div className="bg-cream/95 backdrop-blur-sm border border-deep-petrol/20 rounded-xl p-12 shadow-xl">
                     <div className="space-y-8">
                       <div className="text-center">
                         <div className="w-16 h-16 bg-accent-brown/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -194,7 +194,7 @@ const About = () => {
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <Shield className="h-6 w-6 text-accent-brown" />
@@ -206,7 +206,7 @@ const About = () => {
                   </p>
                 </div>
                 
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <TrendingDown className="h-6 w-6 text-accent-brown" />
@@ -218,7 +218,7 @@ const About = () => {
                   </p>
                 </div>
                 
-                <div className="group bg-white/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-white/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <div className="group bg-cream/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <div className="flex items-center mb-6">
                     <div className="w-12 h-12 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-accent-brown/20 transition-colors duration-300">
                       <BarChart className="h-6 w-6 text-accent-brown" />

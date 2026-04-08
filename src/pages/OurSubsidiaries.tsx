@@ -50,7 +50,7 @@ const OurSubsidiaries = () => {
           {/* Johnson Capital Multifamily Section */}
           <section className="py-16">
             <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
+              <div className="bg-cream rounded-lg shadow-lg p-8 mb-12">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl lg:text-4xl font-bold text-obsidian mb-4 tracking-tight">
                     JOHNSON CAPITAL MULTIFAMILY
@@ -64,7 +64,7 @@ const OurSubsidiaries = () => {
                 <div className="bg-silver-mist/30 rounded-lg p-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/72acba3c-0e00-4a56-b2b0-312d8d8d20f8.png" 
@@ -78,7 +78,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/jason-sutherland-headshot.jpg" 
@@ -92,7 +92,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/9d94a353-d253-43ef-8f26-ba5b48847381.png" 
@@ -106,7 +106,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/e8f32d5e-1126-478e-9860-811f1e095458.png" 
@@ -120,7 +120,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/0bc2aab8-ce33-43a0-936d-422b00463acd.png" 
@@ -141,7 +141,7 @@ const OurSubsidiaries = () => {
           {/* Red Oak Capital Holdings Section */}
           <section className="py-16">
             <div className="max-w-6xl mx-auto">
-              <div className="bg-white rounded-lg shadow-lg p-8">
+              <div className="bg-cream rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl lg:text-4xl font-bold text-accent-brown mb-4 tracking-tight">
                     RED OAK CAPITAL HOLDINGS
@@ -156,7 +156,7 @@ const OurSubsidiaries = () => {
                   <h3 className="text-xl font-bold text-obsidian mb-6 text-center">Asset Management & Operations Team</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/31c8e413-e49d-45f0-b289-23cef6842eed.png" 
@@ -170,7 +170,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/374c72eb-53c2-4e84-b46e-b78e58ef7a85.png" 
@@ -184,7 +184,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/55c42f2a-0ab2-49c3-94da-646480e1fcc7.png" 
@@ -199,7 +199,7 @@ const OurSubsidiaries = () => {
                     
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/1900f810-94ae-41a2-a5c3-61a55ad00f66.png" 
@@ -213,7 +213,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <div className="w-full h-full bg-graphite-fog/30 flex items-center justify-center">
                             <span className="text-deep-petrol/40 text-4xl font-display">KS</span>
@@ -231,7 +231,7 @@ const OurSubsidiaries = () => {
                   <h3 className="text-xl font-bold text-obsidian mb-6 text-center">Finance & Operations Team</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/76c2daaa-5415-480e-85df-16119fbc639a.png" 
@@ -245,7 +245,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/b73b34cc-ac9e-499c-b7ac-c09f2097413e.png" 
@@ -259,7 +259,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/569d91ea-63ba-4d6d-ae15-e224a63f481c.png" 
@@ -273,7 +273,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/d79e003e-2083-4515-bd8c-da4e7748ef9d.png" 
@@ -287,7 +287,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/172b9df3-c5a8-4a00-83f7-12c550923d84.png" 
@@ -301,7 +301,7 @@ const OurSubsidiaries = () => {
                     </div>
                     
                     <div className="text-center">
-                      <div className="bg-white rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
+                      <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                         <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                           <img 
                             src="/lovable-uploads/dceb532f-a791-412e-a1fc-638c2122d06d.png" 

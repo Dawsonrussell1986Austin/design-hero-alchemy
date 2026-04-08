@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               
               {/* Left Side - Embedded GHL Form */}
-              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
+              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
                 <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
                 <iframe
                   src="https://invest.oakrepartners.com/widget/form/794zC2IpExPALxESsWC5"

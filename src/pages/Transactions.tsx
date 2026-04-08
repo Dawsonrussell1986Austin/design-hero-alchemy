@@ -221,7 +221,7 @@ const Transactions = () => {
                 </p>
                 
                 {/* Transaction Stats - Under text */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
                   <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Portfolio Overview
                   </h3>
@@ -292,7 +292,7 @@ const Transactions = () => {
                       Location
                     </label>
                     <Select value={filters.location} onValueChange={(value) => handleFilterChange("location", value)}>
-                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Locations" />
                       </SelectTrigger>
                       <SelectContent>
@@ -311,7 +311,7 @@ const Transactions = () => {
                       Property Type
                     </label>
                     <Select value={filters.propertyType} onValueChange={(value) => handleFilterChange("propertyType", value)}>
-                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>
@@ -330,7 +330,7 @@ const Transactions = () => {
                       Loan Size
                     </label>
                     <Select value={filters.loanSize} onValueChange={(value) => handleFilterChange("loanSize", value)}>
-                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Sizes" />
                       </SelectTrigger>
                       <SelectContent>
@@ -350,7 +350,7 @@ const Transactions = () => {
                       Loan Type
                     </label>
                     <Select value={filters.loanType} onValueChange={(value) => handleFilterChange("loanType", value)}>
-                      <SelectTrigger className="bg-white border-obsidian/20 text-obsidian">
+                      <SelectTrigger className="bg-cream border-obsidian/20 text-obsidian">
                         <SelectValue placeholder="All Types" />
                       </SelectTrigger>
                       <SelectContent>

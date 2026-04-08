@@ -113,7 +113,7 @@ const InvestorAccess = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             
             {/* Left Column - Form */}
-            <div className="bg-white rounded-2xl shadow-2xl p-8 lg:p-10">
+            <div className="bg-cream rounded-2xl shadow-2xl p-8 lg:p-10">
               <h1 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-6">
                 Investor Portal Registration
               </h1>
@@ -131,7 +131,7 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, firstName: e.target.value }))}
                       placeholder="First name"
                       required
-                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                     />
                   </div>
                   <div className="space-y-2">
@@ -145,7 +145,7 @@ const InvestorAccess = () => {
                       onChange={(e) => setFormData(prev => ({ ...prev, lastName: e.target.value }))}
                       placeholder="Last name"
                       required
-                      className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                      className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                     />
                   </div>
                 </div>
@@ -161,7 +161,7 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                     placeholder="your@email.com"
                     required
-                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                   />
                 </div>
 
@@ -174,7 +174,7 @@ const InvestorAccess = () => {
                     onValueChange={(value) => setFormData(prev => ({ ...prev, state: value }))}
                     required
                   >
-                    <SelectTrigger className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
+                    <SelectTrigger className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20">
                       <SelectValue placeholder="Select your state" />
                     </SelectTrigger>
                     <SelectContent>
@@ -198,7 +198,7 @@ const InvestorAccess = () => {
                     onChange={(e) => setFormData(prev => ({ ...prev, phone: e.target.value }))}
                     placeholder="(555) 123-4567"
                     required
-                    className="bg-white border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
+                    className="bg-cream border-graphite-fog/20 focus:border-accent-brown focus:ring-accent-brown/20"
                   />
                 </div>
 

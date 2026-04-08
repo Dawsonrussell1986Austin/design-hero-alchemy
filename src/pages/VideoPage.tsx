@@ -80,7 +80,7 @@ const VideoPage = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>

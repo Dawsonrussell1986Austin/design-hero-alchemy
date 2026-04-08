@@ -47,7 +47,7 @@ const Hud221Terms = () => {
                 </p>
 
                 {/* Why Consider This Program */}
-                <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
+                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
                   <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
                     Why Consider This Program?
                   </h3>
@@ -89,7 +89,7 @@ const Hud221Terms = () => {
                 Financing Parameters
               </h2>
               
-              <div className="bg-white/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 shadow-lg">
+              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 shadow-lg">
                 <table className="w-full">
                   <tbody className="space-y-4">
                     <tr className="border-b border-obsidian/10">
@@ -159,7 +159,7 @@ const Hud221Terms = () => {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-white px-12 py-4 text-lg font-medium"
+                  className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-cream px-12 py-4 text-lg font-medium"
                   onClick={() => window.location.href = "/lending/fha-hud"}
                 >
                   View All HUD Programs

@@ -61,7 +61,7 @@ const BlogExtensionOctober = () => {
 
             {/* Article content */}
             <div className="prose prose-lg max-w-none">
-              <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
+              <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8">
                 <p className="text-lg text-obsidian leading-relaxed mb-6">
                   <strong>FOR IMMEDIATE RELEASE</strong><br />
                   Charlotte, NC. (September 24, 2024) – ROCF II Series, a series of Oak Capital Fund Series, LLC (the Company) today announced that it has extended the application deadline and acceptance date to October 31, 2024.
@@ -90,7 +90,7 @@ const BlogExtensionOctober = () => {
               <h3 className="text-xl font-display font-medium text-obsidian mb-6">Related News</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <Link to="/news/extension-november-2024" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Announces Extension to November 30, 2024
                     </h4>
@@ -98,7 +98,7 @@ const BlogExtensionOctober = () => {
                   </div>
                 </Link>
                 <Link to="/news/extension-september-2024" className="group">
-                  <div className="bg-white/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-white/80 transition-all duration-300">
+                  <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 hover:bg-cream/80 transition-all duration-300">
                     <h4 className="font-medium text-obsidian group-hover:text-garnet-edge transition-colors">
                       The Oak Companies Announces Extension to September 30, 2024
                     </h4>

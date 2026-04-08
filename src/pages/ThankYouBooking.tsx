@@ -71,7 +71,7 @@ const ThankYouBooking = () => {
             {resources.map((resource) => (
               <div
                 key={resource.title}
-                className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col items-start hover:shadow-xl transition-shadow"
+                className="bg-cream/95 backdrop-blur-sm rounded-2xl shadow-lg p-6 flex flex-col items-start hover:shadow-xl transition-shadow"
               >
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-accent-brown/10 rounded-xl mb-4">
                   <resource.icon className="w-6 h-6 text-accent-brown" />
@@ -108,7 +108,7 @@ const ThankYouBooking = () => {
             <Button
               onClick={() => navigate("/")}
               variant="outline"
-              className="font-body font-medium h-12 px-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white"
+              className="font-body font-medium h-12 px-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream"
             >
               Return Home
             </Button>

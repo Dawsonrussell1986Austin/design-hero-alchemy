@@ -42,7 +42,7 @@ const CedarMillCaseStudy = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center shadow-lg">
+                      <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center shadow-lg">
                         <Play className="w-8 h-8 text-accent-brown ml-1" fill="currentColor" />
                       </div>
                     </div>
@@ -79,7 +79,7 @@ const CedarMillCaseStudy = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-white px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>
