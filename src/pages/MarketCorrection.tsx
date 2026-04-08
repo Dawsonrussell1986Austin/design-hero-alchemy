@@ -51,9 +51,9 @@ const MarketCorrection = () => {
     }
   };
 
-  // Font stacks matching the brand design system
-  const display = { fontFamily: "'Montserrat', sans-serif" };
-  const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
+  // Font stacks - Playfair Display for headlines, Lato for body
+  const display = { fontFamily: "'Playfair Display', Georgia, serif" };
+  const sans = { fontFamily: "'Lato', sans-serif" };
 
   const inputStyle: React.CSSProperties = {
     ...sans,
