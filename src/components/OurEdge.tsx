@@ -25,23 +25,23 @@ const OurEdge = () => {
               
               {/* Main description */}
               <p className="text-xl lg:text-2xl leading-relaxed font-body text-silver-mist mb-16">
-                Every investment is structured and underwritten using industry best practices. We focus on <span className="text-garnet-edge font-medium">capital preservation</span>, generating <span className="text-garnet-edge font-medium">predictable</span> income, and building long-term <span className="text-garnet-edge font-medium">trust</span>.
+                Every investment is structured and underwritten using industry best practices. We focus on <span className="text-gold-accent font-medium">capital preservation</span>, generating <span className="text-gold-accent font-medium">predictable</span> income, and building long-term <span className="text-gold-accent font-medium">trust</span>.
               </p>
 
               {/* Key points */}
               <div className="space-y-8">
-                <div className="border-l-4 border-garnet-edge pl-6">
-                  <div className="text-lg font-display font-medium text-garnet-edge mb-2">Proven Experience</div>
+                <div className="border-l-4 border-gold-accent pl-6">
+                  <div className="text-lg font-display font-medium text-gold-accent mb-2">Proven Experience</div>
                   <p className="text-silver-mist/90 font-body">$18B+ in closed transactions over the past three decades</p>
                 </div>
                 
-                <div className="border-l-4 border-garnet-edge pl-6">
-                  <div className="text-lg font-display font-medium text-garnet-edge mb-2">Deep Expertise</div>
+                <div className="border-l-4 border-gold-accent pl-6">
+                  <div className="text-lg font-display font-medium text-gold-accent mb-2">Deep Expertise</div>
                   <p className="text-silver-mist/90 font-body">Institutional underwriting coupled with deep market expertise</p>
                 </div>
                 
-                <div className="border-l-4 border-garnet-edge pl-6">
-                  <div className="text-lg font-display font-medium text-garnet-edge mb-2">Flexible Solutions</div>
+                <div className="border-l-4 border-gold-accent pl-6">
+                  <div className="text-lg font-display font-medium text-gold-accent mb-2">Flexible Solutions</div>
                   <p className="text-silver-mist/90 font-body">Flexible capital structures including debt and equity for real estate sponsors</p>
                 </div>
               </div>
