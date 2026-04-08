@@ -275,12 +275,6 @@ const MarketCorrection = () => {
             <a href="/">
               <img src="/lovable-uploads/white_oak.png" alt="Oak Real Estate Partners" className="h-8 w-auto" />
             </a>
-            <div>
-              <p className="text-[10px] tracking-[0.3em] uppercase" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>Oak Real Estate Partners</p>
-              <p className="text-[9px] tracking-[0.2em] uppercase mt-1" style={{ ...sans, color: "rgba(240,236,227,0.15)", fontWeight: 300 }}>
-                Institutional CRE Lending · Senior Secured · Real Assets
-              </p>
-            </div>
           </div>
           <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}>
             oakrepartners.com
