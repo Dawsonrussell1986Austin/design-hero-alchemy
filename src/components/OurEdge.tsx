@@ -14,7 +14,7 @@ const OurEdge = () => {
         />
         
         {/* Right side - Content with brand color background */}
-        <div className="bg-obsidian flex items-center py-12 lg:py-20">
+        <div className="bg-abyss flex items-center py-12 lg:py-20">
           <div className="container mx-auto px-6 lg:px-12">
             <div className="max-w-2xl">
               

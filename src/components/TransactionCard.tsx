@@ -17,7 +17,7 @@ interface TransactionCardProps {
 
 const TransactionCard = ({ transaction }: TransactionCardProps) => {
   return (
-    <Card className="bg-cream border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
+    <Card className="bg-cream border border-abyss/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
       {/* Property Type Badge */}
       <div className="relative">
         <div className="absolute top-4 left-4 bg-gold-accent text-cream px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
@@ -43,22 +43,22 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
       
       <CardContent className="p-6 bg-cream">
         {/* Property Name */}
-        <h3 className="text-xl font-display font-medium text-obsidian mb-4 leading-tight pb-3 border-b border-obsidian/10">
+        <h3 className="text-xl font-display font-medium text-abyss mb-4 leading-tight pb-3 border-b border-abyss/10">
           {transaction.name}
         </h3>
         
         {/* Region */}
-        <div className="text-obsidian/60 text-sm font-body uppercase tracking-wide mb-4 pb-3 border-b border-obsidian/10">
+        <div className="text-abyss/60 text-sm font-body uppercase tracking-wide mb-4 pb-3 border-b border-abyss/10">
           {transaction.location}
         </div>
         
         {/* Loan Amount */}
-        <div className="text-gold-accent text-2xl font-display font-medium mb-4 pb-3 border-b border-obsidian/10">
+        <div className="text-gold-accent text-2xl font-display font-medium mb-4 pb-3 border-b border-abyss/10">
           {transaction.loanSize}
         </div>
         
         {/* Loan Type */}
-        <div className="text-obsidian/60 text-sm font-body uppercase tracking-wide pt-1">
+        <div className="text-abyss/60 text-sm font-body uppercase tracking-wide pt-1">
           {transaction.loanType}
         </div>
       </CardContent>

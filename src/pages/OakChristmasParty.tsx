@@ -101,7 +101,7 @@ const OakChristmasParty = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <Navigation />
       
       {/* Hero/Welcome Section */}
@@ -127,7 +127,7 @@ const OakChristmasParty = () => {
       <section className="py-8 sm:py-12 bg-silver-mist">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-obsidian mb-1">Welcome to the Oak Real Estate Partners</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-abyss mb-1">Welcome to the Oak Real Estate Partners</h2>
             <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-gold-accent">Holiday Celebration</h2>
           </div>
           
@@ -144,7 +144,7 @@ const OakChristmasParty = () => {
                   />
                 </div>
                 <div className="text-center lg:text-left">
-                  <h3 className="text-xl sm:text-2xl font-display font-medium text-obsidian">Gary Bechtel</h3>
+                  <h3 className="text-xl sm:text-2xl font-display font-medium text-abyss">Gary Bechtel</h3>
                   <p className="text-gold-accent font-body font-semibold">Chief Executive Officer</p>
                 </div>
               </div>
@@ -152,10 +152,10 @@ const OakChristmasParty = () => {
               {/* Right Column - Message */}
               <div className="space-y-4 sm:space-y-5">
                 <div className="border-l-4 border-gold-accent pl-4 sm:pl-6">
-                  <h3 className="text-lg sm:text-xl md:text-2xl font-display font-medium text-obsidian mb-2">A Message from Our CEO</h3>
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-display font-medium text-abyss mb-2">A Message from Our CEO</h3>
                 </div>
                 
-                <div className="text-deep-petrol space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg leading-relaxed font-body">
+                <div className="text-graphite-fog space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg leading-relaxed font-body">
                   <p>
                     As we close out another remarkable year, I want to take a moment to thank each of you — our team, partners, and guests — for being part of Oak's continued growth and success.
                   </p>
@@ -185,7 +185,7 @@ const OakChristmasParty = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${winterCityBackground})` }}
         />
-        <div className="absolute inset-0 bg-obsidian/80" />
+        <div className="absolute inset-0 bg-abyss/80" />
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-cream mb-3 sm:mb-4 px-2">A Very Merry Oak Holiday--Party Agenda</h2>
@@ -308,8 +308,8 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
             <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-gold-accent mx-auto mb-2 sm:mb-3" />
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-medium text-obsidian mb-2 sm:mb-4 px-2">Things to Do While You're Here</h2>
-            <p className="text-deep-petrol text-base sm:text-lg font-body px-2">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-medium text-abyss mb-2 sm:mb-4 px-2">Things to Do While You're Here</h2>
+            <p className="text-graphite-fog text-base sm:text-lg font-body px-2">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
 
           <div className="max-w-7xl mx-auto relative">
@@ -341,7 +341,7 @@ const OakChristmasParty = () => {
                   <div className="min-h-[320px] sm:min-h-[280px] flex flex-col">
                     <div className="flex-grow">
                       <div className="flex items-start justify-between mb-4 sm:mb-6 gap-4">
-                        <h3 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-obsidian flex-1">
+                        <h3 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-abyss flex-1">
                           {activities[currentActivity].link ? (
                             <a 
                               href={activities[currentActivity].link}
@@ -352,14 +352,14 @@ const OakChristmasParty = () => {
                               {activities[currentActivity].title}
                             </a>
                           ) : (
-                            <span className="text-obsidian">{activities[currentActivity].title}</span>
+                            <span className="text-abyss">{activities[currentActivity].title}</span>
                           )}
                         </h3>
-                        <div className="text-xs sm:text-sm text-deep-petrol/60 font-body whitespace-nowrap">
+                        <div className="text-xs sm:text-sm text-graphite-fog/60 font-body whitespace-nowrap">
                           {currentActivity + 1} / {activities.length}
                         </div>
                       </div>
-                      <div className="text-deep-petrol font-body leading-relaxed text-base sm:text-lg">
+                      <div className="text-graphite-fog font-body leading-relaxed text-base sm:text-lg">
                         {typeof activities[currentActivity].content === 'string' ? (
                           <p>{activities[currentActivity].content}</p>
                         ) : (
@@ -369,7 +369,7 @@ const OakChristmasParty = () => {
                     </div>
                     
                     {/* Navigation Controls */}
-                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-obsidian/10">
+                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 sm:mt-10 pt-6 border-t border-abyss/10">
                       {/* Mobile: Simple arrows */}
                       <div className="flex sm:hidden items-center justify-between w-full gap-4">
                         <button
@@ -389,7 +389,7 @@ const OakChristmasParty = () => {
                               className={`h-2 rounded-full transition-all duration-300 ${
                                 index === currentActivity 
                                   ? 'bg-gold-accent w-8' 
-                                  : 'bg-deep-petrol/30 w-2 active:bg-gold-accent/50'
+                                  : 'bg-graphite-fog/30 w-2 active:bg-gold-accent/50'
                               }`}
                               aria-label={`Go to activity ${index + 1}`}
                             />
@@ -424,7 +424,7 @@ const OakChristmasParty = () => {
                             className={`h-2.5 rounded-full transition-all duration-300 ${
                               index === currentActivity 
                                 ? 'bg-gold-accent w-10' 
-                                : 'bg-deep-petrol/30 w-2.5 hover:bg-gold-accent/50'
+                                : 'bg-graphite-fog/30 w-2.5 hover:bg-gold-accent/50'
                             }`}
                             aria-label={`Go to activity ${index + 1}`}
                           />
@@ -454,7 +454,7 @@ const OakChristmasParty = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${christmasOrnamentsBackground})` }}
         />
-        <div className="absolute inset-0 bg-obsidian/80" />
+        <div className="absolute inset-0 bg-abyss/80" />
         <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-silver-mist mb-3 sm:mb-4 px-2">A Very Oak Holiday Playlist</h2>

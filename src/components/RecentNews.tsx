@@ -36,17 +36,17 @@ const RecentNews = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8">
               Recent News & Updates
             </h2>
-            <p className="text-lg text-deep-petrol leading-relaxed max-w-4xl mx-auto font-body">
+            <p className="text-lg text-graphite-fog leading-relaxed max-w-4xl mx-auto font-body">
               Stay informed with our latest transactions and market developments
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {recentArticles.map((article, index) => (
-              <div key={index} className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg overflow-hidden hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div key={index} className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg overflow-hidden hover:bg-background/80 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="aspect-[16/10] overflow-hidden">
                   <img 
                     src={article.image}
@@ -57,12 +57,12 @@ const RecentNews = () => {
                 <div className="p-6">
                   <div className="flex items-center space-x-2 mb-3">
                     <Calendar className="h-4 w-4 text-gold-accent" />
-                    <span className="text-sm text-deep-petrol/70">{article.date}</span>
+                    <span className="text-sm text-graphite-fog/70">{article.date}</span>
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian mb-3 line-clamp-2 leading-tight">
+                  <h3 className="text-lg font-display font-medium text-abyss mb-3 line-clamp-2 leading-tight">
                     {article.title}
                   </h3>
-                  <p className="text-deep-petrol leading-relaxed font-body text-sm mb-4 line-clamp-3">
+                  <p className="text-graphite-fog leading-relaxed font-body text-sm mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
                   <Link to={article.isBlog ? `/blog/${article.slug}` : `/news/${article.slug}`}>

@@ -22,7 +22,7 @@ const FhaHudLoans = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -50,37 +50,37 @@ const FhaHudLoans = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 sm:mb-6 leading-tight">
+                <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-abyss mb-4 sm:mb-6 leading-tight">
                   Long-Term Government-Backed Financing
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   FHA/HUD insured loan programs for multifamily, affordable housing, senior living, and healthcare properties.
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed mb-8">
                   Johnson Capital Multifamily (JCM) provides comprehensive FHA/HUD insured financing solutions offering long term, government-backed capital with competitive rates and favorable terms.
                 </p>
 
                 {/* Key Features */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-semibold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     FHA/HUD Program Advantages
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Long-term fixed-rate financing up to 40 years</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Long-term fixed-rate financing up to 40 years</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Government insurance reduces lending risk</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Government insurance reduces lending risk</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Non-recourse financing available</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Non-recourse financing available</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Streamlined refinancing options</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Streamlined refinancing options</p>
                     </div>
                   </div>
                 </div>
@@ -98,17 +98,17 @@ const FhaHudLoans = () => {
 
             {/* Section: Multifamily & Affordable Housing Programs */}
             <div className="mb-12">
-              <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-2">
+              <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-2">
                 Multifamily & Affordable Housing Programs
               </h2>
-              <p className="text-lg text-obsidian/70 mb-8">
+              <p className="text-lg text-abyss/70 mb-8">
                 Comprehensive financing solutions for multifamily and affordable housing developments
               </p>
 
               <div className="grid md:grid-cols-2 gap-8">
                 
                 {/* HUD 221(D)4 & 220 */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -118,7 +118,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 221(D)(4) & 220
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -127,7 +127,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Construction or substantial rehabilitation financing for multifamily properties. Ideal for new developments and major renovations.
                   </p>
                   
@@ -140,7 +140,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* HUD 223(F) */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -150,7 +150,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 223(F)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -159,7 +159,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Acquisition or refinance of existing multifamily properties. Perfect for stabilized assets with established cash flow.
                   </p>
                   
@@ -172,7 +172,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* HUD 223(A)7 */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -182,7 +182,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 223(A)(7)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -191,7 +191,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Streamlined refinance of existing HUD-financed multifamily properties. Expedited processing with reduced documentation requirements.
                   </p>
                   
@@ -204,7 +204,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* HUD 241(A) */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -214,7 +214,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         HUD 241(A)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -223,7 +223,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Supplemental loans for capital improvements to FHA-insured multifamily properties. Finance renovations while maintaining existing loan.
                   </p>
                   
@@ -240,17 +240,17 @@ const FhaHudLoans = () => {
 
             {/* Section: Senior Housing & Healthcare Programs */}
             <div className="mb-12">
-              <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-2">
+              <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-2">
                 Senior Housing & Healthcare Programs
               </h2>
-              <p className="text-lg text-obsidian/70 mb-8">
+              <p className="text-lg text-abyss/70 mb-8">
                 Specialized financing for senior living facilities and healthcare properties
               </p>
 
               <div className="grid md:grid-cols-2 gap-8">
                 
                 {/* 232/221(D)4 */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -260,7 +260,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/221(D)(4)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -269,7 +269,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Construction or substantial rehabilitation of senior housing and healthcare facilities. Designed for assisted living, memory care, and skilled nursing facilities.
                   </p>
                   
@@ -282,7 +282,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* 232/223(F) */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -292,7 +292,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/223(F)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -301,7 +301,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Acquisition or refinance of existing senior housing and healthcare facilities. Perfect for stabilized senior living properties.
                   </p>
                   
@@ -314,7 +314,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* 232/223(A)(7) */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                         <img 
@@ -324,7 +324,7 @@ const FhaHudLoans = () => {
                         />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         232/223(A)(7)
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -333,7 +333,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Streamlined refinance of existing HUD-financed senior housing and healthcare properties. Expedited processing for qualifying properties.
                   </p>
                   
@@ -346,7 +346,7 @@ const FhaHudLoans = () => {
                 </div>
 
                 {/* 241(A) Senior */}
-                <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+                <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                   <div className="flex items-center space-x-4 mb-6">
                     <div className="w-16 h-16 flex-shrink-0">
                        <img 
@@ -356,7 +356,7 @@ const FhaHudLoans = () => {
                        />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-1">
+                      <h3 className="text-xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-1">
                         241(A) Senior
                       </h3>
                       <p className="text-sm font-medium text-gold-accent tracking-wider">
@@ -365,7 +365,7 @@ const FhaHudLoans = () => {
                     </div>
                   </div>
                   
-                  <p className="text-obsidian/80 leading-relaxed mb-6">
+                  <p className="text-abyss/80 leading-relaxed mb-6">
                     Supplemental mortgage insurance for HUD-insured senior housing and healthcare properties. Finance improvements while maintaining existing financing.
                   </p>
                   
@@ -381,11 +381,11 @@ const FhaHudLoans = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
+            <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-display font-medium text-abyss mb-4">
                 Ready to Explore FHA/HUD Financing?
               </h3>
-              <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-abyss/80 leading-relaxed mb-6 max-w-3xl mx-auto">
                 Johnson Capital Multifamily specialists can help you navigate the application process and determine the best program for your multifamily, senior housing, or healthcare property.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

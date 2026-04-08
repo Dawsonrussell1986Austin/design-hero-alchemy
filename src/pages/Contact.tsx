@@ -30,7 +30,7 @@ const Contact = () => {
         { name: 'Contact', url: '/contact' }
       ]} />
       {/* Header with dark background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -48,10 +48,10 @@ const Contact = () => {
             
             {/* Main Title */}
             <div className="text-center mb-8 sm:mb-12">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4 leading-tight px-2">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-abyss mb-4 leading-tight px-2">
                 Get in <span className="text-gold-accent">Touch</span>
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl font-body font-normal text-obsidian/80 max-w-2xl mx-auto px-2">
+              <p className="text-base sm:text-lg lg:text-xl font-body font-normal text-abyss/80 max-w-2xl mx-auto px-2">
                 Whether you're seeking bridge financing or exploring investment opportunities.
               </p>
             </div>
@@ -59,8 +59,8 @@ const Contact = () => {
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
               
               {/* Left Side - Embedded GHL Form */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
-                <h2 className="text-xl font-display font-medium text-obsidian mb-6">Send Us a Message</h2>
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg order-2 lg:order-1">
+                <h2 className="text-xl font-display font-medium text-abyss mb-6">Send Us a Message</h2>
                 <iframe
                   src="https://invest.oakrepartners.com/widget/form/794zC2IpExPALxESsWC5"
                   style={{ width: "100%", height: "600px", border: "none", borderRadius: "3px" }}
@@ -90,7 +90,7 @@ const Contact = () => {
                 />
                 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-l from-obsidian/40 via-transparent to-obsidian/60"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-abyss/40 via-transparent to-abyss/60"></div>
 
                 {/* Glassmorphic Contact Info Cards */}
                 <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8">

@@ -9,7 +9,7 @@ const KevinKennedy = () => {
   const navigate = useNavigate();
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       {/* Navigation */}
       <Navigation />
       
@@ -31,7 +31,7 @@ const KevinKennedy = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-3 gap-8 items-start">
               <div className="lg:col-span-1">
-                <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-deep-petrol rounded-sm p-4 max-w-sm mx-auto">
+                <div className="aspect-[4/5] bg-gradient-to-br from-graphite-fog to-graphite-fog rounded-sm p-4 max-w-sm mx-auto">
                   <img 
                     src="/lovable-uploads/kevin-kennedy-headshot.jpg"
                     alt="Kevin P. Kennedy"

@@ -58,7 +58,7 @@ const ThankYouBooking = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gold-accent/10 rounded-full mb-6">
               <CalendarCheck className="w-8 h-8 text-gold-accent" />
             </div>
-            <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-4">
+            <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-4">
               You're All Set!
             </h1>
             <p className="text-lg text-graphite-fog font-body leading-relaxed max-w-2xl mx-auto">
@@ -76,7 +76,7 @@ const ThankYouBooking = () => {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-gold-accent/10 rounded-xl mb-4">
                   <resource.icon className="w-6 h-6 text-gold-accent" />
                 </div>
-                <h3 className="text-lg font-display font-medium text-obsidian mb-2">
+                <h3 className="text-lg font-display font-medium text-abyss mb-2">
                   {resource.title}
                 </h3>
                 <p className="text-sm text-graphite-fog font-body leading-relaxed mb-4 flex-1">

@@ -22,7 +22,7 @@ const InvestorEducation = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -46,10 +46,10 @@ const InvestorEducation = () => {
               <div className="mx-auto w-20 h-20 bg-gold-accent/10 rounded-xl flex items-center justify-center mb-6">
                 <BookOpen className="h-10 w-10 text-gold-accent" />
               </div>
-              <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
+              <h1 className="text-4xl lg:text-5xl font-display font-medium text-abyss">
                 Video Library
               </h1>
-              <p className="text-xl font-body text-deep-petrol leading-relaxed">
+              <p className="text-xl font-body text-graphite-fog leading-relaxed">
                 Explore our comprehensive video library. Select a topic below to watch videos and learn more.
               </p>
             </div>
@@ -66,7 +66,7 @@ const InvestorEducation = () => {
                   to={`/videos/${category.id}`}
                   className="group"
                 >
-                  <div className="bg-obsidian rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-gold-accent/20 hover:border-gold-accent">
+                  <div className="bg-abyss rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-gold-accent/20 hover:border-gold-accent">
                     {/* Thumbnail Image with Overlay */}
                     <div className="relative aspect-video overflow-hidden">
                       <img 
@@ -74,12 +74,12 @@ const InvestorEducation = () => {
                         alt={category.question}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/60 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-abyss via-obsidian/60 to-transparent" />
                       
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-20 h-20 bg-cream/90 rounded-full flex items-center justify-center group-hover:bg-gold-accent group-hover:scale-110 transition-all duration-300 shadow-xl">
-                          <Play className="h-10 w-10 text-obsidian group-hover:text-cream ml-1" fill="currentColor" />
+                          <Play className="h-10 w-10 text-abyss group-hover:text-cream ml-1" fill="currentColor" />
                         </div>
                       </div>
                       
@@ -92,7 +92,7 @@ const InvestorEducation = () => {
                     </div>
                     
                     {/* Card Content */}
-                    <div className="p-6 space-y-4 bg-obsidian">
+                    <div className="p-6 space-y-4 bg-abyss">
                       <p className="font-body text-silver-mist/90 leading-relaxed">
                         {category.description}
                       </p>
@@ -112,7 +112,7 @@ const InvestorEducation = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 px-4 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+        <section className="py-16 px-4 bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
           <div className="container mx-auto max-w-4xl text-center space-y-8">
             <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist">
               Ready to Invest?

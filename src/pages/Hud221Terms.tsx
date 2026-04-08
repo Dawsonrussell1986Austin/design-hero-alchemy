@@ -7,7 +7,7 @@ const Hud221Terms = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -36,22 +36,22 @@ const Hud221Terms = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   HUD 221(d)4 & 220
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   New Construction or Substantial Rehabilitation of Multifamily Properties
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed mb-8">
                   New construction or substantial rehabilitation financing for multifamily properties. Ideal for new developments and major renovations with long-term, government-backed capital.
                 </p>
 
                 {/* Why Consider This Program */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg mb-8">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg mb-8">
+                  <h3 className="text-lg font-semibold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Why Consider This Program?
                   </h3>
-                  <ul className="space-y-2 text-obsidian/80">
+                  <ul className="space-y-2 text-abyss/80">
                     <li className="flex items-start space-x-2">
                       <span className="text-garnet-edge mt-1">•</span>
                       <span>Up to 90% loan-to-cost for new construction</span>
@@ -85,52 +85,52 @@ const Hud221Terms = () => {
 
             {/* Financing Parameters Section */}
             <div className="mb-12">
-              <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-8">
+              <h2 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-8">
                 Financing Parameters
               </h2>
               
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 shadow-lg">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 shadow-lg">
                 <table className="w-full">
                   <tbody className="space-y-4">
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Maximum Loan Amount</td>
-                      <td className="py-4 text-obsidian/80">No statutory limit</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Maximum Loan Amount</td>
+                      <td className="py-4 text-abyss/80">No statutory limit</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Loan-to-Cost</td>
-                      <td className="py-4 text-obsidian/80">Up to 90% for new construction, 85% for substantial rehabilitation</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Loan-to-Cost</td>
+                      <td className="py-4 text-abyss/80">Up to 90% for new construction, 85% for substantial rehabilitation</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Term</td>
-                      <td className="py-4 text-obsidian/80">Up to 40 years</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Term</td>
+                      <td className="py-4 text-abyss/80">Up to 40 years</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Amortization</td>
-                      <td className="py-4 text-obsidian/80">40 years</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Amortization</td>
+                      <td className="py-4 text-abyss/80">40 years</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Interest Rate</td>
-                      <td className="py-4 text-obsidian/80">Fixed rate based on current market conditions</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Interest Rate</td>
+                      <td className="py-4 text-abyss/80">Fixed rate based on current market conditions</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Prepayment</td>
-                      <td className="py-4 text-obsidian/80">Various prepayment options available</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Prepayment</td>
+                      <td className="py-4 text-abyss/80">Various prepayment options available</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Property Types</td>
-                      <td className="py-4 text-obsidian/80">Multifamily rental housing (5+ units)</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Property Types</td>
+                      <td className="py-4 text-abyss/80">Multifamily rental housing (5+ units)</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Minimum DSCR</td>
-                      <td className="py-4 text-obsidian/80">1.15x - 1.20x (varies by market and property type)</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Minimum DSCR</td>
+                      <td className="py-4 text-abyss/80">1.15x - 1.20x (varies by market and property type)</td>
                     </tr>
-                    <tr className="border-b border-obsidian/10">
-                      <td className="py-4 font-semibold text-obsidian">Recourse</td>
-                      <td className="py-4 text-obsidian/80">Non-recourse (with standard carve-outs)</td>
+                    <tr className="border-b border-abyss/10">
+                      <td className="py-4 font-semibold text-abyss">Recourse</td>
+                      <td className="py-4 text-abyss/80">Non-recourse (with standard carve-outs)</td>
                     </tr>
                     <tr>
-                      <td className="py-4 font-semibold text-obsidian">Processing Time</td>
-                      <td className="py-4 text-obsidian/80">6-12 months from application to closing</td>
+                      <td className="py-4 font-semibold text-abyss">Processing Time</td>
+                      <td className="py-4 text-abyss/80">6-12 months from application to closing</td>
                     </tr>
                   </tbody>
                 </table>
@@ -144,10 +144,10 @@ const Hud221Terms = () => {
         <section className="py-20 bg-cream/40">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8">
                 Ready to Explore HUD 221(d)4 Financing?
               </h2>
-              <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
+              <p className="text-lg text-abyss/80 leading-relaxed mb-12">
                 Our HUD specialists can help you navigate the application process and determine if this program is right for your multifamily development.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -159,7 +159,7 @@ const Hud221Terms = () => {
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-cream px-12 py-4 text-lg font-medium"
+                  className="border-2 border-abyss text-abyss hover:bg-abyss hover:text-cream px-12 py-4 text-lg font-medium"
                   onClick={() => window.location.href = "/lending/fha-hud"}
                 >
                   View All HUD Programs

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 const OakParallelBridgeFactSheet = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <Navigation />
       
       <section className="relative overflow-hidden pt-32 pb-20 px-4">
@@ -24,7 +24,7 @@ const OakParallelBridgeFactSheet = () => {
       <section className="py-16 px-4 bg-silver-mist">
         <div className="container mx-auto max-w-4xl">
           <div className="space-y-6 text-center">
-            <p className="text-deep-petrol font-body leading-relaxed">
+            <p className="text-graphite-fog font-body leading-relaxed">
               Download the Oak Parallel Bridge Credit Fund Fact Sheet below.
             </p>
             <Button

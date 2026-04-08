@@ -22,7 +22,7 @@ const Investing = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -49,41 +49,41 @@ const Investing = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   Strategic Investment Solutions
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Institutional-quality opportunities. Transparent structures. Professional management.
                 </p>
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
                   Oak offers a curated selection of investment vehicles designed for sophisticated investors seeking consistent returns through disciplined real estate credit strategies. Our platform is capitalized by both retail and institutional investors, each offering undergoes rigorous due diligence and structural analysis.
                 </p>
                 
-                <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
                   We provide institutional-quality opportunities with transparent structures and professional management designed to deliver superior risk-adjusted returns through diversified commercial real estate credit investments.
                 </p>
                 
                 {/* Investment Philosophy - Under text */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-bold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Investor-Focused Philosophy
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Capital preservation and consistent yield generation</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Capital preservation and consistent yield generation</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Transparent reporting and investor communication</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Transparent reporting and investor communication</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Institutional-quality due diligence standards</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Institutional-quality due diligence standards</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Diversified portfolio construction and risk management</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Diversified portfolio construction and risk management</p>
                     </div>
                   </div>
                 </div>
@@ -110,89 +110,89 @@ const Investing = () => {
             
 
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8">
                 Why Private Credit Real Estate Lending?
               </h2>
-              <p className="text-lg text-deep-petrol leading-relaxed max-w-4xl mx-auto font-body">
+              <p className="text-lg text-graphite-fog leading-relaxed max-w-4xl mx-auto font-body">
                 In a broad market of investment types where many types have evolving uncertainties, exposure to private credit that is senior secured and backed by income producing commercial real estate assets offers several key advantages:
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Market Opportunity */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <TrendingUp className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Market Opportunity</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Market Opportunity</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Restrictive banking regulations requiring increased capital reserves for banks have constrained their ability to provide debt capital, creating a unique opportunity for experienced private credit providers to generate highly attractive returns with lower levels of risk.
                 </p>
               </div>
 
               {/* Risk Mitigation */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <Shield className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Risk Mitigation</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Risk Mitigation</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Deal structure and comprehensive institutional credit underwriting standards mitigate risk and protect against capital impairment. Private credit's lending opportunities are secured by hard commercial real estate assets that carry a significant amount of intrinsic value with downside protection during times of market distress.
                 </p>
               </div>
 
               {/* Diversification */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <BarChart3 className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Diversification</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Diversification</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Exposure to the commercial real estate asset class with a private credit strategy enhances diversification and risk-efficiency while reducing an investment portfolio's volatility all while delivering a return stream uncorrelated with other investment types.
                 </p>
               </div>
 
               {/* Income Oriented */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <DollarSign className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Income Oriented</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Income Oriented</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Private credit strategies are designed to generate stable, consistent cash flows for investors seeking reliable income with upside capture opportunity.
                 </p>
               </div>
 
               {/* Performance */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <Target className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Performance</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Performance</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Private credit's historical performance has demonstrated higher yield premiums which can contribute to the optimization of an investment portfolio.
                 </p>
               </div>
 
               {/* Our Strategy */}
-              <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
+              <div className="bg-background/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
                   <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
                     <MapPin className="h-5 w-5 text-gold-accent" />
                   </div>
-                  <h3 className="text-lg font-display font-medium text-obsidian">Our Strategy</h3>
+                  <h3 className="text-lg font-display font-medium text-abyss">Our Strategy</h3>
                 </div>
-                <p className="text-deep-petrol leading-relaxed font-body text-sm">
+                <p className="text-graphite-fog leading-relaxed font-body text-sm">
                   Our strategy is designed to capture latent value in overlooked market niches while prioritizing downside protection, income consistency, and return performance.
                 </p>
               </div>
@@ -202,7 +202,7 @@ const Investing = () => {
       </div>
       
       {/* Contact Section - Dark Background */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
           <div className="container mx-auto px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
@@ -224,7 +224,7 @@ const Investing = () => {
                 <Button 
                   variant="outline"
                   size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-obsidian hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
+                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-abyss hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Schedule a Call

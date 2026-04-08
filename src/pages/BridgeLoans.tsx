@@ -22,7 +22,7 @@ const BridgeLoans = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -50,37 +50,37 @@ const BridgeLoans = () => {
                   </span>
                 </div>
                 
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
+                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
                   Short-Term Commercial Real Estate Financing
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Flexible bridge loans designed for acquisition, renovation, and stabilization strategies.
                 </p>
-                <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
+                <p className="text-lg font-body text-abyss/80 leading-relaxed mb-8">
                   Our bridge loan programs provide short-term financing solutions tailored to your investment strategy. From stabilized properties to complex value-add opportunities, we offer competitive terms and efficient execution.
                 </p>
 
                 {/* Key Features */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-semibold text-obsidian mb-4 pb-2 border-b border-obsidian/20">
+                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
+                  <h3 className="text-lg font-semibold text-abyss mb-4 pb-2 border-b border-abyss/20">
                     Why Choose Oak Bridge Loans
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Fast approval and closing timelines</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Fast approval and closing timelines</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Competitive rates and flexible terms</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Competitive rates and flexible terms</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Experienced underwriting team</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Experienced underwriting team</p>
                     </div>
                     <div className="flex items-start space-x-2">
                       <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-obsidian/80 leading-relaxed">Coordination with JCM for FHA takeout options</p>
+                      <p className="text-sm text-abyss/80 leading-relaxed">Coordination with JCM for FHA takeout options</p>
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ const BridgeLoans = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Core Bridge */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -110,7 +110,7 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Core Bridge
                     </h3>
                     <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
@@ -119,22 +119,22 @@ const BridgeLoans = () => {
                   </div>
                 </div>
                 
-                <p className="text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-abyss/80 leading-relaxed mb-6">
                   Loans for stabilized properties currently at or above breakdown cash flow. Ideal for acquisitions of performing assets or light capital improvements.
                 </p>
                 
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
+                    <span className="text-sm text-abyss/70">Loan Amount:</span>
+                    <span className="text-sm font-medium text-abyss">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">LTV:</span>
-                    <span className="text-sm font-medium text-obsidian">Up to 80%</span>
+                    <span className="text-sm text-abyss/70">LTV:</span>
+                    <span className="text-sm font-medium text-abyss">Up to 80%</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">12-36 months</span>
+                    <span className="text-sm text-abyss/70">Term:</span>
+                    <span className="text-sm font-medium text-abyss">12-36 months</span>
                   </div>
                 </div>
                 
@@ -147,7 +147,7 @@ const BridgeLoans = () => {
               </div>
 
               {/* Core-Plus Bridge */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -157,7 +157,7 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Core-Plus Bridge
                     </h3>
                     <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
@@ -166,22 +166,22 @@ const BridgeLoans = () => {
                   </div>
                 </div>
                 
-                <p className="text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-abyss/80 leading-relaxed mb-6">
                   Loans for properties currently below breakdown cash flow with light renovation or lease-up potential. Perfect for properties needing modest improvements.
                 </p>
                 
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
+                    <span className="text-sm text-abyss/70">Loan Amount:</span>
+                    <span className="text-sm font-medium text-abyss">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">LTV:</span>
-                    <span className="text-sm font-medium text-obsidian">Up to 75%</span>
+                    <span className="text-sm text-abyss/70">LTV:</span>
+                    <span className="text-sm font-medium text-abyss">Up to 75%</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">24-36 months</span>
+                    <span className="text-sm text-abyss/70">Term:</span>
+                    <span className="text-sm font-medium text-abyss">24-36 months</span>
                   </div>
                 </div>
                 
@@ -194,7 +194,7 @@ const BridgeLoans = () => {
               </div>
 
               {/* Opportunistic Bridge */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -204,7 +204,7 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Opportunistic Bridge
                     </h3>
                     <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
@@ -213,22 +213,22 @@ const BridgeLoans = () => {
                   </div>
                 </div>
                 
-                <p className="text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-abyss/80 leading-relaxed mb-6">
                   Higher-leverage loans for value-add strategies and capital improvements. Designed for experienced sponsors with proven renovation and repositioning expertise.
                 </p>
                 
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$2M - $50M+</span>
+                    <span className="text-sm text-abyss/70">Loan Amount:</span>
+                    <span className="text-sm font-medium text-abyss">$2M - $50M+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">LTV:</span>
-                    <span className="text-sm font-medium text-obsidian">Up to 85%</span>
+                    <span className="text-sm text-abyss/70">LTV:</span>
+                    <span className="text-sm font-medium text-abyss">Up to 85%</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">18-36 months</span>
+                    <span className="text-sm text-abyss/70">Term:</span>
+                    <span className="text-sm font-medium text-abyss">18-36 months</span>
                   </div>
                 </div>
                 
@@ -241,7 +241,7 @@ const BridgeLoans = () => {
               </div>
 
               {/* Participating Bridge */}
-              <div className="bg-cream/80 backdrop-blur-sm border border-obsidian/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="bg-cream/80 backdrop-blur-sm border border-abyss/10 rounded-xl p-8 hover:bg-cream/90 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                 <div className="flex items-center space-x-6 mb-6">
                   <div className="w-24 h-24 flex-shrink-0">
                     <img 
@@ -251,7 +251,7 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-abyss group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Participating Bridge
                     </h3>
                     <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
@@ -260,22 +260,22 @@ const BridgeLoans = () => {
                   </div>
                 </div>
                 
-                <p className="text-obsidian/80 leading-relaxed mb-6">
+                <p className="text-abyss/80 leading-relaxed mb-6">
                   High leverage, highly structured loans for sponsors seeking adaptive re-use capital and shared appreciation. Features equity participation and performance incentives.
                 </p>
                 
                 <div className="space-y-2 mb-6">
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Loan Amount:</span>
-                    <span className="text-sm font-medium text-obsidian">$2M - $30M+</span>
+                    <span className="text-sm text-abyss/70">Loan Amount:</span>
+                    <span className="text-sm font-medium text-abyss">$2M - $30M+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">LTV:</span>
-                    <span className="text-sm font-medium text-obsidian">Up to 90%</span>
+                    <span className="text-sm text-abyss/70">LTV:</span>
+                    <span className="text-sm font-medium text-abyss">Up to 90%</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-sm text-obsidian/70">Term:</span>
-                    <span className="text-sm font-medium text-obsidian">24-48 months</span>
+                    <span className="text-sm text-abyss/70">Term:</span>
+                    <span className="text-sm font-medium text-abyss">24-48 months</span>
                   </div>
                 </div>
                 
@@ -290,11 +290,11 @@ const BridgeLoans = () => {
             </div>
 
             {/* Contact Section */}
-            <div className="mt-16 bg-cream/60 backdrop-blur-sm border border-obsidian/20 rounded-lg p-8 text-center">
-              <h3 className="text-2xl font-display font-medium text-obsidian mb-4">
+            <div className="mt-16 bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-display font-medium text-abyss mb-4">
                 Ready to Discuss Your Bridge Loan Needs?
               </h3>
-              <p className="text-lg text-obsidian/80 leading-relaxed mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-abyss/80 leading-relaxed mb-6 max-w-3xl mx-auto">
                 Our experienced lending team can help you determine the right bridge loan program for your investment strategy and provide competitive terms with efficient execution.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

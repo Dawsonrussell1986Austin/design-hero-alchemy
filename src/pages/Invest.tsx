@@ -19,7 +19,7 @@ const Invest = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
       <SEOHead
         title="Invest with Oak | Oak RE Partners"
         description="Access the Oak Investment Fact Sheet, investor resources, and learn how to invest with Oak RE Partners."
@@ -63,7 +63,7 @@ const Invest = () => {
 
       <section className="py-16 px-4 bg-silver-mist mt-auto">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-display font-medium text-obsidian text-center mb-10">
+          <h2 className="text-2xl font-display font-medium text-abyss text-center mb-10">
             More Investor Resources
           </h2>
           <div className="grid gap-6 sm:grid-cols-2 max-w-2xl mx-auto">
@@ -71,36 +71,36 @@ const Invest = () => {
               to="/webinars"
               className="group bg-cream rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
             >
-              <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-deep-petrol/10 rounded-full group-hover:bg-deep-petrol/20 transition-colors">
-                <Video className="w-6 h-6 text-deep-petrol" />
+              <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-graphite-fog/10 rounded-full group-hover:bg-graphite-fog/20 transition-colors">
+                <Video className="w-6 h-6 text-graphite-fog" />
               </div>
               <div>
-                <h3 className="text-base font-display font-medium text-obsidian">
+                <h3 className="text-base font-display font-medium text-abyss">
                   Investor Webinar
                 </h3>
                 <p className="text-sm text-graphite-fog font-body">
                   Register for an upcoming session
                 </p>
               </div>
-              <ArrowRight className="ml-auto w-4 h-4 text-graphite-fog group-hover:text-deep-petrol transition-colors shrink-0" />
+              <ArrowRight className="ml-auto w-4 h-4 text-graphite-fog group-hover:text-graphite-fog transition-colors shrink-0" />
             </Link>
 
             <Link
               to="/cedar-mill-case-study"
               className="group bg-cream rounded-xl shadow-md p-6 flex items-center gap-4 hover:shadow-lg transition-shadow"
             >
-              <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-deep-petrol/10 rounded-full group-hover:bg-deep-petrol/20 transition-colors">
-                <Play className="w-6 h-6 text-deep-petrol" />
+              <div className="shrink-0 inline-flex items-center justify-center w-12 h-12 bg-graphite-fog/10 rounded-full group-hover:bg-graphite-fog/20 transition-colors">
+                <Play className="w-6 h-6 text-graphite-fog" />
               </div>
               <div>
-                <h3 className="text-base font-display font-medium text-obsidian">
+                <h3 className="text-base font-display font-medium text-abyss">
                   Case Study
                 </h3>
                 <p className="text-sm text-graphite-fog font-body">
                   Watch the Cedar Mill walkthrough
                 </p>
               </div>
-              <ArrowRight className="ml-auto w-4 h-4 text-graphite-fog group-hover:text-deep-petrol transition-colors shrink-0" />
+              <ArrowRight className="ml-auto w-4 h-4 text-graphite-fog group-hover:text-graphite-fog transition-colors shrink-0" />
             </Link>
           </div>
         </div>

@@ -72,7 +72,7 @@ const Leadership = () => {
         ]}
       />
       {/* Navigation */}
-      <div className="bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
@@ -94,18 +94,18 @@ const Leadership = () => {
             <div className="max-w-6xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-16 items-start">
                 {/* Left Column - Content */}
-                <div className="space-y-8 text-obsidian">
-                  <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian leading-tight">
+                <div className="space-y-8 text-abyss">
+                  <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss leading-tight">
                     Operational Expertise Backed by <span className="text-gold-accent">$18B+<sup>³</sup> in Transactions</span>
                   </h1>
-                  <p className="text-lg lg:text-xl font-body font-normal text-obsidian leading-relaxed">
+                  <p className="text-lg lg:text-xl font-body font-normal text-abyss leading-relaxed">
                     Oak's leadership team brings unmatched experience and depth to our real estate lending operations, 
                     investment management, and long-term strategic initiatives. We are seasoned operators, not theorists — 
                     practitioners who have executed on more than $18 billion in transaction volume over decades, across 
                     cycles, geographies, and asset classes.
                   </p>
                   
-                  <p className="text-xs text-obsidian/60 font-sans mb-6">
+                  <p className="text-xs text-abyss/60 font-sans mb-6">
                     ³ Represents experience of current management team, whether at Oak or predecessor firms.
                   </p>
                   
@@ -128,7 +128,7 @@ const Leadership = () => {
                       alt="Modern conference room with green chairs"
                       className="w-full h-[600px] object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-obsidian/30 via-transparent to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-abyss/30 via-transparent to-transparent"></div>
                   </div>
                   
                   {/* Glassmorphic Values Card Overlay */}
@@ -165,7 +165,7 @@ const Leadership = () => {
 
 
       {/* Team Cards */}
-      <div className="py-20 bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol">
+      <div className="py-20 bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
@@ -203,7 +203,7 @@ const Leadership = () => {
                     }
                   }}
                 >
-                  <div className="aspect-square bg-gradient-to-br from-graphite-fog to-deep-petrol p-8 flex items-center justify-center">
+                  <div className="aspect-square bg-gradient-to-br from-graphite-fog to-graphite-fog p-8 flex items-center justify-center">
                     {leader.image && (leader.name === "Gary Bechtel" || leader.name === "Raymond T. Davis" || leader.name === "Paul Cleary" || leader.name === "Matthew Webster" || leader.name === "Kevin P. Kennedy" || leader.name === "Robert R. Kaplan, Jr." || leader.name === "Thomas A. McGovern" || leader.name === "Brook Scardina") ? (
                       <img 
                         src={leader.image} 
@@ -242,10 +242,10 @@ const Leadership = () => {
       <div className="py-20 bg-silver-mist">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl lg:text-4xl font-display font-light text-obsidian mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-light text-abyss mb-8">
               Ready to Work with Our Team?
             </h2>
-            <p className="text-lg text-obsidian/80 leading-relaxed mb-12">
+            <p className="text-lg text-abyss/80 leading-relaxed mb-12">
               Connect with Oak's leadership team to discuss how our experience and disciplined approach 
               can benefit your real estate financing needs.
             </p>
@@ -260,7 +260,7 @@ const Leadership = () => {
               <Button 
                 variant="outline"
                 size="lg"
-                className="border-2 border-obsidian text-obsidian hover:bg-obsidian hover:text-silver-mist hover:border-obsidian px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
+                className="border-2 border-abyss text-abyss hover:bg-abyss hover:text-silver-mist hover:border-abyss px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm"
                 onClick={() => window.location.href = '/about'}
               >
                 View Our Approach

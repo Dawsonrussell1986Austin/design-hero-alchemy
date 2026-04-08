@@ -14,7 +14,7 @@ const Disclosures = () => {
       <Navigation />
       
       <main className="flex-1">
-        <div className="bg-obsidian py-16">
+        <div className="bg-abyss py-16">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
               <Breadcrumb 
