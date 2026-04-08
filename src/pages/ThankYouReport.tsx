@@ -36,7 +36,7 @@ const ThankYouReport = () => {
 
         <div className="max-w-2xl mx-auto text-center">
 
-          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#c9a84c", fontWeight: 500 }}>
+          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
             You're In
           </p>
 
@@ -59,7 +59,7 @@ const ThankYouReport = () => {
               rel="noopener noreferrer"
               download
               className="inline-flex items-center gap-3 py-3 px-8 text-[11px] tracking-[0.3em] uppercase transition-opacity hover:opacity-90"
-              style={{ ...sans, backgroundColor: "#c9a84c", color: "#060D14", fontWeight: 600 }}
+              style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
             >
               <Download className="h-4 w-4" />
               Download the Report
@@ -70,7 +70,7 @@ const ThankYouReport = () => {
           <a
             href="/"
             className="inline-flex items-center gap-2 mt-12 text-sm tracking-wide hover:underline underline-offset-4 transition-opacity"
-            style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}
+            style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}
           >
             Visit oakrepartners.com <ArrowRight className="h-4 w-4" />
           </a>
@@ -86,7 +86,7 @@ const ThankYouReport = () => {
               Institutional CRE Lending · Senior Secured · Real Assets
             </p>
           </div>
-          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#c9a84c", fontWeight: 400 }}>
+          <a href="https://oakrepartners.com" target="_blank" rel="noopener noreferrer" className="text-[10px] tracking-wide hover:underline underline-offset-4" style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}>
             oakrepartners.com
           </a>
         </div>

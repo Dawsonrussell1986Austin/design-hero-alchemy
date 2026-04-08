@@ -21,8 +21,8 @@ const Navigation = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-silver-mist/95 backdrop-blur-xl border-b border-gray-200 shadow-lg' 
-        : 'bg-silver-mist/90 backdrop-blur-sm border-b border-gray-100'
+        ? 'bg-silver-mist/95 backdrop-blur-xl border-b border-obsidian/10 shadow-lg' 
+        : 'bg-silver-mist/90 backdrop-blur-sm border-b border-obsidian/5'
     }`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
@@ -41,7 +41,7 @@ const Navigation = () => {
           <div className="hidden lg:flex items-center space-x-12">
             <div className="group relative">
               <button className={`flex items-center transition-all duration-300 font-body font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Our Firm
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -52,13 +52,13 @@ const Navigation = () => {
               
               {/* Dropdown Menu */}
               <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
+                scrolled ? 'bg-silver-mist border-obsidian/10' : 'bg-silver-mist border-obsidian/10'
               }`}>
                 <div className="py-2">
                   <a 
                     href="/about" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     About Us
@@ -66,7 +66,7 @@ const Navigation = () => {
                   <a 
                     href="/leadership" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Leadership
@@ -74,7 +74,7 @@ const Navigation = () => {
                   <a 
                     href="/subsidiaries" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Our Subsidiaries
@@ -84,7 +84,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <button className={`flex items-center transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Lending
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -95,13 +95,13 @@ const Navigation = () => {
               
               {/* Lending Dropdown Menu */}
               <div className={`absolute left-0 top-full w-56 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
+                scrolled ? 'bg-silver-mist border-obsidian/10' : 'bg-silver-mist border-obsidian/10'
               }`}>
                 <div className="py-2">
                   <a 
                     href="/lending" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Overview
@@ -109,7 +109,7 @@ const Navigation = () => {
                   <a 
                     href="/lending/bridge" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Bridge Loan Programs
@@ -117,7 +117,7 @@ const Navigation = () => {
                   <a 
                     href="/lending/fha-hud" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     FHA/HUD Loan Programs
@@ -127,7 +127,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/whyoak" className={`transition-all duration-300 font-body font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Why Oak
               </a>
@@ -137,7 +137,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/investing" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Investing
               </a>
@@ -147,7 +147,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <a href="/transactions" className={`transition-all duration-300 font-sans font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Transactions
               </a>
@@ -157,7 +157,7 @@ const Navigation = () => {
             </div>
             <div className="group relative">
               <button className={`flex items-center transition-all duration-300 font-body font-medium text-sm tracking-wide ${
-                scrolled ? 'text-gray-800 hover:text-garnet-edge' : 'text-gray-800 hover:text-garnet-edge'
+                scrolled ? 'text-obsidian hover:text-garnet-edge' : 'text-obsidian hover:text-garnet-edge'
               }`}>
                 Resources
                 <ChevronDown className="ml-1 h-3 w-3 transition-transform duration-200 group-hover:rotate-180" />
@@ -168,13 +168,13 @@ const Navigation = () => {
               
               {/* Resources Dropdown Menu */}
               <div className={`absolute left-0 top-full w-48 border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 ${
-                scrolled ? 'bg-silver-mist border-gray-200' : 'bg-silver-mist border-gray-200'
+                scrolled ? 'bg-silver-mist border-obsidian/10' : 'bg-silver-mist border-obsidian/10'
               }`}>
                 <div className="py-2">
                   <a 
                     href="/news" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     News
@@ -182,7 +182,7 @@ const Navigation = () => {
                   <a 
                     href="/blog" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Blog
@@ -190,7 +190,7 @@ const Navigation = () => {
                   <a 
                     href="/investor-education" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Videos
@@ -198,7 +198,7 @@ const Navigation = () => {
                   <a 
                     href="/webinars" 
                     className={`block px-4 py-2 text-sm transition-colors duration-200 ${
-                      scrolled ? 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-gray-800 hover:bg-garnet-edge/20 hover:text-garnet-edge'
+                      scrolled ? 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge' : 'text-obsidian hover:bg-garnet-edge/20 hover:text-garnet-edge'
                     }`}
                   >
                     Webinars
@@ -228,7 +228,7 @@ const Navigation = () => {
                 variant="ghost"
                 size="icon"
                 className={`lg:hidden rounded-none p-2 ${
-                  scrolled ? 'text-gray-800 hover:bg-gray-100' : 'text-gray-800 hover:bg-gray-100'
+                  scrolled ? 'text-obsidian hover:bg-silver-mist' : 'text-obsidian hover:bg-silver-mist'
                 }`}
               >
                 <Menu className="h-6 w-6" />
