@@ -20,8 +20,8 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'display': ['Montserrat', 'sans-serif'],
-				'serif': ['Montserrat', 'sans-serif'], 
+				'display': ['Playfair Display', 'Georgia', 'serif'],
+				'serif': ['Playfair Display', 'Georgia', 'serif'], 
 				'sans': ['Lato', 'sans-serif'],
 				'body': ['Lato', 'sans-serif'],
 			},
