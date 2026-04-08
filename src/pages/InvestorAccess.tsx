@@ -21,7 +21,7 @@ const US_STATES = [
 
 const InvestorAccess = () => {
   const { toast } = useToast();
-  const [showForm, setShowForm] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -79,11 +79,7 @@ const InvestorAccess = () => {
       }
 
       console.log('Form submission successful:', data);
-      toast({
-        title: "Registration Submitted",
-        description: "Thank you for registering. We will be in touch shortly.",
-      });
-
+      setSubmitted(true);
       setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
     } catch (error) {
       console.error('Error submitting form:', error);
@@ -104,7 +100,7 @@ const InvestorAccess = () => {
     { icon: Calendar, text: "Time-sensitive information that may relate to liquidity, elections, or fund actions" },
   ];
 
-  if (!showForm) {
+  if (submitted) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
         <Navigation />
@@ -158,13 +154,11 @@ const InvestorAccess = () => {
               </ul>
             </div>
 
-            {/* CTA Button */}
-            <Button
-              onClick={() => setShowForm(true)}
-              className="bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium h-14 px-10 text-lg"
-            >
-              Register for Portal Access
-            </Button>
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center">
+              <p className="text-cream/80 font-body">
+                Thank you for registering. Our team will be in touch with you shortly.
+              </p>
+            </div>
           </div>
         </main>
 
