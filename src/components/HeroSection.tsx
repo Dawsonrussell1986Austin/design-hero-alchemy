@@ -92,7 +92,7 @@ const HeroSection = () => {
           
           {/* Statistics Footnote */}
           <div className="lg:col-span-2 mt-6">
-            <p className="text-xs text-silver-mist/60 font-sans text-center lg:text-left">
+            <p className="text-xs text-silver-mist/60 font-sans text-center">
               * Represents experience of current management team, whether at White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners, affiliated entities, or predecessor firms.
             </p>
           </div>
