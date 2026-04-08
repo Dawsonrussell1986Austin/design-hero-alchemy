@@ -112,7 +112,7 @@ const MarketCorrection = () => {
               </h1>
               <p className="text-xl sm:text-3xl md:text-4xl leading-[1.1] mt-4 sm:mt-6 font-light" style={{ ...display, color: "#FAF7F2" }}>
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
-                <em style={{ color: "#D4B35C", fontStyle: "italic", fontWeight: 300 }}>2026.</em>
+                <em style={{ color: "#D4B35C", fontWeight: 300 }}>2026.</em>
               </p>
               <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
@@ -188,7 +188,7 @@ const MarketCorrection = () => {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...display, color: "#0A1520", letterSpacing: "-0.01em" }}>
               The institutions tracking this data aren't waiting for the correction to{" "}
-              <em style={{ color: "#C7A74C", fontStyle: "italic", fontWeight: 300 }}>arrive.</em>
+              <em style={{ color: "#C7A74C", fontWeight: 300 }}>arrive.</em>
             </h2>
 
             {/* Mini bar chart */}
@@ -218,7 +218,7 @@ const MarketCorrection = () => {
 
           {/* Blockquote */}
           <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #C7A74C" }}>
-            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...display, color: "#0A1520", fontStyle: "italic" }}>
+            <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...display, color: "#0A1520" }}>
               Senior-secured, first-lien bridge loans on income-producing commercial real estate. Every dollar backed by a specific property you can see, value, and verify. Not a ticker. Not a blind pool. An address.
             </p>
           </div>
