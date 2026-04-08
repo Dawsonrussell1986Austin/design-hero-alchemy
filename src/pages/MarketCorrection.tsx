@@ -27,7 +27,7 @@ const MarketCorrection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Montserrat is already loaded site-wide via the design system
+  // Playfair Display is now loaded globally via index.html
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,9 +51,9 @@ const MarketCorrection = () => {
     }
   };
 
-  // Font stacks matching the brand design system
-  const display = { fontFamily: "'Montserrat', sans-serif" };
-  const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
+  // Font stacks - Playfair Display now loaded globally
+  const display = { fontFamily: "'Playfair Display', Georgia, serif" };
+  const sans = { fontFamily: "'Lato', sans-serif" };
 
   const inputStyle: React.CSSProperties = {
     ...sans,
