@@ -88,7 +88,7 @@ const Hud232223fTerms = () => {
               
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <tbody className="divide-y divide-obsidian/10">
+                  <tbody className="divide-y divide-abyss/10">
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Eligible Properties</td>
                       <td className="py-4 px-6 text-sm text-abyss/80">Refinancing of existing Multifamily (minimum 5 units) structures that have at least one full month of Debt Service Coverage Ratio being 1.15 for a market rate property, 1.11 for an affordable property or for a broadly affordable property. The property must have this consecutive coverage for at least 3-months prior to loan endorsement.</td>

@@ -127,7 +127,7 @@ const Investments = () => {
                       className="w-full h-full object-cover opacity-20"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-abyss/60 via-obsidian/30 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-abyss/40 via-transparent to-obsidian/20"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-abyss/40 via-transparent to-abyss/20"></div>
                   </div>
                   
                   {/* Content */}

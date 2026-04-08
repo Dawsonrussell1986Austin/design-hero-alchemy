@@ -88,7 +88,7 @@ const Hud232221d4Terms = () => {
               
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <tbody className="divide-y divide-obsidian/10">
+                  <tbody className="divide-y divide-abyss/10">
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Purpose</td>
                       <td className="py-4 px-6 text-sm text-abyss/80">New construction or substantial rehabilitation of Nursing Homes, Intermediate Care Facilities, Board and Care Home and Assisted Living Facilities.</td>

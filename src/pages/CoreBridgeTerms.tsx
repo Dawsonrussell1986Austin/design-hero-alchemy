@@ -88,7 +88,7 @@ const CoreBridgeTerms = () => {
               
               <div className="overflow-x-auto -mx-4 sm:mx-0">
                 <table className="w-full">
-                  <tbody className="divide-y divide-obsidian/10">
+                  <tbody className="divide-y divide-abyss/10">
                     <tr>
                       <td className="py-4 px-6 text-sm font-medium text-abyss bg-abyss/5">Property Types</td>
                       <td className="py-4 px-6 text-sm text-abyss/80">Multifamily, Industrial, Retail, Mixed Use, Hospitality, Office, Medical Office, Self-Storage, Manufactured Housing</td>

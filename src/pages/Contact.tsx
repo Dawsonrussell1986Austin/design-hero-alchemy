@@ -90,7 +90,7 @@ const Contact = () => {
                 />
                 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-l from-abyss/40 via-transparent to-obsidian/60"></div>
+                <div className="absolute inset-0 bg-gradient-to-l from-abyss/40 via-transparent to-abyss/60"></div>
 
                 {/* Glassmorphic Contact Info Cards */}
                 <div className="absolute inset-0 flex items-center justify-center p-4 sm:p-6 lg:p-8">

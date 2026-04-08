@@ -104,7 +104,7 @@ const InvestorAccess = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-abyss to-obsidian/95">
+    <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
       <Navigation />
       
       {/* Main Content */}
