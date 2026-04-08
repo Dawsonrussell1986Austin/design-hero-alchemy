@@ -36,7 +36,7 @@ const TransactionCardHomepage = ({ transaction }: TransactionCardHomepageProps) 
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
           />
         )}
-        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-white px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
+        <div className="absolute top-3 left-3 bg-accent-brown/90 backdrop-blur-sm text-cream px-3 py-1 rounded-md text-xs font-body font-medium uppercase tracking-wide z-10 shadow-md border border-white/20">
           {transaction.propertyType}
         </div>
       </div>
@@ -83,7 +83,7 @@ const RecentTransactionsHomepage = () => {
           
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-8">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-8">
               Recent Transactions
             </h2>
           </div>

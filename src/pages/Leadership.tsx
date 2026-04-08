@@ -137,19 +137,19 @@ const Leadership = () => {
                        <div className="space-y-6">
                           <div className="text-center">
                             <h4 className="text-lg font-medium text-garnet-edge mb-2">Operational Excellence</h4>
-                            <p className="text-white text-base leading-relaxed">
+                            <p className="text-cream text-base leading-relaxed">
                               Proven execution across all business functions
                             </p>
                           </div>
                           <div className="text-center">
                             <h4 className="text-lg font-medium text-garnet-edge mb-2">Disciplined Approach</h4>
-                            <p className="text-white text-base leading-relaxed">
+                            <p className="text-cream text-base leading-relaxed">
                               Consistent methodology for all stakeholders
                             </p>
                           </div>
                           <div className="text-center">
                             <h4 className="text-lg font-medium text-garnet-edge mb-2">Trusted Partnership</h4>
-                            <p className="text-white text-base leading-relaxed">
+                            <p className="text-cream text-base leading-relaxed">
                               Reliable service for borrowers and investors
                             </p>
                          </div>

@@ -29,7 +29,7 @@ const OakParallelBridgeFactSheet = () => {
             </p>
             <Button
               size="lg"
-              className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium"
+              className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium"
               asChild
             >
               <a href="/documents/Fact_Sheet_-_Oak_Parallel_Bridge_Credit_Fund.pdf" download target="_blank" rel="noopener noreferrer">

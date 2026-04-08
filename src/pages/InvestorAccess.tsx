@@ -205,7 +205,7 @@ const InvestorAccess = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 text-base mt-6"
+                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base mt-6"
                 >
                   {isSubmitting ? "Submitting..." : "Register for Portal Access"}
                 </Button>
@@ -213,7 +213,7 @@ const InvestorAccess = () => {
             </div>
 
             {/* Right Column - Message */}
-            <div className="text-white space-y-8">
+            <div className="text-cream space-y-8">
               <div className="space-y-6">
                 <h2 className="text-xl lg:text-2xl font-display font-medium text-white/90">
                   Important Information for DTC Investors

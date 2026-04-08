@@ -152,7 +152,7 @@ const Hud221Terms = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white px-12 py-4 text-lg font-medium"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-12 py-4 text-lg font-medium"
                   onClick={() => window.location.href = "/contact"}
                 >
                   Contact Our Team

@@ -62,7 +62,7 @@ const VideoPage = () => {
 
           {/* Call to Actions */}
           <div className="text-center space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-6">
               Ready to Learn More?
             </h2>
             

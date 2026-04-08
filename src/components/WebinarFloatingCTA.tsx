@@ -36,7 +36,7 @@ const WebinarFloatingCTA = () => {
 
   return (
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-4xl px-4" style={{ animation: 'fadeIn 0.3s ease-out' }}>
-      <div className="bg-gradient-to-r from-accent-brown to-accent-brown/90 text-white rounded-xl shadow-2xl border-2 border-white/20 overflow-hidden">
+      <div className="bg-gradient-to-r from-accent-brown to-accent-brown/90 text-cream rounded-xl shadow-2xl border-2 border-white/20 overflow-hidden">
         <div className="relative">
           {/* Close Button */}
           <button

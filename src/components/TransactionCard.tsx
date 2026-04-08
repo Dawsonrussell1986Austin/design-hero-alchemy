@@ -20,7 +20,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
     <Card className="bg-cream border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
       {/* Property Type Badge */}
       <div className="relative">
-        <div className="absolute top-4 left-4 bg-accent-brown text-white px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
+        <div className="absolute top-4 left-4 bg-accent-brown text-cream px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
           {transaction.propertyType}
         </div>
         

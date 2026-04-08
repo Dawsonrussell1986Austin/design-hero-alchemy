@@ -85,7 +85,7 @@ const InvestorEducation = () => {
                       
                       {/* Title Overlay */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-white group-hover:text-accent-brown transition-colors leading-tight">
+                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-cream group-hover:text-accent-brown transition-colors leading-tight">
                           {category.question}
                         </h3>
                       </div>
@@ -123,7 +123,7 @@ const InvestorEducation = () => {
             <a href="/investors">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
               >
                 Get Investment Details
               </Button>

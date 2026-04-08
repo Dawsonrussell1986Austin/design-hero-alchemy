@@ -121,7 +121,7 @@ const InvestorForm = () => {
 
         <Button
           type="submit"
-          className="w-full bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 text-base"
+          className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 text-base"
         >
           Subscribe to Updates
         </Button>

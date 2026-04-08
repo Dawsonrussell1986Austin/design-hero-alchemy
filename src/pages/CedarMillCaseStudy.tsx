@@ -17,7 +17,7 @@ const CedarMillCaseStudy = () => {
         <div className="max-w-6xl mx-auto">
           {/* Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl lg:text-5xl font-display font-medium text-white mb-4">
+            <h1 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-4">
               Ciel of Cedar Mill Case Study
             </h1>
             <p className="text-silver-mist/90 text-xl font-body">
@@ -61,7 +61,7 @@ const CedarMillCaseStudy = () => {
 
           {/* Call to Actions */}
           <div className="text-center space-y-8">
-            <h2 className="text-3xl lg:text-4xl font-display font-medium text-white mb-6">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-cream mb-6">
               Ready to Learn More?
             </h2>
             

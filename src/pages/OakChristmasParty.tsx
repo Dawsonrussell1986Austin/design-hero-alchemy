@@ -398,7 +398,7 @@ const OakChristmasParty = () => {
                         
                         <button
                           onClick={nextActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-all duration-300 shadow-lg"
+                          className="group flex items-center justify-center p-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 shadow-lg"
                           aria-label="Next activity"
                         >
                           <ChevronRight className="w-6 h-6" />
@@ -433,7 +433,7 @@ const OakChristmasParty = () => {
                       
                       <button
                         onClick={nextActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-white hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
                         aria-label="Next activity"
                       >
                         Next

@@ -160,7 +160,7 @@ const VideoCategory = () => {
               <Link to="/contact">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium px-8 py-6 text-lg rounded-md"
+                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md"
                 >
                   Contact Us
                 </Button>

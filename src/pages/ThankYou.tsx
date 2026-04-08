@@ -35,7 +35,7 @@ const ThankYou = () => {
             <div className="flex justify-center">
               <Button
                 onClick={() => navigate("/")}
-                className="bg-accent-brown hover:bg-accent-brown/90 text-white font-body font-medium h-12 px-8"
+                className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium h-12 px-8"
               >
                 Return Home
               </Button>
