@@ -27,16 +27,7 @@ const MarketCorrection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Load Playfair Display for this page
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap";
-    link.rel = "stylesheet";
-    document.head.appendChild(link);
-    return () => {
-      document.head.removeChild(link);
-    };
-  }, []);
+  // Montserrat is already loaded site-wide via the design system
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
