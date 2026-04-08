@@ -21,7 +21,8 @@ const US_STATES = [
 
 const InvestorAccess = () => {
   const { toast } = useToast();
-  const [showForm, setShowForm] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
