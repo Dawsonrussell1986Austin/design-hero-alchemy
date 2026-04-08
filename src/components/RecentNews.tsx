@@ -56,7 +56,7 @@ const RecentNews = () => {
                 </div>
                 <div className="p-6">
                   <div className="flex items-center space-x-2 mb-3">
-                    <Calendar className="h-4 w-4 text-accent-brown" />
+                    <Calendar className="h-4 w-4 text-gold-accent" />
                     <span className="text-sm text-deep-petrol/70">{article.date}</span>
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian mb-3 line-clamp-2 leading-tight">
@@ -69,7 +69,7 @@ const RecentNews = () => {
                     <Button 
                       variant="outline"
                       size="sm"
-                      className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-xs px-4 py-2 rounded transition-all duration-300"
+                      className="border-gold-accent/30 text-gold-accent hover:bg-gold-accent hover:text-silver-mist text-xs px-4 py-2 rounded transition-all duration-300"
                     >
                       Read More
                       <ArrowRight className="h-3 w-3 ml-1" />
@@ -84,7 +84,7 @@ const RecentNews = () => {
             <Link to="/news">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
               >
                 View All News
                 <ArrowRight className="h-4 w-4 ml-2" />

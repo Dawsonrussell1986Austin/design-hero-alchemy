@@ -20,7 +20,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
     <Card className="bg-cream border border-obsidian/10 overflow-hidden hover:shadow-xl transition-all duration-300 group shadow-md h-full">
       {/* Property Type Badge */}
       <div className="relative">
-        <div className="absolute top-4 left-4 bg-accent-brown text-cream px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
+        <div className="absolute top-4 left-4 bg-gold-accent text-cream px-3 py-1 rounded text-xs font-medium uppercase tracking-wide z-10 shadow-sm">
           {transaction.propertyType}
         </div>
         
@@ -53,7 +53,7 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
         </div>
         
         {/* Loan Amount */}
-        <div className="text-accent-brown text-2xl font-display font-medium mb-4 pb-3 border-b border-obsidian/10">
+        <div className="text-gold-accent text-2xl font-display font-medium mb-4 pb-3 border-b border-obsidian/10">
           {transaction.loanSize}
         </div>
         

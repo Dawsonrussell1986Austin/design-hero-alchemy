@@ -27,8 +27,8 @@ const CedarMillCaseStudy = () => {
 
           {/* Video Player */}
           <div className="relative mb-12">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-brown/30 bg-obsidian/50 backdrop-blur-sm">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
               
               <div className="relative aspect-video">
                 {!isPlaying ? (
@@ -43,7 +43,7 @@ const CedarMillCaseStudy = () => {
                     />
                     <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
                       <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center shadow-lg">
-                        <Play className="w-8 h-8 text-accent-brown ml-1" fill="currentColor" />
+                        <Play className="w-8 h-8 text-gold-accent ml-1" fill="currentColor" />
                       </div>
                     </div>
                   </div>
@@ -55,7 +55,7 @@ const CedarMillCaseStudy = () => {
               </div>
             </div>
 
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent-brown/20 rounded-full blur-3xl"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold-accent/20 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-deep-petrol/30 rounded-full blur-3xl"></div>
           </div>
 
@@ -69,7 +69,7 @@ const CedarMillCaseStudy = () => {
               <Link to="/webinar-registration?type=oak-investment">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Register for Webinar
                 </Button>
@@ -79,7 +79,7 @@ const CedarMillCaseStudy = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>

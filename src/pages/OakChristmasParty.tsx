@@ -35,7 +35,7 @@ const OakChristmasParty = () => {
               href="https://www.simon.com/mall/southpark" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-accent-brown hover:underline font-semibold"
+              className="text-gold-accent hover:underline font-semibold"
             >
               SouthPark Mall
             </a> – Just steps from your hotel. Browse luxury brands, enjoy upscale dining, or simply take a stroll through the elegant mall atmosphere.
@@ -45,7 +45,7 @@ const OakChristmasParty = () => {
               href="https://southparkclt.org/go/symphony-park" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-accent-brown hover:underline font-semibold"
+              className="text-gold-accent hover:underline font-semibold"
             >
               Symphony Park & Green Spaces
             </a> – A quick walk or short ride allows you to enjoy a tranquil outdoor setting, perfect for a coffee break or a moment of calm.
@@ -69,7 +69,7 @@ const OakChristmasParty = () => {
               href="https://winghavengardens.org/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-accent-brown hover:underline font-semibold"
+              className="text-gold-accent hover:underline font-semibold"
             >
               Wing Haven Gardens & Bird Sanctuary
             </a> – A hidden gem for a relaxing walk in nature, only ~8–10 minutes away.
@@ -128,7 +128,7 @@ const OakChristmasParty = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-obsidian mb-1">Welcome to the Oak Real Estate Partners</h2>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-accent-brown">Holiday Celebration</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-display font-medium text-gold-accent">Holiday Celebration</h2>
           </div>
           
           <div className="max-w-7xl mx-auto">
@@ -136,7 +136,7 @@ const OakChristmasParty = () => {
               {/* Left Column - Photo */}
               <div className="flex flex-col items-center lg:items-start space-y-3 sm:space-y-4">
                 <div className="relative w-full max-w-[280px] lg:max-w-none">
-                  <div className="absolute inset-0 bg-accent-brown/10 blur-xl rounded-lg"></div>
+                  <div className="absolute inset-0 bg-gold-accent/10 blur-xl rounded-lg"></div>
                   <img 
                     src={garyBechtel} 
                     alt="Gary Bechtel, CEO" 
@@ -145,13 +145,13 @@ const OakChristmasParty = () => {
                 </div>
                 <div className="text-center lg:text-left">
                   <h3 className="text-xl sm:text-2xl font-display font-medium text-obsidian">Gary Bechtel</h3>
-                  <p className="text-accent-brown font-body font-semibold">Chief Executive Officer</p>
+                  <p className="text-gold-accent font-body font-semibold">Chief Executive Officer</p>
                 </div>
               </div>
               
               {/* Right Column - Message */}
               <div className="space-y-4 sm:space-y-5">
-                <div className="border-l-4 border-accent-brown pl-4 sm:pl-6">
+                <div className="border-l-4 border-gold-accent pl-4 sm:pl-6">
                   <h3 className="text-lg sm:text-xl md:text-2xl font-display font-medium text-obsidian mb-2">A Message from Our CEO</h3>
                 </div>
                 
@@ -168,7 +168,7 @@ const OakChristmasParty = () => {
                   <p>
                     Here's to a strong close to 2025 and an even brighter year ahead.
                   </p>
-                  <p className="text-accent-brown font-semibold pt-2 sm:pt-4 italic">
+                  <p className="text-gold-accent font-semibold pt-2 sm:pt-4 italic">
                     Warm regards,<br />
                     Gary Bechtel
                   </p>
@@ -307,7 +307,7 @@ const OakChristmasParty = () => {
       <section className="py-12 sm:py-16 bg-silver-mist overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-8 sm:mb-12">
-            <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-accent-brown mx-auto mb-2 sm:mb-3" />
+            <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-gold-accent mx-auto mb-2 sm:mb-3" />
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-display font-medium text-obsidian mb-2 sm:mb-4 px-2">Things to Do While You're Here</h2>
             <p className="text-deep-petrol text-base sm:text-lg font-body px-2">Relax. Explore. Enjoy your time between events in SouthPark and Charlotte.</p>
           </div>
@@ -320,7 +320,7 @@ const OakChristmasParty = () => {
               <div className="order-1 lg:order-2 w-full max-w-md lg:max-w-none lg:relative lg:-ml-20">
                 <div className="relative">
                   {/* Decorative background element */}
-                  <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-full h-full bg-accent-brown/10 rounded-2xl"></div>
+                  <div className="absolute -top-4 -right-4 sm:-top-6 sm:-right-6 w-full h-full bg-gold-accent/10 rounded-2xl"></div>
                   
                   <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-white max-h-[350px] sm:max-h-[450px]">
                     <img 
@@ -336,7 +336,7 @@ const OakChristmasParty = () => {
               <div className="order-2 lg:order-1 relative z-10 w-full">
                 <div className="bg-cream rounded-2xl shadow-2xl p-6 sm:p-10 relative overflow-hidden">
                   {/* Decorative accent */}
-                  <div className="absolute top-0 left-0 w-2 h-full bg-accent-brown"></div>
+                  <div className="absolute top-0 left-0 w-2 h-full bg-gold-accent"></div>
                   
                   <div className="min-h-[320px] sm:min-h-[280px] flex flex-col">
                     <div className="flex-grow">
@@ -347,7 +347,7 @@ const OakChristmasParty = () => {
                               href={activities[currentActivity].link}
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="text-accent-brown hover:underline transition-colors"
+                              className="text-gold-accent hover:underline transition-colors"
                             >
                               {activities[currentActivity].title}
                             </a>
@@ -374,7 +374,7 @@ const OakChristmasParty = () => {
                       <div className="flex sm:hidden items-center justify-between w-full gap-4">
                         <button
                           onClick={prevActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300"
+                          className="group flex items-center justify-center p-3 rounded-lg border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream transition-all duration-300"
                           aria-label="Previous activity"
                         >
                           <ChevronLeft className="w-6 h-6" />
@@ -388,8 +388,8 @@ const OakChristmasParty = () => {
                               onClick={() => setCurrentActivity(index)}
                               className={`h-2 rounded-full transition-all duration-300 ${
                                 index === currentActivity 
-                                  ? 'bg-accent-brown w-8' 
-                                  : 'bg-deep-petrol/30 w-2 active:bg-accent-brown/50'
+                                  ? 'bg-gold-accent w-8' 
+                                  : 'bg-deep-petrol/30 w-2 active:bg-gold-accent/50'
                               }`}
                               aria-label={`Go to activity ${index + 1}`}
                             />
@@ -398,7 +398,7 @@ const OakChristmasParty = () => {
                         
                         <button
                           onClick={nextActivity}
-                          className="group flex items-center justify-center p-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 shadow-lg"
+                          className="group flex items-center justify-center p-3 rounded-lg bg-gold-accent text-cream hover:bg-gold-accent/90 transition-all duration-300 shadow-lg"
                           aria-label="Next activity"
                         >
                           <ChevronRight className="w-6 h-6" />
@@ -408,7 +408,7 @@ const OakChristmasParty = () => {
                       {/* Desktop: Full buttons with text */}
                       <button
                         onClick={prevActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream transition-all duration-300 font-semibold"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream transition-all duration-300 font-semibold"
                         aria-label="Previous activity"
                       >
                         <ChevronLeft className="w-5 h-5 transition-transform group-hover:-translate-x-1" />
@@ -423,8 +423,8 @@ const OakChristmasParty = () => {
                             onClick={() => setCurrentActivity(index)}
                             className={`h-2.5 rounded-full transition-all duration-300 ${
                               index === currentActivity 
-                                ? 'bg-accent-brown w-10' 
-                                : 'bg-deep-petrol/30 w-2.5 hover:bg-accent-brown/50'
+                                ? 'bg-gold-accent w-10' 
+                                : 'bg-deep-petrol/30 w-2.5 hover:bg-gold-accent/50'
                             }`}
                             aria-label={`Go to activity ${index + 1}`}
                           />
@@ -433,7 +433,7 @@ const OakChristmasParty = () => {
                       
                       <button
                         onClick={nextActivity}
-                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-accent-brown text-cream hover:bg-accent-brown/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
+                        className="hidden sm:flex group items-center gap-2 px-6 py-3 rounded-lg bg-gold-accent text-cream hover:bg-gold-accent/90 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
                         aria-label="Next activity"
                       >
                         Next

@@ -75,7 +75,7 @@ const RecentTransactions = () => {
             <Link to="/transactions">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 font-serif font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 font-serif font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
               >
                 SEE MORE
                 <ArrowRight className="h-4 w-4 ml-2" />

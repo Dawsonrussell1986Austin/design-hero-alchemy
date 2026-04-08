@@ -213,8 +213,8 @@ const Navigation = () => {
             <Button 
               className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
                 scrolled 
-                  ? 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown' 
-                  : 'bg-accent-brown hover:bg-accent-brown/90 text-silver-mist border border-accent-brown'
+                  ? 'bg-gold-accent hover:bg-gold-accent/90 text-silver-mist border border-gold-accent' 
+                  : 'bg-gold-accent hover:bg-gold-accent/90 text-silver-mist border border-gold-accent'
               }`}
             >
               Contact Us
@@ -416,7 +416,7 @@ const Navigation = () => {
                 <div className="px-8 py-6 border-t border-garnet-edge/10">
                   <a href="/contact" className="block">
                     <Button 
-                      className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-accent-brown hover:border-garnet-edge min-h-[56px]"
+                      className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-4 font-body font-semibold text-lg tracking-wide rounded-lg transition-all duration-300 hover:shadow-lg border-2 border-gold-accent hover:border-garnet-edge min-h-[56px]"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       Contact Us

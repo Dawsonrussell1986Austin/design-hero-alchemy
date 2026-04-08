@@ -44,8 +44,8 @@ const VideoPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Video Player */}
           <div className="relative mb-12">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-brown/30 bg-obsidian/50 backdrop-blur-sm">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
               
               <div className="relative aspect-video">
                 <wistia-player 
@@ -56,7 +56,7 @@ const VideoPage = () => {
               </div>
             </div>
 
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent-brown/20 rounded-full blur-3xl"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold-accent/20 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-deep-petrol/30 rounded-full blur-3xl"></div>
           </div>
 
@@ -70,7 +70,7 @@ const VideoPage = () => {
               <Link to="/webinar-registration">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Register for Webinar
                 </Button>
@@ -80,7 +80,7 @@ const VideoPage = () => {
                 <Button 
                   size="lg"
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
+                  className="border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream px-12 py-6 font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm text-lg"
                 >
                   Contact Oak
                 </Button>

@@ -155,7 +155,7 @@ const Privacy = () => {
                   <p className="mb-2">5925 Carnegie Boulevard<br />Suite 110<br />Charlotte, NC 28209</p>
                   <p className="mb-2">Phone: 980.288.6627</p>
                   <p>
-                    Email: <a href="mailto:ir@oakrepartners.com" className="text-accent-brown hover:underline">
+                    Email: <a href="mailto:ir@oakrepartners.com" className="text-gold-accent hover:underline">
                       ir@oakrepartners.com
                     </a>
                   </p>

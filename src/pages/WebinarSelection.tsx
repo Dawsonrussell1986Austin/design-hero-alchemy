@@ -21,8 +21,8 @@ const WebinarSelection = () => {
       title: "Red Oak Quarterly Financial Update",
       description: "Monthly updates on Red Oak investments, portfolio performance, and market insights for our investor community.",
       icon: TrendingUp,
-      color: "text-accent-brown",
-      bgColor: "bg-accent-brown/10",
+      color: "text-gold-accent",
+      bgColor: "bg-gold-accent/10",
       link: "/webinar-registration?type=red-oak-investor"
     },
     {
@@ -77,7 +77,7 @@ const WebinarSelection = () => {
                   <CardContent className="pt-0">
                     <Link to={webinar.link}>
                       <Button 
-                        className="w-full bg-accent-brown hover:bg-accent-brown/90 text-silver-mist font-body"
+                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
                         size="lg"
                       >
                         Register Now
@@ -102,15 +102,15 @@ const WebinarSelection = () => {
           </p>
           <div className="grid gap-6 md:grid-cols-3 text-left">
             <div className="space-y-2">
-              <div className="text-accent-brown font-display font-medium">Live Sessions</div>
+              <div className="text-gold-accent font-display font-medium">Live Sessions</div>
               <p className="text-sm text-silver-mist/70 font-body">Interact directly with our team and ask questions in real-time</p>
             </div>
             <div className="space-y-2">
-              <div className="text-accent-brown font-display font-medium">Expert Insights</div>
+              <div className="text-gold-accent font-display font-medium">Expert Insights</div>
               <p className="text-sm text-silver-mist/70 font-body">Learn from industry veterans with decades of experience</p>
             </div>
             <div className="space-y-2">
-              <div className="text-accent-brown font-display font-medium">Exclusive Access</div>
+              <div className="text-gold-accent font-display font-medium">Exclusive Access</div>
               <p className="text-sm text-silver-mist/70 font-body">Get information and analysis not available to the general public</p>
             </div>
           </div>

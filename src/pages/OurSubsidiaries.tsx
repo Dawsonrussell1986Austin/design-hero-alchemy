@@ -38,7 +38,7 @@ const OurSubsidiaries = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Strategic Subsidiaries Extending Our Market Reach
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Specialized expertise across commercial real estate and multifamily lending landscapes.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed max-w-4xl mx-auto">
@@ -143,7 +143,7 @@ const OurSubsidiaries = () => {
             <div className="max-w-6xl mx-auto">
               <div className="bg-cream rounded-lg shadow-lg p-8">
                 <div className="text-center mb-8">
-                  <h2 className="text-3xl lg:text-4xl font-bold text-accent-brown mb-4 tracking-tight">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-gold-accent mb-4 tracking-tight">
                     RED OAK CAPITAL HOLDINGS
                   </h2>
                   <p className="text-lg text-deep-petrol max-w-3xl mx-auto mb-8">

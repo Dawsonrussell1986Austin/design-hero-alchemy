@@ -46,7 +46,7 @@ const OakParallelBridgeCreditFund = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium"
                   asChild
                 >
                   <a href="/documents/Oak_Parallel_Bridge_Credit_Fund_Subscription_Agreement.pdf" download target="_blank" rel="noopener noreferrer">
@@ -57,7 +57,7 @@ const OakParallelBridgeCreditFund = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-accent-brown text-accent-brown hover:bg-accent-brown/10 font-body font-medium"
+                  className="border-gold-accent text-gold-accent hover:bg-gold-accent/10 font-body font-medium"
                   asChild
                 >
                   <a href="/documents/HC_Global_AML_Requirements.pdf" download target="_blank" rel="noopener noreferrer">
@@ -81,7 +81,7 @@ const OakParallelBridgeCreditFund = () => {
               </p>
               <a 
                 href="mailto:InvestorRelations@hcglobalfs.com"
-                className="inline-flex items-center gap-2 text-accent-brown hover:text-accent-brown/80 transition-colors font-body font-medium"
+                className="inline-flex items-center gap-2 text-gold-accent hover:text-gold-accent/80 transition-colors font-body font-medium"
               >
                 <Mail className="h-5 w-5" />
                 InvestorRelations@hcglobalfs.com

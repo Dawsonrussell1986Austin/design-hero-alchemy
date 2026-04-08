@@ -53,7 +53,7 @@ const BridgeLoans = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Short-Term Commercial Real Estate Financing
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Flexible bridge loans designed for acquisition, renovation, and stabilization strategies.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
@@ -110,10 +110,10 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Core Bridge
                     </h3>
-                    <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                    <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
                       Stabilized Properties
                     </p>
                   </div>
@@ -140,7 +140,7 @@ const BridgeLoans = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge/core-bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   View Terms & Details
                 </Button>
@@ -157,10 +157,10 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Core-Plus Bridge
                     </h3>
-                    <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                    <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
                       Light Value-Add
                     </p>
                   </div>
@@ -187,7 +187,7 @@ const BridgeLoans = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge/core-plus-bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   View Terms & Details
                 </Button>
@@ -204,10 +204,10 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Opportunistic Bridge
                     </h3>
-                    <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                    <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
                       Value-Add Strategies
                     </p>
                   </div>
@@ -234,7 +234,7 @@ const BridgeLoans = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge/opportunistic-bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   View Terms & Details
                 </Button>
@@ -251,10 +251,10 @@ const BridgeLoans = () => {
                     />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-accent-brown transition-colors duration-300 mb-2">
+                    <h3 className="text-2xl font-display font-medium text-obsidian group-hover:text-gold-accent transition-colors duration-300 mb-2">
                       Participating Bridge
                     </h3>
-                    <p className="text-sm font-medium text-accent-brown uppercase tracking-wider">
+                    <p className="text-sm font-medium text-gold-accent uppercase tracking-wider">
                       Shared Appreciation
                     </p>
                   </div>
@@ -281,7 +281,7 @@ const BridgeLoans = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge/participating-bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   View Terms & Details
                 </Button>
@@ -299,14 +299,14 @@ const BridgeLoans = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-8 py-3 font-medium"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Contact Lending Team
                 </Button>
                 <Button 
                   variant="outline"
-                  className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-8 py-3 font-medium"
+                  className="border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream px-8 py-3 font-medium"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Request Rate Quote

@@ -43,8 +43,8 @@ const InvestorEducation = () => {
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-7xl">
             <div className="text-center space-y-6 max-w-3xl mx-auto">
-              <div className="mx-auto w-20 h-20 bg-accent-brown/10 rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="h-10 w-10 text-accent-brown" />
+              <div className="mx-auto w-20 h-20 bg-gold-accent/10 rounded-xl flex items-center justify-center mb-6">
+                <BookOpen className="h-10 w-10 text-gold-accent" />
               </div>
               <h1 className="text-4xl lg:text-5xl font-display font-medium text-obsidian">
                 Video Library
@@ -66,7 +66,7 @@ const InvestorEducation = () => {
                   to={`/videos/${category.id}`}
                   className="group"
                 >
-                  <div className="bg-obsidian rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-accent-brown/20 hover:border-accent-brown">
+                  <div className="bg-obsidian rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 h-full border-2 border-gold-accent/20 hover:border-gold-accent">
                     {/* Thumbnail Image with Overlay */}
                     <div className="relative aspect-video overflow-hidden">
                       <img 
@@ -78,14 +78,14 @@ const InvestorEducation = () => {
                       
                       {/* Play Button */}
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-20 h-20 bg-cream/90 rounded-full flex items-center justify-center group-hover:bg-accent-brown group-hover:scale-110 transition-all duration-300 shadow-xl">
+                        <div className="w-20 h-20 bg-cream/90 rounded-full flex items-center justify-center group-hover:bg-gold-accent group-hover:scale-110 transition-all duration-300 shadow-xl">
                           <Play className="h-10 w-10 text-obsidian group-hover:text-cream ml-1" fill="currentColor" />
                         </div>
                       </div>
                       
                       {/* Title Overlay */}
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-cream group-hover:text-accent-brown transition-colors leading-tight">
+                        <h3 className="text-2xl lg:text-3xl font-display font-medium text-cream group-hover:text-gold-accent transition-colors leading-tight">
                           {category.question}
                         </h3>
                       </div>
@@ -98,10 +98,10 @@ const InvestorEducation = () => {
                       </p>
                       
                       <div className="flex items-center justify-between pt-2">
-                        <span className="text-lg font-body text-accent-brown font-semibold">
+                        <span className="text-lg font-body text-gold-accent font-semibold">
                           {category.videos.length} {category.videos.length === 1 ? 'Video' : 'Videos'}
                         </span>
-                        <ArrowRight className="h-6 w-6 text-accent-brown group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="h-6 w-6 text-gold-accent group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ const InvestorEducation = () => {
             <a href="/investors">
               <Button 
                 size="lg"
-                className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md transition-all duration-300 hover:shadow-lg"
               >
                 Get Investment Details
               </Button>

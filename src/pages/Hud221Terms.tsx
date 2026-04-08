@@ -39,7 +39,7 @@ const Hud221Terms = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   HUD 221(d)4 & 220
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   New Construction or Substantial Rehabilitation of Multifamily Properties
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed mb-8">
@@ -152,7 +152,7 @@ const Hud221Terms = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream px-12 py-4 text-lg font-medium"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-cream px-12 py-4 text-lg font-medium"
                   onClick={() => window.location.href = "/contact"}
                 >
                   Contact Our Team

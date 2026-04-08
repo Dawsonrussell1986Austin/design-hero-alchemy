@@ -50,9 +50,9 @@ const VideoPlayerSection = () => {
 
           {/* Video Player Container */}
           <div className="relative max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-accent-brown/30 bg-obsidian/50 backdrop-blur-sm">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30 bg-obsidian/50 backdrop-blur-sm">
               {/* Decorative gradient overlay on edges */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-brown/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
               
               {/* Video Player */}
               <div className="relative aspect-video">
@@ -68,7 +68,7 @@ const VideoPlayerSection = () => {
                     />
                     <div className="absolute inset-0 bg-obsidian/20 group-hover:bg-obsidian/10 transition-colors flex items-center justify-center">
                       <div className="w-20 h-20 rounded-full bg-cream/90 group-hover:bg-cream group-hover:scale-110 transition-all flex items-center justify-center">
-                        <div className="w-0 h-0 border-l-[24px] border-l-accent-brown border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
+                        <div className="w-0 h-0 border-l-[24px] border-l-gold-accent border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
                       </div>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ const VideoPlayerSection = () => {
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute -top-6 -left-6 w-24 h-24 bg-accent-brown/20 rounded-full blur-3xl"></div>
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-gold-accent/20 rounded-full blur-3xl"></div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-deep-petrol/30 rounded-full blur-3xl"></div>
           </div>
 

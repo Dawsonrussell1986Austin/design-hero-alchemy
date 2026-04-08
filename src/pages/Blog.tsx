@@ -61,7 +61,7 @@ const Blog = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-8 leading-tight">
-                Insights & <span className="text-accent-brown">Articles</span>
+                Insights & <span className="text-gold-accent">Articles</span>
               </h2>
               <p className="text-lg text-deep-petrol/80 max-w-2xl mx-auto">
                 Expert perspectives on commercial real estate lending, investment strategies, and market trends.
@@ -80,7 +80,7 @@ const Blog = () => {
                   </div>
                   <div className="p-8">
                     <div className="flex items-center space-x-2 mb-4">
-                      <Calendar className="h-4 w-4 text-accent-brown" />
+                      <Calendar className="h-4 w-4 text-gold-accent" />
                       <span className="text-sm text-deep-petrol/70">{post.date}</span>
                     </div>
                     <h3 className="text-xl font-display font-medium text-obsidian mb-4 line-clamp-2 leading-tight">
@@ -93,7 +93,7 @@ const Blog = () => {
                       <Link to={`/blog/${post.slug}`}>
                         <Button 
                           variant="outline"
-                          className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
+                          className="border-gold-accent/30 text-gold-accent hover:bg-gold-accent hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
                         >
                           Read More
                           <ArrowRight className="h-4 w-4 ml-2" />
@@ -102,7 +102,7 @@ const Blog = () => {
                     ) : (
                       <Button 
                         variant="outline"
-                        className="border-accent-brown/30 text-accent-brown hover:bg-accent-brown hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
+                        className="border-gold-accent/30 text-gold-accent hover:bg-gold-accent hover:text-silver-mist text-sm px-6 py-2 rounded-lg transition-all duration-300 group-hover:scale-105"
                         disabled
                       >
                         Coming Soon
@@ -127,7 +127,7 @@ const Blog = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-8 leading-tight">
-              Stay <span className="text-accent-brown">Informed</span>
+              Stay <span className="text-gold-accent">Informed</span>
             </h2>
             
             <div className="bg-background/20 backdrop-blur-xl border border-silver-mist/20 rounded-3xl p-12 mb-16 hover:bg-background/30 transition-all duration-500">
@@ -139,10 +139,10 @@ const Blog = () => {
                 <input 
                   type="email"
                   placeholder="Enter your email address"
-                  className="flex-1 bg-obsidian/20 border-silver-mist/30 focus:border-accent-brown focus:ring-accent-brown/20 text-silver-mist placeholder:text-silver-mist/50 py-3 px-4 rounded-lg backdrop-blur-sm"
+                  className="flex-1 bg-obsidian/20 border-silver-mist/30 focus:border-gold-accent focus:ring-gold-accent/20 text-silver-mist placeholder:text-silver-mist/50 py-3 px-4 rounded-lg backdrop-blur-sm"
                 />
                 <Button 
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-lg"
                 >
                   Subscribe
                 </Button>

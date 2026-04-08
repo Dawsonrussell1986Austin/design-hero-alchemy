@@ -52,7 +52,7 @@ const Investing = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Strategic Investment Solutions
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Institutional-quality opportunities. Transparent structures. Professional management.
                 </p>
                 <p className="text-lg lg:text-xl font-body font-normal text-obsidian/80 leading-relaxed mb-6">
@@ -122,8 +122,8 @@ const Investing = () => {
               {/* Market Opportunity */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <TrendingUp className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <TrendingUp className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Market Opportunity</h3>
                 </div>
@@ -135,8 +135,8 @@ const Investing = () => {
               {/* Risk Mitigation */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <Shield className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <Shield className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Risk Mitigation</h3>
                 </div>
@@ -148,8 +148,8 @@ const Investing = () => {
               {/* Diversification */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <BarChart3 className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <BarChart3 className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Diversification</h3>
                 </div>
@@ -161,8 +161,8 @@ const Investing = () => {
               {/* Income Oriented */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <DollarSign className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <DollarSign className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Income Oriented</h3>
                 </div>
@@ -174,8 +174,8 @@ const Investing = () => {
               {/* Performance */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <Target className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <Target className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Performance</h3>
                 </div>
@@ -187,8 +187,8 @@ const Investing = () => {
               {/* Our Strategy */}
               <div className="bg-background/60 backdrop-blur-sm border border-deep-petrol/20 rounded-lg p-8 hover:bg-background/80 transition-all duration-300">
                 <div className="flex items-center mb-4">
-                  <div className="w-10 h-10 bg-accent-brown/10 rounded-lg flex items-center justify-center mr-3">
-                    <MapPin className="h-5 w-5 text-accent-brown" />
+                  <div className="w-10 h-10 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-3">
+                    <MapPin className="h-5 w-5 text-gold-accent" />
                   </div>
                   <h3 className="text-lg font-display font-medium text-obsidian">Our Strategy</h3>
                 </div>
@@ -216,7 +216,7 @@ const Investing = () => {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm"
                   onClick={() => window.location.href = '/contact'}
                 >
                   Contact Us

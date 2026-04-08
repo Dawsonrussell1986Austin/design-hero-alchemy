@@ -48,7 +48,7 @@ const Lending = () => {
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-obsidian mb-6 leading-tight">
                   Structured Capital Solutions for Commercial Real Estate
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-medium text-accent-brown mb-6">
+                <p className="text-lg lg:text-xl font-body font-medium text-gold-accent mb-6">
                   Comprehensive financing solutions for every stage of your commercial real estate investment.
                 </p>
                 <p className="text-lg font-body text-obsidian/80 leading-relaxed">
@@ -77,10 +77,10 @@ const Lending = () => {
                     alt="Bridge loans for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
-                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-accent-brown transition-colors duration-300">
+                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-gold-accent transition-colors duration-300">
                     Bridge Loan Programs
                   </h2>
-                  <p className="text-lg font-body font-medium text-accent-brown mb-4">
+                  <p className="text-lg font-body font-medium text-gold-accent mb-4">
                     Short-term private financing for acquisition, renovation, and stabilization
                   </p>
                   <p className="text-obsidian/80 leading-relaxed mb-6">
@@ -109,7 +109,7 @@ const Lending = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/bridge"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   Explore Bridge Loan Programs
                 </Button>
@@ -123,10 +123,10 @@ const Lending = () => {
                     alt="Government-backed FHA/HUD financing for commercial real estate"
                     className="w-full h-48 object-cover rounded-lg shadow-md mb-6"
                   />
-                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-accent-brown transition-colors duration-300">
+                  <h2 className="text-2xl lg:text-3xl font-display font-medium text-obsidian mb-4 group-hover:text-gold-accent transition-colors duration-300">
                     FHA/HUD Loan Programs
                   </h2>
-                  <p className="text-lg font-body font-medium text-accent-brown mb-4">
+                  <p className="text-lg font-body font-medium text-gold-accent mb-4">
                     Long-term, government-backed financing for essential real estate assets
                   </p>
                   <p className="text-obsidian/80 leading-relaxed mb-6">
@@ -155,7 +155,7 @@ const Lending = () => {
                 
                 <Button 
                   onClick={() => window.location.href = "/lending/fha-hud"}
-                  className="w-full bg-accent-brown hover:bg-accent-brown/90 text-cream py-3 font-medium"
+                  className="w-full bg-gold-accent hover:bg-gold-accent/90 text-cream py-3 font-medium"
                 >
                   Explore FHA/HUD Programs
                 </Button>
@@ -174,7 +174,7 @@ const Lending = () => {
                 <a href="/lending/fha-hud">
                   <Button 
                     variant="outline"
-                    className="border-2 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream px-8 py-3 font-medium"
+                    className="border-2 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream px-8 py-3 font-medium"
                   >
                     Learn More About JCM FHA Programs
                   </Button>

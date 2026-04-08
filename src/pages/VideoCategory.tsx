@@ -58,7 +58,7 @@ const VideoCard = ({ video }: { video: Video }) => {
       </div>
       <div className="p-6 space-y-3">
         <h3 className="font-display text-xl font-medium text-obsidian flex items-center gap-2">
-          <Play className="h-5 w-5 text-accent-brown" />
+          <Play className="h-5 w-5 text-gold-accent" />
           {video.title}
         </h3>
         <p className="font-body text-deep-petrol leading-relaxed">{video.description}</p>
@@ -77,7 +77,7 @@ const VideoCategory = () => {
         <div className="text-center">
           <h1 className="text-3xl font-display text-obsidian mb-4">Category Not Found</h1>
           <Link to="/investor-education">
-            <Button className="bg-accent-brown hover:bg-accent-brown/90">
+            <Button className="bg-gold-accent hover:bg-gold-accent/90">
               Back to Video Library
             </Button>
           </Link>
@@ -109,7 +109,7 @@ const VideoCategory = () => {
             <Link to="/investor-education">
               <Button 
                 variant="outline" 
-                className="mb-8 border-accent-brown text-accent-brown hover:bg-accent-brown hover:text-cream"
+                className="mb-8 border-gold-accent text-gold-accent hover:bg-gold-accent hover:text-cream"
               >
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to All Categories
@@ -160,7 +160,7 @@ const VideoCategory = () => {
               <Link to="/contact">
                 <Button 
                   size="lg"
-                  className="bg-accent-brown hover:bg-accent-brown/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md"
+                  className="bg-gold-accent hover:bg-gold-accent/90 text-cream font-body font-medium px-8 py-6 text-lg rounded-md"
                 >
                   Contact Us
                 </Button>
