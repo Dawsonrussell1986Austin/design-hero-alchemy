@@ -1,6 +1,4 @@
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useNavigate } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 
 const benefits = [
@@ -11,7 +9,6 @@ const benefits = [
 ];
 
 const ThankYouInvestorAccess = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
@@ -69,13 +66,6 @@ const ThankYouInvestorAccess = () => {
             </p>
           </div>
 
-          <Button
-            onClick={() => navigate("/investor-access")}
-            variant="outline"
-            className="border-cream/30 text-cream hover:bg-white/10 font-body font-medium h-12 px-8"
-          >
-            Register Another Investor
-          </Button>
         </div>
       </main>
 
