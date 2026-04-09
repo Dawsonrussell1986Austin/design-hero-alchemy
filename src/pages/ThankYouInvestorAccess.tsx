@@ -9,7 +9,6 @@ const benefits = [
 ];
 
 const ThankYouInvestorAccess = () => {
-  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
