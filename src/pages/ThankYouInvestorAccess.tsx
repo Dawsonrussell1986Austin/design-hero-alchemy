@@ -69,13 +69,6 @@ const ThankYouInvestorAccess = () => {
             </p>
           </div>
 
-          <Button
-            onClick={() => navigate("/investor-access")}
-            variant="outline"
-            className="border-cream/30 text-cream hover:bg-white/10 font-body font-medium h-12 px-8"
-          >
-            Register Another Investor
-          </Button>
         </div>
       </main>
 
