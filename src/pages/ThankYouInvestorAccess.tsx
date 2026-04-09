@@ -79,7 +79,7 @@ const ThankYouInvestorAccess = () => {
         </div>
       </main>
 
-      <footer className="py-8 px-6 border-t border-white/10 mt-12">
+      <footer className="py-8 px-6 border-t border-white/10 mt-12 mb-24">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-cream/50 text-sm font-body">
             © {new Date().getFullYear()} Oak Real Estate Partners. All rights reserved.
