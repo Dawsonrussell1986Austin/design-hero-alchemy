@@ -1,50 +1,12 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import DelayedReportPopup from "@/components/DelayedReportPopup";
 import LandingDisclosure from "@/components/LandingDisclosure";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import LandingGHLForm from "@/components/LandingGHLForm";
+import { ChevronDown } from "lucide-react";
 
 const LandingFeeStructure = () => {
-  const navigate = useNavigate();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!firstName.trim() || !lastName.trim() || !email.trim()) {
-      toast.error("Please fill in all fields.");
-      return;
-    }
-    setIsSubmitting(true);
-    try {
-      const { error } = await supabase.from("investor_leads").insert({
-        full_name: `${firstName.trim()} ${lastName.trim()}`,
-        email: email.trim(),
-        message: "Fee Structure landing page opt-in",
-      });
-      if (error && !error.message.includes("duplicate")) throw error;
-      navigate("/thank-you-report");
-    } catch {
-      toast.error("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const display = { fontFamily: "'Playfair Display', Georgia, serif" };
   const sans = { fontFamily: "'Lato', sans-serif" };
-
-  const inputStyle: React.CSSProperties = {
-    ...sans, color: "#E4E3E1", borderBottom: "1px solid rgba(240,236,227,0.1)",
-    background: "transparent", padding: "0", height: "48px", fontSize: "13px",
-    fontWeight: 300, letterSpacing: "0.02em", width: "100%", outline: "none",
-    borderTop: "none", borderLeft: "none", borderRight: "none", borderRadius: 0,
-  };
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "linear-gradient(135deg, #060D14, #082233, #233F52)" }}>
@@ -79,25 +41,7 @@ const LandingFeeStructure = () => {
           </div>
 
           <div className="p-6 sm:p-8 md:p-10 text-left" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-            <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2 text-center" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
-              Get the Full Report
-            </p>
-            <p className="text-sm sm:text-base mb-6 sm:mb-8 text-center" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
-              Learn how Oak's fee structure is designed to protect your returns, not erode them.
-            </p>
-            <form onSubmit={handleSubmit} className="space-y-5 max-w-md mx-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} style={inputStyle} required />
-                <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} style={inputStyle} required />
-              </div>
-              <input type="email" placeholder="Email Address" value={email} onChange={(e) => setEmail(e.target.value)} style={inputStyle} required />
-              <div className="pt-4">
-                <button type="submit" disabled={isSubmitting} className="w-full flex items-center justify-center gap-3 py-3.5 text-[11px] tracking-[0.3em] uppercase transition-opacity disabled:opacity-50" style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}>
-                  {isSubmitting ? "Submitting..." : "Send Me the Report"}{!isSubmitting && <ArrowRight className="h-4 w-4" />}
-                </button>
-              </div>
-              <p className="text-[10px] text-center pt-1 tracking-wide" style={{ ...sans, color: "rgba(240,236,227,0.12)", fontWeight: 300 }}>No spam. Unsubscribe anytime.</p>
-            </form>
+            <LandingGHLForm />
           </div>
         </div>
 
@@ -175,7 +119,7 @@ const LandingFeeStructure = () => {
             The difference between aligned fees and extractive fees compounds every year.
           </p>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="mt-10 inline-flex items-center gap-3 py-3 px-10 text-[11px] tracking-[0.3em] uppercase transition-opacity" style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}>
-            Get the Report <ArrowRight className="h-4 w-4" />
+            Get the Report →
           </button>
         </div>
       </section>
