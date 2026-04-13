@@ -77,6 +77,11 @@ import Brownie from "./pages/Brownie";
 import HomepageDraft3 from "./pages/HomepageDraft3";
 import AdCreatives from "./pages/AdCreatives";
 import ThankYouInvestorAccess from "./pages/ThankYouInvestorAccess";
+import LandingNamedCollateral from "./pages/LandingNamedCollateral";
+import LandingFeeStructure from "./pages/LandingFeeStructure";
+import LandingTransparency from "./pages/LandingTransparency";
+import LandingInstitutional from "./pages/LandingInstitutional";
+import LandingLiquidity from "./pages/LandingLiquidity";
 
 function App() {
   return (
@@ -157,6 +162,11 @@ function App() {
         <Route path="/cinnamonroll" element={<Brownie />} />
         <Route path="/ad-creatives" element={<AdCreatives />} />
         <Route path="/thank-you-investor-access" element={<ThankYouInvestorAccess />} />
+        <Route path="/every-dollar-has-an-address" element={<LandingNamedCollateral />} />
+        <Route path="/aligned-fee-structure" element={<LandingFeeStructure />} />
+        <Route path="/know-what-you-own" element={<LandingTransparency />} />
+        <Route path="/invest-alongside-institutions" element={<LandingInstitutional />} />
+        <Route path="/capital-on-your-timeline" element={<LandingLiquidity />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
