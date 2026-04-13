@@ -271,6 +271,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         toast({ title: "Failed to save images", description: error.message, variant: "destructive" });
       } else {
         toast({ title: `${newUrls.length} image(s) uploaded` });
+        // Notify Ray about new images for review
+        const taskName = task?.task || "Unknown Task";
+        sendNotification("image_uploaded", taskName, "Ray", currentUserName, String(newUrls.length));
       }
     }
   }, [tasks, toast]);
