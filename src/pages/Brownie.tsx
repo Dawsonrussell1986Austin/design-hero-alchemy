@@ -626,7 +626,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                 )}
                                 <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload files">
                                   <Upload className="w-3.5 h-3.5" />
-                                  <input type="file" accept="image/*,video/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                  <input type="file" accept="image/*,video/*,.pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                                 </label>
                                 <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                                 <button
@@ -730,7 +730,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             </button>
                             <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload files">
                               <Upload className="w-3 h-3" />
-                              <input type="file" accept="image/*,video/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                              <input type="file" accept="image/*,video/*,.pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                             </label>
                             <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                             {t.image_urls && t.image_urls.length > 0 && (
@@ -1008,7 +1008,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 <div className="flex flex-wrap gap-2 mb-2">
                   {editingTask.image_urls.map((url, idx) => (
                     <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
-                      {/\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                      {/\.(pdf)(\?|$)/i.test(url) ? (
+                        <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-500 text-[10px] font-medium">PDF</div>
+                      ) : /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
                         <video src={url} className="w-full h-full object-cover" muted />
                       ) : (
                         <img src={url} alt="" className="w-full h-full object-cover" />
@@ -1033,7 +1035,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 <span className="text-xs text-gray-500">Click to upload images or videos</span>
                 <input
                   type="file"
-                  accept="image/*,video/*"
+                  accept="image/*,video/*,.pdf"
                   multiple
                   className="hidden"
                   onChange={async (e) => {
@@ -1163,7 +1165,12 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                   <div className="space-y-3">
                     <div className="grid grid-cols-2 gap-3">
                       {reviewTask.image_urls.map((url, idx) => (
-                        /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                        /\.(pdf)(\?|$)/i.test(url) ? (
+                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-gray-400 transition-colors bg-gray-50">
+                            <FileText className="w-5 h-5 text-red-500 flex-shrink-0" />
+                            <span className="text-sm text-gray-700 truncate">PDF Document {idx + 1}</span>
+                          </a>
+                        ) : /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
                           <div key={idx} className="rounded-lg overflow-hidden border border-gray-200">
                             <video src={url} controls className="w-full h-auto" />
                           </div>
