@@ -52,6 +52,7 @@ const LandingNamedCollateral = () => {
         description="No blind pools. No black box allocations. Every investment is backed by a specific, identifiable commercial property you can see and verify."
         canonicalUrl="/every-dollar-has-an-address"
       />
+      <DelayedReportPopup source="Named Collateral landing page opt-in" />
 
       <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-12 lg:px-20 pt-10 sm:pt-14 pb-8 sm:pb-12 overflow-hidden">
         <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none hidden sm:block" style={{ opacity: 0.03 }}>
