@@ -151,7 +151,7 @@ export type Database = {
           due_date: string | null
           id: number
           image_urls: string[] | null
-          link_url: string | null
+          link_urls: string[] | null
           platform: string
           priority: string
           status: string
@@ -163,7 +163,7 @@ export type Database = {
           due_date?: string | null
           id: number
           image_urls?: string[] | null
-          link_url?: string | null
+          link_urls?: string[] | null
           platform: string
           priority: string
           status?: string
@@ -175,7 +175,7 @@ export type Database = {
           due_date?: string | null
           id?: number
           image_urls?: string[] | null
-          link_url?: string | null
+          link_urls?: string[] | null
           platform?: string
           priority?: string
           status?: string
