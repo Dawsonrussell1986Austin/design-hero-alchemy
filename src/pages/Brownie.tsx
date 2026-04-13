@@ -305,7 +305,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
       if (error) {
         toast({ title: "Failed to save images", description: error.message, variant: "destructive" });
       } else {
-        toast({ title: `${newUrls.length} image(s) uploaded` });
+        toast({ title: `${newUrls.length} file(s) uploaded` });
         const taskName = task?.task || "Unknown Task";
         sendNotification("image_uploaded", taskName, "Ray", currentUserName, String(newUrls.length));
       }
@@ -624,9 +624,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                     </PopoverContent>
                                   </Popover>
                                 )}
-                                <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload images">
+                                <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload files">
                                   <Upload className="w-3.5 h-3.5" />
-                                  <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                  <input type="file" accept="image/*,video/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                                 </label>
                                 <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                                 <button
@@ -728,9 +728,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <button onClick={() => archiveTask(t.id)} className="p-0.5 text-gray-300 hover:text-amber-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Archive className="w-3 h-3" />
                             </button>
-                            <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload images">
+                            <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload files">
                               <Upload className="w-3 h-3" />
-                              <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                              <input type="file" accept="image/*,video/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                             </label>
                             <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                             {t.image_urls && t.image_urls.length > 0 && (
@@ -1008,7 +1008,11 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 <div className="flex flex-wrap gap-2 mb-2">
                   {editingTask.image_urls.map((url, idx) => (
                     <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
-                      <img src={url} alt="" className="w-full h-full object-cover" />
+                      {/\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                        <video src={url} className="w-full h-full object-cover" muted />
+                      ) : (
+                        <img src={url} alt="" className="w-full h-full object-cover" />
+                      )}
                       <button
                         type="button"
                         onClick={() => {
@@ -1026,10 +1030,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               )}
               <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-gray-300 cursor-pointer hover:border-gray-400 hover:bg-gray-50 transition-colors">
                 <Upload className="w-4 h-4 text-gray-400" />
-                <span className="text-xs text-gray-500">Click to upload images</span>
+                <span className="text-xs text-gray-500">Click to upload images or videos</span>
                 <input
                   type="file"
-                  accept="image/*"
+                  accept="image/*,video/*"
                   multiple
                   className="hidden"
                   onChange={async (e) => {
@@ -1153,21 +1157,27 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               {/* Images Section */}
               <div>
                 <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
-                  <ImageIcon className="w-3.5 h-3.5" /> Images ({(reviewTask.image_urls || []).length})
+                  <ImageIcon className="w-3.5 h-3.5" /> Media ({(reviewTask.image_urls || []).length})
                 </h3>
                 {(reviewTask.image_urls && reviewTask.image_urls.length > 0) ? (
                   <div className="space-y-3">
                     <div className="grid grid-cols-2 gap-3">
                       {reviewTask.image_urls.map((url, idx) => (
-                        <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-400 transition-colors">
-                          <img src={url} alt={`Attachment ${idx + 1}`} className="w-full h-auto object-cover" />
-                        </a>
+                        /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                          <div key={idx} className="rounded-lg overflow-hidden border border-gray-200">
+                            <video src={url} controls className="w-full h-auto" />
+                          </div>
+                        ) : (
+                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-400 transition-colors">
+                            <img src={url} alt={`Attachment ${idx + 1}`} className="w-full h-auto object-cover" />
+                          </a>
+                        )
                       ))}
                     </div>
                     <ImageApprovalGallery taskId={reviewTask.id} imageUrls={reviewTask.image_urls} currentUserName={currentUserName} />
                   </div>
                 ) : (
-                  <p className="text-xs text-gray-400 italic">No images uploaded yet</p>
+                  <p className="text-xs text-gray-400 italic">No media uploaded yet</p>
                 )}
               </div>
 
