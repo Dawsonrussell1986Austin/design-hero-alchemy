@@ -10,7 +10,7 @@ export interface BrownieTask {
   assigned: string;
   category: string;
   due_date?: string | null;
-  link_url?: string | null;
+  link_urls?: string[] | null;
   image_urls?: string[] | null;
 }
 
