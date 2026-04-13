@@ -56,7 +56,7 @@ const ImageApprovalGallery = ({ taskId, imageUrls, currentUserName }: ImageAppro
     }
 
     // Auto-create pending records for images that don't have one yet
-    const existingUrls = new Set((data || []).map((a: ImageApproval) => a.image_url));
+    const existingUrls = new Set((data || []).map((a: any) => a.image_url));
     const missingUrls = imageUrls.filter((url) => !existingUrls.has(url));
 
     if (missingUrls.length > 0) {
@@ -71,9 +71,9 @@ const ImageApprovalGallery = ({ taskId, imageUrls, currentUserName }: ImageAppro
         .from("brownie_task_image_approvals")
         .select("*")
         .eq("task_id", taskId);
-      setApprovals((updated || []) as ImageApproval[]);
+      setApprovals((updated || []).map((a: any) => ({ ...a, status: a.status as ImageApproval["status"] })));
     } else {
-      setApprovals((data || []) as ImageApproval[]);
+      setApprovals((data || []).map((a: any) => ({ ...a, status: a.status as ImageApproval["status"] })));
     }
 
     setLoading(false);
