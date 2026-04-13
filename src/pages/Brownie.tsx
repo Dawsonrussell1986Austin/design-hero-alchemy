@@ -683,6 +683,12 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                               <Archive className="w-3 h-3" />
                             </button>
                             <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                            {t.image_urls && t.image_urls.length > 0 && (
+                              <span className="flex items-center gap-0.5 text-violet-400">
+                                <ImageIcon className="w-3 h-3" />
+                                <span className="text-[9px] font-semibold">{t.image_urls.length}</span>
+                              </span>
+                            )}
                             <button
                               onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                               className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors"
