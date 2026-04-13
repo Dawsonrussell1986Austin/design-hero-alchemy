@@ -563,6 +563,25 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
                                 <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                {t.image_urls && t.image_urls.length > 0 && (
+                                  <Popover>
+                                    <PopoverTrigger asChild>
+                                      <button className="flex items-center gap-0.5 text-violet-400 hover:text-violet-600 transition-colors flex-shrink-0">
+                                        <ImageIcon className="w-3.5 h-3.5" />
+                                        <span className="text-[10px] font-semibold">{t.image_urls.length}</span>
+                                      </button>
+                                    </PopoverTrigger>
+                                    <PopoverContent className="w-auto max-w-[400px] p-2" align="start">
+                                      <div className="flex flex-wrap gap-2">
+                                        {t.image_urls.map((url, idx) => (
+                                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer">
+                                            <img src={url} alt="" className="w-24 h-24 object-cover rounded-lg border border-gray-200 hover:opacity-80 transition-opacity" />
+                                          </a>
+                                        ))}
+                                      </div>
+                                    </PopoverContent>
+                                  </Popover>
+                                )}
                                 <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
