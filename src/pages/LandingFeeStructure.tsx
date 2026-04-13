@@ -59,11 +59,11 @@ const LandingFeeStructure = () => {
           <span className="text-[20rem] sm:text-[28rem] font-light leading-none block" style={{ ...display, color: "#E4E3E1" }}>%</span>
         </div>
 
-        <div className="relative z-10">
+        <div className="relative z-10 max-w-6xl mx-auto w-full">
           <a href="/"><img src="/lovable-uploads/white_oak.png" alt="Oak Real Estate Partners" className="h-8 sm:h-10 md:h-12 w-auto" /></a>
         </div>
 
-        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto mt-auto mb-auto py-6 sm:py-8">
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto mt-auto mb-auto py-6 sm:py-8 w-full">
           <div>
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
               Investor-Aligned Fee Structure
