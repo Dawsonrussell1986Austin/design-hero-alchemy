@@ -1170,6 +1170,14 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                   <p className="text-xs text-gray-400 italic">No images uploaded yet</p>
                 )}
               </div>
+
+              {/* Notes Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <MessageSquare className="w-3.5 h-3.5" /> Notes
+                </h3>
+                <TaskNotesPanel taskId={reviewTask.id} taskName={reviewTask.task} currentUserName={currentUserName} assignedTo={reviewTask.assigned} inline />
+              </div>
             </div>
           )}
         </DialogContent>
