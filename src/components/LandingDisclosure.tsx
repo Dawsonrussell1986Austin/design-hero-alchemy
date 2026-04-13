@@ -50,7 +50,7 @@ const LandingDisclosure = () => (
       </p>
 
       <p style={{ color: "#9AA5A8" }}>
-        © Oak Real Estate Partners. All rights reserved.
+        © White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners. All rights reserved.
       </p>
     </div>
   </section>
