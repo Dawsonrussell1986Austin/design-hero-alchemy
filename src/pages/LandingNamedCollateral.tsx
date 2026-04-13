@@ -72,7 +72,7 @@ const LandingNamedCollateral = () => {
               Every dollar has{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>an address.</em>
             </h1>
-            <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
+            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#FFFFFF", fontWeight: 400, letterSpacing: "0.02em" }}>
               No blind pools. No "black box" allocations. Every investment is backed by a specific, identifiable commercial property.
             </p>
           </div>

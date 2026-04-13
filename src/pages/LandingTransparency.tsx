@@ -72,7 +72,7 @@ const LandingTransparency = () => {
               You deserve to know{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>exactly</em> what you own.
             </h1>
-            <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
+            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#FFFFFF", fontWeight: 400, letterSpacing: "0.02em" }}>
               Institutional underwriting. No hidden leverage. No "2 and 20" fee drag that erodes your returns.
             </p>
           </div>

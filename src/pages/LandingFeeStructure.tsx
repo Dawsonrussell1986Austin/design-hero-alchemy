@@ -72,7 +72,7 @@ const LandingFeeStructure = () => {
               Your returns shouldn't fund{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>someone else's carry.</em>
             </h1>
-            <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
+            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#FFFFFF", fontWeight: 400, letterSpacing: "0.02em" }}>
               Every basis point matters. We built a fee structure that aligns our interests with yours — not the other way around.
             </p>
           </div>
