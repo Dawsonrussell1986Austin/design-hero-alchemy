@@ -249,6 +249,32 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
     return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0, archived };
   }, [tasks]);
 
+  const handleInlineUpload = useCallback(async (taskId: number, files: FileList) => {
+    const newUrls: string[] = [];
+    for (const file of Array.from(files)) {
+      const ext = file.name.split(".").pop() || "png";
+      const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+      const { error } = await supabase.storage.from("task-images").upload(path, file);
+      if (error) {
+        toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+        continue;
+      }
+      const { data: urlData } = supabase.storage.from("task-images").getPublicUrl(path);
+      newUrls.push(urlData.publicUrl);
+    }
+    if (newUrls.length > 0) {
+      const task = tasks.find((t) => t.id === taskId);
+      const updatedUrls = [...(task?.image_urls || []), ...newUrls];
+      setTasks((prev) => prev.map((t) => (t.id === taskId ? { ...t, image_urls: updatedUrls } : t)));
+      const { error } = await supabase.from("brownie_tasks").update({ image_urls: updatedUrls }).eq("id", taskId);
+      if (error) {
+        toast({ title: "Failed to save images", description: error.message, variant: "destructive" });
+      } else {
+        toast({ title: `${newUrls.length} image(s) uploaded` });
+      }
+    }
+  }, [tasks, toast]);
+
   const updateField = useCallback(async (id: number, field: string, value: string | null) => {
     setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
     const { error } = await supabase
@@ -578,6 +604,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                     </PopoverContent>
                                   </Popover>
                                 )}
+                                <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload images">
+                                  <Upload className="w-3.5 h-3.5" />
+                                  <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                </label>
                                 <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
@@ -678,6 +708,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <button onClick={() => archiveTask(t.id)} className="p-0.5 text-gray-300 hover:text-amber-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Archive className="w-3 h-3" />
                             </button>
+                            <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload images">
+                              <Upload className="w-3 h-3" />
+                              <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                            </label>
                             <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                             {t.image_urls && t.image_urls.length > 0 && (
                               <Popover>
