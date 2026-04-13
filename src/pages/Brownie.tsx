@@ -729,7 +729,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                               <Upload className="w-3 h-3" />
                               <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                             </label>
-                            <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                            <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                             {t.image_urls && t.image_urls.length > 0 && (
                               <Popover>
                                 <PopoverTrigger asChild>
