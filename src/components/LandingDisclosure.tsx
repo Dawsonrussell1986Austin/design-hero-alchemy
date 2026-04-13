@@ -22,7 +22,7 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Forward-Looking Statements</h4>
       <p>
-        The Materials may contain forward-looking statements, projections, estimates, or forecasts relating to anticipated future performance of investments, properties, or market conditions. Such statements are inherently uncertain and subject to risks, and actual results may differ materially from those expressed or implied. Oak Real Estate Partners does not undertake any obligation to update or revise any forward-looking statements, whether as a result of new information, future events, or otherwise.
+        The Materials may contain forward-looking statements, projections, estimates, or forecasts relating to anticipated future performance of investments, properties, or market conditions. Such statements are inherently uncertain and subject to risks, and actual results may differ materially from those expressed or implied. OAK does not undertake any obligation to update or revise any forward-looking statements, whether as a result of new information, future events, or otherwise.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>No Guarantee of Performance</h4>
