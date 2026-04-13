@@ -41,6 +41,12 @@ const LandingFeeStructure = () => {
           </div>
 
           <div className="p-6 sm:p-8 md:p-10 text-left" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
+            <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2 text-center" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
+              Get the Full Report
+            </p>
+            <p className="text-sm sm:text-base mb-6 sm:mb-8 text-center" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
+              Learn how Oak's fee structure is designed to protect your returns, not erode them.
+            </p>
             <LandingGHLForm />
           </div>
         </div>
