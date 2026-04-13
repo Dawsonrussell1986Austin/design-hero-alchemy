@@ -8,7 +8,7 @@ const LandingDisclosure = () => (
       </h3>
 
       <p>
-        This document and any accompanying materials (collectively, the "Materials") are provided by Oak Real Estate Partners and its affiliates (collectively, "Oak Real Estate Partners" or the "Company") for informational purposes only. The Materials do not constitute an offer to sell, or a solicitation of an offer to buy, any security, investment product, or interest in any fund, vehicle, or entity managed by or affiliated with Oak Real Estate Partners.
+        This document and any accompanying materials (collectively, the "Materials") are provided by White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners ("OAK") and its affiliates (collectively, "OAK" or the "Company") for informational purposes only. The Materials do not constitute an offer to sell, or a solicitation of an offer to buy, any security, investment product, or interest in any fund, vehicle, or entity managed by or affiliated with OAK.
       </p>
 
       <p>
@@ -22,7 +22,7 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Forward-Looking Statements</h4>
       <p>
-        The Materials may contain forward-looking statements, projections, estimates, or forecasts relating to anticipated future performance of investments, properties, or market conditions. Such statements are inherently uncertain and subject to risks, and actual results may differ materially from those expressed or implied. Oak Real Estate Partners does not undertake any obligation to update or revise any forward-looking statements, whether as a result of new information, future events, or otherwise.
+        The Materials may contain forward-looking statements, projections, estimates, or forecasts relating to anticipated future performance of investments, properties, or market conditions. Such statements are inherently uncertain and subject to risks, and actual results may differ materially from those expressed or implied. OAK does not undertake any obligation to update or revise any forward-looking statements, whether as a result of new information, future events, or otherwise.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>No Guarantee of Performance</h4>
@@ -32,17 +32,17 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Confidentiality</h4>
       <p>
-        The Materials are confidential and are intended solely for the use of the person or entity to whom they are addressed. Any reproduction, distribution, or dissemination of the Materials, in whole or in part, without the prior written consent of Oak Real Estate Partners is strictly prohibited.
+        The Materials are confidential and are intended solely for the use of the person or entity to whom they are addressed. Any reproduction, distribution, or dissemination of the Materials, in whole or in part, without the prior written consent of OAK is strictly prohibited.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Regulatory Notice</h4>
       <p>
-        Oak Real Estate Partners is not registered as a broker-dealer or investment adviser with the U.S. Securities and Exchange Commission or any state securities authority unless otherwise disclosed. The Materials have not been reviewed or approved by any federal, state, or other regulatory authority. No regulatory authority has passed upon the accuracy or adequacy of the Materials.
+        OAK is not registered as a broker-dealer or investment adviser with the U.S. Securities and Exchange Commission or any state securities authority unless otherwise disclosed. The Materials have not been reviewed or approved by any federal, state, or other regulatory authority. No regulatory authority has passed upon the accuracy or adequacy of the Materials.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Limitation of Liability</h4>
       <p>
-        To the fullest extent permitted by law, Oak Real Estate Partners, its members, managers, officers, directors, employees, agents, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of, or reliance upon, any information contained in the Materials.
+        To the fullest extent permitted by law, OAK, its members, managers, officers, directors, employees, agents, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of, or reliance upon, any information contained in the Materials.
       </p>
 
       <p className="pt-4" style={{ color: "#9AA5A8" }}>
@@ -50,7 +50,7 @@ const LandingDisclosure = () => (
       </p>
 
       <p style={{ color: "#9AA5A8" }}>
-        © Oak Real Estate Partners. All rights reserved.
+        © White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners. All rights reserved.
       </p>
     </div>
   </section>
