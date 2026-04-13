@@ -329,7 +329,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   };
 
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
-  const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
+  const updateLinks = (id: number, urls: string[] | null) => updateField(id, "link_urls", urls || []);
 
   const archiveTask = async (id: number) => {
     await updateField(id, "status", "Archived");
