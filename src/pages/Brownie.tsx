@@ -145,7 +145,7 @@ const makeEmptyTask = (currentUser: string): Partial<BrownieTask> & { isNew?: bo
   category: categories[0],
   platform: "",
   due_date: null,
-  link_url: null,
+  link_urls: [],
   image_urls: [],
 });
 
