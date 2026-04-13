@@ -72,7 +72,7 @@ const LandingInstitutional = () => {
               Your capital, invested alongside{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>insurance companies, foundations & endowments.</em>
             </h1>
-            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#FFFFFF", fontWeight: 400, letterSpacing: "0.02em" }}>
+            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
               Access the same senior-secured, real-asset-backed structures that institutions use to protect and grow capital through every cycle.
             </p>
           </div>
