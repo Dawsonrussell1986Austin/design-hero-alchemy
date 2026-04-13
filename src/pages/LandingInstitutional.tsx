@@ -69,7 +69,7 @@ const LandingInstitutional = () => {
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
               Institutional Co-Investment
             </p>
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
               Your capital, invested alongside{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>insurance companies, foundations & endowments.</em>
             </h1>
