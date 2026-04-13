@@ -11,6 +11,7 @@ export interface BrownieTask {
   category: string;
   due_date?: string | null;
   link_url?: string | null;
+  image_urls?: string[] | null;
 }
 
 export const categories = [
