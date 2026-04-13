@@ -347,6 +347,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         category: editingTask.category || categories[0],
         due_date: editingTask.due_date || null,
         link_url: editingTask.link_url || null,
+        image_urls: editingTask.image_urls || [],
       };
 
       const { error } = await supabase.from("brownie_tasks").insert(newTask);
@@ -366,6 +367,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         status: editingTask.status,
         due_date: editingTask.due_date || null,
         link_url: editingTask.link_url || null,
+        image_urls: editingTask.image_urls || [],
       };
       const { error } = await supabase.from("brownie_tasks").update(updates).eq("id", editingTask.id);
       if (error) {
