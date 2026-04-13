@@ -104,7 +104,7 @@ const LandingLiquidity = () => {
           <div className="grid grid-cols-3 gap-4 sm:gap-8 md:gap-16 max-w-4xl mx-auto text-center">
             {[
               { stat: "12–36", note: "month typical loan duration" },
-              { stat: "$0", note: "capital calls years into the future" },
+              { stat: "Zero", note: "capital calls" },
               { stat: "150+", note: "loans originated and returned" },
             ].map((d) => (
               <div key={d.stat}>
