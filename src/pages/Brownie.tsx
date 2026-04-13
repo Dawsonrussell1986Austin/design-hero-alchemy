@@ -625,7 +625,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                   <Upload className="w-3.5 h-3.5" />
                                   <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                                 </label>
-                                <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                                <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                                   className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0"
