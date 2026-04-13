@@ -257,7 +257,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
     return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0, archived };
   }, [tasks]);
 
-  const updateField = useCallback(async (id: number, field: string, value: string | null) => {
+  const updateField = useCallback(async (id: number, field: string, value: string | string[] | null) => {
     setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
     const { error } = await supabase
       .from("brownie_tasks")
