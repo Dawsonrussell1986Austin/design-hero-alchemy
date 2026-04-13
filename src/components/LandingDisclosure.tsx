@@ -8,7 +8,7 @@ const LandingDisclosure = () => (
       </h3>
 
       <p>
-        This document and any accompanying materials (collectively, the "Materials") are provided by Oak Real Estate Partners and its affiliates (collectively, "Oak Real Estate Partners" or the "Company") for informational purposes only. The Materials do not constitute an offer to sell, or a solicitation of an offer to buy, any security, investment product, or interest in any fund, vehicle, or entity managed by or affiliated with Oak Real Estate Partners.
+        This document and any accompanying materials (collectively, the "Materials") are provided by White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners ("OAK") and its affiliates (collectively, "OAK" or the "Company") for informational purposes only. The Materials do not constitute an offer to sell, or a solicitation of an offer to buy, any security, investment product, or interest in any fund, vehicle, or entity managed by or affiliated with OAK.
       </p>
 
       <p>
