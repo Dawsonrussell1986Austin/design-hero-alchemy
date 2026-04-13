@@ -708,6 +708,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <button onClick={() => archiveTask(t.id)} className="p-0.5 text-gray-300 hover:text-amber-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Archive className="w-3 h-3" />
                             </button>
+                            <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload images">
+                              <Upload className="w-3 h-3" />
+                              <input type="file" accept="image/*" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                            </label>
                             <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                             {t.image_urls && t.image_urls.length > 0 && (
                               <Popover>
