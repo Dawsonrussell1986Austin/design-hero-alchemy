@@ -32,7 +32,7 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Confidentiality</h4>
       <p>
-        The Materials are confidential and are intended solely for the use of the person or entity to whom they are addressed. Any reproduction, distribution, or dissemination of the Materials, in whole or in part, without the prior written consent of Oak Real Estate Partners is strictly prohibited.
+        The Materials are confidential and are intended solely for the use of the person or entity to whom they are addressed. Any reproduction, distribution, or dissemination of the Materials, in whole or in part, without the prior written consent of OAK is strictly prohibited.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Regulatory Notice</h4>
