@@ -1182,7 +1182,6 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           )}
         </DialogContent>
       </Dialog>
-      </Dialog>
     </div>
   );
 };
