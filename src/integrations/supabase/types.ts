@@ -74,6 +74,44 @@ export type Database = {
         }
         Relationships: []
       }
+      brownie_task_image_approvals: {
+        Row: {
+          created_at: string
+          id: string
+          image_url: string
+          reviewed_at: string | null
+          reviewed_by: string | null
+          status: string
+          task_id: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          image_url: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
+          task_id: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          image_url?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
+          task_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "brownie_task_image_approvals_task_id_fkey"
+            columns: ["task_id"]
+            isOneToOne: false
+            referencedRelation: "brownie_tasks"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       brownie_task_notes: {
         Row: {
           author: string
