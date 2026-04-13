@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import { CheckCircle2, XCircle, Clock, Loader2 } from "lucide-react";
+import { CheckCircle2, XCircle, Clock, FileText, Loader2 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -36,6 +36,9 @@ const statusBadge: Record<string, { icon: React.ReactNode; label: string; classN
     className: "bg-red-100 text-red-700 border-red-200",
   },
 };
+
+const isPdfAsset = (url: string) => /\.(pdf)(\?|$)/i.test(url);
+const isVideoAsset = (url: string) => /\.(mp4|mov|webm|avi)(\?|$)/i.test(url);
 
 const ImageApprovalGallery = ({ taskId, imageUrls, currentUserName }: ImageApprovalGalleryProps) => {
   const [approvals, setApprovals] = useState<ImageApproval[]>([]);
@@ -105,7 +108,7 @@ const ImageApprovalGallery = ({ taskId, imageUrls, currentUserName }: ImageAppro
             : a
         )
       );
-      toast({ title: `Image ${newStatus}` });
+      toast({ title: `Media ${newStatus}` });
     }
     setUpdating(null);
   };
@@ -120,23 +123,52 @@ const ImageApprovalGallery = ({ taskId, imageUrls, currentUserName }: ImageAppro
 
   return (
     <div className="space-y-3">
-      {imageUrls.map((url) => {
+      {imageUrls.map((url, idx) => {
         const approval = approvals.find((a) => a.image_url === url);
         const status = approval?.status || "pending";
         const badge = statusBadge[status];
+        const isPdf = isPdfAsset(url);
+        const isVideo = isVideoAsset(url);
 
         return (
           <div key={url} className="rounded-lg border border-gray-200 overflow-hidden bg-white">
-            <a href={url} target="_blank" rel="noopener noreferrer">
-              <img
-                src={url}
-                alt=""
+            {isPdf ? (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
-                  "w-full max-h-[200px] object-contain bg-gray-50 hover:opacity-90 transition-opacity",
+                  "flex min-h-[180px] flex-col items-center justify-center gap-2 bg-gray-50 px-4 py-6 text-center text-gray-500 hover:opacity-90 transition-opacity",
                   status === "rejected" && "opacity-50"
                 )}
-              />
-            </a>
+              >
+                <FileText className="w-10 h-10 text-red-500" />
+                <span className="text-xs font-medium text-gray-700">PDF Document {idx + 1}</span>
+                <span className="text-[11px]">Open in new tab</span>
+              </a>
+            ) : isVideo ? (
+              <div className="bg-gray-50 p-2">
+                <video
+                  src={url}
+                  controls
+                  className={cn(
+                    "w-full max-h-[220px] rounded object-contain bg-black",
+                    status === "rejected" && "opacity-50"
+                  )}
+                />
+              </div>
+            ) : (
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                <img
+                  src={url}
+                  alt={`Task attachment ${idx + 1}`}
+                  className={cn(
+                    "w-full max-h-[200px] object-contain bg-gray-50 hover:opacity-90 transition-opacity",
+                    status === "rejected" && "opacity-50"
+                  )}
+                />
+              </a>
+            )}
             <div className="px-3 py-2 flex items-center justify-between gap-2">
               {/* Status badge */}
               <div className={cn("flex items-center gap-1 text-[10px] font-semibold px-2 py-0.5 rounded-full border", badge.className)}>

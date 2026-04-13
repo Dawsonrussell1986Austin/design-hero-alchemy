@@ -50,6 +50,9 @@ const ganttBarColors: Record<string, string> = {
 
 type ViewMode = "list" | "board" | "timeline";
 
+const isPdfAsset = (url: string) => /\.(pdf)(\?|$)/i.test(url);
+const isVideoAsset = (url: string) => /\.(mp4|mov|webm|avi)(\?|$)/i.test(url);
+
 const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; onChange: (date: string | null) => void }) => {
   const selected = value ? parseISO(value) : undefined;
   const today = startOfDay(new Date());
@@ -289,7 +292,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
     for (const file of Array.from(files)) {
       const ext = file.name.split(".").pop() || "png";
       const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
-      const { error } = await supabase.storage.from("task-images").upload(path, file);
+      const { error } = await supabase.storage.from("task-images").upload(path, file, {
+        contentType: file.type || undefined,
+      });
       if (error) {
         toast({ title: "Upload failed", description: error.message, variant: "destructive" });
         continue;
@@ -303,7 +308,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
       setTasks((prev) => prev.map((t) => (t.id === taskId ? { ...t, image_urls: updatedUrls } : t)));
       const { error } = await supabase.from("brownie_tasks").update({ image_urls: updatedUrls }).eq("id", taskId);
       if (error) {
-        toast({ title: "Failed to save images", description: error.message, variant: "destructive" });
+        toast({ title: "Failed to save media", description: error.message, variant: "destructive" });
       } else {
         toast({ title: `${newUrls.length} file(s) uploaded` });
         const taskName = task?.task || "Unknown Task";
@@ -619,14 +624,14 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                       </button>
                                     </PopoverTrigger>
                                     <PopoverContent className="w-[320px] max-h-[400px] overflow-y-auto p-3" align="start">
-                                      <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Image Approvals</p>
+                                      <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Media Approvals</p>
                                       <ImageApprovalGallery taskId={t.id} imageUrls={t.image_urls} currentUserName={currentUserName} />
                                     </PopoverContent>
                                   </Popover>
                                 )}
                                 <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload files">
                                   <Upload className="w-3.5 h-3.5" />
-                                  <input type="file" accept="image/*,video/*,.pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                  <input type="file" accept="image/*,video/*,.pdf,application/pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                                 </label>
                                 <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                                 <button
@@ -730,7 +735,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             </button>
                             <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload files">
                               <Upload className="w-3 h-3" />
-                              <input type="file" accept="image/*,video/*,.pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                  <input type="file" accept="image/*,video/*,.pdf,application/pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
                             </label>
                             <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                             {t.image_urls && t.image_urls.length > 0 && (
@@ -742,7 +747,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                                   </button>
                                 </PopoverTrigger>
                                 <PopoverContent className="w-[320px] max-h-[400px] overflow-y-auto p-3" align="start">
-                                  <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Image Approvals</p>
+                                  <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Media Approvals</p>
                                   <ImageApprovalGallery taskId={t.id} imageUrls={t.image_urls} currentUserName={currentUserName} />
                                 </PopoverContent>
                               </Popover>
@@ -1002,15 +1007,15 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               </div>
             </div>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Images</label>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Media</label>
               {/* Existing images */}
               {(editingTask.image_urls && editingTask.image_urls.length > 0) && (
                 <div className="flex flex-wrap gap-2 mb-2">
                   {editingTask.image_urls.map((url, idx) => (
                     <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
-                      {/\.(pdf)(\?|$)/i.test(url) ? (
+                      {isPdfAsset(url) ? (
                         <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-500 text-[10px] font-medium">PDF</div>
-                      ) : /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                      ) : isVideoAsset(url) ? (
                         <video src={url} className="w-full h-full object-cover" muted />
                       ) : (
                         <img src={url} alt="" className="w-full h-full object-cover" />
@@ -1032,10 +1037,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               )}
               <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-gray-300 cursor-pointer hover:border-gray-400 hover:bg-gray-50 transition-colors">
                 <Upload className="w-4 h-4 text-gray-400" />
-                <span className="text-xs text-gray-500">Click to upload images or videos</span>
+                <span className="text-xs text-gray-500">Click to upload images, videos, or PDFs</span>
                 <input
                   type="file"
-                  accept="image/*,video/*,.pdf"
+                  accept="image/*,video/*,.pdf,application/pdf"
                   multiple
                   className="hidden"
                   onChange={async (e) => {
@@ -1045,7 +1050,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                     for (const file of Array.from(files)) {
                       const ext = file.name.split(".").pop() || "png";
                       const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
-                      const { error } = await supabase.storage.from("task-images").upload(path, file);
+                      const { error } = await supabase.storage.from("task-images").upload(path, file, {
+                        contentType: file.type || undefined,
+                      });
                       if (error) {
                         toast({ title: "Upload failed", description: error.message, variant: "destructive" });
                         continue;
@@ -1165,12 +1172,12 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                   <div className="space-y-3">
                     <div className="grid grid-cols-2 gap-3">
                       {reviewTask.image_urls.map((url, idx) => (
-                        /\.(pdf)(\?|$)/i.test(url) ? (
+                        isPdfAsset(url) ? (
                           <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-gray-400 transition-colors bg-gray-50">
                             <FileText className="w-5 h-5 text-red-500 flex-shrink-0" />
                             <span className="text-sm text-gray-700 truncate">PDF Document {idx + 1}</span>
                           </a>
-                        ) : /\.(mp4|mov|webm|avi)(\?|$)/i.test(url) ? (
+                        ) : isVideoAsset(url) ? (
                           <div key={idx} className="rounded-lg overflow-hidden border border-gray-200">
                             <video src={url} controls className="w-full h-auto" />
                           </div>
