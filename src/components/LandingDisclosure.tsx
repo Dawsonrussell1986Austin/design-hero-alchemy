@@ -37,7 +37,7 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Regulatory Notice</h4>
       <p>
-        Oak Real Estate Partners is not registered as a broker-dealer or investment adviser with the U.S. Securities and Exchange Commission or any state securities authority unless otherwise disclosed. The Materials have not been reviewed or approved by any federal, state, or other regulatory authority. No regulatory authority has passed upon the accuracy or adequacy of the Materials.
+        OAK is not registered as a broker-dealer or investment adviser with the U.S. Securities and Exchange Commission or any state securities authority unless otherwise disclosed. The Materials have not been reviewed or approved by any federal, state, or other regulatory authority. No regulatory authority has passed upon the accuracy or adequacy of the Materials.
       </p>
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Limitation of Liability</h4>
