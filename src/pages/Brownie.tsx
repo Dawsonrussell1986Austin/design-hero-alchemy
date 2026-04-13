@@ -609,7 +609,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                           <tr key={t.id} className="border-t border-gray-100 transition-colors hover:bg-gray-50/50">
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
-                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <button onClick={() => setReviewTask(t)} className={`text-sm flex-1 text-left hover:underline cursor-pointer ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</button>
                                 {t.image_urls && t.image_urls.length > 0 && (
                                   <Popover>
                                     <PopoverTrigger asChild>
@@ -720,7 +720,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                     {colTasks.map((t) => (
                       <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50 group">
                         <div className="flex items-start justify-between gap-2 mb-2">
-                          <p className="text-sm text-gray-800 flex-1">{t.task}</p>
+                          <button onClick={() => setReviewTask(t)} className="text-sm text-gray-800 flex-1 text-left hover:underline cursor-pointer">{t.task}</button>
                           <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
                             <button onClick={() => openEditTask(t)} className="p-0.5 text-gray-300 hover:text-gray-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Pencil className="w-3 h-3" />
