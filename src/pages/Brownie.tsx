@@ -894,6 +894,63 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 className="h-9 text-xs"
               />
             </div>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Images</label>
+              {/* Existing images */}
+              {(editingTask.image_urls && editingTask.image_urls.length > 0) && (
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {editingTask.image_urls.map((url, idx) => (
+                    <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
+                      <img src={url} alt="" className="w-full h-full object-cover" />
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const updated = [...(editingTask.image_urls || [])];
+                          updated.splice(idx, 1);
+                          setEditingTask((prev) => ({ ...prev, image_urls: updated }));
+                        }}
+                        className="absolute top-0.5 right-0.5 p-0.5 rounded-full bg-red-500 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-gray-300 cursor-pointer hover:border-gray-400 hover:bg-gray-50 transition-colors">
+                <Upload className="w-4 h-4 text-gray-400" />
+                <span className="text-xs text-gray-500">Click to upload images</span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={async (e) => {
+                    const files = e.target.files;
+                    if (!files || files.length === 0) return;
+                    const newUrls: string[] = [];
+                    for (const file of Array.from(files)) {
+                      const ext = file.name.split(".").pop() || "png";
+                      const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+                      const { error } = await supabase.storage.from("task-images").upload(path, file);
+                      if (error) {
+                        toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+                        continue;
+                      }
+                      const { data: urlData } = supabase.storage.from("task-images").getPublicUrl(path);
+                      newUrls.push(urlData.publicUrl);
+                    }
+                    if (newUrls.length > 0) {
+                      setEditingTask((prev) => ({
+                        ...prev,
+                        image_urls: [...(prev.image_urls || []), ...newUrls],
+                      }));
+                    }
+                    e.target.value = "";
+                  }}
+                />
+              </label>
+            </div>
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setDialogOpen(false)}>Cancel</Button>
