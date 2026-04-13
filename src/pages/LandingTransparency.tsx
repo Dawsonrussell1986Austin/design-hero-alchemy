@@ -61,19 +61,21 @@ const LandingTransparency = () => {
           <a href="/"><img src="/lovable-uploads/white_oak.png" alt="Oak Real Estate Partners" className="h-8 sm:h-10 md:h-12 w-auto" /></a>
         </div>
 
-        <div className="relative z-10 max-w-3xl mx-auto mt-auto mb-auto py-6 sm:py-8 text-center">
-          <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
-            Full Transparency Investing
-          </p>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
-            You deserve to know{" "}
-            <em style={{ color: "#D4B35C", fontWeight: 300 }}>exactly</em> what you own.
-          </h1>
-          <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px] mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
-            Institutional underwriting. No hidden leverage. No "2 and 20" fee drag that erodes your returns.
-          </p>
+        <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto mt-auto mb-auto py-6 sm:py-8">
+          <div>
+            <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
+              Full Transparency Investing
+            </p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
+              You deserve to know{" "}
+              <em style={{ color: "#D4B35C", fontWeight: 300 }}>exactly</em> what you own.
+            </h1>
+            <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
+              Institutional underwriting. No hidden leverage. No "2 and 20" fee drag that erodes your returns.
+            </p>
+          </div>
 
-          <div className="p-6 sm:p-8 md:p-10 mt-10 sm:mt-14 text-left" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
+          <div className="p-6 sm:p-8 md:p-10 text-left" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
             <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2 text-center" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
               Get the Full Report
             </p>
