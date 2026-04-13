@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import DelayedReportPopup from "@/components/DelayedReportPopup";
+import LandingDisclosure from "@/components/LandingDisclosure";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ArrowRight, ChevronDown } from "lucide-react";
