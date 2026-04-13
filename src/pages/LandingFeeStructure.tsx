@@ -1,5 +1,4 @@
 import SEOHead from "@/components/SEOHead";
-import DelayedReportPopup from "@/components/DelayedReportPopup";
 import LandingDisclosure from "@/components/LandingDisclosure";
 import LandingGHLForm from "@/components/LandingGHLForm";
 import { ChevronDown } from "lucide-react";
@@ -15,7 +14,7 @@ const LandingFeeStructure = () => {
         description="Every basis point matters. We built a fee structure that aligns our interests with yours — not the other way around."
         canonicalUrl="/aligned-fee-structure"
       />
-      <DelayedReportPopup source="Fee Structure landing page opt-in" />
+      
 
       <section className="relative min-h-screen flex flex-col justify-between px-4 sm:px-12 lg:px-20 pt-10 sm:pt-14 pb-8 sm:pb-12 overflow-hidden">
         <div className="absolute -right-16 top-1/2 -translate-y-1/2 select-none pointer-events-none hidden sm:block" style={{ opacity: 0.03 }}>
