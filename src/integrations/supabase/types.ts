@@ -112,6 +112,7 @@ export type Database = {
           category: string
           due_date: string | null
           id: number
+          image_urls: string[] | null
           link_url: string | null
           platform: string
           priority: string
@@ -123,6 +124,7 @@ export type Database = {
           category: string
           due_date?: string | null
           id: number
+          image_urls?: string[] | null
           link_url?: string | null
           platform: string
           priority: string
@@ -134,6 +136,7 @@ export type Database = {
           category?: string
           due_date?: string | null
           id?: number
+          image_urls?: string[] | null
           link_url?: string | null
           platform?: string
           priority?: string
