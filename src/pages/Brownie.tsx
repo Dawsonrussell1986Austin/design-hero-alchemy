@@ -276,7 +276,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         sendNotification("image_uploaded", taskName, "Ray", currentUserName, String(newUrls.length));
       }
     }
-  }, [tasks, toast]);
+  }, [tasks, toast, sendNotification, currentUserName]);
 
   const updateField = useCallback(async (id: number, field: string, value: string | null) => {
     setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
