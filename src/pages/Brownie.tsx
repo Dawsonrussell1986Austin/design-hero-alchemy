@@ -181,6 +181,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
 
+  // Review detail dialog
+  const [reviewTask, setReviewTask] = useState<BrownieTask | null>(null);
+
   // Team email settings
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [teamEmails, setTeamEmails] = useState<Record<string, string>>({});
