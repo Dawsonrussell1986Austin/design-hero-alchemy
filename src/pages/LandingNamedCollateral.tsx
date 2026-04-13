@@ -5,43 +5,8 @@ import LandingGHLForm from "@/components/LandingGHLForm";
 import { ChevronDown } from "lucide-react";
 
 const LandingNamedCollateral = () => {
-  const navigate = useNavigate();
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!firstName.trim() || !lastName.trim() || !email.trim()) {
-      toast.error("Please fill in all fields.");
-      return;
-    }
-    setIsSubmitting(true);
-    try {
-      const { error } = await supabase.from("investor_leads").insert({
-        full_name: `${firstName.trim()} ${lastName.trim()}`,
-        email: email.trim(),
-        message: "Named Collateral landing page opt-in",
-      });
-      if (error && !error.message.includes("duplicate")) throw error;
-      navigate("/thank-you-report");
-    } catch {
-      toast.error("Something went wrong. Please try again.");
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const display = { fontFamily: "'Playfair Display', Georgia, serif" };
   const sans = { fontFamily: "'Lato', sans-serif" };
-
-  const inputStyle: React.CSSProperties = {
-    ...sans, color: "#E4E3E1", borderBottom: "1px solid rgba(240,236,227,0.1)",
-    background: "transparent", padding: "0", height: "48px", fontSize: "13px",
-    fontWeight: 300, letterSpacing: "0.02em", width: "100%", outline: "none",
-    borderTop: "none", borderLeft: "none", borderRight: "none", borderRadius: 0,
-  };
 
   return (
     <div className="min-h-screen flex flex-col" style={{ background: "linear-gradient(135deg, #060D14, #082233, #233F52)" }}>
