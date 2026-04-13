@@ -404,6 +404,14 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
       }
       setTasks((prev) => prev.map((t) => (t.id === editingTask.id ? { ...t, ...updates } as BrownieTask : t)));
       toast({ title: "Task updated" });
+
+      // Notify Ray if new images were added via edit dialog
+      const originalTask = tasks.find((t) => t.id === editingTask.id);
+      const oldCount = originalTask?.image_urls?.length || 0;
+      const newCount = (editingTask.image_urls || []).length;
+      if (newCount > oldCount) {
+        sendNotification("image_uploaded", editingTask.task!.trim(), "Ray", currentUserName, String(newCount - oldCount));
+      }
     }
     setDialogOpen(false);
   };
