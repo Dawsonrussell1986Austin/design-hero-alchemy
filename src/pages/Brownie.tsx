@@ -5,7 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2, Settings, Mail } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2, Settings, Mail, ImageIcon, Upload } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
@@ -137,6 +137,7 @@ const makeEmptyTask = (currentUser: string): Partial<BrownieTask> & { isNew?: bo
   platform: "",
   due_date: null,
   link_url: null,
+  image_urls: [],
 });
 
 const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
@@ -346,6 +347,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         category: editingTask.category || categories[0],
         due_date: editingTask.due_date || null,
         link_url: editingTask.link_url || null,
+        image_urls: editingTask.image_urls || [],
       };
 
       const { error } = await supabase.from("brownie_tasks").insert(newTask);
@@ -365,6 +367,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         status: editingTask.status,
         due_date: editingTask.due_date || null,
         link_url: editingTask.link_url || null,
+        image_urls: editingTask.image_urls || [],
       };
       const { error } = await supabase.from("brownie_tasks").update(updates).eq("id", editingTask.id);
       if (error) {
@@ -560,6 +563,25 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
                                 <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                {t.image_urls && t.image_urls.length > 0 && (
+                                  <Popover>
+                                    <PopoverTrigger asChild>
+                                      <button className="flex items-center gap-0.5 text-violet-400 hover:text-violet-600 transition-colors flex-shrink-0">
+                                        <ImageIcon className="w-3.5 h-3.5" />
+                                        <span className="text-[10px] font-semibold">{t.image_urls.length}</span>
+                                      </button>
+                                    </PopoverTrigger>
+                                    <PopoverContent className="w-auto max-w-[400px] p-2" align="start">
+                                      <div className="flex flex-wrap gap-2">
+                                        {t.image_urls.map((url, idx) => (
+                                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer">
+                                            <img src={url} alt="" className="w-24 h-24 object-cover rounded-lg border border-gray-200 hover:opacity-80 transition-opacity" />
+                                          </a>
+                                        ))}
+                                      </div>
+                                    </PopoverContent>
+                                  </Popover>
+                                )}
                                 <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
@@ -661,6 +683,12 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                               <Archive className="w-3 h-3" />
                             </button>
                             <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                            {t.image_urls && t.image_urls.length > 0 && (
+                              <span className="flex items-center gap-0.5 text-violet-400">
+                                <ImageIcon className="w-3 h-3" />
+                                <span className="text-[9px] font-semibold">{t.image_urls.length}</span>
+                              </span>
+                            )}
                             <button
                               onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                               className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors"
@@ -890,6 +918,63 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                 placeholder="https://..."
                 className="h-9 text-xs"
               />
+            </div>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Images</label>
+              {/* Existing images */}
+              {(editingTask.image_urls && editingTask.image_urls.length > 0) && (
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {editingTask.image_urls.map((url, idx) => (
+                    <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
+                      <img src={url} alt="" className="w-full h-full object-cover" />
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const updated = [...(editingTask.image_urls || [])];
+                          updated.splice(idx, 1);
+                          setEditingTask((prev) => ({ ...prev, image_urls: updated }));
+                        }}
+                        className="absolute top-0.5 right-0.5 p-0.5 rounded-full bg-red-500 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-gray-300 cursor-pointer hover:border-gray-400 hover:bg-gray-50 transition-colors">
+                <Upload className="w-4 h-4 text-gray-400" />
+                <span className="text-xs text-gray-500">Click to upload images</span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={async (e) => {
+                    const files = e.target.files;
+                    if (!files || files.length === 0) return;
+                    const newUrls: string[] = [];
+                    for (const file of Array.from(files)) {
+                      const ext = file.name.split(".").pop() || "png";
+                      const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+                      const { error } = await supabase.storage.from("task-images").upload(path, file);
+                      if (error) {
+                        toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+                        continue;
+                      }
+                      const { data: urlData } = supabase.storage.from("task-images").getPublicUrl(path);
+                      newUrls.push(urlData.publicUrl);
+                    }
+                    if (newUrls.length > 0) {
+                      setEditingTask((prev) => ({
+                        ...prev,
+                        image_urls: [...(prev.image_urls || []), ...newUrls],
+                      }));
+                    }
+                    e.target.value = "";
+                  }}
+                />
+              </label>
             </div>
           </div>
           <DialogFooter>
