@@ -42,7 +42,7 @@ const LandingDisclosure = () => (
 
       <h4 className="text-[11px] font-semibold tracking-[0.15em] uppercase pt-2" style={{ color: "#9AA5A8" }}>Limitation of Liability</h4>
       <p>
-        To the fullest extent permitted by law, Oak Real Estate Partners, its members, managers, officers, directors, employees, agents, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of, or reliance upon, any information contained in the Materials.
+        To the fullest extent permitted by law, OAK, its members, managers, officers, directors, employees, agents, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of, or reliance upon, any information contained in the Materials.
       </p>
 
       <p className="pt-4" style={{ color: "#9AA5A8" }}>
