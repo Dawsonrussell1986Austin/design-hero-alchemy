@@ -28,7 +28,12 @@ const WebinarFloatingCTA = () => {
   }, []);
 
   // Don't show on webinar registration page or landing pages
-  if (location.pathname === '/webinar-registration' || location.pathname === '/market-correction-report' || location.pathname === '/thank-you-report' || location.pathname === '/cinnamonroll') {
+  const hiddenPaths = [
+    '/webinar-registration', '/market-correction-report', '/thank-you-report', '/cinnamonroll',
+    '/every-dollar-has-an-address', '/aligned-fee-structure', '/know-what-you-own',
+    '/invest-alongside-institutions', '/capital-on-your-timeline',
+  ];
+  if (hiddenPaths.includes(location.pathname)) {
     return null;
   }
 
