@@ -966,13 +966,37 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               </div>
             </div>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Link (optional)</label>
-              <Input
-                value={editingTask.link_url || ""}
-                onChange={(e) => setEditingTask((prev) => ({ ...prev, link_url: e.target.value }))}
-                placeholder="https://..."
-                className="h-9 text-xs"
-              />
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Links (optional)</label>
+              {(editingTask.link_urls || []).map((url, idx) => (
+                <div key={idx} className="flex items-center gap-1.5 mb-1">
+                  <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 hover:underline truncate flex-1">{url}</a>
+                  <button onClick={() => setEditingTask((prev) => ({ ...prev, link_urls: (prev.link_urls || []).filter((_, i) => i !== idx) }))} className="p-0.5 text-gray-300 hover:text-red-500"><X className="w-3 h-3" /></button>
+                </div>
+              ))}
+              <div className="flex gap-1.5">
+                <Input
+                  id="edit-link-input"
+                  placeholder="https://..."
+                  className="h-9 text-xs flex-1"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      const val = (e.target as HTMLInputElement).value.trim();
+                      if (val) {
+                        setEditingTask((prev) => ({ ...prev, link_urls: [...(prev.link_urls || []), val] }));
+                        (e.target as HTMLInputElement).value = "";
+                      }
+                    }
+                  }}
+                />
+                <Button size="sm" className="h-9 text-xs px-3" style={{ background: "#a85839" }} onClick={() => {
+                  const input = document.getElementById("edit-link-input") as HTMLInputElement;
+                  const val = input?.value.trim();
+                  if (val) {
+                    setEditingTask((prev) => ({ ...prev, link_urls: [...(prev.link_urls || []), val] }));
+                    input.value = "";
+                  }
+                }}>Add</Button>
+              </div>
             </div>
             <div>
               <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Images</label>
