@@ -1107,6 +1107,73 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           </DialogFooter>
         </DialogContent>
       </Dialog>
+      {/* Task Review Detail Dialog */}
+      <Dialog open={!!reviewTask} onOpenChange={(open) => { if (!open) setReviewTask(null); }}>
+        <DialogContent className="sm:max-w-[600px] max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-lg font-semibold pr-6">{reviewTask?.task}</DialogTitle>
+          </DialogHeader>
+          {reviewTask && (
+            <div className="space-y-6 py-2">
+              {/* Task metadata */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[reviewTask.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
+                  {reviewTask.priority.split("(")[0].trim()}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[reviewTask.assigned] || assigneeColors["Unassigned"]}`}>
+                  {getAssigneeLabel(reviewTask.assigned)}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full border ${statusConfig[reviewTask.status]?.bg} ${statusConfig[reviewTask.status]?.color}`}>
+                  {reviewTask.status}
+                </span>
+                {reviewTask.due_date && (
+                  <span className="text-[10px] text-gray-500">Due: {format(parseISO(reviewTask.due_date), "MMM d, yyyy")}</span>
+                )}
+              </div>
+
+              {/* Links Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <Link2 className="w-3.5 h-3.5" /> Links ({(reviewTask.link_urls || []).length})
+                </h3>
+                {(reviewTask.link_urls && reviewTask.link_urls.length > 0) ? (
+                  <div className="space-y-1.5 bg-gray-50 rounded-lg p-3">
+                    {reviewTask.link_urls.map((url, idx) => (
+                      <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 hover:underline break-all">
+                        <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
+                        {url}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No links added yet</p>
+                )}
+              </div>
+
+              {/* Images Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <ImageIcon className="w-3.5 h-3.5" /> Images ({(reviewTask.image_urls || []).length})
+                </h3>
+                {(reviewTask.image_urls && reviewTask.image_urls.length > 0) ? (
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 gap-3">
+                      {reviewTask.image_urls.map((url, idx) => (
+                        <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-400 transition-colors">
+                          <img src={url} alt={`Attachment ${idx + 1}`} className="w-full h-auto object-cover" />
+                        </a>
+                      ))}
+                    </div>
+                    <ImageApprovalGallery taskId={reviewTask.id} imageUrls={reviewTask.image_urls} currentUserName={currentUserName} />
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No images uploaded yet</p>
+                )}
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
