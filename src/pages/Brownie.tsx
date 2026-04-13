@@ -75,51 +75,59 @@ const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; 
   );
 };
 
-const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onChange: (url: string | null) => void }) => {
-  const [draft, setDraft] = useState(value || "");
+const LinkEditor = ({ values, onChange }: { values: string[] | null | undefined; onChange: (urls: string[] | null) => void }) => {
+  const links = values || [];
+  const [draft, setDraft] = useState("");
   const [open, setOpen] = useState(false);
 
-  const save = () => {
-    onChange(draft.trim() || null);
-    setOpen(false);
+  const addLink = () => {
+    const url = draft.trim();
+    if (!url) return;
+    const updated = [...links, url];
+    onChange(updated);
+    setDraft("");
+  };
+
+  const removeLink = (idx: number) => {
+    const updated = links.filter((_, i) => i !== idx);
+    onChange(updated.length > 0 ? updated : null);
   };
 
   return (
-    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(value || ""); }}>
+    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(""); }}>
       <PopoverTrigger asChild>
-        {value ? (
-          <a
-            href={value}
-            target="_blank"
-            rel="noopener noreferrer"
+        {links.length > 0 ? (
+          <button
             onClick={(e) => e.stopPropagation()}
-            className="flex items-center text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
+            className="flex items-center gap-0.5 text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
           >
             <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+            <span className="text-[9px] font-semibold">{links.length}</span>
+          </button>
         ) : (
           <button className="flex items-center text-gray-300 hover:text-gray-500 transition-colors flex-shrink-0">
             <Link2 className="w-3.5 h-3.5" />
           </button>
         )}
       </PopoverTrigger>
-      <PopoverContent className="w-[300px] p-3" align="start">
+      <PopoverContent className="w-[320px] p-3" align="start">
         <div className="space-y-2">
-          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Document / Creative Link</label>
-          <Input
-            value={draft}
-            onChange={(e) => setDraft(e.target.value)}
-            placeholder="https://..."
-            className="h-8 text-xs"
-            onKeyDown={(e) => { if (e.key === "Enter") save(); }}
-          />
-          <div className="flex gap-2">
-            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#a85839" }}>Save</Button>
-            {value && (
-              <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => { onChange(null); setOpen(false); }}>
-                <X className="w-3 h-3" />
-              </Button>
-            )}
+          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Links</label>
+          {links.map((url, idx) => (
+            <div key={idx} className="flex items-center gap-1.5 group">
+              <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 hover:underline truncate flex-1">{url}</a>
+              <button onClick={() => removeLink(idx)} className="p-0.5 text-gray-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100"><X className="w-3 h-3" /></button>
+            </div>
+          ))}
+          <div className="flex gap-1.5">
+            <Input
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              placeholder="https://..."
+              className="h-8 text-xs flex-1"
+              onKeyDown={(e) => { if (e.key === "Enter") addLink(); }}
+            />
+            <Button size="sm" className="h-8 text-xs px-3" onClick={addLink} style={{ background: "#a85839" }}>Add</Button>
           </div>
         </div>
       </PopoverContent>
