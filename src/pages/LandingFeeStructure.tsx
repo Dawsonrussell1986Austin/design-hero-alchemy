@@ -119,7 +119,7 @@ const LandingFeeStructure = () => {
             The difference between aligned fees and extractive fees compounds every year.
           </p>
           <button onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="mt-10 inline-flex items-center gap-3 py-3 px-10 text-[11px] tracking-[0.3em] uppercase transition-opacity" style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}>
-            Get the Report <ArrowRight className="h-4 w-4" />
+            Get the Report →
           </button>
         </div>
       </section>
