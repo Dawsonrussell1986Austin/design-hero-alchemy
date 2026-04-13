@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import DelayedReportPopup from "@/components/DelayedReportPopup";
+import LandingDisclosure from "@/components/LandingDisclosure";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -178,6 +179,8 @@ const LandingTransparency = () => {
           </button>
         </div>
       </section>
+
+      <LandingDisclosure />
 
       <footer className="px-6 sm:px-12 lg:px-20 py-8" style={{ backgroundColor: "#060D14", borderTop: "1px solid rgba(240,236,227,0.04)" }}>
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
