@@ -402,7 +402,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         assigned: editingTask.assigned,
         status: editingTask.status,
         due_date: editingTask.due_date || null,
-        link_url: editingTask.link_url || null,
+        link_urls: editingTask.link_urls || [],
         image_urls: editingTask.image_urls || [],
       };
       const { error } = await supabase.from("brownie_tasks").update(updates).eq("id", editingTask.id);
