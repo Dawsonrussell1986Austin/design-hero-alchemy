@@ -72,7 +72,7 @@ const LandingLiquidity = () => {
               Your capital shouldn't be{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>trapped</em> for a decade.
             </h1>
-            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#FFFFFF", fontWeight: 400, letterSpacing: "0.02em" }}>
+            <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
               No capital calls years into the future. No delayed exits. Your money works — and comes back — on your timeline.
             </p>
           </div>
