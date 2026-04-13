@@ -181,6 +181,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
 
+  // Review detail dialog
+  const [reviewTask, setReviewTask] = useState<BrownieTask | null>(null);
+
   // Team email settings
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [teamEmails, setTeamEmails] = useState<Record<string, string>>({});
@@ -606,7 +609,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                           <tr key={t.id} className="border-t border-gray-100 transition-colors hover:bg-gray-50/50">
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
-                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
+                                <button onClick={() => setReviewTask(t)} className={`text-sm flex-1 text-left hover:underline cursor-pointer ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</button>
                                 {t.image_urls && t.image_urls.length > 0 && (
                                   <Popover>
                                     <PopoverTrigger asChild>
@@ -717,7 +720,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                     {colTasks.map((t) => (
                       <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50 group">
                         <div className="flex items-start justify-between gap-2 mb-2">
-                          <p className="text-sm text-gray-800 flex-1">{t.task}</p>
+                          <button onClick={() => setReviewTask(t)} className="text-sm text-gray-800 flex-1 text-left hover:underline cursor-pointer">{t.task}</button>
                           <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
                             <button onClick={() => openEditTask(t)} className="p-0.5 text-gray-300 hover:text-gray-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Pencil className="w-3 h-3" />
@@ -1102,6 +1105,73 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             <Button variant="outline" onClick={() => setSettingsOpen(false)}>Cancel</Button>
             <Button onClick={saveTeamEmails} style={{ background: "#a85839" }}>Save Emails</Button>
           </DialogFooter>
+        </DialogContent>
+      </Dialog>
+      {/* Task Review Detail Dialog */}
+      <Dialog open={!!reviewTask} onOpenChange={(open) => { if (!open) setReviewTask(null); }}>
+        <DialogContent className="sm:max-w-[600px] max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-lg font-semibold pr-6">{reviewTask?.task}</DialogTitle>
+          </DialogHeader>
+          {reviewTask && (
+            <div className="space-y-6 py-2">
+              {/* Task metadata */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[reviewTask.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
+                  {reviewTask.priority.split("(")[0].trim()}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[reviewTask.assigned] || assigneeColors["Unassigned"]}`}>
+                  {getAssigneeLabel(reviewTask.assigned)}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full border ${statusConfig[reviewTask.status]?.bg} ${statusConfig[reviewTask.status]?.color}`}>
+                  {reviewTask.status}
+                </span>
+                {reviewTask.due_date && (
+                  <span className="text-[10px] text-gray-500">Due: {format(parseISO(reviewTask.due_date), "MMM d, yyyy")}</span>
+                )}
+              </div>
+
+              {/* Links Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <Link2 className="w-3.5 h-3.5" /> Links ({(reviewTask.link_urls || []).length})
+                </h3>
+                {(reviewTask.link_urls && reviewTask.link_urls.length > 0) ? (
+                  <div className="space-y-1.5 bg-gray-50 rounded-lg p-3">
+                    {reviewTask.link_urls.map((url, idx) => (
+                      <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 hover:underline break-all">
+                        <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
+                        {url}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No links added yet</p>
+                )}
+              </div>
+
+              {/* Images Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <ImageIcon className="w-3.5 h-3.5" /> Images ({(reviewTask.image_urls || []).length})
+                </h3>
+                {(reviewTask.image_urls && reviewTask.image_urls.length > 0) ? (
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 gap-3">
+                      {reviewTask.image_urls.map((url, idx) => (
+                        <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-400 transition-colors">
+                          <img src={url} alt={`Attachment ${idx + 1}`} className="w-full h-auto object-cover" />
+                        </a>
+                      ))}
+                    </div>
+                    <ImageApprovalGallery taskId={reviewTask.id} imageUrls={reviewTask.image_urls} currentUserName={currentUserName} />
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No images uploaded yet</p>
+                )}
+              </div>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>
