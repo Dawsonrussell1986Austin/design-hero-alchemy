@@ -190,7 +190,7 @@ const InvestorAccess = () => {
             <div className="text-cream space-y-8">
               <div className="space-y-6">
                 <h2 className="text-xl lg:text-2xl font-display font-medium text-cream/90">
-                  Important Information for DTC Investors
+                  Important Information for Investors
                 </h2>
                 
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
