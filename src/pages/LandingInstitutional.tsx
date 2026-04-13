@@ -27,7 +27,7 @@ const LandingInstitutional = () => {
         email: email.trim(),
         message: "Institutional Co-Investment landing page opt-in",
       });
-      if (error) throw error;
+      if (error && !error.message.includes("duplicate")) throw error;
       navigate("/thank-you-report");
     } catch {
       toast.error("Something went wrong. Please try again.");
