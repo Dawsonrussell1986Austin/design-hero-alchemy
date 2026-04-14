@@ -82,6 +82,7 @@ import LandingFeeStructure from "./pages/LandingFeeStructure";
 import LandingTransparency from "./pages/LandingTransparency";
 import LandingInstitutional from "./pages/LandingInstitutional";
 import LandingLiquidity from "./pages/LandingLiquidity";
+import CampaignEmails from "./pages/CampaignEmails";
 
 function App() {
   return (
@@ -167,6 +168,7 @@ function App() {
         <Route path="/know-what-you-own" element={<LandingTransparency />} />
         <Route path="/invest-alongside-institutions" element={<LandingInstitutional />} />
         <Route path="/capital-on-your-timeline" element={<LandingLiquidity />} />
+        <Route path="/campaign-emails" element={<CampaignEmails />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
