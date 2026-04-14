@@ -34,8 +34,8 @@ const CampaignEmails = () => {
                 onClick={() => setSelected(email)}
                 className={`px-4 py-2 rounded text-sm font-medium transition-colors ${
                   selected.id === email.id
-                    ? 'bg-oak-dark text-white'
-                    : 'bg-white text-oak-dark border border-oak-dark/20 hover:bg-oak-dark/5'
+                    ? 'bg-[#0f1419] text-white'
+                    : 'bg-white text-[#1a1a1a] border border-[#e8e4dd] hover:bg-[#f2f0ec]'
                 }`}
               >
                 {email.title}
