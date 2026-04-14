@@ -82,6 +82,7 @@ import LandingFeeStructure from "./pages/LandingFeeStructure";
 import LandingTransparency from "./pages/LandingTransparency";
 import LandingInstitutional from "./pages/LandingInstitutional";
 import LandingLiquidity from "./pages/LandingLiquidity";
+import CampaignEmails from "./pages/CampaignEmails";
 
 function App() {
   return (
