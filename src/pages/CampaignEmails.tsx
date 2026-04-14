@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import SEOHead from '@/components/SEOHead';
 
 const emails = [
+  { id: 1, title: 'Email 1 — Intro', file: '/emails/email-1-intro.html' },
   { id: 2, title: 'Email 2 — Opacity', file: '/emails/email-2-opacity.html' },
   { id: 3, title: 'Email 3 — Institutional', file: '/emails/email-3-institutional.html' },
   { id: 4, title: 'Email 4 — Deal', file: '/emails/email-4-deal.html' },
