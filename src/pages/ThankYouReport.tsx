@@ -14,6 +14,11 @@ const ThankYouReport = () => {
       (window as any).fbq('track', 'Lead');
     }
 
+    // Fire LinkedIn conversion event
+    if (typeof window !== 'undefined' && (window as any).lintrk) {
+      (window as any).lintrk('track', { conversion_id: 21248228 });
+    }
+
     return () => {
       document.head.removeChild(link);
     };
