@@ -17,7 +17,7 @@ const ThankYouReport = () => {
   const sans = { fontFamily: "'Montserrat', 'Lato', sans-serif" };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#060D14" }}>
+    <div className="min-h-screen flex flex-col" style={{ background: "linear-gradient(135deg, #060D14, #082233, #233F52)" }}>
       <SEOHead
         title="Thank You — Your Report is Ready"
         description="Your 2026 Institutional Investor Report is on its way."
