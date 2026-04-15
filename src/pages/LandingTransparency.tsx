@@ -85,7 +85,7 @@ const LandingTransparency = () => {
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Most private credit vehicles operate behind layers of abstraction — pooled structures, aggregated reporting, and vague collateral descriptions that leave investors guessing.
+                Most private equity vehicles operate behind layers of abstraction — pooled structures, aggregated reporting, and vague collateral descriptions that leave investors guessing.
               </p>
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
                 Oak was built differently. Every loan, every property, every position is visible to our investors. Because you shouldn't need to trust a black box with your capital.

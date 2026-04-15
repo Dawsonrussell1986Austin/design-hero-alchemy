@@ -28,14 +28,14 @@ const LandingNamedCollateral = () => {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto mt-auto mb-auto py-6 sm:py-8 w-full">
           <div>
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
-              Named Collateral Investing
+              Know Where Your Money Is Invested
             </p>
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
               Every dollar has{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>an address.</em>
             </h1>
             <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
-              No blind pools. No "black box" allocations. Every investment is backed by a specific, identifiable commercial property.
+              No black box allocations. Every investment is backed by a specific, identifiable commercial property.
             </p>
           </div>
 
@@ -85,17 +85,17 @@ const LandingNamedCollateral = () => {
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Most private credit funds pool your capital into opaque structures. You get a ticker, a quarterly report, and a vague sense of what your money is doing.
+                Most private equity funds pool your capital into opaque structures. You get a quarterly report and a vague sense of what your money is doing.
               </p>
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                At Oak, every dollar you invest is tied to a specific commercial property — one you can identify, research, and verify. Senior-secured, first-lien positions on income-producing real estate.
+                At Oak, every dollar you invest is tied to a specific commercial property — one you can identify, research, and verify. Senior-secured, first-lien positions on income-producing commercial real estate.
               </p>
             </div>
           </div>
 
           <div className="pl-6 sm:pl-8 mt-16" style={{ borderLeft: "1px solid #C7A74C" }}>
             <p className="text-lg sm:text-xl leading-[1.4] max-w-lg font-light" style={{ ...display, color: "#0A1520" }}>
-              Not a ticker. Not a blind pool. An address — with a building, tenants, and cash flow you can see.
+              Not a ticker, not speculation. A real address — with a building, tenants, and cash flow you can see.
             </p>
           </div>
 

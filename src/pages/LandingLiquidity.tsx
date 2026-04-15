@@ -28,14 +28,14 @@ const LandingLiquidity = () => {
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-6xl mx-auto mt-auto mb-auto py-6 sm:py-8 w-full">
           <div>
             <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
-              Shorter Duration Investing
+              Investing on Your Timeline
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-[0.9] tracking-tight" style={{ ...display, color: "#FAF7F2", letterSpacing: "-0.02em" }}>
               Your capital shouldn't be{" "}
               <em style={{ color: "#D4B35C", fontWeight: 300 }}>trapped</em> for a decade.
             </h1>
             <p className="text-base sm:text-lg leading-[1.7] mt-6 sm:mt-8 max-w-[480px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
-              No capital calls years into the future. No delayed exits. Your money works — and comes back — on your timeline.
+              Your money works and comes back on your timeline.
             </p>
           </div>
 
@@ -85,10 +85,10 @@ const LandingLiquidity = () => {
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Most private credit funds lock your money for 7 to 10 years. Capital calls arrive unpredictably. Exits are delayed. And your money sits idle while the manager collects fees.
+                Most private equity funds lock up your money for 7 to 10 years. Capital calls arrive unpredictably. Exits are delayed. And your money sits idle while the manager collects fees.
               </p>
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Oak's bridge lending model operates on shorter durations — typically 12 to 36 months. Your capital is deployed into income-producing commercial real estate, earns a return, and cycles back to you.
+                Oak's bridge lending program(s) operate on shorter durations — typically 12 to 36 months. Your capital is deployed into income-producing commercial real estate, earns a return, and cycles back to you.
               </p>
             </div>
           </div>
