@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Check, Mail } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -7,6 +8,15 @@ import SEOHead from "@/components/SEOHead";
 
 const ThankYouDownload = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead');
+    }
+    if (typeof window !== 'undefined' && (window as any).lintrk) {
+      (window as any).lintrk('track', { conversion_id: 21248228 });
+    }
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-silver-mist to-white">
