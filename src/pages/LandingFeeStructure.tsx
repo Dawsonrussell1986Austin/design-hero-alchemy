@@ -85,7 +85,7 @@ const LandingFeeStructure = () => {
             </h2>
             <div className="space-y-6">
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Most private credit funds charge management fees that compound quietly and performance fees that reward the manager regardless of how your capital actually performs.
+                Most private equity funds charge management fees that compound quietly and performance fees that reward the manager regardless of how your capital actually performs.
               </p>
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
                 Oak's fee structure was designed from the ground up to align incentives. We earn when you earn — not before, and not at your expense.

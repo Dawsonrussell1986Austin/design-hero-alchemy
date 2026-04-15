@@ -44,7 +44,7 @@ const LandingInstitutional = () => {
               Get the Full Report
             </p>
             <p className="text-sm sm:text-base mb-6 sm:mb-8 text-center" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
-              Learn how Oak gives accredited investors access to institutional-quality structures.
+              Learn how Oak gives investors access to institutional-quality structures.
             </p>
             <LandingGHLForm />
           </div>
@@ -88,7 +88,7 @@ const LandingInstitutional = () => {
                 Insurance companies, foundations, and endowments don't invest on hope. They invest on structure — senior-secured positions, named collateral, and underwriting standards that have weathered 8 market cycles.
               </p>
               <p className="text-sm sm:text-base leading-[1.7]" style={{ ...sans, color: "#6C7D80", fontWeight: 300 }}>
-                Oak Real Estate Partners gives accredited investors access to the same investment structures these institutions rely on. Same protections. Same collateral quality. Same seat at the table.
+                Oak Real Estate Partners gives investors access to the same investment structures these institutions rely on. Same protections. Same collateral quality. Same seat at the table.
               </p>
             </div>
           </div>
@@ -103,7 +103,7 @@ const LandingInstitutional = () => {
             {[
               { title: "Institutional Partners", text: "Insurance companies, foundations, and endowments co-invest in the same structures as individual investors." },
               { title: "Proven Through Cycles", text: "35+ years of management experience navigating 8 market cycles with institutional capital." },
-              { title: "Same Structure", text: "Accredited investors access the same senior-secured, first-lien positions institutions demand." },
+              { title: "Same Structure", text: "Investors access the same senior-secured, first-lien positions institutions demand." },
             ].map((card) => (
               <div key={card.title} className="p-8 sm:p-10 text-center" style={{ backgroundColor: "#faf7f2" }}>
                 <p className="text-xs sm:text-sm tracking-[0.3em] uppercase mb-4" style={{ ...sans, color: "#082233", fontWeight: 600 }}>{card.title}</p>
