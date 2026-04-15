@@ -51,7 +51,7 @@ const ThankYouReport = () => {
             Your Report Is Ready
           </p>
           <a
-            href="/documents/2026-market-correction-report.pdf"
+            href="https://assets.cdn.filesafe.space/HHjsYNl6uPNKrrN2PMGV/media/69dff6f627c94c7e4e74a451.pdf"
             target="_blank"
             rel="noopener noreferrer"
             download
