@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import SEOHead from "@/components/SEOHead";
@@ -10,6 +11,15 @@ const benefits = [
 ];
 
 const ThankYouInvestorAccess = () => {
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead');
+    }
+    if (typeof window !== 'undefined' && (window as any).lintrk) {
+      (window as any).lintrk('track', { conversion_id: 21248228 });
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">

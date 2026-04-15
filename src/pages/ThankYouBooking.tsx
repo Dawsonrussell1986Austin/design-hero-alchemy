@@ -12,6 +12,10 @@ const ThankYouBooking = () => {
   useEffect(() => {
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Schedule');
+      (window as any).fbq('track', 'Lead');
+    }
+    if (typeof window !== 'undefined' && (window as any).lintrk) {
+      (window as any).lintrk('track', { conversion_id: 21248228 });
     }
   }, []);
 
