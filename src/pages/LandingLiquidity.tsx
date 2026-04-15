@@ -80,7 +80,7 @@ const LandingLiquidity = () => {
 
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.05] max-w-2xl font-light" style={{ ...display, color: "#0A1520", letterSpacing: "-0.01em" }}>
-              Private credit shouldn't mean{" "}
+              Private equity shouldn't mean{" "}
               <em style={{ color: "#C7A74C", fontWeight: 300 }}>locked capital.</em>
             </h2>
             <div className="space-y-6">
