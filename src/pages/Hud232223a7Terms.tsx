@@ -2,10 +2,16 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 const Hud232223a7Terms = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="HUD 232/223(a)(7) Loan Terms"
+        description="FHA/HUD 232/223(a)(7) refinance loan program terms for existing HUD-insured healthcare facilities."
+        canonicalUrl="/lending/fha-hud/232-223a7-terms"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

@@ -1,5 +1,6 @@
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
+import SEOHead from "@/components/SEOHead";
 
 const benefits = [
   { icon: FileText, text: "Distribution notices and tax documents" },
@@ -12,6 +13,12 @@ const ThankYouInvestorAccess = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
+      <SEOHead
+        title="Thank You — Investor Access"
+        description="Your investor access registration has been received. Learn what to expect next from Oak Real Estate Partners."
+        canonicalUrl="/thank-you-investor-access"
+        noIndex={true}
+      />
       <Navigation />
       <main className="pt-28 pb-12 px-6">
         <div className="max-w-3xl mx-auto text-center space-y-10">

@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Play } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 declare global {
   namespace JSX {
@@ -59,6 +60,11 @@ const PastWebinars = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Past Webinars — On-Demand"
+        description="Watch past Oak Real Estate Partners webinars on-demand covering market updates, fund performance, and investment strategy."
+        canonicalUrl="/past-webinars"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

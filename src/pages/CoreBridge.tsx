@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer } from "lucide-react";
 import { useState } from "react";
+import SEOHead from "@/components/SEOHead";
 
 const CoreBridge = () => {
   const [showDetails, setShowDetails] = useState(false);
@@ -24,6 +25,11 @@ const CoreBridge = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Core Bridge Lending Program"
+        description="Explore Oak's Core Bridge lending program offering senior secured commercial real estate bridge loans with competitive terms."
+        canonicalUrl="/lending/bridge/core-bridge"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

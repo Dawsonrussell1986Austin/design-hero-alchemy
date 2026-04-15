@@ -10,6 +10,7 @@ import videoThumbWhoIsOak from "@/assets/video-thumb-who-is-oak.png";
 import videoThumbStrategy from "@/assets/video-thumb-strategy.png";
 import videoThumbCredit from "@/assets/video-thumb-credit.png";
 import videoThumbRisk from "@/assets/video-thumb-risk.png";
+import SEOHead from "@/components/SEOHead";
 
 const thumbnailMap: Record<string, string> = {
   "/src/assets/video-thumb-who-is-oak.png": videoThumbWhoIsOak,
@@ -21,6 +22,11 @@ const thumbnailMap: Record<string, string> = {
 const InvestorEducation = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Investor Education"
+        description="Educational video resources covering Oak Real Estate Partners' investment strategy, credit analysis, and risk management."
+        canonicalUrl="/investor-education"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

@@ -2,10 +2,16 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 const Hud241aTerms = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="HUD 241(a) Supplemental Loan Terms"
+        description="FHA/HUD 241(a) supplemental loan program terms for improvements to existing HUD-insured properties."
+        canonicalUrl="/lending/fha-hud/241a-terms"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

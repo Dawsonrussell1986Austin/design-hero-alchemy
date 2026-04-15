@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { Play, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { videoCategories, Video } from "@/data/videoCategories";
+import SEOHead from "@/components/SEOHead";
 
 declare global {
   namespace JSX {
@@ -41,6 +42,11 @@ const VideoCard = ({ video }: { video: Video }) => {
 
   return (
     <div className="bg-cream border border-abyss/20 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all duration-300">
+      <SEOHead
+        title="Investor Education Videos"
+        description="Browse Oak Real Estate Partners educational video categories covering strategy, credit, and risk management."
+        canonicalUrl="/investor-education"
+      />
       <div className="relative aspect-video bg-abyss/5">
         <style>{`
           wistia-player[media-id='${video.mediaId}']:not(:defined) {

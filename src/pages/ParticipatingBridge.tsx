@@ -3,12 +3,18 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer, Users } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 
 const ParticipatingBridge = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Participating Bridge Lending Program"
+        description="Oak's Participating Bridge program offering co-investment opportunities in commercial real estate bridge loans."
+        canonicalUrl="/lending/bridge/participating-bridge"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

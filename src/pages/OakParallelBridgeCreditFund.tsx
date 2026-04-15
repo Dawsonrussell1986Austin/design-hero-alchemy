@@ -2,10 +2,16 @@ import { FileDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const OakParallelBridgeCreditFund = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Oak Parallel Bridge Credit Fund — Onboarding"
+        description="Onboarding instructions for ERISA accounts including pension plans, IRAs, and qualified retirement accounts."
+        canonicalUrl="/oak-parallel-bridge-credit-fund"
+      />
       <Navigation />
       
       {/* Hero Section */}

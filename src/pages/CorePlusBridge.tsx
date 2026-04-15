@@ -3,12 +3,18 @@ import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
 import { DollarSign, Calendar, TrendingUp, Shield, Building, MapPin, Target, Layers, Percent, Clock, FileText, CreditCard, Coins, Timer } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 
 const CorePlusBridge = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Core Plus Bridge Lending Program"
+        description="Explore Oak's Core Plus Bridge lending program for value-add commercial real estate bridge financing."
+        canonicalUrl="/lending/bridge/core-plus-bridge"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

@@ -6,6 +6,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import atlantaSkyline from "@/assets/atlanta-skyline-clouds.png";
+import SEOHead from "@/components/SEOHead";
 
 const BlogAtlantaAcquisition = () => {
   useEffect(() => {
@@ -14,6 +15,11 @@ const BlogAtlantaAcquisition = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="$8.7M Multifamily Acquisition Loan in Atlanta"
+        description="Oak Capital provides an $8.7M acquisition loan for a multifamily property in the Atlanta metro area."
+        canonicalUrl="/blog/atlanta-acquisition"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
