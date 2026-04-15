@@ -8,6 +8,12 @@ const ThankYouReport = () => {
     link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap";
     link.rel = "stylesheet";
     document.head.appendChild(link);
+
+    // Fire Facebook Lead pixel event for conversion tracking
+    if (typeof window !== 'undefined' && (window as any).fbq) {
+      (window as any).fbq('track', 'Lead');
+    }
+
     return () => {
       document.head.removeChild(link);
     };
