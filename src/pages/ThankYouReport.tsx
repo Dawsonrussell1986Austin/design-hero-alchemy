@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 const ThankYouReport = () => {
@@ -26,7 +26,7 @@ const ThankYouReport = () => {
 
       <section className="flex-1 flex flex-col justify-center items-center px-4 sm:px-12 lg:px-20 py-16 sm:py-24">
         {/* Logo */}
-        <a href="/" className="mb-16 sm:mb-20">
+        <a href="/" className="mb-10 sm:mb-12">
           <img
             src="/lovable-uploads/white_oak.png"
             alt="Oak Real Estate Partners"
@@ -34,42 +34,48 @@ const ThankYouReport = () => {
           />
         </a>
 
-        <div className="max-w-2xl mx-auto text-center">
-
-          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-6" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
-            You're In
+        {/* Download report — immediately below logo */}
+        <div className="w-full max-w-xl p-6 sm:p-8 text-center mb-12 sm:mb-16" style={{ border: "1px solid rgba(240,236,227,0.08)", background: "rgba(255,255,255,0.02)" }}>
+          <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-4" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
+            Your Report Is Ready
           </p>
+          <a
+            href="/documents/2026-market-correction-report.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download
+            className="inline-flex items-center gap-3 py-3 px-10 text-[11px] tracking-[0.3em] uppercase transition-opacity hover:opacity-90"
+            style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
+          >
+            <Download className="h-4 w-4" />
+            Download the Report
+          </a>
+        </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl leading-[1.1] font-light" style={{ ...serif, color: "#ffffff" }}>
-            Check your inbox.
+        {/* Check your inbox section */}
+        <div className="max-w-lg mx-auto text-center">
+          <div className="flex justify-center mb-6">
+            <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ border: "1px solid rgba(199,167,76,0.3)" }}>
+              <Mail className="h-5 w-5" style={{ color: "#C7A74C" }} />
+            </div>
+          </div>
+
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl leading-[1.1] font-light" style={{ ...serif, color: "#ffffff" }}>
+            Now check your inbox.
           </h1>
 
-          <p className="text-base sm:text-lg leading-[1.7] mt-6 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
-            We've sent the 2026 Institutional Investor Report to your email. If you don't see it within a few minutes, check your spam folder.
+          <p className="text-base sm:text-lg leading-[1.7] mt-5 max-w-md mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
+            Over the next few days, we'll send you a series of insights on how institutional investors are positioning in today's market — and how Oak's approach fits in.
           </p>
 
-          {/* Download link */}
-          <div className="mt-10 p-6 sm:p-8 text-center" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-            <p className="text-sm mb-4" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
-              Don't want to wait? Download it now.
-            </p>
-            <a
-              href="/documents/2026-market-correction-report.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              download
-              className="inline-flex items-center gap-3 py-3 px-8 text-[11px] tracking-[0.3em] uppercase transition-opacity hover:opacity-90"
-              style={{ ...sans, backgroundColor: "#C7A74C", color: "#060D14", fontWeight: 600 }}
-            >
-              <Download className="h-4 w-4" />
-              Download the Report
-            </a>
-          </div>
+          <p className="text-sm leading-[1.7] mt-4 max-w-sm mx-auto" style={{ ...sans, color: "#4A5C5F", fontWeight: 400 }}>
+            If you don't see our first email within a few minutes, check your spam folder.
+          </p>
 
           {/* Back to site */}
           <a
             href="/"
-            className="inline-flex items-center gap-2 mt-12 text-sm tracking-wide hover:underline underline-offset-4 transition-opacity"
+            className="inline-flex items-center gap-2 mt-10 text-sm tracking-wide hover:underline underline-offset-4 transition-opacity"
             style={{ ...sans, color: "#C7A74C", fontWeight: 400 }}
           >
             Visit oakrepartners.com <ArrowRight className="h-4 w-4" />
