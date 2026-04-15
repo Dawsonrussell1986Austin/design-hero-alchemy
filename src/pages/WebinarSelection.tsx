@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Calendar, TrendingUp, Calculator } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 const WebinarSelection = () => {
   const webinars = [
@@ -38,6 +39,11 @@ const WebinarSelection = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Upcoming Webinars"
+        description="Browse and register for upcoming Oak Real Estate Partners webinars on investment strategy and market updates."
+        canonicalUrl="/webinars"
+      />
       <Navigation />
       
       {/* Hero Section */}

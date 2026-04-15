@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Video, Calendar, Users } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const WebinarRegistration = () => {
   const [searchParams] = useSearchParams();
@@ -131,6 +132,11 @@ const WebinarRegistration = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Webinar Registration"
+        description="Register for an upcoming Oak Real Estate Partners webinar covering market updates and investment opportunities."
+        canonicalUrl="/webinar-registration"
+      />
       <Navigation />
       
       {/* Hero Section */}

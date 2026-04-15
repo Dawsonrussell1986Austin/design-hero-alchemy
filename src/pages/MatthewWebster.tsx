@@ -3,12 +3,18 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 const MatthewWebster = () => {
   const navigate = useNavigate();
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Matthew Webster — Leadership"
+        description="Meet Matthew Webster, a key member of the Oak Real Estate Partners leadership team."
+        canonicalUrl="/leadership/matthew-webster"
+      />
       {/* Navigation */}
       <Navigation />
       

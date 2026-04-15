@@ -6,6 +6,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import philadelphiaMidrise from "@/assets/philadelphia-building.png";
+import SEOHead from "@/components/SEOHead";
 
 const BlogExtensionSeptember = () => {
   useEffect(() => {
@@ -14,6 +15,11 @@ const BlogExtensionSeptember = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Extension to September 30, 2024"
+        description="The Oak Companies announces an extension of its offering period to September 30, 2024."
+        canonicalUrl="/blog/extension-september"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

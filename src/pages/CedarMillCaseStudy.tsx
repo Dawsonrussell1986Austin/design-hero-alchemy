@@ -5,12 +5,18 @@ import { Play } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import cedarMillThumbnail from "@/assets/cedar-mill-thumbnail.png";
+import SEOHead from "@/components/SEOHead";
 
 const CedarMillCaseStudy = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Cedar Mill Case Study"
+        description="Case study of Oak Real Estate Partners' Cedar Mill commercial real estate bridge lending transaction."
+        canonicalUrl="/case-study/cedar-mill"
+      />
       <Navigation />
       
       <div className="container mx-auto px-6 py-24">

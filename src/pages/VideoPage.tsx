@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 declare global {
   namespace JSX {
@@ -38,6 +39,11 @@ const VideoPage = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Video — Investor Education"
+        description="Watch educational content from Oak Real Estate Partners covering CRE lending and investment strategy."
+        canonicalUrl="/video"
+      />
       <Navigation />
       
       <div className="container mx-auto px-6 py-24">

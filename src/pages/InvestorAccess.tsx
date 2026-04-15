@@ -8,6 +8,7 @@ import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { supabase } from "@/integrations/supabase/client";
+import SEOHead from "@/components/SEOHead";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
@@ -82,6 +83,11 @@ const InvestorAccess = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
+      <SEOHead
+        title="Investor Access Portal"
+        description="Register for secure access to Oak Real Estate Partners investor documents, fund updates, and distribution notices."
+        canonicalUrl="/investor-access"
+      />
       <Navigation />
       
       <main className="pt-28 pb-12 px-6">

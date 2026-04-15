@@ -2,10 +2,16 @@ import { FileDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const OakInstitutionalCreditSolutions = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Oak Institutional Credit Solutions — Onboarding"
+        description="Onboarding instructions for non-ERISA accounts including foundations, endowments, insurance, and trust accounts."
+        canonicalUrl="/oak-institutional-credit-solutions"
+      />
       <Navigation />
       
       {/* Hero Section */}

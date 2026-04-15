@@ -2,10 +2,16 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Mail, Linkedin } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 const OurSubsidiaries = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Our Subsidiaries"
+        description="Explore the subsidiary companies of Oak Real Estate Partners and their roles in CRE lending and asset management."
+        canonicalUrl="/subsidiaries"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

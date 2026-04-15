@@ -6,6 +6,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import atlantaSkyline from "@/assets/atlanta-skyline-clouds.png";
+import SEOHead from "@/components/SEOHead";
 
 const BlogIndianapolisFinancing = () => {
   useEffect(() => {
@@ -14,6 +15,11 @@ const BlogIndianapolisFinancing = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="$10.3M Financing in Indianapolis"
+        description="The Oak Companies provides $10.30 million in financing for a commercial real estate property in Indianapolis."
+        canonicalUrl="/blog/indianapolis-financing"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
