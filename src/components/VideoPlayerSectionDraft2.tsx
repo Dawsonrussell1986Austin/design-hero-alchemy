@@ -9,7 +9,7 @@ const VideoPlayerSectionDraft2 = () => {
               See How Oak Operates
             </h2>
             <p className="text-abyss/70 text-lg font-body max-w-3xl mx-auto leading-relaxed">
-              A specialist CRE lending platform. Principal-governed credit. Institutional standards on every transaction.
+              Watch Chief Strategy Officer, Ray Davis and Chief Sales and Distribution Officer, Kevin Kennedy discuss Commercial Real Estate lending and how Oak operates.
             </p>
           </div>
 
