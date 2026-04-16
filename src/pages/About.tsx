@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingDown, BarChart, Building2, DollarSign, ShieldCheck, Activity, RotateCcw, TrendingUp } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { BreadcrumbSchema } from "@/components/StructuredData";
 
@@ -11,19 +10,17 @@ const About = () => {
     <div className="min-h-screen">
       <SEOHead 
         title="About Us"
-        description="Oak Real Estate Partners combines institutional discipline with private credit lending expertise. Over 150 years combined experience and $18B+ in total transactions."
+        description="Oak Real Estate Partners is a vertically integrated CRE credit platform focused on the $2M–$20M bridge loan market — the small-balance segment of the roughly $300 billion annual CRE lending gap."
         canonicalUrl="/about"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: '/' },
         { name: 'About Us', url: '/about' }
       ]} />
-      {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
-      {/* Breadcrumb */}
       <Breadcrumb 
         items={[
           { label: "Our Firm", href: "/" },
@@ -34,34 +31,27 @@ const About = () => {
         ]}
       />
       
-      {/* Main Content - Cream Background */}
       <div className="bg-silver-mist">
         
-        {/* Our Story Section - Left Text, Right Image */}
+        {/* Hero / Origin Section */}
         <section className="py-20">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-                
-                {/* Left Column - Text Content */}
                 <div className="space-y-8">
                   <div>
                     <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
-                      Private Credit Lending with <span className="text-gold-accent">Institutional Discipline</span>
+                      Built for the market traditional banks have <span className="text-gold-accent">stepped back from.</span>
                     </h1>
                     <p className="text-lg lg:text-xl font-body font-normal text-graphite-fog leading-relaxed mb-6">
-                      Oak is a premier commercial real estate lender with a core business focus on senior secured loans backed by income producing properties. Our lending philosophy is grounded in real asset investment, institutional discipline, and a commitment to long-term capital protection.
-                    </p>
-                    
-                    <p className="text-lg lg:text-xl font-body font-normal text-graphite-fog leading-relaxed mb-6">
-                      Oak represents the combination of White Oak Capital Holdings (WOCH) and Red Oak Capital Holdings (ROCH), creating a single powerful platform of comprehensive lending services for commercial real estate borrowers and investors.
+                      Oak Real Estate Partners is a vertically integrated CRE credit platform focused on the $2M–$20M bridge loan market — the small-balance segment of the roughly $300 billion annual CRE lending gap left by the bank retrenchment.<sup>5</sup>
                     </p>
                     
                     <div className="mt-8">
                       <a href="/leadership">
                         <Button 
                           size="lg"
-                          className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                          className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
                         >
                           Our Leadership Team
                         </Button>
@@ -70,7 +60,6 @@ const About = () => {
                   </div>
                 </div>
                 
-                {/* Right Column - Image with Overlay Card */}
                 <div className="relative">
                   <div className="relative rounded-lg overflow-hidden shadow-xl">
                     <img 
@@ -79,29 +68,74 @@ const About = () => {
                       className="w-full h-[600px] object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-abyss/20 via-transparent to-transparent"></div>
-                    
-                    {/* Experience Stats Overlay Card */}
-                    <div className="absolute bottom-6 right-6 bg-cream/95 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-6 shadow-xl max-w-sm">
-                      <h3 className="text-lg font-display font-medium text-abyss mb-4">Experience That Matters</h3>
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-                        <div>
-                          <div className="text-xl font-display font-medium text-gold-accent mb-1">150+</div>
-                          <div className="text-graphite-fog/80 font-body text-xs">Years Combined Experience</div>
-                        </div>
-                        <div>
-                          <div className="text-xl font-display font-medium text-gold-accent mb-1">$5B+</div>
-                          <div className="text-graphite-fog/80 font-body text-xs">Bridge Loans Structured</div>
-                        </div>
-                        <div>
-                          <div className="text-xl font-display font-medium text-gold-accent mb-1">$18B</div>
-                          <div className="text-graphite-fog/80 font-body text-xs">TOTAL TRANSACTIONS²</div>
-                        </div>
-                      </div>
-                      <p className="text-xs text-graphite-fog/60 font-sans text-center mt-3">
-                        Represents experience of current management team, whether at Oak or predecessor firms.
-                      </p>
-                    </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Origin Section */}
+        <section className="py-20 bg-cream/40">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
+                The market was dislocated. The opportunity was <span className="text-gold-accent">structural.</span>
+              </h2>
+              
+              <div className="space-y-6 text-lg font-body text-abyss/80 leading-relaxed">
+                <p>
+                  When the largest banks pulled back from small-balance commercial real estate, they did not leave because the loans were bad. They left because the loans were small. The $2M–$20M bridge loan — the neighborhood apartment repositioning, the small hotel, the mixed-use building that does not fit a bank's credit box — does not fit the cost structure of a trillion-dollar institution.
+                </p>
+                <p>
+                  What remains is $4.8 trillion in outstanding CRE mortgage debt,<sup>6</sup> roughly $2–3 trillion of it maturing over the next three years,<sup>7</sup> and an estimated $300 billion in annual small- and mid-balance lending demand that banks no longer efficiently serve.<sup>5</sup> Over the same period, private CRE credit AUM has grown from approximately $56 billion to over $200 billion.<sup>8</sup> The structural gap is still widening.
+                </p>
+                <p>
+                  Gary Bechtel spent four decades in this market before building Oak. At Money360, he led the firm from $24 million to $850 million in AUM and originated more than $10 billion in CRE credit over his career.<sup>2</sup> Oak was founded to apply that same institutional underwriting discipline to a fragmented market — at a platform built from day one for it, rather than bolted onto a larger business with different priorities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* The Platform Section */}
+        <section className="py-20 bg-abyss">
+          <div className="container mx-auto px-6">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-6 text-center">
+                One platform. Every stage of the capital stack.
+              </h2>
+              <p className="text-lg font-body text-silver-mist/80 leading-relaxed max-w-4xl mx-auto text-center mb-16">
+                Oak brings together White Oak Capital Holdings and Red Oak Capital Holdings under a single vertically integrated operation. Origination, underwriting, closing, servicing, and capital markets all happen under one roof. Credit decisions are governed by principals who have operated through multiple cycles — not outsourced to third-party underwriters.
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">Insurance SMA Origination & Servicing</h3>
+                  <p className="text-silver-mist/80 font-body leading-relaxed">
+                    Oak underwrites SMAs for public and private insurance company counterparties, to CM1/CM2 NAIC designation standards.<sup>3</sup> Current active demand: $250M+ annually. The standards are portable across counterparties rather than built around one.
+                  </p>
+                </div>
+                
+                <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">National Origination Engine</h3>
+                  <p className="text-silver-mist/80 font-body leading-relaxed">
+                    Approximately $8.3 billion in gross pipeline evaluated in 2025. $200M cumulative Oak originations. Infrastructure built to scale from the current run-rate toward $1B+ in annual origination capacity.
+                  </p>
+                </div>
+                
+                <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">Co-Investment Vehicle</h3>
+                  <p className="text-silver-mist/80 font-body leading-relaxed">
+                    Programmatic equity alongside Oak on every loan. Oak retains equity in every co-investment transaction, aligning the firm's balance sheet with investor outcomes.
+                  </p>
+                </div>
+                
+                <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">FHA/HUD Exit Platform</h3>
+                  <p className="text-silver-mist/80 font-body leading-relaxed">
+                    Through Johnson Capital Multifamily, Oak offers government-backed permanent financing. Bridge-to-permanent under a single relationship. Approximately $225M in current FHA pipeline.
+                  </p>
                 </div>
               </div>
             </div>
@@ -109,124 +143,72 @@ const About = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-20 relative overflow-hidden bg-abyss">
-          {/* Background Image */}
-          <div className="absolute inset-0 opacity-20">
-            <img 
-              src="/lovable-uploads/01825524-320f-4d0a-981d-ff536cf5d707.png"
-              alt="Modern commercial building with green rooftop"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-graphite-fog/50"></div>
-          </div>
-          
-          <div className="container mx-auto px-6 relative z-10">
+        <section className="py-20">
+          <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
-                
-                {/* Left Column - Content */}
-                <div className="space-y-8">
-                  <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist leading-tight">
-                    Our <span className="text-gold-accent">Philosophy</span>
-                  </h2>
-                  
-                  <div className="space-y-6">
-                    <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
-                      At Oak, integrity isn't a buzzword—it's a core value with a system to guide our growth. 
-                      It drives how we lend to our borrowers, how we service our loans and how we report to our 
-                      investors while servicing as a principal of how we treat our partners.
-                    </p>
-                    
-                    <p className="text-lg font-body text-silver-mist/90 leading-relaxed">
-                      We're strong because we're well structured. Dependable because we're disciplined. 
-                      Trusted for our consistent execution, especially when stakes are highest.
-                    </p>
-                  </div>
+              <p className="text-xs font-body text-gold-accent uppercase tracking-[0.2em] mb-4 text-center">THE OAK STANDARD</p>
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 text-center leading-tight max-w-4xl mx-auto">
+                Know what you own. Know who is managing it. Know why it endures.
+              </h2>
+              <p className="text-lg font-body text-abyss/80 leading-relaxed max-w-4xl mx-auto text-center mb-16">
+                Credit decisions at Oak are governed by principals who have spent an average of over two decades underwriting commercial real estate. Principal-governed credit means the people accountable for outcomes set the standard every file is measured against, and engage directly with the decision-makers at the borrowing entity. Certainty for borrowers. Accountability for investors.
+              </p>
+              
+              <div className="grid md:grid-cols-3 gap-8">
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 text-center">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">PROTECTION</h3>
+                  <p className="text-abyss/80 font-body leading-relaxed text-sm">
+                    Capital preservation first. Senior-secured, first-lien, 55–75% stabilized LTV on every loan. A structural requirement, not a style preference. 33 Oak loans. No principal losses to date.<sup>1</sup>
+                  </p>
                 </div>
                 
-                {/* Right Column - Visual Element */}
-                <div className="relative">
-                  <div className="bg-cream/95 backdrop-blur-sm border border-graphite-fog/20 rounded-xl p-12 shadow-xl">
-                    <div className="space-y-8">
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-gold-accent/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-8 h-8 bg-gold-accent rounded-full"></div>
-                        </div>
-                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Structured</h3>
-                        <p className="text-graphite-fog font-body text-sm">Systems and processes that ensure consistency</p>
-                      </div>
-                      
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-graphite-fog/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-8 h-8 bg-graphite-fog rounded-full"></div>
-                        </div>
-                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Disciplined</h3>
-                        <p className="text-graphite-fog font-body text-sm">Unwavering commitment to our principles</p>
-                      </div>
-                      
-                      <div className="text-center">
-                        <div className="w-16 h-16 bg-garnet-edge/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                          <div className="w-8 h-8 bg-garnet-edge rounded-full"></div>
-                        </div>
-                        <h3 className="text-lg font-display font-medium text-abyss mb-3">Trusted</h3>
-                        <p className="text-graphite-fog font-body text-sm">Reliable execution when it matters most</p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 text-center">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">TRANSPARENCY</h3>
+                  <p className="text-abyss/80 font-body leading-relaxed text-sm">
+                    The address, the collateral, the structure, the term, the exit. Disclosed in writing before capital is committed. No blind pools. No hidden leverage.
+                  </p>
                 </div>
                 
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 text-center">
+                  <h3 className="text-xl font-display font-medium text-gold-accent mb-4">EXPERIENCE</h3>
+                  <p className="text-abyss/80 font-body leading-relaxed text-sm">
+                    Combined team career track record of $25B+ in CRE financings across eight market cycles.<sup>2</sup> Oak's own track record, since inception, is on the Investing page in full.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Discipline and Stability Cards */}
-        <section className="py-20">
+        {/* Discipline and Stability */}
+        <section className="py-20 bg-cream/40">
           <div className="container mx-auto px-6">
             <div className="max-w-7xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
-                  Discipline and <span className="text-gold-accent">Stability</span>
+                  Discipline is a predictor of returns. It is a stronger predictor of <span className="text-gold-accent">survival.</span>
                 </h2>
-                <p className="text-lg font-body text-graphite-fog leading-relaxed max-w-4xl mx-auto">
-                  Discipline is a strong predictor of success, which in turn drives stability across multiple market cycles.
-                </p>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div className="group bg-cream/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
-                      <Shield className="h-6 w-6 text-gold-accent" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-abyss">Control and Stability</h3>
-                  </div>
-                  <p className="text-graphite-fog leading-relaxed font-body">
-                    Discipline is a strong predictor of success, which in turn drives stability across market volatility.
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                  <h3 className="text-lg font-display font-medium text-abyss mb-4">Control and Stability</h3>
+                  <p className="text-graphite-fog leading-relaxed font-body text-sm">
+                    Institutional systems and processes built for consistency across market environments — including the ones that are not benign. The Oak standard held through COVID, through 525 basis points of rate hikes,<sup>4</sup> and through the geopolitical disruption that followed.
                   </p>
                 </div>
                 
-                <div className="group bg-cream/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
-                      <TrendingDown className="h-6 w-6 text-gold-accent" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-abyss">Reduced Risk-Taking</h3>
-                  </div>
-                  <p className="text-graphite-fog leading-relaxed font-body">
-                    Disciplined organizations are less likely to engage in impulsive strategies that threaten stability.
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                  <h3 className="text-lg font-display font-medium text-abyss mb-4">Risk Discipline</h3>
+                  <p className="text-graphite-fog leading-relaxed font-body text-sm">
+                    Underwriting standards do not flex with market sentiment. 55–75% LTV on every loan, every cycle.
                   </p>
                 </div>
                 
-                <div className="group bg-cream/60 backdrop-blur-sm border border-graphite-fog/20 rounded-lg p-8 hover:bg-cream/80 hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gold-accent/10 rounded-lg flex items-center justify-center mr-4 group-hover:bg-gold-accent/20 transition-colors duration-300">
-                      <BarChart className="h-6 w-6 text-gold-accent" />
-                    </div>
-                    <h3 className="text-lg font-display font-medium text-abyss">Predictability</h3>
-                  </div>
-                  <p className="text-graphite-fog leading-relaxed font-body">
-                    Consistent habits and behaviors lead to greater reliability among investors and borrowers.
+                <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 hover:shadow-xl transition-all duration-300">
+                  <h3 className="text-lg font-display font-medium text-abyss mb-4">Predictability</h3>
+                  <p className="text-graphite-fog leading-relaxed font-body text-sm">
+                    Consistent underwriting produces reliable outcomes. 17-month average duration at Oak. SOFR-indexed floating rates. Short exposure windows with continuous repricing. Predictability is not boring. It is the point.
                   </p>
                 </div>
               </div>

@@ -2,7 +2,6 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
-import { Shield, TrendingUp, DollarSign, Award, BarChart3, Lock, Activity, Target, Building, CreditCard, Settings } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { FinancialServiceSchema, BreadcrumbSchema } from "@/components/StructuredData";
 
@@ -11,333 +10,194 @@ const Investments = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Why Oak - Investment Platform"
-        description="Oak Real Estate Partners' investment platform built for performance. First-lien senior loans, short-duration debt strategies, and institutional-quality commercial real estate credit."
-        canonicalUrl="/investments"
+        description="Purpose-built for a market that cannot be served by the majors. Oak combines insurance SMA infrastructure, co-investment capital, FHA/HUD permanent financing, and principal-governed underwriting."
+        canonicalUrl="/whyoak"
       />
       <FinancialServiceSchema />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Why Oak', url: 'https://oakrealestatepartners.com/investments' }
+          { name: 'Why Oak', url: 'https://oakrealestatepartners.com/whyoak' }
         ]}
       />
-      {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />
       </div>
       
-      {/* Breadcrumb */}
-      <Breadcrumb 
-        items={[
-          { label: "Why Oak" }
-        ]}
-      />
+      <Breadcrumb items={[{ label: "Why Oak" }]} />
       
-      {/* Cream background for content */}
       <div className="bg-silver-mist">
-        {/* Content Section with Image */}
+        {/* Hero */}
         <section className="container mx-auto px-6 py-20">
           <div className="max-w-6xl mx-auto">
-            
             <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
-              {/* Text Content */}
               <div>
-                {/* Program Badge */}
-                <div className="mb-4">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                    Why Oak
-                  </span>
-                </div>
-                
                 <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6 leading-tight">
-                  A Platform Built for Performance
+                  Purpose-built for a market that cannot be served by <span className="text-gold-accent">the majors.</span>
                 </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
-                  Oak was founded over a decade ago with a simple mission: to unlock local community value through real estate enhancement and redevelopment. We design lending products that transform potential into progress—supporting housing, and driving efficiencies across retail, industrial, and suburban office sectors. This isn't theory—it's practice. Every day, we partner with developers and community stakeholders who depend on our capital to deliver measurable results for local economies.
-                </p>
-                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
-                  Where traditional banks are slow and inefficient, Oak is built for speed and clarity. We provide timely, practical solutions that empower real estate sponsors to execute their business plans with confidence. Our platform is designed for fast, efficient, and scalable commercial real estate transactions.
-                </p>
                 <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
-                  From day one, Oak has committed to an institutional framework rooted in best practices. We've built a company on ethics, accountability, transparency, and durability—principles that ensure we're not just financing projects, but fueling long-term community growth.
+                  Oak combines insurance SMA infrastructure, co-investment capital, FHA/HUD permanent financing, and principal-governed underwriting in a single vertically integrated operation focused on the $2M–$20M bridge segment. $460M in AUM today. Platform architecture built for $1B+ in annual origination capacity.
                 </p>
-                
-                {/* Oak's Investment Focus - Under text */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-abyss mb-4 pb-2 border-b border-abyss/20">
-                    Oak's Investment Focus
-                  </h3>
-                  <div className="space-y-3">
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-abyss/80 leading-relaxed">First-lien, senior-position loans</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-abyss/80 leading-relaxed">Short-duration debt strategies</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-abyss/80 leading-relaxed">Small-balance and middle-market commercial real estate</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-abyss/80 leading-relaxed">Highly structured, risk-conscious transactions</p>
-                    </div>
-                    <div className="flex items-start space-x-2">
-                      <div className="w-2 h-2 bg-garnet-edge rounded-full mt-2 flex-shrink-0"></div>
-                      <p className="text-sm text-abyss/80 leading-relaxed">Bridge loans, HUD-insured debt, and hybrid structures</p>
-                    </div>
-                  </div>
-                </div>
               </div>
               
-              {/* Image with Overlay Cards - Expanded Height */}
               <div className="relative h-full">
                 <img 
                   src="/lovable-uploads/987e604e-d758-49f3-b324-b191ee0fa935.png"
-                  alt="Investment platform illustration"
-                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
+                  alt="Investment platform"
+                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[400px]"
                 />
-                
               </div>
-              
+            </div>
+          </div>
+        </section>
+
+        {/* Market Thesis */}
+        <section className="py-20 bg-cream/40">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8">
+                Banks pulled back. The gap widened. Oak was built for it.
+              </h2>
+              <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
+                The CRE capital stack has structurally reorganized. Approximately $4.8 trillion in outstanding CRE mortgage debt.<sup>6</sup> Roughly $2–3 trillion maturing over the next three years.<sup>7</sup> A substantial share of small-balance lending still on bank balance sheets that have signaled reduced appetite. Private CRE credit AUM has grown from approximately $56 billion to more than $200 billion in 15 years.<sup>8</sup>
+              </p>
+              <p className="text-lg font-body text-abyss/80 leading-relaxed">
+                This is not a temporary dislocation. It is a sustained repricing of who provides CRE credit and at what scale. Oak was built specifically for the small-balance segment of that repricing.
+              </p>
             </div>
           </div>
         </section>
       </div>
       
-      {/* Rest of content with dark background */}
-      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
-
-        {/* Bento Box Section */}
-        <section className="py-20 bg-silver-mist/5 backdrop-blur-sm">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              
-              {/* Responsive Bento Box Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-4 md:h-[600px]">
-                {/* Asset-backed Collateral - Large with Image */}
-                <div className="md:col-span-2 md:row-span-4 relative overflow-hidden bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group min-h-[300px] md:min-h-0">
-                  {/* Background Image with Fade */}
-                  <div className="absolute inset-0">
-                    <img 
-                      src="/lovable-uploads/2d3fe4fa-9cca-491b-b199-929c12b00e11.png"
-                      alt="Collateral backing"
-                      className="w-full h-full object-cover opacity-20"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-abyss/60 via-obsidian/30 to-transparent"></div>
-                    <div className="absolute inset-0 bg-gradient-to-r from-abyss/40 via-transparent to-abyss/20"></div>
-                  </div>
-                  
-                  {/* Content */}
-                  <div className="relative z-10 p-6 md:p-8 h-full flex flex-col justify-center">
-                    <div className="flex items-start space-x-4">
-                      <Shield className="h-6 w-6 md:h-8 md:w-8 text-garnet-edge group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
-                      <div>
-                        <h3 className="text-xl md:text-2xl font-bold text-silver-mist mb-3">Asset-backed Collateral</h3>
-                        <p className="text-silver-mist/90 leading-relaxed text-base md:text-lg">
-                          Asset-backed collateral secured with a mortgage or first deed trust, providing tangible security for your investment.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+      {/* Six Competitive Advantages */}
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-silver-mist mb-12 text-center">
+              Six Competitive Advantages
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { title: "An underserved segment, owned.", desc: "Very few national lenders focus on the $2M–$20M CRE bridge segment. The space is fragmented, with limited institutional-quality competition. Oak was built specifically for it." },
+                { title: "Active insurance SMA platform.", desc: "Oak is currently underwriting and servicing SMAs for public and private insurers, with $250M+ in active annual demand. CM1/CM2 NAIC designation standards are counterparty-agnostic and portable." },
+                { title: "Vertically integrated.", desc: "In-house origination, underwriting, closing, and servicing on a proprietary technology stack. Every credit decision governed by principals, documented to institutional standards." },
+                { title: "Workout track record.", desc: "On the portion of the Oak portfolio that has required workout, Oak has recovered 100% of principal to date at an average realized return of 12.3%. A small sample, disclosed as such." },
+                { title: "Insurance-grade standard on every loan.", desc: "CM1/CM2 NAIC designation standards apply to every Oak transaction, not only the ones headed for an insurance balance sheet. The standard travels." },
+                { title: "Scalable infrastructure.", desc: "Platform architecture already built for $1B+ annual origination capacity. Incremental origination volume produces incremental margin through operating leverage." },
+              ].map((item, i) => (
+                <div key={i} className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8 hover:bg-silver-mist/10 transition-all duration-300">
+                  <div className="text-gold-accent font-display font-medium text-sm mb-1">{i + 1}.</div>
+                  <h3 className="text-lg font-display font-medium text-silver-mist mb-3">{item.title}</h3>
+                  <p className="text-silver-mist/80 font-body text-sm leading-relaxed">{item.desc}</p>
                 </div>
-
-                {/* Predictable Income - Top Right */}
-                <div className="md:col-span-2 md:row-span-1 p-4 md:p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group min-h-[120px] md:min-h-0">
-                  <div className="flex items-center space-x-4 h-full">
-                    <DollarSign className="h-5 w-5 md:h-6 md:w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg md:text-xl font-bold text-silver-mist mb-2">Predictable Income Streams</h3>
-                      <p className="text-silver-mist/80 leading-relaxed text-sm md:text-base">Lease-based income streams designed for consistency.</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Downside Protection - Middle Right */}
-                <div className="md:col-span-1 md:row-span-2 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group min-h-[150px] md:min-h-0">
-                  <div className="h-full flex flex-col justify-center text-center">
-                    <TrendingUp className="h-5 w-5 md:h-6 md:w-6 text-garnet-edge mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-base md:text-lg font-bold text-silver-mist mb-3">Downside Protection</h3>
-                    <p className="text-silver-mist/80 text-sm leading-relaxed">Senior position and conservative LTV ratios for enhanced protection.</p>
-                  </div>
-                </div>
-
-                {/* Institutional Discipline - Middle Right */}
-                <div className="md:col-span-1 md:row-span-2 p-4 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group min-h-[150px] md:min-h-0">
-                  <div className="h-full flex flex-col justify-center text-center">
-                    <Award className="h-5 w-5 md:h-6 md:w-6 text-garnet-edge mx-auto mb-3 group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-base md:text-lg font-bold text-silver-mist mb-3">Institutional Discipline</h3>
-                    <p className="text-silver-mist/80 text-sm leading-relaxed">Rigorous underwriting and strategic asset selection processes.</p>
-                  </div>
-                </div>
-
-                {/* Market Cycle Resilience - Bottom Right */}
-                <div className="md:col-span-2 md:row-span-1 p-4 md:p-6 bg-gradient-to-br from-silver-mist/10 to-silver-mist/20 backdrop-blur-sm rounded-xl border border-garnet-edge/30 hover:border-garnet-edge/50 transition-all duration-300 group min-h-[120px] md:min-h-0">
-                  <div className="flex items-center space-x-4 h-full">
-                    <BarChart3 className="h-5 w-5 md:h-6 md:w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300 flex-shrink-0" />
-                    <div>
-                      <h3 className="text-lg md:text-xl font-bold text-silver-mist mb-2">Market Cycle Resilience</h3>
-                      <p className="text-silver-mist/80 leading-relaxed text-sm md:text-base">Investments engineered to weather market cycles through disciplined structuring.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </section>
-      </div>
-      
-      {/* Income Strategies Section - Cream Background */}
-      <div className="bg-silver-mist">
-        <section className="py-20">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-6">
-                  Investment strategies rooted in structure — not speculation.
-                </h2>
-                <p className="text-lg text-abyss/80 leading-relaxed max-w-4xl mx-auto">
-                  Private real estate credit offers unique benefits over corporate credit and equity strategies:
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Lock className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Collateral Security</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Loans backed by income-producing real estate
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <DollarSign className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Cash Flow Predictability</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Structured payments and interest income
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Activity className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Low Volatility</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Less correlated to public market swings
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Shield className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Risk Efficiency</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Strong collateralization and underwriting discipline
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <TrendingUp className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Inflation Resilience</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Real estate's natural hedge against inflation
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-6 bg-white/50 backdrop-blur-sm border border-abyss/10 rounded-lg hover:bg-cream/60 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Target className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-lg font-bold text-abyss">Asset Appreciation Potential</h3>
-                  </div>
-                  <p className="text-abyss/80 leading-relaxed">
-                    Exposure to value growth alongside income
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </div>
 
-      {/* Rest of content with dark background */}
-      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
-
-
-        {/* Aligned Offerings Section */}
-        <section className="py-20">
-          <div className="container mx-auto px-6 lg:px-8">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-light text-silver-mist mb-6">
-                  Aligned Offerings for Institutional Objectives
-                </h2>
-                <p className="text-lg text-silver-mist/80 leading-relaxed max-w-4xl mx-auto">
-                  Each Oak investment is built to align with real-world investor priorities: capital preservation, consistent yield, and liquidity consideration. Our offerings include:
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Building className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-xl font-medium text-silver-mist">Diversified Credit Funds</h3>
-                  </div>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Targeting CRE debt across multiple markets and property types
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <CreditCard className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-xl font-medium text-silver-mist">Income-Generating Structured Credit</h3>
-                  </div>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Investments designed for consistent cash flow generation
-                  </p>
-                </div>
-                
-                <div className="space-y-4 p-8 bg-gradient-to-br from-gold-accent/20 to-garnet-edge/20 backdrop-blur-sm border border-gold-accent/30 rounded-lg hover:border-gold-accent/50 transition-all duration-300 group">
-                  <div className="flex items-center space-x-3 mb-3">
-                    <Settings className="h-6 w-6 text-garnet-edge group-hover:scale-110 transition-transform duration-300" />
-                    <h3 className="text-xl font-medium text-silver-mist">Custom Investment Vehicles</h3>
-                  </div>
-                  <p className="text-silver-mist/80 leading-relaxed">
-                    Tailored to specific allocator goals and requirements
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                <Button 
-                  size="lg"
-                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
-                >
-                  Explore Investment Opportunities
-                </Button>
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-abyss hover:border-garnet-edge px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm bg-transparent"
-                  onClick={() => window.location.href = '/contact'}
-                >
-                  Request Investment Materials
-                </Button>
-              </div>
+      {/* Built for the Current Environment */}
+      <div className="bg-silver-mist py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-4 text-center">
+              When the macro shifts, the collateral doesn't move with it.
+            </h2>
+            <p className="text-lg font-body text-abyss/80 text-center mb-12 max-w-3xl mx-auto">
+              Several structural features of Oak's lending model are aligned with the macro risks investors are navigating today:
+            </p>
+            
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse max-w-4xl mx-auto">
+                <thead>
+                  <tr className="border-b-2 border-gold-accent">
+                    <th className="text-left py-4 px-4 font-display font-medium text-abyss text-sm">Macro Risk</th>
+                    <th className="text-left py-4 px-4 font-display font-medium text-abyss text-sm">Oak Structural Mitigant</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["Inflation re-acceleration", "SOFR-indexed floating rates reprice with the benchmark"],
+                    ["Geopolitical / tariff shock", "Domestic-only, tangible U.S. real estate assets"],
+                    ["CRE valuation correction", "55–75% LTV equity cushion at close on every loan"],
+                    ["Higher-for-longer rates", "Short duration (12–36 months) and continuous repricing"],
+                    ["Private credit contagion", "No CLO exposure; senior-secured, first-lien positions"],
+                    ["Sovereign yield spikes", "First-lien secured by tangible, income-producing collateral"],
+                  ].map(([risk, mitigant], i) => (
+                    <tr key={i} className="border-b border-abyss/10 hover:bg-cream/60 transition-colors">
+                      <td className="py-3 px-4 font-body font-medium text-abyss text-sm">{risk}</td>
+                      <td className="py-3 px-4 font-body text-abyss/80 text-sm">{mitigant}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
 
+      {/* For Borrowers */}
+      <div className="bg-cream/40 py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-display font-medium text-abyss mb-6">
+              Term sheets in 48 hours. Closings in 30 days. Certainty at every step.
+            </h2>
+            <p className="text-lg font-body text-abyss/80 leading-relaxed">
+              Oak serves sponsors who have been left behind by the retrenchment of traditional lenders. $2M–$20M. Sound collateral. Credible sponsorship. Principal-to-principal from day one.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* For Institutional Investors */}
+      <div className="bg-silver-mist py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-display font-medium text-abyss mb-6">
+              In a market where opacity is common, clarity is the differentiator.
+            </h2>
+            <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
+              Most private credit funds describe their strategy. Oak documents the collateral. Most funds report quarterly. Oak supports loan-level transparency. Most funds lock capital for 7–10 years. Oak's bridge loans average 17 months at maturity.
+            </p>
+            <p className="text-lg font-body text-abyss/80 leading-relaxed">
+              RIA, family office, foundation, and endowment capital is placed in the same senior-secured, first-lien positions as Oak's institutional insurance counterparties. Same documentation. Same underwriting standard.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* CTAs */}
+      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog py-20">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button 
+                size="lg"
+                className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 hover:scale-105 rounded-sm"
+                onClick={() => window.location.href = '/investing'}
+              >
+                Explore Investment Solutions
+              </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-abyss px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm bg-transparent"
+                onClick={() => window.location.href = '/lending'}
+              >
+                Get a Term Sheet
+              </Button>
+              <Button 
+                variant="outline"
+                size="lg"
+                className="border-2 border-gold-accent/40 text-gold-accent hover:bg-gold-accent hover:text-abyss px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm bg-transparent"
+                onClick={() => window.location.href = '/contact'}
+              >
+                Contact Our Team
+              </Button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <Footer />

@@ -42,10 +42,10 @@ const VideoPlayerSectionDraft2 = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-6">
-              Experience the Oak Difference
+              See How Oak Operates
             </h2>
             <p className="text-silver-mist/90 text-lg font-body max-w-3xl mx-auto leading-relaxed">
-              Discover how our expertise and commitment to excellence has helped countless clients achieve their real estate investment goals.
+              A specialist CRE lending platform. Principal-governed credit. Institutional standards on every transaction.
             </p>
           </div>
 
