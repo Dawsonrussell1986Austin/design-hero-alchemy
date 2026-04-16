@@ -36,15 +36,15 @@ const VideoPlayerSectionDraft2 = () => {
   }, []);
 
   return (
-    <div className="relative bg-gradient-to-br from-obsidian via-graphite-fog to-deep-petrol py-24">
+    <div className="relative bg-cream py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-display font-medium text-cream mb-6">
+            <h2 className="text-4xl lg:text-5xl font-display font-medium text-abyss mb-6">
               See How Oak Operates
             </h2>
-            <p className="text-silver-mist/90 text-lg font-body max-w-3xl mx-auto leading-relaxed">
+            <p className="text-abyss/70 text-lg font-body max-w-3xl mx-auto leading-relaxed">
               A specialist CRE lending platform. Principal-governed credit. Institutional standards on every transaction.
             </p>
           </div>
@@ -91,7 +91,7 @@ const VideoPlayerSectionDraft2 = () => {
 
           {/* Bottom text */}
           <div className="text-center mt-12">
-            <p className="text-silver-mist/70 text-sm font-body max-w-2xl mx-auto italic">
+            <p className="text-abyss/50 text-sm font-body max-w-2xl mx-auto italic">
               "Where strength meets stewardship in every transaction"
             </p>
           </div>
