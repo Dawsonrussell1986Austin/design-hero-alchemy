@@ -1,3 +1,7 @@
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { trackCTAClick } from "@/lib/gtm";
+
 const OurEdge = () => {
   return (
     <div className="relative z-10">
@@ -11,8 +15,8 @@ const OurEdge = () => {
           backgroundRepeat: 'no-repeat'
         }}
       >
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-abyss/80" />
+        {/* Dark overlay - reduced for more photo visibility */}
+        <div className="absolute inset-0 bg-abyss/65" />
         
         {/* Content on top */}
         <div className="relative z-10 py-28 lg:py-40">
@@ -40,24 +44,35 @@ const OurEdge = () => {
                   Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
                 </p>
 
-                <p className="text-base leading-relaxed font-body text-silver-mist/50">
+                <p className="text-base leading-relaxed font-body text-silver-mist/50 mb-10">
                   This is a structural description of every position in the portfolio — not a philosophy.
                 </p>
+
+                {/* CTA */}
+                <a href="/transactions" onClick={() => trackCTAClick('See Our Transactions', '/transactions', 'what_we_do')}>
+                  <Button 
+                    size="lg" 
+                    className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-8 py-3.5 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-gold-accent/20"
+                  >
+                    See Our Transactions
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </div>
               
               {/* Right Column - Key Points as Cards */}
               <div className="flex flex-col gap-6 lg:pt-16">
-                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
                   <div className="text-xl font-display font-medium text-gold-accent mb-4">Senior-secured. First-lien. Always.</div>
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">Every Oak position sits at the top of the capital stack. At 55–75% stabilized LTV, the underlying property must lose 25–45% of its value before investor principal is at risk. Across 33 full-cycle Oak loans to date, we have incurred no principal losses.<sup className="text-silver-mist/50">1</sup></p>
                 </div>
                 
-                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
                   <div className="text-xl font-display font-medium text-gold-accent mb-4">Uncorrelated to public equity.</div>
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">SOFR-indexed floating rates reprice automatically. Short duration (17-month average at Oak) means continuous maturity and repricing. CRE collateral values are driven by property-level income, not index flows.</p>
                 </div>
                 
-                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
                   <div className="text-xl font-display font-medium text-gold-accent mb-4">Transparent before you commit.</div>
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">You know the address. You know the property. You know the LTV, the rate, the term, and the exit plan before a dollar is committed. This is how Oak operates by design, documented in the subscription materials for every investment.</p>
                 </div>
