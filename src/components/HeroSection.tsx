@@ -6,7 +6,14 @@ const HeroSection = () => {
   return (
     <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-center">
       
-      <div className="max-w-5xl mx-auto text-center">
+      {/* Ghost typography */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-start">
+        <span className="font-display font-medium italic text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[38rem] leading-none -ml-8 md:-ml-16 lg:-ml-24 select-none">
+          Oak
+        </span>
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Eyebrow Label */}
         <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-10 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
           Every dollar has an address
