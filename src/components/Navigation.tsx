@@ -208,8 +208,8 @@ const Navigation = () => {
             </div>
           </div>
           
-          {/* Desktop Contact Us Button */}
-          <a href="/contact" onClick={() => trackCTAClick('Contact Us', '/contact', 'navigation_header')}>
+          {/* Desktop Why Oak Button */}
+          <a href="/investments" onClick={() => trackCTAClick('Why Oak', '/investments', 'navigation_header')}>
             <Button 
               className={`hidden lg:flex items-center px-6 py-2 font-body font-medium text-sm tracking-wide rounded transition-all duration-300 hover:shadow-md ${
                 scrolled 
@@ -217,7 +217,7 @@ const Navigation = () => {
                   : 'bg-gold-accent hover:bg-gold-accent/90 text-silver-mist border border-gold-accent'
               }`}
             >
-              Contact Us
+              Why Oak
             </Button>
           </a>
 
