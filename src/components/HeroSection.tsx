@@ -35,37 +35,17 @@ const HeroSection = () => {
               Protected capital. Proven experience. Real assets.
             </p>
             
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
-              <Link to="/investing" onClick={() => trackCTAClick('Institutional Investors', '/investing', 'hero_section')}>
+            {/* CTA Button */}
+            <div className="opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
+              <a href="https://www.oakrepartners.com/videos/investment-strategy" onClick={() => trackCTAClick('Oak\'s Investment Strategy', 'https://www.oakrepartners.com/videos/investment-strategy', 'hero_section')}>
                 <Button 
                   size="lg" 
                   className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-8 py-3.5 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-gold-accent/20"
                 >
-                  Institutional Investors
+                  Oak's Investment Strategy
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
-              </Link>
-              <Link to="/lending" onClick={() => trackCTAClick('Borrowers', '/lending', 'hero_section')}>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-abyss px-8 py-3.5 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
-                >
-                  Borrowers
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
-              <Link to="/invest" onClick={() => trackCTAClick('RIA Partners', '/invest', 'hero_section')}>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-gold-accent/50 bg-gold-accent/10 text-gold-accent hover:bg-gold-accent hover:text-abyss px-8 py-3.5 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105"
-                >
-                  RIA Partners
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
+              </a>
             </div>
           </div>
           
