@@ -1,9 +1,9 @@
 const OurEdge = () => {
   return (
     <div className="relative z-10">
-      {/* The Oak Standard Section */}
+      {/* What We Do Section */}
       <div 
-        className="relative min-h-screen"
+        className="relative"
         style={{
           backgroundImage: 'url(/edge-background.png)',
           backgroundSize: 'cover',
@@ -15,42 +15,51 @@ const OurEdge = () => {
         <div className="absolute inset-0 bg-abyss/80" />
         
         {/* Content on top */}
-        <div className="relative z-10 flex items-center min-h-screen py-24 lg:py-32">
-          <div className="container mx-auto px-8 lg:px-16">
-            <div className="max-w-3xl">
+        <div className="relative z-10 py-28 lg:py-40">
+          <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
+            
+            {/* Two-column layout */}
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
               
-              {/* Section Label */}
-              <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6">WHAT WE DO</p>
-              
-              {/* Title */}
-              <h2 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-silver-mist mb-10 leading-tight">
-                You deserve to know exactly what you own.
-              </h2>
-              
-              {/* Main description */}
-              <p className="text-lg lg:text-xl leading-relaxed font-body text-silver-mist/90 mb-5">
-                Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
-              </p>
+              {/* Left Column - Headline & Description */}
+              <div>
+                {/* Section Label */}
+                <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-8">WHAT WE DO</p>
+                
+                {/* Title - editorial style matching hero */}
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal leading-[1.1] tracking-tight mb-10">
+                  <span className="text-cream">You deserve to</span>
+                  <br />
+                  <span className="text-cream">know exactly</span>
+                  <br />
+                  <span className="text-gold-accent italic">what you own.</span>
+                </h2>
+                
+                {/* Main description */}
+                <p className="text-lg lg:text-xl leading-relaxed font-body text-silver-mist/80 mb-5">
+                  Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
+                </p>
 
-              <p className="text-base leading-relaxed font-body text-silver-mist/70 mb-16">
-                This is a structural description of every position in the portfolio — not a philosophy.
-              </p>
-
-              {/* Key points */}
-              <div className="space-y-10">
-                <div className="border-l-4 border-gold-accent pl-8">
-                  <div className="text-lg font-display font-medium text-gold-accent mb-3">Senior-secured. First-lien. Always.</div>
-                  <p className="text-silver-mist/90 font-body text-sm leading-[1.8]">Every Oak position sits at the top of the capital stack. At 55–75% stabilized LTV, the underlying property must lose 25–45% of its value before investor principal is at risk. Across 33 full-cycle Oak loans to date, we have incurred no principal losses.<sup className="text-silver-mist/60">1</sup></p>
+                <p className="text-base leading-relaxed font-body text-silver-mist/50">
+                  This is a structural description of every position in the portfolio — not a philosophy.
+                </p>
+              </div>
+              
+              {/* Right Column - Key Points as Cards */}
+              <div className="flex flex-col gap-6 lg:pt-16">
+                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                  <div className="text-xl font-display font-medium text-gold-accent mb-4">Senior-secured. First-lien. Always.</div>
+                  <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">Every Oak position sits at the top of the capital stack. At 55–75% stabilized LTV, the underlying property must lose 25–45% of its value before investor principal is at risk. Across 33 full-cycle Oak loans to date, we have incurred no principal losses.<sup className="text-silver-mist/50">1</sup></p>
                 </div>
                 
-                <div className="border-l-4 border-gold-accent pl-8">
-                  <div className="text-lg font-display font-medium text-gold-accent mb-3">Uncorrelated to public equity.</div>
-                  <p className="text-silver-mist/90 font-body text-sm leading-[1.8]">SOFR-indexed floating rates reprice automatically. Short duration (17-month average at Oak) means continuous maturity and repricing. CRE collateral values are driven by property-level income, not index flows.</p>
+                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                  <div className="text-xl font-display font-medium text-gold-accent mb-4">Uncorrelated to public equity.</div>
+                  <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">SOFR-indexed floating rates reprice automatically. Short duration (17-month average at Oak) means continuous maturity and repricing. CRE collateral values are driven by property-level income, not index flows.</p>
                 </div>
                 
-                <div className="border-l-4 border-gold-accent pl-8">
-                  <div className="text-lg font-display font-medium text-gold-accent mb-3">Transparent before you commit.</div>
-                  <p className="text-silver-mist/90 font-body text-sm leading-[1.8]">You know the address. You know the property. You know the LTV, the rate, the term, and the exit plan before a dollar is committed. This is how Oak operates by design, documented in the subscription materials for every investment.</p>
+                <div className="bg-abyss/60 backdrop-blur-sm border border-gold-accent/15 rounded-lg p-8">
+                  <div className="text-xl font-display font-medium text-gold-accent mb-4">Transparent before you commit.</div>
+                  <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">You know the address. You know the property. You know the LTV, the rate, the term, and the exit plan before a dollar is committed. This is how Oak operates by design, documented in the subscription materials for every investment.</p>
                 </div>
               </div>
               
