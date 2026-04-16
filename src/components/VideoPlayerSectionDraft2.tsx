@@ -1,20 +1,5 @@
-import { useEffect, useState } from "react";
-import videoThumbnail from "@/assets/video-thumbnail-draft2.png";
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      'wistia-player': {
-        'media-id'?: string;
-        aspect?: string;
-        className?: string;
-      };
-    }
-  }
-}
 
 const VideoPlayerSectionDraft2 = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     // Load Wistia embed script
