@@ -56,32 +56,19 @@ const VideoPlayerSectionDraft2 = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-gold-accent/10 via-transparent to-deep-petrol/10 pointer-events-none z-10"></div>
               
               {/* Video Player */}
-              <div className="relative aspect-video">
-                {!isPlaying && (
-                  <div 
-                    className="absolute inset-0 cursor-pointer group"
-                    onClick={() => setIsPlaying(true)}
-                  >
-                    <img 
-                      src={videoThumbnail} 
-                      alt="Who is Oak Real Estate Partners" 
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-obsidian/10 group-hover:bg-obsidian/20 transition-colors flex items-center justify-center">
-                      <div className="w-20 h-20 rounded-full bg-white/90 group-hover:bg-white group-hover:scale-110 transition-all flex items-center justify-center">
-                        <div className="w-0 h-0 border-l-[24px] border-l-gold-accent border-t-[14px] border-t-transparent border-b-[14px] border-b-transparent ml-2"></div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-                {isPlaying && (
-                  <wistia-player 
-                    media-id="wn4w0z7jch"
-                    aspect="1.7777777777777777"
-                    className="w-full h-full"
+                <div className="relative aspect-video">
+                  <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/wnxzr0hs-0U?si=fzb8XDXqx8csrItL" 
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerPolicy="strict-origin-when-cross-origin" 
+                    allowFullScreen
+                    className="absolute inset-0 w-full h-full"
                   />
-                )}
-              </div>
+                </div>
             </div>
 
             {/* Decorative elements */}
