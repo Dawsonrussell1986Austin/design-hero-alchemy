@@ -190,7 +190,14 @@ const OurEdge = () => {
             <div className="mb-20">
               <p className="text-xs font-body text-gold-accent/70 uppercase tracking-[0.25em] text-center mb-10">Cycles Navigated</p>
               <div className="relative">
-                <div className="absolute top-1.5 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-accent/30 to-transparent hidden md:block" />
+                <motion.div
+                  className="absolute top-1.5 left-0 h-px bg-gradient-to-r from-transparent via-gold-accent/40 to-transparent hidden md:block origin-left"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 1.6, ease: "easeOut" }}
+                  style={{ right: 0 }}
+                />
                 <div className="grid grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-4 relative">
                   {[
                     { year: "'90", event: "S&L Crisis" },
@@ -200,11 +207,31 @@ const OurEdge = () => {
                     { year: "'22", event: "Rate Shock & Liquidity Crisis" },
                     { year: "Now", event: "The environment the team was built for." },
                   ].map((item, index) => (
-                    <div key={index} className="text-center flex flex-col items-center">
-                      <div className={`w-3 h-3 rounded-full mb-4 ring-4 ring-abyss ${item.year === "Now" ? "bg-gold-accent" : "bg-silver-mist/40"}`} />
+                    <motion.div
+                      key={index}
+                      className="text-center flex flex-col items-center"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-80px" }}
+                      transition={{ duration: 0.5, delay: 0.3 + index * 0.15, ease: "easeOut" }}
+                    >
+                      <motion.div
+                        className={`w-3 h-3 rounded-full mb-4 ring-4 ring-abyss ${item.year === "Now" ? "bg-gold-accent" : "bg-silver-mist/40"}`}
+                        animate={item.year === "Now" ? {
+                          boxShadow: [
+                            "0 0 0 0 hsl(var(--gold-accent) / 0.5)",
+                            "0 0 0 12px hsl(var(--gold-accent) / 0)",
+                          ],
+                        } : undefined}
+                        transition={item.year === "Now" ? {
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "easeOut",
+                        } : undefined}
+                      />
                       <div className={`text-xl lg:text-2xl font-display font-medium mb-2 ${item.year === "Now" ? "text-gold-accent" : "text-cream"}`}>{item.year}</div>
                       <div className="text-xs font-body text-silver-mist/60 max-w-[130px] leading-relaxed">{item.event}</div>
-                    </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>
