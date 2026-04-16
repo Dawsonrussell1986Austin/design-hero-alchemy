@@ -20,17 +20,19 @@ const HeroSection = () => {
           <div className="space-y-12">
             {/* Eyebrow Label */}
             <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
-              Senior-Secured CRE Credit
+              Every dollar has an address
             </p>
 
             {/* Main Headline */}
             <div>
               <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-display font-normal leading-[1.05] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
-                <span className="text-cream">Principal-led.</span>
+                <span className="text-cream">Senior-Secured</span>
                 <br />
-                <span className="text-gold-accent">On the</span>
+                <span className="text-cream">CRE Credit.</span>
                 <br />
-                <span className="text-gold-accent">record.</span>
+                <span className="text-gold-accent">Principal-led.</span>
+                <br />
+                <span className="text-gold-accent">On the record.</span>
               </h1>
             </div>
             
