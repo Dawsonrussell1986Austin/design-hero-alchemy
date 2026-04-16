@@ -20,15 +20,15 @@ const OurEdge = () => {
         <div className="absolute inset-0 bg-abyss/50" />
 
         {/* Ghost typography */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-end">
-          <span className="font-display font-medium text-cream/[0.04] text-[28rem] lg:text-[40rem] leading-none -mr-20 lg:-mr-32 select-none">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-end hidden md:flex">
+          <span className="font-display font-medium text-cream/[0.04] text-[20rem] md:text-[28rem] lg:text-[40rem] leading-none -mr-10 md:-mr-20 lg:-mr-32 select-none">
             OAK
           </span>
         </div>
 
         {/* Content on top */}
-        <div className="relative z-10 py-28 lg:py-40">
-          <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
+        <div className="relative z-10 py-16 md:py-28 lg:py-40">
+          <div className="container mx-auto px-5 md:px-8 lg:px-16 max-w-7xl">
             
             {/* Two-column layout */}
             <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
@@ -39,7 +39,7 @@ const OurEdge = () => {
                 <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-8">WHAT WE DO</p>
                 
                 {/* Title - editorial style matching hero */}
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal leading-[1.1] tracking-tight mb-10">
+                <h2 className="text-3xl md:text-5xl lg:text-6xl font-display font-normal leading-[1.1] tracking-tight mb-8 md:mb-10">
                   <span className="text-cream">You deserve to</span>
                   <br />
                   <span className="text-cream">know exactly</span>
@@ -48,7 +48,7 @@ const OurEdge = () => {
                 </h2>
                 
                 {/* Main description */}
-                <p className="text-lg lg:text-xl leading-relaxed font-body text-silver-mist/80 mb-5">
+                <p className="text-base md:text-lg lg:text-xl leading-relaxed font-body text-silver-mist/80 mb-5">
                   Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
                 </p>
 
@@ -75,12 +75,12 @@ const OurEdge = () => {
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">Every Oak position sits at the top of the capital stack. At 55–75% stabilized LTV, the underlying property must lose 25–45% of its value before investor principal is at risk. Across 33 full-cycle Oak loans to date, we have incurred no principal losses.<sup className="text-silver-mist/50">1</sup></p>
                 </div>
                 
-                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
+                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-5 md:p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
                   <div className="text-xl font-display font-medium text-gold-accent mb-4">Uncorrelated to public equity.</div>
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">SOFR-indexed floating rates reprice automatically. Short duration (17-month average at Oak) means continuous maturity and repricing. CRE collateral values are driven by property-level income, not index flows.</p>
                 </div>
                 
-                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
+                <div className="bg-abyss/50 backdrop-blur-md border-t-2 border-gold-accent/40 border-l border-r border-b border-gold-accent/10 rounded-lg p-5 md:p-8 transition-all duration-300 hover:bg-abyss/60 hover:border-gold-accent/30 hover:shadow-lg hover:shadow-gold-accent/5">
                   <div className="text-xl font-display font-medium text-gold-accent mb-4">Transparent before you commit.</div>
                   <p className="text-silver-mist/80 font-body text-sm leading-[1.8]">You know the address. You know the property. You know the LTV, the rate, the term, and the exit plan before a dollar is committed. This is how Oak operates by design, documented in the subscription materials for every investment.</p>
                 </div>
