@@ -21,7 +21,7 @@ const HeroSection = () => {
             {/* Main Headline */}
             <div className="space-y-2">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-medium leading-tight tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards] text-silver-mist">
-                Senior-secured CRE credit, built for the market banks abandoned.
+                Senior-secured CRE credit. Principal-led. On the record.
               </h1>
             </div>
             
