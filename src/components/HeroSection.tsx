@@ -17,22 +17,26 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
           {/* Left Column - Main Content */}
-          <div className="space-y-10">
+          <div className="space-y-12">
+            {/* Eyebrow Label */}
+            <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
+              Senior-Secured CRE Credit
+            </p>
+
             {/* Main Headline */}
             <div>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] xl:text-6xl font-display font-medium leading-[1.1] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards] text-silver-mist">
-                Senior-secured CRE credit. Principal-led. On the record.
+              <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] xl:text-[6.5rem] font-display font-normal leading-[1.05] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
+                <span className="text-cream">Principal-led.</span>
+                <br />
+                <span className="text-gold-accent">On the</span>
+                <br />
+                <span className="text-gold-accent">record.</span>
               </h1>
             </div>
             
             {/* Subtitle */}
-            <p className="text-base sm:text-lg lg:text-xl text-silver-mist/80 max-w-xl leading-relaxed font-body font-normal opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards] mobile-text-scale">
+            <p className="text-base sm:text-lg lg:text-xl text-silver-mist/60 max-w-lg leading-relaxed font-body font-normal opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
               A specialist lending platform led by principals with a combined $25 billion of CRE financing experience across eight market cycles. Oak's 33 full-cycle loans have produced a 19% net IRR with no principal losses to date.<sup>1</sup>
-            </p>
-
-            {/* Tagline */}
-            <p className="text-sm sm:text-base text-gold-accent font-display font-medium tracking-wide opacity-0 animate-[fadeInUp_0.8s_ease-out_0.7s_forwards]">
-              Protected capital. Proven experience. Real assets.
             </p>
             
             {/* CTA Button */}
