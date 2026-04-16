@@ -91,7 +91,7 @@ const VideoPlayerSectionDraft2 = () => {
 
           {/* Bottom text */}
           <div className="text-center mt-12">
-            <p className="text-silver-mist/70 text-sm font-body max-w-2xl mx-auto italic">
+            <p className="text-abyss/50 text-sm font-body max-w-2xl mx-auto italic">
               "Where strength meets stewardship in every transaction"
             </p>
           </div>
