@@ -23,7 +23,7 @@ export const videoCategories: VideoCategory[] = [
       {
         id: "oak-1",
         title: "Opportunity Selection Process",
-        description: "Learn about Oak's founding story and the vision behind our approach to private credit.",
+        description: "Learn about Oak's founding story and the vision behind our approach to private equity.",
         mediaId: "c156cbp2ql",
       },
       {
@@ -68,8 +68,8 @@ export const videoCategories: VideoCategory[] = [
   },
   {
     id: "what-is-private-credit",
-    question: "What is Private Credit?",
-    description: "Understanding the fundamentals of private credit lending and market opportunities.",
+    question: "What is Private Equity?",
+    description: "Understanding the fundamentals of private equity lending and market opportunities.",
     thumbnail: "/src/assets/video-thumb-credit.png",
     videos: [
       {
@@ -80,8 +80,8 @@ export const videoCategories: VideoCategory[] = [
       },
       {
         id: "credit-3",
-        title: "Understanding Private Credit",
-        description: "Explore the opportunities in the fragmented private credit market landscape.",
+        title: "Understanding Private Equity",
+        description: "Explore the opportunities in the fragmented private equity market landscape.",
         mediaId: "etr16bubjs",
       },
     ],

@@ -29,9 +29,9 @@ interface PastWebinar {
 const pastWebinars: PastWebinar[] = [
   {
     id: "risk-before-returns-feb-2026",
-    title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Credit",
+    title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Equity",
     date: "February 12, 2026",
-    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private credit — before a single dollar of capital is deployed.",
+    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private equity — before a single dollar of capital is deployed.",
     mediaId: "i6sw318ela",
   },
   {

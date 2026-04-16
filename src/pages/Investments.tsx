@@ -121,7 +121,7 @@ const Investments = () => {
                     ["Geopolitical / tariff shock", "Domestic-only, tangible U.S. real estate assets"],
                     ["CRE valuation correction", "55–75% LTV equity cushion at close on every loan"],
                     ["Higher-for-longer rates", "Short duration (12–36 months) and continuous repricing"],
-                    ["Private credit contagion", "No CLO exposure; senior-secured, first-lien positions"],
+                    ["Private equity contagion", "No CLO exposure; senior-secured, first-lien positions"],
                     ["Sovereign yield spikes", "First-lien secured by tangible, income-producing collateral"],
                   ].map(([risk, mitigant], i) => (
                     <tr key={i} className="border-b border-abyss/10 hover:bg-cream/60 transition-colors">
@@ -158,7 +158,7 @@ const Investments = () => {
               In a market where opacity is common, clarity is the differentiator.
             </h2>
             <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-              Most private credit funds describe their strategy. Oak documents the collateral. Most funds report quarterly. Oak supports loan-level transparency. Most funds lock capital for 7–10 years. Oak's bridge loans average 17 months at maturity.
+              Most private equity funds describe their strategy. Oak documents the collateral. Most funds report quarterly. Oak supports loan-level transparency. Most funds lock capital for 7–10 years. Oak's bridge loans average 17 months at maturity.
             </p>
             <p className="text-lg font-body text-abyss/80 leading-relaxed">
               RIA, family office, foundation, and endowment capital is placed in the same senior-secured, first-lien positions as Oak's institutional insurance counterparties. Same documentation. Same underwriting standard.

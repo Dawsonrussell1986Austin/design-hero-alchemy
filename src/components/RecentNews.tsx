@@ -7,14 +7,14 @@ const RecentNews = () => {
   const recentArticles = [
     {
       title: "How Oak Finds Opportunity Where Banks Can't",
-      excerpt: "In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.",
+      excerpt: "In today's commercial real estate market, many investors hear a lot of noise about private equity, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.",
       date: "January 7, 2026",
       image: blogBuildingHero,
       slug: "oak-finds-opportunity",
       isBlog: true
     },
     {
-      title: "Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why",
+      title: "Private Equity's Role in the Current Lending Gap Is Expanding — Here's Why",
       excerpt: "Over the past eighteen months, the commercial real estate lending environment has shifted dramatically. Regional and mid-sized banks have pulled back more than $90B in commercial real estate lending since early 2023.",
       date: "December 3, 2025",
       image: "/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png",

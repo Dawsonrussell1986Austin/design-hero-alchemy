@@ -60,7 +60,7 @@ const Investing = () => {
                 Where opacity is common, certainty has a premium.
               </h2>
               <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-                Most private credit funds describe their sector. Oak documents the address. Most funds describe risk management philosophy. Oak documents the collateral — the property, the LTV, the SOFR-indexed rate, the maturity schedule.
+                Most private equity funds describe their sector. Oak documents the address. Most funds describe risk management philosophy. Oak documents the collateral — the property, the LTV, the SOFR-indexed rate, the maturity schedule.
               </p>
               <p className="text-lg font-body text-abyss/80 leading-relaxed">
                 Senior-secured, first-lien lending at 55–75% stabilized LTV means that even if the underlying asset declines 25–45%, investor principal is structurally protected. That protection is contractual, not discretionary.
@@ -140,7 +140,7 @@ const Investing = () => {
         </div>
       </div>
       
-      {/* Why CRE Private Credit Now */}
+      {/* Why CRE Private Equity Now */}
       <div className="bg-cream/40 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
@@ -183,7 +183,7 @@ const Investing = () => {
               Built for advisors who will not allocate blind.
             </h2>
             <p className="text-lg font-body text-abyss/80 leading-relaxed">
-              RIAs allocating to Oak get what most private credit platforms will not provide: loan-level transparency, named collateral on every position, and direct access to the principals who govern credit decisions. No blind pools. No opaque structures.
+              RIAs allocating to Oak get what most private equity platforms will not provide: loan-level transparency, named collateral on every position, and direct access to the principals who govern credit decisions. No blind pools. No opaque structures.
             </p>
           </div>
         </div>

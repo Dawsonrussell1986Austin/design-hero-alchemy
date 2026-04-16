@@ -113,7 +113,7 @@ const OurEdge = () => {
             
             <div className="max-w-4xl mx-auto mb-12">
               <p className="text-lg font-body text-silver-mist/80 leading-relaxed mb-6">
-                Every manager in private credit claims a track record. Oak's is narrow, specific, and on the record: 33 full-cycle loans, completed at Oak, through COVID, 525 basis points of Federal Reserve rate hikes,<sup>4</sup> and the sustained rate environment that has followed.
+                Every manager in private equity claims a track record. Oak's is narrow, specific, and on the record: 33 full-cycle loans, completed at Oak, through COVID, 525 basis points of Federal Reserve rate hikes,<sup>4</sup> and the sustained rate environment that has followed.
               </p>
               <p className="text-lg font-body text-silver-mist/80 leading-relaxed">
                 Across those 33 loans: 19% net IRR, 21.9% gross IRR, 1.22x net MOIC, 17-month average duration. On the loans that required workout — because every lender that underwrites at scale will eventually encounter one — Oak has recovered 100% of principal to date at an average realized return of 12.3%.<sup>1</sup>
