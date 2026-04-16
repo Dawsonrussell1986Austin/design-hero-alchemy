@@ -173,7 +173,7 @@ const OurSubsidiaries = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {[
                       { name: "Ryan Ellis", title: "VICE PRESIDENT, FINANCE", image: "/lovable-uploads/76c2daaa-5415-480e-85df-16119fbc639a.png" },
-                      { name: "Thomas J. Gorski", title: "SENIOR CRE UNDERWRITER", image: "/lovable-uploads/b73b34cc-ac9e-499c-b7ac-c09f2097413e.png" },
+                      { name: "Thomas J. Gorski", title: "VP, UNDERWRITING", image: "/lovable-uploads/b73b34cc-ac9e-499c-b7ac-c09f2097413e.png" },
                       { name: "James Myatt", title: "LOAN ADMINISTRATOR", image: "/lovable-uploads/569d91ea-63ba-4d6d-ae15-e224a63f481c.png" },
                       { name: "Jamie Tripp", title: "VICE PRESIDENT OF INTERNAL OPERATIONS", image: "/lovable-uploads/d79e003e-2083-4515-bd8c-da4e7748ef9d.png" },
                       { name: "Rob Mendham", title: "MANAGER, INFORMATION TECHNOLOGY", image: "/lovable-uploads/172b9df3-c5a8-4a00-83f7-12c550923d84.png" },
