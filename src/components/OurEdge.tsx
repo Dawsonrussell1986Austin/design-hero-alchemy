@@ -16,7 +16,7 @@ const OurEdge = () => {
         }}
       >
         {/* Dark overlay - reduced for more photo visibility */}
-        <div className="absolute inset-0 bg-abyss/65" />
+        <div className="absolute inset-0 bg-abyss/50" />
         
         {/* Content on top */}
         <div className="relative z-10 py-28 lg:py-40">
