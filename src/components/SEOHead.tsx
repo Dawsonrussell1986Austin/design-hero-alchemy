@@ -20,7 +20,7 @@ const SITE_NAME = 'Oak Real Estate Partners';
 
 export default function SEOHead({
   title,
-  description = 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private credit opportunities.',
+  description = 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private equity opportunities.',
   canonicalUrl,
   ogType = 'website',
   ogImage = DEFAULT_IMAGE,

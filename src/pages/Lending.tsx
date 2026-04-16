@@ -49,7 +49,7 @@ const Lending = () => {
             {/* The Market */}
             <div className="max-w-4xl mx-auto mb-20">
               <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-                Large institutional lenders set minimums at $50M or above. CMBS conduits require full stabilization. Large private credit funds pursue $100M+ transactions. The sponsor with a sound $8M apartment repositioning — credible track record, clear stabilization path, solid collateral — has been left to hard-money lenders and inconsistent terms.
+                Large institutional lenders set minimums at $50M or above. CMBS conduits require full stabilization. Large private equity funds pursue $100M+ transactions. The sponsor with a sound $8M apartment repositioning — credible track record, clear stabilization path, solid collateral — has been left to hard-money lenders and inconsistent terms.
               </p>
               <p className="text-lg font-body text-abyss/80 leading-relaxed">
                 The structural context: roughly $4.8 trillion in outstanding CRE mortgage debt,<sup>6</sup> approximately $2–3 trillion maturing over the next three years,<sup>7</sup> and a substantial portion of small-balance CRE lending still held by banks that have signaled reduced appetite. Oak was built for the loan that does not fit a bank's credit box but is supported by sound collateral and credible sponsorship.
