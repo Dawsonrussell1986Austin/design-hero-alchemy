@@ -2,22 +2,22 @@ const OurEdge = () => {
   return (
     <div className="relative z-10">
       {/* The Oak Standard Section */}
-      <div className="grid lg:grid-cols-2 min-h-screen">
-        {/* Left side - Image */}
-        <div 
-          className="relative min-h-[400px] lg:min-h-screen"
-          style={{
-            backgroundImage: 'url(/edge-background.png)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        />
+      <div 
+        className="relative min-h-screen"
+        style={{
+          backgroundImage: 'url(/edge-background.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-abyss/80" />
         
-        {/* Right side - Content */}
-        <div className="bg-abyss flex items-center py-16 lg:py-28">
+        {/* Content on top */}
+        <div className="relative z-10 flex items-center min-h-screen py-24 lg:py-32">
           <div className="container mx-auto px-8 lg:px-16">
-            <div className="max-w-2xl">
+            <div className="max-w-3xl">
               
               {/* Section Label */}
               <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6">WHAT WE DO</p>
