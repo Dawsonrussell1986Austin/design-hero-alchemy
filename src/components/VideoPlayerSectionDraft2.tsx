@@ -1,7 +1,13 @@
 const VideoPlayerSectionDraft2 = () => {
   return (
-    <div className="relative bg-cream py-24">
-      <div className="container mx-auto px-6">
+    <div className="relative bg-cream py-24 overflow-hidden">
+      {/* Ghost typography */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-start">
+        <span className="font-display font-medium italic text-abyss/[0.04] text-[24rem] lg:text-[34rem] leading-none -ml-16 lg:-ml-24 select-none">
+          Watch
+        </span>
+      </div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">

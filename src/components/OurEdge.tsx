@@ -17,7 +17,14 @@ const OurEdge = () => {
       >
         {/* Dark overlay - reduced for more photo visibility */}
         <div className="absolute inset-0 bg-abyss/50" />
-        
+
+        {/* Ghost typography */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-end">
+          <span className="font-display font-medium text-cream/[0.04] text-[28rem] lg:text-[40rem] leading-none -mr-20 lg:-mr-32 select-none">
+            OAK
+          </span>
+        </div>
+
         {/* Content on top */}
         <div className="relative z-10 py-28 lg:py-40">
           <div className="container mx-auto px-8 lg:px-16 max-w-7xl">
@@ -84,8 +91,14 @@ const OurEdge = () => {
       </div>
 
       {/* Institutional Alignment Section */}
-      <div className="bg-silver-mist py-24 lg:py-32">
-        <div className="container mx-auto px-6 lg:px-8">
+      <div className="relative bg-silver-mist py-24 lg:py-32 overflow-hidden">
+        {/* Ghost typography */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-start">
+          <span className="font-display font-medium italic text-abyss/[0.04] text-[24rem] lg:text-[32rem] leading-none -ml-16 lg:-ml-24 select-none">
+            $460M
+          </span>
+        </div>
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">
             <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6 text-center">WHO INVESTS ALONGSIDE YOU</p>
             
@@ -126,8 +139,14 @@ const OurEdge = () => {
       </div>
 
       {/* Track Record Section */}
-      <div className="bg-abyss py-24 lg:py-32">
-        <div className="container mx-auto px-6 lg:px-8">
+      <div className="relative bg-abyss py-24 lg:py-32 overflow-hidden">
+        {/* Ghost typography */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-end">
+          <span className="font-display font-medium text-cream/[0.04] text-[28rem] lg:text-[42rem] leading-none -mr-12 lg:-mr-20 select-none">
+            33
+          </span>
+        </div>
+        <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">
             <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6 text-center">OAK, ON THE RECORD</p>
             
