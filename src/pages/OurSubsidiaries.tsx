@@ -174,7 +174,7 @@ const OurSubsidiaries = () => {
                     {[
                       { name: "Ryan Ellis", title: "VICE PRESIDENT, FINANCE", image: "/lovable-uploads/76c2daaa-5415-480e-85df-16119fbc639a.png" },
                       { name: "Thomas J. Gorski", title: "VP, UNDERWRITING", image: "/lovable-uploads/b73b34cc-ac9e-499c-b7ac-c09f2097413e.png" },
-                      { name: "James Myatt", title: "LOAN ADMINISTRATOR", image: "/lovable-uploads/569d91ea-63ba-4d6d-ae15-e224a63f481c.png" },
+                      { name: "James Myatt", title: "SENIOR LOAN ADMINISTRATOR", image: "/lovable-uploads/569d91ea-63ba-4d6d-ae15-e224a63f481c.png" },
                       { name: "Jamie Tripp", title: "VICE PRESIDENT OF INTERNAL OPERATIONS", image: "/lovable-uploads/d79e003e-2083-4515-bd8c-da4e7748ef9d.png" },
                       { name: "Rob Mendham", title: "MANAGER, INFORMATION TECHNOLOGY", image: "/lovable-uploads/172b9df3-c5a8-4a00-83f7-12c550923d84.png" },
                       { name: "Tanner Morgan", title: "CONTROLLER", image: "/lovable-uploads/dceb532f-a791-412e-a1fc-638c2122d06d.png" },
