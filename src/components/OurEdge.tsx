@@ -92,10 +92,10 @@ const OurEdge = () => {
       </div>
 
       {/* Institutional Alignment Section */}
-      <div className="relative bg-silver-mist py-24 lg:py-32 overflow-hidden">
+      <div className="relative bg-silver-mist py-16 md:py-24 lg:py-32 overflow-hidden">
         {/* Ghost typography */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-start">
-          <span className="font-display font-medium italic text-abyss/[0.04] text-[24rem] lg:text-[32rem] leading-none -ml-16 lg:-ml-24 select-none">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-start">
+          <span className="font-display font-medium italic text-abyss/[0.04] text-[16rem] md:text-[24rem] lg:text-[32rem] leading-none -ml-8 md:-ml-16 lg:-ml-24 select-none">
             $460M
           </span>
         </div>
@@ -103,36 +103,36 @@ const OurEdge = () => {
           <div className="max-w-6xl mx-auto">
             <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6 text-center">WHO INVESTS ALONGSIDE YOU</p>
             
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss mb-10 text-center leading-tight max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss mb-8 md:mb-10 text-center leading-tight max-w-4xl mx-auto">
               Your capital, placed in the same positions as insurance company, foundation, and endowment capital.
             </h2>
             
-            <div className="max-w-4xl mx-auto mb-16">
-              <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
+            <div className="max-w-4xl mx-auto mb-10 md:mb-16">
+              <p className="text-base md:text-lg font-body text-abyss/80 leading-relaxed mb-6">
                 Oak originates, underwrites, and services commercial real estate loans for institutional counterparties that operate to some of the most demanding capital standards in the market. Oak is currently underwriting separately managed accounts for a global insurer with demonstrated annual deployment demand of $250M+. Every loan Oak originates is built to CM1/CM2 NAIC insurance designation standards,<sup>3</sup> whether the loan goes on an insurance balance sheet or not.
               </p>
-              <p className="text-lg font-body text-abyss/80 leading-relaxed">
+              <p className="text-base md:text-lg font-body text-abyss/80 leading-relaxed">
                 RIA and family office clients invest in the same senior-secured, first-lien positions, on the same documentation, at the same standards.
               </p>
             </div>
 
             {/* Proof Points */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-              <div className="text-center p-8 bg-cream/60 border border-abyss/10 rounded-lg">
-                <div className="text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-3">$460M</div>
-                <div className="text-xs font-body text-abyss/70 uppercase tracking-wider">Oak AUM</div>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
+              <div className="text-center p-5 md:p-8 bg-cream/60 border border-abyss/10 rounded-lg">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 md:mb-3">$460M</div>
+                <div className="text-[10px] md:text-xs font-body text-abyss/70 uppercase tracking-wider">Oak AUM</div>
               </div>
-              <div className="text-center p-8 bg-cream/60 border border-abyss/10 rounded-lg">
-                <div className="text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-3">$200M</div>
-                <div className="text-xs font-body text-abyss/70 uppercase tracking-wider">Oak Cumulative Originations</div>
+              <div className="text-center p-5 md:p-8 bg-cream/60 border border-abyss/10 rounded-lg">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 md:mb-3">$200M</div>
+                <div className="text-[10px] md:text-xs font-body text-abyss/70 uppercase tracking-wider">Oak Cumulative Originations</div>
               </div>
-              <div className="text-center p-8 bg-cream/60 border border-abyss/10 rounded-lg">
-                <div className="text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-3">8</div>
-                <div className="text-xs font-body text-abyss/70 uppercase tracking-wider">Market Cycles Navigated by Team<sup>2</sup></div>
+              <div className="text-center p-5 md:p-8 bg-cream/60 border border-abyss/10 rounded-lg">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 md:mb-3">8</div>
+                <div className="text-[10px] md:text-xs font-body text-abyss/70 uppercase tracking-wider">Market Cycles Navigated by Team<sup>2</sup></div>
               </div>
-              <div className="text-center p-8 bg-cream/60 border border-abyss/10 rounded-lg">
-                <div className="text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-3">$250M+</div>
-                <div className="text-xs font-body text-abyss/70 uppercase tracking-wider">Active Insurance SMA Annual Demand</div>
+              <div className="text-center p-5 md:p-8 bg-cream/60 border border-abyss/10 rounded-lg">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 md:mb-3">$250M+</div>
+                <div className="text-[10px] md:text-xs font-body text-abyss/70 uppercase tracking-wider">Active Insurance SMA Annual Demand</div>
               </div>
             </div>
           </div>
@@ -140,10 +140,10 @@ const OurEdge = () => {
       </div>
 
       {/* Track Record Section */}
-      <div className="relative bg-abyss py-24 lg:py-32 overflow-hidden">
+      <div className="relative bg-abyss py-16 md:py-24 lg:py-32 overflow-hidden">
         {/* Ghost typography */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-end">
-          <span className="font-display font-medium text-cream/[0.04] text-[28rem] lg:text-[42rem] leading-none -mr-12 lg:-mr-20 select-none">
+        <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
+          <span className="font-display font-medium text-cream/[0.04] text-[18rem] md:text-[28rem] lg:text-[42rem] leading-none -mr-8 md:-mr-12 lg:-mr-20 select-none">
             33
           </span>
         </div>
@@ -157,38 +157,38 @@ const OurEdge = () => {
             </div>
 
             {/* Headline */}
-            <h2 className="text-3xl lg:text-5xl xl:text-6xl font-display font-normal text-cream mb-16 text-center leading-[1.15] tracking-tight max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-display font-normal text-cream mb-10 md:mb-16 text-center leading-[1.15] tracking-tight max-w-4xl mx-auto">
               A track record that is <span className="italic text-gold-accent">narrow, specific,</span> and on the record.
             </h2>
 
             {/* Hero Stats Row */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gold-accent/15 border border-gold-accent/15 mb-20 rounded-sm overflow-hidden">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gold-accent/15 border border-gold-accent/15 mb-12 md:mb-20 rounded-sm overflow-hidden">
               {[
                 { value: "33", label: "Full-Cycle Loans", note: "Completed at Oak" },
                 { value: "$200M", label: "Capital Deployed", note: "Cumulative originations" },
                 { value: "19%", label: "Net IRR", note: "Across full-cycle loans", sup: "1" },
                 { value: "100%", label: "Principal Recovered", note: "On loans requiring workout", sup: "1" },
               ].map((stat, i) => (
-                <div key={i} className="bg-abyss p-8 lg:p-10 text-center hover:bg-abyss/60 transition-colors duration-300">
-                  <div className="text-4xl lg:text-6xl font-display font-medium text-gold-accent mb-3 leading-none">
-                    {stat.value}{stat.sup && <sup className="text-base text-gold-accent/50">{stat.sup}</sup>}
+                <div key={i} className="bg-abyss p-5 md:p-8 lg:p-10 text-center hover:bg-abyss/60 transition-colors duration-300">
+                  <div className="text-3xl md:text-4xl lg:text-6xl font-display font-medium text-gold-accent mb-2 md:mb-3 leading-none">
+                    {stat.value}{stat.sup && <sup className="text-xs md:text-base text-gold-accent/50">{stat.sup}</sup>}
                   </div>
-                  <div className="text-sm font-body text-cream uppercase tracking-wider mb-2">{stat.label}</div>
-                  <div className="text-xs font-body text-silver-mist/50">{stat.note}</div>
+                  <div className="text-[10px] md:text-sm font-body text-cream uppercase tracking-wider mb-1 md:mb-2">{stat.label}</div>
+                  <div className="text-[10px] md:text-xs font-body text-silver-mist/50 hidden md:block">{stat.note}</div>
                 </div>
               ))}
             </div>
 
             {/* Supporting Narrative */}
-            <div className="max-w-3xl mx-auto mb-20 text-center">
+            <div className="max-w-3xl mx-auto mb-12 md:mb-20 text-center">
               <p className="text-base lg:text-lg font-body text-silver-mist/70 leading-[1.8]">
                 33 full-cycle loans, completed at Oak, through COVID, 525 basis points of Federal Reserve rate hikes,<sup>4</sup> and the sustained rate environment that has followed. 21.9% gross IRR, 1.22x net MOIC, 17-month average duration. On loans requiring workout, an average realized return of 12.3%.<sup>1</sup>
               </p>
             </div>
 
             {/* Timeline */}
-            <div className="mb-20">
-              <p className="text-xs font-body text-gold-accent/70 uppercase tracking-[0.25em] text-center mb-10">Cycles Navigated</p>
+            <div className="mb-12 md:mb-20">
+              <p className="text-xs font-body text-gold-accent/70 uppercase tracking-[0.25em] text-center mb-6 md:mb-10">Cycles Navigated</p>
               <div className="relative">
                 <motion.div
                   className="absolute top-1.5 left-0 h-px bg-gradient-to-r from-transparent via-gold-accent/40 to-transparent hidden md:block origin-left"
@@ -198,7 +198,7 @@ const OurEdge = () => {
                   transition={{ duration: 1.6, ease: "easeOut" }}
                   style={{ right: 0 }}
                 />
-                <div className="grid grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-4 relative">
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-y-6 md:gap-y-10 gap-x-2 md:gap-x-4 relative">
                   {[
                     { year: "'90", event: "S&L Crisis" },
                     { year: "'00", event: "Dot-Com Collapse" },
@@ -229,8 +229,8 @@ const OurEdge = () => {
                           ease: "easeOut",
                         } : undefined}
                       />
-                      <div className={`text-xl lg:text-2xl font-display font-medium mb-2 ${item.year === "Now" ? "text-gold-accent" : "text-cream"}`}>{item.year}</div>
-                      <div className="text-xs font-body text-silver-mist/60 max-w-[130px] leading-relaxed">{item.event}</div>
+                      <div className={`text-lg md:text-xl lg:text-2xl font-display font-medium mb-1 md:mb-2 ${item.year === "Now" ? "text-gold-accent" : "text-cream"}`}>{item.year}</div>
+                      <div className="text-[10px] md:text-xs font-body text-silver-mist/60 max-w-[100px] md:max-w-[130px] leading-relaxed">{item.event}</div>
                     </motion.div>
                   ))}
                 </div>
@@ -242,13 +242,13 @@ const OurEdge = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-5 justify-center">
-              <a href="/investing">
-                <button className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-10 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105">
+              <a href="/investing" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto bg-gold-accent hover:bg-gold-accent/90 text-abyss px-8 md:px-10 py-3.5 md:py-4 text-sm md:text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105">
                   See How We Invest
                 </button>
               </a>
-              <a href="/contact">
-                <button className="border-2 border-silver-mist/40 bg-transparent text-cream hover:bg-silver-mist hover:text-abyss hover:border-silver-mist px-10 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm">
+              <a href="/contact" className="w-full sm:w-auto">
+                <button className="w-full sm:w-auto border-2 border-silver-mist/40 bg-transparent text-cream hover:bg-silver-mist hover:text-abyss hover:border-silver-mist px-8 md:px-10 py-3.5 md:py-4 text-sm md:text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm">
                   Talk to Our Team
                 </button>
               </a>

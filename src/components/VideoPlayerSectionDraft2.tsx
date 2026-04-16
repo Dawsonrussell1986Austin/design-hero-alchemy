@@ -1,9 +1,9 @@
 const VideoPlayerSectionDraft2 = () => {
   return (
-    <div className="relative bg-cream py-24 overflow-hidden">
+    <div className="relative bg-cream py-16 md:py-24 overflow-hidden">
       {/* Ghost typography */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-start">
-        <span className="font-display font-medium italic text-abyss/[0.04] text-[24rem] lg:text-[34rem] leading-none -ml-16 lg:-ml-24 select-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-start">
+        <span className="font-display font-medium italic text-abyss/[0.04] text-[16rem] md:text-[24rem] lg:text-[34rem] leading-none -ml-8 md:-ml-16 lg:-ml-24 select-none">
           Watch
         </span>
       </div>
@@ -11,17 +11,17 @@ const VideoPlayerSectionDraft2 = () => {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-display font-medium text-abyss mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-medium text-abyss mb-4 md:mb-6">
               See How Oak Operates
             </h2>
-            <p className="text-abyss/70 text-lg font-body max-w-3xl mx-auto leading-relaxed">
+            <p className="text-abyss/70 text-base md:text-lg font-body max-w-3xl mx-auto leading-relaxed">
               Watch Chief Strategy Officer, Ray Davis and Chief Sales and Distribution Officer, Kevin Kennedy discuss Commercial Real Estate lending and how Oak operates.
             </p>
           </div>
 
           {/* Video Player Container */}
           <div className="relative max-w-5xl mx-auto">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-gold-accent/30">
+            <div className="relative rounded-xl md:rounded-2xl overflow-hidden shadow-2xl border-2 md:border-4 border-gold-accent/30">
               <div className="relative aspect-video">
                 <iframe 
                   width="100%" 
