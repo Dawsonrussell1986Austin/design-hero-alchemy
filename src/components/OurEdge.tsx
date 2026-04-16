@@ -148,40 +148,67 @@ const OurEdge = () => {
         </div>
         <div className="container mx-auto px-6 lg:px-8 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6 text-center">OAK, ON THE RECORD</p>
-            
-            <h2 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-silver-mist mb-10 text-center leading-tight">
-              33 full-cycle loans. ~$200 million deployed. 19% net IRR.<sup className="text-silver-mist/60">1</sup>
+            {/* Eyebrow */}
+            <div className="flex items-center justify-center gap-4 mb-8">
+              <div className="h-px w-12 bg-gold-accent/40" />
+              <p className="text-xs font-body text-gold-accent uppercase tracking-[0.3em]">Oak, On The Record</p>
+              <div className="h-px w-12 bg-gold-accent/40" />
+            </div>
+
+            {/* Headline */}
+            <h2 className="text-3xl lg:text-5xl xl:text-6xl font-display font-normal text-cream mb-16 text-center leading-[1.15] tracking-tight max-w-4xl mx-auto">
+              A track record that is <span className="italic text-gold-accent">narrow, specific,</span> and on the record.
             </h2>
-            
-            <div className="max-w-4xl mx-auto mb-16">
-              <p className="text-lg font-body text-silver-mist/80 leading-relaxed mb-8">
-                Every manager in private equity claims a track record. Oak's is narrow, specific, and on the record: 33 full-cycle loans, completed at Oak, through COVID, 525 basis points of Federal Reserve rate hikes,<sup>4</sup> and the sustained rate environment that has followed.
-              </p>
-              <p className="text-lg font-body text-silver-mist/80 leading-relaxed">
-                Across those 33 loans: 19% net IRR, 21.9% gross IRR, 1.22x net MOIC, 17-month average duration. On the loans that required workout — because every lender that underwrites at scale will eventually encounter one — Oak has recovered 100% of principal to date at an average realized return of 12.3%.<sup>1</sup>
+
+            {/* Hero Stats Row */}
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-px bg-gold-accent/15 border border-gold-accent/15 mb-20 rounded-sm overflow-hidden">
+              {[
+                { value: "33", label: "Full-Cycle Loans", note: "Completed at Oak" },
+                { value: "$200M", label: "Capital Deployed", note: "Cumulative originations" },
+                { value: "19%", label: "Net IRR", note: "Across full-cycle loans", sup: "1" },
+                { value: "100%", label: "Principal Recovered", note: "On loans requiring workout", sup: "1" },
+              ].map((stat, i) => (
+                <div key={i} className="bg-abyss p-8 lg:p-10 text-center hover:bg-abyss/60 transition-colors duration-300">
+                  <div className="text-4xl lg:text-6xl font-display font-medium text-gold-accent mb-3 leading-none">
+                    {stat.value}{stat.sup && <sup className="text-base text-gold-accent/50">{stat.sup}</sup>}
+                  </div>
+                  <div className="text-sm font-body text-cream uppercase tracking-wider mb-2">{stat.label}</div>
+                  <div className="text-xs font-body text-silver-mist/50">{stat.note}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Supporting Narrative */}
+            <div className="max-w-3xl mx-auto mb-20 text-center">
+              <p className="text-base lg:text-lg font-body text-silver-mist/70 leading-[1.8]">
+                33 full-cycle loans, completed at Oak, through COVID, 525 basis points of Federal Reserve rate hikes,<sup>4</sup> and the sustained rate environment that has followed. 21.9% gross IRR, 1.22x net MOIC, 17-month average duration. On loans requiring workout, an average realized return of 12.3%.<sup>1</sup>
               </p>
             </div>
 
-            {/* Timeline Strip */}
-            <div className="mb-16">
-              <div className="flex flex-wrap justify-center gap-6 lg:gap-12">
-                {[
-                  { year: "'90", event: "S&L Crisis" },
-                  { year: "'00", event: "Dot-Com Collapse" },
-                  { year: "'08", event: "Global Financial Crisis" },
-                  { year: "'20", event: "COVID-19 Shock" },
-                  { year: "'22", event: "Rate Shock & Liquidity Crisis" },
-                  { year: "Now", event: "The environment the team was built for." },
-                ].map((item, index) => (
-                  <div key={index} className="text-center">
-                    <div className={`text-2xl font-display font-medium mb-2 ${item.year === "Now" ? "text-gold-accent" : "text-silver-mist"}`}>{item.year}</div>
-                    <div className="text-xs font-body text-silver-mist/60 max-w-[130px]">{item.event}</div>
-                  </div>
-                ))}
+            {/* Timeline */}
+            <div className="mb-20">
+              <p className="text-xs font-body text-gold-accent/70 uppercase tracking-[0.25em] text-center mb-10">Cycles Navigated</p>
+              <div className="relative">
+                <div className="absolute top-1.5 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-accent/30 to-transparent hidden md:block" />
+                <div className="grid grid-cols-3 md:grid-cols-6 gap-y-10 gap-x-4 relative">
+                  {[
+                    { year: "'90", event: "S&L Crisis" },
+                    { year: "'00", event: "Dot-Com Collapse" },
+                    { year: "'08", event: "Global Financial Crisis" },
+                    { year: "'20", event: "COVID-19 Shock" },
+                    { year: "'22", event: "Rate Shock & Liquidity Crisis" },
+                    { year: "Now", event: "The environment the team was built for." },
+                  ].map((item, index) => (
+                    <div key={index} className="text-center flex flex-col items-center">
+                      <div className={`w-3 h-3 rounded-full mb-4 ring-4 ring-abyss ${item.year === "Now" ? "bg-gold-accent" : "bg-silver-mist/40"}`} />
+                      <div className={`text-xl lg:text-2xl font-display font-medium mb-2 ${item.year === "Now" ? "text-gold-accent" : "text-cream"}`}>{item.year}</div>
+                      <div className="text-xs font-body text-silver-mist/60 max-w-[130px] leading-relaxed">{item.event}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
-              <p className="text-xs text-silver-mist/50 text-center mt-8">
-                Timeline reflects cycles navigated by current Oak principals during their prior careers. Oak Real Estate Partners was founded in [year].
+              <p className="text-xs text-silver-mist/40 text-center mt-12 max-w-2xl mx-auto leading-relaxed">
+                Timeline reflects cycles navigated by current Oak principals during their prior careers.
               </p>
             </div>
 
@@ -193,7 +220,7 @@ const OurEdge = () => {
                 </button>
               </a>
               <a href="/contact">
-                <button className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-abyss px-10 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm">
+                <button className="border-2 border-silver-mist/40 bg-transparent text-cream hover:bg-silver-mist hover:text-abyss hover:border-silver-mist px-10 py-4 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm">
                   Talk to Our Team
                 </button>
               </a>
