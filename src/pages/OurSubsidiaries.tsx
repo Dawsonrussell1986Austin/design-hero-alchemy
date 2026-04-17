@@ -66,7 +66,7 @@ const OurSubsidiaries = () => {
                         <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
                             {person.image ? (
-                              <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
+                              <img src={person.image} alt={person.name} className="w-full h-full object-cover grayscale" />
                             ) : (
                               <div className="w-full h-full bg-graphite-fog/30 flex items-center justify-center">
                                 <span className="text-graphite-fog/40 text-4xl font-display">KS</span>
@@ -96,7 +96,7 @@ const OurSubsidiaries = () => {
                       <div key={i} className="text-center">
                         <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                            <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
+                            <img src={person.image} alt={person.name} className="w-full h-full object-cover grayscale" />
                           </div>
                           <h4 className="font-bold text-abyss mb-2">{person.name}</h4>
                           <p className="text-sm text-graphite-fog mb-4">{person.title}</p>
