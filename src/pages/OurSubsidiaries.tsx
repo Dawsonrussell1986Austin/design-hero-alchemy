@@ -174,7 +174,7 @@ const OurSubsidiaries = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {[
                       { name: "Janet Bujko", title: "SVP/CHIEF UNDERWRITER - MAP AND LEAN PROGRAMS", image: "/lovable-uploads/72acba3c-0e00-4a56-b2b0-312d8d8d20f8.png" },
-                      { name: "Jason Pumpelly", title: "PRESIDENT", image: "/lovable-uploads/jason-sutherland-headshot.jpg" },
+                      { name: "Jason Pumpelly", title: "PRESIDENT", image: "/lovable-uploads/jason-sutherland-headshot.jpg?v=2" },
                       { name: "Guy Johnson", title: "PRINCIPAL", image: "/lovable-uploads/9d94a353-d253-43ef-8f26-ba5b48847381.png" },
                       { name: "Matthew J. Morgan", title: "UNDERWRITER", image: "/lovable-uploads/e8f32d5e-1126-478e-9860-811f1e095458.png" },
                       { name: "Kevin M. Kirton", title: "UNDERWRITER", image: "/lovable-uploads/0bc2aab8-ce33-43a0-936d-422b00463acd.png" },
