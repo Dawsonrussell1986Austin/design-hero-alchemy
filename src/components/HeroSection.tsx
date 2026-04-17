@@ -7,8 +7,8 @@ const HeroSection = () => {
     <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-center">
       
       {/* Ghost typography */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-start">
-        <span className="font-display font-medium italic text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[38rem] leading-none -ml-8 md:-ml-16 lg:-ml-24 select-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
+        <span className="font-display font-medium italic text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[38rem] leading-none -mr-8 md:-mr-16 lg:-mr-24 select-none">
           Oak
         </span>
       </div>
