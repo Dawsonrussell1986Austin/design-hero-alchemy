@@ -32,7 +32,7 @@ const HeroSection = () => {
         
         {/* Subtitle */}
         <p className="text-base sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-12 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
-          A specialist lending platform led by principals with a combined $25 billion of CRE financing experience across eight market cycles. Oak's 33 full-cycle loans have produced a 19% net IRR with no principal losses to date.<sup>1</sup>
+          Oak originates, underwrites, and services senior-secured CRE loans for insurance companies, foundations, and endowments — and makes that same institutional standard available to RIAs, family offices, and qualified investors.
         </p>
         
         {/* CTA Button */}
