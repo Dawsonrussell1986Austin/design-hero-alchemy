@@ -182,7 +182,7 @@ const OurSubsidiaries = () => {
                       <div key={i} className="text-center">
                         <div className="bg-cream rounded-lg p-6 hover:shadow-md transition-all duration-300 border border-silver-mist">
                           <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                            <img src={person.image} alt={person.name} className="w-full h-full object-cover" />
+                            <img src={person.image} alt={person.name} className="w-full h-full object-cover grayscale" />
                           </div>
                           <h3 className="font-bold text-abyss mb-2">{person.name}</h3>
                           <p className="text-sm text-graphite-fog mb-4">{person.title}</p>
