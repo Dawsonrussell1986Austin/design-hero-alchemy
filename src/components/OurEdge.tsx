@@ -49,7 +49,7 @@ const OurEdge = () => {
                 
                 {/* Main description */}
                 <p className="text-base md:text-lg lg:text-xl leading-relaxed font-body text-silver-mist/80 mb-5">
-                  Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
+                  Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. Every Dollar has an Address. No hidden leverage.
                 </p>
 
                 <p className="text-base leading-relaxed font-body text-silver-mist/50 mb-10">
@@ -104,7 +104,7 @@ const OurEdge = () => {
             <p className="text-xs font-body text-gold-accent/80 uppercase tracking-[0.25em] mb-6 text-center">WHO INVESTS ALONGSIDE YOU</p>
             
             <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss mb-8 md:mb-10 text-center leading-tight max-w-4xl mx-auto">
-              Your capital, placed in the same positions as insurance company, foundation, and endowment capital.
+              Your capital is placed in the same position or within our managed funds using the same underwriting scrutiny as our Insurance Company, Foundation, and Endowment Capital.
             </h2>
             
             <div className="max-w-4xl mx-auto mb-10 md:mb-16">
