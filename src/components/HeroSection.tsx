@@ -26,8 +26,6 @@ const HeroSection = () => {
           <span className="text-cream italic">CRE Credit.</span>
           <br />
           <span className="text-gold-accent">Principal-led.</span>
-          {" "}
-          <span className="text-gold-accent">On the record.</span>
         </h1>
         
         {/* Subtitle */}
