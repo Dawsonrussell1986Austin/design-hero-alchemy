@@ -49,7 +49,7 @@ const OurEdge = () => {
                 
                 {/* Main description */}
                 <p className="text-base md:text-lg lg:text-xl leading-relaxed font-body text-silver-mist/80 mb-5">
-                  Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. No blind pools. No hidden leverage.
+                  Every Oak loan is secured by a specific, identifiable property. Senior-secured. First-lien. 55–75% stabilized LTV. Floating rate indexed to SOFR. 12–36 month terms. Every Dollar has an Address. No hidden leverage.
                 </p>
 
                 <p className="text-base leading-relaxed font-body text-silver-mist/50 mb-10">
