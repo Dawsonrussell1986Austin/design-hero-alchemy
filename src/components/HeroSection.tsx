@@ -4,7 +4,7 @@ import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-center">
+    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-28 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
       
       {/* Ghost typography */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
@@ -23,7 +23,7 @@ const HeroSection = () => {
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-10 opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
           <span className="text-cream">Senior-Secured</span>
           <br />
-          <span className="text-cream italic">CRE Credit.</span>
+          <span className="text-cream">CRE Credit.</span>
           <br />
           <span className="text-gold-accent">Principal-led.</span>
         </h1>
