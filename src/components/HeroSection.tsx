@@ -29,12 +29,12 @@ const HeroSection = () => {
         </h1>
         
         {/* Subtitle */}
-        <p className="text-base sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-12 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
+        <p className="text-sm sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-8 sm:mb-12 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
           Oak originates, underwrites, and services senior-secured CRE loans for insurance companies, foundations, and endowments — and makes that same institutional standard available to RIAs, family offices, and qualified investors.
         </p>
         
         {/* CTA Button */}
-        <div className="mb-20 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
+        <div className="mb-12 sm:mb-20 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
           <a href="https://www.oakrepartners.com/videos/investment-strategy" onClick={() => trackCTAClick('Oak\'s Investment Strategy', 'https://www.oakrepartners.com/videos/investment-strategy', 'hero_section')}>
             <Button 
               size="lg" 
