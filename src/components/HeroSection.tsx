@@ -4,7 +4,7 @@ import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-44 sm:pt-48 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
+    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-40 sm:pt-44 md:pt-44 lg:pt-48 pb-16 sm:pb-24 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
       
       {/* Ghost typography */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
@@ -15,12 +15,12 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Eyebrow Label */}
-        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-6 sm:mb-10">
+        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-4 sm:mb-8">
           Every dollar has an address
         </p>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-10 opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-6 sm:mb-10 opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
           <span className="text-cream">Senior-Secured</span>
           <br />
           <span className="text-cream">CRE Credit.</span>
@@ -29,12 +29,12 @@ const HeroSection = () => {
         </h1>
         
         {/* Subtitle */}
-        <p className="text-base sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-12 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
+        <p className="text-sm sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-8 sm:mb-12 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.6s_forwards]">
           Oak originates, underwrites, and services senior-secured CRE loans for insurance companies, foundations, and endowments — and makes that same institutional standard available to RIAs, family offices, and qualified investors.
         </p>
         
         {/* CTA Button */}
-        <div className="mb-20 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
+        <div className="mb-12 sm:mb-20 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards]">
           <a href="https://www.oakrepartners.com/videos/investment-strategy" onClick={() => trackCTAClick('Oak\'s Investment Strategy', 'https://www.oakrepartners.com/videos/investment-strategy', 'hero_section')}>
             <Button 
               size="lg" 
