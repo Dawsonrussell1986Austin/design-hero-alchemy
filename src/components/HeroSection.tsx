@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
 
         {/* Statistics Row */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 opacity-0 animate-[fadeInUp_0.8s_ease-out_1s_forwards]">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           <div className="text-center">
             <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$460M</div>
             <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Oak AUM</div>
