@@ -20,7 +20,7 @@ const HeroSection = () => {
         </p>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-10 opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-6 sm:mb-10 opacity-0 animate-[slideUp_0.8s_ease-out_0.3s_forwards]">
           <span className="text-cream">Senior-Secured</span>
           <br />
           <span className="text-cream">CRE Credit.</span>
