@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Eyebrow Label */}
-        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-6 sm:mb-10">
+        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-4 sm:mb-8">
           Every dollar has an address
         </p>
 
