@@ -4,7 +4,7 @@ import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-36 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
+    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-64 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
       
       {/* Ghost typography */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
