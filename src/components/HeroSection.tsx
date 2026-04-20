@@ -4,7 +4,7 @@ import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-28 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
+    <div className="relative z-20 min-h-screen px-4 sm:px-6 lg:px-8 pt-36 sm:pt-40 md:pt-48 pb-20 sm:pb-28 overflow-hidden mobile-nav-safe flex flex-col items-center justify-start lg:justify-center">
       
       {/* Ghost typography */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
@@ -15,7 +15,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Eyebrow Label */}
-        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-10 opacity-0 animate-[fadeInUp_0.8s_ease-out_0.2s_forwards]">
+        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-6 sm:mb-10">
           Every dollar has an address
         </p>
 
