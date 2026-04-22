@@ -227,10 +227,14 @@ const Transactions = () => {
             </p>
 
             {/* Statistics Row */}
-            <div className="grid grid-cols-3 gap-6 lg:gap-8 max-w-3xl mx-auto">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-4xl mx-auto">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">{featuredTransactions.length}</div>
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Transactions</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$386M+</div>
+                <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Total Loan Volume</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">8</div>
