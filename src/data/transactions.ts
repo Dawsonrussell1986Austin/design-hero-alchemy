@@ -408,7 +408,8 @@ export const featuredTransactions = [
     loanSize: "$7,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/dodson-courtyard-apartments.jpg"
   },
   {
     id: 43,
