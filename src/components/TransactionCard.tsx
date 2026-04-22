@@ -33,6 +33,7 @@ const placeholderByType: Record<string, string> = {
   "MEDICAL OFFICE": medicalImg,
   "SELF-STORAGE": storageImg,
   "MIXED USE": mixedUseImg,
+  "SENIOR LIVING": multifamilyImg,
 };
 
 const TransactionCard = ({ transaction }: TransactionCardProps) => {

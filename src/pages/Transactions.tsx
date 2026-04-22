@@ -47,7 +47,8 @@ const Transactions = () => {
       'MEDICAL OFFICE',
       'SELF-STORAGE',
       'MIXED USE',
-      'HOSPITALITY'
+      'HOSPITALITY',
+      'SENIOR LIVING'
     ];
     return propertyOrder.indexOf(a) - propertyOrder.indexOf(b);
   });
