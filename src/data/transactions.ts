@@ -341,7 +341,8 @@ export const featuredTransactions = [
     loanSize: "$3,800,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/wiltshire-apartments.png"
   },
   {
     id: 36,
