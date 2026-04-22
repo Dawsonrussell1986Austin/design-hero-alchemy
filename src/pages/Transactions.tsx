@@ -184,83 +184,69 @@ const Transactions = () => {
           { name: 'Transactions', url: 'https://oakrealestatepartners.com/transactions' }
         ]}
       />
-      {/* Navigation */}
-      <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      {/* Navigation + Hero on dark background (matches homepage) */}
+      <div className="relative bg-gradient-to-br from-abyss via-obsidian to-graphite-fog overflow-hidden">
         <Navigation />
-      </div>
-      
-      {/* Breadcrumb */}
-      <Breadcrumb 
-        items={[
-          { label: "Transactions" }
-        ]}
-      />
-      
-      {/* Cream background for hero content */}
-      <div className="bg-silver-mist">
-        {/* Hero Section */}
-        <section className="container mx-auto px-6 py-20">
-          <div className="max-w-6xl mx-auto">
-            
-            <div className="grid lg:grid-cols-2 gap-12 items-start mb-12">
-              {/* Text Content */}
-              <div>
-                {/* Program Badge */}
-                <div className="mb-4">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold bg-garnet-edge/15 text-garnet-edge border border-garnet-edge/30 shadow-sm">
-                    Transaction Portfolio
-                  </span>
-                </div>
-                
-                
-                <h1 className="text-3xl lg:text-4xl font-display font-medium text-abyss mb-8 leading-tight">
-                  Disciplined execution. Diverse markets. Consistent performance.
-                </h1>
-                <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
-                  Our transaction history demonstrates Oak's commitment to disciplined underwriting and strategic asset selection across diverse commercial real estate markets. Each transaction reflects our focus on capital preservation and risk-adjusted returns.
-                </p>
-                
-                {/* Transaction Stats - Under text */}
-                <div className="bg-cream/60 backdrop-blur-sm border border-abyss/20 rounded-lg p-6 shadow-lg">
-                  <h3 className="text-lg font-bold text-abyss mb-4 pb-2 border-b border-abyss/20">
-                    Portfolio Overview
-                  </h3>
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">{featuredTransactions.length}</p>
-                      <p className="text-sm text-abyss/70">Transactions</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">8</p>
-                      <p className="text-sm text-abyss/70">Property Types</p>
-                    </div>
-                    <div className="text-center">
-                      <p className="text-2xl font-bold text-garnet-edge">6</p>
-                      <p className="text-sm text-abyss/70">Regions</p>
-                    </div>
-                  </div>
-                  
-                  <div className="mt-4 pt-4 border-t border-abyss/20">
-                    <p className="text-xs text-abyss/60 leading-relaxed">
-                      Transactions shown include loans from Oak and affiliated entities. Not all loans represent full cycle completions.
-                    </p>
-                  </div>
-                </div>
+
+        {/* Breadcrumb */}
+        <div className="relative z-20">
+          <Breadcrumb
+            items={[
+              { label: "Transactions" }
+            ]}
+          />
+        </div>
+
+        {/* Hero Section - homepage style */}
+        <section className="relative z-20 px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-16 sm:pb-24 overflow-hidden">
+          {/* Ghost typography */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
+            <span className="font-display font-medium text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[34rem] leading-none -mr-20 md:-mr-32 lg:-mr-48 select-none">
+              Oak
+            </span>
+          </div>
+
+          <div className="relative z-10 max-w-5xl mx-auto text-center">
+            {/* Eyebrow Label */}
+            <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-4 sm:mb-8">
+              Transaction Portfolio
+            </p>
+
+            {/* Main Headline */}
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-6 sm:mb-10">
+              <span className="text-cream">Disciplined Execution.</span>
+              <br />
+              <span className="text-cream">Diverse Markets.</span>
+              <br />
+              <span className="text-gold-accent">Consistent Performance.</span>
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-sm sm:text-lg lg:text-xl text-silver-mist/60 max-w-3xl mx-auto leading-relaxed font-body font-normal mb-12 sm:mb-16">
+              Oak's transaction history reflects disciplined underwriting and strategic asset selection across diverse commercial real estate markets — focused on capital preservation and risk-adjusted returns.
+            </p>
+
+            {/* Statistics Row */}
+            <div className="grid grid-cols-3 gap-6 lg:gap-8 max-w-3xl mx-auto">
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">{featuredTransactions.length}</div>
+                <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Transactions</div>
               </div>
-              
-              {/* Image with Overlay Cards */}
-              <div className="relative h-full">
-                <img 
-                  src="/lovable-uploads/a88bb4c5-3244-4ce3-8a84-1ccb5866d937.png"
-                  alt="Transaction portfolio illustration"
-                  className="w-full h-full object-cover rounded-lg shadow-xl min-h-[600px]"
-                />
-                
-                {/* Glassmorphic Overlay Cards */}
-                <div className="absolute inset-0 flex flex-col justify-center space-y-4 p-6">
-                
-                </div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">8</div>
+                <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Property Types</div>
               </div>
+              <div className="text-center">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">6</div>
+                <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Regions</div>
+              </div>
+            </div>
+
+            {/* Footnote */}
+            <div className="mt-12">
+              <p className="text-xs text-silver-mist/40 font-body leading-relaxed max-w-3xl mx-auto">
+                Transactions shown include loans from Oak and affiliated entities. Not all loans represent full cycle completions.
+              </p>
             </div>
           </div>
         </section>
