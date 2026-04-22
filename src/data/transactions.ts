@@ -468,5 +468,14 @@ export const featuredTransactions = [
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
     image: "/placeholder.svg"
+  },
+  {
+    id: 50,
+    name: "Garden Court Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$8,650,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
   }
 ];
