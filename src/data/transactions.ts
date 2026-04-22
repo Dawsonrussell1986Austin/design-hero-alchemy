@@ -388,7 +388,8 @@ export const featuredTransactions = [
     loanSize: "$2,824,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/551-albany-apartments.png"
   },
   {
     id: 41,
