@@ -234,7 +234,7 @@ const Transactions = () => {
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Transactions</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$395M+</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$386M+</div>
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Total Loan Volume</div>
               </div>
               <div className="text-center">
