@@ -468,6 +468,7 @@ export const featuredTransactions = [
     loanSize: "$3,400,000",
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/cedar-creek-apartments.png"
   }
 ];
