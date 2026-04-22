@@ -435,7 +435,8 @@ export const featuredTransactions = [
     loanSize: "$14,125,000",
     loanType: "PARTICIPATING BRIDGE LOAN",
     propertyType: "SENIOR LIVING",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/ciel-cedar-mill.png"
   },
   {
     id: 46,
