@@ -449,7 +449,8 @@ export const featuredTransactions = [
     loanSize: "$10,200,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/chateau-glen-oaks.png"
   },
   {
     id: 48,
