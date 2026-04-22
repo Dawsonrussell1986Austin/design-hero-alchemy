@@ -149,8 +149,8 @@ const Transactions = () => {
 
         <section className="relative z-20 px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 lg:pt-24 pb-16 sm:pb-24 overflow-hidden">
           <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
-            <span className="font-display font-medium text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[34rem] leading-none -mr-20 md:-mr-32 lg:-mr-48 select-none">
-              Oak
+            <span className="font-display font-medium text-cream/[0.04] text-[10rem] md:text-[16rem] lg:text-[22rem] leading-none -mr-10 md:-mr-20 lg:-mr-32 select-none whitespace-nowrap">
+              $386M+
             </span>
           </div>
 
