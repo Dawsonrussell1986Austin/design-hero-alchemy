@@ -418,7 +418,8 @@ export const featuredTransactions = [
     loanSize: "$10,000,000",
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "HOSPITALITY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/four-points-ohare.png"
   },
   {
     id: 44,
