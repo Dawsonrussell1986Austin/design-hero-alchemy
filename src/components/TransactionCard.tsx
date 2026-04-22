@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import transactionPlaceholder from "@/assets/transaction-placeholder.jpg";
 
 interface Transaction {
   id: number;
@@ -25,16 +26,22 @@ const TransactionCard = ({ transaction }: TransactionCardProps) => {
         </div>
         
         {/* Sketch-style Illustration - Full Width */}
-        <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden relative">
-          <img 
-            src={transaction.image}
+        <div className="aspect-video bg-abyss overflow-hidden relative">
+          <img
+            src={transaction.image && transaction.image !== "/placeholder.svg" ? transaction.image : transactionPlaceholder}
             alt={transaction.name}
+            loading="lazy"
+            width={1024}
+            height={576}
             className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 group-hover:opacity-0"
           />
           {transaction.realImage && (
-            <img 
+            <img
               src={transaction.realImage}
               alt={`${transaction.name} - Real Photo`}
+              loading="lazy"
+              width={1024}
+              height={576}
               className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 absolute inset-0 opacity-0 group-hover:opacity-100"
             />
           )}
