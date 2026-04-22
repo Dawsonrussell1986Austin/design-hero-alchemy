@@ -314,7 +314,8 @@ export const featuredTransactions = [
     loanSize: "$6,000,000",
     loanType: "CORE-PLUS BRIDGE LOAN",
     propertyType: "HOSPITALITY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/hermosa-hotel-cottages.png"
   },
   {
     id: 33,
