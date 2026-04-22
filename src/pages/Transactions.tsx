@@ -47,7 +47,8 @@ const Transactions = () => {
       'MEDICAL OFFICE',
       'SELF-STORAGE',
       'MIXED USE',
-      'HOSPITALITY'
+      'HOSPITALITY',
+      'SENIOR LIVING'
     ];
     return propertyOrder.indexOf(a) - propertyOrder.indexOf(b);
   });
@@ -233,11 +234,11 @@ const Transactions = () => {
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Transactions</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$395M+</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$386M+</div>
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Total Loan Volume</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">8</div>
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">9</div>
                 <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Property Types</div>
               </div>
               <div className="text-center">
