@@ -333,7 +333,8 @@ export const featuredTransactions = [
     loanSize: "$2,310,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/hawthorne-manor-apartments.png"
   },
   {
     id: 35,
