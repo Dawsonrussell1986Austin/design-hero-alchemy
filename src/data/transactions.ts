@@ -450,7 +450,8 @@ export const featuredTransactions = [
     loanSize: "$3,460,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/swan-lake-apartments.png"
   },
   {
     id: 47,
