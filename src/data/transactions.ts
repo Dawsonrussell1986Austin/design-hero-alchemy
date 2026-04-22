@@ -306,5 +306,167 @@ export const featuredTransactions = [
     propertyType: "INDUSTRIAL",
     image: "/lovable-uploads/80261ce3-2a2a-455e-871e-29da644a01aa.png",
     realImage: "/lovable-uploads/2c622a51-da62-471d-b604-402d3e9cf99c.png"
+  },
+  {
+    id: 32,
+    name: "Hermosa Hotel and Cottages",
+    location: "WEST REGION",
+    loanSize: "$6,000,000",
+    loanType: "CORE-PLUS BRIDGE LOAN",
+    propertyType: "HOSPITALITY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 33,
+    name: "1525 19th St SE Apartments",
+    location: "NORTHEAST REGION",
+    loanSize: "$5,475,000",
+    loanType: "PARTICIPATING BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 34,
+    name: "Hawthorne Manor Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$2,310,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 35,
+    name: "The Wiltshire Apartments",
+    location: "NORTHEAST REGION",
+    loanSize: "$3,800,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 36,
+    name: "Treehouse Apartments",
+    location: "SOUTHWEST REGION",
+    loanSize: "$1,550,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 37,
+    name: "32 Fenner Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$1,500,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 38,
+    name: "Patio Building",
+    location: "MIDWEST REGION",
+    loanSize: "$1,900,000",
+    loanType: "PARTICIPATING BRIDGE LOAN",
+    propertyType: "RETAIL",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 39,
+    name: "Angel Medical",
+    location: "SOUTHEAST REGION",
+    loanSize: "$1,550,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "OFFICE",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 40,
+    name: "551 Albany Apartments",
+    location: "NORTHEAST REGION",
+    loanSize: "$2,824,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 41,
+    name: "The Palms at Augusta Deluxe",
+    location: "SOUTHEAST REGION",
+    loanSize: "$2,800,000",
+    loanType: "CORE-PLUS BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 42,
+    name: "Dodson Courtyard Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$7,500,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 43,
+    name: "Four Points by Sheraton O'Hare",
+    location: "MIDWEST REGION",
+    loanSize: "$10,000,000",
+    loanType: "CORE-PLUS BRIDGE LOAN",
+    propertyType: "HOSPITALITY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 44,
+    name: "Linn Apartments",
+    location: "MIDWEST REGION",
+    loanSize: "$2,840,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 45,
+    name: "Ciel of Cedar Mill Senior Living",
+    location: "NORTHWEST REGION",
+    loanSize: "$14,125,000",
+    loanType: "PARTICIPATING BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 46,
+    name: "Swan Lake Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$3,460,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 47,
+    name: "Chateau Glen Oaks",
+    location: "SOUTHEAST REGION",
+    loanSize: "$10,200,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 48,
+    name: "We Stay Apartments",
+    location: "SOUTHEAST REGION",
+    loanSize: "$8,400,000",
+    loanType: "OPPORTUNISTIC BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
+  },
+  {
+    id: 49,
+    name: "Cedar Creek Apartments",
+    location: "SOUTHWEST REGION",
+    loanSize: "$3,400,000",
+    loanType: "CORE-PLUS BRIDGE LOAN",
+    propertyType: "MULTIFAMILY",
+    image: "/placeholder.svg"
   }
 ];
