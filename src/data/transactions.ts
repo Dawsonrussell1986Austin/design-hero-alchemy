@@ -359,7 +359,8 @@ export const featuredTransactions = [
     loanSize: "$1,500,000",
     loanType: "OPPORTUNISTIC BRIDGE LOAN",
     propertyType: "MULTIFAMILY",
-    image: "/placeholder.svg"
+    image: "/placeholder.svg",
+    realImage: "/lovable-uploads/32-fenner-apartments.png"
   },
   {
     id: 38,
