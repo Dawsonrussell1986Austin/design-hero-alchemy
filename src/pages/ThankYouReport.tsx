@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
+import { pushToDataLayer } from "@/lib/gtm";
 
 const ThankYouReport = () => {
   useEffect(() => {
@@ -19,14 +20,44 @@ const ThankYouReport = () => {
       (window as any).lintrk('track', { conversion_id: 21248228 });
     }
 
+    const trackCalendlyEvent = (action: "load" | "start" | "complete", eventName?: string, payload?: unknown) => {
+      pushToDataLayer({
+        event: "calendly_interaction",
+        calendly_action: action,
+        calendly_event_name: eventName,
+        page_path: "/thank-you-report",
+        event_source: "thank_you_report_page",
+        calendly_payload: payload,
+      });
+    };
+
+    const handleCalendlyMessage = (event: MessageEvent) => {
+      if (event.origin !== "https://calendly.com") return;
+
+      const data = event.data as { event?: string; payload?: unknown };
+      if (!data?.event?.startsWith("calendly.")) return;
+
+      if (data.event === "calendly.event_type_viewed" || data.event === "calendly.date_and_time_selected") {
+        trackCalendlyEvent("start", data.event, data.payload);
+      }
+
+      if (data.event === "calendly.event_scheduled") {
+        trackCalendlyEvent("complete", data.event, data.payload);
+      }
+    };
+
+    window.addEventListener("message", handleCalendlyMessage);
+
     const calendlyScript = document.createElement("script");
     calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
     calendlyScript.async = true;
+    calendlyScript.onload = () => trackCalendlyEvent("load", "calendly.widget_loaded");
     document.body.appendChild(calendlyScript);
 
     return () => {
       document.head.removeChild(link);
-      document.body.removeChild(calendlyScript);
+      window.removeEventListener("message", handleCalendlyMessage);
+      calendlyScript.parentNode?.removeChild(calendlyScript);
     };
   }, []);
 
