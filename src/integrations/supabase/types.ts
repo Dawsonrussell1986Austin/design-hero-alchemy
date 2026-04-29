@@ -209,6 +209,8 @@ export type Database = {
       }
       calendly_webhook_events: {
         Row: {
+          analytics_event_name: string | null
+          analytics_payload: Json
           booking_source: string
           calendly_event_type: string
           calendly_event_uri: string | null
@@ -221,6 +223,8 @@ export type Database = {
           status: string
         }
         Insert: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
           booking_source?: string
           calendly_event_type: string
           calendly_event_uri?: string | null
@@ -233,6 +237,8 @@ export type Database = {
           status: string
         }
         Update: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
           booking_source?: string
           calendly_event_type?: string
           calendly_event_uri?: string | null
