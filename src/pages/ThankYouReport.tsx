@@ -68,6 +68,10 @@ const ThankYouReport = () => {
             Download the Report
           </a>
 
+          <h2 className="mt-8 text-2xl sm:text-3xl leading-[1.15] font-light" style={{ ...serif, color: "#ffffff" }}>
+            Take the next step. Schedule a call right now.
+          </h2>
+
           <div
             className="calendly-inline-widget mt-8 w-full"
             data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
