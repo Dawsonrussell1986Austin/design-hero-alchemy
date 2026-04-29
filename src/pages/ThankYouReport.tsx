@@ -53,7 +53,10 @@ const ThankYouReport = () => {
       }
 
       if (data.event === "calendly.event_scheduled") {
-        trackCalendlyEvent("complete", data.event, data.payload);
+        trackCalendlyEvent("complete", data.event, {
+          booking_source: "thank_you_report_calendly_cta",
+          calendly_payload: data.payload,
+        });
       }
     };
 
