@@ -25,15 +25,49 @@ const ThankYouReport = () => {
 
     let hasTrackedEmbedClick = false;
 
-    const trackCalendlyEvent = (action: "load" | "click" | "start" | "complete", eventName?: string, payload?: unknown) => {
+    const trackCalendlyEvent = (action: "load" | "click" | "start" | "complete", eventName?: string, additionalData: Record<string, unknown> = {}) => {
       pushToDataLayer({
         event: "calendly_interaction",
         calendly_action: action,
         calendly_event_name: eventName,
         page_path: "/thank-you-report",
         event_source: "thank_you_report_page",
-        calendly_payload: payload,
+        ...additionalData,
       });
+    };
+
+    const getStringFromCalendlyPayload = (payload: unknown, keys: string[]) => {
+      const queue = [payload];
+      const visited = new Set<unknown>();
+
+      while (queue.length > 0) {
+        const current = queue.shift();
+        if (!current || typeof current !== "object" || visited.has(current)) continue;
+
+        visited.add(current);
+        const record = current as Record<string, unknown>;
+
+        for (const key of keys) {
+          if (typeof record[key] === "string") return record[key] as string;
+        }
+
+        queue.push(...Object.values(record).filter((value) => value && typeof value === "object"));
+      }
+
+      return undefined;
+    };
+
+    const getCalendlySubmittedFields = (payload: unknown) => {
+      const name = getStringFromCalendlyPayload(payload, ["name", "full_name", "first_name"]);
+      const email = getStringFromCalendlyPayload(payload, ["email", "email_address"]);
+      const phone = getStringFromCalendlyPayload(payload, ["phone", "phone_number", "mobile"]);
+
+      return {
+        calendly_fields_tracked: ["name", "email", "phone"],
+        calendly_field_name_submitted: Boolean(name),
+        calendly_field_email_submitted: Boolean(email),
+        calendly_field_phone_submitted: Boolean(phone),
+      };
     };
 
     const trackCalendlyEmbedClick = () => {
@@ -49,13 +83,13 @@ const ThankYouReport = () => {
       if (!data?.event?.startsWith("calendly.")) return;
 
       if (data.event === "calendly.event_type_viewed" || data.event === "calendly.date_and_time_selected") {
-        trackCalendlyEvent("start", data.event, data.payload);
+        trackCalendlyEvent("start", data.event, { calendly_payload: data.payload });
       }
 
       if (data.event === "calendly.event_scheduled") {
         trackCalendlyEvent("complete", data.event, {
           booking_source: "thank_you_report_calendly_cta",
-          calendly_payload: data.payload,
+          ...getCalendlySubmittedFields(data.payload),
         });
       }
     };
