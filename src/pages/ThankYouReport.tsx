@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
-import { pushToDataLayer } from "@/lib/gtm";
+import { pushToDataLayer, trackConversion } from "@/lib/gtm";
 
 const ThankYouReport = () => {
   const calendlyWidgetRef = useRef<HTMLDivElement>(null);
@@ -52,6 +52,21 @@ const ThankYouReport = () => {
           },
           { eventID: "thank_you_report_calendly_booked_call" }
         );
+      }
+    };
+
+    const trackBookedCallConversion = () => {
+      trackConversion("calendly_booked_call", undefined, {
+        booking_source: "thank_you_report_calendly_cta",
+        page_path: "/thank-you-report",
+        event_source: "thank_you_report_page",
+      });
+
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "conversion_event_calendly_booked_call", {
+          booking_source: "thank_you_report_calendly_cta",
+          page_path: "/thank-you-report",
+        });
       }
     };
 
@@ -122,6 +137,7 @@ const ThankYouReport = () => {
         if (hasTrackedCalendlyComplete) return;
         hasTrackedCalendlyComplete = true;
         trackMetaBookedCall();
+        trackBookedCallConversion();
         trackCalendlyEvent("complete", data.event, {
           booking_source: "thank_you_report_calendly_cta",
           ...getCalendlySubmittedFields(data.payload),
