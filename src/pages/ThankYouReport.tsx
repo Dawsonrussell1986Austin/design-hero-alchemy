@@ -23,6 +23,20 @@ const ThankYouReport = () => {
       (window as any).lintrk('track', { conversion_id: 21248228 });
     }
 
+    pushToDataLayer({
+      event: "calendly_gtm_test",
+      test_name: "thank_you_report_calendly_tracking",
+      page_path: "/thank-you-report",
+      event_source: "thank_you_report_page",
+    });
+
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "calendly_gtm_test", {
+        test_name: "thank_you_report_calendly_tracking",
+        page_path: "/thank-you-report",
+      });
+    }
+
     let hasTrackedEmbedClick = false;
     let hasTrackedCalendlyStart = false;
     let hasTrackedCalendlyComplete = false;
