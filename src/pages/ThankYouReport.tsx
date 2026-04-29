@@ -6,6 +6,15 @@ import { pushToDataLayer, trackConversion } from "@/lib/gtm";
 const REPORT_LEAD_PREFILL_KEY = "oak_report_lead_prefill";
 const CALENDLY_BASE_URL = "https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call";
 
+const getLeadValueFromParams = (params: URLSearchParams, keys: string[]) => {
+  for (const key of keys) {
+    const value = params.get(key) || params.get(`contact.${key}`) || params.get(`contact[${key}]`);
+    if (value?.trim()) return value.trim();
+  }
+
+  return "";
+};
+
 const getCalendlyPrefillUrl = () => {
   const url = new URL(CALENDLY_BASE_URL);
   url.searchParams.set("hide_event_type_details", "1");
@@ -16,10 +25,20 @@ const getCalendlyPrefillUrl = () => {
   if (typeof window === "undefined") return url.toString();
 
   try {
+    const params = new URLSearchParams(window.location.search);
     const storedLead = JSON.parse(window.sessionStorage.getItem(REPORT_LEAD_PREFILL_KEY) || "{}");
-    if (typeof storedLead.name === "string" && storedLead.name.trim()) url.searchParams.set("name", storedLead.name.trim());
-    if (typeof storedLead.email === "string" && storedLead.email.trim()) url.searchParams.set("email", storedLead.email.trim());
-    if (typeof storedLead.phone === "string" && storedLead.phone.trim()) url.searchParams.set("a1", storedLead.phone.trim());
+    const firstName = getLeadValueFromParams(params, ["first_name", "firstName", "first"]);
+    const lastName = getLeadValueFromParams(params, ["last_name", "lastName", "last"]);
+    const paramName = getLeadValueFromParams(params, ["name", "full_name", "fullName"]) || [firstName, lastName].filter(Boolean).join(" ");
+    const paramEmail = getLeadValueFromParams(params, ["email", "email_address", "emailAddress"]);
+    const paramPhone = getLeadValueFromParams(params, ["phone", "phone_number", "phoneNumber", "mobile"]);
+    const leadName = paramName || (typeof storedLead.name === "string" ? storedLead.name.trim() : "");
+    const leadEmail = paramEmail || (typeof storedLead.email === "string" ? storedLead.email.trim() : "");
+    const leadPhone = paramPhone || (typeof storedLead.phone === "string" ? storedLead.phone.trim() : "");
+
+    if (leadName) url.searchParams.set("name", leadName);
+    if (leadEmail) url.searchParams.set("email", leadEmail);
+    if (leadPhone) url.searchParams.set("a1", leadPhone);
   } catch (_error) {
     return url.toString();
   }
