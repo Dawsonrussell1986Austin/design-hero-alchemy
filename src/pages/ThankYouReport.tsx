@@ -232,7 +232,7 @@ const ThankYouReport = () => {
             <div
               ref={calendlyWidgetRef}
               className="calendly-inline-widget w-full max-w-full"
-              data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
+              data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c&utm_source=thank_you_report_calendly_cta&utm_campaign=thank_you_report_page"
               style={{ minWidth: 0, height: "clamp(680px, 88vh, 820px)" }}
             />
           </div>
