@@ -99,6 +99,11 @@ const getBookingSource = (payload: Record<string, unknown>) => {
   return BOOKING_SOURCE_FALLBACK;
 };
 
+const getCalendlyPayload = (payload: Record<string, unknown>) =>
+  payload.payload && typeof payload.payload === "object"
+    ? (payload.payload as Record<string, unknown>)
+    : payload;
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -154,14 +159,15 @@ serve(async (req) => {
   }
 
   const email = findString(payload, ["email", "email_address"]);
+  const calendlyPayload = getCalendlyPayload(payload);
   const supabase = createClient(supabaseUrl, serviceRoleKey);
   const status = eventType === "invitee.canceled" ? "canceled" : "no_show";
 
   const { error } = await supabase.from("calendly_webhook_events").insert({
     calendly_event_type: eventType,
     booking_source: getBookingSource(payload),
-    calendly_event_uri: findString(payload, ["event", "event_uri", "scheduled_event_uri", "uri"]),
-    calendly_invitee_uri: findString(payload, ["invitee", "invitee_uri"]),
+    calendly_event_uri: findString(calendlyPayload, ["event", "event_uri", "scheduled_event_uri"]),
+    calendly_invitee_uri: findString(calendlyPayload, ["invitee", "invitee_uri", "uri"]),
     invitee_email_hash: await sha256(email),
     status,
     payload,
