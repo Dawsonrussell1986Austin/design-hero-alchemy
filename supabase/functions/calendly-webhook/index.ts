@@ -106,6 +106,7 @@ const getCalendlyPayload = (payload: Record<string, unknown>) =>
 
 const toAnalyticsEventName = (status: string) => {
   if (status === "canceled") return "calendly_booking_canceled";
+  if (status === "no_show") return "calendly_booking_no_show";
   return `calendly_${status}`;
 };
 
