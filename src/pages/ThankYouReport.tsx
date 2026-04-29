@@ -3,9 +3,34 @@ import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { pushToDataLayer, trackConversion } from "@/lib/gtm";
 
+const REPORT_LEAD_PREFILL_KEY = "oak_report_lead_prefill";
+const CALENDLY_BASE_URL = "https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call";
+
+const getCalendlyPrefillUrl = () => {
+  const url = new URL(CALENDLY_BASE_URL);
+  url.searchParams.set("hide_event_type_details", "1");
+  url.searchParams.set("primary_color", "c7a74c");
+  url.searchParams.set("utm_source", "thank_you_report_calendly_cta");
+  url.searchParams.set("utm_campaign", "thank_you_report_page");
+
+  if (typeof window === "undefined") return url.toString();
+
+  try {
+    const storedLead = JSON.parse(window.sessionStorage.getItem(REPORT_LEAD_PREFILL_KEY) || "{}");
+    if (typeof storedLead.name === "string" && storedLead.name.trim()) url.searchParams.set("name", storedLead.name.trim());
+    if (typeof storedLead.email === "string" && storedLead.email.trim()) url.searchParams.set("email", storedLead.email.trim());
+    if (typeof storedLead.phone === "string" && storedLead.phone.trim()) url.searchParams.set("a1", storedLead.phone.trim());
+  } catch (_error) {
+    return url.toString();
+  }
+
+  return url.toString();
+};
+
 const ThankYouReport = () => {
   const calendlyWidgetRef = useRef<HTMLDivElement>(null);
   const [isCalendlyLoading, setIsCalendlyLoading] = useState(true);
+  const calendlyPrefillUrl = getCalendlyPrefillUrl();
 
   useEffect(() => {
     const link = document.createElement("link");
@@ -232,7 +257,7 @@ const ThankYouReport = () => {
             <div
               ref={calendlyWidgetRef}
               className="calendly-inline-widget w-full max-w-full"
-              data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c&utm_source=thank_you_report_calendly_cta&utm_campaign=thank_you_report_page"
+              data-url={calendlyPrefillUrl}
               style={{ minWidth: 0, height: "clamp(680px, 88vh, 820px)" }}
             />
           </div>
