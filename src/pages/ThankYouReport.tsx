@@ -1,9 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { pushToDataLayer } from "@/lib/gtm";
 
 const ThankYouReport = () => {
+  const calendlyWidgetRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     const link = document.createElement("link");
     link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap";
@@ -20,7 +22,9 @@ const ThankYouReport = () => {
       (window as any).lintrk('track', { conversion_id: 21248228 });
     }
 
-    const trackCalendlyEvent = (action: "load" | "start" | "complete", eventName?: string, payload?: unknown) => {
+    let hasTrackedEmbedClick = false;
+
+    const trackCalendlyEvent = (action: "load" | "click" | "start" | "complete", eventName?: string, payload?: unknown) => {
       pushToDataLayer({
         event: "calendly_interaction",
         calendly_action: action,
@@ -29,6 +33,12 @@ const ThankYouReport = () => {
         event_source: "thank_you_report_page",
         calendly_payload: payload,
       });
+    };
+
+    const trackCalendlyEmbedClick = () => {
+      if (hasTrackedEmbedClick) return;
+      hasTrackedEmbedClick = true;
+      trackCalendlyEvent("click", "calendly.embed_clicked");
     };
 
     const handleCalendlyMessage = (event: MessageEvent) => {
@@ -48,6 +58,14 @@ const ThankYouReport = () => {
 
     window.addEventListener("message", handleCalendlyMessage);
 
+    const handleWindowBlur = () => {
+      if (calendlyWidgetRef.current?.contains(document.activeElement)) {
+        trackCalendlyEmbedClick();
+      }
+    };
+
+    window.addEventListener("blur", handleWindowBlur);
+
     const calendlyScript = document.createElement("script");
     calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
     calendlyScript.async = true;
@@ -57,6 +75,7 @@ const ThankYouReport = () => {
     return () => {
       document.head.removeChild(link);
       window.removeEventListener("message", handleCalendlyMessage);
+      window.removeEventListener("blur", handleWindowBlur);
       calendlyScript.parentNode?.removeChild(calendlyScript);
     };
   }, []);
@@ -104,6 +123,7 @@ const ThankYouReport = () => {
           </h2>
 
           <div
+            ref={calendlyWidgetRef}
             className="calendly-inline-widget mt-8 w-full max-w-full"
             data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
             style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
