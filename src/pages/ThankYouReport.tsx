@@ -19,8 +19,14 @@ const ThankYouReport = () => {
       (window as any).lintrk('track', { conversion_id: 21248228 });
     }
 
+    const calendlyScript = document.createElement("script");
+    calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
+    calendlyScript.async = true;
+    document.body.appendChild(calendlyScript);
+
     return () => {
       document.head.removeChild(link);
+      document.body.removeChild(calendlyScript);
     };
   }, []);
 
@@ -61,6 +67,12 @@ const ThankYouReport = () => {
             <Download className="h-4 w-4" />
             Download the Report
           </a>
+
+          <div
+            className="calendly-inline-widget mt-8 w-full"
+            data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?primary_color=c7a74c"
+            style={{ minWidth: "320px", height: "700px" }}
+          />
         </div>
 
         {/* Check your inbox section */}
