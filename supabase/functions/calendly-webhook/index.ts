@@ -104,6 +104,34 @@ const getCalendlyPayload = (payload: Record<string, unknown>) =>
     ? (payload.payload as Record<string, unknown>)
     : payload;
 
+const toAnalyticsEventName = (status: string) => `calendly_${status}`;
+
+const buildAnalyticsPayload = ({
+  eventType,
+  status,
+  bookingSource,
+  calendlyEventUri,
+  calendlyInviteeUri,
+  inviteeEmailHash,
+}: {
+  eventType: string;
+  status: string;
+  bookingSource: string;
+  calendlyEventUri: string | null;
+  calendlyInviteeUri: string | null;
+  inviteeEmailHash: string | null;
+}) => ({
+  event: toAnalyticsEventName(status),
+  calendly_event_type: eventType,
+  calendly_status: status,
+  booking_source: bookingSource,
+  page_path: "/thank-you-report",
+  event_source: "calendly_webhook",
+  calendly_event_uri: calendlyEventUri,
+  calendly_invitee_uri: calendlyInviteeUri,
+  invitee_email_hash: inviteeEmailHash,
+});
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response("ok", { headers: corsHeaders });
@@ -162,13 +190,28 @@ serve(async (req) => {
   const calendlyPayload = getCalendlyPayload(payload);
   const supabase = createClient(supabaseUrl, serviceRoleKey);
   const status = eventType === "invitee.canceled" ? "canceled" : "no_show";
+  const bookingSource = getBookingSource(payload);
+  const calendlyEventUri = findString(calendlyPayload, ["event", "event_uri", "scheduled_event_uri"]);
+  const calendlyInviteeUri = findString(calendlyPayload, ["invitee", "invitee_uri", "uri"]);
+  const inviteeEmailHash = await sha256(email);
+  const analyticsEventName = toAnalyticsEventName(status);
+  const analyticsPayload = buildAnalyticsPayload({
+    eventType,
+    status,
+    bookingSource,
+    calendlyEventUri,
+    calendlyInviteeUri,
+    inviteeEmailHash,
+  });
 
   const { error } = await supabase.from("calendly_webhook_events").insert({
     calendly_event_type: eventType,
-    booking_source: getBookingSource(payload),
-    calendly_event_uri: findString(calendlyPayload, ["event", "event_uri", "scheduled_event_uri"]),
-    calendly_invitee_uri: findString(calendlyPayload, ["invitee", "invitee_uri", "uri"]),
-    invitee_email_hash: await sha256(email),
+    booking_source: bookingSource,
+    calendly_event_uri: calendlyEventUri,
+    calendly_invitee_uri: calendlyInviteeUri,
+    invitee_email_hash: inviteeEmailHash,
+    analytics_event_name: analyticsEventName,
+    analytics_payload: analyticsPayload,
     status,
     payload,
   });
@@ -187,8 +230,8 @@ serve(async (req) => {
     });
   }
 
-  console.log("Calendly lifecycle event recorded", { event_type: eventType, status });
-  return new Response(JSON.stringify({ success: true, event_type: eventType, status }), {
+  console.log("Calendly lifecycle analytics event stored", analyticsPayload);
+  return new Response(JSON.stringify({ success: true, event_type: eventType, status, analytics_event_name: analyticsEventName }), {
     headers: { ...corsHeaders, "Content-Type": "application/json" },
   });
 });
