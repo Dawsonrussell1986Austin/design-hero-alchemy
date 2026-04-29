@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { pushToDataLayer } from "@/lib/gtm";
 
 const ThankYouReport = () => {
   const calendlyWidgetRef = useRef<HTMLDivElement>(null);
+  const [isCalendlyLoading, setIsCalendlyLoading] = useState(true);
 
   useEffect(() => {
     const link = document.createElement("link");
@@ -69,7 +70,10 @@ const ThankYouReport = () => {
     const calendlyScript = document.createElement("script");
     calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
     calendlyScript.async = true;
-    calendlyScript.onload = () => trackCalendlyEvent("load", "calendly.widget_loaded");
+    calendlyScript.onload = () => {
+      setIsCalendlyLoading(false);
+      trackCalendlyEvent("load", "calendly.widget_loaded");
+    };
     document.body.appendChild(calendlyScript);
 
     return () => {
