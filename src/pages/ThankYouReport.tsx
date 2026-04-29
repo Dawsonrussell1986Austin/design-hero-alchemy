@@ -52,7 +52,7 @@ const ThankYouReport = () => {
         </a>
 
         {/* Download report — immediately below logo */}
-        <div className="w-full max-w-xl p-6 sm:p-8 text-center mb-12 sm:mb-16" style={{ border: "1px solid rgba(240,236,227,0.08)", background: "rgba(255,255,255,0.02)" }}>
+        <div className="w-full max-w-4xl p-4 sm:p-8 text-center mb-12 sm:mb-16 overflow-hidden" style={{ border: "1px solid rgba(240,236,227,0.08)", background: "rgba(255,255,255,0.02)" }}>
           <p className="text-xs sm:text-sm tracking-[0.4em] uppercase mb-4" style={{ ...sans, color: "#C7A74C", fontWeight: 500 }}>
             Your Report Is Ready
           </p>
@@ -73,9 +73,9 @@ const ThankYouReport = () => {
           </h2>
 
           <div
-            className="calendly-inline-widget mt-8 w-full"
+            className="calendly-inline-widget mt-8 w-full max-w-full"
             data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
-            style={{ minWidth: "320px", height: "700px" }}
+            style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
           />
         </div>
 
