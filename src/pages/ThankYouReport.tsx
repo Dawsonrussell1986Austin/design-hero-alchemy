@@ -1,10 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowRight, Download, Mail } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 import { pushToDataLayer } from "@/lib/gtm";
 
 const ThankYouReport = () => {
   const calendlyWidgetRef = useRef<HTMLDivElement>(null);
+  const [isCalendlyLoading, setIsCalendlyLoading] = useState(true);
 
   useEffect(() => {
     const link = document.createElement("link");
@@ -69,7 +70,10 @@ const ThankYouReport = () => {
     const calendlyScript = document.createElement("script");
     calendlyScript.src = "https://assets.calendly.com/assets/external/widget.js";
     calendlyScript.async = true;
-    calendlyScript.onload = () => trackCalendlyEvent("load", "calendly.widget_loaded");
+    calendlyScript.onload = () => {
+      setIsCalendlyLoading(false);
+      trackCalendlyEvent("load", "calendly.widget_loaded");
+    };
     document.body.appendChild(calendlyScript);
 
     return () => {
@@ -122,12 +126,28 @@ const ThankYouReport = () => {
             Ready to learn more? Schedule a call.
           </h2>
 
-          <div
-            ref={calendlyWidgetRef}
-            className="calendly-inline-widget mt-6 w-full max-w-full"
-            data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
-            style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
-          />
+          <div className="relative mt-6 w-full max-w-full">
+            {isCalendlyLoading && (
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-6 bg-abyss/95 px-6" style={{ height: "clamp(620px, 85vh, 760px)" }}>
+                <div className="h-10 w-10 animate-spin rounded-full border border-gold-accent/20 border-t-gold-accent" />
+                <div className="w-full max-w-xl space-y-4">
+                  <div className="mx-auto h-5 w-2/3 animate-pulse bg-cream/10" />
+                  <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {Array.from({ length: 6 }).map((_, index) => (
+                      <div key={index} className="h-12 animate-pulse bg-cream/10" />
+                    ))}
+                  </div>
+                </div>
+                <p className="text-xs uppercase tracking-[0.3em] text-gold-accent">Loading calendar</p>
+              </div>
+            )}
+            <div
+              ref={calendlyWidgetRef}
+              className="calendly-inline-widget w-full max-w-full"
+              data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
+              style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
+            />
+          </div>
         </div>
 
         {/* Check your inbox section */}
