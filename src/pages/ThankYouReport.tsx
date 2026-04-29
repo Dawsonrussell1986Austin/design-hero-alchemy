@@ -126,9 +126,9 @@ const ThankYouReport = () => {
             Ready to learn more? Schedule a call.
           </h2>
 
-          <div className="relative mt-6 w-full max-w-full">
+          <div className="relative mt-6 mx-auto w-full max-w-[360px] sm:max-w-[680px] lg:max-w-[860px] xl:max-w-[960px] overflow-hidden">
             {isCalendlyLoading && (
-              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-6 bg-abyss/95 px-6" style={{ height: "clamp(620px, 85vh, 760px)" }}>
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-6 bg-abyss/95 px-6" style={{ height: "clamp(680px, 88vh, 820px)" }}>
                 <div className="h-10 w-10 animate-spin rounded-full border border-gold-accent/20 border-t-gold-accent" />
                 <div className="w-full max-w-xl space-y-4">
                   <div className="mx-auto h-5 w-2/3 animate-pulse bg-cream/10" />
@@ -145,7 +145,7 @@ const ThankYouReport = () => {
               ref={calendlyWidgetRef}
               className="calendly-inline-widget w-full max-w-full"
               data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
-              style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
+              style={{ minWidth: 0, height: "clamp(680px, 88vh, 820px)" }}
             />
           </div>
         </div>
