@@ -6,6 +6,14 @@ import { pushToDataLayer, trackConversion } from "@/lib/gtm";
 const REPORT_LEAD_PREFILL_KEY = "oak_report_lead_prefill";
 const CALENDLY_BASE_URL = "https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call";
 
+declare global {
+  interface Window {
+    fbq?: (command: string, event: string, params?: Record<string, unknown>, options?: Record<string, unknown>) => void;
+    lintrk?: (command: string, params: Record<string, unknown>) => void;
+    gtag?: (command: string, event: string, params?: Record<string, unknown>) => void;
+  }
+}
+
 const getLeadValueFromParams = (params: URLSearchParams, keys: string[]) => {
   for (const key of keys) {
     const value = params.get(key) || params.get(`contact.${key}`) || params.get(`contact[${key}]`);
@@ -58,13 +66,13 @@ const ThankYouReport = () => {
     document.head.appendChild(link);
 
     // Fire Facebook Lead pixel event for conversion tracking
-    if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'Lead');
+    if (typeof window !== 'undefined' && window.fbq) {
+      window.fbq('track', 'Lead');
     }
 
     // Fire LinkedIn conversion event
-    if (typeof window !== 'undefined' && (window as any).lintrk) {
-      (window as any).lintrk('track', { conversion_id: 21248228 });
+    if (typeof window !== 'undefined' && window.lintrk) {
+      window.lintrk('track', { conversion_id: 21248228 });
     }
 
     pushToDataLayer({
@@ -86,8 +94,8 @@ const ThankYouReport = () => {
     let hasTrackedCalendlyComplete = false;
 
     const trackMetaBookedCall = () => {
-      if (typeof window !== "undefined" && (window as any).fbq) {
-        (window as any).fbq(
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq(
           "trackCustom",
           "CalendlyBookedCall",
           {
@@ -106,8 +114,8 @@ const ThankYouReport = () => {
         event_source: "thank_you_report_page",
       });
 
-      if (typeof window !== "undefined" && (window as any).gtag) {
-        (window as any).gtag("event", "conversion_event_calendly_booked_call", {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion_event_calendly_booked_call", {
           booking_source: "thank_you_report_calendly_cta",
           page_path: "/thank-you-report",
         });
