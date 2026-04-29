@@ -235,8 +235,9 @@ const ThankYouReport = () => {
             Download the Report
           </a>
 
-          <h2 className="mt-10 mx-auto max-w-2xl font-display text-3xl sm:text-4xl lg:text-5xl leading-[1.05] font-medium text-cream">
-            Ready to learn more? Schedule a call.
+          <h2 className="mt-10 mx-auto max-w-2xl text-center font-display text-3xl sm:text-4xl lg:text-5xl leading-[1.05] font-medium text-cream">
+            <span className="block">Ready to learn more?</span>
+            <span className="block">Schedule a call.</span>
           </h2>
 
           <div className="relative mt-6 mx-auto w-full max-w-[360px] sm:max-w-[680px] lg:max-w-[860px] xl:max-w-[960px] overflow-hidden">
