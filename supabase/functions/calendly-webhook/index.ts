@@ -111,6 +111,7 @@ const toAnalyticsEventName = (status: string) => {
 };
 
 const buildAnalyticsPayload = ({
+  analyticsDedupeId,
   eventType,
   status,
   bookingSource,
@@ -118,6 +119,7 @@ const buildAnalyticsPayload = ({
   calendlyInviteeUri,
   inviteeEmailHash,
 }: {
+  analyticsDedupeId: string;
   eventType: string;
   status: string;
   bookingSource: string;
@@ -126,6 +128,7 @@ const buildAnalyticsPayload = ({
   inviteeEmailHash: string | null;
 }) => ({
   event: toAnalyticsEventName(status),
+  analytics_dedupe_id: analyticsDedupeId,
   calendly_event_type: eventType,
   calendly_status: status,
   booking_source: bookingSource,
@@ -135,6 +138,24 @@ const buildAnalyticsPayload = ({
   calendly_invitee_uri: calendlyInviteeUri,
   invitee_email_hash: inviteeEmailHash,
 });
+
+const buildAnalyticsDedupeId = async ({
+  analyticsEventName,
+  calendlyEventUri,
+  calendlyInviteeUri,
+  inviteeEmailHash,
+  rawBody,
+}: {
+  analyticsEventName: string;
+  calendlyEventUri: string | null;
+  calendlyInviteeUri: string | null;
+  inviteeEmailHash: string | null;
+  rawBody: string;
+}) => {
+  const stableSourceId = [calendlyEventUri, calendlyInviteeUri, inviteeEmailHash].filter(Boolean).join(":");
+  const sourceFingerprint = stableSourceId || await sha256(rawBody);
+  return `${analyticsEventName}:${sourceFingerprint}`;
+};
 
 serve(async (req) => {
   if (req.method === "OPTIONS") {
@@ -199,7 +220,15 @@ serve(async (req) => {
   const calendlyInviteeUri = findString(calendlyPayload, ["invitee", "invitee_uri", "uri"]);
   const inviteeEmailHash = await sha256(email);
   const analyticsEventName = toAnalyticsEventName(status);
+  const analyticsDedupeId = await buildAnalyticsDedupeId({
+    analyticsEventName,
+    calendlyEventUri,
+    calendlyInviteeUri,
+    inviteeEmailHash,
+    rawBody,
+  });
   const analyticsPayload = buildAnalyticsPayload({
+    analyticsDedupeId,
     eventType,
     status,
     bookingSource,
@@ -221,7 +250,8 @@ serve(async (req) => {
   });
 
   if (error?.code === "23505") {
-    return new Response(JSON.stringify({ success: true, duplicate: true, event_type: eventType, status }), {
+    console.log("Duplicate Calendly lifecycle analytics event ignored", { analytics_dedupe_id: analyticsDedupeId });
+    return new Response(JSON.stringify({ success: true, duplicate: true, event_type: eventType, status, analytics_event_name: analyticsEventName, analytics_dedupe_id: analyticsDedupeId }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   }
@@ -235,7 +265,7 @@ serve(async (req) => {
   }
 
   console.log("Calendly lifecycle analytics event stored", analyticsPayload);
-  return new Response(JSON.stringify({ success: true, event_type: eventType, status, analytics_event_name: analyticsEventName }), {
+  return new Response(JSON.stringify({ success: true, event_type: eventType, status, analytics_event_name: analyticsEventName, analytics_dedupe_id: analyticsDedupeId }), {
     headers: { ...corsHeaders, "Content-Type": "application/json" },
   });
 });
