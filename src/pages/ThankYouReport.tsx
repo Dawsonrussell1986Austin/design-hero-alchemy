@@ -41,6 +41,20 @@ const ThankYouReport = () => {
     let hasTrackedCalendlyStart = false;
     let hasTrackedCalendlyComplete = false;
 
+    const trackMetaBookedCall = () => {
+      if (typeof window !== "undefined" && (window as any).fbq) {
+        (window as any).fbq(
+          "trackCustom",
+          "CalendlyBookedCall",
+          {
+            booking_source: "thank_you_report_calendly_cta",
+            page_path: "/thank-you-report",
+          },
+          { eventID: "thank_you_report_calendly_booked_call" }
+        );
+      }
+    };
+
     const trackCalendlyEvent = (action: "load" | "click" | "start" | "complete", eventName?: string, additionalData: Record<string, unknown> = {}) => {
       pushToDataLayer({
         event: "calendly_interaction",
@@ -107,6 +121,7 @@ const ThankYouReport = () => {
       if (data.event === "calendly.event_scheduled") {
         if (hasTrackedCalendlyComplete) return;
         hasTrackedCalendlyComplete = true;
+        trackMetaBookedCall();
         trackCalendlyEvent("complete", data.event, {
           booking_source: "thank_you_report_calendly_cta",
           ...getCalendlySubmittedFields(data.payload),
