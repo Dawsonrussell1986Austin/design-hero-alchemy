@@ -70,7 +70,7 @@ const ThankYouReport = () => {
 
           <div
             className="calendly-inline-widget mt-8 w-full"
-            data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?primary_color=c7a74c"
+            data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
             style={{ minWidth: "320px", height: "700px" }}
           />
         </div>
