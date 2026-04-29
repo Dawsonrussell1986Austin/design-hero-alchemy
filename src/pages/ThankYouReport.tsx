@@ -24,6 +24,8 @@ const ThankYouReport = () => {
     }
 
     let hasTrackedEmbedClick = false;
+    let hasTrackedCalendlyStart = false;
+    let hasTrackedCalendlyComplete = false;
 
     const trackCalendlyEvent = (action: "load" | "click" | "start" | "complete", eventName?: string, additionalData: Record<string, unknown> = {}) => {
       pushToDataLayer({
@@ -83,10 +85,14 @@ const ThankYouReport = () => {
       if (!data?.event?.startsWith("calendly.")) return;
 
       if (data.event === "calendly.event_type_viewed" || data.event === "calendly.date_and_time_selected") {
+        if (hasTrackedCalendlyStart) return;
+        hasTrackedCalendlyStart = true;
         trackCalendlyEvent("start", data.event, { calendly_payload: data.payload });
       }
 
       if (data.event === "calendly.event_scheduled") {
+        if (hasTrackedCalendlyComplete) return;
+        hasTrackedCalendlyComplete = true;
         trackCalendlyEvent("complete", data.event, {
           booking_source: "thank_you_report_calendly_cta",
           ...getCalendlySubmittedFields(data.payload),
