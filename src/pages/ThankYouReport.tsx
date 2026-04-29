@@ -118,13 +118,13 @@ const ThankYouReport = () => {
             Download the Report
           </a>
 
-          <h2 className="mt-8 text-2xl sm:text-3xl leading-[1.15] font-light" style={{ ...serif, color: "#ffffff" }}>
+          <h2 className="mt-10 mx-auto max-w-2xl font-display text-3xl sm:text-4xl lg:text-5xl leading-[1.05] font-medium text-cream">
             Ready to learn more? Schedule a call.
           </h2>
 
           <div
             ref={calendlyWidgetRef}
-            className="calendly-inline-widget mt-8 w-full max-w-full"
+            className="calendly-inline-widget mt-6 w-full max-w-full"
             data-url="https://calendly.com/d/cvjz-tc5-jmt/oak-real-estate-partners-introduction-call?hide_event_type_details=1&primary_color=c7a74c"
             style={{ minWidth: 0, height: "clamp(620px, 85vh, 760px)" }}
           />
