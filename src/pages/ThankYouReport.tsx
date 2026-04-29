@@ -119,7 +119,7 @@ const ThankYouReport = () => {
           </a>
 
           <h2 className="mt-8 text-2xl sm:text-3xl leading-[1.15] font-light" style={{ ...serif, color: "#ffffff" }}>
-            Take the next step. Schedule a call right now.
+            Ready to learn more? Schedule a call.
           </h2>
 
           <div
