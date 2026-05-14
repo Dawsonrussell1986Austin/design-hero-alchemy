@@ -79,19 +79,34 @@ const WebinarSelection = () => {
                     <CardTitle className="text-2xl font-display font-medium text-abyss">
                       {webinar.title}
                     </CardTitle>
+                    {webinar.comingSoon && (
+                      <p className="text-gold-accent font-body font-semibold pt-2">
+                        Stay Tuned for Upcoming Webinars!
+                      </p>
+                    )}
                     <CardDescription className="text-graphite-fog font-body leading-relaxed pt-2">
                       {webinar.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <Link to={webinar.link}>
-                      <Button 
-                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                    {webinar.comingSoon ? (
+                      <Button
+                        className="w-full bg-graphite-fog/30 text-abyss font-body cursor-not-allowed"
                         size="lg"
+                        disabled
                       >
-                        Register Now
+                        Coming Soon
                       </Button>
-                    </Link>
+                    ) : (
+                      <Link to={webinar.link}>
+                        <Button
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               );
