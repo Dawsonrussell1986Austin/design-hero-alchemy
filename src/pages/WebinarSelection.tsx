@@ -9,15 +9,6 @@ import SEOHead from "@/components/SEOHead";
 const WebinarSelection = () => {
   const webinars = [
     {
-      id: "oak-investment",
-      title: "Oak Real Estate Partners Investor Webinar",
-      description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
-      icon: Calendar,
-      color: "text-graphite-fog",
-      bgColor: "bg-graphite-fog/10",
-      link: "/webinar-registration?type=oak-investment"
-    },
-    {
       id: "red-oak-investor",
       title: "Red Oak Quarterly Financial Update",
       description: "Monthly updates on Red Oak investments, portfolio performance, and market insights for our investor community.",
