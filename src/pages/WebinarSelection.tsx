@@ -9,13 +9,24 @@ import SEOHead from "@/components/SEOHead";
 const WebinarSelection = () => {
   const webinars = [
     {
+      id: "oak-investment",
+      title: "Oak Real Estate Partners Investor Webinar",
+      description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
+      icon: Calendar,
+      color: "text-graphite-fog",
+      bgColor: "bg-graphite-fog/10",
+      link: "/webinar-registration?type=oak-investment",
+      comingSoon: true,
+    },
+    {
       id: "red-oak-investor",
       title: "Red Oak Quarterly Financial Update",
       description: "Monthly updates on Red Oak investments, portfolio performance, and market insights for our investor community.",
       icon: TrendingUp,
       color: "text-gold-accent",
       bgColor: "bg-gold-accent/10",
-      link: "/webinar-registration?type=red-oak-investor"
+      link: "/webinar-registration?type=red-oak-investor",
+      comingSoon: false,
     },
     {
       id: "oak-accounting",
@@ -24,8 +35,9 @@ const WebinarSelection = () => {
       icon: Calculator,
       color: "text-graphite-fog",
       bgColor: "bg-graphite-fog/10",
-      link: "/webinar-registration?type=oak-accounting"
-    }
+      link: "/webinar-registration?type=oak-accounting",
+      comingSoon: false,
+    },
   ];
 
   return (
@@ -67,19 +79,34 @@ const WebinarSelection = () => {
                     <CardTitle className="text-2xl font-display font-medium text-abyss">
                       {webinar.title}
                     </CardTitle>
+                    {webinar.comingSoon && (
+                      <p className="text-gold-accent font-body font-semibold pt-2">
+                        Stay Tuned for Upcoming Webinars!
+                      </p>
+                    )}
                     <CardDescription className="text-graphite-fog font-body leading-relaxed pt-2">
                       {webinar.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <Link to={webinar.link}>
-                      <Button 
-                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                    {webinar.comingSoon ? (
+                      <Button
+                        className="w-full bg-graphite-fog/30 text-abyss font-body cursor-not-allowed"
                         size="lg"
+                        disabled
                       >
-                        Register Now
+                        Coming Soon
                       </Button>
-                    </Link>
+                    ) : (
+                      <Link to={webinar.link}>
+                        <Button
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               );
