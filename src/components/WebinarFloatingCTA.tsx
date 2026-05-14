@@ -3,6 +3,9 @@ import { Calendar, ArrowRight, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const WebinarFloatingCTA = () => {
+  // Oak Investor Webinar registration is currently disabled.
+  return null;
+  // eslint-disable-next-line no-unreachable
   const [isVisible, setIsVisible] = useState(false);
   const location = useLocation();
 
