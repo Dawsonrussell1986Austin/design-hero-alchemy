@@ -177,9 +177,9 @@ const WebinarRegistration = () => {
               
               {webinarType === 'oak-investment' ? (
                 <div className="rounded-lg border border-graphite-fog/20 bg-cream/60 p-6 text-center">
-                  <p className="font-display text-xl text-abyss mb-2">Registration is currently closed</p>
+                  <p className="font-display text-xl text-abyss mb-2">Stay Tuned for Upcoming Webinars</p>
                   <p className="font-body text-graphite-fog">
-                    The Oak Real Estate Partners Investor Webinar is not accepting registrations at this time. Please check back soon for the next session.
+                    We'll announce the next Oak Real Estate Partners Investor Webinar soon. Check back shortly for details.
                   </p>
                 </div>
               ) : (
