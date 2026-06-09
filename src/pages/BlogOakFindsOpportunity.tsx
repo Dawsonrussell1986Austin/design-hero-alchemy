@@ -35,9 +35,9 @@ const BlogOakFindsOpportunity = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Blog', url: 'https://oakrealestatepartners.com/blog' },
-          { name: 'How Oak Finds Opportunity', url: 'https://oakrealestatepartners.com/blog/oak-finds-opportunity' }
+          { name: 'Home', url: 'https://oakrepartners.com/' },
+          { name: 'Blog', url: 'https://oakrepartners.com/blog' },
+          { name: 'How Oak Finds Opportunity', url: 'https://oakrepartners.com/blog/oak-finds-opportunity' }
         ]}
       />
       {/* Header with dark background */}

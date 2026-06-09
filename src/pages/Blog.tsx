@@ -36,8 +36,8 @@ const Blog = () => {
       <OrganizationSchema />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Blog', url: 'https://oakrealestatepartners.com/blog' }
+          { name: 'Home', url: 'https://oakrepartners.com/' },
+          { name: 'Blog', url: 'https://oakrepartners.com/blog' }
         ]}
       />
       {/* Header with dark background */}

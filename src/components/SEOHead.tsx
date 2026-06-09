@@ -14,7 +14,7 @@ interface SEOHeadProps {
   noIndex?: boolean;
 }
 
-const BASE_URL = 'https://oakrealestatepartners.com';
+const BASE_URL = 'https://oakrepartners.com';
 const DEFAULT_IMAGE = '/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png';
 const SITE_NAME = 'Oak Real Estate Partners';
 
