@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# Oak Real Estate Partners
 
-## Project info
+Marketing and investor site for Oak Real Estate Partners — commercial real estate
+lending and investment (bridge loans, HUD financing, private credit).
 
-**URL**: https://lovable.dev/projects/825ca826-81e0-427f-9a2a-e070a9326669
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/825ca826-81e0-427f-9a2a-e070a9326669) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Tech stack
 
 - Vite
 - TypeScript
 - React
 - shadcn-ui
 - Tailwind CSS
+- Supabase
 
-## How can I deploy this project?
+## Local development
 
-Simply open [Lovable](https://lovable.dev/projects/825ca826-81e0-427f-9a2a-e070a9326669) and click on Share -> Publish.
+Requires Node.js & npm (install via [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)).
 
-## Can I connect a custom domain to my Lovable project?
+```sh
+# Install dependencies
+npm i
 
-Yes, you can!
+# Start the dev server with hot reload
+npm run dev
+```
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The dev server runs on http://localhost:8080.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Other scripts
+
+```sh
+npm run build       # production build
+npm run build:dev   # development-mode build
+npm run preview     # preview the production build locally
+npm run lint        # run eslint
+```
+
+## Deployment
+
+This project is deployed via Vercel (see `vercel.json`).
