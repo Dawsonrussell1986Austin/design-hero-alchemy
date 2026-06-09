@@ -177,7 +177,7 @@ const WebinarRegistration = () => {
                   data-api="api/v1" 
                   data-base-uri="https://my.demio.com/" 
                   data-form-width="100%" 
-                  data-color="#022742" 
+                  data-color="#13192B" 
                   data-text="REGISTER"
                 ></span>
               </div>

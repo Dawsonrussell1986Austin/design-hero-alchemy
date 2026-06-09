@@ -113,7 +113,7 @@ const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onC
             onKeyDown={(e) => { if (e.key === "Enter") save(); }}
           />
           <div className="flex gap-2">
-            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#a85839" }}>Save</Button>
+            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#7A5A33" }}>Save</Button>
             {value && (
               <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => { onChange(null); setOpen(false); }}>
                 <X className="w-3 h-3" />
@@ -445,7 +445,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             <button onClick={() => setSettingsOpen(true)} className="p-1.5 rounded-md text-gray-400 hover:text-gray-600 hover:bg-gray-100 transition-colors" title="Team Email Settings">
               <Settings className="w-4 h-4" />
             </button>
-            <Button onClick={openNewTask} size="sm" className="h-8 text-xs gap-1.5" style={{ background: "#a85839" }}>
+            <Button onClick={openNewTask} size="sm" className="h-8 text-xs gap-1.5" style={{ background: "#7A5A33" }}>
               <Plus className="w-3.5 h-3.5" /> New Task
             </Button>
             <div className="flex items-center gap-1 rounded-lg p-0.5 bg-gray-100">
@@ -484,10 +484,10 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         <div className="mb-6">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-medium text-gray-500">Overall Progress</span>
-            <span className="text-xs font-bold" style={{ color: "#a85839" }}>{stats.pct}%</span>
+            <span className="text-xs font-bold" style={{ color: "#7A5A33" }}>{stats.pct}%</span>
           </div>
           <div className="w-full h-2 rounded-full overflow-hidden bg-gray-200">
-            <div className="h-full rounded-full transition-all duration-500" style={{ width: `${stats.pct}%`, background: "linear-gradient(90deg, #a85839, #e8c468)" }} />
+            <div className="h-full rounded-full transition-all duration-500" style={{ width: `${stats.pct}%`, background: "linear-gradient(90deg, #7A5A33, #B89B5E)" }} />
           </div>
         </div>
 
@@ -537,7 +537,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             {Object.entries(groupedTasks).map(([category, catTasks]) => (
               <div key={category}>
                 <div className="flex items-center gap-2 mb-3">
-                  <h2 className="text-xs font-bold uppercase tracking-widest" style={{ color: "#a85839" }}>{category}</h2>
+                  <h2 className="text-xs font-bold uppercase tracking-widest" style={{ color: "#7A5A33" }}>{category}</h2>
                   <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-gray-200 text-gray-500">{catTasks.length}</span>
                 </div>
                 <div className="rounded-xl border border-gray-200 overflow-hidden bg-white shadow-sm">
@@ -894,7 +894,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setDialogOpen(false)}>Cancel</Button>
-            <Button onClick={saveTask} style={{ background: "#a85839" }}>{editingTask.isNew ? "Create Task" : "Save Changes"}</Button>
+            <Button onClick={saveTask} style={{ background: "#7A5A33" }}>{editingTask.isNew ? "Create Task" : "Save Changes"}</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
@@ -936,7 +936,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
           </div>
           <DialogFooter>
             <Button variant="outline" onClick={() => setSettingsOpen(false)}>Cancel</Button>
-            <Button onClick={saveTeamEmails} style={{ background: "#a85839" }}>Save Emails</Button>
+            <Button onClick={saveTeamEmails} style={{ background: "#7A5A33" }}>Save Emails</Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>

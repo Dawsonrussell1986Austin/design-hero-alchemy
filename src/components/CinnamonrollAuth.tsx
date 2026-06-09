@@ -92,7 +92,7 @@ const CinnamonrollAuth = ({ children }: CinnamonrollAuthProps) => {
       <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="w-full max-w-sm mx-auto p-8">
           <div className="text-center mb-8">
-            <div className="w-12 h-12 rounded-xl mx-auto mb-4 flex items-center justify-center" style={{ background: "linear-gradient(135deg, #a85839, #e8c468)" }}>
+            <div className="w-12 h-12 rounded-xl mx-auto mb-4 flex items-center justify-center" style={{ background: "linear-gradient(135deg, #7A5A33, #B89B5E)" }}>
               <Mail className="w-6 h-6 text-white" />
             </div>
             <h1 className="text-xl font-bold text-gray-900">Cinnamon Roll</h1>
@@ -129,7 +129,7 @@ const CinnamonrollAuth = ({ children }: CinnamonrollAuthProps) => {
                 onClick={handleMagicLink}
                 disabled={sending || !email.trim()}
                 className="w-full h-10 text-sm"
-                style={{ background: "#a85839" }}
+                style={{ background: "#7A5A33" }}
               >
                 {sending ? <Loader2 className="w-4 h-4 animate-spin mr-2" /> : <Mail className="w-4 h-4 mr-2" />}
                 Send Magic Link

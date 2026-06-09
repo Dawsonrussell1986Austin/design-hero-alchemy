@@ -184,7 +184,7 @@ const TaskNotesPanel = ({ taskId, taskName, open, onClose, currentUserName, assi
               onClick={addNote}
               disabled={!content.trim() || submitting}
               className="self-end h-9 w-9 p-0"
-              style={{ background: "#a85839" }}
+              style={{ background: "#7A5A33" }}
             >
               {submitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
             </Button>

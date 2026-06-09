@@ -7,52 +7,52 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 100%;        /* Pure White #FFFFFF */
+    --foreground: 225 39% 12%;      /* Midnight Navy #13192B */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;              /* Pure White #FFFFFF */
+    --card-foreground: 225 39% 12%; /* Midnight Navy #13192B */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 225 39% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 225 39% 12%;         /* Midnight Navy #13192B */
+    --primary-foreground: 44 38% 92%; /* Parchment #F3EFE4 */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 42 25% 79%;        /* Warm Sand #D7CFBD */
+    --secondary-foreground: 225 39% 12%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 44 38% 92%;            /* Parchment #F3EFE4 */
+    --muted-foreground: 223 12% 65%; /* Cool Gray #9AA0AF */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 42 25% 79%;           /* Warm Sand #D7CFBD */
+    --accent-foreground: 225 39% 12%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 42 25% 79%;           /* Warm Sand #D7CFBD */
+    --input: 42 25% 79%;            /* Warm Sand #D7CFBD */
+    --ring: 33 41% 34%;             /* Oak Bronze #7A5A33 */
 
     --radius: 0.5rem;
 
-    /* OAK Brand Colors */
-    --obsidian: 207 74% 12%;       /* 082233 */
-    --graphite-fog: 207 39% 23%;   /* 233f52 */
-    --silver-mist: 40 14% 89%;     /* e4e3e1 */
-    --deep-petrol: 196 9% 46%;     /* 6c7d80 */
-    --garnet-edge: 196 9% 46%;     /* 6C7D80 - Soft Gray */
-    --nav-light: 40 14% 89%;       /* e4e3e1 */
-    --accent-brown: 19 49% 44%;    /* a85839 */
-    --gold-leaf: 43 74% 66%;       /* e8c468 */
-    --abyss: 212 53% 5%;           /* 060D14 */
-    --cream: 34 53% 96%;           /* FAF7F2 */
-    --gold-accent: 43 46% 54%;     /* C7A74C */
-    --gold-warm: 43 55% 60%;       /* D4B35C */
-    --deep-dark: 207 53% 6%;       /* 0A1520 */
-    --slate-whisper: 210 11% 71%;  /* adb5ba */
-    --header-blue: 200 17% 35%;    /* 4A5E68 */
+    /* OAK Brand Colors — Palette v2 (white-led, navy rationed, two-metal) */
+    --obsidian: 225 39% 12%;       /* Midnight Navy #13192B */
+    --graphite-fog: 225 39% 12%;   /* Midnight Navy #13192B */
+    --silver-mist: 44 38% 92%;     /* Parchment #F3EFE4 */
+    --deep-petrol: 223 12% 65%;    /* Cool Gray #9AA0AF */
+    --garnet-edge: 223 12% 65%;    /* Cool Gray #9AA0AF */
+    --nav-light: 44 38% 92%;       /* Parchment #F3EFE4 */
+    --accent-brown: 33 41% 34%;    /* Oak Bronze #7A5A33 */
+    --gold-leaf: 41 39% 55%;       /* Gilt #B89B5E */
+    --abyss: 225 39% 12%;          /* Midnight Navy #13192B */
+    --cream: 44 38% 92%;           /* Parchment #F3EFE4 */
+    --gold-accent: 41 39% 55%;     /* Gilt #B89B5E */
+    --gold-warm: 41 39% 55%;       /* Gilt #B89B5E */
+    --deep-dark: 225 39% 12%;      /* Midnight Navy #13192B */
+    --slate-whisper: 223 12% 65%;  /* Cool Gray #9AA0AF */
+    --header-blue: 225 39% 12%;    /* Midnight Navy #13192B */
     
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
