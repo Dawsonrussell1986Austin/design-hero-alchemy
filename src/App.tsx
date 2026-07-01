@@ -33,6 +33,7 @@ import Disclaimer from "./pages/Disclaimer";
 import News from "./pages/News";
 import WebinarRegistration from "./pages/WebinarRegistration";
 import WebinarSelection from "./pages/WebinarSelection";
+import InvestWebinar from "./pages/InvestWebinar";
 import NotFound from "./pages/NotFound";
 import Investors from "./pages/Investors";
 import InvestorEducation from "./pages/InvestorEducation";
@@ -97,6 +98,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/webinars" element={<WebinarSelection />} />
         <Route path="/webinar-registration" element={<WebinarRegistration />} />
+        <Route path="/invest-webinar" element={<InvestWebinar />} />
         <Route path="/news" element={<News />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/private-credit-lending-gap" element={<BlogPrivateCreditLendingGap />} />

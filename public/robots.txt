@@ -1,5 +1,5 @@
 # Robots.txt for Oak Real Estate Partners
-# https://oakrealestatepartners.com
+# https://oakrepartners.com
 
 User-agent: Googlebot
 Allow: /
@@ -23,7 +23,7 @@ Allow: /
 Crawl-delay: 2
 
 # Sitemap location
-Sitemap: https://oakrealestatepartners.com/sitemap.xml
+Sitemap: https://oakrepartners.com/sitemap.xml
 
 # Disallow admin/internal pages
 Disallow: /homepage-draft

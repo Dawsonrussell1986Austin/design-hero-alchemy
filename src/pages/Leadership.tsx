@@ -67,8 +67,8 @@ const Leadership = () => {
       <OrganizationSchema />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Leadership', url: 'https://oakrealestatepartners.com/leadership' }
+          { name: 'Home', url: 'https://oakrepartners.com/' },
+          { name: 'Leadership', url: 'https://oakrepartners.com/leadership' }
         ]}
       />
       {/* Navigation */}

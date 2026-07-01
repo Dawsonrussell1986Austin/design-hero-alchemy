@@ -17,8 +17,8 @@ const Investments = () => {
       <FinancialServiceSchema />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Why Oak', url: 'https://oakrealestatepartners.com/investments' }
+          { name: 'Home', url: 'https://oakrepartners.com/' },
+          { name: 'Why Oak', url: 'https://oakrepartners.com/investments' }
         ]}
       />
       {/* Navigation */}
