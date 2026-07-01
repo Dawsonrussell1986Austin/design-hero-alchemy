@@ -16,9 +16,9 @@ const FhaHudLoans = () => {
       <FinancialServiceSchema />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Lending', url: 'https://oakrealestatepartners.com/lending' },
-          { name: 'FHA/HUD Loans', url: 'https://oakrealestatepartners.com/lending/fha-hud' }
+          { name: 'Home', url: 'https://oakrepartners.com/' },
+          { name: 'Lending', url: 'https://oakrepartners.com/lending' },
+          { name: 'FHA/HUD Loans', url: 'https://oakrepartners.com/lending/fha-hud' }
         ]}
       />
       {/* Navigation */}
