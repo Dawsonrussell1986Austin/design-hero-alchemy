@@ -3,7 +3,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ShieldCheck, Building2, Landmark, TrendingUp } from "lucide-react";
 
-// Demio registration hash for the 9% Bond Fund investor webinar.
+// Demio registration hash for the Oak investor webinar.
 const DEMIO_HASH = "Qwtk1BXqQ1lwi0j4";
 
 const DemioForm = () => (
@@ -148,7 +148,7 @@ const InvestWebinar = () => {
             {/* Right — registration form */}
             <div id="register-hero" className="bg-silver-mist rounded-xl shadow-2xl p-8">
               <h2 className="text-2xl font-display font-medium text-abyss mb-2">
-                Join Our Bond Fund Webinar
+                Join Our Investor Webinar
               </h2>
               <p className="text-graphite-fog mb-6 font-body">
                 Reserve your seat for this exclusive investor session.
@@ -230,7 +230,7 @@ const InvestWebinar = () => {
         <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-8">
             <h2 className="text-3xl sm:text-4xl font-display font-medium text-abyss mb-3">
-              Join Our Bond Fund Webinar
+              Join Our Investor Webinar
             </h2>
             <p className="text-graphite-fog font-body leading-relaxed">
               Register now to reserve your seat. You'll receive live insights on how
