@@ -123,18 +123,21 @@ const InvestWebinar = () => {
             {/* Left — copy */}
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 rounded-full border border-gold-accent/40 bg-gold-accent/10 px-4 py-1.5 text-xs font-body uppercase tracking-[0.2em] text-gold-accent">
-                Live Investor Webinar
+                Looking for Income?
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[1.05] tracking-tight">
                 Protected Capital. Proven Experience. Real Income.
               </h1>
 
-              <p className="text-base sm:text-lg lg:text-xl text-silver-mist/85 leading-relaxed font-body">
-                Join a live webinar to see how Oak Real Estate Partners targets an
-                annual interest rate of up to{" "}
-                <span className="text-gold-accent font-medium">9%</span>, backed by
-                hard-asset commercial real estate.*
+              <p className="text-xl sm:text-2xl lg:text-3xl font-display font-medium text-silver-mist leading-snug">
+                Earn an annual interest rate of up to{" "}
+                <span className="text-gold-accent">9%</span>*
+              </p>
+
+              <p className="text-base sm:text-lg text-silver-mist/85 leading-relaxed font-body">
+                Join a live webinar to see how Oak Real Estate Partners generates
+                income backed by hard-asset commercial real estate.
               </p>
 
               <p className="text-sm sm:text-base text-silver-mist/70 leading-relaxed font-body max-w-lg">
