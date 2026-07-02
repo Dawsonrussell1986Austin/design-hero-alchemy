@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { ShieldCheck, Building2, Landmark, TrendingUp } from "lucide-react";
+import { trackDemioRegistrations } from "@/lib/demioTracking";
 
 // Demio registration hash for the Oak investor webinar.
 const DEMIO_HASH = "Qwtk1BXqQ1lwi0j4";
@@ -22,6 +23,9 @@ const DemioForm = () => (
 
 const InvestWebinar = () => {
   useEffect(() => {
+    // Fire the Meta Pixel Lead event when a Demio registration completes.
+    trackDemioRegistrations();
+
     // Load Demio embed script
     const script = document.createElement("script");
     script.id = "demio-js";
@@ -30,31 +34,7 @@ const InvestWebinar = () => {
     script.async = true;
     document.body.appendChild(script);
 
-    // Track Demio form submissions as conversions
-    const handleDemioSubmit = () => {
-      if ((window as any).fbq) {
-        (window as any).fbq("track", "Lead", { content_name: "invest_webinar_registration" });
-      }
-      if ((window as any).gtag) {
-        (window as any).gtag("event", "conversion_event_submit_lead_form");
-      }
-    };
-
-    const interval = setInterval(() => {
-      const forms = document.querySelectorAll(".demio-registration-form");
-      forms.forEach((form) => {
-        if (!form.getAttribute("data-fb-tracked")) {
-          form.setAttribute("data-fb-tracked", "true");
-          form.addEventListener("submit", handleDemioSubmit);
-        }
-      });
-    }, 1000);
-
     return () => {
-      clearInterval(interval);
-      document.querySelectorAll(".demio-registration-form").forEach((form) => {
-        form.removeEventListener("submit", handleDemioSubmit);
-      });
       const existingScript = document.getElementById("demio-js");
       if (existingScript) {
         document.body.removeChild(existingScript);
@@ -130,10 +110,19 @@ const InvestWebinar = () => {
                 Protected Capital. Proven Experience. Real Income.
               </h1>
 
-              <p className="text-xl sm:text-2xl lg:text-3xl font-display font-medium text-silver-mist leading-snug">
-                Earn an annual interest rate of up to{" "}
-                <span className="text-gold-accent">9%</span>*
-              </p>
+              <div>
+                <p className="text-lg sm:text-xl font-display font-medium text-silver-mist leading-snug">
+                  Earn an annual interest rate of up to
+                </p>
+                <div className="flex items-start leading-none">
+                  <span className="font-display font-medium text-gold-accent text-7xl sm:text-8xl lg:text-9xl leading-none tracking-tight">
+                    9%
+                  </span>
+                  <span className="font-display text-gold-accent text-2xl sm:text-3xl mt-2">
+                    *
+                  </span>
+                </div>
+              </div>
 
               <p className="text-base sm:text-lg text-silver-mist/85 leading-relaxed font-body">
                 Join a live webinar to see how Oak Real Estate Partners generates
