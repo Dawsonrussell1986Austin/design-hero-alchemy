@@ -5,7 +5,7 @@ import { ShieldCheck, Building2, Landmark, TrendingUp } from "lucide-react";
 import { trackDemioRegistrations } from "@/lib/demioTracking";
 
 // Demio registration hash for the Oak investor webinar.
-const DEMIO_HASH = "Qwtk1BXqQ1lwi0j4";
+const DEMIO_HASH = "9SVesvnmHC1lTVqS";
 
 const DemioForm = () => (
   <div className="demio-embed-container">
@@ -16,7 +16,7 @@ const DemioForm = () => (
       data-base-uri="https://my.demio.com/"
       data-form-width="100%"
       data-color="#022742"
-      data-text="REGISTER NOW"
+      data-text="REGISTER"
     ></span>
   </div>
 );
