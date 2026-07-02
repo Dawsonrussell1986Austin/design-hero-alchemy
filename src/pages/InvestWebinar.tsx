@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
-import { ShieldCheck, Building2, Landmark, TrendingUp, Star } from "lucide-react";
+import { ShieldCheck, Building2, Landmark, TrendingUp } from "lucide-react";
 
 // Demio registration hash for the 9% Bond Fund investor webinar.
 const DEMIO_HASH = "Qwtk1BXqQ1lwi0j4";
@@ -20,10 +19,6 @@ const DemioForm = () => (
     ></span>
   </div>
 );
-
-const scrollToRegister = () => {
-  document.getElementById("register")?.scrollIntoView({ behavior: "smooth" });
-};
 
 const InvestWebinar = () => {
   useEffect(() => {
@@ -73,7 +68,7 @@ const InvestWebinar = () => {
       name: "Bridge Lending",
       highlight: "Senior Secured",
       description:
-        "Short-duration, first-position commercial real estate loans backed by hard assets and conservative loan-to-value ratios.",
+        "Short-duration, first-position commercial real estate loans that give sponsors flexible capital while a property is stabilized or repositioned.",
       points: [
         "First-lien, senior secured positions",
         "Hard-asset commercial real estate collateral",
@@ -81,28 +76,27 @@ const InvestWebinar = () => {
       ],
     },
     {
-      icon: TrendingUp,
-      name: "Oak Bond Fund",
-      highlight: "9% Target",
-      description:
-        "Income-focused private credit strategy designed to deliver consistent monthly distributions from a diversified loan portfolio.",
-      points: [
-        "Monthly income potential",
-        "Diversified across borrowers and markets",
-        "Available for qualified investors",
-      ],
-      featured: true,
-    },
-    {
       icon: Landmark,
-      name: "Agency & HUD",
-      highlight: "Institutional",
+      name: "Agency & HUD Financing",
+      highlight: "Government-Backed",
       description:
-        "FHA/HUD and agency-backed financing programs that pair government-supported structures with Oak's origination expertise.",
+        "FHA/HUD and agency-backed programs that pair government-supported loan structures with Oak's origination and execution expertise.",
       points: [
         "Government-supported loan programs",
         "Long-term, fixed-rate structures",
         "Institutional-grade execution",
+      ],
+    },
+    {
+      icon: TrendingUp,
+      name: "Structured Credit",
+      highlight: "Debt & Equity",
+      description:
+        "Flexible capital structures — including debt and equity — built for real estate sponsors and backed by institutional underwriting.",
+      points: [
+        "Flexible debt and equity solutions",
+        "Institutional underwriting and market expertise",
+        "Focused on capital preservation",
       ],
     },
   ];
@@ -111,26 +105,6 @@ const InvestWebinar = () => {
     { value: "150+", label: "Years of combined experience*" },
     { value: "$5B", label: "Bridge loans completed in the last 10 years*" },
     { value: "$18B", label: "Total transactions*" },
-  ];
-
-  // NOTE: Placeholder testimonials — replace with compliance-approved investor
-  // quotes before relying on this section in production.
-  const testimonials = [
-    {
-      name: "Jeffrey P.",
-      quote:
-        "The team walked me through exactly how the loans are secured. The monthly income has been steady and the communication is excellent.",
-    },
-    {
-      name: "Karen W.",
-      quote:
-        "I wanted real estate exposure without the headaches of owning property directly. Oak's credit strategy has been a great fit for my portfolio.",
-    },
-    {
-      name: "Branden F.",
-      quote:
-        "What stood out was the discipline. These are people who have been through multiple market cycles and it shows in how they underwrite.",
-    },
   ];
 
   return (
@@ -153,29 +127,22 @@ const InvestWebinar = () => {
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[1.05] tracking-tight">
-                Invest Deeper into Oak Real Estate Partners
+                Protected Capital. Proven Experience. Real Income.
               </h1>
 
               <p className="text-base sm:text-lg lg:text-xl text-silver-mist/85 leading-relaxed font-body">
-                Register for a live webinar to learn how you could earn an annual
-                interest rate of up to <span className="text-gold-accent font-medium">9%</span>{" "}
-                with our real estate bond fund.*
+                Join a live webinar to see how Oak Real Estate Partners targets an
+                annual interest rate of up to{" "}
+                <span className="text-gold-accent font-medium">9%</span>, backed by
+                hard-asset commercial real estate.*
               </p>
 
               <p className="text-sm sm:text-base text-silver-mist/70 leading-relaxed font-body max-w-lg">
-                Real estate lending that improves communities, and the American
-                economy. Start building income backed by hard assets, guided by
-                institutional discipline from a team that has navigated eight market
-                cycles over 35 years.
+                Private commercial real estate credit, backed by hard assets and
+                guided by institutional discipline — from a team that has
+                successfully navigated eight market cycles over 35 years. Real estate
+                lending that improves communities, and the American economy.
               </p>
-
-              <Button
-                size="lg"
-                onClick={scrollToRegister}
-                className="bg-gold-accent hover:bg-gold-accent/90 text-cream px-8 py-6 text-base font-body font-medium tracking-wide rounded-sm hover:scale-105 transition-all duration-300"
-              >
-                BEGIN YOUR INVESTMENT JOURNEY
-              </Button>
             </div>
 
             {/* Right — registration form */}
@@ -197,12 +164,13 @@ const InvestWebinar = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl sm:text-4xl font-display font-medium text-abyss mb-4">
-              More Ways to Fuel Your Portfolio
+              What Oak Does
             </h2>
             <p className="text-graphite-fog font-body leading-relaxed">
-              Oak Real Estate Partners offers multiple ways to participate in private
-              commercial real estate credit — each backed by hard assets and
-              cycle-tested underwriting.
+              Oak Real Estate Partners originates and manages private commercial real
+              estate credit across bridge lending, agency &amp; HUD financing, and
+              structured capital — each backed by hard assets and cycle-tested
+              underwriting.
             </p>
           </div>
 
@@ -212,50 +180,26 @@ const InvestWebinar = () => {
               return (
                 <div
                   key={o.name}
-                  className={`rounded-xl p-8 flex flex-col ${
-                    o.featured
-                      ? "bg-abyss text-silver-mist ring-2 ring-gold-accent shadow-2xl md:-translate-y-2"
-                      : "bg-white text-abyss shadow-lg"
-                  }`}
+                  className="rounded-xl p-8 flex flex-col bg-white text-abyss shadow-lg"
                 >
-                  <div
-                    className={`w-14 h-14 rounded-lg flex items-center justify-center mb-5 ${
-                      o.featured ? "bg-gold-accent/20" : "bg-gold-accent/10"
-                    }`}
-                  >
+                  <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-5 bg-gold-accent/10">
                     <Icon className="h-7 w-7 text-gold-accent" />
                   </div>
                   <div className="text-xs font-body uppercase tracking-[0.2em] text-gold-accent mb-1">
                     {o.highlight}
                   </div>
                   <h3 className="text-2xl font-display font-medium mb-3">{o.name}</h3>
-                  <p
-                    className={`font-body leading-relaxed mb-6 ${
-                      o.featured ? "text-silver-mist/80" : "text-graphite-fog"
-                    }`}
-                  >
+                  <p className="font-body leading-relaxed mb-6 text-graphite-fog">
                     {o.description}
                   </p>
-                  <ul className="space-y-3 mb-8 flex-1">
+                  <ul className="space-y-3 flex-1">
                     {o.points.map((p) => (
                       <li key={p} className="flex items-start gap-2 font-body text-sm">
                         <ShieldCheck className="h-5 w-5 text-gold-accent shrink-0 mt-0.5" />
-                        <span className={o.featured ? "text-silver-mist/90" : "text-graphite-fog"}>
-                          {p}
-                        </span>
+                        <span className="text-graphite-fog">{p}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button
-                    onClick={scrollToRegister}
-                    className={`w-full font-body font-medium ${
-                      o.featured
-                        ? "bg-gold-accent hover:bg-gold-accent/90 text-cream"
-                        : "bg-abyss hover:bg-abyss/90 text-silver-mist"
-                    }`}
-                  >
-                    GET STARTED
-                  </Button>
                 </div>
               );
             })}
@@ -295,38 +239,6 @@ const InvestWebinar = () => {
           </div>
           <div className="bg-white rounded-xl shadow-2xl p-8">
             <DemioForm />
-          </div>
-        </div>
-      </section>
-
-      {/* ===== Testimonials ===== */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl sm:text-4xl font-display font-medium text-silver-mist text-center mb-12">
-            Hear What Our Investors Are Saying
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {testimonials.map((t) => (
-              <div
-                key={t.name}
-                className="bg-graphite-fog/30 backdrop-blur-sm border border-gold-accent/20 rounded-xl p-8"
-              >
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-gold-accent text-gold-accent" />
-                  ))}
-                </div>
-                <p className="text-silver-mist/85 font-body leading-relaxed italic mb-6">
-                  "{t.quote}"
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-full bg-gold-accent/20 flex items-center justify-center text-gold-accent font-display font-medium">
-                    {t.name.charAt(0)}
-                  </div>
-                  <div className="font-body font-medium text-silver-mist">{t.name}</div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
