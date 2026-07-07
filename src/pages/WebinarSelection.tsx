@@ -75,14 +75,25 @@ const WebinarSelection = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <Link to={webinar.link}>
-                      <Button 
-                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
-                        size="lg"
-                      >
-                        Register Now
-                      </Button>
-                    </Link>
+                    {webinar.link.startsWith("http") ? (
+                      <a href={webinar.link}>
+                        <Button 
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </a>
+                    ) : (
+                      <Link to={webinar.link}>
+                        <Button 
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               );
