@@ -2,10 +2,16 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 const Hud221Terms = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="HUD 221(d)4 & 220 Loan Terms"
+        description="FHA/HUD 221(d)4 and 220 loan program terms for new construction and substantial rehabilitation of multifamily properties."
+        canonicalUrl="/lending/fha-hud/221-terms"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

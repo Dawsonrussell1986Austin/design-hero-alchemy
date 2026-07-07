@@ -2,10 +2,16 @@ import { FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 
 const OakParallelBridgeFactSheet = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Oak Parallel Bridge Credit Fund — Fact Sheet"
+        description="Fund fact sheet for the Oak Parallel Bridge Credit Fund with key terms, strategy overview, and performance data."
+        canonicalUrl="/oak-parallel-bridge-fact-sheet"
+      />
       <Navigation />
       
       <section className="relative overflow-hidden pt-32 pb-20 px-4">

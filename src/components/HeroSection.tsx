@@ -1,102 +1,76 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 import { trackCTAClick } from "@/lib/gtm";
 
 const HeroSection = () => {
   return (
-    <div className="relative z-20 min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] xl:min-h-[80vh] px-4 sm:px-6 pt-28 sm:pt-28 md:pt-32 pb-16 sm:pb-20 overflow-hidden mobile-nav-safe">
-      {/* Smooth floating gradient backgrounds */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-1/4 w-96 h-96 bg-gold-accent/15 rounded-full blur-3xl animate-[float_8s_ease-in-out_infinite]"></div>
-        <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-garnet-edge/15 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite_reverse]"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-gradient-to-r from-gold-accent/8 to-garnet-edge/8 rounded-full blur-3xl opacity-60 animate-[breathe_6s_ease-in-out_infinite]"></div>
-      </div>
+    <div className="relative z-20 lg:min-h-screen px-4 sm:px-6 lg:px-8 pt-32 sm:pt-40 md:pt-44 lg:pt-48 pb-16 sm:pb-24 overflow-hidden flex flex-col items-center justify-start lg:justify-center">
       
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-          
-          {/* Left Column - Main Content */}
-          <div className="space-y-8">
-            {/* Main Headline */}
-            <div className="space-y-1 sm:space-y-2">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium text-silver-mist leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
-                Protected Capital.
-              </h1>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.4s_forwards]">
-                <span className="text-silver-mist">Proven Experience.</span>
-              </h1>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium leading-[0.9] tracking-tight opacity-0 animate-[slideUp_0.8s_ease-out_0.6s_forwards]">
-                <span className="text-silver-mist">Real Assets.</span>
-              </h1>
-            </div>
-            
-            {/* Subtitle */}
-            <p className="text-sm sm:text-base lg:text-lg xl:text-xl text-silver-mist/80 max-w-lg leading-relaxed font-body font-normal opacity-0 animate-[fadeInUp_0.8s_ease-out_0.8s_forwards] mobile-text-scale">
-              Private commercial real estate credit backed by hard assets, guided by institutional discipline, and built by a team that has successfully navigated eight market cycles over 35 years.
-            </p>
-            
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 opacity-0 animate-[fadeInUp_0.8s_ease-out_1s_forwards]">
-              <Link to="/lending" onClick={() => trackCTAClick('Borrowers', '/lending', 'hero_section')}>
-                <Button 
-                  size="lg" 
-                  className="bg-gold-accent hover:bg-gold-accent/90 text-silver-mist px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-gold-accent/20"
-                >
-                  Borrowers
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
-              <Link to="/whyoak" onClick={() => trackCTAClick('Why Oak', '/whyoak', 'hero_section')}>
-                <Button 
-                  size="lg" 
-                  variant="outline"
-                  className="border-2 border-silver-mist bg-silver-mist/10 text-cream hover:bg-silver-mist hover:text-abyss px-8 py-3 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm backdrop-blur-sm hover:scale-105 hover:shadow-lg hover:shadow-silver-mist/20"
-                >
-                  Why Oak
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </Link>
-            </div>
+      {/* Ghost typography */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none hidden md:flex items-center justify-end">
+        <span className="font-display font-medium italic text-cream/[0.04] text-[18rem] md:text-[26rem] lg:text-[38rem] leading-none -mr-20 md:-mr-32 lg:-mr-48 select-none">
+          Oak
+        </span>
+      </div>
+
+      <div className="relative z-10 max-w-5xl mx-auto text-center">
+        {/* Eyebrow Label */}
+        <p className="text-xs sm:text-sm text-gold-accent/70 font-body uppercase tracking-[0.25em] mb-4 sm:mb-8">
+          Every dollar has an address
+        </p>
+
+        {/* Main Headline */}
+        <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-normal leading-[1.1] tracking-tight mb-6 sm:mb-10">
+          <span className="text-cream">Senior-Secured</span>
+          <br />
+          <span className="text-cream">CRE Credit.</span>
+          <br />
+          <span className="text-gold-accent">Principal-led.</span>
+        </h1>
+        
+        {/* Subtitle */}
+        <p className="text-sm sm:text-lg lg:text-xl text-silver-mist/60 max-w-2xl mx-auto leading-relaxed font-body font-normal mb-8 sm:mb-12">
+          Oak originates, underwrites, and services senior-secured CRE loans for insurance companies, foundations, and endowments — and makes that same institutional standard available to RIAs, family offices, and qualified investors.
+        </p>
+        
+        {/* CTA Button */}
+        <div className="mb-12 sm:mb-20">
+          <a href="https://www.oakrepartners.com/videos/investment-strategy" onClick={() => trackCTAClick('Oak\'s Investment Strategy', 'https://www.oakrepartners.com/videos/investment-strategy', 'hero_section')}>
+            <Button 
+              size="lg" 
+              className="bg-gold-accent hover:bg-gold-accent/90 text-abyss px-8 py-3.5 text-base font-body font-medium tracking-wide transition-all duration-300 rounded-sm hover:scale-105 hover:shadow-lg hover:shadow-gold-accent/20"
+            >
+              Oak's Investment Strategy
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </Button>
+          </a>
+        </div>
+
+        {/* Statistics Row */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$460M</div>
+            <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Oak AUM</div>
           </div>
-          
-          {/* Right Column - Statistics Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-3 sm:gap-4 lg:gap-6 lg:space-y-0 mt-8 lg:mt-0">
-            {/* 150+ Years */}
-            <div className="bg-graphite-fog/30 backdrop-blur-sm border border-gold-accent/20 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.2s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/40 mobile-friendly-card touch-target">
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 lg:mb-3">150+</div>
-              <div className="text-xs sm:text-xs lg:text-sm font-body text-cream/70 uppercase tracking-wide">
-                YEARS OF EXPERIENCE*
-              </div>
-            </div>
-            
-            {/* $5B Bridge */}
-            <div className="bg-graphite-fog/30 backdrop-blur-sm border border-gold-accent/20 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.4s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/40 mobile-friendly-card touch-target">
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 lg:mb-3">$5B</div>
-              <div className="text-xs sm:text-xs lg:text-sm font-body text-cream/70 uppercase tracking-wide mb-1 lg:mb-2">
-                BRIDGE LOANS COMPLETED
-              </div>
-              <div className="text-xs sm:text-xs lg:text-sm font-body text-cream/70 uppercase tracking-wide">
-                IN THE LAST 10 YEARS*
-              </div>
-            </div>
-            
-            {/* $18B Transactions */}
-            <div className="bg-graphite-fog/30 backdrop-blur-sm border border-gold-accent/20 rounded-lg p-4 sm:p-6 lg:p-8 opacity-0 animate-[slideInRight_0.8s_ease-out_1.6s_forwards] hover:scale-105 transition-all duration-300 hover:bg-graphite-fog/40 mobile-friendly-card touch-target">
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2 lg:mb-3">$18B</div>
-              <div className="text-xs sm:text-xs lg:text-sm font-body text-cream/70 uppercase tracking-wide">
-                TOTAL TRANSACTIONS*
-              </div>
-            </div>
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$200M</div>
+            <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Cumulative Originations</div>
           </div>
-          
-          {/* Statistics Footnote */}
-          <div className="lg:col-span-2 mt-6">
-            <p className="text-xs text-silver-mist/60 font-sans text-center lg:text-left">
-              * Represents experience of current management team, whether at White Oak Capital Holdings, LLC d/b/a Oak Real Estate Partners, affiliated entities, or predecessor firms.
-            </p>
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">19%</div>
+            <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Net IRR · 33 Loans<sup>1</sup></div>
           </div>
-          
+          <div className="text-center">
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-display font-medium text-gold-accent mb-2">$25B+</div>
+            <div className="text-[10px] sm:text-xs font-body text-cream/60 uppercase tracking-wider">Team Career Financings<sup>2</sup></div>
+          </div>
+        </div>
+
+        {/* Footnotes */}
+        <div className="mt-12">
+          <p className="text-xs text-silver-mist/40 font-sans leading-relaxed max-w-4xl mx-auto">
+            <sup>1</sup> Oak Real Estate Partners performance since inception. Net of management fees and expenses. Past performance is not indicative of future results. <sup>2</sup> Aggregate CRE financings completed by current Oak principals during their prior careers at predecessor firms. Not Oak performance; presented as team experience only.
+          </p>
         </div>
       </div>
     </div>

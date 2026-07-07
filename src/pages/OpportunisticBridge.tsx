@@ -2,11 +2,17 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Button } from "@/components/ui/button";
+import SEOHead from "@/components/SEOHead";
 
 
 const OpportunisticBridge = () => {
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Opportunistic Bridge Lending Program"
+        description="Oak's Opportunistic Bridge program for higher-yield commercial real estate bridge lending opportunities."
+        canonicalUrl="/lending/bridge/opportunistic-bridge"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

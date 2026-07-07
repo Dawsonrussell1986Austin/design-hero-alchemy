@@ -3,12 +3,18 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 const GaryBechtel = () => {
   const navigate = useNavigate();
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Gary Bechtel — Leadership"
+        description="Meet Gary Bechtel, a senior leader at Oak Real Estate Partners with decades of CRE lending experience."
+        canonicalUrl="/leadership/gary-bechtel"
+      />
       {/* Navigation */}
       <Navigation />
       

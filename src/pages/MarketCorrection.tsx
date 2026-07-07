@@ -27,7 +27,7 @@ const MarketCorrection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Playfair Display is now loaded globally via index.html
+  // Montserrat is already loaded site-wide via the design system
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -51,7 +51,7 @@ const MarketCorrection = () => {
     }
   };
 
-  // Font stacks - Playfair Display now loaded globally
+  // Font stacks - Playfair Display for headlines, Lato for body
   const display = { fontFamily: "'Playfair Display', Georgia, serif" };
   const sans = { fontFamily: "'Lato', sans-serif" };
 
@@ -100,9 +100,7 @@ const MarketCorrection = () => {
         </div>
 
         {/* Two-column: copy + form */}
-        <div className="relative z-10 max-w-5xl mt-auto mb-auto py-6 sm:py-8">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center">
-            {/* Left — Copy */}
+        <div className="relative z-10 max-w-3xl mx-auto mt-auto mb-auto py-6 sm:py-8 text-center">
             <div>
               <p className="text-[9px] sm:text-[10px] tracking-[0.4em] uppercase mb-6 sm:mb-10" style={{ ...sans, color: "#C7A74C", opacity: 0.8, fontWeight: 500 }}>
                 2026 Institutional Investor Data
@@ -114,20 +112,20 @@ const MarketCorrection = () => {
                 Seventy-nine percent of institutional investors expect a market correction in{" "}
                 <em style={{ color: "#D4B35C", fontWeight: 300 }}>2026.</em>
               </p>
-              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[340px]" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
+              <p className="text-sm sm:text-base leading-[1.7] mt-6 sm:mt-8 max-w-[480px] mx-auto" style={{ ...sans, color: "#6C7D80", fontWeight: 400, letterSpacing: "0.02em" }}>
                 Not a dip. Not a rotation. A correction — the kind that reshapes portfolios overnight and punishes the unprepared.
               </p>
             </div>
 
-            {/* Right — Form */}
-            <div className="p-6 sm:p-8 md:p-10" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
-              <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
+            {/* Form */}
+            <div className="p-6 sm:p-8 md:p-10 mt-10 sm:mt-14 text-left" style={{ border: "1px solid rgba(240,236,227,0.05)" }}>
+              <p className="text-xs sm:text-sm tracking-[0.35em] uppercase mb-2 text-center" style={{ ...sans, color: "#E4E3E1", fontWeight: 500 }}>
                 Get the Full Report
               </p>
-              <p className="text-sm sm:text-base mb-6 sm:mb-8" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
+              <p className="text-sm sm:text-base mb-6 sm:mb-8 text-center" style={{ ...sans, color: "#6C7D80", fontWeight: 400 }}>
                 See the data driving institutional strategy — and how Oak structures around it.
               </p>
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-5 max-w-md mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} style={inputStyle} required />
                   <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} style={inputStyle} required />
@@ -149,7 +147,6 @@ const MarketCorrection = () => {
                 </p>
               </form>
             </div>
-          </div>
         </div>
 
         {/* Bottom stats */}

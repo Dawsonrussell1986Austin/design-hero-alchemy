@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Video, Calendar, Users } from "lucide-react";
-import { trackDemioRegistrations } from "@/lib/demioTracking";
+import SEOHead from "@/components/SEOHead";
 
 const WebinarRegistration = () => {
   const [searchParams] = useSearchParams();
@@ -87,9 +87,6 @@ const WebinarRegistration = () => {
   const currentWebinar = webinarContent[webinarType as keyof typeof webinarContent] || webinarContent['red-oak-investor'];
 
   useEffect(() => {
-    // Fire the Meta Pixel Lead event when a Demio registration completes.
-    trackDemioRegistrations();
-
     // Load Demio script
     const script = document.createElement('script');
     script.id = 'demio-js';
@@ -98,7 +95,33 @@ const WebinarRegistration = () => {
     script.async = true;
     document.body.appendChild(script);
 
+    // Listen for Demio form submissions to track as Facebook Pixel Lead
+    const handleDemioSubmit = () => {
+      if ((window as any).fbq) {
+        (window as any).fbq('track', 'Lead', { content_name: 'webinar_registration' });
+      }
+      // Google Ads conversion event
+      if ((window as any).gtag) {
+        (window as any).gtag('event', 'conversion_event_submit_lead_form');
+      }
+    };
+
+    // Poll for Demio form to appear and attach listener
+    const interval = setInterval(() => {
+      const form = document.querySelector('.demio-registration-form');
+      if (form && !form.getAttribute('data-fb-tracked')) {
+        form.setAttribute('data-fb-tracked', 'true');
+        form.addEventListener('submit', handleDemioSubmit);
+        clearInterval(interval);
+      }
+    }, 1000);
+
     return () => {
+      clearInterval(interval);
+      const form = document.querySelector('.demio-registration-form');
+      if (form) {
+        form.removeEventListener('submit', handleDemioSubmit);
+      }
       // Cleanup script on unmount
       const existingScript = document.getElementById('demio-js');
       if (existingScript) {
@@ -109,6 +132,11 @@ const WebinarRegistration = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Webinar Registration"
+        description="Register for an upcoming Oak Real Estate Partners webinar covering market updates and investment opportunities."
+        canonicalUrl="/webinar-registration"
+      />
       <Navigation />
       
       {/* Hero Section */}

@@ -1,13 +1,14 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
 import { trackFormSubmission, trackConversion, trackLeadGeneration } from "@/lib/gtm";
 import { FileText, Bell, Calendar, Shield } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import { supabase } from "@/integrations/supabase/client";
+import SEOHead from "@/components/SEOHead";
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware",
@@ -20,7 +21,7 @@ const US_STATES = [
 ];
 
 const InvestorAccess = () => {
-  const { toast } = useToast();
+  const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
@@ -34,65 +35,42 @@ const InvestorAccess = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Track form submission
     trackFormSubmission('investor_access_form', 'investor_access_page', true, {
       form_type: 'dtc_investor_registration',
     });
 
-    // Track as a conversion event
     trackConversion('investor_portal_registration', undefined, {
       conversion_action: 'dtc_investor_register',
       page_location: window.location.href,
     });
 
-    // Track Meta Pixel Lead conversion
     if (typeof window !== 'undefined' && (window as any).fbq) {
       (window as any).fbq('track', 'Lead', { content_name: 'investor_access_form' });
     }
 
-    // Track lead generation
     trackLeadGeneration('investor_portal', 'investor_access_page', {
       form_name: 'dtc_investor_registration_form',
     });
 
-    // Google Ads conversion event
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'conversion_event_submit_lead_form');
     }
 
     try {
-      // Submit to edge function which sends to Google Sheets
       const { data, error } = await supabase.functions.invoke('submit-investor-access', {
         body: formData,
       });
 
       if (error) {
-        console.error('Error submitting form:', error);
-        toast({
-          title: "Submission Error",
-          description: "There was an error submitting your registration. Please try again.",
-          variant: "destructive",
-        });
-        setIsSubmitting(false);
-        return;
+        console.error('Error submitting form (non-blocking):', error);
+      } else {
+        console.log('Form submission successful:', data);
       }
-
-      console.log('Form submission successful:', data);
-      toast({
-        title: "Registration Submitted",
-        description: "Thank you for registering. We will be in touch shortly.",
-      });
-
-      setFormData({ firstName: "", lastName: "", email: "", state: "", phone: "" });
     } catch (error) {
-      console.error('Error submitting form:', error);
-      toast({
-        title: "Submission Error",
-        description: "There was an error submitting your registration. Please try again.",
-        variant: "destructive",
-      });
+      console.error('Error submitting form (non-blocking):', error);
     } finally {
       setIsSubmitting(false);
+      navigate("/thank-you-investor-access");
     }
   };
 
@@ -105,14 +83,17 @@ const InvestorAccess = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-abyss to-abyss/95">
+      <SEOHead
+        title="Investor Access Portal"
+        description="Register for secure access to Oak Real Estate Partners investor documents, fund updates, and distribution notices."
+        canonicalUrl="/investor-access"
+      />
       <Navigation />
       
-      {/* Main Content */}
       <main className="pt-28 pb-12 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             
-            {/* Left Column - Form */}
             <div className="bg-cream rounded-2xl shadow-2xl p-8 lg:p-10">
               <h1 className="text-2xl lg:text-3xl font-display font-medium text-abyss mb-6">
                 Investor Portal Registration
@@ -212,11 +193,10 @@ const InvestorAccess = () => {
               </form>
             </div>
 
-            {/* Right Column - Message */}
             <div className="text-cream space-y-8">
               <div className="space-y-6">
                 <h2 className="text-xl lg:text-2xl font-display font-medium text-cream/90">
-                  Important Information for DTC Investors
+                  Important Information for Investors
                 </h2>
                 
                 <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
@@ -263,7 +243,6 @@ const InvestorAccess = () => {
         </div>
       </main>
 
-      {/* Footer */}
       <footer className="py-8 px-6 border-t border-white/10 mt-12">
         <div className="max-w-7xl mx-auto text-center">
           <p className="text-cream/50 text-sm font-body">

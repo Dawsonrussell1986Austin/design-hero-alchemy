@@ -16,8 +16,8 @@ const BlogPrivateCreditLendingGap = () => {
   return (
     <div className="min-h-screen">
       <SEOHead 
-        title="Private Credit's Role in the Current Lending Gap"
-        description="Explore how private credit is expanding to fill the lending gap left by traditional banks, and why special situation commercial real estate offers unique opportunities."
+        title="Private Equity's Role in the Current Lending Gap"
+        description="Explore how private equity is expanding to fill the lending gap left by traditional banks, and why special situation commercial real estate offers unique opportunities."
         canonicalUrl="/blog/private-credit-lending-gap"
         ogType="article"
         article={{
@@ -26,15 +26,15 @@ const BlogPrivateCreditLendingGap = () => {
         }}
       />
       <ArticleSchema
-        headline="Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why"
-        description="Explore how private credit is expanding to fill the lending gap left by traditional banks."
+        headline="Private Equity's Role in the Current Lending Gap Is Expanding — Here's Why"
+        description="Explore how private equity is expanding to fill the lending gap left by traditional banks."
         datePublished="2025-12-03"
         url="/blog/private-credit-lending-gap"
       />
       <BreadcrumbSchema items={[
         { name: 'Home', url: '/' },
         { name: 'Blog', url: '/blog' },
-        { name: 'Private Credit Lending Gap', url: '/blog/private-credit-lending-gap' }
+        { name: 'Private Equity Lending Gap', url: '/blog/private-credit-lending-gap' }
       ]} />
       {/* Header with dark background */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
@@ -45,7 +45,7 @@ const BlogPrivateCreditLendingGap = () => {
       <Breadcrumb 
         items={[
           { label: "Blog", href: "/blog" },
-          { label: "Private Credit's Role in the Current Lending Gap" }
+          { label: "Private Equity's Role in the Current Lending Gap" }
         ]}
       />
       
@@ -63,7 +63,7 @@ const BlogPrivateCreditLendingGap = () => {
             <div className="mb-12">
               <p className="text-graphite-fog/70 mb-4">December 3, 2025</p>
               <h1 className="text-3xl lg:text-4xl xl:text-5xl font-display font-medium text-abyss leading-tight mb-8">
-                Private Credit's Role in the Current Lending Gap Is Expanding — Here's Why
+                Private Equity's Role in the Current Lending Gap Is Expanding — Here's Why
               </h1>
             </div>
             
@@ -71,7 +71,7 @@ const BlogPrivateCreditLendingGap = () => {
             <div className="aspect-[16/9] overflow-hidden rounded-2xl mb-12">
               <img 
                 src="/lovable-uploads/7d64e74a-873e-40ba-9f71-203a1eaa0fb6.png"
-                alt="Private Credit Lending"
+                alt="Private Equity Lending"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -87,11 +87,11 @@ const BlogPrivateCreditLendingGap = () => {
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6 font-semibold">
-                This is where private credit has stepped forward.
+                This is where private equity has stepped forward.
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
-                Private CRE credit has grown into a $1.7 trillion global market, and multiple industry research groups project continued expansion. Preqin's 2025 Global Alternatives Report notes that private credit is expected to be the fastest-growing alternative asset class through 2026, driven by demand for secure, yield-oriented structures that are less correlated to public markets.
+                Private CRE credit has grown into a $1.7 trillion global market, and multiple industry research groups project continued expansion. Preqin's 2025 Global Alternatives Report notes that private equity is expected to be the fastest-growing alternative asset class through 2026, driven by demand for secure, yield-oriented structures that are less correlated to public markets.
               </p>
               
               <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
@@ -114,11 +114,11 @@ const BlogPrivateCreditLendingGap = () => {
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
-                The Boston Consulting Group recently reported that 65% of institutional investment committees plan to increase their exposure to private credit over the next two years, citing yield stability and structural transparency as primary reasons.
+                The Boston Consulting Group recently reported that 65% of institutional investment committees plan to increase their exposure to private equity over the next two years, citing yield stability and structural transparency as primary reasons.
               </p>
               
               <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
-                Why Sponsors Are Also Turning to Private Credit
+                Why Sponsors Are Also Turning to Private Equity
               </h2>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
@@ -218,7 +218,7 @@ const BlogPrivateCreditLendingGap = () => {
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6 font-semibold">
-                Private credit didn't just step into the gap — it is now shaping the lending landscape.
+                Private equity didn't just step into the gap — it is now shaping the lending landscape.
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-12">

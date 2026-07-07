@@ -28,16 +28,16 @@ const BlogOakFindsOpportunity = () => {
       />
       <ArticleSchema
         headline="How Oak Finds Opportunity Where Banks Can't"
-        description="In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition."
+        description="In today's commercial real estate market, many investors hear a lot of noise about private equity, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition."
         datePublished="2026-01-07"
         author="Oak Real Estate Partners"
         url="/blog/oak-finds-opportunity"
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrepartners.com/' },
-          { name: 'Blog', url: 'https://oakrepartners.com/blog' },
-          { name: 'How Oak Finds Opportunity', url: 'https://oakrepartners.com/blog/oak-finds-opportunity' }
+          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
+          { name: 'Blog', url: 'https://oakrealestatepartners.com/blog' },
+          { name: 'How Oak Finds Opportunity', url: 'https://oakrealestatepartners.com/blog/oak-finds-opportunity' }
         ]}
       />
       {/* Header with dark background */}
@@ -83,7 +83,7 @@ const BlogOakFindsOpportunity = () => {
             {/* Article Content */}
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
-                In today's commercial real estate market, many investors hear a lot of noise about private credit, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.
+                In today's commercial real estate market, many investors hear a lot of noise about private equity, distressed assets, and market dislocation. What often gets lost is a simpler truth: some of the most compelling opportunities aren't distressed at all — they're just in transition.
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6 font-semibold">
@@ -185,11 +185,11 @@ const BlogOakFindsOpportunity = () => {
               </p>
               
               <h2 className="text-2xl font-display font-medium text-abyss mt-12 mb-6">
-                A Conservative Alternative Within Private Credit
+                A Conservative Alternative Within Private Equity
               </h2>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">
-                Oak's role in the private credit market isn't about chasing the highest returns or taking unnecessary risk. It's about solving real problems for property owners while prioritizing downside protection for investors.
+                Oak's role in the private equity market isn't about chasing the highest returns or taking unnecessary risk. It's about solving real problems for property owners while prioritizing downside protection for investors.
               </p>
               
               <p className="text-lg text-graphite-fog/90 leading-relaxed mb-6">

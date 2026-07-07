@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 
 const KevinKennedy = () => {
@@ -10,6 +11,11 @@ const KevinKennedy = () => {
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Kevin Kennedy — Leadership"
+        description="Meet Kevin Kennedy, a key member of the Oak Real Estate Partners leadership team."
+        canonicalUrl="/leadership/kevin-kennedy"
+      />
       {/* Navigation */}
       <Navigation />
       

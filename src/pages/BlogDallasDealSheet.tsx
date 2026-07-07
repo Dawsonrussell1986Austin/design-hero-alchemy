@@ -6,6 +6,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import atlantaSkyline from "@/assets/atlanta-skyline-clouds.png";
+import SEOHead from "@/components/SEOHead";
 
 const BlogDallasDealSheet = () => {
   useEffect(() => {
@@ -14,6 +15,11 @@ const BlogDallasDealSheet = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Dallas-Fort Worth Deal Sheet"
+        description="Oak Real Estate Partners featured in this week's Dallas-Fort Worth commercial real estate deal sheet."
+        canonicalUrl="/blog/dallas-deal-sheet"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

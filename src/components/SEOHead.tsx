@@ -14,13 +14,13 @@ interface SEOHeadProps {
   noIndex?: boolean;
 }
 
-const BASE_URL = 'https://oakrepartners.com';
+const BASE_URL = 'https://oakrealestatepartners.com';
 const DEFAULT_IMAGE = '/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png';
 const SITE_NAME = 'Oak Real Estate Partners';
 
 export default function SEOHead({
   title,
-  description = 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private credit opportunities.',
+  description = 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private equity opportunities.',
   canonicalUrl,
   ogType = 'website',
   ogImage = DEFAULT_IMAGE,

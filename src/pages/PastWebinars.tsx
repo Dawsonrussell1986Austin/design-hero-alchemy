@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Play } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 declare global {
   namespace JSX {
@@ -28,9 +29,9 @@ interface PastWebinar {
 const pastWebinars: PastWebinar[] = [
   {
     id: "risk-before-returns-feb-2026",
-    title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Credit",
+    title: "Risk Before Returns: How Oak Thinks About Downside Protection in Private Equity",
     date: "February 12, 2026",
-    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private credit — before a single dollar of capital is deployed.",
+    description: "Matt Webster, Oak's Chief Credit Officer, discusses how Oak evaluates and mitigates risk in real estate private equity — before a single dollar of capital is deployed.",
     mediaId: "i6sw318ela",
   },
   {
@@ -59,6 +60,11 @@ const PastWebinars = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Past Webinars — On-Demand"
+        description="Watch past Oak Real Estate Partners webinars on-demand covering market updates, fund performance, and investment strategy."
+        canonicalUrl="/past-webinars"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

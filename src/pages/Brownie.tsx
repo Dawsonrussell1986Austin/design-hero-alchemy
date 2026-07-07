@@ -5,7 +5,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2, Settings, Mail } from "lucide-react";
+import { CheckCircle2, Circle, Clock, Filter, LayoutGrid, List, Users, Loader2, CalendarIcon, GanttChart, MessageSquare, Link2, ExternalLink, X, Plus, Archive, Pencil, Trash2, Settings, Mail, ImageIcon, Upload, FileText } from "lucide-react";
+import ImageApprovalGallery from "@/components/ImageApprovalGallery";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
@@ -49,6 +50,9 @@ const ganttBarColors: Record<string, string> = {
 
 type ViewMode = "list" | "board" | "timeline";
 
+const isPdfAsset = (url: string) => /\.(pdf)(\?|$)/i.test(url);
+const isVideoAsset = (url: string) => /\.(mp4|mov|webm|avi)(\?|$)/i.test(url);
+
 const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; onChange: (date: string | null) => void }) => {
   const selected = value ? parseISO(value) : undefined;
   const today = startOfDay(new Date());
@@ -74,51 +78,59 @@ const DueDatePicker = ({ value, onChange }: { value: string | null | undefined; 
   );
 };
 
-const LinkEditor = ({ value, onChange }: { value: string | null | undefined; onChange: (url: string | null) => void }) => {
-  const [draft, setDraft] = useState(value || "");
+const LinkEditor = ({ values, onChange }: { values: string[] | null | undefined; onChange: (urls: string[] | null) => void }) => {
+  const links = values || [];
+  const [draft, setDraft] = useState("");
   const [open, setOpen] = useState(false);
 
-  const save = () => {
-    onChange(draft.trim() || null);
-    setOpen(false);
+  const addLink = () => {
+    const url = draft.trim();
+    if (!url) return;
+    const updated = [...links, url];
+    onChange(updated);
+    setDraft("");
+  };
+
+  const removeLink = (idx: number) => {
+    const updated = links.filter((_, i) => i !== idx);
+    onChange(updated.length > 0 ? updated : null);
   };
 
   return (
-    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(value || ""); }}>
+    <Popover open={open} onOpenChange={(v) => { setOpen(v); if (v) setDraft(""); }}>
       <PopoverTrigger asChild>
-        {value ? (
-          <a
-            href={value}
-            target="_blank"
-            rel="noopener noreferrer"
+        {links.length > 0 ? (
+          <button
             onClick={(e) => e.stopPropagation()}
-            className="flex items-center text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
+            className="flex items-center gap-0.5 text-blue-500 hover:text-blue-700 transition-colors flex-shrink-0"
           >
             <ExternalLink className="w-3.5 h-3.5" />
-          </a>
+            <span className="text-[9px] font-semibold">{links.length}</span>
+          </button>
         ) : (
           <button className="flex items-center text-gray-300 hover:text-gray-500 transition-colors flex-shrink-0">
             <Link2 className="w-3.5 h-3.5" />
           </button>
         )}
       </PopoverTrigger>
-      <PopoverContent className="w-[300px] p-3" align="start">
+      <PopoverContent className="w-[320px] p-3" align="start">
         <div className="space-y-2">
-          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Document / Creative Link</label>
-          <Input
-            value={draft}
-            onChange={(e) => setDraft(e.target.value)}
-            placeholder="https://..."
-            className="h-8 text-xs"
-            onKeyDown={(e) => { if (e.key === "Enter") save(); }}
-          />
-          <div className="flex gap-2">
-            <Button size="sm" className="h-7 text-xs flex-1" onClick={save} style={{ background: "#a85839" }}>Save</Button>
-            {value && (
-              <Button size="sm" variant="outline" className="h-7 text-xs" onClick={() => { onChange(null); setOpen(false); }}>
-                <X className="w-3 h-3" />
-              </Button>
-            )}
+          <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400">Links</label>
+          {links.map((url, idx) => (
+            <div key={idx} className="flex items-center gap-1.5 group">
+              <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 hover:underline truncate flex-1">{url}</a>
+              <button onClick={() => removeLink(idx)} className="p-0.5 text-gray-300 hover:text-red-500 transition-colors opacity-0 group-hover:opacity-100"><X className="w-3 h-3" /></button>
+            </div>
+          ))}
+          <div className="flex gap-1.5">
+            <Input
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              placeholder="https://..."
+              className="h-8 text-xs flex-1"
+              onKeyDown={(e) => { if (e.key === "Enter") addLink(); }}
+            />
+            <Button size="sm" className="h-8 text-xs px-3" onClick={addLink} style={{ background: "#a85839" }}>Add</Button>
           </div>
         </div>
       </PopoverContent>
@@ -136,7 +148,8 @@ const makeEmptyTask = (currentUser: string): Partial<BrownieTask> & { isNew?: bo
   category: categories[0],
   platform: "",
   due_date: null,
-  link_url: null,
+  link_urls: [],
+  image_urls: [],
 });
 
 const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
@@ -170,6 +183,9 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
 
   // Delete confirmation
   const [deleteConfirm, setDeleteConfirm] = useState<number | null>(null);
+
+  // Review detail dialog
+  const [reviewTask, setReviewTask] = useState<BrownieTask | null>(null);
 
   // Team email settings
   const [settingsOpen, setSettingsOpen] = useState(false);
@@ -247,7 +263,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
     return { total, complete, inProgress, critical, criticalComplete, pct: total ? Math.round((complete / total) * 100) : 0, archived };
   }, [tasks]);
 
-  const updateField = useCallback(async (id: number, field: string, value: string | null) => {
+  const updateField = useCallback(async (id: number, field: string, value: string | string[] | null) => {
     setTasks((prev) => prev.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
     const { error } = await supabase
       .from("brownie_tasks")
@@ -271,6 +287,35 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
     }
   }, []);
 
+  const handleInlineUpload = useCallback(async (taskId: number, files: FileList) => {
+    const newUrls: string[] = [];
+    for (const file of Array.from(files)) {
+      const ext = file.name.split(".").pop() || "png";
+      const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+      const { error } = await supabase.storage.from("task-images").upload(path, file, {
+        contentType: file.type || undefined,
+      });
+      if (error) {
+        toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+        continue;
+      }
+      const { data: urlData } = supabase.storage.from("task-images").getPublicUrl(path);
+      newUrls.push(urlData.publicUrl);
+    }
+    if (newUrls.length > 0) {
+      const task = tasks.find((t) => t.id === taskId);
+      const updatedUrls = [...(task?.image_urls || []), ...newUrls];
+      setTasks((prev) => prev.map((t) => (t.id === taskId ? { ...t, image_urls: updatedUrls } : t)));
+      const { error } = await supabase.from("brownie_tasks").update({ image_urls: updatedUrls }).eq("id", taskId);
+      if (error) {
+        toast({ title: "Failed to save media", description: error.message, variant: "destructive" });
+      } else {
+        toast({ title: `${newUrls.length} file(s) uploaded` });
+        const taskName = task?.task || "Unknown Task";
+        sendNotification("image_uploaded", taskName, "Ray", currentUserName, String(newUrls.length));
+      }
+    }
+  }, [tasks, toast, sendNotification, currentUserName]);
   const updateStatus = async (id: number, status: TaskStatus) => {
     const task = tasks.find((t) => t.id === id);
     if (task) {
@@ -292,7 +337,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
   };
 
   const updateDueDate = (id: number, date: string | null) => updateField(id, "due_date", date);
-  const updateLink = (id: number, url: string | null) => updateField(id, "link_url", url);
+  const updateLinks = (id: number, urls: string[] | null) => updateField(id, "link_urls", urls || []);
 
   const archiveTask = async (id: number) => {
     await updateField(id, "status", "Archived");
@@ -345,7 +390,8 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         assigned: editingTask.assigned || "Unassigned",
         category: editingTask.category || categories[0],
         due_date: editingTask.due_date || null,
-        link_url: editingTask.link_url || null,
+        link_urls: editingTask.link_urls || [],
+        image_urls: editingTask.image_urls || [],
       };
 
       const { error } = await supabase.from("brownie_tasks").insert(newTask);
@@ -364,7 +410,8 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
         assigned: editingTask.assigned,
         status: editingTask.status,
         due_date: editingTask.due_date || null,
-        link_url: editingTask.link_url || null,
+        link_urls: editingTask.link_urls || [],
+        image_urls: editingTask.image_urls || [],
       };
       const { error } = await supabase.from("brownie_tasks").update(updates).eq("id", editingTask.id);
       if (error) {
@@ -373,6 +420,14 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
       }
       setTasks((prev) => prev.map((t) => (t.id === editingTask.id ? { ...t, ...updates } as BrownieTask : t)));
       toast({ title: "Task updated" });
+
+      // Notify Ray if new images were added via edit dialog
+      const originalTask = tasks.find((t) => t.id === editingTask.id);
+      const oldCount = originalTask?.image_urls?.length || 0;
+      const newCount = (editingTask.image_urls || []).length;
+      if (newCount > oldCount) {
+        sendNotification("image_uploaded", editingTask.task!.trim(), "Ray", currentUserName, String(newCount - oldCount));
+      }
     }
     setDialogOpen(false);
   };
@@ -559,8 +614,26 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                           <tr key={t.id} className="border-t border-gray-100 transition-colors hover:bg-gray-50/50">
                             <td className="px-4 py-3">
                               <div className="flex items-center gap-2">
-                                <span className={`text-sm flex-1 ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</span>
-                                <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                                <button onClick={() => setReviewTask(t)} className={`text-sm flex-1 text-left hover:underline cursor-pointer ${t.status === "Complete" ? "text-gray-400 line-through" : t.status === "Archived" ? "text-gray-300 line-through" : "text-gray-800"}`}>{t.task}</button>
+                                {t.image_urls && t.image_urls.length > 0 && (
+                                  <Popover>
+                                    <PopoverTrigger asChild>
+                                      <button className="flex items-center gap-0.5 text-violet-400 hover:text-violet-600 transition-colors flex-shrink-0">
+                                        <ImageIcon className="w-3.5 h-3.5" />
+                                        <span className="text-[10px] font-semibold">{t.image_urls.length}</span>
+                                      </button>
+                                    </PopoverTrigger>
+                                    <PopoverContent className="w-[320px] max-h-[400px] overflow-y-auto p-3" align="start">
+                                      <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Media Approvals</p>
+                                      <ImageApprovalGallery taskId={t.id} imageUrls={t.image_urls} currentUserName={currentUserName} />
+                                    </PopoverContent>
+                                  </Popover>
+                                )}
+                                <label className="flex items-center gap-0.5 text-gray-300 hover:text-violet-500 transition-colors flex-shrink-0 cursor-pointer" title="Upload files">
+                                  <Upload className="w-3.5 h-3.5" />
+                                  <input type="file" accept="image/*,video/*,.pdf,application/pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                                </label>
+                                <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
                                 <button
                                   onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                                   className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors flex-shrink-0"
@@ -652,7 +725,7 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                     {colTasks.map((t) => (
                       <div key={t.id} className="rounded-lg border border-gray-200 bg-white p-3 shadow-sm transition-colors hover:bg-gray-50/50 group">
                         <div className="flex items-start justify-between gap-2 mb-2">
-                          <p className="text-sm text-gray-800 flex-1">{t.task}</p>
+                          <button onClick={() => setReviewTask(t)} className="text-sm text-gray-800 flex-1 text-left hover:underline cursor-pointer">{t.task}</button>
                           <div className="flex items-center gap-1.5 flex-shrink-0 mt-0.5">
                             <button onClick={() => openEditTask(t)} className="p-0.5 text-gray-300 hover:text-gray-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Pencil className="w-3 h-3" />
@@ -660,7 +733,25 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
                             <button onClick={() => archiveTask(t.id)} className="p-0.5 text-gray-300 hover:text-amber-600 transition-colors opacity-0 group-hover:opacity-100">
                               <Archive className="w-3 h-3" />
                             </button>
-                            <LinkEditor value={t.link_url} onChange={(url) => updateLink(t.id, url)} />
+                            <label className="p-0.5 text-gray-300 hover:text-violet-500 transition-colors opacity-0 group-hover:opacity-100 cursor-pointer" title="Upload files">
+                              <Upload className="w-3 h-3" />
+                                  <input type="file" accept="image/*,video/*,.pdf,application/pdf" multiple className="hidden" onChange={(e) => { if (e.target.files) handleInlineUpload(t.id, e.target.files); e.target.value = ""; }} />
+                            </label>
+                            <LinkEditor values={t.link_urls} onChange={(urls) => updateLinks(t.id, urls)} />
+                            {t.image_urls && t.image_urls.length > 0 && (
+                              <Popover>
+                                <PopoverTrigger asChild>
+                                  <button className="flex items-center gap-0.5 text-violet-400 hover:text-violet-600 transition-colors">
+                                    <ImageIcon className="w-3 h-3" />
+                                    <span className="text-[9px] font-semibold">{t.image_urls.length}</span>
+                                  </button>
+                                </PopoverTrigger>
+                                <PopoverContent className="w-[320px] max-h-[400px] overflow-y-auto p-3" align="start">
+                                  <p className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">Media Approvals</p>
+                                  <ImageApprovalGallery taskId={t.id} imageUrls={t.image_urls} currentUserName={currentUserName} />
+                                </PopoverContent>
+                              </Popover>
+                            )}
                             <button
                               onClick={() => setNotesPanel({ taskId: t.id, taskName: t.task })}
                               className="flex items-center gap-0.5 text-gray-300 hover:text-gray-600 transition-colors"
@@ -883,13 +974,102 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
               </div>
             </div>
             <div>
-              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Link (optional)</label>
-              <Input
-                value={editingTask.link_url || ""}
-                onChange={(e) => setEditingTask((prev) => ({ ...prev, link_url: e.target.value }))}
-                placeholder="https://..."
-                className="h-9 text-xs"
-              />
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Links (optional)</label>
+              {(editingTask.link_urls || []).map((url, idx) => (
+                <div key={idx} className="flex items-center gap-1.5 mb-1">
+                  <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 hover:underline truncate flex-1">{url}</a>
+                  <button onClick={() => setEditingTask((prev) => ({ ...prev, link_urls: (prev.link_urls || []).filter((_, i) => i !== idx) }))} className="p-0.5 text-gray-300 hover:text-red-500"><X className="w-3 h-3" /></button>
+                </div>
+              ))}
+              <div className="flex gap-1.5">
+                <Input
+                  id="edit-link-input"
+                  placeholder="https://..."
+                  className="h-9 text-xs flex-1"
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      const val = (e.target as HTMLInputElement).value.trim();
+                      if (val) {
+                        setEditingTask((prev) => ({ ...prev, link_urls: [...(prev.link_urls || []), val] }));
+                        (e.target as HTMLInputElement).value = "";
+                      }
+                    }
+                  }}
+                />
+                <Button size="sm" className="h-9 text-xs px-3" style={{ background: "#a85839" }} onClick={() => {
+                  const input = document.getElementById("edit-link-input") as HTMLInputElement;
+                  const val = input?.value.trim();
+                  if (val) {
+                    setEditingTask((prev) => ({ ...prev, link_urls: [...(prev.link_urls || []), val] }));
+                    input.value = "";
+                  }
+                }}>Add</Button>
+              </div>
+            </div>
+            <div>
+              <label className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 block mb-1.5">Media</label>
+              {/* Existing images */}
+              {(editingTask.image_urls && editingTask.image_urls.length > 0) && (
+                <div className="flex flex-wrap gap-2 mb-2">
+                  {editingTask.image_urls.map((url, idx) => (
+                    <div key={idx} className="relative group w-20 h-20 rounded-lg overflow-hidden border border-gray-200">
+                      {isPdfAsset(url) ? (
+                        <div className="w-full h-full flex items-center justify-center bg-gray-100 text-gray-500 text-[10px] font-medium">PDF</div>
+                      ) : isVideoAsset(url) ? (
+                        <video src={url} className="w-full h-full object-cover" muted />
+                      ) : (
+                        <img src={url} alt="" className="w-full h-full object-cover" />
+                      )}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          const updated = [...(editingTask.image_urls || [])];
+                          updated.splice(idx, 1);
+                          setEditingTask((prev) => ({ ...prev, image_urls: updated }));
+                        }}
+                        className="absolute top-0.5 right-0.5 p-0.5 rounded-full bg-red-500 text-white opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <X className="w-3 h-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <label className="flex items-center gap-2 px-3 py-2 rounded-lg border border-dashed border-gray-300 cursor-pointer hover:border-gray-400 hover:bg-gray-50 transition-colors">
+                <Upload className="w-4 h-4 text-gray-400" />
+                <span className="text-xs text-gray-500">Click to upload images, videos, or PDFs</span>
+                <input
+                  type="file"
+                  accept="image/*,video/*,.pdf,application/pdf"
+                  multiple
+                  className="hidden"
+                  onChange={async (e) => {
+                    const files = e.target.files;
+                    if (!files || files.length === 0) return;
+                    const newUrls: string[] = [];
+                    for (const file of Array.from(files)) {
+                      const ext = file.name.split(".").pop() || "png";
+                      const path = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+                      const { error } = await supabase.storage.from("task-images").upload(path, file, {
+                        contentType: file.type || undefined,
+                      });
+                      if (error) {
+                        toast({ title: "Upload failed", description: error.message, variant: "destructive" });
+                        continue;
+                      }
+                      const { data: urlData } = supabase.storage.from("task-images").getPublicUrl(path);
+                      newUrls.push(urlData.publicUrl);
+                    }
+                    if (newUrls.length > 0) {
+                      setEditingTask((prev) => ({
+                        ...prev,
+                        image_urls: [...(prev.image_urls || []), ...newUrls],
+                      }));
+                    }
+                    e.target.value = "";
+                  }}
+                />
+              </label>
             </div>
           </div>
           <DialogFooter>
@@ -938,6 +1118,92 @@ const BrownieInner = ({ currentUserName }: { currentUserName: string }) => {
             <Button variant="outline" onClick={() => setSettingsOpen(false)}>Cancel</Button>
             <Button onClick={saveTeamEmails} style={{ background: "#a85839" }}>Save Emails</Button>
           </DialogFooter>
+        </DialogContent>
+      </Dialog>
+      {/* Task Review Detail Dialog */}
+      <Dialog open={!!reviewTask} onOpenChange={(open) => { if (!open) setReviewTask(null); }}>
+        <DialogContent className="sm:max-w-[600px] max-h-[85vh] overflow-y-auto">
+          <DialogHeader>
+            <DialogTitle className="text-lg font-semibold pr-6">{reviewTask?.task}</DialogTitle>
+          </DialogHeader>
+          {reviewTask && (
+            <div className="space-y-6 py-2">
+              {/* Task metadata */}
+              <div className="flex flex-wrap items-center gap-2">
+                <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${priorityConfig[reviewTask.priority.split(" ")[0]] || priorityConfig["CRITICAL"]}`}>
+                  {reviewTask.priority.split("(")[0].trim()}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full ${assigneeColors[reviewTask.assigned] || assigneeColors["Unassigned"]}`}>
+                  {getAssigneeLabel(reviewTask.assigned)}
+                </span>
+                <span className={`text-[10px] font-medium px-2 py-0.5 rounded-full border ${statusConfig[reviewTask.status]?.bg} ${statusConfig[reviewTask.status]?.color}`}>
+                  {reviewTask.status}
+                </span>
+                {reviewTask.due_date && (
+                  <span className="text-[10px] text-gray-500">Due: {format(parseISO(reviewTask.due_date), "MMM d, yyyy")}</span>
+                )}
+              </div>
+
+              {/* Links Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <Link2 className="w-3.5 h-3.5" /> Links ({(reviewTask.link_urls || []).length})
+                </h3>
+                {(reviewTask.link_urls && reviewTask.link_urls.length > 0) ? (
+                  <div className="space-y-1.5 bg-gray-50 rounded-lg p-3">
+                    {reviewTask.link_urls.map((url, idx) => (
+                      <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-800 hover:underline break-all">
+                        <ExternalLink className="w-3.5 h-3.5 flex-shrink-0" />
+                        {url}
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No links added yet</p>
+                )}
+              </div>
+
+              {/* Images Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <ImageIcon className="w-3.5 h-3.5" /> Media ({(reviewTask.image_urls || []).length})
+                </h3>
+                {(reviewTask.image_urls && reviewTask.image_urls.length > 0) ? (
+                  <div className="space-y-3">
+                    <div className="grid grid-cols-2 gap-3">
+                      {reviewTask.image_urls.map((url, idx) => (
+                        isPdfAsset(url) ? (
+                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-4 rounded-lg border border-gray-200 hover:border-gray-400 transition-colors bg-gray-50">
+                            <FileText className="w-5 h-5 text-red-500 flex-shrink-0" />
+                            <span className="text-sm text-gray-700 truncate">PDF Document {idx + 1}</span>
+                          </a>
+                        ) : isVideoAsset(url) ? (
+                          <div key={idx} className="rounded-lg overflow-hidden border border-gray-200">
+                            <video src={url} controls className="w-full h-auto" />
+                          </div>
+                        ) : (
+                          <a key={idx} href={url} target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden border border-gray-200 hover:border-gray-400 transition-colors">
+                            <img src={url} alt={`Attachment ${idx + 1}`} className="w-full h-auto object-cover" />
+                          </a>
+                        )
+                      ))}
+                    </div>
+                    <ImageApprovalGallery taskId={reviewTask.id} imageUrls={reviewTask.image_urls} currentUserName={currentUserName} />
+                  </div>
+                ) : (
+                  <p className="text-xs text-gray-400 italic">No media uploaded yet</p>
+                )}
+              </div>
+
+              {/* Notes Section */}
+              <div>
+                <h3 className="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2 flex items-center gap-1.5">
+                  <MessageSquare className="w-3.5 h-3.5" /> Notes
+                </h3>
+                <TaskNotesPanel taskId={reviewTask.id} taskName={reviewTask.task} currentUserName={currentUserName} assignedTo={reviewTask.assigned} inline />
+              </div>
+            </div>
+          )}
         </DialogContent>
       </Dialog>
     </div>

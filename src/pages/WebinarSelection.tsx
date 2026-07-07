@@ -4,17 +4,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Calendar, TrendingUp, Calculator } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEOHead from "@/components/SEOHead";
 
 const WebinarSelection = () => {
   const webinars = [
     {
       id: "oak-investment",
-      title: "Oak Real Estate Partners Daily LIVE Webinar",
+      title: "Oak Real Estate Partners Investor Webinar",
       description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
       icon: Calendar,
       color: "text-graphite-fog",
       bgColor: "bg-graphite-fog/10",
-      link: "https://www.oakrepartners.com/invest-webinar"
+      link: "/webinar-registration?type=oak-investment"
     },
     {
       id: "red-oak-investor",
@@ -38,6 +39,11 @@ const WebinarSelection = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
+      <SEOHead
+        title="Upcoming Webinars"
+        description="Browse and register for upcoming Oak Real Estate Partners webinars on investment strategy and market updates."
+        canonicalUrl="/webinars"
+      />
       <Navigation />
       
       {/* Hero Section */}
@@ -75,25 +81,14 @@ const WebinarSelection = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    {webinar.link.startsWith("http") ? (
-                      <a href={webinar.link}>
-                        <Button 
-                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
-                          size="lg"
-                        >
-                          Register Now
-                        </Button>
-                      </a>
-                    ) : (
-                      <Link to={webinar.link}>
-                        <Button 
-                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
-                          size="lg"
-                        >
-                          Register Now
-                        </Button>
-                      </Link>
-                    )}
+                    <Link to={webinar.link}>
+                      <Button 
+                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                        size="lg"
+                      >
+                        Register Now
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               );

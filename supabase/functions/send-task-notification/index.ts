@@ -87,6 +87,23 @@ serve(async (req) => {
           </div>
         </div>
       `;
+    } else if (type === "image_uploaded") {
+      subject = `📸 New Images Uploaded: ${taskName}`;
+      html = `
+        <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+          <div style="background: linear-gradient(135deg, #a85839, #e8c468); padding: 20px 25px; border-radius: 8px 8px 0 0;">
+            <h2 style="color: white; margin: 0; font-size: 18px;">📸 Images Ready for Review</h2>
+          </div>
+          <div style="background: #ffffff; padding: 25px; border: 1px solid #e5e7eb; border-top: none; border-radius: 0 0 8px 8px;">
+            <p style="color: #374151; font-size: 14px; margin: 0 0 15px;"><strong>Task:</strong> ${taskName}</p>
+            <p style="color: #374151; font-size: 14px; margin: 0 0 15px;"><strong>Uploaded by:</strong> ${oldValue || "Team"}</p>
+            <p style="color: #374151; font-size: 14px; margin: 0 0 15px;"><strong>Images added:</strong> ${newValue || "1"}</p>
+            <p style="color: #6b7280; font-size: 13px; margin: 0 0 15px;">Please review and approve/reject the uploaded images on the task board.</p>
+            <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 20px 0;" />
+            <p style="color: #9ca3af; font-size: 11px; margin: 0;">Oak Real Estate Partners · Fortified Capital Marketing</p>
+          </div>
+        </div>
+      `;
     } else {
       return new Response(
         JSON.stringify({ success: false, reason: "Unknown notification type" }),

@@ -6,6 +6,7 @@ import { Calendar, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import philadelphiaMidrise from "@/assets/philadelphia-building.png";
+import SEOHead from "@/components/SEOHead";
 
 const BlogPhiladelphiaMidrise = () => {
   useEffect(() => {
@@ -14,6 +15,11 @@ const BlogPhiladelphiaMidrise = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title="Bridge Loan for Philadelphia Midrise"
+        description="The Oak Companies provides a bridge loan for a midrise commercial real estate property in Philadelphia."
+        canonicalUrl="/blog/philadelphia-midrise"
+      />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
         <Navigation />

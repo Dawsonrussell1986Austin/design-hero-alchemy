@@ -28,7 +28,12 @@ const WebinarFloatingCTA = () => {
   }, []);
 
   // Don't show on webinar registration page or landing pages
-  if (location.pathname === '/webinar-registration' || location.pathname === '/invest-webinar' || location.pathname === '/market-correction-report' || location.pathname === '/thank-you-report' || location.pathname === '/cinnamonroll') {
+  const hiddenPaths = [
+    '/webinar-registration', '/market-correction-report', '/thank-you-report', '/cinnamonroll',
+    '/every-dollar-has-an-address', '/aligned-fee-structure', '/know-what-you-own',
+    '/invest-alongside-institutions', '/capital-on-your-timeline',
+  ];
+  if (hiddenPaths.includes(location.pathname)) {
     return null;
   }
 
@@ -36,7 +41,7 @@ const WebinarFloatingCTA = () => {
 
   return (
     <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-4xl px-4" style={{ animation: 'fadeIn 0.3s ease-out' }}>
-      <div className="bg-gradient-to-r from-gold-accent to-gold-accent/90 text-cream rounded-xl shadow-2xl border-2 border-white/20 overflow-hidden">
+      <div className="bg-abyss text-cream rounded-xl shadow-2xl border border-graphite-fog/30 overflow-hidden">
         <div className="relative">
           {/* Close Button */}
           <button
@@ -53,7 +58,7 @@ const WebinarFloatingCTA = () => {
           <div className="p-4 pr-12">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
               {/* Icon */}
-              <div className="flex-shrink-0 w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
+              <div className="flex-shrink-0 w-10 h-10 bg-graphite-fog/30 rounded-lg flex items-center justify-center">
                 <Calendar className="h-5 w-5" />
               </div>
 
@@ -68,13 +73,13 @@ const WebinarFloatingCTA = () => {
               </div>
 
               {/* CTA Button */}
-              <a
-                href="https://www.oakrepartners.com/invest-webinar"
-                className="flex-shrink-0 inline-flex items-center gap-2 bg-cream text-gold-accent px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-silver-mist transition-all hover:shadow-lg group"
+              <Link 
+                to="/webinar-registration?type=oak-investment"
+                className="flex-shrink-0 inline-flex items-center gap-2 bg-gold-accent text-abyss px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-gold-warm transition-all hover:shadow-lg group"
               >
                 Register Today
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

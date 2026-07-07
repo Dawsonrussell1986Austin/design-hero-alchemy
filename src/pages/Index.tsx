@@ -7,7 +7,7 @@ const Index = () => {
     <div>
       <SEOHead 
         canonicalUrl="/"
-        description="Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private credit opportunities."
+        description="Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private equity opportunities."
       />
       <OrganizationSchema />
       <FinancialServiceSchema />

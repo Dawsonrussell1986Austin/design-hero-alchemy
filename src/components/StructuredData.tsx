@@ -7,9 +7,9 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Oak Real Estate Partners',
     alternateName: 'Oak REP',
-    url: 'https://oakrepartners.com',
-    logo: 'https://oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
-    description: 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions including bridge loans, HUD financing, and private credit opportunities.',
+    url: 'https://oakrealestatepartners.com',
+    logo: 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+    description: 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions including bridge loans, HUD financing, and private equity opportunities.',
     foundingDate: '2020',
     sameAs: [
       'https://www.linkedin.com/company/oak-real-estate-partners',
@@ -27,7 +27,7 @@ export function OrganizationSchema() {
       'Bridge Loans',
       'HUD Financing',
       'FHA Loans',
-      'Private Credit',
+      'Private Equity',
       'Real Estate Investment',
     ],
   };
@@ -45,8 +45,8 @@ export function FinancialServiceSchema() {
     '@context': 'https://schema.org',
     '@type': 'FinancialService',
     name: 'Oak Real Estate Partners',
-    description: 'Commercial real estate lending services including bridge loans, HUD/FHA financing, and private credit solutions.',
-    url: 'https://oakrepartners.com',
+    description: 'Commercial real estate lending services including bridge loans, HUD/FHA financing, and private equity solutions.',
+    url: 'https://oakrealestatepartners.com',
     priceRange: '$$$',
     areaServed: {
       '@type': 'Country',
@@ -57,7 +57,7 @@ export function FinancialServiceSchema() {
       'Bridge Loans',
       'HUD Financing',
       'FHA Loans',
-      'Private Credit',
+      'Private Equity',
     ],
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -83,8 +83,8 @@ export function FinancialServiceSchema() {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Private Credit Investment',
-            description: 'Private credit investment opportunities in commercial real estate',
+            name: 'Private Equity Investment',
+            description: 'Private equity investment opportunities in commercial real estate',
           },
         },
       ],
@@ -116,7 +116,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://oakrepartners.com${item.url}`,
+      item: `https://oakrealestatepartners.com${item.url}`,
     })),
   };
 
@@ -163,13 +163,13 @@ export function ArticleSchema({
       name: 'Oak Real Estate Partners',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+        url: 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
       },
     },
-    image: image || 'https://oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+    image: image || 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://oakrepartners.com${url}`,
+      '@id': `https://oakrealestatepartners.com${url}`,
     },
   };
 
@@ -203,11 +203,11 @@ export function PersonSchema({
     jobTitle,
     description,
     image,
-    url: `https://oakrepartners.com${url}`,
+    url: `https://oakrealestatepartners.com${url}`,
     worksFor: {
       '@type': 'Organization',
       name: 'Oak Real Estate Partners',
-      url: 'https://oakrepartners.com',
+      url: 'https://oakrealestatepartners.com',
     },
   };
 
@@ -255,7 +255,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Oak Real Estate Partners',
-    url: 'https://oakrepartners.com',
+    url: 'https://oakrealestatepartners.com',
     description: 'Commercial real estate lending and investment solutions',
     publisher: {
       '@type': 'Organization',

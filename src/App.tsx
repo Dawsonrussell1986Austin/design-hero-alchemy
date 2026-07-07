@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import WebinarFloatingCTA from "./components/WebinarFloatingCTA";
+
 import Index from "./pages/Index";
 import HomepageDraft from "./pages/HomepageDraft";
 import HomepageDraft2 from "./pages/HomepageDraft2";
@@ -33,7 +33,6 @@ import Disclaimer from "./pages/Disclaimer";
 import News from "./pages/News";
 import WebinarRegistration from "./pages/WebinarRegistration";
 import WebinarSelection from "./pages/WebinarSelection";
-import InvestWebinar from "./pages/InvestWebinar";
 import NotFound from "./pages/NotFound";
 import Investors from "./pages/Investors";
 import InvestorEducation from "./pages/InvestorEducation";
@@ -76,12 +75,20 @@ import MarketCorrection from "./pages/MarketCorrection";
 import ThankYouReport from "./pages/ThankYouReport";
 import Brownie from "./pages/Brownie";
 import HomepageDraft3 from "./pages/HomepageDraft3";
+import AdCreatives from "./pages/AdCreatives";
+import ThankYouInvestorAccess from "./pages/ThankYouInvestorAccess";
+import LandingNamedCollateral from "./pages/LandingNamedCollateral";
+import LandingFeeStructure from "./pages/LandingFeeStructure";
+import LandingTransparency from "./pages/LandingTransparency";
+import LandingInstitutional from "./pages/LandingInstitutional";
+import LandingLiquidity from "./pages/LandingLiquidity";
+import CampaignEmails from "./pages/CampaignEmails";
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <WebinarFloatingCTA />
+      
       <Toaster />
       <Sonner />
       <Routes>
@@ -98,7 +105,6 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/webinars" element={<WebinarSelection />} />
         <Route path="/webinar-registration" element={<WebinarRegistration />} />
-        <Route path="/invest-webinar" element={<InvestWebinar />} />
         <Route path="/news" element={<News />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/private-credit-lending-gap" element={<BlogPrivateCreditLendingGap />} />
@@ -155,6 +161,14 @@ function App() {
         <Route path="/market-correction-report" element={<MarketCorrection />} />
         <Route path="/thank-you-report" element={<ThankYouReport />} />
         <Route path="/cinnamonroll" element={<Brownie />} />
+        <Route path="/ad-creatives" element={<AdCreatives />} />
+        <Route path="/thank-you-investor-access" element={<ThankYouInvestorAccess />} />
+        <Route path="/every-dollar-has-an-address" element={<LandingNamedCollateral />} />
+        <Route path="/aligned-fee-structure" element={<LandingFeeStructure />} />
+        <Route path="/know-what-you-own" element={<LandingTransparency />} />
+        <Route path="/invest-alongside-institutions" element={<LandingInstitutional />} />
+        <Route path="/capital-on-your-timeline" element={<LandingLiquidity />} />
+        <Route path="/campaign-emails" element={<CampaignEmails />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
