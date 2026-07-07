@@ -207,6 +207,51 @@ export type Database = {
         }
         Relationships: []
       }
+      calendly_webhook_events: {
+        Row: {
+          analytics_event_name: string | null
+          analytics_payload: Json
+          booking_source: string
+          calendly_event_type: string
+          calendly_event_uri: string | null
+          calendly_invitee_uri: string | null
+          created_at: string
+          id: string
+          invitee_email_hash: string | null
+          payload: Json
+          processed_at: string
+          status: string
+        }
+        Insert: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
+          booking_source?: string
+          calendly_event_type: string
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          invitee_email_hash?: string | null
+          payload?: Json
+          processed_at?: string
+          status: string
+        }
+        Update: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
+          booking_source?: string
+          calendly_event_type?: string
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          invitee_email_hash?: string | null
+          payload?: Json
+          processed_at?: string
+          status?: string
+        }
+        Relationships: []
+      }
       contact_submissions: {
         Row: {
           company: string | null
