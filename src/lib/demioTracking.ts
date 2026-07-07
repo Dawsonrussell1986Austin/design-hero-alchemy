@@ -90,7 +90,6 @@ export const trackDemioRegistrations = () => {
         if (this.status >= 200 && this.status < 300) fireLead();
       });
     }
-    // @ts-expect-error passthrough to native signature
     return OriginalSend.apply(this, args);
   };
 };
