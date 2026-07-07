@@ -74,6 +74,44 @@ export type Database = {
         }
         Relationships: []
       }
+      brownie_task_image_approvals: {
+        Row: {
+          created_at: string
+          id: string
+          image_url: string
+          reviewed_at: string | null
+          reviewed_by: string | null
+          status: string
+          task_id: number
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          image_url: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
+          task_id: number
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          image_url?: string
+          reviewed_at?: string | null
+          reviewed_by?: string | null
+          status?: string
+          task_id?: number
+        }
+        Relationships: [
+          {
+            foreignKeyName: "brownie_task_image_approvals_task_id_fkey"
+            columns: ["task_id"]
+            isOneToOne: false
+            referencedRelation: "brownie_tasks"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       brownie_task_notes: {
         Row: {
           author: string
@@ -112,7 +150,8 @@ export type Database = {
           category: string
           due_date: string | null
           id: number
-          link_url: string | null
+          image_urls: string[] | null
+          link_urls: string[] | null
           platform: string
           priority: string
           status: string
@@ -123,7 +162,8 @@ export type Database = {
           category: string
           due_date?: string | null
           id: number
-          link_url?: string | null
+          image_urls?: string[] | null
+          link_urls?: string[] | null
           platform: string
           priority: string
           status?: string
@@ -134,7 +174,8 @@ export type Database = {
           category?: string
           due_date?: string | null
           id?: number
-          link_url?: string | null
+          image_urls?: string[] | null
+          link_urls?: string[] | null
           platform?: string
           priority?: string
           status?: string
@@ -163,6 +204,51 @@ export type Database = {
           id?: string
           updated_at?: string
           user_id?: string
+        }
+        Relationships: []
+      }
+      calendly_webhook_events: {
+        Row: {
+          analytics_event_name: string | null
+          analytics_payload: Json
+          booking_source: string
+          calendly_event_type: string
+          calendly_event_uri: string | null
+          calendly_invitee_uri: string | null
+          created_at: string
+          id: string
+          invitee_email_hash: string | null
+          payload: Json
+          processed_at: string
+          status: string
+        }
+        Insert: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
+          booking_source?: string
+          calendly_event_type: string
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          invitee_email_hash?: string | null
+          payload?: Json
+          processed_at?: string
+          status: string
+        }
+        Update: {
+          analytics_event_name?: string | null
+          analytics_payload?: Json
+          booking_source?: string
+          calendly_event_type?: string
+          calendly_event_uri?: string | null
+          calendly_invitee_uri?: string | null
+          created_at?: string
+          id?: string
+          invitee_email_hash?: string | null
+          payload?: Json
+          processed_at?: string
+          status?: string
         }
         Relationships: []
       }

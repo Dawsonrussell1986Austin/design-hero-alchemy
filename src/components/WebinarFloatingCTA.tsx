@@ -68,13 +68,13 @@ const WebinarFloatingCTA = () => {
               </div>
 
               {/* CTA Button */}
-              <Link 
-                to="/webinar-registration?type=oak-investment"
+              <a
+                href="https://www.oakrepartners.com/invest-webinar"
                 className="flex-shrink-0 inline-flex items-center gap-2 bg-cream text-gold-accent px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-silver-mist transition-all hover:shadow-lg group"
               >
                 Register Today
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

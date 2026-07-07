@@ -78,7 +78,6 @@ export const trackDemioRegistrations = () => {
     ...rest: unknown[]
   ) {
     this.__demioReg = isRegistrationRequest(String(url), method);
-    // @ts-expect-error passthrough to native signature
     return OriginalOpen.call(this, method, url, ...rest);
   };
 
@@ -91,7 +90,6 @@ export const trackDemioRegistrations = () => {
         if (this.status >= 200 && this.status < 300) fireLead();
       });
     }
-    // @ts-expect-error passthrough to native signature
     return OriginalSend.apply(this, args);
   };
 };
