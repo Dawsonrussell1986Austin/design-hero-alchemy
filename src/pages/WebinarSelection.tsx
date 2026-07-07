@@ -9,12 +9,12 @@ const WebinarSelection = () => {
   const webinars = [
     {
       id: "oak-investment",
-      title: "Oak Real Estate Partners Investor Webinar",
+      title: "Oak Real Estate Partners Daily LIVE Webinar",
       description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
       icon: Calendar,
       color: "text-graphite-fog",
       bgColor: "bg-graphite-fog/10",
-      link: "/webinar-registration?type=oak-investment"
+      link: "https://www.oakrepartners.com/invest-webinar"
     },
     {
       id: "red-oak-investor",
@@ -75,14 +75,25 @@ const WebinarSelection = () => {
                     </CardDescription>
                   </CardHeader>
                   <CardContent className="pt-0">
-                    <Link to={webinar.link}>
-                      <Button 
-                        className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
-                        size="lg"
-                      >
-                        Register Now
-                      </Button>
-                    </Link>
+                    {webinar.link.startsWith("http") ? (
+                      <a href={webinar.link}>
+                        <Button 
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </a>
+                    ) : (
+                      <Link to={webinar.link}>
+                        <Button 
+                          className="w-full bg-gold-accent hover:bg-gold-accent/90 text-silver-mist font-body"
+                          size="lg"
+                        >
+                          Register Now
+                        </Button>
+                      </Link>
+                    )}
                   </CardContent>
                 </Card>
               );
