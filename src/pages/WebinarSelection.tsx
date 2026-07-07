@@ -11,11 +11,11 @@ const WebinarSelection = () => {
     {
       id: "oak-investment",
       title: "Oak Real Estate Partners Investor Webinar",
-      description: "In-depth analysis of investment opportunities, deal structures, and strategic portfolio management.",
+      description: "Join our live daily session for an in-depth look at investment opportunities, deal structures, and strategic portfolio management.",
       icon: Calendar,
       color: "text-graphite-fog",
       bgColor: "bg-graphite-fog/10",
-      link: "/webinar-registration?type=oak-investment"
+      link: "/invest-webinar"
     },
     {
       id: "red-oak-investor",

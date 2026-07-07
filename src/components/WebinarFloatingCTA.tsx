@@ -27,9 +27,9 @@ const WebinarFloatingCTA = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  // Don't show on webinar registration page or landing pages
+  // Don't show on the webinar page itself, registration page, or landing pages
   const hiddenPaths = [
-    '/webinar-registration', '/market-correction-report', '/thank-you-report', '/cinnamonroll',
+    '/invest-webinar', '/webinar-registration', '/market-correction-report', '/thank-you-report', '/cinnamonroll',
     '/every-dollar-has-an-address', '/aligned-fee-structure', '/know-what-you-own',
     '/invest-alongside-institutions', '/capital-on-your-timeline',
   ];
@@ -65,16 +65,16 @@ const WebinarFloatingCTA = () => {
               {/* Content */}
               <div className="flex-1">
                 <h3 className="font-display font-semibold text-base leading-tight">
-                  Join Our Next Investor Webinar
+                  Join Our LIVE Daily Investor Webinar
                 </h3>
                 <p className="font-body text-xs text-cream/90 mt-0.5">
-                  Get exclusive insights into Oak's investment opportunities
+                  See how Oak generates income backed by hard-asset commercial real estate
                 </p>
               </div>
 
               {/* CTA Button */}
-              <Link 
-                to="/webinar-registration?type=oak-investment"
+              <Link
+                to="/invest-webinar"
                 className="flex-shrink-0 inline-flex items-center gap-2 bg-gold-accent text-abyss px-5 py-2.5 rounded-lg font-body font-semibold text-sm hover:bg-gold-warm transition-all hover:shadow-lg group"
               >
                 Register Today

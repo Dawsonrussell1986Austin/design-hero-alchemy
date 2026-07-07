@@ -3,6 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
+import WebinarFloatingCTA from "./components/WebinarFloatingCTA";
 
 import Index from "./pages/Index";
 import HomepageDraft from "./pages/HomepageDraft";
@@ -35,6 +36,7 @@ import WebinarRegistration from "./pages/WebinarRegistration";
 import WebinarSelection from "./pages/WebinarSelection";
 import NotFound from "./pages/NotFound";
 import Investors from "./pages/Investors";
+import InvestWebinar from "./pages/InvestWebinar";
 import InvestorEducation from "./pages/InvestorEducation";
 import Media from "./pages/Media";
 import RobertKaplan from "./pages/RobertKaplan";
@@ -88,7 +90,8 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      
+      <WebinarFloatingCTA />
+
       <Toaster />
       <Sonner />
       <Routes>
@@ -143,6 +146,7 @@ function App() {
         <Route path="/disclosures" element={<Disclosures />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/investors" element={<Investors />} />
+        <Route path="/invest-webinar" element={<InvestWebinar />} />
         <Route path="/investor-education" element={<InvestorEducation />} />
         <Route path="/videos/:categoryId" element={<VideoCategory />} />
         <Route path="/media" element={<Media />} />

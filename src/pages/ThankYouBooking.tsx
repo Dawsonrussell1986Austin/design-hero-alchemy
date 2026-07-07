@@ -23,9 +23,9 @@ const ThankYouBooking = () => {
     {
       icon: Video,
       title: "Investor Webinar",
-      description: "Register for our next quarterly investor webinar to hear directly from our leadership team.",
+      description: "Register for our live daily investor webinar to hear directly from our leadership team.",
       linkText: "Register Now",
-      href: "/webinar-registration?type=oak-investment",
+      href: "/invest-webinar",
       internal: true,
     },
     {
