@@ -78,7 +78,6 @@ export const trackDemioRegistrations = () => {
     ...rest: unknown[]
   ) {
     this.__demioReg = isRegistrationRequest(String(url), method);
-    // @ts-expect-error passthrough to native signature
     return OriginalOpen.call(this, method, url, ...rest);
   };
 
