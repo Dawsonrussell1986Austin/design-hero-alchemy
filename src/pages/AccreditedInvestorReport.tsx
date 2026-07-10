@@ -44,11 +44,12 @@ const AccreditedInvestorReport = () => {
           <iframe
             src="https://go.oakrepartners.com/l/1105131/2026-07-09/b57s1v"
             width="100%"
-            height="500"
+            height="800"
             title="Accredited Investor Report Form"
             frameBorder="0"
+            scrolling="no"
             allowTransparency
-            style={{ border: 0 }}
+            style={{ border: 0, overflow: "hidden" }}
           />
         </div>
       </section>
