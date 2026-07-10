@@ -83,6 +83,8 @@ import LandingTransparency from "./pages/LandingTransparency";
 import LandingInstitutional from "./pages/LandingInstitutional";
 import LandingLiquidity from "./pages/LandingLiquidity";
 import CampaignEmails from "./pages/CampaignEmails";
+import AccreditedInvestorReport from "./pages/AccreditedInvestorReport";
+import InvestorReportForm from "./pages/InvestorReportForm";
 
 function App() {
   return (
@@ -169,6 +171,8 @@ function App() {
         <Route path="/invest-alongside-institutions" element={<LandingInstitutional />} />
         <Route path="/capital-on-your-timeline" element={<LandingLiquidity />} />
         <Route path="/campaign-emails" element={<CampaignEmails />} />
+        <Route path="/accredited-investor-report" element={<AccreditedInvestorReport />} />
+        <Route path="/investor-report" element={<InvestorReportForm />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
