@@ -128,13 +128,6 @@ const InvestWebinar = () => {
                 Join a live webinar to see how Oak Real Estate Partners generates
                 income backed by hard-asset commercial real estate.
               </p>
-
-              <p className="text-sm sm:text-base text-silver-mist/70 leading-relaxed font-body max-w-lg">
-                Private commercial real estate credit, backed by hard assets and
-                guided by institutional discipline — from a team that has
-                successfully navigated eight market cycles over 35 years. Real estate
-                lending that improves communities, and the American economy.
-              </p>
             </div>
 
             {/* Right — registration form */}
