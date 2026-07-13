@@ -100,8 +100,8 @@ const InvestWebinar = () => {
 
         <div className="container mx-auto max-w-6xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-            {/* Left — copy */}
-            <div className="space-y-6">
+            {/* Left — copy (below the form on mobile) */}
+            <div className="space-y-6 order-2 lg:order-1">
               <div className="inline-flex items-center gap-2 rounded-full border border-gold-accent/40 bg-gold-accent/10 px-4 py-1.5 text-xs font-body uppercase tracking-[0.2em] text-gold-accent">
                 Looking for Income?
               </div>
@@ -130,8 +130,8 @@ const InvestWebinar = () => {
               </p>
             </div>
 
-            {/* Right — registration form */}
-            <div id="register-hero" className="bg-silver-mist rounded-xl shadow-2xl p-8">
+            {/* Right — registration form (first on mobile) */}
+            <div id="register-hero" className="bg-silver-mist rounded-xl shadow-2xl p-8 order-1 lg:order-2">
               <h2 className="text-2xl font-display font-medium text-abyss mb-2">
                 Join Our Investor Webinar
               </h2>
