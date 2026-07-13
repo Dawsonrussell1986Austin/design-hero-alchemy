@@ -71,6 +71,7 @@ import ThankYouDownload from "./pages/ThankYouDownload";
 import CedarMillCaseStudy from "./pages/CedarMillCaseStudy";
 import ThankYouBooking from "./pages/ThankYouBooking";
 import Invest from "./pages/Invest";
+import InvestWebinar from "./pages/InvestWebinar";
 import MarketCorrection from "./pages/MarketCorrection";
 import ThankYouReport from "./pages/ThankYouReport";
 import Brownie from "./pages/Brownie";
@@ -160,6 +161,7 @@ function App() {
         <Route path="/cedar-mill-case-study" element={<CedarMillCaseStudy />} />
         <Route path="/thank-you-booking" element={<ThankYouBooking />} />
         <Route path="/invest" element={<Invest />} />
+        <Route path="/invest-webinar" element={<InvestWebinar />} />
         <Route path="/market-correction-report" element={<MarketCorrection />} />
         <Route path="/thank-you-report" element={<ThankYouReport />} />
         <Route path="/cinnamonroll" element={<Brownie />} />
