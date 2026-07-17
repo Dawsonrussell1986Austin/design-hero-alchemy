@@ -58,7 +58,6 @@ import OurSubsidiaries from "./pages/OurSubsidiaries";
 import ThankYou from "./pages/ThankYou";
 import VideoPage from "./pages/VideoPage";
 import VideoCategory from "./pages/VideoCategory";
-import OakChristmasParty from "./pages/OakChristmasParty";
 import Blog from "./pages/Blog";
 import BlogPrivateCreditLendingGap from "./pages/BlogPrivateCreditLendingGap";
 import BlogOakFindsOpportunity from "./pages/BlogOakFindsOpportunity";
@@ -151,7 +150,6 @@ function App() {
         <Route path="/media" element={<Media />} />
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/video" element={<VideoPage />} />
-        <Route path="/oak-christmas-party" element={<OakChristmasParty />} />
         <Route path="/oak-parallel-bridge-credit-fund" element={<OakParallelBridgeCreditFund />} />
         <Route path="/oak-parallel-bridge-credit-fund-fact-sheet" element={<OakParallelBridgeFactSheet />} />
         <Route path="/oak-institutional-credit-solutions" element={<OakInstitutionalCreditSolutions />} />
