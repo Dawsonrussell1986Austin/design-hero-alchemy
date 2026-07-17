@@ -5,7 +5,8 @@ Core focus areas (from site meta): commercial real estate, bridge loans, HUD fin
 ## Main Pages
 - [Home](https://oakrepartners.com/): Overview of Oak's commercial real estate lending and investment platform — bridge loans, HUD financing, and private credit for institutional partners.
 - [Transaction Portfolio](https://oakrepartners.com/transactions): Track record of commercial real estate loans reflecting disciplined underwriting and strategic asset selection, with a focus on capital preservation and risk-adjusted returns. Includes transactions from Oak and affiliated entities.
-- [Offerings](https://oakrepartners.com/offerings): Institutional investment offerings, including Oak Institutional Credit Solutions, LLC and the Oak Parallel Bridge Credit Fund.
+- [Oak Institutional Credit Solutions](https://oakrepartners.com/oak-institutional-credit-solutions): Institutional investment offering for non-ERISA accounts (foundations, endowments, insurance, trust, and taxable accounts).
+- [Oak Parallel Bridge Credit Fund](https://oakrepartners.com/oak-parallel-bridge-credit-fund): Institutional investment offering for ERISA accounts (public and corporate pension plans, IRAs, and qualified accounts).
 ## Solutions & Keywords
 - Commercial real estate lending — national balance sheet lender delivering CRE debt and equity capital solutions.
 - Bridge loans — short-term, structured financing for the acquisition, refinance, repositioning, and stabilization of transitional commercial real estate assets.
