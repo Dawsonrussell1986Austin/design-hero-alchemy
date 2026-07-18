@@ -1,17 +1,70 @@
 # Oak Real Estate Partners
 > Oak Real Estate Partners is a national balance sheet lender providing commercial real estate lending and investment solutions — including bridge loans, HUD financing, and private credit opportunities designed for institutional-caliber partners.
+
 Oak Real Estate Partners delivers commercial real estate finance and investment across both debt and equity capital. The firm's alternative investment platform is built around lending strategies engineered specifically for alternative assets and structured to align with institutional investment objectives. The team has sponsored numerous institutionally backed investment vehicles, deploying more than $10 billion in debt and equity transactions, and operates alongside affiliated entities including Red Oak Capital Holdings and Johnson Capital Multifamily.
+
+Oak concentrates on the small-balance segment of the commercial real estate lending gap — senior-secured bridge loans generally sized from $2M to $20M (up to $50M+) — that has been left underserved as banks retrench. Loans are first-lien, SOFR-indexed, and backed by specific, named collateral, with term sheets typically issued in about 48 hours and closings in roughly 30 days.
+
 Core focus areas (from site meta): commercial real estate, bridge loans, HUD financing, private credit, real estate investment, and commercial lending.
-## Main Pages
+
+## Company
 - [Home](https://oakrepartners.com/): Overview of Oak's commercial real estate lending and investment platform — bridge loans, HUD financing, and private credit for institutional partners.
-- [Transaction Portfolio](https://oakrepartners.com/transactions): Track record of commercial real estate loans reflecting disciplined underwriting and strategic asset selection, with a focus on capital preservation and risk-adjusted returns. Includes transactions from Oak and affiliated entities.
-- [Oak Institutional Credit Solutions](https://oakrepartners.com/oak-institutional-credit-solutions): Institutional investment offering for non-ERISA accounts (foundations, endowments, insurance, trust, and taxable accounts).
-- [Oak Parallel Bridge Credit Fund](https://oakrepartners.com/oak-parallel-bridge-credit-fund): Institutional investment offering for ERISA accounts (public and corporate pension plans, IRAs, and qualified accounts).
+- [About](https://oakrepartners.com/about): Firm overview — a vertically integrated CRE credit platform focused on the $2M–$20M bridge market, the small-balance slice of the CRE lending gap left by bank retrenchment.
+- [Leadership](https://oakrepartners.com/leadership): Executive team spanning eight market cycles and more than $25B in combined commercial real estate financings.
+- [Subsidiaries](https://oakrepartners.com/subsidiaries): Oak's permanent-financing engine that converts bridge loans into long-term, government-backed capital; profiles affiliated Red Oak Capital Holdings.
+- [Transaction Portfolio](https://oakrepartners.com/transactions): Track record of closed commercial real estate loans across multiple property types and regions, emphasizing disciplined underwriting, capital preservation, and risk-adjusted returns.
+- [News](https://oakrepartners.com/news): Press releases and closing announcements from Oak and affiliated entities.
+- [Insights & Articles](https://oakrepartners.com/blog): Articles on the commercial real estate lending gap, private credit, and Oak's approach to transitional assets.
+- [Contact](https://oakrepartners.com/contact): Inquiries for bridge financing and investment.
+
+### Leadership roster (site display order)
+- Gary Bechtel — Chief Executive Officer
+- Raymond Davis — President & Chief Strategy Officer
+- Paul Cleary — Chief Operating Officer & General Counsel
+- Tom McGovern — Chief Financial Officer
+- Robert R. Kaplan — Senior Advisor, Legal Affairs
+- Matthew Webster — EVP, Chief Credit Officer
+- Kevin Kennedy — Chief Sales & Distribution Officer
+- Brook Scardina — Capital Markets & Investments
+
+## Lending — Bridge
+- [Lending Overview](https://oakrepartners.com/lending): Senior-secured CRE bridge loans, $2M–$20M, term sheets in ~48 hours, 55–75% stabilized LTV, SOFR-indexed, with five programs and a ~30-day close.
+- [Bridge Loans](https://oakrepartners.com/lending/bridge): Short-term financing for the acquisition, renovation, repositioning, and stabilization of transitional CRE assets across four programs.
+- [Core Bridge](https://oakrepartners.com/lending/bridge/core-bridge): Floating-rate program for transitional, cash-flowing assets; SOFR + 450–550 bps, up to 80% LTV / 75% LTC, 12–36 month term.
+- [Core-Plus Bridge](https://oakrepartners.com/lending/bridge/core-plus-bridge): For transitional assets not yet cash-flowing; SOFR + 500–600 bps, up to 75% LTV / 85% LTC, 24–36 month term.
+- [Opportunistic Bridge](https://oakrepartners.com/lending/bridge/opportunistic-bridge): Higher-leverage program for substantial value creation with a small lender equity component; SOFR + 600–700 bps, up to 85% LTV / 90% LTC, 18–36 month term.
+- [Participating Bridge](https://oakrepartners.com/lending/bridge/participating-bridge): Higher-leverage program with a larger equity component exchanged for 15–25% participation in value creation; SOFR + 700 bps, up to 90% LTV / 100% LTC, 24–48 month term.
+
+## Lending — FHA / HUD (via Johnson Capital Multifamily)
+- [FHA / HUD Loans](https://oakrepartners.com/lending/fha-hud): Long-term, government-backed, non-recourse financing (up to 40-year fixed) for multifamily, affordable housing, senior living, and healthcare properties.
+- [HUD 221(d)(4) & 220](https://oakrepartners.com/lending/fha-hud/hud-221): New construction or substantial rehabilitation of multifamily; up to 90% loan-to-cost with 40-year amortization.
+- [HUD 241(a)](https://oakrepartners.com/lending/fha-hud/hud-241a): Supplemental financing for improvements, rehab, or additional units on a property with an existing HUD-insured first mortgage.
+- [HUD 232/221(d)(4)](https://oakrepartners.com/lending/fha-hud/hud-232-221): New construction or substantial rehab of nursing homes, assisted-living, and board-and-care facilities; construction-to-permanent.
+- [HUD 232/223(a)(7)](https://oakrepartners.com/lending/fha-hud/hud-232-223a7): Streamlined refinance of existing HUD-insured senior living and healthcare loans.
+- [HUD 232/223(f)](https://oakrepartners.com/lending/fha-hud/hud-232-223f): Refinance or acquisition of existing multifamily (5+ units) with demonstrated operating performance.
+
+## Investments & Offerings
+- [Why Oak](https://oakrepartners.com/whyoak): The platform thesis — insurance SMA infrastructure, co-investment capital, FHA/HUD permanent financing, and principal-governed underwriting for the $2M–$20M bridge segment.
+- [Investing](https://oakrepartners.com/investing): Senior-secured, first-lien CRE debt with named collateral and institutional underwriting; available to RIAs, family offices, foundations, and endowments.
+- [Investor Education](https://oakrepartners.com/investor-education): Video library covering Oak's strategy, credit analysis, and risk management.
+- [Oak Institutional Credit Solutions](https://oakrepartners.com/oak-institutional-credit-solutions): Institutional investment offering and onboarding for non-ERISA accounts (foundations, endowments, insurance, trusts, and taxable accounts).
+- [Oak Parallel Bridge Credit Fund](https://oakrepartners.com/oak-parallel-bridge-credit-fund): Institutional investment offering and onboarding for ERISA accounts (public and corporate pension plans, IRAs, and qualified accounts).
+- [Oak Parallel Bridge Credit Fund — Fact Sheet](https://oakrepartners.com/oak-parallel-bridge-credit-fund-fact-sheet): Downloadable fund fact sheet.
+- [Cedar Mill Case Study](https://oakrepartners.com/cedar-mill-case-study): "Ciel of Cedar Mill" transaction case study.
+
+## Investor Positioning
+- [Every Dollar Has an Address](https://oakrepartners.com/every-dollar-has-an-address): No blind pools — every investment is backed by a specific, identifiable commercial real estate property (named collateral).
+- [Aligned Fee Structure](https://oakrepartners.com/aligned-fee-structure): Investor-aligned economics without hidden fees or carried-interest drag.
+- [Know What You Own](https://oakrepartners.com/know-what-you-own): Institutional-grade underwriting with no hidden leverage and full transparency into holdings.
+- [Invest Alongside Institutions](https://oakrepartners.com/invest-alongside-institutions): Access to the same senior-secured, real-asset-backed structures used by insurers, foundations, and endowments.
+- [Capital on Your Timeline](https://oakrepartners.com/capital-on-your-timeline): Shorter-duration credit (typically 12–36 months) with no capital calls or decade-long lockups.
+
 ## Solutions & Keywords
 - Commercial real estate lending — national balance sheet lender delivering CRE debt and equity capital solutions.
 - Bridge loans — short-term, structured financing for the acquisition, refinance, repositioning, and stabilization of transitional commercial real estate assets.
 - HUD financing — long-term, government-backed (FHA/HUD-insured) financing for multifamily, affordable housing, senior living, and healthcare properties, offered through affiliated Johnson Capital Multifamily.
 - Private credit — alternative-asset lending strategies in the lower/small-balance segment, built for institutional-caliber partners.
 - Real estate investment — debt and equity capital solutions originated for CRE investments by an experienced team of financing experts.
+
 ## Optional
 - [Red Oak Capital Holdings](https://www.redoakcapitalholdings.com/): Affiliated structured-finance platform providing short-term bridge loans and HUD takeout financing for commercial real estate.
