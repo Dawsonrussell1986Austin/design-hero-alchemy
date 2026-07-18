@@ -1123,38 +1123,39 @@
     };
   }
 
+  var submitting = false;
   form.addEventListener("submit", function (ev) {
     ev.preventDefault();
+    if (submitting) return;                 // ignore repeat presses while one is in flight
     if (form.querySelector('input[name="company"]').value) { return; }
     if (!validate()) {
       var firstErr = form.querySelector(".err.show");
       if (firstErr && !reduceMotion) firstErr.scrollIntoView({ behavior: "smooth", block: "center" });
       return;
     }
+    submitting = true;                       // lock so a second press can't fire another RSVP
+    if (sealBtn) sealBtn.disabled = true;
     pressSeal();
     var payload = buildPayload();
     var delay = reduceMotion ? 0 : 420;
 
     var hasEndpoint = FORM_ENDPOINT && FORM_ENDPOINT.indexOf("REPLACE_WITH") === -1;
     if (hasEndpoint) {
-      // Google Apps Script web app: send as a "simple" text/plain request (no CORS
-      // preflight). The response is opaque under no-cors, so we optimistically
-      // confirm once the request completes; the script still records the row.
+      // Google Apps Script web app: fire the request (opaque under no-cors — the row is
+      // recorded server-side regardless of the response). Success is shown on the seal
+      // animation timer below so confirmation is prompt and never waits on the endpoint.
       fetch(FORM_ENDPOINT, {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify(payload)
-      }).then(function () {
-        setTimeout(showSuccess, delay);
       }).catch(function () {
         console.log("RSVP (POST failed, logged locally):", payload);
-        setTimeout(showSuccess, delay);
       });
     } else {
       console.log("RSVP (no endpoint set):", payload);
-      setTimeout(showSuccess, delay);
     }
+    setTimeout(showSuccess, delay);
   });
 })();
 </script>
