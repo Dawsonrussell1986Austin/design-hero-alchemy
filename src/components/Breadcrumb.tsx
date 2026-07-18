@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 interface BreadcrumbProps {
   items: Array<{
@@ -12,8 +13,9 @@ interface BreadcrumbProps {
 }
 
 const Breadcrumb = ({ items, quickLinks }: BreadcrumbProps) => {
-  // Get current path to determine active page
-  const currentPath = window.location.pathname;
+  // Get current path to determine active page (router-based so it also
+  // works during build-time prerendering, where window doesn't exist)
+  const currentPath = useLocation().pathname;
   
   return (
     <div className="bg-gradient-to-r from-abyss to-graphite-fog py-6 md:py-8 border-b border-silver-mist/20 pt-20">

@@ -10,7 +10,8 @@ const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiO
 
 export const supabase = createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
-    storage: localStorage,
+    // localStorage does not exist during build-time prerendering (Node)
+    storage: typeof localStorage !== "undefined" ? localStorage : undefined,
     persistSession: true,
     autoRefreshToken: true,
   }

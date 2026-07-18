@@ -86,11 +86,14 @@ import CampaignEmails from "./pages/CampaignEmails";
 import AccreditedInvestorReport from "./pages/AccreditedInvestorReport";
 import InvestorReportForm from "./pages/InvestorReportForm";
 
-function App() {
+// Routes without a router wrapper so they can render in the browser
+// (BrowserRouter, below) and during build-time prerendering (StaticRouter
+// in src/entry-server.tsx).
+export function AppRoutes() {
   return (
-    <BrowserRouter>
+    <>
       <ScrollToTop />
-      
+
       <Toaster />
       <Sonner />
       <Routes>
@@ -176,6 +179,14 @@ function App() {
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppRoutes />
     </BrowserRouter>
   );
 }
