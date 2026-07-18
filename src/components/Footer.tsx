@@ -81,8 +81,19 @@ const Footer = () => {
           </div>
 
           {/* Footnote Disclaimers */}
-          <div className="mb-6 space-y-4">
-            {/* Removed the three separate footnotes as they're now consolidated under the statistics */}
+          <div className="mb-6 space-y-2 max-w-6xl mx-auto">
+            <p className="text-silver-mist/50 text-[11px] font-sans leading-relaxed">
+              <sup>1</sup> Oak Real Estate Partners track record. All figures described as "Oak" performance reflect Oak Real Estate Partners since inception. "Full-cycle loan" means a loan that has been fully repaid or otherwise resolved as of the reporting date. Past performance is not indicative of future results.
+            </p>
+            <p className="text-silver-mist/50 text-[11px] font-sans leading-relaxed">
+              <sup>2</sup> Team career track record. Figures described as "team," "career," or "prior firm" performance reflect the aggregate work completed by current Oak principals during their prior careers at predecessor firms and are not Oak Real Estate Partners performance. They are presented to describe the experience of the management team. Predecessor performance was achieved at different firms, under different mandates and fee structures, and may not be directly comparable to performance investors in Oak Real Estate Partners vehicles may experience. Past performance is not indicative of future results.
+            </p>
+            <p className="text-silver-mist/50 text-[11px] font-sans leading-relaxed">
+              <sup>3</sup> NAIC CM1/CM2 designation. Refers to the National Association of Insurance Commissioners' Commercial Mortgage classification system used in insurance company capital treatment. CM1 is the highest-quality classification. "Built to CM1/CM2 standards" describes Oak's underwriting approach and does not constitute a representation that any specific loan will receive a particular NAIC designation for any particular counterparty.
+            </p>
+            <p className="text-silver-mist/50 text-[11px] font-sans leading-relaxed">
+              <sup>4</sup> Federal Reserve rate hikes. Refers to the cumulative increase in the target federal funds rate from March 2022 through July 2023. Source: Federal Reserve Board. <sup>5</sup> CRE lending gap estimate. Estimates of the annual small- and mid-balance CRE lending gap vary by source and methodology. Sources consulted include Mortgage Bankers Association and Federal Reserve data. <sup>6</sup> Outstanding CRE mortgage debt. Source: Mortgage Bankers Association Commercial/Multifamily Mortgage Debt Outstanding quarterly report. Figure approximate and varies quarter to quarter. <sup>7</sup> CRE maturities. Source: Mortgage Bankers Association projections and Trepp CRE maturity tracking. Figures approximate. <sup>8</sup> Private CRE credit AUM growth. Source: Preqin and Pitchbook private credit AUM reporting for real-estate-focused strategies. Figures approximate and based on most recent publicly reported data.
+            </p>
           </div>
 
           {/* Bottom Border and Copyright */}

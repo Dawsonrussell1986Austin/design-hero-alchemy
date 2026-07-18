@@ -36,7 +36,7 @@ const Investments = () => {
                   Purpose-built for a market that cannot be served by <span className="text-gold-accent">the majors.</span>
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
-                  Oak combines insurance SMA infrastructure, co-investment capital, FHA/HUD permanent financing, and principal-governed underwriting in a single vertically integrated operation focused on the $2M–$20M bridge segment. $460M in AUM today. Platform architecture built for $1B+ in annual origination capacity.
+                  Oak combines insurance SMA infrastructure, co-investment capital, FHA/HUD permanent financing, and principal-governed underwriting in a single vertically integrated operation focused on the $2M–$20M bridge segment. Platform architecture built toward $1B+ in annual origination capacity.
                 </p>
               </div>
               
@@ -79,11 +79,11 @@ const Investments = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 { title: "An underserved segment, owned.", desc: "Very few national lenders focus on the $2M–$20M CRE bridge segment. The space is fragmented, with limited institutional-quality competition. Oak was built specifically for it." },
-                { title: "Active insurance SMA platform.", desc: "Oak is currently underwriting and servicing SMAs for public and private insurers, with $250M+ in active annual demand. CM1/CM2 NAIC designation standards are counterparty-agnostic and portable." },
+                { title: "Active insurance SMA platform.", desc: <>Oak is currently underwriting and servicing SMAs for public and private insurers, with estimated annual deployment capacity exceeding $250M. CM1/CM2 NAIC designation standards<sup>3</sup> are counterparty-agnostic and portable across multiple insurers.</> },
                 { title: "Vertically integrated.", desc: "In-house origination, underwriting, closing, and servicing on a proprietary technology stack. Every credit decision governed by principals, documented to institutional standards." },
-                { title: "Workout track record.", desc: "On the portion of the Oak portfolio that has required workout, Oak has recovered 100% of principal to date at an average realized return of 12.3%. A small sample, disclosed as such." },
-                { title: "Insurance-grade standard on every loan.", desc: "CM1/CM2 NAIC designation standards apply to every Oak transaction, not only the ones headed for an insurance balance sheet. The standard travels." },
-                { title: "Scalable infrastructure.", desc: "Platform architecture already built for $1B+ annual origination capacity. Incremental origination volume produces incremental margin through operating leverage." },
+                { title: "Workout track record.", desc: "Oak provides in-house special servicing and has actively worked out impaired CRE positions — direct evidence of recovery capability and a discipline that informs how Oak underwrites downside from the start." },
+                { title: "Insurance-grade standard on every loan.", desc: <>CM1/CM2 NAIC designation standards<sup>3</sup> apply to every Oak transaction, not only the ones headed for an insurance balance sheet. The standard travels.</> },
+                { title: "Scalable infrastructure.", desc: "Platform architecture built toward $1B+ annual origination capacity. Incremental origination volume produces incremental margin through operating leverage rather than proportional cost growth." },
               ].map((item, i) => (
                 <div key={i} className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8 hover:bg-silver-mist/10 transition-all duration-300">
                   <div className="text-gold-accent font-display font-medium text-sm mb-1">{i + 1}.</div>
@@ -121,7 +121,7 @@ const Investments = () => {
                     ["Geopolitical / tariff shock", "Domestic-only, tangible U.S. real estate assets"],
                     ["CRE valuation correction", "55–75% LTV equity cushion at close on every loan"],
                     ["Higher-for-longer rates", "Short duration (12–36 months) and continuous repricing"],
-                    ["Private equity contagion", "No CLO exposure; senior-secured, first-lien positions"],
+                    ["Private credit contagion", "No CLO exposure; senior-secured, first-lien positions"],
                     ["Sovereign yield spikes", "First-lien secured by tangible, income-producing collateral"],
                   ].map(([risk, mitigant], i) => (
                     <tr key={i} className="border-b border-abyss/10 hover:bg-cream/60 transition-colors">
@@ -158,7 +158,7 @@ const Investments = () => {
               In a market where opacity is common, clarity is the differentiator.
             </h2>
             <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-              Most private equity funds describe their strategy. Oak documents the collateral. Most funds report quarterly. Oak supports loan-level transparency. Most funds lock capital for 7–10 years. Oak's bridge loans average 17 months at maturity.
+              Most private credit funds describe their strategy. Oak documents the collateral. Most funds report quarterly. Oak supports loan-level transparency. Most funds lock capital for 7–10 years. Oak's bridge loans average 17 months at maturity.
             </p>
             <p className="text-lg font-body text-abyss/80 leading-relaxed">
               RIA, family office, foundation, and endowment capital is placed in the same senior-secured, first-lien positions as Oak's institutional insurance counterparties. Same documentation. Same underwriting standard.

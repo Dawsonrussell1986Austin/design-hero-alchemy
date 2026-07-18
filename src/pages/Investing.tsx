@@ -11,7 +11,7 @@ const Investing = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Investing"
-        description="Senior-secured, first-lien CRE debt. Named collateral. Institutional underwriting. Oak's 33 full-cycle loans have delivered a 19% net IRR (21.9% gross) to date."
+        description="Senior-secured, first-lien CRE debt. Named collateral. Institutional underwriting. The same structure that supports Oak's insurance company counterparties is available to RIAs, family offices, foundations, and endowments."
         canonicalUrl="/investing"
       />
       <FinancialServiceSchema />
@@ -37,7 +37,7 @@ const Investing = () => {
                   You know what you own. Because we <span className="text-gold-accent">document it.</span>
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-8">
-                  Senior-secured, first-lien CRE debt. Named collateral. Institutional underwriting. Oak's 33 full-cycle loans have delivered a 19% net IRR (21.9% gross) to date.<sup>1</sup> The same structure that supports Oak's insurance company counterparties is available to RIAs, family offices, foundations, and endowments.
+                  Senior-secured, first-lien CRE debt. Named collateral. Institutional underwriting. The same structure that supports Oak's insurance company counterparties is available to RIAs, family offices, foundations, and endowments.
                 </p>
               </div>
               
@@ -60,7 +60,7 @@ const Investing = () => {
                 Where opacity is common, certainty has a premium.
               </h2>
               <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-                Most private equity funds describe their sector. Oak documents the address. Most funds describe risk management philosophy. Oak documents the collateral — the property, the LTV, the SOFR-indexed rate, the maturity schedule.
+                Most private credit funds describe their sector. Oak documents the address. Most funds describe risk management philosophy. Oak documents the collateral — the property, the LTV, the SOFR-indexed rate, the maturity schedule.
               </p>
               <p className="text-lg font-body text-abyss/80 leading-relaxed">
                 Senior-secured, first-lien lending at 55–75% stabilized LTV means that even if the underlying asset declines 25–45%, investor principal is structurally protected. That protection is contractual, not discretionary.
@@ -102,12 +102,12 @@ const Investing = () => {
             </h2>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {[
-                { stat: "19%", label: "NET IRR", detail: "33 Oak loans, unlevered, since inception" },
-                { stat: "21.9%", label: "GROSS IRR", detail: "Weighted average across the same portfolio" },
-                { stat: "1.22x", label: "NET MOIC", detail: "Full-cycle Oak portfolio" },
-                { stat: "$40.5M", label: "NET PROFIT", detail: "Distributed to investors to date" },
-                { stat: "12.3%", label: "RECOVERY RETURN", detail: "Average realized on Oak loans that required workout" },
+                { stat: "33", label: "FULL-CYCLE LOANS", detail: "Fully repaid or otherwise resolved" },
+                { stat: "$200M", label: "FULL-CYCLE PRINCIPAL", detail: "Deployed and returned across those loans" },
+                { stat: "$520M+", label: "ORIGINATED", detail: "Across managed funds since inception" },
                 { stat: "17 mo.", label: "AVG DURATION", detail: "Short exposure, continuous repricing" },
+                { stat: "First-lien", label: "SENIOR-SECURED", detail: "First claim on the asset, on every loan" },
+                { stat: "55–75%", label: "STABILIZED LTV", detail: "Maintained throughout the record" },
               ].map((item, i) => (
                 <div key={i} className="text-center p-6 bg-silver-mist/5 border border-gold-accent/20 rounded-lg">
                   <div className="text-3xl font-display font-medium text-gold-accent mb-2">{item.stat}</div>
@@ -117,7 +117,7 @@ const Investing = () => {
               ))}
             </div>
             <p className="text-xs text-silver-mist/50 text-center leading-relaxed max-w-4xl mx-auto">
-              All figures reflect Oak Real Estate Partners performance since inception. Net returns are net of management fees, expenses, and any performance compensation. Past performance is not indicative of future results. Full performance disclosures are available in the offering materials.
+              Full performance disclosures, including calculation methodology and fee detail, are available through the investor portal.
             </p>
           </div>
         </div>
@@ -131,7 +131,7 @@ const Investing = () => {
               Your capital, placed alongside insurance company, foundation, and endowment capital.
             </h2>
             <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-              Oak originates, underwrites, and services CRE loans for insurance companies and other institutional counterparties operating to some of the most demanding capital standards in the market. Oak is currently underwriting SMAs for a global insurer with demonstrated annual deployment demand of $250M+. CM1/CM2 NAIC designation standards<sup>3</sup> apply on every insurance SMA transaction.
+              Oak originates, underwrites, and services CRE loans for insurance companies and other institutional counterparties operating to some of the most demanding capital standards in the market. Oak is currently underwriting SMAs for a global insurer with estimated annual deployment capacity exceeding $250M. CM1/CM2 NAIC designation standards<sup>3</sup> apply on every insurance SMA transaction.
             </p>
             <p className="text-lg font-body text-abyss/80 leading-relaxed">
               RIA, family office, foundation, and endowment capital is placed in the same senior-secured, first-lien positions, on the same documentation.
@@ -140,7 +140,7 @@ const Investing = () => {
         </div>
       </div>
       
-      {/* Why CRE Private Equity Now */}
+      {/* Why CRE Private Credit Now */}
       <div className="bg-cream/40 py-20">
         <div className="container mx-auto px-6">
           <div className="max-w-7xl mx-auto">
@@ -153,12 +153,12 @@ const Investing = () => {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { icon: TrendingUp, title: "Market opportunity", desc: "Approximately $4.8 trillion in outstanding CRE mortgage debt. Roughly $2–3 trillion maturing over the next three years. Private CRE credit AUM has grown nearly 4x over 15 years. Structural, not cyclical." },
-                { icon: Shield, title: "Risk discipline", desc: "Principal-governed credit on every loan. Senior-secured, first-lien, 55–75% stabilized LTV. A contractual description of every position in the portfolio." },
-                { icon: BarChart3, title: "Diversification", desc: "Short-duration (17-month average at Oak), floating-rate, senior-secured CRE debt. Structurally differentiated from public equity exposure. Inflation-resistant by design." },
-                { icon: DollarSign, title: "Income orientation", desc: "SOFR + 450–750 basis points depending on program. Contractual interest income from performing bridge loans against income-producing real assets." },
-                { icon: Target, title: "Performance", desc: "Oak, since inception: 19% net IRR, 21.9% gross IRR, 1.22x net MOIC. Through COVID and through 525 basis points of rate hikes. Oak's specific performance, not an asset-class reference." },
-                { icon: Zap, title: "Lower correlation", desc: "Private, first-lien CRE debt is structurally differentiated from public market movements. Domestic-only, tangible U.S. collateral. No CLO exposure." },
+                { icon: TrendingUp, title: "Market opportunity", desc: <>Approximately $4.8 trillion in outstanding CRE mortgage debt.<sup>6</sup> Roughly $2–3 trillion maturing over the next three years.<sup>7</sup> Private CRE credit AUM has grown nearly 4x over 15 years.<sup>8</sup> Structural, not cyclical.</> },
+                { icon: Shield, title: "Risk discipline", desc: <>Principal-governed credit on every loan. Senior-secured, first-lien, 55–75% stabilized LTV. A contractual description of every position in the portfolio.</> },
+                { icon: BarChart3, title: "Diversification", desc: <>Short-duration (17-month average at Oak), floating-rate, senior-secured CRE debt. Structurally differentiated from public equity exposure. Inflation-resistant by design. $8.3B in 2025 evaluated pipeline.</> },
+                { icon: DollarSign, title: "Income orientation", desc: <>SOFR + 450–750 basis points depending on program. Contractual interest income from performing bridge loans against income-producing real assets.</> },
+                { icon: Target, title: "Performance", desc: <>33 full-cycle Oak loans completed through COVID and 525 basis points of rate hikes.<sup>4</sup> Full performance figures, with methodology and context, are available through the investor portal.</> },
+                { icon: Zap, title: "Lower correlation", desc: <>Private, first-lien CRE debt is structurally differentiated from public market movements. Domestic-only, tangible U.S. collateral. No CLO exposure.</> },
               ].map((item, i) => (
                 <div key={i} className="bg-cream/60 border border-abyss/10 rounded-lg p-8 hover:bg-cream/80 transition-all duration-300">
                   <div className="flex items-center mb-4">
@@ -183,7 +183,7 @@ const Investing = () => {
               Built for advisors who will not allocate blind.
             </h2>
             <p className="text-lg font-body text-abyss/80 leading-relaxed">
-              RIAs allocating to Oak get what most private equity platforms will not provide: loan-level transparency, named collateral on every position, and direct access to the principals who govern credit decisions. No blind pools. No opaque structures.
+              RIAs allocating to Oak get what most private credit platforms will not provide: loan-level transparency, named collateral on every position, and direct access to the principals who govern credit decisions. No blind pools. No opaque structures.
             </p>
           </div>
         </div>
@@ -247,7 +247,7 @@ const Investing = () => {
                 className="border-2 border-silver-mist/40 text-silver-mist hover:bg-silver-mist hover:text-abyss px-12 py-4 text-lg font-medium tracking-wide transition-all duration-300 rounded-sm bg-transparent"
                 onClick={() => window.location.href = '/contact'}
               >
-                Schedule a Call
+                Schedule a Call with Our Investment Team
               </Button>
               <Button 
                 variant="outline"

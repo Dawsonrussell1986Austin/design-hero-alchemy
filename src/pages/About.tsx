@@ -106,21 +106,21 @@ const About = () => {
                 One platform. Every stage of the capital stack.
               </h2>
               <p className="text-lg font-body text-silver-mist/80 leading-relaxed max-w-4xl mx-auto text-center mb-16">
-                Oak brings together White Oak Capital Holdings and Red Oak Capital Holdings under a single vertically integrated operation. Origination, underwriting, closing, servicing, and capital markets all happen under one roof. Credit decisions are governed by principals who have operated through multiple cycles — not outsourced to third-party underwriters.
+                Oak operates as a single vertically integrated platform. Origination, underwriting, closing, servicing, and capital markets all happen under one roof. Credit decisions are governed by principals who have operated through multiple cycles — not outsourced to third-party underwriters.
               </p>
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
                   <h3 className="text-xl font-display font-medium text-gold-accent mb-4">Insurance SMA Origination & Servicing</h3>
                   <p className="text-silver-mist/80 font-body leading-relaxed">
-                    Oak underwrites SMAs for public and private insurance company counterparties, to CM1/CM2 NAIC designation standards.<sup>3</sup> Current active demand: $250M+ annually. The standards are portable across counterparties rather than built around one.
+                    Oak underwrites SMAs for public and private insurance company counterparties, to CM1/CM2 NAIC designation standards.<sup>3</sup> Estimated annual deployment capacity exceeding $250M. The standards are portable across counterparties rather than built around one.
                   </p>
                 </div>
                 
                 <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
                   <h3 className="text-xl font-display font-medium text-gold-accent mb-4">National Origination Engine</h3>
                   <p className="text-silver-mist/80 font-body leading-relaxed">
-                    Approximately $8.3 billion in gross pipeline evaluated in 2025. $200M cumulative Oak originations. Infrastructure built to scale from the current run-rate toward $1B+ in annual origination capacity.
+                    Approximately $8.3 billion in gross pipeline evaluated in 2025. $520M+ cumulative originations across the family of managed funds. Infrastructure built to scale from the current run-rate toward $1B+ in annual origination capacity.
                   </p>
                 </div>
                 
@@ -134,7 +134,7 @@ const About = () => {
                 <div className="bg-silver-mist/5 border border-gold-accent/20 rounded-lg p-8">
                   <h3 className="text-xl font-display font-medium text-gold-accent mb-4">FHA/HUD Exit Platform</h3>
                   <p className="text-silver-mist/80 font-body leading-relaxed">
-                    Through Johnson Capital Multifamily, Oak offers government-backed permanent financing. Bridge-to-permanent under a single relationship. Approximately $225M in current FHA pipeline.
+                    Through Johnson Capital Multifamily, Oak offers government-backed permanent financing. Bridge-to-permanent under a single relationship. Approximately $225M FHA pipeline currently under review.
                   </p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const About = () => {
                 <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 text-center">
                   <h3 className="text-xl font-display font-medium text-gold-accent mb-4">PROTECTION</h3>
                   <p className="text-abyss/80 font-body leading-relaxed text-sm">
-                    Capital preservation first. Senior-secured, first-lien, 55–75% stabilized LTV on every loan. A structural requirement, not a style preference. 33 Oak loans. No principal losses to date.<sup>1</sup>
+                    Capital preservation first. Senior-secured, first-lien, 55–75% stabilized LTV on every loan. A structural requirement, not a style preference. 33 full-cycle Oak loans.
                   </p>
                 </div>
                 
@@ -172,7 +172,7 @@ const About = () => {
                 <div className="bg-cream/60 border border-abyss/10 rounded-lg p-8 text-center">
                   <h3 className="text-xl font-display font-medium text-gold-accent mb-4">EXPERIENCE</h3>
                   <p className="text-abyss/80 font-body leading-relaxed text-sm">
-                    Combined team career track record of $25B+ in CRE financings across eight market cycles.<sup>2</sup> Oak's own track record, since inception, is on the Investing page in full.
+                    Combined team career track record of $25B+ in CRE financings.<sup>2</sup> Oak's own track record, since inception, is available through the investor portal.
                   </p>
                 </div>
               </div>

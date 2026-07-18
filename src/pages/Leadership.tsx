@@ -11,7 +11,7 @@ const Leadership = () => {
       name: "Gary Bechtel",
       title: "Chief Executive Officer",
       image: "/lovable-uploads/gary-bechtel-headshot.jpg",
-      bio: "39 years in institutional CRE lending. Former President of Money360, where he led growth from $24M to $850M in AUM. More than $10B in CRE originated over his career. Led Oak through its formation and through the 2022–2024 rate environment. Based in Charlotte, North Carolina. Responsible for national lending operations and business development."
+      bio: "39 years in institutional CRE lending. Former President of Money360, where he led growth from $24M to $850M in AUM. More than $10B in CRE originated over his career.² Led Oak through its formation and through the 2022–2024 rate environment. Based in Charlotte, North Carolina. Responsible for national lending operations and business development."
     },
     {
       name: "Raymond T. Davis", 
@@ -35,13 +35,13 @@ const Leadership = () => {
       name: "Thomas A. McGovern", 
       title: "Chief Financial Officer",
       image: "/lovable-uploads/tom-mcgovern-headshot.jpg",
-      bio: "More than 20 years on Wall Street, including roles at Nomura, Morgan Stanley, and Lehman Brothers. CPA. CFA. Oversees financial operations, reporting, and strategic financial planning."
+      bio: "More than 20 years on Wall Street, including roles at Nomura and Morgan Stanley. CPA. CFA. Oversees financial operations, reporting, and strategic financial planning."
     },
     {
       name: "Robert R. Kaplan, Jr.",
       title: "Chief Legal Officer & EVP, Corporate Development",
       image: "/lovable-uploads/95be19e9-56b5-4d13-963d-51e2ac72fa2b.png",
-      bio: "More than $4B in securities transactions. Recognized by Best Lawyers since 2013. Expertise in securities law, regulatory compliance, and complex transaction structuring."
+      bio: "More than $4B in securities transactions.² Recognized by Best Lawyers since 2013. Expertise in securities law, regulatory compliance, and complex transaction structuring."
     },
     {
       name: "Matthew Webster",
@@ -53,7 +53,7 @@ const Leadership = () => {
       name: "Brook Scardina",
       title: "Capital Markets & Investments",
       image: "/lovable-uploads/54494c6c-43d1-47ee-bdba-724c370778b3.png",
-      bio: "More than 20 years in institutional capital markets. Approximately $12B deployed over his career. Former roles with Georgia Tech Foundation and UNC Management Company. Leads external capital markets strategy for Oak's institutional sector. Based in Irvine, California."
+      bio: "More than 20 years in institutional capital markets. Approximately $12B deployed over his career.² Former roles with Georgia Tech Foundation and UNC Management Company. Leads external capital markets strategy for Oak's institutional sector. Based in Irvine, California."
     }
   ];
 
@@ -61,7 +61,7 @@ const Leadership = () => {
     <div className="min-h-screen">
       <SEOHead
         title="Leadership Team"
-        description="Eight market cycles. More than $25 billion in combined CRE financings. Meet the Oak Real Estate Partners leadership team."
+        description="Market cycles spanning four decades. More than $25 billion in combined CRE financings. Meet the Oak Real Estate Partners leadership team."
         canonicalUrl="/leadership"
       />
       <OrganizationSchema />
@@ -96,7 +96,7 @@ const Leadership = () => {
                     The team has been <span className="text-gold-accent">here before.</span>
                   </h1>
                   <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed">
-                    Eight market cycles. More than $25 billion in combined CRE financings across the team's prior careers at BlackRock, HSBC, Nomura, Morgan Stanley, and Lehman Brothers, among others.<sup>2</sup> At Oak: 33 full-cycle loans, 19% net IRR, 21.9% gross IRR, no principal losses to date.<sup>1</sup>
+                    Market cycles spanning four decades. More than $25 billion in combined CRE financings across the team's prior careers at BlackRock, Goldman Sachs, HSBC, Nomura, and Morgan Stanley, among others.<sup>2</sup> At Oak: 33 full-cycle loans, first-lien and senior-secured throughout.
                   </p>
                   
                   {/* Stats Bar */}
@@ -147,19 +147,19 @@ const Leadership = () => {
                         <div className="text-center">
                           <h4 className="text-lg font-medium text-gold-accent mb-2">Operational Excellence</h4>
                           <p className="text-cream text-sm leading-relaxed">
-                            Execution demonstrated across origination, underwriting, closing, servicing, and capital markets. $200M cumulative Oak originations. $8.3B 2025 pipeline evaluated.
+                            Execution demonstrated across origination, underwriting, closing, servicing, and capital markets. $520M+ cumulative originations ($200M full-cycle principal). $8.3B 2025 pipeline evaluated.
                           </p>
                         </div>
                         <div className="text-center">
                           <h4 className="text-lg font-medium text-gold-accent mb-2">Disciplined Approach</h4>
                           <p className="text-cream text-sm leading-relaxed">
-                            A consistent methodology for every counterparty. CM1/CM2 NAIC designation standards apply to every Oak transaction.
+                            A consistent methodology for every counterparty. The underwriting standard does not change with the buyer of the loan. CM1/CM2 NAIC designation standards<sup>3</sup> apply to every Oak transaction, not only the ones headed for an insurance balance sheet.
                           </p>
                         </div>
                         <div className="text-center">
                           <h4 className="text-lg font-medium text-gold-accent mb-2">Trusted Partnership</h4>
                           <p className="text-cream text-sm leading-relaxed">
-                            Principal-governed credit. Borrowers and investors talk to decision-makers, not to analysts relaying decisions made elsewhere.
+                            Principal-governed credit. The principal who reviews the file sets the standard the file is approved against. Borrowers and investors talk to decision-makers, not to analysts relaying decisions made elsewhere.
                           </p>
                         </div>
                       </div>

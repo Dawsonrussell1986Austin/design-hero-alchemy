@@ -33,7 +33,7 @@ const Lending = () => {
                   Capital that moves when <span className="text-gold-accent">yours cannot.</span>
                 </h1>
                 <p className="text-lg lg:text-xl font-body font-normal text-abyss/80 leading-relaxed mb-6">
-                  Senior-secured bridge loans for commercial real estate. $2M–$20M. Term sheets in 48 hours. Credit decisions governed by principals, not committee chains. $200M originated at Oak to date.
+                  Senior-secured bridge loans for commercial real estate. $2M–$20M. Term sheets in 48 hours. Credit decisions governed by principals, not committee chains. $520M+ originated across Oak's managed funds to date.
                 </p>
               </div>
               
@@ -49,7 +49,7 @@ const Lending = () => {
             {/* The Market */}
             <div className="max-w-4xl mx-auto mb-20">
               <p className="text-lg font-body text-abyss/80 leading-relaxed mb-6">
-                Large institutional lenders set minimums at $50M or above. CMBS conduits require full stabilization. Large private equity funds pursue $100M+ transactions. The sponsor with a sound $8M apartment repositioning — credible track record, clear stabilization path, solid collateral — has been left to hard-money lenders and inconsistent terms.
+                Large institutional lenders set minimums at $50M or above. CMBS conduits require full stabilization. Large private credit funds pursue $100M+ transactions. The sponsor with a sound $8M apartment repositioning — credible track record, clear stabilization path, solid collateral — has been left to hard-money lenders and inconsistent terms.
               </p>
               <p className="text-lg font-body text-abyss/80 leading-relaxed">
                 The structural context: roughly $4.8 trillion in outstanding CRE mortgage debt,<sup>6</sup> approximately $2–3 trillion maturing over the next three years,<sup>7</sup> and a substantial portion of small-balance CRE lending still held by banks that have signaled reduced appetite. Oak was built for the loan that does not fit a bank's credit box but is supported by sound collateral and credible sponsorship.
@@ -110,7 +110,7 @@ const Lending = () => {
                 The other end of the bridge. Government-backed. Institutionally executed.
               </h2>
               <p className="text-lg font-body text-abyss/80 leading-relaxed mb-4">
-                Through Johnson Capital Multifamily, Oak's FHA/HUD subsidiary, borrowers who begin with an Oak bridge loan can move to permanent government-backed financing without changing lenders, renegotiating terms, or introducing new counterparty risk. Approximately $225M FHA pipeline.
+                Through Johnson Capital Multifamily, Oak's wholly owned FHA/HUD subsidiary, borrowers who begin with an Oak bridge loan can move to permanent government-backed financing without changing lenders, renegotiating terms, or introducing new counterparty risk. Approximately $225M FHA pipeline under review.
               </p>
               <p className="text-base font-body text-gold-accent font-medium">
                 Originate with discipline. Stabilize with bridge capital. Permanently finance with FHA/HUD. One relationship.
@@ -165,7 +165,15 @@ const Lending = () => {
               >
                 Get a Term Sheet
               </Button>
-              <Button 
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-2 border-abyss text-abyss hover:bg-abyss hover:text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"
+                onClick={() => window.location.href = '/contact'}
+              >
+                Submit a Loan Request
+              </Button>
+              <Button
                 variant="outline"
                 size="lg"
                 className="border-2 border-abyss text-abyss hover:bg-abyss hover:text-silver-mist px-8 py-3 text-base font-medium tracking-wide transition-all duration-300 rounded-sm"

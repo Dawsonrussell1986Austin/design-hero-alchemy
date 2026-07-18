@@ -7,7 +7,7 @@ const Index = () => {
     <div>
       <SEOHead 
         canonicalUrl="/"
-        description="Oak Real Estate Partners specializes in commercial real estate lending and investment solutions. Bridge loans, HUD financing, and private equity opportunities."
+        description="One platform for the full life of a commercial real estate loan. Oak originates, underwrites, and services middle-market CRE credit — $2–$20M bridge loans and FHA/HUD permanent financing, all in-house."
       />
       <OrganizationSchema />
       <FinancialServiceSchema />
