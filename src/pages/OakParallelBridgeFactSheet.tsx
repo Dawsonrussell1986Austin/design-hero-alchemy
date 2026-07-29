@@ -10,7 +10,7 @@ const OakParallelBridgeFactSheet = () => {
       <SEOHead
         title="Oak Parallel Bridge Credit Fund — Fact Sheet"
         description="Fund fact sheet for the Oak Parallel Bridge Credit Fund with key terms, strategy overview, and performance data."
-        canonicalUrl="/oak-parallel-bridge-fact-sheet"
+        canonicalUrl="/oak-parallel-bridge-credit-fund-fact-sheet"
       />
       <Navigation />
       

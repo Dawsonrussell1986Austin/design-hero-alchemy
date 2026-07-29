@@ -18,7 +18,7 @@ const BlogAtlantaAcquisition = () => {
       <SEOHead
         title="$8.7M Multifamily Acquisition Loan in Atlanta"
         description="Oak Capital provides an $8.7M acquisition loan for a multifamily property in the Atlanta metro area."
-        canonicalUrl="/blog/atlanta-acquisition"
+        canonicalUrl="/news/atlanta-acquisition-loan"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

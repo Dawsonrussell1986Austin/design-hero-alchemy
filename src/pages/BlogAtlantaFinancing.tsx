@@ -18,7 +18,7 @@ const BlogAtlantaFinancing = () => {
       <SEOHead
         title="$8.65M Financing for Atlanta Property"
         description="The Oak Companies provides $8.65M in financing for an Atlanta commercial real estate property."
-        canonicalUrl="/blog/atlanta-financing"
+        canonicalUrl="/news/atlanta-financing"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

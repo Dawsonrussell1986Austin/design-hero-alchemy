@@ -10,7 +10,7 @@ const Hud232221d4Terms = () => {
       <SEOHead
         title="HUD 232/221(d)4 Loan Terms"
         description="FHA/HUD 232/221(d)4 loan program terms for new construction of healthcare and senior living facilities."
-        canonicalUrl="/lending/fha-hud/232-221d4-terms"
+        canonicalUrl="/lending/fha-hud/hud-232-221"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

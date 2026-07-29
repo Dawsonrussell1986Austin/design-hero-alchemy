@@ -67,8 +67,8 @@ const Leadership = () => {
       <OrganizationSchema />
       <BreadcrumbSchema
         items={[
-          { name: 'Home', url: 'https://oakrealestatepartners.com/' },
-          { name: 'Leadership', url: 'https://oakrealestatepartners.com/leadership' }
+          { name: 'Home', url: '/' },
+          { name: 'Leadership', url: '/leadership' }
         ]}
       />
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

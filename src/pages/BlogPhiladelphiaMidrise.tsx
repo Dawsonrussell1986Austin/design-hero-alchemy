@@ -18,7 +18,7 @@ const BlogPhiladelphiaMidrise = () => {
       <SEOHead
         title="Bridge Loan for Philadelphia Midrise"
         description="The Oak Companies provides a bridge loan for a midrise commercial real estate property in Philadelphia."
-        canonicalUrl="/blog/philadelphia-midrise"
+        canonicalUrl="/news/philadelphia-midrise"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

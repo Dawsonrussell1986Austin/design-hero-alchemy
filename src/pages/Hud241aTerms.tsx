@@ -10,7 +10,7 @@ const Hud241aTerms = () => {
       <SEOHead
         title="HUD 241(a) Supplemental Loan Terms"
         description="FHA/HUD 241(a) supplemental loan program terms for improvements to existing HUD-insured properties."
-        canonicalUrl="/lending/fha-hud/241a-terms"
+        canonicalUrl="/lending/fha-hud/hud-241a"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

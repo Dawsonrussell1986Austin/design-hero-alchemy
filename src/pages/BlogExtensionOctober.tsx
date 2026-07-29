@@ -18,7 +18,7 @@ const BlogExtensionOctober = () => {
       <SEOHead
         title="Extension to October 31, 2024"
         description="The Oak Companies announces an extension of its offering period to October 31, 2024."
-        canonicalUrl="/blog/extension-october"
+        canonicalUrl="/news/extension-october-2024"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

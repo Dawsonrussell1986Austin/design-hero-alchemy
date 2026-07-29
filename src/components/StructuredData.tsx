@@ -7,8 +7,8 @@ export function OrganizationSchema() {
     '@type': 'Organization',
     name: 'Oak Real Estate Partners',
     alternateName: 'Oak REP',
-    url: 'https://oakrealestatepartners.com',
-    logo: 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+    url: 'https://www.oakrepartners.com',
+    logo: 'https://www.oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
     description: 'Oak Real Estate Partners specializes in commercial real estate lending and investment solutions including bridge loans, HUD financing, and private equity opportunities.',
     foundingDate: '2020',
     sameAs: [
@@ -46,7 +46,7 @@ export function FinancialServiceSchema() {
     '@type': 'FinancialService',
     name: 'Oak Real Estate Partners',
     description: 'Commercial real estate lending services including bridge loans, HUD/FHA financing, and private equity solutions.',
-    url: 'https://oakrealestatepartners.com',
+    url: 'https://www.oakrepartners.com',
     priceRange: '$$$',
     areaServed: {
       '@type': 'Country',
@@ -116,7 +116,10 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: `https://oakrealestatepartners.com${item.url}`,
+      // Accept either a relative path or an absolute URL without double-prefixing
+      item: item.url.startsWith('http')
+        ? item.url
+        : `https://www.oakrepartners.com${item.url}`,
     })),
   };
 
@@ -163,13 +166,13 @@ export function ArticleSchema({
       name: 'Oak Real Estate Partners',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+        url: 'https://www.oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
       },
     },
-    image: image || 'https://oakrealestatepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
+    image: image || 'https://www.oakrepartners.com/lovable-uploads/90ee6cd5-c626-412e-a007-8192ed146eba.png',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://oakrealestatepartners.com${url}`,
+      '@id': `https://www.oakrepartners.com${url}`,
     },
   };
 
@@ -203,11 +206,11 @@ export function PersonSchema({
     jobTitle,
     description,
     image,
-    url: `https://oakrealestatepartners.com${url}`,
+    url: `https://www.oakrepartners.com${url}`,
     worksFor: {
       '@type': 'Organization',
       name: 'Oak Real Estate Partners',
-      url: 'https://oakrealestatepartners.com',
+      url: 'https://www.oakrepartners.com',
     },
   };
 
@@ -255,7 +258,7 @@ export function WebSiteSchema() {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Oak Real Estate Partners',
-    url: 'https://oakrealestatepartners.com',
+    url: 'https://www.oakrepartners.com',
     description: 'Commercial real estate lending and investment solutions',
     publisher: {
       '@type': 'Organization',

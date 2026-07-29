@@ -1,4 +1,24 @@
 {
+  "redirects": [
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "oakrealestatepartners.com" }],
+      "destination": "https://www.oakrepartners.com/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "www.oakrealestatepartners.com" }],
+      "destination": "https://www.oakrepartners.com/:path",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [{ "type": "host", "value": "oakrepartners.com" }],
+      "destination": "https://www.oakrepartners.com/:path",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",

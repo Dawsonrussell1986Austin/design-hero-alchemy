@@ -10,7 +10,7 @@ const CoreBridgeTerms = () => {
       <SEOHead
         title="Core Bridge — Loan Terms"
         description="Detailed loan terms and structure for Oak Real Estate Partners' Core Bridge lending program."
-        canonicalUrl="/lending/bridge/core-bridge/terms"
+        canonicalUrl="/lending/bridge/core-bridge"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">
