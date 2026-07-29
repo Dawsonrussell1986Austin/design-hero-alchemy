@@ -18,7 +18,7 @@ const BlogDallasDealSheet = () => {
       <SEOHead
         title="Dallas-Fort Worth Deal Sheet"
         description="Oak Real Estate Partners featured in this week's Dallas-Fort Worth commercial real estate deal sheet."
-        canonicalUrl="/blog/dallas-deal-sheet"
+        canonicalUrl="/news/dallas-deal-sheet"
       />
       {/* Navigation */}
       <div className="bg-gradient-to-br from-abyss via-obsidian to-graphite-fog">

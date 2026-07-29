@@ -15,7 +15,7 @@ const CedarMillCaseStudy = () => {
       <SEOHead
         title="Cedar Mill Case Study"
         description="Case study of Oak Real Estate Partners' Cedar Mill commercial real estate bridge lending transaction."
-        canonicalUrl="/case-study/cedar-mill"
+        canonicalUrl="/cedar-mill-case-study"
       />
       <Navigation />
       
