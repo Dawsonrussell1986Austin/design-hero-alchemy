@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,500;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap");
+
+.september-invite {
+  --oak-navy: #062638;
+  --oak-deep: #041d2b;
+  --oak-gold: #b89b5e;
+  --oak-ink: #111412;
+  --oak-soft: #3a3f4a;
+  --oak-gray: #777b7d;
+  --oak-bluegray: #5b6373;
+  --oak-pale-blue: #afc0c9;
+  --oak-line: rgba(6, 38, 56, 0.1);
+  --white: #ffffff;
+  background: var(--white);
+  color: var(--oak-ink);
+  font-family: Carlito, Calibri, sans-serif;
+  min-height: 100vh;
+}
+
+.september-invite * {
+  box-sizing: border-box;
+}
+
+.september-invite img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.september-invite a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.september-invite .site-header {
+  align-items: center;
+  border-bottom: 1px solid var(--oak-line);
+  display: flex;
+  height: 94px;
+  justify-content: space-between;
+  padding: 15px clamp(26px, 4.4vw, 72px);
+}
+
+.september-invite .wordmark {
+  height: 64px;
+  object-fit: contain;
+  width: 126px;
+}
+
+.september-invite .header-note,
+.september-invite .eyebrow,
+.september-invite .rsvp-form label span,
+.september-invite .rsvp-form button,
+.september-invite .information-band span,
+.september-invite .day-label span,
+.september-invite .day-label small,
+.september-invite .section-heading > span,
+.september-invite .session-grid article > span,
+.september-invite .photo-caption span,
+.september-invite .photo-caption a,
+.september-invite footer {
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.september-invite .header-note {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.september-invite .hero {
+  border-bottom: 1px solid var(--oak-line);
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(380px, 0.85fr);
+  min-height: calc(100vh - 94px);
+  overflow: hidden;
+  position: relative;
+}
+
+.september-invite .arc {
+  border: 1px solid var(--oak-line);
+  border-radius: 50%;
+  height: 560px;
+  left: 48%;
+  pointer-events: none;
+  position: absolute;
+  top: -210px;
+  width: 560px;
+}
+
+.september-invite .hero-copy {
+  border-right: 1px solid var(--oak-line);
+  display: flex;
+  flex-direction: column;
+  min-height: 690px;
+  padding: clamp(68px, 7vw, 104px) clamp(30px, 5.4vw, 88px)
+    clamp(54px, 5vw, 72px);
+  position: relative;
+  z-index: 1;
+}
+
+.september-invite .eyebrow {
+  color: var(--oak-gold);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.september-invite h1,
+.september-invite h2 {
+  color: var(--oak-navy);
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  margin: 0;
+}
+
+.september-invite h1 {
+  font-size: 88px;
+  line-height: 0.93;
+  max-width: 860px;
+}
+
+.september-invite h1 em {
+  display: block;
+  font-weight: 500;
+}
+
+.september-invite .hero-intro {
+  border-top: 1px solid var(--oak-line);
+  color: rgba(17, 20, 18, 0.86);
+  font: italic 17px/1.5 "Source Serif 4", Georgia, serif;
+  margin: 42px 0 0;
+  max-width: 690px;
+  padding-top: 22px;
+}
+
+.september-invite .rsvp-panel {
+  align-self: center;
+  background: var(--white);
+  border: 1px solid var(--oak-line);
+  box-shadow: 0 24px 70px rgba(6, 38, 56, 0.07);
+  margin: clamp(44px, 5vw, 68px) clamp(28px, 5vw, 76px);
+  padding: clamp(42px, 4.2vw, 58px);
+  position: relative;
+  z-index: 2;
+}
+
+.september-invite .rsvp-panel h2 {
+  font-size: 62px;
+  line-height: 0.96;
+}
+
+.september-invite .form-intro {
+  color: var(--oak-soft);
+  font: 16px/1.55 "Source Serif 4", Georgia, serif;
+  margin: 20px 0 34px;
+}
+
+.september-invite .rsvp-form {
+  display: grid;
+  gap: 22px 18px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.september-invite .rsvp-form label span {
+  color: var(--oak-navy);
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.september-invite .rsvp-form input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(6, 38, 56, 0.32);
+  border-radius: 0;
+  color: var(--oak-ink);
+  font: 16px Carlito, sans-serif;
+  height: 45px;
+  outline: none;
+  transition: border-color 0.16s ease;
+  width: 100%;
+}
+
+.september-invite .rsvp-form input:focus {
+  border-bottom-color: var(--oak-navy);
+}
+
+.september-invite .rsvp-form button {
+  align-items: center;
+  background: var(--oak-navy);
+  border: 0;
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  font: 700 11px Carlito, sans-serif;
+  grid-column: 1 / -1;
+  height: 54px;
+  justify-content: space-between;
+  margin-top: 6px;
+  padding: 0 20px;
+}
+
+.september-invite .rsvp-form button b {
+  color: var(--oak-gold);
+  font-size: 18px;
+}
+
+.september-invite .rsvp-form button:hover {
+  background: var(--oak-deep);
+}
+
+.september-invite .form-message {
+  color: var(--oak-gray);
+  font-size: 13px;
+  grid-column: 1 / -1;
+  min-height: 20px;
+}
+
+.september-invite .form-message.success {
+  color: #2d6849;
+}
+
+.september-invite .information-band {
+  background: var(--oak-navy);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.september-invite .information-band > div {
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+  min-height: 136px;
+  padding: 28px clamp(20px, 3vw, 42px);
+}
+
+.september-invite .information-band > div:last-child {
+  border-right: 0;
+}
+
+.september-invite .information-band span,
+.september-invite .day-label span {
+  color: var(--oak-pale-blue);
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+
+.september-invite .day-label span {
+  color: var(--oak-bluegray);
+}
+
+.september-invite .information-band strong {
+  display: block;
+  font: 400 25px/1.12 "Source Serif 4", Georgia, serif;
+}
+
+.september-invite .information-band small {
+  color: #cbd5da;
+  display: block;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.september-invite .content-section {
+  border-bottom: 1px solid var(--oak-line);
+  padding: clamp(72px, 7vw, 106px) clamp(28px, 5.4vw, 88px);
+}
+
+.september-invite .content-section > .eyebrow,
+.september-invite .section-heading > .eyebrow {
+  color: var(--oak-bluegray);
+}
+
+.september-invite .forum-intro {
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: 0.35fr 1fr;
+}
+
+.september-invite .forum-intro h2,
+.september-invite .section-heading h2 {
+  font-size: 76px;
+  line-height: 0.96;
+}
+
+.september-invite .forum-intro > div > p {
+  color: var(--oak-soft);
+  font: 18px/1.6 "Source Serif 4", Georgia, serif;
+  margin: 28px 0 0;
+  max-width: 760px;
+}
+
+.september-invite .day-one {
+  background: #f7f8f8;
+  display: grid;
+  grid-template-columns: 0.48fr 1fr;
+  padding-bottom: 52px;
+  padding-top: 52px;
+}
+
+.september-invite .day-label strong {
+  color: var(--oak-navy);
+  font: 400 24px/1.15 "Playfair Display", Georgia, serif;
+}
+
+.september-invite .day-label small {
+  color: var(--oak-bluegray);
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 11px;
+}
+
+.september-invite .day-copy {
+  border-left: 1px solid var(--oak-line);
+  padding-left: 6vw;
+}
+
+.september-invite .day-copy h3,
+.september-invite .session-grid h3 {
+  color: var(--oak-navy);
+  font: 400 27px/1.1 "Playfair Display", Georgia, serif;
+  margin: 0;
+}
+
+.september-invite .day-copy p {
+  color: var(--oak-soft);
+  font: 16px/1.55 "Source Serif 4", Georgia, serif;
+  margin: 12px 0 0;
+  max-width: 780px;
+}
+
+.september-invite .section-heading > span {
+  color: var(--oak-gray);
+  display: block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.september-invite .session-grid {
+  border-left: 1px solid var(--oak-line);
+  border-top: 1px solid var(--oak-line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 62px;
+}
+
+.september-invite .session-grid article {
+  border-bottom: 1px solid var(--oak-line);
+  border-right: 1px solid var(--oak-line);
+  min-height: 225px;
+  padding: 34px 38px;
+}
+
+.september-invite .session-grid article > span {
+  color: var(--oak-bluegray);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.september-invite .session-grid h3 {
+  margin-top: 24px;
+}
+
+.september-invite .session-grid p {
+  color: var(--oak-soft);
+  font: 15px/1.55 "Source Serif 4", Georgia, serif;
+  margin: 18px 0 0;
+}
+
+.september-invite .people {
+  display: grid;
+  gap: 7vw;
+  grid-template-columns: 0.75fr 1.25fr;
+}
+
+.september-invite .people .section-heading h2 {
+  font-size: 62px;
+}
+
+.september-invite .people-grid {
+  border-top: 1px solid var(--oak-line);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.september-invite .people-grid > div {
+  border-bottom: 1px solid var(--oak-line);
+  padding: 24px 24px 23px 0;
+}
+
+.september-invite .people-grid strong {
+  color: var(--oak-navy);
+  display: block;
+  font: 400 22px "Playfair Display", Georgia, serif;
+}
+
+.september-invite .people-grid span {
+  color: var(--oak-gray);
+  display: block;
+  font-size: 12px;
+  line-height: 1.35;
+  margin-top: 8px;
+}
+
+.september-invite .charlotte-panel {
+  border-bottom: 1px solid var(--oak-line);
+  height: min(44vw, 520px);
+  min-height: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.september-invite .charlotte-panel img {
+  filter: grayscale(1) contrast(0.9);
+  height: 100%;
+  object-fit: cover;
+  object-position: center 68%;
+  opacity: 0.82;
+  width: 100%;
+}
+
+.september-invite .charlotte-panel::after {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.66) 35%, rgba(255, 255, 255, 0.05) 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+}
+
+.september-invite .photo-caption {
+  bottom: clamp(38px, 5vw, 70px);
+  left: clamp(28px, 5vw, 76px);
+  max-width: 440px;
+  position: absolute;
+  z-index: 1;
+}
+
+.september-invite .photo-caption span {
+  color: var(--oak-bluegray);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.september-invite .photo-caption p {
+  color: var(--oak-navy);
+  font: 30px/1.13 "Playfair Display", Georgia, serif;
+  margin: 15px 0 24px;
+}
+
+.september-invite .photo-caption a {
+  border-bottom: 1px solid var(--oak-navy);
+  color: var(--oak-navy);
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding-bottom: 7px;
+}
+
+.september-invite footer {
+  color: var(--oak-gray);
+  font-size: 10px;
+  min-height: 116px;
+  padding: 25px clamp(28px, 5vw, 76px);
+}
+
+.september-invite footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.september-invite footer p {
+  border-top: 1px solid var(--oak-line);
+  font-size: 9px;
+  margin: 26px 0 0;
+  padding-top: 16px;
+  text-transform: none;
+}
+
+@media (max-width: 1100px) {
+  .september-invite h1 {
+    font-size: 70px;
+  }
+
+  .september-invite .forum-intro h2,
+  .september-invite .section-heading h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 960px) {
+  .september-invite .hero,
+  .september-invite .forum-intro,
+  .september-invite .people {
+    grid-template-columns: 1fr;
+  }
+
+  .september-invite .hero-copy {
+    border-right: 0;
+    min-height: auto;
+  }
+
+  .september-invite .rsvp-panel {
+    margin-top: 0;
+  }
+
+  .september-invite .information-band {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .september-invite .information-band > div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .september-invite .session-grid {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 620px) {
+  .september-invite .site-header {
+    height: 82px;
+  }
+
+  .september-invite .wordmark {
+    width: 106px;
+  }
+
+  .september-invite .header-note {
+    max-width: 150px;
+    text-align: right;
+  }
+
+  .september-invite .hero-copy {
+    padding: 52px 24px 38px;
+  }
+
+  .september-invite h1 {
+    font-size: 52px;
+  }
+
+  .september-invite .hero-intro {
+    font-size: 16px;
+    margin-top: 34px;
+  }
+
+  .september-invite .rsvp-panel {
+    margin: 0 18px 38px;
+    padding: 34px 24px;
+  }
+
+  .september-invite .rsvp-panel h2,
+  .september-invite .people .section-heading h2 {
+    font-size: 42px;
+  }
+
+  .september-invite .rsvp-form,
+  .september-invite .information-band,
+  .september-invite .day-one,
+  .september-invite .session-grid,
+  .september-invite .people-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .september-invite .information-band > div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    border-right: 0;
+    min-height: 110px;
+  }
+
+  .september-invite .content-section {
+    padding: 58px 24px;
+  }
+
+  .september-invite .forum-intro h2,
+  .september-invite .section-heading h2 {
+    font-size: 44px;
+  }
+
+  .september-invite .day-copy {
+    border-left: 0;
+    border-top: 1px solid var(--oak-line);
+    margin-top: 30px;
+    padding: 30px 0 0;
+  }
+
+  .september-invite .session-grid article {
+    min-height: auto;
+    padding: 30px 24px;
+  }
+
+  .september-invite .charlotte-panel {
+    min-height: 410px;
+  }
+
+  .september-invite .photo-caption {
+    bottom: 38px;
+    left: 24px;
+    right: 24px;
+  }
+
+  .september-invite .photo-caption p {
+    font-size: 26px;
+  }
+
+  .september-invite footer {
+    font-size: 8px;
+    padding: 28px 24px;
+  }
+}
