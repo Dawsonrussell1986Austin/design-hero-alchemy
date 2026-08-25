@@ -188,22 +188,47 @@ const SeptemberInvite = () => {
         </div>
         <div className="people-grid">
           <div>
+            <img
+              src="/lovable-uploads/837db76c-f393-41f0-aeeb-03c5f011e440.png"
+              alt="Raymond Davis"
+              className="headshot"
+            />
             <strong>Raymond Davis</strong>
             <span>President &amp; Chief Strategy Officer</span>
           </div>
           <div>
+            <img
+              src="/lovable-uploads/matt-webster-headshot.jpg"
+              alt="Matt Webster"
+              className="headshot"
+            />
             <strong>Matt Webster</strong>
             <span>EVP &amp; Chief Credit Officer</span>
           </div>
           <div>
+            <img
+              src="/lovable-uploads/tom-mcgovern-headshot.jpg"
+              alt="Thomas McGovern"
+              className="headshot"
+            />
             <strong>Thomas McGovern</strong>
             <span>Chief Financial Officer</span>
           </div>
           <div>
+            <img
+              src="/lovable-uploads/kevin-kennedy-headshot.jpg"
+              alt="Kevin Kennedy"
+              className="headshot"
+            />
             <strong>Kevin Kennedy</strong>
             <span>Chief Sales Officer</span>
           </div>
           <div>
+            <img
+              src="/septemberinvite/nick-duren.jpg"
+              alt="Nick Duren"
+              className="headshot"
+            />
             <strong>Nick Duren</strong>
             <span>Crescent Securities, Managing Broker-Dealer</span>
           </div>
