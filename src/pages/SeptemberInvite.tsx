@@ -1,10 +1,7 @@
-import { useState } from "react";
 import SEOHead from "@/components/SEOHead";
 import "./SeptemberInvite.css";
 
 const SeptemberInvite = () => {
-  const [message, setMessage] = useState("");
-
   return (
     <main className="september-invite" id="top">
       <SEOHead
@@ -47,48 +44,17 @@ const SeptemberInvite = () => {
           <p className="form-intro">
             For broker-dealer, RIA, and institutional due diligence partners.
           </p>
-          <form
-            className="rsvp-form"
-            onSubmit={(event) => {
-              event.preventDefault();
-              setMessage(
-                "Thank you. A member of the Oak team will follow up shortly.",
-              );
-            }}
-          >
-            <label>
-              <span>Name</span>
-              <input type="text" autoComplete="name" required name="name" />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" autoComplete="email" required name="email" />
-            </label>
-            <label>
-              <span>Company name</span>
-              <input
-                type="text"
-                autoComplete="organization"
-                required
-                name="company"
-              />
-            </label>
-            <label>
-              <span>Phone</span>
-              <input type="tel" autoComplete="tel" required name="phone" />
-            </label>
-            <button type="submit">
-              <span>Reserve your seat</span>
-              <b aria-hidden="true">↗</b>
-            </button>
-            <div
-              className={`form-message${message ? " success" : ""}`}
-              role="status"
-              aria-live="polite"
-            >
-              {message}
-            </div>
-          </form>
+          <iframe
+            src="https://go.oakrepartners.com/l/1105131/2026-08-26/b5chv2"
+            title="Oak Charlotte RSVP form"
+            width="100%"
+            height="500"
+            type="text/html"
+            frameBorder="0"
+            allowTransparency
+            className="rsvp-iframe"
+            style={{ border: 0 }}
+          />
         </aside>
       </section>
 

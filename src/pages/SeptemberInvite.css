@@ -223,6 +223,13 @@
   color: #2d6849;
 }
 
+.september-invite .rsvp-iframe {
+  border: 0;
+  display: block;
+  min-height: 500px;
+  width: 100%;
+}
+
 .september-invite .information-band {
   background: var(--oak-navy);
   color: #fff;
