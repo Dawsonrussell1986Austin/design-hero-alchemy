@@ -45,7 +45,7 @@ const SeptemberInvite = () => {
             For broker-dealer, RIA, and institutional due diligence partners.
           </p>
           <iframe
-            src="https://go.oakrepartners.com/l/1105131/2026-08-26/b5chv2"
+            src="/septemberinvite/rsvp-form.html"
             title="Oak Charlotte RSVP form"
             width="100%"
             height="500"
