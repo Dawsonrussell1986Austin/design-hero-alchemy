@@ -92,7 +92,7 @@ const SeptemberInvite = () => {
       <section className="day-one content-section">
         <div className="day-label">
           <span>Day one</span>
-          <strong>Tuesday, September 16</strong>
+          <strong>Wednesday, September 16</strong>
           <small>Dinner / 6:00 PM EST</small>
         </div>
         <div className="day-copy">
@@ -107,7 +107,7 @@ const SeptemberInvite = () => {
 
       <section className="day-two content-section">
         <div className="section-heading">
-          <p className="eyebrow">Day two / Wednesday, September 17</p>
+          <p className="eyebrow">Day two / Thursday, September 17</p>
           <h2>Inside the Oak platform.</h2>
           <span>8:30 AM-1:00 PM EST / Oak Corporate Headquarters</span>
         </div>
