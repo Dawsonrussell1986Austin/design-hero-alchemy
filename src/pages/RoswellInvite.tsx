@@ -20,6 +20,30 @@ const RoswellInvite = () => {
         <span className="header-note">The Oak Companies / Roswell</span>
       </header>
 
+      <section className="information-band" aria-label="Event information">
+        <div>
+          <span>Date &amp; time</span>
+          <strong>Wednesday, September 23, 2026</strong>
+          <small>5:30 PM &ndash; 7:00 PM EST</small>
+        </div>
+        <div>
+          <span>Location</span>
+          <strong>Brookfield Country Club</strong>
+          <small>
+            Private Event Room / 100 Willow Run Rd, Roswell, GA 30075
+          </small>
+        </div>
+        <div>
+          <span>Refreshments</span>
+          <strong>Hors d&apos;oeuvres / Wine &amp; beer</strong>
+          <small>Complimentary</small>
+        </div>
+        <div>
+          <span>Reservations</span>
+          <strong>Invitation only</strong>
+        </div>
+      </section>
+
       <section className="hero">
         <div className="arc" aria-hidden="true" />
         <div className="hero-copy">
@@ -57,30 +81,6 @@ const RoswellInvite = () => {
             style={{ border: 0 }}
           />
         </aside>
-      </section>
-
-      <section className="information-band" aria-label="Event information">
-        <div>
-          <span>Date &amp; time</span>
-          <strong>Wednesday, September 23, 2026</strong>
-          <small>5:30 PM &ndash; 7:00 PM EST</small>
-        </div>
-        <div>
-          <span>Location</span>
-          <strong>Brookfield Country Club</strong>
-          <small>
-            Private Event Room / 100 Willow Run Rd, Roswell, GA 30075
-          </small>
-        </div>
-        <div>
-          <span>Refreshments</span>
-          <strong>Hors d&apos;oeuvres / Wine &amp; beer</strong>
-          <small>Complimentary</small>
-        </div>
-        <div>
-          <span>Reservations</span>
-          <strong>Invitation only</strong>
-        </div>
       </section>
 
       <section className="forum-intro content-section">
