@@ -86,6 +86,7 @@ import CampaignEmails from "./pages/CampaignEmails";
 import AccreditedInvestorReport from "./pages/AccreditedInvestorReport";
 import InvestorReportForm from "./pages/InvestorReportForm";
 import SeptemberInvite from "./pages/SeptemberInvite";
+import RoswellInvite from "./pages/RoswellInvite";
 
 function App() {
   return (
@@ -175,6 +176,7 @@ function App() {
         <Route path="/accredited-investor-report" element={<AccreditedInvestorReport />} />
         <Route path="/investor-report" element={<InvestorReportForm />} />
         <Route path="/septemberinvite" element={<SeptemberInvite />} />
+        <Route path="/roswellinvite" element={<RoswellInvite />} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route path="*" element={<NotFound />} />
       </Routes>
